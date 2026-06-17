@@ -384,10 +384,67 @@ async function build() {
   /* GitHub Pages: disable Jekyll processing so all files are served as-is. */
   await writeFile(path.join(DIST, ".nojekyll"), "", "utf8");
 
+  /* ---------- Minify HTML/CSS/JS (optional — skipped if deps absent) ---------- */
+  await minifyDist();
+
   const totalPages = sitemapUrls.length + 1;
   console.log(`\n✓ Готово. Згенеровано ${totalPages} сторінок у dist/`);
   console.log(`  Практики: ${practices.length} | Локальні: ${locations.length} | Команда: ${team.length} | Кейси: ${cases.length}`);
   console.log(`  Блог: ${pillars.length} стовпових + ${articles.length} статей`);
+}
+
+/* Walk dist and minify HTML/CSS/JS in place. Uses optional deps; if they are
+   not installed (e.g. a bare `node build.js` without `npm ci`), it logs and skips
+   so the build never fails on minification. */
+async function minifyDist() {
+  let htmlMin, csso, terser;
+  try {
+    ({ minify: htmlMin } = await import("html-minifier-terser"));
+    csso = (await import("csso")).default || (await import("csso"));
+    terser = await import("terser");
+  } catch {
+    console.log("→ Мініфікація пропущена (немає dev-залежностей)");
+    return;
+  }
+  const { readFile } = await import("node:fs/promises");
+  async function walk(dir) {
+    const out = [];
+    for (const e of await readdir(dir, { withFileTypes: true })) {
+      const full = path.join(dir, e.name);
+      if (e.isDirectory()) out.push(...(await walk(full)));
+      else out.push(full);
+    }
+    return out;
+  }
+  const files = await walk(DIST);
+  let before = 0, after = 0;
+  for (const f of files) {
+    const ext = path.extname(f);
+    if (![".html", ".css", ".js"].includes(ext)) continue;
+    if (f.includes(`${path.sep}design${path.sep}`)) continue; /* leave standalone preview untouched */
+    const src = await readFile(f, "utf8");
+    before += Buffer.byteLength(src);
+    let res = src;
+    try {
+      if (ext === ".html") {
+        res = await htmlMin(src, {
+          collapseWhitespace: true, conservativeCollapse: true, removeComments: true,
+          minifyCSS: true, minifyJS: true, keepClosingSlash: true, removeRedundantAttributes: false,
+        });
+      } else if (ext === ".css") {
+        res = csso.minify(src).css;
+      } else if (ext === ".js") {
+        res = (await terser.minify(src, { format: { comments: false } })).code || src;
+      }
+    } catch (err) {
+      console.warn(`  ! Мініфікація ${path.relative(DIST, f)} пропущена: ${err.message}`);
+      res = src;
+    }
+    after += Buffer.byteLength(res);
+    if (res !== src) await writeFile(f, res, "utf8");
+  }
+  const saved = before ? Math.round((1 - after / before) * 100) : 0;
+  console.log(`→ Мініфікація: ${(before / 1024).toFixed(0)}KB → ${(after / 1024).toFixed(0)}KB (−${saved}%)`);
 }
 
 build().catch((e) => {
