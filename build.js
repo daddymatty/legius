@@ -93,6 +93,12 @@ async function build() {
   await cp(path.join(__dirname, "src/assets"), path.join(DIST, "assets"), { recursive: true });
   await makePlaceholders(path.join(DIST, "assets/img"), { team });
 
+  /* Design preview/moodboard (standalone, noindex) — served at /design/. */
+  if (existsSync(path.join(__dirname, "design"))) {
+    await cp(path.join(__dirname, "design"), path.join(DIST, "design"), { recursive: true });
+    console.log("→ Дизайн-прев'ю /design/");
+  }
+
   /* ---------- Home ---------- */
   console.log("→ Головна");
   await writePage(

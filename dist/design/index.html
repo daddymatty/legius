@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>LEGIUS — Дизайн-концепт v2 (GOLAW × Asters × Arzinger)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0B1A33; --ink-2:#16335C; --ink-3:#1f4a82;
+  --teal:#16B6A6; --teal-d:#0F9B8E; --teal-l:#5fd6c9;
+  --gold:#C29A5B; --gold-l:#dcc08b;
+  --paper:#FFFFFF; --mist:#F4F7FA; --mist-2:#EAF0F6;
+  --line:#E5EAF0; --muted:#5C6A7E; --on-dark:#C6D4E6;
+  --display:"Archivo",system-ui,sans-serif; --body:"Inter",system-ui,sans-serif;
+  --r:16px; --rs:10px;
+}
+*{box-sizing:border-box;margin:0}
+body{font-family:var(--body);color:var(--ink);background:var(--mist);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.04;letter-spacing:-.02em;font-weight:800}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.section{padding:84px 0}
+.eyebrow{font-family:var(--body);font-weight:700;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--teal-d)}
+.eyebrow--gold{color:var(--gold)}
+
+/* annotation chips for the moodboard */
+.note{font-family:var(--body);font-size:.72rem;font-weight:600;letter-spacing:.04em;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:.3rem .7rem;border-radius:100px;display:inline-flex;gap:.4rem;align-items:center}
+.tag-credit{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.25rem .6rem;border-radius:6px}
+.c-golaw{background:#16335C;color:#fff}.c-asters{background:#16B6A6;color:#042b27}.c-arz{background:#E0394B;color:#fff}
+
+/* ---------- studio header ---------- */
+.studio{background:var(--ink);color:#fff;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.studio .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.studio h4{font-size:1rem;font-weight:700}
+.studio p{font-family:var(--body);color:var(--on-dark);font-size:.85rem}
+.credits{display:flex;gap:8px;flex-wrap:wrap}
+
+/* ================= HERO MOCKUP ================= */
+.hero{position:relative;background:linear-gradient(118deg,#091a33 0%,#0e2348 46%,#16335C 100%);color:#fff;overflow:hidden}
+.hero__diag{position:absolute;inset:0;background:linear-gradient(118deg,transparent 54%,rgba(255,255,255,.045) 54%,rgba(255,255,255,.045) 70%,transparent 70%);pointer-events:none}
+.hero__grain{position:absolute;inset:0;opacity:.5;mix-blend-mode:overlay;pointer-events:none}
+.hero__glow{position:absolute;top:-20%;right:-10%;width:60%;height:90%;background:radial-gradient(circle,rgba(22,182,166,.22),transparent 60%);pointer-events:none}
+.hero__mark{position:absolute;right:-2%;bottom:-6%;font-family:var(--display);font-weight:900;font-size:clamp(7rem,22vw,20rem);color:rgba(255,255,255,.04);letter-spacing:-.04em;pointer-events:none;user-select:none;line-height:.8}
+
+.util{position:relative;z-index:2;border-bottom:1px solid rgba(255,255,255,.1)}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;height:52px;font-family:var(--body);font-size:.84rem;color:var(--on-dark)}
+.util a{display:inline-flex;gap:.45rem;align-items:center}
+.util .right{display:flex;gap:20px;align-items:center}
+.util .lang b{color:#fff}.util .lang span{opacity:.5}
+
+.nav{position:relative;z-index:2}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:82px}
+.logo{font-family:var(--display);font-weight:800;font-size:1.5rem;letter-spacing:.14em;display:flex;align-items:center;gap:.6rem}
+.logo .dot{color:var(--teal)}
+.logo svg{width:30px;height:30px}
+.menu{display:flex;gap:30px;font-family:var(--body);font-weight:600;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase}
+.menu a{position:relative;padding:6px 0;color:#eaf1fb}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--teal);transition:.25s}
+.menu a:hover::after{width:100%}
+.burger{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--body);font-weight:700;font-size:.8rem;letter-spacing:.1em}
+
+.hero__inner{position:relative;z-index:2;padding:70px 0 96px}
+.hero h1{font-size:clamp(2.8rem,8.5vw,7rem);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;max-width:16ch}
+.hero h1 .accent{color:var(--teal-l)}
+.hero__sub{font-family:var(--body);font-size:1.12rem;color:var(--on-dark);max-width:54ch;margin-top:28px}
+.hero__cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:40px}
+.btn{font-family:var(--body);font-weight:700;font-size:.95rem;padding:16px 30px;border-radius:var(--rs);display:inline-flex;gap:.5rem;align-items:center;transition:.2s;cursor:pointer;border:1.5px solid transparent}
+.btn--teal{background:var(--teal);color:#042b27}.btn--teal:hover{background:var(--teal-l);transform:translateY(-2px)}
+.btn--ghost{border-color:rgba(255,255,255,.4);color:#fff}.btn--ghost:hover{background:#fff;color:var(--ink)}
+.hero__stats{display:flex;gap:46px;flex-wrap:wrap;margin-top:64px;padding-top:30px;border-top:1px solid rgba(255,255,255,.12)}
+.stat b{font-family:var(--display);font-weight:800;font-size:2.4rem;display:block;color:#fff}
+.stat b em{color:var(--gold);font-style:normal}
+.stat span{font-family:var(--body);font-size:.82rem;color:var(--on-dark)}
+.scrollcue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.6);animation:bob 1.8s infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+/* ================= palette / type specimen ================= */
+.grid{display:grid;gap:22px}
+.sw{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.sw .chip{height:96px}
+.sw .meta{padding:12px 14px;font-family:var(--body)}
+.sw .meta b{font-size:.9rem}.sw .meta span{display:block;font-size:.76rem;color:var(--muted);margin-top:2px}
+.palette{grid-template-columns:repeat(2,1fr)}
+@media(min-width:640px){.palette{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:980px){.palette{grid-template-columns:repeat(6,1fr)}}
+
+.type-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:34px}
+.type-card .lbl{font-family:var(--body);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.t-display{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em}
+.t-h2{font-family:var(--display);font-weight:800;font-size:1.7rem;margin-top:28px}
+.t-body{font-family:var(--body);font-size:1.02rem;color:#2b3a4f;max-width:62ch;margin-top:18px}
+
+/* ================= components on light ================= */
+.head{max-width:680px;margin-bottom:42px}
+.head h2{font-size:clamp(1.8rem,4vw,2.7rem)}
+.head p{font-family:var(--body);color:var(--muted);margin-top:12px;font-size:1.05rem}
+.cards{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:640px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.cards{grid-template-columns:repeat(3,1fr)}}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px;transition:.25s;position:relative;overflow:hidden}
+.pcard::before{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--teal);transition:.3s}
+.pcard:hover{transform:translateY(-5px);box-shadow:0 24px 50px -28px rgba(11,26,51,.35);border-color:transparent}
+.pcard:hover::before{width:100%}
+.pcard .ico{width:46px;height:46px;color:var(--teal-d);margin-bottom:18px}
+.pcard h3{font-size:1.25rem;font-weight:700}
+.pcard p{font-family:var(--body);color:var(--muted);font-size:.92rem;margin-top:10px}
+.pcard .more{font-family:var(--body);font-weight:700;font-size:.85rem;color:var(--ink);margin-top:18px;display:inline-flex;gap:.4rem}
+.pcard .more b{color:var(--teal-d)}
+
+/* insight editorial */
+.insights{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:880px){.insights{grid-template-columns:repeat(3,1fr)}}
+.icard{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.25s}
+.icard:hover{transform:translateY(-5px);box-shadow:0 24px 50px -28px rgba(11,26,51,.35)}
+.icard .ph{height:160px;background:linear-gradient(120deg,#0e2348,#16335C);position:relative}
+.icard .ph .ribbon{position:absolute;left:16px;bottom:16px;background:var(--teal);color:#042b27;font-family:var(--body);font-weight:700;font-size:.72rem;padding:.3rem .7rem;border-radius:6px}
+.icard .ib{padding:22px}
+.icard .ib .m{font-family:var(--body);font-size:.74rem;color:var(--muted);letter-spacing:.05em;text-transform:uppercase}
+.icard h3{font-size:1.12rem;font-weight:700;margin-top:8px}
+
+/* icon grid */
+.icons{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(min-width:640px){.icons{grid-template-columns:repeat(6,1fr)}}
+.icoBox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--body);font-size:.7rem;color:var(--muted);text-align:center}
+.icoBox svg{width:30px;height:30px;color:var(--ink)}
+
+/* dark CTA band */
+.band{background:linear-gradient(118deg,#091a33,#16335C);color:#fff;border-radius:24px;padding:60px 40px;text-align:center;position:relative;overflow:hidden}
+.band h2{font-size:clamp(1.8rem,4vw,2.6rem);text-transform:uppercase}
+.band p{font-family:var(--body);color:var(--on-dark);max-width:52ch;margin:14px auto 28px}
+.band .gline{width:60px;height:3px;background:var(--gold);margin:0 auto 22px}
+
+footer{background:var(--ink);color:var(--on-dark);font-family:var(--body);font-size:.85rem;text-align:center;padding:30px}
+.legend{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:10px;font-size:.78rem}
+.legend span{display:inline-flex;gap:.4rem;align-items:center}
+.sw-dot{width:12px;height:12px;border-radius:3px;display:inline-block}
+</style>
+</head>
+<body>
+
+<!-- studio bar -->
+<div class="studio"><div class="wrap">
+  <div><h4>LEGIUS · Дизайн-концепт v2 — «Bold Editorial Premium»</h4>
+  <p>Гібрид трьох референсів. Прев'ю стилю: палітра, типографіка, hero, компоненти.</p></div>
+  <div class="credits">
+    <span class="tag-credit c-golaw">GOLAW · глибина+капс</span>
+    <span class="tag-credit c-asters">ASTERS · бірюза+повітря</span>
+    <span class="tag-credit c-arz">ARZINGER · жирний тип+вотермарк</span>
+  </div>
+</div></div>
+
+<!-- ============ HERO MOCKUP ============ -->
+<header class="hero">
+  <div class="hero__diag"></div>
+  <svg class="hero__grain" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+  <div class="hero__glow"></div>
+  <div class="hero__mark">LEGIUS</div>
+
+  <div class="util"><div class="wrap">
+    <div style="display:flex;gap:22px">
+      <a href="#">✉ office@legius.ua</a>
+      <a href="#">✆ +38 (044) 123-45-67</a>
+    </div>
+    <div class="right">
+      <a href="#">⌕ Пошук</a>
+      <span class="lang"><b>UA</b> <span>/ EN</span></span>
+    </div>
+  </div></div>
+
+  <nav class="nav"><div class="wrap">
+    <div class="logo">
+      <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="9" fill="#16B6A6"/><path d="M20 8v24M12 14h16M14 14l-3 7a3 3 0 006 0l-3-7zM26 14l-3 7a3 3 0 006 0l-3-7z" stroke="#042b27" stroke-width="1.5"/></svg>
+      LEGIUS<span class="dot">.</span>
+    </div>
+    <div class="menu">
+      <a href="#">Практики</a><a href="#">Команда</a><a href="#">Кейси</a><a href="#">Блог</a><a href="#">Контакти</a>
+    </div>
+    <div class="burger">МЕНЮ ☰</div>
+  </div></nav>
+
+  <div class="wrap hero__inner">
+    <span class="eyebrow" style="color:var(--teal-l)">Юридична компанія преміум-класу · Київ</span>
+    <h1 style="margin-top:18px">Правова <span class="accent">перевага</span> для вашого бізнесу</h1>
+    <p class="hero__sub">Супроводжуємо угоди, захищаємо в судах і вирішуємо кризові ситуації — для бізнесу, інвесторів та власників. Перша консультація безкоштовна.</p>
+    <div class="hero__cta">
+      <a class="btn btn--teal" href="#">Замовити консультацію →</a>
+      <a class="btn btn--ghost" href="#">Наші практики</a>
+    </div>
+    <div class="hero__stats">
+      <div class="stat"><b>15<em>+</em></b><span>років практики</span></div>
+      <div class="stat"><b>3 200<em>+</em></b><span>виграних справ</span></div>
+      <div class="stat"><b>24</b><span>юристи в команді</span></div>
+      <div class="stat"><b>94<em>%</em></b><span>успішних рішень</span></div>
+    </div>
+  </div>
+  <div class="scrollcue"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M6 13l6 6 6-6"/></svg></div>
+</header>
+
+<!-- ============ PALETTE ============ -->
+<section class="section"><div class="wrap">
+  <div class="head"><span class="eyebrow">01 · Палітра</span><h2>Чорнило, бірюза, золото</h2><p>Глибока синя база (GOLAW) + свіжий бірюзовий акцент (Asters) + тонкі золоті деталі для «преміуму». Один акцент — як у всіх трьох референсів.</p></div>
+  <div class="grid palette">
+    <div class="sw"><div class="chip" style="background:#0B1A33"></div><div class="meta"><b>Ink</b><span>#0B1A33 · база, текст</span></div></div>
+    <div class="sw"><div class="chip" style="background:#16335C"></div><div class="meta"><b>Ink 2</b><span>#16335C · градієнт</span></div></div>
+    <div class="sw"><div class="chip" style="background:#16B6A6"></div><div class="meta"><b>Teal</b><span>#16B6A6 · акцент/CTA</span></div></div>
+    <div class="sw"><div class="chip" style="background:#5fd6c9"></div><div class="meta"><b>Teal Light</b><span>#5FD6C9 · акцент тексту</span></div></div>
+    <div class="sw"><div class="chip" style="background:#C29A5B"></div><div class="meta"><b>Gold</b><span>#C29A5B · деталі</span></div></div>
+    <div class="sw"><div class="chip" style="background:#F4F7FA;border-bottom:1px solid #E5EAF0"></div><div class="meta"><b>Mist</b><span>#F4F7FA · світлі секції</span></div></div>
+  </div>
+</div></section>
+
+<!-- ============ TYPOGRAPHY ============ -->
+<section class="section" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <div class="head"><span class="eyebrow">02 · Типографіка</span><h2>Archivo + Inter</h2><p>Жирний гротеск Archivo для величезних заголовків (сила GOLAW × впевненість Arzinger) і чистий Inter для тексту (повітря Asters).</p></div>
+  <div class="type-card">
+    <div class="lbl">Display · Archivo 900 · Hero</div>
+    <div class="t-display">Захист, якому довіряють</div>
+    <div class="lbl" style="margin-top:30px">Heading · Archivo 800</div>
+    <div class="t-h2">Практики, що вирішують найскладніше</div>
+    <div class="lbl" style="margin-top:30px">Body · Inter 400/500</div>
+    <p class="t-body">LEGIUS — команда адвокатів і юристів, яка веде складні справи у корпоративному, податковому, сімейному та військовому праві. Ми поєднуємо глибину експертизи з прозорим сервісом і вимірюваним результатом для кожного клієнта.</p>
+  </div>
+</div></section>
+
+<!-- ============ PRACTICE CARDS ============ -->
+<section class="section"><div class="wrap">
+  <div class="head"><span class="eyebrow">03 · Картки практик</span><h2>Структуровані напрями</h2><p>Сітка з акуратними лініями та бірюзовим індикатором при наведенні (структурність GOLAW × мінімалізм Asters).</p></div>
+  <div class="cards">
+    <div class="pcard"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V5l8-3 8 3v16M9 21v-5h6v5M8 8h.01M12 8h.01M16 8h.01"/></svg><h3>Корпоративне право</h3><p>Структурування бізнесу, M&A, due diligence, захист від рейдерства та корпоративні спори.</p><span class="more">Детальніше <b>→</b></span></div>
+    <div class="pcard"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/></svg><h3>Військове право</h3><p>Відстрочки, оскарження рішень ТЦК та ВЛК, статус УБД, виплати й бронювання.</p><span class="more">Детальніше <b>→</b></span></div>
+    <div class="pcard"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 4l6 6-3 3-6-6 3-3zM11 7L4 14l3 3 7-7M14 20H6"/></svg><h3>Судові спори</h3><p>Господарські, цивільні та адміністративні спори, стягнення боргів, представництво у ВС.</p><span class="more">Детальніше <b>→</b></span></div>
+  </div>
+</div></section>
+
+<!-- ============ INSIGHTS ============ -->
+<section class="section" style="background:var(--mist-2)"><div class="wrap">
+  <div class="head"><span class="eyebrow">04 · Інсайти / Блог</span><h2>Редакційний блок знань</h2><p>Журнальна подача публікацій із бірюзовою стрічкою-категорією (редакційність Asters).</p></div>
+  <div class="insights">
+    <div class="icard"><div class="ph"><span class="ribbon">Сімейне право</span></div><div class="ib"><div class="m">8 хв · 12.06.2026</div><h3>Поділ майна подружжя: спільна власність, частки, борги</h3></div></div>
+    <div class="icard"><div class="ph"><span class="ribbon">Військове право</span></div><div class="ib"><div class="m">10 хв · 02.06.2026</div><h3>Як оскаржити рішення ТЦК: покрокова інструкція</h3></div></div>
+    <div class="icard"><div class="ph"><span class="ribbon">Податкове право</span></div><div class="ib"><div class="m">9 хв · 28.05.2026</div><h3>Розблокування податкових накладних у 2026 році</h3></div></div>
+  </div>
+</div></section>
+
+<!-- ============ ICONS ============ -->
+<section class="section" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap">
+  <div class="head"><span class="eyebrow">05 · Іконки</span><h2>Лінійний набір</h2><p>Єдиний тонкий лінійний стиль (stroke 1.5) для практик та інтерфейсу.</p></div>
+  <div class="icons">
+    <div class="icoBox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 006 0L7 7zM17 7l-3 7a3 3 0 006 0l-3-7zM8 21h8"/></svg>Право</div>
+    <div class="icoBox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/></svg>Захист</div>
+    <div class="icoBox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V5l8-3 8 3v16M9 21v-5h6v5"/></svg>Бізнес</div>
+    <div class="icoBox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 3H6v18h12V7l-4-4zM14 3v4h4M8 13h8M8 17h6"/></svg>Документи</div>
+    <div class="icoBox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>Міжнародне</div>
+    <div class="icoBox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l4-4 5 2 5-2 4 4M7 14l3 3 2-2 2 2 3-3"/></svg>Партнерство</div>
+  </div>
+</div></section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="section"><div class="wrap">
+  <div class="band">
+    <svg class="hero__grain" xmlns="http://www.w3.org/2000/svg" style="border-radius:24px"><rect width="100%" height="100%" filter="url(#n)"/></svg>
+    <div style="position:relative;z-index:2">
+      <div class="gline"></div>
+      <h2>Потрібна юридична підтримка?</h2>
+      <p>Залиште заявку — провідний адвокат проаналізує вашу ситуацію та запропонує стратегію дій.</p>
+      <a class="btn btn--teal" href="#">Безкоштовна консультація →</a>
+    </div>
+  </div>
+</div></section>
+
+<footer>
+  © LEGIUS · Дизайн-концепт v2 (не продакшн-сторінка) — гібрид GOLAW × Asters × Arzinger
+  <div class="legend">
+    <span><i class="sw-dot" style="background:#0B1A33"></i>#0B1A33</span>
+    <span><i class="sw-dot" style="background:#16B6A6"></i>#16B6A6</span>
+    <span><i class="sw-dot" style="background:#C29A5B"></i>#C29A5B</span>
+    <span>Шрифти: Archivo + Inter</span>
+  </div>
+</footer>
+
+</body>
+</html>
