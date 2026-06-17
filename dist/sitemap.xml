@@ -139,6 +139,9 @@
   <url><loc>https://legius.ua/blog/viyskove-pravo/</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://legius.ua/blog/korporatyvne-pravo/</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://legius.ua/blog/podatkove-pravo/</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://legius.ua/blog/sudovi-spory/</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://legius.ua/blog/nerukhomist/</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://legius.ua/blog/zemelne-pravo/</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://legius.ua/blog/intelektualna-vlasnist/</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://legius.ua/blog/rozirvannya-shlyubu/</loc><lastmod>2026-03-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.ua/blog/podil-mayna-podruzhzhya/</loc><lastmod>2026-02-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -241,6 +244,24 @@
   <url><loc>https://legius.ua/blog/podatkovyj-zapyt-dps/</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.ua/blog/zustrichni-zviryky-kontragentiv/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.ua/blog/podatkovi-spory-sudova-praktyka/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/yak-styahnuty-borh-cherez-sud/</loc><lastmod>2026-03-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/zabezpechennya-pozovu-aresht-rakhunkiv/</loc><lastmod>2026-02-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/hospodarskyy-spir-pokrokovo/</loc><lastmod>2026-03-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/apelyatsiya-na-rishennya-sudu/</loc><lastmod>2026-02-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/kasatsiyna-skarga-verkhovnyy-sud/</loc><lastmod>2026-03-02</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/vykonannya-sudovoho-rishennya/</loc><lastmod>2026-04-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/perevirka-nerukhomosti-pered-kupivleyu/</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/suprovid-ugody-kupivli-prodazhu-kvartyry/</loc><lastmod>2026-02-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/ryzyky-investuvannya-v-novobudovu/</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/reyestratsiya-prava-vlasnosti/</loc><lastmod>2026-02-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/spory-iz-zabudovnykom/</loc><lastmod>2026-03-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/orenda-komertsiynoyi-nerukhomosti/</loc><lastmod>2026-02-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/oformlennya-prava-vlasnosti-na-zemlyu/</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/zmina-tsilovoho-pryznachennya-zemli/</loc><lastmod>2026-02-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/orenda-zemli-dohovir-ta-ponovlennya/</loc><lastmod>2026-03-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/rynok-zemli-pravyla-kupivli/</loc><lastmod>2026-02-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/zemelni-spory-z-susidamy/</loc><lastmod>2026-03-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.ua/blog/pryvatyzatsiya-zemelnoyi-dilyanky/</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.ua/blog/yak-zareyestruvaty-torhovu-marku/</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.ua/blog/patentuvannya-vynakhodu/</loc><lastmod>2026-02-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.ua/blog/zakhyst-avtorskoho-prava/</loc><lastmod>2026-01-30</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
