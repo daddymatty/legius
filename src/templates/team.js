@@ -43,7 +43,7 @@ export function teamMemberPage(m, { practiceBySlug }) {
 ${breadcrumbs(crumbs)}
 <section class="section"><div class="container">
   <div class="split">
-    <div class="reveal"><div class="media-frame" style="aspect-ratio:3/4;max-width:420px"><img src="${m.photo}" width="420" height="560" alt="${esc(m.name)} — ${esc(m.role)}"></div></div>
+    <div class="reveal"><div class="media-frame team-photo" style="aspect-ratio:3/4;max-width:420px"><img src="${m.photo}" width="420" height="560" alt="${esc(m.name)} — ${esc(m.role)}"></div></div>
     <div class="reveal">
       <span class="eyebrow">${esc(m.role)}</span>
       <h1>${esc(m.name)}</h1>

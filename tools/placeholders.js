@@ -1,5 +1,6 @@
 /* Generates lightweight placeholder SVG assets at build time (no binary deps). */
 import { mkdir, writeFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import path from "node:path";
 
 const NAVY = "#0D0D0F";
@@ -63,6 +64,15 @@ export async function makePlaceholders(imgDir, { team = [] } = {}) {
   await writeFile(path.join(imgDir, "office.svg"), office);
   await writeFile(path.join(imgDir, "og-default.svg"), og);
   for (const m of team) {
+    /* If a member uses a real raster photo (.jpg/.png/.webp) that is already
+       present (copied from src/assets), keep it. Otherwise fall back to a
+       generated SVG placeholder and repoint the member to it. */
+    const isSvg = (m.photo || "").endsWith(".svg");
+    if (!isSvg) {
+      const real = path.join(imgDir, "team", path.basename(m.photo));
+      if (existsSync(real)) continue; // real photo present → use as-is
+      m.photo = `/assets/img/team/${m.slug}.svg`; // missing → use placeholder
+    }
     await writeFile(path.join(imgDir, "team", `${m.slug}.svg`), avatar(m.name));
   }
 }
