@@ -98,7 +98,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
   <div class="hero__glow"></div>
   <div class="hero__mark" aria-hidden="true">LEGIUS</div>
   <div class="container hero__inner">
-    <div class="reveal">
+    <div class="reveal stack">
       <span class="eyebrow">${esc(site.tagline)} · Київ</span>
       <h1>Правова <span class="accent">перевага</span> для вашого бізнесу</h1>
       <p class="hero__sub">${esc(site.legalName)} — команда адвокатів і юристів, яка веде складні справи у корпоративному, податковому, сімейному та військовому праві. Перша консультація — безкоштовно.</p>
