@@ -21,7 +21,7 @@ export function casesPage(cases, practices) {
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
-  <span class="eyebrow" style="color:var(--c-gold-2)">Кейси</span>
+  <span class="eyebrow">Кейси</span>
   <h1>Справи, які ми виграли</h1>
   <p>Понад ${cases.length} детальних прикладів роботи: проблема клієнта, наша стратегія та досягнутий результат у різних практиках.</p>
 </div></section>

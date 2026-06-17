@@ -11,7 +11,7 @@ export function locationPage(loc, { practiceBySlug }) {
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
-  <span class="eyebrow" style="color:var(--c-gold-2)">${esc(loc.areaServed)}</span>
+  <span class="eyebrow">${esc(loc.areaServed)}</span>
   <h1>${esc(loc.h1)}</h1>
   <p>${esc(loc.heroSub)}</p>
   <div class="hero__actions mt-2">

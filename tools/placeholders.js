@@ -2,9 +2,9 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-const NAVY = "#0e1c33";
-const NAVY2 = "#1b3358";
-const GOLD = "#cda35c";
+const NAVY = "#0B1A33";
+const NAVY2 = "#16335C";
+const GOLD = "#16B6A6"; /* accent — teal (kept var name for minimal diff) */
 
 function initials(name = "") {
   return name.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join("").toUpperCase();

@@ -26,7 +26,7 @@ export function aboutPage({ team, practices }) {
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
-  <span class="eyebrow" style="color:var(--c-gold-2)">Про компанію</span>
+  <span class="eyebrow">Про компанію</span>
   <h1>${esc(site.legalName)}</h1>
   <p>Преміальна юридична компанія в Києві. ${site.stats.years} років захищаємо інтереси бізнесу, інвесторів та приватних клієнтів у найскладніших справах.</p>
 </div></section>
@@ -78,7 +78,7 @@ export function contactsPage() {
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
-  <span class="eyebrow" style="color:var(--c-gold-2)">Контакти</span>
+  <span class="eyebrow">Контакти</span>
   <h1>Зв’яжіться з LEGIUS</h1>
   <p>Безкоштовна первинна консультація. Працюємо в офісі у центрі Києва та онлайн — по всій Україні.</p>
 </div></section>

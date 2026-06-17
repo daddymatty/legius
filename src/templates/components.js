@@ -27,7 +27,7 @@ export const practiceIcon = {
 };
 
 /* ---------- Logo ---------- */
-const logoMark = '<svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#0e1c33"/><path d="M20 8v24M12 14h16M14 14l-3 7a3 3 0 006 0l-3-7zM26 14l-3 7a3 3 0 006 0l-3-7z" stroke="#cda35c" stroke-width="1.4" fill="none"/></svg>';
+const logoMark = '<svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#16B6A6"/><path d="M20 8v24M12 14h16M14 14l-3 7a3 3 0 006 0l-3-7zM26 14l-3 7a3 3 0 006 0l-3-7z" stroke="#042b27" stroke-width="1.5" fill="none"/></svg>';
 
 export function header(practices, currentPath = "") {
   const navItems = mainNav
@@ -54,6 +54,16 @@ export function header(practices, currentPath = "") {
     .join("");
 
   return `<header class="site-header">
+  <div class="util-bar"><div class="container">
+    <div class="util-bar__left">
+      <a href="mailto:${site.email}">${icons.mail} ${esc(site.email)}</a>
+      <a href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
+    </div>
+    <div class="util-bar__right">
+      <span>${esc(site.hours)}</span>
+      <span class="lang"><b>UA</b> <span>/ EN</span></span>
+    </div>
+  </div></div>
   <div class="container header__bar">
     <a class="logo" href="/" aria-label="${esc(site.name)} — головна">${logoMark}${site.name}<span>.</span></a>
     <nav class="nav" aria-label="Основна навігація"><ul class="nav__list">${navItems}</ul></nav>
@@ -61,7 +71,7 @@ export function header(practices, currentPath = "") {
       <a class="header__phone" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
       <a class="btn btn--primary" href="/contacts/#consult">Консультація</a>
     </div>
-    <button class="burger" data-burger aria-label="Меню" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    <button class="burger" data-burger aria-label="Меню" aria-expanded="false" aria-controls="mobile-nav">Меню <i><span></span></i></button>
   </div>
   <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
     ${mobileItems}

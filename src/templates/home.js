@@ -79,10 +79,12 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
 
   return `
 <section class="hero">
+  <div class="hero__glow"></div>
+  <div class="hero__mark" aria-hidden="true">LEGIUS</div>
   <div class="container hero__inner">
     <div class="reveal">
-      <span class="eyebrow" style="color:var(--c-gold-2)">${esc(site.tagline)} · Київ</span>
-      <h1>Захищаємо ваш бізнес, активи та репутацію</h1>
+      <span class="eyebrow">${esc(site.tagline)} · Київ</span>
+      <h1>Правова <span class="accent">перевага</span> для вашого бізнесу</h1>
       <p class="hero__sub">${esc(site.legalName)} — команда адвокатів і юристів, яка веде складні справи у корпоративному, податковому, сімейному та військовому праві. Перша консультація — безкоштовно.</p>
       <div class="hero__actions">
         <a class="btn btn--primary" href="/contacts/#consult">Безкоштовна консультація</a>
@@ -99,6 +101,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
       ${leadForm({ id: "hero-form", title: "Отримати консультацію", source: "hero", compact: true })}
     </div>
   </div>
+  <a class="hero__scrollcue" href="#" aria-label="Гортати далі"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
 </section>
 
 <section class="section"><div class="container">

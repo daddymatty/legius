@@ -58,8 +58,11 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/img/favicon.svg">
-<meta name="theme-color" content="#0e1c33">
+<meta name="theme-color" content="#0B1A33">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="stylesheet" href="/assets/css/styles.css">
 ${allSchemas.map(jsonLd).join("\n")}

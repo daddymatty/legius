@@ -17,7 +17,7 @@ export function teamIndexPage(team) {
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
-  <span class="eyebrow" style="color:var(--c-gold-2)">Команда</span>
+  <span class="eyebrow">Команда</span>
   <h1>Партнери, адвокати та юристи LEGIUS</h1>
   <p>Досвідчена команда, у якій кожну справу веде профільний фахівець. ${site.stats.lawyers} юристів, ${site.stats.years} років сукупної практики.</p>
 </div></section>

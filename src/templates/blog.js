@@ -18,11 +18,11 @@ export function blogIndexPage({ pillars, articles, clusterLabels }) {
   const crumbs = [{ name: "Головна", href: "/" }, { name: "Блог", href: "/blog/" }];
   const pillarCards = pillars
     .map(
-      (p) => `<a class="card reveal" href="/blog/${p.slug}/" style="background:linear-gradient(135deg,#0e1c33,#1b3358);color:#fff;border:none">
-        <span class="eyebrow" style="color:var(--c-gold-2)">Стовпова сторінка</span>
+      (p) => `<a class="card reveal" href="/blog/${p.slug}/" style="background:linear-gradient(135deg,#091a33,#16335C);color:#fff;border:none">
+        <span class="eyebrow">Стовпова сторінка</span>
         <h3 style="color:#fff">${esc(p.title)}</h3>
         <p style="color:#c4d0e4">${esc(p.excerpt)}</p>
-        <span class="card__link" style="color:var(--c-gold-2)">Відкрити хаб</span></a>`
+        <span class="card__link" style="color:var(--c-teal-l)">Відкрити хаб</span></a>`
     )
     .join("");
   const recent = articles
@@ -34,7 +34,7 @@ export function blogIndexPage({ pillars, articles, clusterLabels }) {
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
-  <span class="eyebrow" style="color:var(--c-gold-2)">Блог · Юридичний хаб знань</span>
+  <span class="eyebrow">Блог · Юридичний хаб знань</span>
   <h1>Юридична бібліотека LEGIUS</h1>
   <p>Понад ${articles.length} експертних матеріалів про сімейне, військове, корпоративне та податкове право. Практичні роз’яснення від адвокатів.</p>
 </div></section>
@@ -60,7 +60,7 @@ export function pillarPage(p, { articles }) {
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
-  <span class="eyebrow" style="color:var(--c-gold-2)">Стовпова сторінка · ${clusterArticles.length} статей</span>
+  <span class="eyebrow">Стовпова сторінка · ${clusterArticles.length} статей</span>
   <h1>${esc(p.h1)}</h1>
   <p>${esc(p.excerpt)}</p>
 </div></section>
@@ -97,7 +97,7 @@ export function articlePage(a, { practiceBySlug, pillarBySlug, articleBySlug }) 
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
-  <span class="eyebrow" style="color:var(--c-gold-2)">${esc(a.clusterLabel || "Блог")} · ${(a.readMins || 6)} хв читання</span>
+  <span class="eyebrow">${esc(a.clusterLabel || "Блог")} · ${(a.readMins || 6)} хв читання</span>
   <h1>${esc(a.h1 || a.title)}</h1>
   <p>Оновлено: ${esc(a.modified || a.date)} · ${esc(site.legalName)}</p>
 </div></section>
@@ -109,7 +109,7 @@ ${breadcrumbs(crumbs)}
         ${a.intro || `<p class="lead">${esc(a.excerpt)}</p>`}
         ${renderProseSections(a.sections)}
         ${practice ? `<div class="callout">Потрібна персональна консультація з теми «${esc(practice.shortTitle)}»? <a href="/practices/${practice.slug}/">Перейдіть на сторінку практики</a> або <a href="#consult">залиште заявку</a> — відповімо протягом 15 хвилин.</div>` : ""}
-        ${a.expand ? `<div class="callout" style="border-left-color:var(--c-navy)"><strong>Рекомендація щодо розширення матеріалу:</strong> ${esc(a.expand)}</div>` : ""}
+        ${a.expand ? `<div class="callout" style="border-left-color:var(--c-ink)"><strong>Рекомендація щодо розширення матеріалу:</strong> ${esc(a.expand)}</div>` : ""}
       </article>
       ${renderFaq(a.faq, "Питання та відповіді")}
       ${related ? `<section class="reveal" style="margin-top:2rem"><h2 style="font-size:1.5rem;margin-bottom:1rem">Читайте також</h2><div class="grid grid--3">${related}</div></section>` : ""}

@@ -28,7 +28,7 @@ export function practicePage(p, { practiceBySlug, cases }) {
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
-  <span class="eyebrow" style="color:var(--c-gold-2)">Практика</span>
+  <span class="eyebrow">Практика</span>
   <h1>${esc(p.h1)}</h1>
   <p>${esc(p.heroSub)}</p>
   <div class="hero__actions mt-2">
@@ -79,7 +79,7 @@ export function practicesIndexPage(practices) {
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
-  <span class="eyebrow" style="color:var(--c-gold-2)">Практики</span>
+  <span class="eyebrow">Практики</span>
   <h1>Напрями юридичної практики</h1>
   <p>12 спеціалізацій, у яких ми системно досягаємо результату для бізнесу та приватних клієнтів у Києві та по всій Україні.</p>
 </div></section>
