@@ -38,17 +38,15 @@ ${breadcrumbs(crumbs)}
 </div></section>
 
 <section class="section"><div class="container">
-  <div class="split">
-    <div class="prose reveal" style="max-width:none">${renderSections(p.sections)}</div>
-    <div>
-      <div style="position:sticky;top:88px;display:grid;gap:1.5rem">
-        <div class="card">
-          <h3 style="font-size:1.15rem;margin-bottom:1rem">Послуги напряму</h3>
-          ${serviceList(p.services)}
-        </div>
-        ${leadForm({ id: `practice-${p.slug}`, title: "Консультація юриста", source: `practice:${p.slug}` })}
+  <div class="content-aside">
+    <div class="content-aside__main prose reveal" style="max-width:none">${renderSections(p.sections)}</div>
+    <aside class="content-aside__side reveal">
+      <div class="card">
+        <h3 style="font-size:1.15rem;margin-bottom:1rem">Послуги напряму</h3>
+        ${serviceList(p.services)}
       </div>
-    </div>
+      ${leadForm({ id: `practice-${p.slug}`, title: "Консультація юриста", source: `practice:${p.slug}` })}
+    </aside>
   </div>
 </div></section>
 

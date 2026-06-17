@@ -21,9 +21,9 @@ ${breadcrumbs(crumbs)}
 </div></section>
 
 <section class="section"><div class="container">
-  <div class="split">
-    <div class="prose reveal" style="max-width:none">${renderSections(loc.sections)}</div>
-    <div><div style="position:sticky;top:88px">${leadForm({ id: `loc-${loc.slug}`, title: "Отримати консультацію", source: `location:${loc.slug}` })}</div></div>
+  <div class="content-aside">
+    <div class="content-aside__main prose reveal" style="max-width:none">${renderSections(loc.sections)}</div>
+    <aside class="content-aside__side reveal">${leadForm({ id: `loc-${loc.slug}`, title: "Отримати консультацію", source: `location:${loc.slug}` })}</aside>
   </div>
 </div></section>
 

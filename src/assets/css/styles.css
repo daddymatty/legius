@@ -215,6 +215,14 @@ h3 { font-size: var(--fs-lg); }
 
 /* about split */
 .split { display: grid; gap: 2.5rem; align-items: center; }
+/* content + sticky aside (practice / location / team bio) — single column until desktop */
+.content-aside { display: grid; gap: 2.5rem; align-items: start; }
+.content-aside__main { min-width: 0; }
+.content-aside__side { display: grid; gap: 1.5rem; }
+@media (min-width: 1024px) {
+  .content-aside { grid-template-columns: minmax(0, 1fr) 360px; gap: 3rem; }
+  .content-aside__side { position: sticky; top: 132px; }
+}
 .media-frame { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--c-mist); aspect-ratio: 4/3; }
 .media-frame img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -311,7 +319,7 @@ h3 { font-size: var(--fs-lg); }
 .callout { background: var(--c-mist); border: 1px solid var(--c-line); border-left: 4px solid var(--c-teal); border-radius: var(--radius-sm); padding: 1.2rem 1.4rem; }
 
 .article-layout { display: grid; gap: 2.5rem; }
-.toc { background: var(--c-mist); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.4rem; position: sticky; top: 96px; }
+.toc { background: var(--c-mist); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.4rem; position: sticky; top: 132px; }
 .toc h4 { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
 .toc a { display: block; padding: 0.35rem 0; font-size: 0.9rem; color: var(--c-slate); }
 .toc a:hover { color: var(--c-teal-d); }
@@ -366,11 +374,13 @@ h3 { font-size: var(--fs-lg); }
   .grid--3 { grid-template-columns: repeat(2,1fr); }
   .grid--4 { grid-template-columns: repeat(2,1fr); }
   .util-bar__left { display: flex; }
+  .footer__grid { grid-template-columns: 2fr 1fr 1fr; }
+  .features { grid-template-columns: 1fr 1fr; gap: 2rem 2.5rem; }
+}
+@media (min-width: 980px) {
   .split { grid-template-columns: 1fr 1fr; }
   .split--reverse > :first-child { order: 2; }
-  .footer__grid { grid-template-columns: 2fr 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
-  .features { grid-template-columns: 1fr 1fr; gap: 2rem 2.5rem; }
 }
 @media (min-width: 1024px) {
   .nav { display: block; }
