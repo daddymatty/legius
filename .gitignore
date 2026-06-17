@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Agent / tooling scratch artifacts (not part of the deliverable)
+scripts/
+tools/last-output.txt
+
+# OS / editor
+.DS_Store
+*.log
