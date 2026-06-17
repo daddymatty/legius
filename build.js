@@ -51,6 +51,14 @@ const CLUSTER_LABELS = {
   "viyskove-pravo": "Військове право",
   "korporatyvne-pravo": "Корпоративне право",
   "podatkove-pravo": "Податкове право",
+  "sudovi-spory": "Судові спори",
+  "nerukhomist": "Нерухомість",
+  "zemelne-pravo": "Земельне право",
+  "intelektualna-vlasnist": "Інтелектуальна власність",
+  "suprovid-investytsiy": "Супровід інвестицій",
+  "it-pravo": "IT Law",
+  "ma-zlyttya-pohlynannya": "M&A",
+  "kryminalnyy-zakhyst-biznesu": "Кримінальний захист бізнесу",
 };
 
 /* enrich articles with display labels */
