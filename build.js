@@ -34,6 +34,17 @@ import { makePlaceholders } from "./tools/placeholders.js";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.join(__dirname, "dist");
 
+/* Optional deploy config:
+   BASE_PATH — sub-path prefix for project hosting (e.g. "/legius" on GitHub Pages).
+   SITE_URL  — absolute origin (used for canonical, OG, sitemap, robots). */
+const BASE = (process.env.BASE_PATH || "").replace(/\/+$/, "");
+if (process.env.SITE_URL) site.domain = process.env.SITE_URL.replace(/\/+$/, "");
+
+/* Prefix root-absolute internal links/assets with BASE (skips //, full URLs, anchors). */
+function applyBase(html) {
+  return BASE ? html.replace(/(href|src)="\/(?!\/)/g, `$1="${BASE}/`) : html;
+}
+
 const CLUSTER_LABELS = {
   "simeyne-pravo": "Сімейне право",
   "viyskove-pravo": "Військове право",
@@ -53,7 +64,7 @@ const sitemapUrls = [];
 async function writePage(routePath, html, { lastmod, priority = "0.6", changefreq = "monthly", index = true } = {}) {
   const dir = routePath === "/" ? DIST : path.join(DIST, routePath);
   await mkdir(dir, { recursive: true });
-  await writeFile(path.join(dir, "index.html"), html, "utf8");
+  await writeFile(path.join(dir, "index.html"), applyBase(html), "utf8");
   if (index) {
     sitemapUrls.push({
       loc: site.domain + (routePath === "/" ? "/" : "/" + routePath + "/"),
@@ -309,10 +320,10 @@ async function build() {
     canonical: "/privacy/", noindex: true,
   }, privacyPage(), "/privacy/"), { index: false });
 
-  await writeFile(path.join(DIST, "404.html"), page({
+  await writeFile(path.join(DIST, "404.html"), applyBase(page({
     title: "404 — сторінку не знайдено | LEGIUS",
     description: "Сторінку не знайдено.", canonical: "/404.html", noindex: true,
-  }, notFoundPage()), "utf8");
+  }, notFoundPage())), "utf8");
 
   /* ---------- robots.txt, sitemap.xml, manifest ---------- */
   console.log("→ robots.txt, sitemap.xml, manifest");
@@ -329,11 +340,14 @@ async function build() {
     path.join(DIST, "site.webmanifest"),
     JSON.stringify({
       name: site.legalName, short_name: site.name, lang: "uk",
-      start_url: "/", display: "standalone", background_color: "#ffffff", theme_color: "#0e1c33",
-      icons: [{ src: "/assets/img/favicon.svg", sizes: "any", type: "image/svg+xml" }],
+      start_url: BASE + "/", display: "standalone", background_color: "#ffffff", theme_color: "#0e1c33",
+      icons: [{ src: BASE + "/assets/img/favicon.svg", sizes: "any", type: "image/svg+xml" }],
     }),
     "utf8"
   );
+
+  /* GitHub Pages: disable Jekyll processing so all files are served as-is. */
+  await writeFile(path.join(DIST, ".nojekyll"), "", "utf8");
 
   const totalPages = sitemapUrls.length + 1;
   console.log(`\n✓ Готово. Згенеровано ${totalPages} сторінок у dist/`);
