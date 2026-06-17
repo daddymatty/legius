@@ -4,8 +4,8 @@ import path from "node:path";
 
 const NAVY = "#0D0D0F";
 const NAVY2 = "#16161A";
-const GOLD = "#E50914"; /* accent — teal (kept var name for minimal diff) */
-const BRASS = "#E50914"; /* logo top-bar gold */
+const GOLD = "#ED1C24"; /* accent — teal (kept var name for minimal diff) */
+const BRASS = "#ED1C24"; /* logo top-bar gold */
 
 function initials(name = "") {
   return name.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join("").toUpperCase();

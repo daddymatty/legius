@@ -10,11 +10,11 @@
   --c-ink: #0D0D0F;          /* near-black — base/text/header */
   --c-ink-2: #16161A;        /* surface / gradient */
   --c-ink-3: #24242B;
-  --c-teal: #E50914;         /* primary accent — RED (name kept for minimal churn) */
-  --c-teal-d: #C00610;
-  --c-teal-l: #FF3B45;
-  --c-gold: #E50914;         /* merged to red for monochrome+red look */
-  --c-gold-l: #FF3B45;
+  --c-teal: #ED1C24;         /* primary accent — RED (name kept for minimal churn) */
+  --c-teal-d: #C8131A;
+  --c-teal-l: #FF4D54;
+  --c-gold: #ED1C24;         /* merged to red for monochrome+red look */
+  --c-gold-l: #FF4D54;
   --c-paper: #FFFFFF;
   --c-mist: #F4F4F5;         /* light sections */
   --c-mist-2: #ECECEE;
