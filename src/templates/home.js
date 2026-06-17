@@ -97,17 +97,23 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
 <section class="hero">
   <div class="hero__glow"></div>
   <div class="hero__mark" aria-hidden="true">LEGIUS</div>
-  <div class="container hero__inner hero__inner--center reveal">
-    <span class="eyebrow">${esc(site.tagline)} · Київ</span>
-    <h1>Правова <span class="accent">перевага</span> для вашого бізнесу</h1>
-    <p class="hero__sub">${esc(site.legalName)} — команда адвокатів і юристів, яка веде складні справи у корпоративному, податковому, сімейному та військовому праві. Перша консультація — безкоштовно.</p>
-    <div class="hero__form">${leadForm({ id: "hero-form", title: "Отримати безкоштовну консультацію", source: "hero", compact: true })}</div>
-    <div class="hero__trust">
-      <div class="stat"><strong>${site.stats.years}</strong><span>років практики</span></div>
-      <div class="stat"><strong>${site.stats.cases}</strong><span>виграних справ</span></div>
-      <div class="stat"><strong>${site.stats.lawyers}</strong><span>юристів у команді</span></div>
-      <div class="stat"><strong>${site.stats.winRate}</strong><span>успішних рішень</span></div>
+  <div class="container hero__inner">
+    <div class="reveal">
+      <span class="eyebrow">${esc(site.tagline)} · Київ</span>
+      <h1>Правова <span class="accent">перевага</span> для вашого бізнесу</h1>
+      <p class="hero__sub">${esc(site.legalName)} — команда адвокатів і юристів, яка веде складні справи у корпоративному, податковому, сімейному та військовому праві. Перша консультація — безкоштовно.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#hero-form">Безкоштовна консультація</a>
+        <a class="btn btn--ghost" style="color:#fff" href="/practices/">Наші практики</a>
+      </div>
+      <div class="hero__trust">
+        <div class="stat"><strong>${site.stats.years}</strong><span>років практики</span></div>
+        <div class="stat"><strong>${site.stats.cases}</strong><span>виграних справ</span></div>
+        <div class="stat"><strong>${site.stats.lawyers}</strong><span>юристів у команді</span></div>
+        <div class="stat"><strong>${site.stats.winRate}</strong><span>успішних рішень</span></div>
+      </div>
     </div>
+    <div class="reveal">${leadForm({ id: "hero-form", title: "Отримати безкоштовну консультацію", source: "hero", compact: true })}</div>
   </div>
   <a class="hero__scrollcue" href="#about" aria-label="Гортати далі"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
 </section>
