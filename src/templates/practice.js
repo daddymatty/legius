@@ -68,10 +68,12 @@ export function practicesIndexPage(practices) {
     { name: "Головна", href: "/" },
     { name: "Практики", href: "/practices/" },
   ];
-  const cards = practices
+  const list = practices
     .map(
-      (p) => `<a class="card reveal" href="/practices/${p.slug}/">
-        <h3>${esc(p.shortTitle)}</h3><p>${esc(p.summary)}</p><span class="card__link">Детальніше</span></a>`
+      (p, i) => `<a href="/practices/${p.slug}/">
+        <span class="num">${String(i + 1).padStart(2, "0")}</span>
+        <span class="pt"><b>${esc(p.shortTitle)}</b><span>${esc(p.summary)}</span></span>
+        <span class="arr" aria-hidden="true">→</span></a>`
     )
     .join("");
   return `
@@ -79,8 +81,8 @@ ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
   <span class="eyebrow">Практики</span>
   <h1>Напрями юридичної практики</h1>
-  <p>12 спеціалізацій, у яких ми системно досягаємо результату для бізнесу та приватних клієнтів у Києві та по всій Україні.</p>
+  <p>${practices.length} спеціалізацій, у яких ми системно досягаємо результату для бізнесу та приватних клієнтів у Києві та по всій Україні.</p>
 </div></section>
-<section class="section"><div class="container"><div class="grid grid--3">${cards}</div></div></section>
+<section class="section"><div class="container"><div class="practice-list reveal">${list}</div></div></section>
 ${ctaBand()}`;
 }

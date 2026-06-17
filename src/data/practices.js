@@ -24,8 +24,8 @@ import itLaw from "./practices/it-law.js";
 import mAndA from "./practices/m-and-a.js";
 
 export const practices = [
-  familyLaw, militaryLaw, corporateLaw, taxLaw, landLaw, realEstate,
-  litigation, criminalBusiness, ipLaw, investment, itLaw, mAndA,
+  familyLaw, criminalBusiness, corporateLaw, militaryLaw, taxLaw, litigation,
+  realEstate, landLaw, ipLaw, investment, itLaw, mAndA,
 ];
 
 export const practiceBySlug = Object.fromEntries(practices.map((p) => [p.slug, p]));

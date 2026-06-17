@@ -10,11 +10,11 @@
   --c-ink: #0D0D0F;          /* near-black — base/text/header */
   --c-ink-2: #16161A;        /* surface / gradient */
   --c-ink-3: #24242B;
-  --c-teal: #ED1C24;         /* primary accent — RED (name kept for minimal churn) */
-  --c-teal-d: #C8131A;
-  --c-teal-l: #FF4D54;
-  --c-gold: #ED1C24;         /* merged to red for monochrome+red look */
-  --c-gold-l: #FF4D54;
+  --c-teal: #E13D27;         /* primary accent — RED (name kept for minimal churn) */
+  --c-teal-d: #BB3320;
+  --c-teal-l: #F06E5A;
+  --c-gold: #E13D27;         /* merged to red for monochrome+red look */
+  --c-gold-l: #F06E5A;
   --c-paper: #FFFFFF;
   --c-mist: #F4F4F5;         /* light sections */
   --c-mist-2: #ECECEE;
@@ -231,6 +231,18 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .tile--quote .q { color: var(--c-teal); font-family: var(--font-head); font-weight: 900; font-size: 3rem; line-height: 0.6; display: block; }
 .tile--tall { min-height: 340px; }
 
+/* numbered practice list (big typographic links — Arzinger-style) */
+.practice-list { border-top: 1px solid var(--c-line); }
+.practice-list a { display: flex; align-items: center; gap: 1.2rem; padding: 1.5rem 0; border-bottom: 1px solid var(--c-line); transition: var(--transition); }
+.practice-list a:hover { padding-left: 0.9rem; }
+.practice-list .num { font-family: var(--font-head); font-weight: 800; font-size: 0.95rem; color: var(--c-muted); width: 2.6rem; flex: none; }
+.practice-list .pt { flex: 1; min-width: 0; }
+.practice-list .pt b { font-family: var(--font-head); font-weight: 800; font-size: clamp(1.4rem, 3.4vw, 2.3rem); display: block; line-height: 1.1; transition: var(--transition); }
+.practice-list a:hover .pt b { color: var(--c-teal); }
+.practice-list .pt span { color: var(--c-muted); font-size: 0.92rem; display: block; margin-top: 0.35rem; }
+.practice-list .arr { color: var(--c-teal); font-size: 1.6rem; opacity: 0; transform: translateX(-6px); transition: var(--transition); flex: none; }
+.practice-list a:hover .arr { opacity: 1; transform: none; }
+
 /* about split */
 .split { display: grid; gap: 2.5rem; align-items: center; }
 /* content + sticky aside (practice / location / team bio) — single column until desktop */
@@ -327,6 +339,7 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .prose h2 { font-size: 1.7rem; margin-top: 2.4rem; padding-top: 0.4rem; font-weight: 800; }
 .prose h3 { font-size: 1.3rem; margin-top: 1.8rem; font-weight: 700; }
 .prose p, .prose li { color: #2b3a4f; font-size: 1.05rem; }
+.prose p { text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
 .prose ul, .prose ol { padding-left: 1.3rem; display: grid; gap: 0.5rem; }
 .prose ul li { list-style: disc; } .prose ol li { list-style: decimal; }
 .prose blockquote { border-left: 3px solid var(--c-teal); padding: 0.6rem 0 0.6rem 1.4rem; color: var(--c-slate); font-style: italic; background: var(--c-mist); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
