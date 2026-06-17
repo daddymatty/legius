@@ -126,9 +126,15 @@ h3 { font-size: var(--fs-lg); }
 .lang b { color: #fff; } .lang span { opacity: 0.5; }
 
 .header__bar { display: flex; align-items: center; justify-content: space-between; height: 74px; gap: 1rem; }
-.logo { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-head); font-weight: 800; font-size: 1.45rem; letter-spacing: 0.12em; color: #fff; }
-.logo__mark { width: 34px; height: 34px; flex: none; }
-.logo span { color: var(--c-teal); }
+.logo { display: inline-flex; align-items: center; color: #fff; }
+.brand { display: inline-flex; align-items: center; font-family: "Jost", var(--font-head); font-weight: 300; font-size: 1.5rem; text-transform: uppercase; }
+.brand .brand-l, .brand .brand-r { letter-spacing: 0.46em; }
+.brand .brand-l { margin-right: 0.46em; }              /* tracking after L */
+.brand .brand-r { margin-left: 0.34em; padding-left: 0.46em; } /* tracking around the E-glyph */
+.brand-e { display: inline-flex; flex-direction: column; justify-content: center; gap: 0.16em; height: 0.92em; width: 0.62em; }
+.brand-e i { display: block; height: 0.085em; min-height: 1.5px; width: 100%; background: currentColor; }
+.brand-e i:first-child { background: var(--c-gold); }
+.site-footer .logo, .footer__brand .logo { color: #fff; }
 .nav { display: none; }
 .nav__list { display: flex; align-items: center; gap: 1.7rem; }
 .nav__link { font-family: var(--font-body); font-size: 0.86rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #eaf1fb; position: relative; padding: 0.5rem 0; }

@@ -27,7 +27,8 @@ export const practiceIcon = {
 };
 
 /* ---------- Logo ---------- */
-const logoMark = '<svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#16B6A6"/><path d="M20 8v24M12 14h16M14 14l-3 7a3 3 0 006 0l-3-7zM26 14l-3 7a3 3 0 006 0l-3-7z" stroke="#042b27" stroke-width="1.5" fill="none"/></svg>';
+/* Wordmark: thin tracked "LEGIUS" with the signature "E" as three bars (top one gold). */
+const logoWord = '<span class="brand"><span class="brand-l">L</span><span class="brand-e" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-r">GIUS</span></span>';
 
 export function header(practices, currentPath = "") {
   const navItems = mainNav
@@ -65,7 +66,7 @@ export function header(practices, currentPath = "") {
     </div>
   </div></div>
   <div class="container header__bar">
-    <a class="logo" href="/" aria-label="${esc(site.name)} — головна">${logoMark}${site.name}<span>.</span></a>
+    <a class="logo" href="/" aria-label="${esc(site.name)} — головна">${logoWord}</a>
     <nav class="nav" aria-label="Основна навігація"><ul class="nav__list">${navItems}</ul></nav>
     <div class="header__cta">
       <a class="header__phone" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
@@ -146,7 +147,7 @@ export function footer(practices) {
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <a class="logo" href="/">${logoMark}${site.name}<span>.</span></a>
+        <a class="logo" href="/" aria-label="${esc(site.name)}">${logoWord}</a>
         <p>${esc(site.legalName)}. Преміальний юридичний супровід бізнесу та приватних клієнтів у Києві з ${site.founded} року.</p>
         <div class="chips mt-2">
           <a class="chip" href="${site.social.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
