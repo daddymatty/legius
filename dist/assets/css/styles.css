@@ -276,10 +276,14 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .team-card__photo { aspect-ratio: 3/4; border-radius: var(--radius); overflow: hidden; background: var(--c-mist); margin-bottom: 1rem; }
 .team-card h3 { font-size: 1.2rem; font-weight: 700; }
 .team-card .role { color: var(--c-teal-d); font-weight: 700; font-size: 0.88rem; }
-/* photo treatment — premium duotone (b/w), reveals colour on hover */
-.team-card__photo img, .team-photo img, .lawyer-card__row img { filter: grayscale(1) contrast(1.04) brightness(0.98); transition: filter 0.35s ease; }
-.team-card:hover .team-card__photo img, .team-photo:hover img { filter: grayscale(0) contrast(1) brightness(1); }
+/* photo treatment — full colour + smooth zoom on hover */
+.team-card__photo img, .team-photo img, .lawyer-card__row img { transition: transform 0.5s ease, filter 0.4s ease; }
 .team-card__photo img { width: 100%; height: 100%; object-fit: cover; }
+.team-card__photo, .team-photo { position: relative; }
+.team-card__photo::after, .team-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(225,61,39,0.45), transparent 55%); opacity: 0; transition: opacity 0.4s ease; pointer-events: none; }
+.team-card:hover .team-card__photo img, .team-photo:hover img { transform: scale(1.06); filter: saturate(1.1) contrast(1.03); }
+.team-card:hover .team-card__photo::after, .team-photo:hover::after { opacity: 1; }
+.lawyer-card__row:hover img { transform: scale(1.05); }
 
 /* testimonials */
 .quote-card { background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius); padding: clamp(1.6rem, 3vw, 2rem); height: 100%; }
