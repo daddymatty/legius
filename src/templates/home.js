@@ -101,10 +101,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
     <span class="eyebrow">${esc(site.tagline)} · Київ</span>
     <h1>Правова <span class="accent">перевага</span> для вашого бізнесу</h1>
     <p class="hero__sub">${esc(site.legalName)} — команда адвокатів і юристів, яка веде складні справи у корпоративному, податковому, сімейному та військовому праві. Перша консультація — безкоштовно.</p>
-    <div class="hero__actions">
-      <a class="btn btn--primary" href="/contacts/#consult">Безкоштовна консультація</a>
-      <a class="btn btn--ghost" style="color:#fff" href="/practices/">Наші практики</a>
-    </div>
+    <div class="hero__form">${leadForm({ id: "hero-form", title: "Отримати безкоштовну консультацію", source: "hero", compact: true })}</div>
     <div class="hero__trust">
       <div class="stat"><strong>${site.stats.years}</strong><span>років практики</span></div>
       <div class="stat"><strong>${site.stats.cases}</strong><span>виграних справ</span></div>

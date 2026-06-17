@@ -197,6 +197,7 @@ h3 { font-size: var(--fs-lg); }
 .hero__inner--center .hero__sub { margin: 1.1rem auto 0; text-align: center; }
 .hero__inner--center .hero__actions { margin-top: 1.9rem; justify-content: center; }
 .hero__inner--center .hero__trust { justify-content: center; }
+.hero__form { max-width: 540px; margin: 1.9rem auto 0; text-align: left; }
 
 /* ---------- Cards / grids ---------- */
 .grid { display: grid; gap: clamp(1.1rem, 2.5vw, 1.6rem); }
