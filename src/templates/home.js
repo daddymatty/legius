@@ -15,18 +15,34 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
     )
     .join("");
 
-  const advantages = [
-    { n: "01", h: "Партнери ведуть ваш проєкт особисто", p: "Над кожною справою працює партнер або старший юрист — без передачі помічникам." },
-    { n: "02", h: "Прогнозований результат і бюджет", p: "Фіксована вартість або зрозумілі етапи. Ви завжди знаєте, за що платите." },
-    { n: "03", h: "Галузева експертиза", p: "Команда з 24 юристів у 12 практиках: від M&A до військового права." },
-    { n: "04", h: "Повна конфіденційність", p: "Адвокатська таємниця, NDA та захищений документообіг за замовчуванням." },
-    { n: "05", h: `${site.stats.winRate} виграних справ`, p: "Стратегія, заснована на судовій практиці та реальних шансах, а не на обіцянках." },
-    { n: "06", h: "Швидка реакція 24/7", p: "Гаряча лінія для невідкладних ситуацій: обшук, затримання, арешт рахунків." },
-  ]
-    .map(
-      (a) => `<div class="feature reveal"><div class="feature__num">${a.n}</div><div><h3>${esc(a.h)}</h3><p>${esc(a.p)}</p></div></div>`
-    )
-    .join("");
+  const mosaicTiles = `
+    <a class="tile tile--dark tile--tall" href="/about/">
+      <div><h3>Партнери ведуть кожну справу особисто</h3><p>Над вашим проєктом працює партнер або старший юрист — без передачі помічникам.</p></div>
+      <span class="tile__cta">Про компанію →</span>
+    </a>
+    <a class="tile tile--red" href="/cases/">
+      <div><span class="tile__big">${site.stats.winRate}</span><p>виграних справ — стратегія на основі реальних шансів, а не обіцянок</p></div>
+      <span class="tile__cta">Кейси →</span>
+    </a>
+    <a class="tile tile--light" href="/team/">
+      <div><span class="tile__big">${site.stats.lawyers}</span><p>юристів у 12 практиках — від M&amp;A до військового права</p></div>
+      <span class="tile__cta">Команда →</span>
+    </a>
+    <a class="tile tile--gray" href="/about/">
+      <div><span class="tile__big">${site.rating.value}</span><p>середній рейтинг на основі ${site.rating.count} відгуків клієнтів</p></div>
+      <span class="tile__cta">Про нас →</span>
+    </a>
+    <div class="tile tile--quote">
+      <div><span class="q">“</span><h3>Ми знаємо, як вирішити вашу справу — і доводимо її до результату.</h3></div>
+    </div>
+    <a class="tile tile--dark" href="/practices/">
+      <div><span class="tile__big">${site.stats.years}</span><p>років практики у складних та кризових справах</p></div>
+      <span class="tile__cta">Практики →</span>
+    </a>
+    <a class="tile tile--red tile--tall" href="/contacts/">
+      <div><h3>Регіональне покриття: Київ та вся Україна</h3><p>Зустріч в офісі або онлайн. Гаряча лінія 24/7 для невідкладних ситуацій — обшук, затримання, арешт рахунків.</p></div>
+      <span class="tile__cta">Контакти →</span>
+    </a>`;
 
   const caseCards = cases
     .slice(0, 6)
@@ -125,7 +141,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
 
 <section class="section"><div class="container">
   <div class="section__head"><span class="eyebrow">Наші переваги</span><h2>Чому клієнти обирають LEGIUS</h2></div>
-  <div class="features features--3">${advantages}</div>
+  <div class="mosaic reveal">${mosaicTiles}</div>
 </div></section>
 
 <section class="section section--soft"><div class="container">

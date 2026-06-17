@@ -18,7 +18,7 @@ export function blogIndexPage({ pillars, articles, clusterLabels }) {
   const crumbs = [{ name: "Головна", href: "/" }, { name: "Блог", href: "/blog/" }];
   const pillarCards = pillars
     .map(
-      (p) => `<a class="card reveal" href="/blog/${p.slug}/" style="background:linear-gradient(135deg,#091a33,#16335C);color:#fff;border:none">
+      (p) => `<a class="card reveal" href="/blog/${p.slug}/" style="background:linear-gradient(135deg,#0D0D0F,#1A1A20);color:#fff;border:none">
         <span class="eyebrow">Стовпова сторінка</span>
         <h3 style="color:#fff">${esc(p.title)}</h3>
         <p style="color:#c4d0e4">${esc(p.excerpt)}</p>
