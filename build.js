@@ -19,7 +19,8 @@ import { pillars, articles, articleBySlug, pillarBySlug } from "./src/data/blog.
 import { layout } from "./src/templates/layout.js";
 import { header, footer } from "./src/templates/components.js";
 import { homePage } from "./src/templates/home.js";
-import { practicePage, practicesIndexPage } from "./src/templates/practice.js";
+import { practicePage, servicePage, practicesIndexPage } from "./src/templates/practice.js";
+import { practiceServices, serviceContent } from "./src/lib/services.js";
 import { locationPage } from "./src/templates/location.js";
 import { teamIndexPage, teamMemberPage } from "./src/templates/team.js";
 import { casesPage } from "./src/templates/cases.js";
@@ -156,6 +157,33 @@ async function build() {
       ),
       { priority: "0.9" }
     );
+
+    /* individual service pages under each practice */
+    for (const svc of practiceServices(p)) {
+      const sc = serviceContent(p, svc);
+      await writePage(
+        `practices/${p.slug}/${svc.slug}`,
+        page(
+          {
+            title: `${svc.title} — ${p.shortTitle} | ${site.name}`,
+            description: `${svc.title}: послуга практики «${p.shortTitle}» від LEGIUS у Києві. Профільний адвокат, прозора вартість, конфіденційність. Безкоштовна консультація.`,
+            canonical: `/practices/${p.slug}/${svc.slug}/`,
+            ogType: "article",
+            schemas: [
+              faqSchema(sc.faq || []),
+              breadcrumbSchema([
+                { name: "Головна", href: "/" },
+                { name: "Практики", href: "/practices/" },
+                { name: p.shortTitle, href: `/practices/${p.slug}/` },
+                { name: svc.title, href: `/practices/${p.slug}/${svc.slug}/` },
+              ]),
+            ],
+          },
+          servicePage(p, svc, { practiceBySlug, team })
+        ),
+        { priority: "0.7" }
+      );
+    }
   }
 
   /* ---------- Local landing pages (root level) ---------- */

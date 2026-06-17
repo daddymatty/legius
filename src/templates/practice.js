@@ -1,7 +1,46 @@
-/* Practice area page. */
+/* Practice area page (overview + services hub) + individual service pages. */
 import { site } from "../data/site.js";
 import { leadForm, ctaBand, breadcrumbs, icons } from "./components.js";
-import { renderSections, renderFaq, serviceList, relatedPractices, escape as esc } from "./render.js";
+import { renderSections, renderFaq, relatedPractices, escape as esc } from "./render.js";
+import { practiceServices, serviceContent } from "../lib/services.js";
+
+function findLawyer(p, team) {
+  return (
+    (p.lead && team.find((m) => m.slug === p.lead)) ||
+    team.find((m) => (m.practices || []).includes(p.slug)) ||
+    team.find((m) => m.roleKey === "managing-partner") ||
+    team[0]
+  );
+}
+
+function lawyerCard(lawyer) {
+  if (!lawyer) return "";
+  return `<div class="card">
+    <span class="eyebrow">Відповідальний адвокат</span>
+    <a class="lawyer-card__row" href="/team/${lawyer.slug}/">
+      <img src="${lawyer.photo}" width="64" height="80" loading="lazy" alt="${esc(lawyer.name)} — ${esc(lawyer.role)}">
+      <span><b>${esc(lawyer.name)}</b><span>${esc(lawyer.role)}</span></span>
+    </a>
+    <a class="btn btn--ghost btn--block" href="/team/${lawyer.slug}/">Профіль адвоката</a>
+  </div>`;
+}
+
+const WHY_US = [
+  { h: "Профільний адвокат", p: "Вашу справу веде фахівець саме з цього напряму, а не «універсал»." },
+  { h: "Прогнозований результат", p: "Будуємо стратегію на судовій практиці та реальних шансах, а не на обіцянках." },
+  { h: "Прозора вартість", p: "Фіксовані етапи й зрозумілий бюджет — ви завжди знаєте, за що платите." },
+  { h: "Повна конфіденційність", p: "Адвокатська таємниця, NDA та захищений документообіг за замовчуванням." },
+];
+
+function whyUsBlock(p) {
+  const items = WHY_US.map(
+    (a) => `<div class="feature reveal"><div class="feature__num">${icons.check}</div><div><h3>${esc(a.h)}</h3><p>${esc(a.p)}</p></div></div>`
+  ).join("");
+  return `<section class="section section--soft"><div class="container">
+    <div class="section__head"><span class="eyebrow">Чому LEGIUS</span><h2>Чому цей напрям довіряють нам</h2></div>
+    <div class="features features--3">${items}</div>
+  </div></section>`;
+}
 
 export function practicePage(p, { practiceBySlug, cases, team = [] }) {
   const crumbs = [
@@ -9,24 +48,22 @@ export function practicePage(p, { practiceBySlug, cases, team = [] }) {
     { name: "Практики", href: "/practices/" },
     { name: p.shortTitle, href: `/practices/${p.slug}/` },
   ];
-  const lawyer =
-    (p.lead && team.find((m) => m.slug === p.lead)) ||
-    team.find((m) => (m.practices || []).includes(p.slug)) ||
-    team.find((m) => m.roleKey === "managing-partner") ||
-    team[0];
-  const lawyerCard = lawyer
-    ? `<div class="card">
-        <span class="eyebrow">Відповідальний адвокат</span>
-        <a class="lawyer-card__row" href="/team/${lawyer.slug}/">
-          <img src="${lawyer.photo}" width="64" height="80" loading="lazy" alt="${esc(lawyer.name)} — ${esc(lawyer.role)}">
-          <span><b>${esc(lawyer.name)}</b><span>${esc(lawyer.role)}</span></span>
-        </a>
-        <a class="btn btn--ghost btn--block" href="/team/${lawyer.slug}/">Профіль адвоката</a>
-      </div>`
-    : "";
+  const lawyer = findLawyer(p, team);
+  const services = practiceServices(p);
+  const overview = renderSections((p.sections || []).slice(0, 2)); // trimmed overview
+
+  const serviceCards = services
+    .map(
+      (s) => `<a class="card reveal" href="/practices/${p.slug}/${s.slug}/">
+        <h3>${esc(s.title)}</h3>
+        <p>${esc(s.summary)}</p>
+        <span class="card__link">Детальніше</span></a>`
+    )
+    .join("");
+
   const relCases = cases.filter((c) => c.practice === p.slug).slice(0, 3);
   const caseBlock = relCases.length
-    ? `<section class="section section--soft reveal"><div class="container">
+    ? `<section class="section reveal"><div class="container">
         <div class="section__head"><span class="eyebrow">Кейси</span><h2>Наш досвід у цій сфері</h2></div>
         <div class="grid grid--3">${relCases
           .map(
@@ -54,17 +91,20 @@ ${breadcrumbs(crumbs)}
 
 <section class="section"><div class="container">
   <div class="content-aside">
-    <div class="content-aside__main prose reveal" style="max-width:none">${renderSections(p.sections)}</div>
+    <div class="content-aside__main prose reveal" style="max-width:none">${overview}</div>
     <aside class="content-aside__side reveal">
-      ${lawyerCard}
-      <div class="card">
-        <h3 style="font-size:1.15rem;margin-bottom:1rem">Послуги напряму</h3>
-        ${serviceList(p.services)}
-      </div>
+      ${lawyerCard(lawyer)}
       ${leadForm({ id: `practice-${p.slug}`, title: "Консультація юриста", source: `practice:${p.slug}` })}
     </aside>
   </div>
 </div></section>
+
+<section class="section section--soft"><div class="container">
+  <div class="section__head"><span class="eyebrow">Послуги напряму</span><h2>Що ми робимо в межах практики</h2><p class="lead">Оберіть послугу, щоб дізнатися деталі, етапи роботи та вартість.</p></div>
+  <div class="grid grid--3">${serviceCards}</div>
+</div></section>
+
+${whyUsBlock(p)}
 
 ${caseBlock}
 
@@ -76,6 +116,58 @@ ${ctaBand({ title: `Потрібна допомога у сфері «${p.shortT
 
 <section class="section" id="consult"><div class="container" style="max-width:640px">
   ${leadForm({ id: `practice-bottom-${p.slug}`, title: `Замовити консультацію: ${p.shortTitle}`, source: `practice-bottom:${p.slug}` })}
+</div></section>`;
+}
+
+/* ---------- Individual service page ---------- */
+export function servicePage(p, svc, { practiceBySlug, team = [] }) {
+  const crumbs = [
+    { name: "Головна", href: "/" },
+    { name: "Практики", href: "/practices/" },
+    { name: p.shortTitle, href: `/practices/${p.slug}/` },
+    { name: svc.title, href: `/practices/${p.slug}/${svc.slug}/` },
+  ];
+  const lawyer = findLawyer(p, team);
+  const content = serviceContent(p, svc);
+  const others = practiceServices(p).filter((s) => s.slug !== svc.slug);
+  const otherList = others.length
+    ? `<div class="card">
+        <h3 style="font-size:1.15rem;margin-bottom:0.8rem">Інші послуги напряму</h3>
+        <ul style="display:grid;gap:0.5rem">${others
+          .map((s) => `<li><a href="/practices/${p.slug}/${s.slug}/" style="color:var(--c-slate)">${esc(s.title)}</a></li>`)
+          .join("")}</ul>
+      </div>`
+    : "";
+
+  return `
+${breadcrumbs(crumbs)}
+<section class="page-hero"><div class="container">
+  <span class="eyebrow"><a href="/practices/${p.slug}/" style="color:inherit">${esc(p.shortTitle)}</a></span>
+  <h1>${esc(svc.title)}</h1>
+  <p>${esc(content.heroSub)}</p>
+  <div class="hero__actions mt-2">
+    <a class="btn btn--primary" href="#consult">Отримати консультацію</a>
+    <a class="btn btn--ghost" style="color:#fff" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
+  </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="content-aside">
+    <div class="content-aside__main prose reveal" style="max-width:none">${renderSections(content.sections)}</div>
+    <aside class="content-aside__side reveal">
+      ${lawyerCard(lawyer)}
+      ${otherList}
+      ${leadForm({ id: `service-${p.slug}-${svc.slug}`, title: "Консультація щодо послуги", source: `service:${p.slug}/${svc.slug}` })}
+    </aside>
+  </div>
+</div></section>
+
+${renderFaq(content.faq, `Питання щодо послуги`)}
+
+${ctaBand({ title: `Потрібна послуга «${svc.title}»?`, text: "Залиште заявку — профільний адвокат проаналізує вашу ситуацію та запропонує рішення." })}
+
+<section class="section" id="consult"><div class="container" style="max-width:640px">
+  ${leadForm({ id: `service-bottom-${p.slug}-${svc.slug}`, title: `Замовити: ${svc.title}`, source: `service-bottom:${p.slug}/${svc.slug}` })}
 </div></section>`;
 }
 

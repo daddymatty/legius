@@ -371,6 +371,10 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .prose h3 { margin-top: 1.5rem; }
 .prose h2 + p, .prose h2 + ul, .prose h2 + ol,
 .prose h3 + p, .prose h3 + ul, .prose h3 + ol { margin-top: 0.65rem; }
+/* spacing for paragraphs INSIDE rendered <section> blocks (was a solid wall) */
+.prose section > * + * { margin-top: 1.15rem; }
+.prose > section + section { margin-top: 2.6rem; }
+.prose section > h2:first-child { margin-top: 0; }
 .prose ul, .prose ol { padding-left: 1.3rem; display: grid; gap: 0.5rem; }
 .prose ul li { list-style: disc; } .prose ol li { list-style: decimal; }
 .prose blockquote { border-left: 3px solid var(--c-teal); padding: 0.6rem 0 0.6rem 1.4rem; color: var(--c-slate); font-style: italic; background: var(--c-mist); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
