@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>LEGIUS — Концепт B «Bold Dark» (ближче до Arzinger)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Inter:wght@400;500&family=Jost:wght@300&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0D0D0F; --bg-2:#141418; --surface:#1A1A20;
+  --red:#E23A4D; --red-d:#c52a3c;
+  --white:#F4F4F6; --muted:#8C8C96; --line:rgba(255,255,255,.10);
+  --display:"Archivo",sans-serif; --body:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+body{font-family:var(--body);background:var(--bg);color:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:var(--display);font-weight:900;line-height:.96;letter-spacing:-.03em;text-transform:lowercase}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+.section{padding:96px 0}
+.eyebrow{font-family:var(--body);font-weight:600;font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;color:var(--red)}
+.muted{color:var(--muted)}
+
+/* studio note */
+.studio{background:#000;border-bottom:1px solid var(--line);padding:18px 0;font-family:var(--body)}
+.studio .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+.studio b{font-weight:700}.studio span{color:var(--muted);font-size:.85rem}
+.pill{font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.3rem .7rem;border-radius:100px;border:1px solid var(--line);color:var(--muted)}
+
+/* logo */
+.brand{display:inline-flex;align-items:center;font-family:"Jost",sans-serif;font-weight:300;font-size:1.5rem;text-transform:uppercase;color:#fff}
+.brand .l{letter-spacing:.34em}.brand .r{letter-spacing:.34em;margin-left:.34em}
+.brand-e{display:inline-flex;flex-direction:column;justify-content:space-between;height:.72em;width:.5em;margin:0 .3em}
+.brand-e i{height:.11em;min-height:2.5px;width:100%;background:#fff;border-radius:1px}
+.brand-e i:first-child{background:var(--red)}
+
+/* nav */
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:92px}
+.menu{display:none;gap:34px;font-family:var(--body);font-weight:500;font-size:.92rem}
+.menu a{position:relative;padding:6px 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--red);transition:.25s}
+.menu a:hover::after{width:100%}
+.nav .right{display:flex;align-items:center;gap:18px;font-family:var(--body);font-size:.9rem}
+.nav .right .lang b{color:#fff}.nav .right .lang span{color:var(--muted)}
+@media(min-width:1024px){.menu{display:flex}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero__mark{position:absolute;right:-4%;top:8%;font-family:var(--display);font-weight:900;font-size:clamp(9rem,26vw,26rem);color:rgba(255,255,255,.035);letter-spacing:-.04em;line-height:.8;pointer-events:none;text-transform:uppercase}
+.hero__inner{position:relative;z-index:2;padding:60px 0 90px}
+.hero h1{font-size:clamp(3.2rem,11vw,9rem);max-width:14ch}
+.hero h1 .dot{color:var(--red)}
+.hero__sub{font-family:var(--body);font-size:1.15rem;color:var(--muted);max-width:46ch;margin-top:30px}
+.hero__links{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 40px;margin-top:64px;max-width:680px}
+@media(min-width:760px){.hero__links{grid-template-columns:repeat(3,1fr)}}
+.hero__links a{font-family:var(--display);font-weight:700;font-size:1.05rem;text-transform:lowercase;padding-top:14px;border-top:1px solid var(--line);transition:.2s}
+.hero__links a:hover{color:var(--red);border-color:var(--red)}
+.scrollcue{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);color:rgba(255,255,255,.4);z-index:2}
+
+.btn{font-family:var(--body);font-weight:700;font-size:.95rem;padding:16px 32px;border-radius:6px;display:inline-flex;gap:.5rem;align-items:center;transition:.2s;border:1.5px solid transparent;cursor:pointer}
+.btn--red{background:var(--red);color:#fff}.btn--red:hover{background:var(--red-d)}
+.btn--ghost{border-color:rgba(255,255,255,.3);color:#fff}.btn--ghost:hover{border-color:#fff;background:#fff;color:#000}
+.hero__cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:40px}
+
+/* palette */
+.head{max-width:680px;margin-bottom:48px}
+.head h2{font-size:clamp(2rem,5vw,3.4rem)}
+.head p{font-family:var(--body);color:var(--muted);margin-top:14px}
+.sw-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(min-width:640px){.sw-grid{grid-template-columns:repeat(5,1fr)}}
+.sw{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.sw .c{height:88px}.sw .m{padding:12px 14px;font-family:var(--body)}
+.sw .m b{font-size:.86rem}.sw .m span{display:block;font-size:.74rem;color:var(--muted)}
+
+/* type */
+.type{border:1px solid var(--line);border-radius:18px;padding:38px;background:var(--bg-2)}
+.type .lbl{font-family:var(--body);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.t-d{font-family:var(--display);font-weight:900;text-transform:lowercase;font-size:clamp(2.4rem,6vw,4.4rem);letter-spacing:-.03em;line-height:.98}
+.t-h{font-family:var(--display);font-weight:800;text-transform:lowercase;font-size:1.8rem;margin-top:30px}
+.t-b{font-family:var(--body);color:#cfcfd6;margin-top:18px;max-width:62ch}
+
+/* practice list (big typographic rows — Arzinger-style) */
+.plist{border-top:1px solid var(--line)}
+.plist a{display:flex;align-items:center;gap:20px;padding:26px 0;border-bottom:1px solid var(--line);transition:.2s}
+.plist a:hover{padding-left:14px}
+.plist .num{font-family:var(--body);font-size:.8rem;color:var(--muted);width:38px;flex:none}
+.plist .ttl{font-family:var(--display);font-weight:800;text-transform:lowercase;font-size:clamp(1.6rem,4vw,2.6rem);flex:1;transition:.2s}
+.plist a:hover .ttl{color:var(--red)}
+.plist .arr{color:var(--red);opacity:0;transition:.2s;font-size:1.6rem}
+.plist a:hover .arr{opacity:1}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+@media(min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--bg);padding:38px 26px}
+.stat b{font-family:var(--display);font-weight:900;font-size:clamp(2.4rem,5vw,3.4rem);display:block}
+.stat b em{color:var(--red);font-style:normal}
+.stat span{font-family:var(--body);color:var(--muted);font-size:.86rem}
+
+/* cta */
+.cta{background:var(--red);border-radius:22px;padding:64px 40px;text-align:center}
+.cta h2{color:#fff;font-size:clamp(2rem,5vw,3.2rem)}
+.cta p{font-family:var(--body);color:rgba(255,255,255,.85);max-width:48ch;margin:14px auto 28px}
+.cta .btn--dark{background:#0D0D0F;color:#fff}
+
+footer{border-top:1px solid var(--line);padding:34px 0;font-family:var(--body);color:var(--muted);font-size:.85rem;text-align:center}
+.compare{display:inline-flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:10px}
+.compare a{color:var(--white);text-decoration:underline;text-underline-offset:3px}
+</style>
+</head>
+<body>
+
+<div class="studio"><div class="wrap">
+  <div><b>LEGIUS · Концепт B — «Bold Dark»</b> &nbsp; <span>ближче до Arzinger: чорний фон, жирний lowercase, червоний акцент, вотермарк</span></div>
+  <span class="pill">Concept B</span>
+</div></div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero__mark" aria-hidden="true">LEGIUS</div>
+  <nav class="nav"><div class="wrap">
+    <a class="brand" href="#"><span class="l">L</span><span class="brand-e"><i></i><i></i><i></i></span><span class="r">GIUS</span></a>
+    <div class="menu">
+      <a href="#">Практики</a><a href="#">Команда</a><a href="#">Кейси</a><a href="#">Блог</a><a href="#">Контакти</a>
+    </div>
+    <div class="right"><span class="lang"><b>UA</b> <span>/ EN</span></span> <span>⌕</span></div>
+  </div></nav>
+
+  <div class="wrap hero__inner">
+    <span class="eyebrow">Юридична компанія · Київ</span>
+    <h1 style="margin-top:22px">ми знаємо право<span class="dot">.</span></h1>
+    <p class="hero__sub">Провідна команда адвокатів, що веде найскладніші справи бізнесу, інвесторів і власників. Впевнено. У кожній справі.</p>
+    <div class="hero__cta">
+      <a class="btn btn--red" href="#">Замовити консультацію</a>
+      <a class="btn btn--ghost" href="#">Наші практики</a>
+    </div>
+    <div class="hero__links">
+      <a href="#">корпоративне право</a><a href="#">військове право</a><a href="#">податкові спори</a>
+      <a href="#">m&amp;a</a><a href="#">судові спори</a><a href="#">it law</a>
+    </div>
+  </div>
+  <div class="scrollcue"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M6 13l6 6 6-6"/></svg></div>
+</header>
+
+<!-- PALETTE -->
+<section class="section"><div class="wrap">
+  <div class="head"><span class="eyebrow">01 — палітра</span><h2>чорний, білий, червоний</h2><p>Майже чорна база, чистий білий текст і один виразний червоний акцент — мінімум кольору, максимум контрасту (як в Arzinger).</p></div>
+  <div class="sw-grid">
+    <div class="sw"><div class="c" style="background:#0D0D0F"></div><div class="m"><b>Ink</b><span>#0D0D0F</span></div></div>
+    <div class="sw"><div class="c" style="background:#1A1A20"></div><div class="m"><b>Surface</b><span>#1A1A20</span></div></div>
+    <div class="sw"><div class="c" style="background:#E23A4D"></div><div class="m"><b>Red</b><span>#E23A4D · акцент</span></div></div>
+    <div class="sw"><div class="c" style="background:#8C8C96"></div><div class="m"><b>Muted</b><span>#8C8C96</span></div></div>
+    <div class="sw"><div class="c" style="background:#F4F4F6"></div><div class="m"><b>White</b><span>#F4F4F6</span></div></div>
+  </div>
+</div></section>
+
+<!-- TYPOGRAPHY -->
+<section class="section" style="background:var(--bg-2);border-block:1px solid var(--line)"><div class="wrap">
+  <div class="head"><span class="eyebrow">02 — типографіка</span><h2>величезний жирний lowercase</h2><p>Archivo 900 у нижньому регістрі для гучних заголовків + Inter для тексту. Енергійно й впевнено.</p></div>
+  <div class="type">
+    <div class="lbl">Display · Archivo 900 · lowercase</div>
+    <div class="t-d">захищаємо те, що важливо.</div>
+    <div class="lbl" style="margin-top:30px">Heading · Archivo 800</div>
+    <div class="t-h">практики, що вирішують найскладніше</div>
+    <div class="lbl" style="margin-top:30px">Body · Inter</div>
+    <p class="t-b">LEGIUS — команда, яка поєднує глибину експертизи з прозорим сервісом і вимірюваним результатом. Ми беремось за складне й доводимо справу до перемоги.</p>
+  </div>
+</div></section>
+
+<!-- PRACTICE LIST -->
+<section class="section"><div class="wrap">
+  <div class="head"><span class="eyebrow">03 — практики</span><h2>напрями як великі посилання</h2></div>
+  <div class="plist">
+    <a href="#"><span class="num">01</span><span class="ttl">корпоративне право</span><span class="arr">→</span></a>
+    <a href="#"><span class="num">02</span><span class="ttl">військове право</span><span class="arr">→</span></a>
+    <a href="#"><span class="num">03</span><span class="ttl">податкові спори</span><span class="arr">→</span></a>
+    <a href="#"><span class="num">04</span><span class="ttl">судові спори</span><span class="arr">→</span></a>
+    <a href="#"><span class="num">05</span><span class="ttl">m&amp;a та інвестиції</span><span class="arr">→</span></a>
+  </div>
+</div></section>
+
+<!-- STATS -->
+<section class="section" style="padding-top:0"><div class="wrap">
+  <div class="stats">
+    <div class="stat"><b>15<em>+</em></b><span>років практики</span></div>
+    <div class="stat"><b>3200<em>+</em></b><span>виграних справ</span></div>
+    <div class="stat"><b>24</b><span>юристи</span></div>
+    <div class="stat"><b>94<em>%</em></b><span>успішних рішень</span></div>
+  </div>
+</div></section>
+
+<!-- CTA -->
+<section class="section" style="padding-top:0"><div class="wrap">
+  <div class="cta">
+    <h2>розкажіть про вашу справу</h2>
+    <p>Перша консультація — безкоштовно. Профільний адвокат оцінить ситуацію та запропонує стратегію.</p>
+    <a class="btn btn--dark" href="#">Безкоштовна консультація →</a>
+  </div>
+</div></section>
+
+<footer>
+  © LEGIUS · Концепт B «Bold Dark» — дизайн-прев'ю (не продакшн)
+  <div class="compare">Порівняй: <a href="../">Концепт A «Editorial Premium» (бірюзовий)</a></div>
+</footer>
+
+</body>
+</html>
