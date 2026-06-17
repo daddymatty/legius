@@ -1,5 +1,6 @@
 export default {
   slug: "corporate-law",
+  lead: "oleksandr-hordiienko",
   icon: "corporate",
   navLabel: "Корпоративне право",
   shortTitle: "Корпоративне право",

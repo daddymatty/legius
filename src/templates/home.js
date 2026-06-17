@@ -117,15 +117,15 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
 
 <section class="section" id="about"><div class="container">
   <div class="split">
-    <div class="reveal">
+    <div class="reveal stack">
       <span class="eyebrow">Про компанію</span>
       <h2>Юридична фірма, якій довіряють найскладніше</h2>
       <p class="lead">З ${site.founded} року ми супроводжуємо угоди, захищаємо в судах та вирішуємо кризові ситуації для українського й міжнародного бізнесу, власників та родин.</p>
       <p style="color:var(--c-slate)">Ми не беремося за все підряд. Наша модель — глибока спеціалізація у 12 практиках, де кожну справу веде профільний партнер. Це дає прогнозований результат, контрольований бюджет і повну конфіденційність.</p>
-      <div class="chips mt-2">${trust}</div>
-      <a class="btn btn--dark mt-3" href="/about/">Дізнатися більше про нас</a>
+      <div class="chips">${trust}</div>
+      <a class="btn btn--dark" href="/about/">Дізнатися більше про нас</a>
     </div>
-    <div class="reveal media-frame"><img src="/assets/img/office.svg" width="640" height="480" loading="lazy" alt="Офіс юридичної компанії LEGIUS у центрі Києва"></div>
+    <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=70" width="640" height="480" loading="lazy" alt="Офіс юридичної компанії LEGIUS у центрі Києва"></div>
   </div>
 </div></section>
 

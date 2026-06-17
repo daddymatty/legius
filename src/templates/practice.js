@@ -10,6 +10,7 @@ export function practicePage(p, { practiceBySlug, cases, team = [] }) {
     { name: p.shortTitle, href: `/practices/${p.slug}/` },
   ];
   const lawyer =
+    (p.lead && team.find((m) => m.slug === p.lead)) ||
     team.find((m) => (m.practices || []).includes(p.slug)) ||
     team.find((m) => m.roleKey === "managing-partner") ||
     team[0];

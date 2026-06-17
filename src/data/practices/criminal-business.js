@@ -1,5 +1,6 @@
 export default {
   slug: "criminal-business",
+  lead: "maykl-duhlas",
   icon: "criminal-business",
   navLabel: "Кримінальний захист бізнесу",
   shortTitle: "Кримінальний захист бізнесу",

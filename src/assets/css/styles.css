@@ -354,11 +354,18 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .prose h2 { font-size: 1.7rem; margin-top: 2.4rem; padding-top: 0.4rem; font-weight: 800; }
 .prose h3 { font-size: 1.3rem; margin-top: 1.8rem; font-weight: 700; }
 .prose p, .prose li { color: #2b3a4f; font-size: 1.05rem; }
-/* site-wide justified body text */
+/* site-wide justified body text — NO hyphenation (don't break words with "-") */
 .prose p, .lead, .page-hero p, .hero__sub, .section__head p, .head p,
 .card p, .feature p, .post-card__excerpt, .tile p, .quote-card blockquote {
-  text-align: justify; -webkit-hyphens: auto; hyphens: auto;
+  text-align: justify; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
 }
+/* anchor targets land below the sticky header (not hidden under it) */
+[id] { scroll-margin-top: 132px; }
+/* consistent vertical rhythm for stacked intro blocks */
+.stack > * { margin-top: 0; margin-bottom: 0; }
+.stack > * + * { margin-top: 1.15rem; }
+.stack > h1, .stack > h2, .stack > h3 { margin-top: 1.3rem; }
+.stack > .eyebrow + h1, .stack > .eyebrow + h2, .stack > .eyebrow + h3 { margin-top: 0.4rem; }
 .prose h2 { margin-top: 2.2rem; }
 .prose h3 { margin-top: 1.5rem; }
 .prose h2 + p, .prose h2 + ul, .prose h2 + ol,

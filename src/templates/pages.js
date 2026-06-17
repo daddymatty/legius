@@ -40,7 +40,7 @@ ${breadcrumbs(crumbs)}
       <p style="color:var(--c-slate)">Наша філософія проста: глибока спеціалізація замість універсальності. Саме тому понад ${site.stats.winRate} наших справ завершуються на користь клієнта.</p>
       <div class="chips mt-2">${trustBadges.map((b) => `<span class="chip">${esc(b)}</span>`).join("")}</div>
     </div>
-    <div class="reveal media-frame"><img src="/assets/img/office.svg" width="640" height="480" loading="lazy" alt="Команда LEGIUS"></div>
+    <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=70" width="640" height="480" loading="lazy" alt="Офіс LEGIUS"></div>
   </div>
 </div></section>
 

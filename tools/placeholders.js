@@ -64,6 +64,8 @@ export async function makePlaceholders(imgDir, { team = [] } = {}) {
   await writeFile(path.join(imgDir, "office.svg"), office);
   await writeFile(path.join(imgDir, "og-default.svg"), og);
   for (const m of team) {
+    /* External (stock) photo URL — keep as-is. */
+    if ((m.photo || "").startsWith("http")) continue;
     /* If a member uses a real raster photo (.jpg/.png/.webp) that is already
        present (copied from src/assets), keep it. Otherwise fall back to a
        generated SVG placeholder and repoint the member to it. */
