@@ -84,6 +84,7 @@ function page(opts, content, currentPath = "") {
 }
 
 async function build() {
+  process.env.ASSET_V = Date.now().toString(36); /* bust CSS/JS cache each build */
   console.log("→ Очищення dist/");
   if (existsSync(DIST)) await rm(DIST, { recursive: true, force: true });
   await mkdir(DIST, { recursive: true });

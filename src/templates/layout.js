@@ -28,6 +28,7 @@ export function layout(opts) {
   } = opts;
 
   const allSchemas = [websiteSchema(), organizationSchema(), ...schemas];
+  const v = process.env.ASSET_V || "1"; /* cache-busting for CSS/JS */
 
   return `<!doctype html>
 <html lang="${site.lang}">
@@ -64,7 +65,7 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&family=Jost:wght@300;400&display=swap">
 <link rel="preconnect" href="https://www.googletagmanager.com">
-<link rel="stylesheet" href="/assets/css/styles.css">
+<link rel="stylesheet" href="/assets/css/styles.css?v=${v}">
 ${allSchemas.map(jsonLd).join("\n")}
 </head>
 <body class="${bodyClass}">
@@ -74,7 +75,7 @@ ${header}
 ${content}
 </main>
 ${footer}
-<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/main.js?v=${v}" defer></script>
 </body>
 </html>`;
 }

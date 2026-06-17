@@ -132,7 +132,7 @@ h3 { font-size: var(--fs-lg); }
 .brand .brand-r { letter-spacing: 0.34em; margin-left: 0.34em; }
 /* signature "E": three bars spanning the cap height (top one gold) */
 .brand-e { display: inline-flex; flex-direction: column; justify-content: space-between; height: 0.72em; width: 0.5em; margin: 0 0.30em; }
-.brand-e i { display: block; height: 0.09em; min-height: 2px; width: 100%; background: currentColor; }
+.brand-e i { display: block; height: 0.11em; min-height: 2.5px; width: 100%; background: currentColor; border-radius: 1px; }
 .brand-e i:first-child { background: var(--c-gold); }
 .site-footer .logo, .footer__brand .logo { color: #fff; }
 .nav { display: none; }
