@@ -190,6 +190,18 @@ h3 { font-size: var(--fs-lg); }
 .hero__trust .stat span { font-size: var(--fs-sm); color: var(--c-on-dark); }
 .hero__scrollcue { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 2; color: rgba(255,255,255,0.55); animation: bob 1.8s infinite; }
 @keyframes bob { 0%,100% { transform: translate(-50%,0); } 50% { transform: translate(-50%,8px); } }
+/* Home hero — red first screen (#E13D27) */
+.hero { background: linear-gradient(120deg, #E13D27 0%, #C8331F 100%); }
+.hero__glow { background: radial-gradient(circle, rgba(0,0,0,0.16), transparent 60%); }
+.hero .eyebrow { color: rgba(255,255,255,0.92); }
+.hero h1 .accent { color: #0D0D0F; }
+.hero__sub { color: rgba(255,255,255,0.92); }
+.hero__trust { border-top-color: rgba(255,255,255,0.28); }
+.hero__trust .stat span { color: rgba(255,255,255,0.85); }
+.hero__trust .stat strong em { color: #0D0D0F; }
+.hero__actions .btn--primary { background: #0D0D0F; color: #fff; }
+.hero__actions .btn--primary:hover { background: #fff; color: #0D0D0F; }
+.hero__mark { color: rgba(255,255,255,0.07); }
 
 /* ---------- Cards / grids ---------- */
 .grid { display: grid; gap: clamp(1.1rem, 2.5vw, 1.6rem); }
