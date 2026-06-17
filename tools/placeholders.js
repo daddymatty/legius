@@ -2,10 +2,10 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-const NAVY = "#0B1A33";
-const NAVY2 = "#16335C";
-const GOLD = "#16B6A6"; /* accent — teal (kept var name for minimal diff) */
-const BRASS = "#C29A5B"; /* logo top-bar gold */
+const NAVY = "#0D0D0F";
+const NAVY2 = "#16161A";
+const GOLD = "#E50914"; /* accent — teal (kept var name for minimal diff) */
+const BRASS = "#E50914"; /* logo top-bar gold */
 
 function initials(name = "") {
   return name.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
@@ -29,14 +29,14 @@ const logo = monogram;
 const favicon = monogram;
 
 const office = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Офіс LEGIUS">
-  <defs><linearGradient id="o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#15294a"/><stop offset="1" stop-color="${NAVY}"/></linearGradient></defs>
+  <defs><linearGradient id="o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16161A"/><stop offset="1" stop-color="${NAVY}"/></linearGradient></defs>
   <rect width="640" height="480" fill="url(#o)"/>
   <g fill="none" stroke="${GOLD}" stroke-width="1.2" opacity="0.5">
     <rect x="120" y="90" width="160" height="300"/><rect x="300" y="60" width="220" height="330"/>
     ${Array.from({ length: 6 }).map((_, r) => Array.from({ length: 5 }).map((_, c) => `<rect x="${320 + c * 40}" y="${80 + r * 50}" width="26" height="34"/>`).join("")).join("")}
     ${Array.from({ length: 5 }).map((_, r) => Array.from({ length: 3 }).map((_, c) => `<rect x="${140 + c * 45}" y="${110 + r * 55}" width="30" height="38"/>`).join("")).join("")}
   </g>
-  <rect x="0" y="390" width="640" height="90" fill="#0a1426"/>
+  <rect x="0" y="390" width="640" height="90" fill="#0A0A0C"/>
   <text x="320" y="445" font-family="Georgia, serif" font-size="30" fill="${GOLD}" text-anchor="middle" letter-spacing="3">LEGIUS</text>
 </svg>`;
 
