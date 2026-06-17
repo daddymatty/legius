@@ -8,10 +8,10 @@ export const site = {
   lang: "uk",
   city: "Київ",
   founded: 2009,
-  phoneDisplay: "+38 (044) 123-45-67",
-  phoneHref: "+380441234567",
-  mobileDisplay: "+38 (067) 123-45-67",
-  mobileHref: "+380671234567",
+  phoneDisplay: "+38 (068) 888 44 00",
+  phoneHref: "+380688884400",
+  mobileDisplay: "+38 (068) 888 44 00",
+  mobileHref: "+380688884400",
   email: "office@legius.ua",
   address: {
     street: "вул. Велика Васильківська, 5, БЦ «Прайм», 8 поверх",
@@ -25,8 +25,8 @@ export const site = {
   hours: "Пн–Пт 09:00–19:00",
   messengers: {
     telegram: "https://t.me/legius_law",
-    whatsapp: "https://wa.me/380671234567",
-    viber: "viber://chat?number=%2B380671234567",
+    whatsapp: "https://wa.me/380688884400",
+    viber: "viber://chat?number=%2B380688884400",
   },
   social: {
     facebook: "https://facebook.com/legius.law",

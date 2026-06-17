@@ -100,11 +100,16 @@
     Object.keys(map).forEach(function (id) { tocIo.observe(document.getElementById(id)); });
   }
 
-  /* ---- Header shadow on scroll ---- */
+  /* ---- Header: shadow + hide utility bar on scroll down, show on scroll up ---- */
   var header = document.querySelector(".site-header");
   if (header) {
+    var lastY = window.scrollY;
     var onScroll = function () {
-      header.style.boxShadow = window.scrollY > 8 ? "var(--shadow-sm)" : "none";
+      var y = window.scrollY;
+      header.style.boxShadow = y > 8 ? "var(--shadow-sm)" : "none";
+      if (y > lastY && y > 90) header.classList.add("util-hidden");      // scrolling down
+      else if (y < lastY) header.classList.remove("util-hidden");        // scrolling up
+      lastY = y;
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();

@@ -152,7 +152,7 @@ async function build() {
             ]),
           ],
         },
-        practicePage(p, { practiceBySlug, cases })
+        practicePage(p, { practiceBySlug, cases, team })
       ),
       { priority: "0.9" }
     );

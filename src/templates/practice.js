@@ -3,12 +3,26 @@ import { site } from "../data/site.js";
 import { leadForm, ctaBand, breadcrumbs, icons } from "./components.js";
 import { renderSections, renderFaq, serviceList, relatedPractices, escape as esc } from "./render.js";
 
-export function practicePage(p, { practiceBySlug, cases }) {
+export function practicePage(p, { practiceBySlug, cases, team = [] }) {
   const crumbs = [
     { name: "Головна", href: "/" },
     { name: "Практики", href: "/practices/" },
     { name: p.shortTitle, href: `/practices/${p.slug}/` },
   ];
+  const lawyer =
+    team.find((m) => (m.practices || []).includes(p.slug)) ||
+    team.find((m) => m.roleKey === "managing-partner") ||
+    team[0];
+  const lawyerCard = lawyer
+    ? `<div class="card">
+        <span class="eyebrow">Відповідальний адвокат</span>
+        <a class="lawyer-card__row" href="/team/${lawyer.slug}/">
+          <img src="${lawyer.photo}" width="64" height="80" loading="lazy" alt="${esc(lawyer.name)} — ${esc(lawyer.role)}">
+          <span><b>${esc(lawyer.name)}</b><span>${esc(lawyer.role)}</span></span>
+        </a>
+        <a class="btn btn--ghost btn--block" href="/team/${lawyer.slug}/">Профіль адвоката</a>
+      </div>`
+    : "";
   const relCases = cases.filter((c) => c.practice === p.slug).slice(0, 3);
   const caseBlock = relCases.length
     ? `<section class="section section--soft reveal"><div class="container">
@@ -41,6 +55,7 @@ ${breadcrumbs(crumbs)}
   <div class="content-aside">
     <div class="content-aside__main prose reveal" style="max-width:none">${renderSections(p.sections)}</div>
     <aside class="content-aside__side reveal">
+      ${lawyerCard}
       <div class="card">
         <h3 style="font-size:1.15rem;margin-bottom:1rem">Послуги напряму</h3>
         ${serviceList(p.services)}

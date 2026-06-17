@@ -54,8 +54,8 @@ export function header(practices, currentPath = "") {
     })
     .join("");
 
-  return `<header class="site-header">
-  <div class="util-bar"><div class="container">
+  return `<header class="site-header" data-header>
+  <div class="util-bar" data-utilbar><div class="container">
     <div class="util-bar__left">
       <a href="mailto:${site.email}">${icons.mail} ${esc(site.email)}</a>
       <a href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
@@ -69,7 +69,6 @@ export function header(practices, currentPath = "") {
     <a class="logo" href="/" aria-label="${esc(site.name)} — головна">${logoWord}</a>
     <nav class="nav" aria-label="Основна навігація"><ul class="nav__list">${navItems}</ul></nav>
     <div class="header__cta">
-      <a class="header__phone" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
       <a class="btn btn--primary" href="/contacts/#consult">Консультація</a>
     </div>
     <button class="burger" data-burger aria-label="Меню" aria-expanded="false" aria-controls="mobile-nav">Меню <i><span></span></i></button>

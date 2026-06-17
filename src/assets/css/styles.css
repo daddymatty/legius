@@ -116,7 +116,8 @@ h3 { font-size: var(--fs-lg); }
 
 /* ---------- Header ---------- */
 .site-header { position: sticky; top: 0; z-index: 60; background: var(--c-ink); color: #fff; }
-.util-bar { border-bottom: 1px solid rgba(255,255,255,0.08); font-family: var(--font-body); font-size: 0.82rem; }
+.util-bar { height: 46px; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,0.08); font-family: var(--font-body); font-size: 0.82rem; transition: height 0.28s ease, opacity 0.28s ease; }
+.site-header.util-hidden .util-bar { height: 0; opacity: 0; border-bottom-color: transparent; }
 .util-bar .container { display: flex; align-items: center; justify-content: space-between; height: 46px; gap: 1rem; }
 .util-bar__left { display: none; gap: 1.4rem; color: var(--c-on-dark); }
 .util-bar__left a { display: inline-flex; gap: 0.45rem; align-items: center; }
@@ -129,10 +130,10 @@ h3 { font-size: var(--fs-lg); }
 .logo { display: inline-flex; align-items: center; color: #fff; }
 .brand { display: inline-flex; align-items: center; font-family: "Jost", var(--font-head); font-weight: 300; font-size: 1.55rem; line-height: 1; text-transform: uppercase; }
 .brand .brand-l { letter-spacing: 0.34em; }
-.brand .brand-r { letter-spacing: 0.34em; margin-left: 0.34em; }
-/* signature "E": three bars spanning the cap height (top one gold) */
-.brand-e { display: inline-flex; flex-direction: column; justify-content: space-between; height: 0.72em; width: 0.5em; margin: 0 0.30em; }
-.brand-e i { display: block; height: 0.11em; min-height: 2.5px; width: 100%; background: currentColor; border-radius: 1px; }
+.brand .brand-r { letter-spacing: 0.34em; margin-left: 0; }
+/* signature "E": three thin bars (match letter stroke), even letter-spacing */
+.brand-e { display: inline-flex; flex-direction: column; justify-content: space-between; height: 0.7em; width: 0.5em; margin: 0 0.34em 0 0; }
+.brand-e i { display: block; height: 0.052em; min-height: 1px; width: 100%; background: currentColor; }
 .brand-e i:first-child { background: var(--c-gold); }
 .site-footer .logo, .footer__brand .logo { color: #fff; }
 .nav { display: none; }
@@ -190,6 +191,12 @@ h3 { font-size: var(--fs-lg); }
 .hero__trust .stat span { font-size: var(--fs-sm); color: var(--c-on-dark); }
 .hero__scrollcue { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 2; color: rgba(255,255,255,0.55); animation: bob 1.8s infinite; }
 @keyframes bob { 0%,100% { transform: translate(-50%,0); } 50% { transform: translate(-50%,8px); } }
+/* compact, centered hero */
+.hero__inner--center { display: block; text-align: center; max-width: 880px; margin-inline: auto; padding-block: clamp(2.2rem, 5vw, 3.8rem); }
+.hero__inner--center h1 { margin-top: 0.5rem; max-width: none; }
+.hero__inner--center .hero__sub { margin: 1.1rem auto 0; text-align: center; }
+.hero__inner--center .hero__actions { margin-top: 1.9rem; justify-content: center; }
+.hero__inner--center .hero__trust { justify-content: center; }
 
 /* ---------- Cards / grids ---------- */
 .grid { display: grid; gap: clamp(1.1rem, 2.5vw, 1.6rem); }
@@ -339,7 +346,15 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .prose h2 { font-size: 1.7rem; margin-top: 2.4rem; padding-top: 0.4rem; font-weight: 800; }
 .prose h3 { font-size: 1.3rem; margin-top: 1.8rem; font-weight: 700; }
 .prose p, .prose li { color: #2b3a4f; font-size: 1.05rem; }
-.prose p { text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
+/* site-wide justified body text */
+.prose p, .lead, .page-hero p, .hero__sub, .section__head p, .head p,
+.card p, .feature p, .post-card__excerpt, .tile p, .quote-card blockquote {
+  text-align: justify; -webkit-hyphens: auto; hyphens: auto;
+}
+.prose h2 { margin-top: 2.2rem; }
+.prose h3 { margin-top: 1.5rem; }
+.prose h2 + p, .prose h2 + ul, .prose h2 + ol,
+.prose h3 + p, .prose h3 + ul, .prose h3 + ol { margin-top: 0.65rem; }
 .prose ul, .prose ol { padding-left: 1.3rem; display: grid; gap: 0.5rem; }
 .prose ul li { list-style: disc; } .prose ol li { list-style: decimal; }
 .prose blockquote { border-left: 3px solid var(--c-teal); padding: 0.6rem 0 0.6rem 1.4rem; color: var(--c-slate); font-style: italic; background: var(--c-mist); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
@@ -357,6 +372,15 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 
 /* ---------- Contacts ---------- */
 .contact-grid { display: grid; gap: 2.5rem; }
+.contact-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.9rem 2rem; margin-top: 2rem; font-size: 0.92rem; color: var(--c-muted); }
+.contact-row a, .contact-row span { display: inline-flex; align-items: center; gap: 0.45rem; }
+.contact-row a:hover { color: var(--c-teal); }
+.contact-row svg { color: var(--c-teal); flex: none; }
+/* responsible lawyer card (practice aside) */
+.lawyer-card__row { display: flex; gap: 0.9rem; align-items: center; margin: 0.8rem 0 1rem; }
+.lawyer-card__row img { width: 64px; height: 80px; border-radius: 8px; object-fit: cover; flex: none; }
+.lawyer-card__row b { font-family: var(--font-head); font-weight: 800; font-size: 1.05rem; display: block; }
+.lawyer-card__row span span { color: var(--c-muted); font-size: 0.86rem; }
 .contact-info li { display: flex; gap: 0.9rem; padding: 1rem 0; border-bottom: 1px solid var(--c-line); }
 .contact-info .ico { color: var(--c-teal-d); flex: none; width: 24px; }
 .map-frame { aspect-ratio: 16/10; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--c-line); }

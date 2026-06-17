@@ -97,30 +97,25 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
 <section class="hero">
   <div class="hero__glow"></div>
   <div class="hero__mark" aria-hidden="true">LEGIUS</div>
-  <div class="container hero__inner">
-    <div class="reveal">
-      <span class="eyebrow">${esc(site.tagline)} · Київ</span>
-      <h1>Правова <span class="accent">перевага</span> для вашого бізнесу</h1>
-      <p class="hero__sub">${esc(site.legalName)} — команда адвокатів і юристів, яка веде складні справи у корпоративному, податковому, сімейному та військовому праві. Перша консультація — безкоштовно.</p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="/contacts/#consult">Безкоштовна консультація</a>
-        <a class="btn btn--ghost" style="color:#fff" href="/practices/">Наші практики</a>
-      </div>
-      <div class="hero__trust">
-        <div class="stat"><strong>${site.stats.years}</strong><span>років практики</span></div>
-        <div class="stat"><strong>${site.stats.cases}</strong><span>виграних справ</span></div>
-        <div class="stat"><strong>${site.stats.lawyers}</strong><span>юристів у команді</span></div>
-        <div class="stat"><strong>${site.stats.winRate}</strong><span>успішних рішень</span></div>
-      </div>
+  <div class="container hero__inner hero__inner--center reveal">
+    <span class="eyebrow">${esc(site.tagline)} · Київ</span>
+    <h1>Правова <span class="accent">перевага</span> для вашого бізнесу</h1>
+    <p class="hero__sub">${esc(site.legalName)} — команда адвокатів і юристів, яка веде складні справи у корпоративному, податковому, сімейному та військовому праві. Перша консультація — безкоштовно.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="/contacts/#consult">Безкоштовна консультація</a>
+      <a class="btn btn--ghost" style="color:#fff" href="/practices/">Наші практики</a>
     </div>
-    <div class="reveal">
-      ${leadForm({ id: "hero-form", title: "Отримати консультацію", source: "hero", compact: true })}
+    <div class="hero__trust">
+      <div class="stat"><strong>${site.stats.years}</strong><span>років практики</span></div>
+      <div class="stat"><strong>${site.stats.cases}</strong><span>виграних справ</span></div>
+      <div class="stat"><strong>${site.stats.lawyers}</strong><span>юристів у команді</span></div>
+      <div class="stat"><strong>${site.stats.winRate}</strong><span>успішних рішень</span></div>
     </div>
   </div>
-  <a class="hero__scrollcue" href="#" aria-label="Гортати далі"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+  <a class="hero__scrollcue" href="#about" aria-label="Гортати далі"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
 </section>
 
-<section class="section"><div class="container">
+<section class="section" id="about"><div class="container">
   <div class="split">
     <div class="reveal">
       <span class="eyebrow">Про компанію</span>
@@ -171,20 +166,18 @@ ${renderFaq(homeFaq, "Поширені запитання")}
 
 ${ctaBand()}
 
-<section class="section" id="consult"><div class="container">
-  <div class="split">
-    <div class="reveal">
-      <span class="eyebrow">Контакти</span>
-      <h2>Залиште заявку — ми передзвонимо за 15 хвилин</h2>
-      <p class="lead">Опишіть вашу ситуацію, і профільний юрист підготує первинну оцінку та план дій.</p>
-      <ul class="contact-info mt-2">
-        <li><span class="ico">${icons.pin}</span><div><strong>Офіс у Києві</strong><br>${esc(site.address.street)}</div></li>
-        <li><span class="ico">${icons.phone}</span><div><strong>Телефон</strong><br><a href="tel:${site.phoneHref}">${esc(site.phoneDisplay)}</a></div></li>
-        <li><span class="ico">${icons.mail}</span><div><strong>E-mail</strong><br><a href="mailto:${site.email}">${esc(site.email)}</a></div></li>
-        <li><span class="ico">${icons.clock}</span><div><strong>Графік</strong><br>${esc(site.hours)}</div></li>
-      </ul>
-    </div>
-    <div class="reveal">${leadForm({ id: "home-consult", title: "Безкоштовна консультація", source: "home-bottom" })}</div>
+<section class="section section--soft" id="consult"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Контакти</span>
+    <h2>Залиште заявку — ми передзвонимо за 15 хвилин</h2>
+    <p class="lead">Опишіть вашу ситуацію, і профільний юрист підготує первинну оцінку та план дій.</p>
+  </div>
+  <div class="reveal" style="max-width:640px;margin-inline:auto">${leadForm({ id: "home-consult", title: "Безкоштовна консультація", source: "home-bottom" })}</div>
+  <div class="contact-row reveal">
+    <a href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
+    <a href="mailto:${site.email}">${icons.mail} ${esc(site.email)}</a>
+    <span>${icons.pin} ${esc(site.address.locality)}</span>
+    <span>${icons.clock} ${esc(site.hours)}</span>
   </div>
 </div></section>`;
 }
