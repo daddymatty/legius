@@ -113,7 +113,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
         <div class="stat"><strong>${site.stats.winRate}</strong><span>успішних рішень</span></div>
       </div>
     </div>
-    <div class="reveal">${leadForm({ id: "hero-form", title: "Отримати безкоштовну консультацію", source: "hero", compact: true })}</div>
+    <div class="reveal">${leadForm({ id: "hero-form", title: "Отримати безкоштовну консультацію", source: "hero" })}</div>
   </div>
   <a class="hero__scrollcue" href="#about" aria-label="Гортати далі"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
 </section>

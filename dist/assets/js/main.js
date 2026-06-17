@@ -115,6 +115,38 @@
     onScroll();
   }
 
+  /* ---- Count-up animation for big numbers (mosaic tiles) ---- */
+  var counters = document.querySelectorAll(".tile__big");
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (counters.length && "IntersectionObserver" in window && !reduce) {
+    var fmt = function (n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " "); };
+    var cio = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          cio.unobserve(en.target);
+          var el = en.target, raw = el.textContent.trim();
+          var m = raw.match(/[\d   ]+/);
+          if (!m) return;
+          var target = parseInt(m[0].replace(/[^\d]/g, ""), 10);
+          if (!target) return;
+          var prefix = raw.slice(0, m.index), suffix = raw.slice(m.index + m[0].length);
+          var dur = 1100, start = null;
+          var step = function (ts) {
+            if (!start) start = ts;
+            var p = Math.min((ts - start) / dur, 1);
+            var val = Math.round(target * (1 - Math.pow(1 - p, 3)));
+            el.textContent = prefix + fmt(val) + suffix;
+            if (p < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+        });
+      },
+      { threshold: 0.4 }
+    );
+    counters.forEach(function (c) { cio.observe(c); });
+  }
+
   /* ---- Current year in footer ---- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();

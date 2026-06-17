@@ -198,6 +198,20 @@ h3 { font-size: var(--fs-lg); }
 .hero__inner--center .hero__actions { margin-top: 1.9rem; justify-content: center; }
 .hero__inner--center .hero__trust { justify-content: center; }
 .hero__form { max-width: 540px; margin: 1.9rem auto 0; text-align: left; }
+/* hero fits one screen + balanced two columns */
+.hero h1 { font-size: clamp(2.3rem, 4.6vw, 4.2rem); }
+.hero__sub { font-size: 1.05rem; }
+@media (min-width: 1024px) {
+  .hero__inner { align-items: center; min-height: calc(100svh - 120px); padding-block: 2rem; }
+}
+/* hero entrance + floating watermark */
+@media (prefers-reduced-motion: no-preference) {
+  .hero__inner > * { animation: heroIn 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) both; }
+  .hero__inner > *:nth-child(2) { animation-delay: 0.14s; }
+  .hero__mark { animation: markFloat 9s ease-in-out infinite; }
+}
+@keyframes heroIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes markFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
 
 /* ---------- Cards / grids ---------- */
 .grid { display: grid; gap: clamp(1.1rem, 2.5vw, 1.6rem); }
@@ -354,12 +368,14 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .prose > * + * { margin-top: 1.2rem; }
 .prose h2 { font-size: 1.7rem; margin-top: 2.4rem; padding-top: 0.4rem; font-weight: 800; }
 .prose h3 { font-size: 1.3rem; margin-top: 1.8rem; font-weight: 700; }
-.prose p, .prose li { color: #2b3a4f; font-size: 1.05rem; }
-/* site-wide justified body text — NO hyphenation (don't break words with "-") */
-.prose p, .lead, .page-hero p, .hero__sub, .section__head p, .head p,
-.card p, .feature p, .post-card__excerpt, .tile p, .quote-card blockquote {
+.prose p, .prose li { color: #2b3a4f; font-size: 1.05rem; line-height: 1.8; }
+/* justified body copy only (long paragraphs) — NO hyphenation */
+.prose p, .page-hero p {
   text-align: justify; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
 }
+/* centered section heads must stay centered (override any inherited align) */
+.section__head--center, .section__head--center .eyebrow,
+.section__head--center h2, .section__head--center p, .section__head--center .lead { text-align: center; }
 /* anchor targets land below the sticky header (not hidden under it) */
 [id] { scroll-margin-top: 132px; }
 /* consistent vertical rhythm for stacked intro blocks */
