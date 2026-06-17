@@ -67,6 +67,7 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 ${allSchemas.map(jsonLd).join("\n")}
 </head>
 <body class="${bodyClass}">
+<div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
 <a href="#main" class="visually-hidden">Перейти до основного змісту</a>
 ${header}
 <main id="main">

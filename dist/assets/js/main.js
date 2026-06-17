@@ -22,6 +22,14 @@
 
   /* ---- Reveal on scroll (IntersectionObserver) ---- */
   var reveals = document.querySelectorAll(".reveal");
+  /* Stagger reveals that share a parent (e.g. grid cards) for a cascade effect. */
+  reveals.forEach(function (el) {
+    var p = el.parentNode;
+    if (!p) return;
+    var idx = p.__revealIdx || 0;
+    if (idx > 0) el.style.setProperty("--reveal-delay", Math.min(idx * 80, 400) + "ms");
+    p.__revealIdx = idx + 1;
+  });
   if ("IntersectionObserver" in window && reveals.length) {
     var io = new IntersectionObserver(
       function (entries) {
@@ -102,13 +110,20 @@
 
   /* ---- Header: shadow + hide utility bar on scroll down, show on scroll up ---- */
   var header = document.querySelector(".site-header");
-  if (header) {
+  var progress = document.querySelector("[data-scroll-progress]");
+  if (header || progress) {
     var lastY = window.scrollY;
     var onScroll = function () {
       var y = window.scrollY;
-      header.style.boxShadow = y > 8 ? "var(--shadow-sm)" : "none";
-      if (y > lastY && y > 90) header.classList.add("util-hidden");      // scrolling down
-      else if (y < lastY) header.classList.remove("util-hidden");        // scrolling up
+      if (header) {
+        header.style.boxShadow = y > 8 ? "var(--shadow-sm)" : "none";
+        if (y > lastY && y > 90) header.classList.add("util-hidden");    // scrolling down
+        else if (y < lastY) header.classList.remove("util-hidden");      // scrolling up
+      }
+      if (progress) {
+        var h = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
+      }
       lastY = y;
     };
     window.addEventListener("scroll", onScroll, { passive: true });
