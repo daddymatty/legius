@@ -32,9 +32,19 @@
           }
         });
       },
-      { threshold: 0.12 }
+      /* threshold 0 = reveal as soon as any part enters — works for tall blocks too */
+      { threshold: 0, rootMargin: "0px 0px -5% 0px" }
     );
     reveals.forEach(function (el) { io.observe(el); });
+    /* Safety net: if anything is still hidden shortly after load, force-reveal it. */
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        reveals.forEach(function (el) {
+          var r = el.getBoundingClientRect();
+          if (r.top < window.innerHeight && r.bottom > 0) el.classList.add("in");
+        });
+      }, 300);
+    });
   } else {
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
