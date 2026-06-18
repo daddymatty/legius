@@ -30,11 +30,31 @@ export function layout(opts) {
   const allSchemas = [websiteSchema(), organizationSchema(), ...schemas];
   const v = process.env.ASSET_V || "1"; /* cache-busting for CSS/JS */
 
+  /* Content-Security-Policy (enforced via meta — works on GitHub Pages too).
+     Built from config so the lead-form origin always matches. script-src is
+     strict 'self' (no inline JS); style-src allows inline due to style attrs. */
+  const leadOrigin = site.leadEndpoint ? new URL(site.leadEndpoint).origin : "";
+  const csp = [
+    "default-src 'self'",
+    "base-uri 'self'",
+    "object-src 'none'",
+    "img-src 'self' https://images.unsplash.com",
+    "font-src 'self'",
+    "style-src 'self' 'unsafe-inline'",
+    "script-src 'self'",
+    `connect-src 'self'${leadOrigin ? " " + leadOrigin : ""}`,
+    "frame-src https://www.openstreetmap.org",
+    "form-action 'self'",
+    "upgrade-insecure-requests",
+  ].join("; ");
+
   return `<!doctype html>
 <html lang="${site.lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="${csp}">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">'}
