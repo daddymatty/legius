@@ -161,7 +161,7 @@ async function build() {
             ]),
           ],
         },
-        practicePage(p, { practiceBySlug, cases, team })
+        practicePage(p, { practiceBySlug, cases, team, articles })
       ),
       { priority: "0.9" }
     );
@@ -187,7 +187,7 @@ async function build() {
               ]),
             ],
           },
-          servicePage(p, svc, { practiceBySlug, team })
+          servicePage(p, svc, { practiceBySlug, team, articles })
         ),
         { priority: "0.7" }
       );
