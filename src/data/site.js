@@ -18,7 +18,7 @@ export const site = {
   leadEndpoint: "https://legius-lead.mexn1n1.workers.dev",
   /* Analytics — empty = disabled (no GA scripts, no extra CSP domains).
      ga4: GA4 Measurement ID "G-XXXXXXX". gscVerification: Search Console meta token. */
-  analytics: { ga4: "", gscVerification: "" },
+  analytics: { ga4: "G-10B84LRHKX", gscVerification: "" },
   address: {
     street: "вул. Велика Васильківська, 5, БЦ «Прайм», 8 поверх",
     locality: "Київ",
