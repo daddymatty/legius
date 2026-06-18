@@ -74,6 +74,7 @@ ${header}
 ${content}
 </main>
 ${footer}
+<button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 <script src="/assets/js/main.js?v=${v}" defer></script>
 </body>
 </html>`;

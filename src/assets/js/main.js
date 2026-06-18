@@ -162,6 +162,18 @@
     counters.forEach(function (c) { cio.observe(c); });
   }
 
+  /* ---- Back-to-top button ---- */
+  var toTop = document.querySelector("[data-to-top]");
+  if (toTop) {
+    toTop.hidden = false;
+    var toggleTop = function () { toTop.classList.toggle("show", window.scrollY > 600); };
+    window.addEventListener("scroll", toggleTop, { passive: true });
+    toggleTop();
+    toTop.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
   /* ---- Current year in footer ---- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
