@@ -515,6 +515,13 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 }
 @media (min-width: 1440px) { :root { --section-y: clamp(4rem,7vw,7rem); } }
 
+/* Large screens: scale up instead of staying centered with empty side margins.
+   Widen the container and grow the root font-size so rem/clamp-based type and
+   spacing scale proportionally (breakpoints use px, so they are unaffected). */
+@media (min-width: 1600px) { :root { --maxw: 1380px; --maxw-wide: 1560px; } html { font-size: 17px; } }
+@media (min-width: 1920px) { :root { --maxw: 1560px; --maxw-wide: 1760px; } html { font-size: 18px; } }
+@media (min-width: 2400px) { :root { --maxw: 1780px; --maxw-wide: 2000px; } html { font-size: 19px; } }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
