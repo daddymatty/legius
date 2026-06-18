@@ -94,8 +94,9 @@ export function breadcrumbs(items) {
 
 /* ---------- Lead form ---------- */
 export function leadForm({ id = "lead", title = "Отримати консультацію", source = "site", compact = false } = {}) {
-  return `<form class="lead-form" id="${id}" data-lead-form>
+  return `<form class="lead-form" id="${id}" data-lead-form${site.leadEndpoint ? ` data-endpoint="${esc(site.leadEndpoint)}"` : ""}>
     <input type="hidden" name="source" value="${esc(source)}">
+    <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
     <h3 style="margin-bottom:.4rem">${esc(title)}</h3>
     <p style="color:var(--c-slate);font-size:.92rem;margin-bottom:1.2rem">Відповідаємо протягом 15 хвилин у робочий час. Перша консультація — безкоштовно.</p>
     <div class="form-note">Дякуємо! Ваш запит надіслано — ми зв’яжемося з вами найближчим часом.</div>

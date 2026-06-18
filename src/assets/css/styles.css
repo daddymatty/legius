@@ -354,6 +354,7 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .form-consent { font-size: 0.78rem; color: var(--c-muted); margin-top: 0.6rem; }
 .form-consent a { color: var(--c-teal-d); text-decoration: underline; }
 .form-note { display: none; padding: 0.9rem 1rem; border-radius: var(--radius-sm); background: #fdecee; color: var(--c-teal-d); font-weight: 700; margin-bottom: 1rem; }
+.form-note.error { background: #fff4e5; color: #9a4b00; }
 .form-note.show { display: block; }
 
 /* ---------- CTA band ---------- */

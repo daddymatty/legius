@@ -13,6 +13,9 @@ export const site = {
   mobileDisplay: "+38 (068) 888 44 00",
   mobileHref: "+380688884400",
   email: "office@legius.ua",
+  /* Lead-form endpoint (Cloudflare Worker proxy that forwards to Telegram).
+     Empty = form falls back to localStorage only. Set after deploying the worker. */
+  leadEndpoint: "",
   address: {
     street: "вул. Велика Васильківська, 5, БЦ «Прайм», 8 поверх",
     locality: "Київ",

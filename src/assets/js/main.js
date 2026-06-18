@@ -57,30 +57,55 @@
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
 
-  /* ---- Lead forms (front-end capture, no backend dependency) ---- */
+  /* ---- Lead forms: POST to endpoint (Telegram proxy) when configured,
+         always keep a localStorage backup. ---- */
   document.querySelectorAll("form[data-lead-form]").forEach(function (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var data = Object.fromEntries(new FormData(form).entries());
+      if (data.company) return; /* honeypot tripped — silently drop bot submission */
       data.page = location.pathname;
       data.ts = new Date().toISOString();
+
       try {
         var store = JSON.parse(localStorage.getItem("legius_leads") || "[]");
         store.push(data);
         localStorage.setItem("legius_leads", JSON.stringify(store));
       } catch (err) {}
 
-      /* Hook point for real integrations (CRM / endpoint / GTM). */
       if (window.dataLayer) {
         window.dataLayer.push({ event: "lead_submit", form_id: form.id || "lead", source: data.source || "site" });
       }
-      // Example endpoint (configure on deploy):
-      // fetch('/api/lead', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data)});
 
       var note = form.querySelector(".form-note");
-      if (note) note.classList.add("show");
-      form.reset();
-      setTimeout(function () { if (note) note.classList.remove("show"); }, 6000);
+      var btn = form.querySelector("button[type=submit]");
+      var endpoint = form.getAttribute("data-endpoint");
+
+      var showOk = function () {
+        if (note) { note.classList.remove("error"); note.classList.add("show"); }
+        form.reset();
+        setTimeout(function () { if (note) note.classList.remove("show"); }, 6000);
+      };
+
+      if (!endpoint) { showOk(); return; } /* no backend yet → optimistic */
+
+      if (btn) { btn.disabled = true; btn.dataset.label = btn.textContent; btn.textContent = "Надсилаємо…"; }
+      fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+        .then(function (r) { if (!r.ok) throw new Error("bad status"); return r; })
+        .then(function () { showOk(); })
+        .catch(function () {
+          if (note) {
+            note.textContent = "Не вдалося надіслати автоматично. Зателефонуйте нам або напишіть у месенджер.";
+            note.classList.add("error", "show");
+          }
+        })
+        .finally(function () {
+          if (btn) { btn.disabled = false; if (btn.dataset.label) btn.textContent = btn.dataset.label; }
+        });
     });
   });
 
