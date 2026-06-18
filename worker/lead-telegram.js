@@ -9,7 +9,8 @@
  *   BOT_TOKEN  — Telegram bot token from @BotFather
  *   CHAT_ID    — target chat id (your group / personal chat with the bot)
  *
- * Optional var:
+ * Optional vars:
+ *   THREAD_ID       — forum topic id, to post into a specific group topic
  *   ALLOWED_ORIGINS — comma-separated list (defaults below)
  */
 
@@ -77,15 +78,18 @@ export default {
       `\n📍 <b>Форма:</b> ${esc(source)}\n` +
       `🔗 <b>Сторінка:</b> ${esc(page)}`;
 
+    const payload = {
+      chat_id: env.CHAT_ID,
+      text,
+      parse_mode: "HTML",
+      disable_web_page_preview: true,
+    };
+    if (env.THREAD_ID) payload.message_thread_id = Number(env.THREAD_ID);
+
     const tgRes = await fetch(`https://api.telegram.org/bot${env.BOT_TOKEN}/sendMessage`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        chat_id: env.CHAT_ID,
-        text,
-        parse_mode: "HTML",
-        disable_web_page_preview: true,
-      }),
+      body: JSON.stringify(payload),
     });
 
     if (!tgRes.ok) {
