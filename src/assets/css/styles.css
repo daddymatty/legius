@@ -306,7 +306,7 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 /* team */
 .team-card { text-align: left; }
 .team-card__photo { aspect-ratio: 3/4; border-radius: var(--radius); overflow: hidden; background: var(--c-mist); margin-bottom: 1rem; }
-.team-card h3 { font-size: 1.2rem; font-weight: 700; }
+.team-card h3 { font-size: clamp(0.86rem, 1.4vw + 0.4rem, 1.12rem); font-weight: 700; white-space: nowrap; }
 .team-card .role { color: var(--c-teal-d); font-weight: 700; font-size: 0.88rem; }
 /* photo treatment — full colour + smooth zoom on hover */
 .team-card__photo img, .team-photo img, .lawyer-card__row img { transition: transform 0.5s ease, filter 0.4s ease; }
