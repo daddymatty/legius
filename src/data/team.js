@@ -2,7 +2,7 @@ export const team = [
   {
     slug: "maksym-slobodianin",
     name: "Слободянін Максим Вікторович",
-    role: "Керуючий партнер · сімейне та господарське право",
+    role: "Керуючий партнер",
     roleKey: "managing-partner",
     photo: "/assets/img/team/maksym-slobodianin.jpg",
     short: "Керує фірмою та особисто веде складні сімейні й господарські справи",
@@ -40,7 +40,7 @@ export const team = [
   {
     slug: "oleksandr-hordiienko",
     name: "Гордієнко Олександр Сергійович",
-    role: "Старший партнер · корпоративне та міграційне право",
+    role: "Старший партнер",
     roleKey: "senior-partner",
     photo: "/assets/img/team/oleksandr-hordiienko.svg",
     short: "Очолює корпоративну та міграційну практику: структурування бізнесу, угоди, релокація",
@@ -77,7 +77,7 @@ export const team = [
   {
     slug: "mykhailo-kobylianskyi",
     name: "Кобилянський Михайло Вікторович",
-    role: "Старший партнер · кримінальне, господарське, цивільне та адміністративне право",
+    role: "Старший партнер",
     roleKey: "senior-partner",
     photo: "/assets/img/team/mykhailo-kobylianskyi.svg",
     short: "Веде кримінальні справи, господарські, цивільні та адміністративні спори",

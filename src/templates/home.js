@@ -149,8 +149,8 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
 </div></section>
 
 <section class="section"><div class="container">
-  <div class="section__head section__head--center"><span class="eyebrow">Команда</span><h2>Юристи, які ведуть вашу справу</h2></div>
-  <div class="grid grid--4">${teamCards}</div>
+  <div class="section__head section__head--center"><span class="eyebrow">Команда</span><h2>Адвокати та юристи, які будуть вести ваші справи</h2></div>
+  <div class="grid grid--3">${teamCards}</div>
   <div class="text-center mt-3"><a class="btn btn--dark" href="/team/">Уся команда</a></div>
 </div></section>
 
