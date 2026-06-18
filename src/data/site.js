@@ -30,7 +30,7 @@ export const site = {
   },
   hours: "Пн–Пт 09:00–19:00",
   messengers: {
-    telegram: "https://t.me/legius_law",
+    telegram: "https://t.me/+380688884400",
     whatsapp: "https://wa.me/380688884400",
     viber: "viber://chat?number=%2B380688884400",
   },
