@@ -2,6 +2,16 @@
 (function () {
   "use strict";
 
+  /* ---- Google Analytics 4 (gtag.js init kept here so no inline script — CSP stays strict) ---- */
+  var gaTag = document.querySelector("script[data-ga]");
+  if (gaTag) {
+    var gaId = gaTag.getAttribute("data-ga");
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", gaId, { anonymize_ip: true });
+  }
+
   /* ---- Mobile navigation ---- */
   var burger = document.querySelector("[data-burger]");
   var mnav = document.querySelector("[data-mobile-nav]");
@@ -75,6 +85,9 @@
 
       if (window.dataLayer) {
         window.dataLayer.push({ event: "lead_submit", form_id: form.id || "lead", source: data.source || "site" });
+      }
+      if (window.gtag) {
+        window.gtag("event", "generate_lead", { form_id: form.id || "lead", source: data.source || "site" });
       }
 
       var note = form.querySelector(".form-note");
