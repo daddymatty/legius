@@ -34,19 +34,27 @@ export function layout(opts) {
      Built from config so the lead-form origin always matches. script-src is
      strict 'self' (no inline JS); style-src allows inline due to style attrs. */
   const leadOrigin = site.leadEndpoint ? new URL(site.leadEndpoint).origin : "";
+  const ga = (site.analytics && site.analytics.ga4) || "";
   const csp = [
     "default-src 'self'",
     "base-uri 'self'",
     "object-src 'none'",
-    "img-src 'self' https://images.unsplash.com",
+    `img-src 'self' https://images.unsplash.com${ga ? " https://*.google-analytics.com https://*.googletagmanager.com" : ""}`,
     "font-src 'self'",
     "style-src 'self' 'unsafe-inline'",
-    "script-src 'self'",
-    `connect-src 'self'${leadOrigin ? " " + leadOrigin : ""}`,
+    `script-src 'self'${ga ? " https://www.googletagmanager.com" : ""}`,
+    `connect-src 'self'${leadOrigin ? " " + leadOrigin : ""}${ga ? " https://*.google-analytics.com https://*.googletagmanager.com" : ""}`,
     "frame-src https://www.openstreetmap.org",
     "form-action 'self'",
     "upgrade-insecure-requests",
   ].join("; ");
+
+  /* GA4: load gtag.js; init lives in main.js (data-ga) so no inline script,
+     keeping script-src strict. */
+  const gaTag = ga ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(ga)}" data-ga="${esc(ga)}"></script>` : "";
+  const gscTag = site.analytics && site.analytics.gscVerification
+    ? `<meta name="google-site-verification" content="${esc(site.analytics.gscVerification)}">`
+    : "";
 
   return `<!doctype html>
 <html lang="${site.lang}">
@@ -84,6 +92,8 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 <link rel="preload" href="/assets/fonts/montserrat-cyrillic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/styles.css?v=${v}">
+${gscTag}
+${gaTag}
 ${allSchemas.map(jsonLd).join("\n")}
 </head>
 <body class="${bodyClass}">

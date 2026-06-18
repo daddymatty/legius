@@ -16,6 +16,9 @@ export const site = {
   /* Lead-form endpoint (Cloudflare Worker proxy that forwards to Telegram).
      Empty = form falls back to localStorage only. Set after deploying the worker. */
   leadEndpoint: "https://legius-lead.mexn1n1.workers.dev",
+  /* Analytics — empty = disabled (no GA scripts, no extra CSP domains).
+     ga4: GA4 Measurement ID "G-XXXXXXX". gscVerification: Search Console meta token. */
+  analytics: { ga4: "", gscVerification: "" },
   address: {
     street: "вул. Велика Васильківська, 5, БЦ «Прайм», 8 поверх",
     locality: "Київ",
