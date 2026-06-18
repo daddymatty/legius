@@ -27,7 +27,7 @@ import { casesPage } from "./src/templates/cases.js";
 import { blogIndexPage, pillarPage, articlePage } from "./src/templates/blog.js";
 import { aboutPage, contactsPage, privacyPage, notFoundPage } from "./src/templates/pages.js";
 import {
-  breadcrumbSchema, faqSchema, serviceSchema, articleSchema,
+  breadcrumbSchema, faqSchema, serviceSchema, serviceItemSchema, articleSchema,
   personSchema, localBusinessSchema,
 } from "./src/lib/seo.js";
 import { makePlaceholders } from "./tools/placeholders.js";
@@ -178,6 +178,7 @@ async function build() {
             canonical: `/practices/${p.slug}/${svc.slug}/`,
             ogType: "article",
             schemas: [
+              serviceItemSchema(p, svc, sc.heroSub),
               faqSchema(sc.faq || []),
               breadcrumbSchema([
                 { name: "Головна", href: "/" },

@@ -99,6 +99,20 @@ export function serviceSchema(practice) {
   };
 }
 
+export function serviceItemSchema(practice, svc, description) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: svc.title,
+    category: practice.shortTitle,
+    provider: { "@id": site.domain + "/#organization" },
+    areaServed: { "@type": "City", name: "Київ" },
+    name: svc.title,
+    description: description,
+    url: abs("/practices/" + practice.slug + "/" + svc.slug + "/"),
+  };
+}
+
 export function articleSchema(article) {
   return {
     "@context": "https://schema.org",
