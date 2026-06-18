@@ -130,9 +130,11 @@ h3 { font-size: var(--fs-lg); }
 .btn--block { width: 100%; }
 
 /* ---------- Header ---------- */
-.site-header { position: sticky; top: 0; z-index: 60; background: var(--c-ink); color: #fff; }
-.util-bar { height: 46px; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,0.08); font-family: var(--font-body); font-size: 0.82rem; transition: height 0.28s ease, opacity 0.28s ease; }
-.site-header.util-hidden .util-bar { height: 0; opacity: 0; border-bottom-color: transparent; }
+.site-header { position: sticky; top: 0; z-index: 60; background: var(--c-ink); color: #fff; transition: transform 0.3s ease; will-change: transform; }
+.util-bar { height: 46px; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,0.08); font-family: var(--font-body); font-size: 0.82rem; }
+/* Hide the util-bar by sliding the whole header up by its height — transform
+   never reflows page content, so the header no longer "jumps". */
+.site-header.util-hidden { transform: translateY(-46px); }
 .util-bar .container { display: flex; align-items: center; justify-content: space-between; height: 46px; gap: 1rem; }
 .util-bar__left { display: none; gap: 1.4rem; color: var(--c-on-dark); }
 .util-bar__left a { display: inline-flex; gap: 0.45rem; align-items: center; }
