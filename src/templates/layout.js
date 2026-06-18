@@ -61,20 +61,20 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 <link rel="apple-touch-icon" href="/assets/img/favicon.svg">
 <meta name="theme-color" content="#0B1A33">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&family=Jost:wght@300;400&display=swap">
-<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preload" href="/assets/fonts/montserrat-cyrillic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/styles.css?v=${v}">
 ${allSchemas.map(jsonLd).join("\n")}
 </head>
 <body class="${bodyClass}">
+<div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
 <a href="#main" class="visually-hidden">Перейти до основного змісту</a>
 ${header}
 <main id="main">
 ${content}
 </main>
 ${footer}
+<button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 <script src="/assets/js/main.js?v=${v}" defer></script>
 </body>
 </html>`;

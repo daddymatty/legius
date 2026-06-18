@@ -22,6 +22,14 @@
 
   /* ---- Reveal on scroll (IntersectionObserver) ---- */
   var reveals = document.querySelectorAll(".reveal");
+  /* Stagger reveals that share a parent (e.g. grid cards) for a cascade effect. */
+  reveals.forEach(function (el) {
+    var p = el.parentNode;
+    if (!p) return;
+    var idx = p.__revealIdx || 0;
+    if (idx > 0) el.style.setProperty("--reveal-delay", Math.min(idx * 80, 400) + "ms");
+    p.__revealIdx = idx + 1;
+  });
   if ("IntersectionObserver" in window && reveals.length) {
     var io = new IntersectionObserver(
       function (entries) {
@@ -49,30 +57,55 @@
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
 
-  /* ---- Lead forms (front-end capture, no backend dependency) ---- */
+  /* ---- Lead forms: POST to endpoint (Telegram proxy) when configured,
+         always keep a localStorage backup. ---- */
   document.querySelectorAll("form[data-lead-form]").forEach(function (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var data = Object.fromEntries(new FormData(form).entries());
+      if (data.company) return; /* honeypot tripped — silently drop bot submission */
       data.page = location.pathname;
       data.ts = new Date().toISOString();
+
       try {
         var store = JSON.parse(localStorage.getItem("legius_leads") || "[]");
         store.push(data);
         localStorage.setItem("legius_leads", JSON.stringify(store));
       } catch (err) {}
 
-      /* Hook point for real integrations (CRM / endpoint / GTM). */
       if (window.dataLayer) {
         window.dataLayer.push({ event: "lead_submit", form_id: form.id || "lead", source: data.source || "site" });
       }
-      // Example endpoint (configure on deploy):
-      // fetch('/api/lead', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data)});
 
       var note = form.querySelector(".form-note");
-      if (note) note.classList.add("show");
-      form.reset();
-      setTimeout(function () { if (note) note.classList.remove("show"); }, 6000);
+      var btn = form.querySelector("button[type=submit]");
+      var endpoint = form.getAttribute("data-endpoint");
+
+      var showOk = function () {
+        if (note) { note.classList.remove("error"); note.classList.add("show"); }
+        form.reset();
+        setTimeout(function () { if (note) note.classList.remove("show"); }, 6000);
+      };
+
+      if (!endpoint) { showOk(); return; } /* no backend yet → optimistic */
+
+      if (btn) { btn.disabled = true; btn.dataset.label = btn.textContent; btn.textContent = "Надсилаємо…"; }
+      fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+        .then(function (r) { if (!r.ok) throw new Error("bad status"); return r; })
+        .then(function () { showOk(); })
+        .catch(function () {
+          if (note) {
+            note.textContent = "Не вдалося надіслати автоматично. Зателефонуйте нам або напишіть у месенджер.";
+            note.classList.add("error", "show");
+          }
+        })
+        .finally(function () {
+          if (btn) { btn.disabled = false; if (btn.dataset.label) btn.textContent = btn.dataset.label; }
+        });
     });
   });
 
@@ -102,13 +135,20 @@
 
   /* ---- Header: shadow + hide utility bar on scroll down, show on scroll up ---- */
   var header = document.querySelector(".site-header");
-  if (header) {
+  var progress = document.querySelector("[data-scroll-progress]");
+  if (header || progress) {
     var lastY = window.scrollY;
     var onScroll = function () {
       var y = window.scrollY;
-      header.style.boxShadow = y > 8 ? "var(--shadow-sm)" : "none";
-      if (y > lastY && y > 90) header.classList.add("util-hidden");      // scrolling down
-      else if (y < lastY) header.classList.remove("util-hidden");        // scrolling up
+      if (header) {
+        header.style.boxShadow = y > 8 ? "var(--shadow-sm)" : "none";
+        if (y > lastY && y > 90) header.classList.add("util-hidden");    // scrolling down
+        else if (y < lastY) header.classList.remove("util-hidden");      // scrolling up
+      }
+      if (progress) {
+        var h = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
+      }
       lastY = y;
     };
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -145,6 +185,18 @@
       { threshold: 0.4 }
     );
     counters.forEach(function (c) { cio.observe(c); });
+  }
+
+  /* ---- Back-to-top button ---- */
+  var toTop = document.querySelector("[data-to-top]");
+  if (toTop) {
+    toTop.hidden = false;
+    var toggleTop = function () { toTop.classList.toggle("show", window.scrollY > 600); };
+    window.addEventListener("scroll", toggleTop, { passive: true });
+    toggleTop();
+    toTop.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   }
 
   /* ---- Current year in footer ---- */

@@ -9,10 +9,22 @@
     "dev": "node build.js && node tools/serve.js",
     "generate:article": "node tools/generate-article.js"
   },
-  "keywords": ["law-firm", "legal", "seo", "static-site", "kyiv", "ukraine"],
+  "keywords": [
+    "law-firm",
+    "legal",
+    "seo",
+    "static-site",
+    "kyiv",
+    "ukraine"
+  ],
   "author": "LEGIUS",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "csso": "^5.0.5",
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.48.0"
   }
 }

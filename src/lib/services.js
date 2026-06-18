@@ -1,4 +1,5 @@
 /* Per-service pages: derive a slug + structured content for each practice service. */
+import { serviceOverrides } from "../data/services/index.js";
 
 const MAP = { а:"a",б:"b",в:"v",г:"h",ґ:"g",д:"d",е:"e",є:"ye",ж:"zh",з:"z",и:"y",і:"i",ї:"yi",й:"y",к:"k",л:"l",м:"m",н:"n",о:"o",п:"p",р:"r",с:"s",т:"t",у:"u",ф:"f",х:"kh",ц:"ts",ч:"ch",ш:"sh",щ:"shch",ь:"",ю:"yu",я:"ya"," ":"-","'":"","’":"" };
 
@@ -16,10 +17,12 @@ export function practiceServices(p) {
   }));
 }
 
-/** Structured content for one service page. */
+/** Structured content for one service page. Uses a unique override when present,
+ *  otherwise falls back to the structured template below. */
 export function serviceContent(p, svc) {
   const t = svc.title;
-  return {
+  const override = (serviceOverrides[p.slug] || {})[svc.slug];
+  const template = {
     heroSub: `«${t}» — напрям практики «${p.shortTitle}» у LEGIUS. Супроводжуємо під ключ: від аналізу ситуації до результату.`,
     sections: [
       {
@@ -64,5 +67,12 @@ export function serviceContent(p, svc) {
       { q: "Скільки часу займає вирішення питання?", a: "Строки залежать від конкретної ситуації та завантаженості органів. На консультації ми озвучуємо реалістичні строки саме для вашого випадку." },
       { q: "Чи можна отримати послугу дистанційно?", a: "Так. Ми працюємо в офісі в центрі Києва та онлайн — повний супровід можливий по всій Україні." },
     ],
+  };
+
+  if (!override) return template;
+  return {
+    heroSub: override.heroSub || template.heroSub,
+    sections: override.sections && override.sections.length ? override.sections : template.sections,
+    faq: override.faq && override.faq.length ? override.faq : template.faq,
   };
 }

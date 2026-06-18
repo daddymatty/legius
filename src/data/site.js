@@ -3,7 +3,7 @@ export const site = {
   name: "LEGIUS",
   legalName: 'Адвокатське об’єднання «ЛЕГІУС»',
   tagline: "Юридична компанія преміум-класу",
-  domain: "https://legius.ua",
+  domain: "https://legius.com.ua",
   locale: "uk_UA",
   lang: "uk",
   city: "Київ",
@@ -13,6 +13,9 @@ export const site = {
   mobileDisplay: "+38 (068) 888 44 00",
   mobileHref: "+380688884400",
   email: "office@legius.ua",
+  /* Lead-form endpoint (Cloudflare Worker proxy that forwards to Telegram).
+     Empty = form falls back to localStorage only. Set after deploying the worker. */
+  leadEndpoint: "",
   address: {
     street: "вул. Велика Васильківська, 5, БЦ «Прайм», 8 поверх",
     locality: "Київ",
