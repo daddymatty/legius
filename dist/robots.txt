@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /privacy/
 
-Sitemap: https://legius.ua/sitemap.xml
+Sitemap: https://legius.com.ua/sitemap.xml

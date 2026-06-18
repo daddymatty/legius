@@ -392,6 +392,13 @@ async function build() {
   /* GitHub Pages: disable Jekyll processing so all files are served as-is. */
   await writeFile(path.join(DIST, ".nojekyll"), "", "utf8");
 
+  /* Custom domain: persist CNAME so GitHub Pages keeps the domain mapping
+     across artifact deploys. Host only (no scheme/path). */
+  const cnameHost = site.domain.replace(/^https?:\/\//, "").replace(/\/.*$/, "");
+  if (cnameHost && !cnameHost.endsWith("github.io")) {
+    await writeFile(path.join(DIST, "CNAME"), cnameHost + "\n", "utf8");
+  }
+
   /* ---------- Minify HTML/CSS/JS (optional — skipped if deps absent) ---------- */
   await minifyDist();
 
