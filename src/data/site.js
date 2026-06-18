@@ -15,7 +15,7 @@ export const site = {
   email: "office@legius.ua",
   /* Lead-form endpoint (Cloudflare Worker proxy that forwards to Telegram).
      Empty = form falls back to localStorage only. Set after deploying the worker. */
-  leadEndpoint: "",
+  leadEndpoint: "https://legius-lead.mexn1n1.workers.dev",
   address: {
     street: "вул. Велика Васильківська, 5, БЦ «Прайм», 8 поверх",
     locality: "Київ",
