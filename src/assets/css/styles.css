@@ -353,6 +353,8 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
   background: #fff; color: var(--c-ink); transition: var(--transition); width: 100%;
 }
 .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--c-teal); box-shadow: 0 0 0 3px rgba(226,58,77,0.15); }
+/* Accessible keyboard focus ring (does not affect mouse clicks) */
+a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--c-teal); outline-offset: 3px; border-radius: 3px; }
 .form-consent { font-size: 0.78rem; color: var(--c-muted); margin-top: 0.6rem; }
 .form-consent a { color: var(--c-teal-d); text-decoration: underline; }
 .form-note { display: none; padding: 0.9rem 1rem; border-radius: var(--radius-sm); background: #fdecee; color: var(--c-teal-d); font-weight: 700; margin-bottom: 1rem; }
