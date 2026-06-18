@@ -42,7 +42,12 @@ function whyUsBlock(p) {
   </div></section>`;
 }
 
-export function practicePage(p, { practiceBySlug, cases, team = [] }) {
+/* Blog articles that belong to this practice's cluster (interlinking). */
+function articlesForPractice(articles, slug, n) {
+  return (articles || []).filter((a) => a.practice === slug && !a.pillar).slice(0, n);
+}
+
+export function practicePage(p, { practiceBySlug, cases, team = [], articles = [] }) {
   const crumbs = [
     { name: "Головна", href: "/" },
     { name: "Практики", href: "/practices/" },
@@ -60,6 +65,25 @@ export function practicePage(p, { practiceBySlug, cases, team = [] }) {
         <span class="card__link">Детальніше</span></a>`
     )
     .join("");
+
+  const relArticles = articlesForPractice(articles, p.slug, 3);
+  const articleBlock = relArticles.length
+    ? `<section class="section section--soft reveal"><div class="container">
+        <div class="section__head"><span class="eyebrow">Блог</span><h2>Корисні статті за темою</h2><p class="lead">Практичні роз’яснення законодавства від юристів LEGIUS.</p></div>
+        <div class="grid grid--3">${relArticles
+          .map(
+            (a) => `<a class="post-card" href="/blog/${a.slug}/">
+              <div class="post-card__body">
+                <span class="post-card__meta">${esc(a.practiceLabel || "Блог")} · ${a.readMins || 6} хв</span>
+                <h3>${esc(a.title)}</h3>
+                <p class="post-card__excerpt">${esc(a.excerpt || "")}</p>
+                <span class="card__link">Читати</span>
+              </div></a>`
+          )
+          .join("")}</div>
+        <div class="text-center mt-3"><a class="btn btn--dark" href="/blog/">Усі статті</a></div>
+      </div></section>`
+    : "";
 
   const relCases = cases.filter((c) => c.practice === p.slug).slice(0, 3);
   const caseBlock = relCases.length
@@ -108,6 +132,8 @@ ${whyUsBlock(p)}
 
 ${caseBlock}
 
+${articleBlock}
+
 ${renderFaq(p.faq, `FAQ: ${p.shortTitle}`)}
 
 ${relatedPractices(p.related, practiceBySlug)}
@@ -120,7 +146,7 @@ ${ctaBand({ title: `Потрібна допомога у сфері «${p.shortT
 }
 
 /* ---------- Individual service page ---------- */
-export function servicePage(p, svc, { practiceBySlug, team = [] }) {
+export function servicePage(p, svc, { practiceBySlug, team = [], articles = [] }) {
   const crumbs = [
     { name: "Головна", href: "/" },
     { name: "Практики", href: "/practices/" },
@@ -135,6 +161,15 @@ export function servicePage(p, svc, { practiceBySlug, team = [] }) {
         <h3 style="font-size:1.15rem;margin-bottom:0.8rem">Інші послуги напряму</h3>
         <ul style="display:grid;gap:0.5rem">${others
           .map((s) => `<li><a href="/practices/${p.slug}/${s.slug}/" style="color:var(--c-slate)">${esc(s.title)}</a></li>`)
+          .join("")}</ul>
+      </div>`
+    : "";
+  const relArticles = articlesForPractice(articles, p.slug, 4);
+  const articleList = relArticles.length
+    ? `<div class="card">
+        <h3 style="font-size:1.15rem;margin-bottom:0.8rem">Статті за темою</h3>
+        <ul style="display:grid;gap:0.5rem">${relArticles
+          .map((a) => `<li><a href="/blog/${a.slug}/" style="color:var(--c-slate)">${esc(a.title)}</a></li>`)
           .join("")}</ul>
       </div>`
     : "";
@@ -157,6 +192,7 @@ ${breadcrumbs(crumbs)}
     <aside class="content-aside__side reveal">
       ${lawyerCard(lawyer)}
       ${otherList}
+      ${articleList}
       ${leadForm({ id: `service-${p.slug}-${svc.slug}`, title: "Консультація щодо послуги", source: `service:${p.slug}/${svc.slug}` })}
     </aside>
   </div>
