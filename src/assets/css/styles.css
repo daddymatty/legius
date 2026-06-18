@@ -130,9 +130,11 @@ h3 { font-size: var(--fs-lg); }
 .btn--block { width: 100%; }
 
 /* ---------- Header ---------- */
-.site-header { position: sticky; top: 0; z-index: 60; background: var(--c-ink); color: #fff; }
-.util-bar { height: 46px; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,0.08); font-family: var(--font-body); font-size: 0.82rem; transition: height 0.28s ease, opacity 0.28s ease; }
-.site-header.util-hidden .util-bar { height: 0; opacity: 0; border-bottom-color: transparent; }
+.site-header { position: sticky; top: 0; z-index: 60; background: var(--c-ink); color: #fff; transition: transform 0.3s ease; will-change: transform; }
+.util-bar { height: 46px; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,0.08); font-family: var(--font-body); font-size: 0.82rem; }
+/* Hide the util-bar by sliding the whole header up by its height — transform
+   never reflows page content, so the header no longer "jumps". */
+.site-header.util-hidden { transform: translateY(-46px); }
 .util-bar .container { display: flex; align-items: center; justify-content: space-between; height: 46px; gap: 1rem; }
 .util-bar__left { display: none; gap: 1.4rem; color: var(--c-on-dark); }
 .util-bar__left a { display: inline-flex; gap: 0.45rem; align-items: center; }
@@ -341,7 +343,7 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .faq details > div { padding: 0 1.4rem 1.2rem; color: var(--c-muted); }
 
 /* ---------- Forms ---------- */
-.lead-form { background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius); padding: clamp(1.7rem, 4vw, 2.4rem); box-shadow: var(--shadow); }
+.lead-form { background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius); padding: clamp(1.7rem, 4vw, 2.4rem); box-shadow: var(--shadow); container-type: inline-size; }
 .lead-form h3 { font-weight: 700; }
 .form-row { display: grid; gap: 1rem; }
 .field { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
@@ -486,7 +488,12 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 /* ---------- Responsive ---------- */
-@media (min-width: 375px) { .form-row--2 { grid-template-columns: 1fr 1fr; } }
+/* Two-up fields only when the FORM itself is wide enough (container query),
+   so narrow sidebar forms stack instead of cramming Phone/E-mail together. */
+@container (min-width: 440px) { .form-row--2 { grid-template-columns: 1fr 1fr; } }
+@supports not (container-type: inline-size) {
+  @media (min-width: 480px) { .form-row--2 { grid-template-columns: 1fr 1fr; } }
+}
 @media (min-width: 768px) {
   .grid--2 { grid-template-columns: repeat(2,1fr); }
   .grid--3 { grid-template-columns: repeat(2,1fr); }

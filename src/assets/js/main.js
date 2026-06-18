@@ -20,6 +20,8 @@
       var open = mnav.classList.toggle("open");
       burger.setAttribute("aria-expanded", open ? "true" : "false");
       document.body.style.overflow = open ? "hidden" : "";
+      /* keep header fully expanded while the menu (anchored at 120px) is open */
+      if (open) { var h = document.querySelector(".site-header"); if (h) h.classList.remove("util-hidden"); }
     });
     mnav.addEventListener("click", function (e) {
       if (e.target.tagName === "A") {
@@ -146,26 +148,40 @@
     Object.keys(map).forEach(function (id) { tocIo.observe(document.getElementById(id)); });
   }
 
-  /* ---- Header: shadow + hide utility bar on scroll down, show on scroll up ---- */
+  /* ---- Header: shadow + hide utility bar on scroll down, show on scroll up ----
+     Uses a movement threshold + rAF so tiny trackpad/momentum jitters don't
+     rapidly toggle the util-bar (which made the header "jump"). */
   var header = document.querySelector(".site-header");
   var progress = document.querySelector("[data-scroll-progress]");
   if (header || progress) {
-    var lastY = window.scrollY;
-    var onScroll = function () {
+    var lastToggleY = window.scrollY; // reference point for direction changes
+    var THRESHOLD = 12;               // ignore movements smaller than this
+    var ticking = false;
+    var update = function () {
+      ticking = false;
       var y = window.scrollY;
       if (header) {
         header.style.boxShadow = y > 8 ? "var(--shadow-sm)" : "none";
-        if (y > lastY && y > 90) header.classList.add("util-hidden");    // scrolling down
-        else if (y < lastY) header.classList.remove("util-hidden");      // scrolling up
+        if (y <= 60) {
+          header.classList.remove("util-hidden"); // always expanded near the top
+          lastToggleY = y;
+        } else if (y - lastToggleY > THRESHOLD) {
+          header.classList.add("util-hidden");     // moved down enough → collapse
+          lastToggleY = y;
+        } else if (lastToggleY - y > THRESHOLD) {
+          header.classList.remove("util-hidden");  // moved up enough → expand
+          lastToggleY = y;
+        }
       }
       if (progress) {
         var h = document.documentElement.scrollHeight - window.innerHeight;
         progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
       }
-      lastY = y;
     };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
   }
 
   /* ---- Count-up animation for big numbers (mosaic tiles) ---- */

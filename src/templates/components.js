@@ -103,7 +103,7 @@ export function leadForm({ id = "lead", title = "Отримати консуль
     <div class="field"><label for="${id}-name">Ваше ім’я</label><input id="${id}-name" name="name" type="text" required autocomplete="name" placeholder="Ім’я"></div>
     <div class="form-row form-row--2">
       <div class="field"><label for="${id}-phone">Телефон</label><input id="${id}-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+38 (0__) ___-__-__"></div>
-      <div class="field"><label for="${id}-email">E-mail</label><input id="${id}-email" name="email" type="email" autocomplete="email" placeholder="you@email.com"></div>
+      <div class="field"><label for="${id}-email">E-mail</label><input id="${id}-email" name="email" type="email" autocomplete="email" placeholder="your@email.com"></div>
     </div>
     ${compact ? "" : `<div class="field"><label for="${id}-msg">Коротко про ситуацію</label><textarea id="${id}-msg" name="message" rows="3" placeholder="Опишіть ваше питання"></textarea></div>`}
     <button class="btn btn--primary btn--block" type="submit">Замовити консультацію</button>
