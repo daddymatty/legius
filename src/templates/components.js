@@ -73,12 +73,12 @@ export function header(practices, currentPath = "") {
     </div>
     <button class="burger" data-burger aria-label="Меню" aria-expanded="false" aria-controls="mobile-nav">Меню <i><span></span></i></button>
   </div>
-  <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
-    ${mobileItems}
-    <a class="btn btn--primary btn--block" href="/contacts/#consult">Безкоштовна консультація</a>
-    <a class="btn btn--ghost btn--block" style="color:#fff;margin-top:.8rem" href="tel:${site.phoneHref}">Зателефонувати</a>
-  </div>
-</header>`;
+</header>
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav>
+  ${mobileItems}
+  <a class="btn btn--primary btn--block" href="/contacts/#consult">Безкоштовна консультація</a>
+  <a class="btn btn--ghost btn--block" style="color:#fff;margin-top:.8rem" href="tel:${site.phoneHref}">Зателефонувати</a>
+</div>`;
 }
 
 export function breadcrumbs(items) {
