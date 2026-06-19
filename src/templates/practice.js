@@ -119,7 +119,7 @@ ${breadcrumbs(crumbs)}
     <div class="content-aside__main prose reveal" style="max-width:none">${overview}</div>
     <aside class="content-aside__side reveal">
       ${lawyerCard(lawyer)}
-      ${leadForm({ id: `practice-${p.slug}`, title: "Консультація юриста", source: `practice:${p.slug}`, compact: true })}
+      ${leadForm({ id: `practice-${p.slug}`, title: "Залишились запитання?", source: `practice:${p.slug}`, compact: true, note: "" })}
     </aside>
   </div>
 </div></section>
@@ -190,7 +190,7 @@ ${breadcrumbs(crumbs)}
       ${lawyerCard(lawyer)}
       ${otherList}
       ${articleList}
-      ${leadForm({ id: `service-${p.slug}-${svc.slug}`, title: "Консультація щодо послуги", source: `service:${p.slug}/${svc.slug}`, compact: true })}
+      ${leadForm({ id: `service-${p.slug}-${svc.slug}`, title: "Залишились запитання?", source: `service:${p.slug}/${svc.slug}`, compact: true, note: "" })}
     </aside>
   </div>
 </div></section>

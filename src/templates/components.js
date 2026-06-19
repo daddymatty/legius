@@ -95,12 +95,12 @@ export function breadcrumbs(items) {
 }
 
 /* ---------- Lead form ---------- */
-export function leadForm({ id = "lead", title = "Отримати консультацію", source = "site", compact = false } = {}) {
+export function leadForm({ id = "lead", title = "Отримати консультацію", source = "site", compact = false, note = "Відповідаємо протягом 15 хвилин у робочий час. Перша консультація — безкоштовно." } = {}) {
   return `<form class="lead-form" id="${id}" data-lead-form${site.leadEndpoint ? ` data-endpoint="${esc(site.leadEndpoint)}"` : ""}>
     <input type="hidden" name="source" value="${esc(source)}">
     <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-    <h3 style="margin-bottom:.3rem">${esc(title)}</h3>
-    <p style="color:var(--c-slate);font-size:.9rem;margin-bottom:.9rem">Відповідаємо протягом 15 хвилин у робочий час. Перша консультація — безкоштовно.</p>
+    <h3 style="margin-bottom:${note ? ".3rem" : ".9rem"}">${esc(title)}</h3>
+    ${note ? `<p style="color:var(--c-slate);font-size:.9rem;margin-bottom:.9rem">${esc(note)}</p>` : ""}
     <div class="form-note">Дякуємо! Ваш запит надіслано — ми зв’яжемося з вами найближчим часом.</div>
     <div class="field"><label for="${id}-name">Ваше ім’я</label><input id="${id}-name" name="name" type="text" required autocomplete="name" placeholder="Ім’я"></div>
     <div class="field"><label for="${id}-phone">Телефон</label><input id="${id}-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+38 (0__) ___-__-__"></div>
