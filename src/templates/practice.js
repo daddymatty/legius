@@ -56,7 +56,7 @@ export function practicePage(p, { practiceBySlug, cases, team = [], articles = [
   ];
   const lawyer = findLawyer(p, team);
   const services = practiceServices(p);
-  const overview = renderSections((p.sections || []).slice(0, 2)); // trimmed overview
+  const overview = renderSections(p.sections || []); // full practice content (fills the column next to the sticky aside)
 
   const serviceCards = services
     .map(
