@@ -266,14 +266,13 @@
     });
   }
 
-  /* ---- Cases: filter by specialization (homepage) ---- */
-  var caseFilter = document.querySelector("[data-case-filter]");
-  var caseGrid = document.querySelector("[data-case-grid]");
-  if (caseFilter && caseGrid) {
-    var caseCards = caseGrid.querySelectorAll(".case-card");
-    var btns = caseFilter.querySelectorAll(".case-filter__btn");
-    caseFilter.addEventListener("click", function (e) {
-      var btn = e.target.closest(".case-filter__btn");
+  /* ---- Reusable filter: chip bar + grid, toggling items by a data attribute ---- */
+  function setupFilter(bar, grid, attr) {
+    if (!bar || !grid) return;
+    var btns = bar.querySelectorAll("[data-filter]");
+    var items = grid.querySelectorAll("[" + attr + "]");
+    bar.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-filter]");
       if (!btn) return;
       var f = btn.getAttribute("data-filter");
       btns.forEach(function (b) {
@@ -281,11 +280,14 @@
         b.classList.toggle("is-active", on);
         b.setAttribute("aria-pressed", on ? "true" : "false");
       });
-      caseCards.forEach(function (c) {
-        c.hidden = !(f === "all" || c.getAttribute("data-practice") === f);
+      items.forEach(function (it) {
+        it.hidden = !(f === "all" || it.getAttribute(attr) === f);
       });
     });
   }
+  /* Cases filter (homepage) + blog filter (blog index) */
+  setupFilter(document.querySelector("[data-case-filter]"), document.querySelector("[data-case-grid]"), "data-practice");
+  setupFilter(document.querySelector("[data-blog-filter]"), document.querySelector("[data-blog-grid]"), "data-cluster");
 
   /* ---- Current year in footer ---- */
   var y = document.querySelector("[data-year]");
