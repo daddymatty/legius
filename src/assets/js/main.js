@@ -285,8 +285,58 @@
       });
     });
   }
-  /* Cases filter (homepage) */
-  setupFilter(document.querySelector("[data-case-filter]"), document.querySelector("[data-case-grid]"), "data-practice");
+  /* Practices filter (homepage) */
+  setupFilter(document.querySelector("[data-practice-filter]"), document.querySelector("[data-practice-grid]"), "data-group");
+
+  /* Cases filter (homepage): show 2 rows (6) by default; a selected practice
+     reveals all its matching cases. */
+  (function () {
+    var grid = document.querySelector("[data-case-grid]");
+    if (!grid) return;
+    var bar = document.querySelector("[data-case-filter]");
+    var cards = [].slice.call(grid.querySelectorAll(".case-card"));
+    var DEFAULT = 6;
+    var filter = "all";
+    function render() {
+      var limit = filter === "all" ? DEFAULT : Infinity;
+      var shown = 0;
+      cards.forEach(function (c) {
+        var ok = filter === "all" || c.getAttribute("data-practice") === filter;
+        if (ok && shown < limit) { c.hidden = false; c.classList.add("in"); shown++; }
+        else c.hidden = true;
+      });
+    }
+    if (bar) {
+      bar.addEventListener("click", function (e) {
+        var btn = e.target.closest("[data-filter]");
+        if (!btn) return;
+        filter = btn.getAttribute("data-filter");
+        bar.querySelectorAll("[data-filter]").forEach(function (b) {
+          var on = b === btn;
+          b.classList.toggle("is-active", on);
+          b.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        render();
+      });
+    }
+    render();
+  })();
+
+  /* Reviews carousel: prev/next scroll the horizontal track by one card */
+  (function () {
+    var car = document.querySelector("[data-carousel]");
+    if (!car) return;
+    var track = car.querySelector("[data-hscroll]");
+    if (!track) return;
+    var step = function () {
+      var first = track.firstElementChild;
+      return first ? first.getBoundingClientRect().width + 20 : track.clientWidth * 0.8;
+    };
+    var prev = car.querySelector("[data-carousel-prev]");
+    var next = car.querySelector("[data-carousel-next]");
+    if (prev) prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: "smooth" }); });
+    if (next) next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: "smooth" }); });
+  })();
 
   /* Blog index: practice filter + "show more" pagination (combined) */
   (function () {
