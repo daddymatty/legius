@@ -77,13 +77,43 @@
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
 
-  /* ---- Lead forms: POST to endpoint (Telegram proxy) when configured,
+  /* ---- Lead forms: inline validation + POST to endpoint (Telegram proxy),
          always keep a localStorage backup. ---- */
+  function setFieldError(input, msg) {
+    var field = input.closest(".field");
+    if (!field) return;
+    field.classList.add("field--invalid");
+    var err = field.querySelector(".field__err");
+    if (!err) { err = document.createElement("div"); err.className = "field__err"; field.appendChild(err); }
+    err.textContent = msg;
+  }
+  function clearFieldError(input) {
+    var field = input.closest(".field");
+    if (!field) return;
+    field.classList.remove("field--invalid");
+    var err = field.querySelector(".field__err");
+    if (err) err.textContent = "";
+  }
+  function validateLeadForm(form) {
+    var first = null;
+    var name = form.querySelector("[name=name]");
+    var phone = form.querySelector("[name=phone]");
+    var email = form.querySelector("[name=email]");
+    if (name) { if (name.value.trim().length < 2) { setFieldError(name, "Вкажіть ваше ім’я"); first = first || name; } else clearFieldError(name); }
+    if (phone) { if (phone.value.replace(/\D/g, "").length < 9) { setFieldError(phone, "Вкажіть коректний номер телефону"); first = first || phone; } else clearFieldError(phone); }
+    if (email && email.value.trim()) { if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value.trim())) { setFieldError(email, "Невірний формат e-mail"); first = first || email; } else clearFieldError(email); }
+    if (first) first.focus();
+    return !first;
+  }
   document.querySelectorAll("form[data-lead-form]").forEach(function (form) {
+    form.querySelectorAll("input, textarea").forEach(function (inp) {
+      inp.addEventListener("input", function () { clearFieldError(inp); });
+    });
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var data = Object.fromEntries(new FormData(form).entries());
       if (data.company) return; /* honeypot tripped — silently drop bot submission */
+      if (!validateLeadForm(form)) return; /* show inline errors, don't submit */
       data.page = location.pathname;
       data.ts = new Date().toISOString();
 
