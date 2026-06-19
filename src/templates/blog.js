@@ -5,7 +5,7 @@ import { renderProseSections, renderFaq, escape as esc } from "./render.js";
 import { practiceServices } from "../lib/services.js";
 
 function postCard(a) {
-  return `<a class="post-card reveal" href="/blog/${a.slug}/">
+  return `<a class="post-card reveal" href="/blog/${a.slug}/" data-cluster="${esc(a.cluster || "")}">
     <div class="post-card__img"></div>
     <div class="post-card__body">
       <span class="post-card__meta">${esc(a.clusterLabel || "Блог")} · ${(a.readMins || 6)} хв</span>
@@ -26,12 +26,16 @@ export function blogIndexPage({ pillars, articles, clusterLabels }) {
         <span class="card__link" style="color:var(--c-teal-l)">Відкрити хаб</span></a>`
     )
     .join("");
-  const recent = articles
-    .slice()
-    .sort((a, b) => (a.date < b.date ? 1 : -1))
-    .slice(0, 12)
-    .map(postCard)
-    .join("");
+  const sorted = articles.slice().sort((a, b) => (a.date < b.date ? 1 : -1));
+  const allCards = sorted.map(postCard).join("");
+  /* Filter chips by practice/cluster, in pillar order, only clusters that have articles. */
+  const filterClusters = pillars
+    .map((p) => [p.cluster, (sorted.find((a) => a.cluster === p.cluster) || {}).clusterLabel || p.title])
+    .filter(([c]) => sorted.some((a) => a.cluster === c));
+  const filterBar = `<div class="case-filter" data-blog-filter>
+      <button type="button" class="case-filter__btn is-active" data-filter="all">Усі практики</button>
+      ${filterClusters.map(([c, label]) => `<button type="button" class="case-filter__btn" data-filter="${esc(c)}">${esc(label)}</button>`).join("")}
+    </div>`;
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
@@ -44,8 +48,10 @@ ${breadcrumbs(crumbs)}
   <div class="grid grid--4">${pillarCards}</div>
 </div></section>
 <section class="section section--soft"><div class="container">
-  <div class="section__head"><span class="eyebrow">Останні матеріали</span><h2>Нові публікації</h2></div>
-  <div class="grid grid--3">${recent}</div>
+  <div class="section__head section__head--center"><span class="eyebrow">Усі матеріали</span><h2>Статті за практиками</h2><p class="lead">Оберіть напрям, щоб відфільтрувати ${articles.length} публікацій.</p></div>
+  ${filterBar}
+  <div class="grid grid--3" data-blog-grid>${allCards}</div>
+  <div class="text-center mt-3" data-blog-more hidden><button class="btn btn--dark" type="button">Показати ще</button></div>
 </div></section>
 ${ctaBand()}`;
 }
@@ -114,11 +120,14 @@ ${breadcrumbs(crumbs)}
           return svc.length ? `<br><span style="font-size:.92em">Послуги напряму: ${svc.map((s) => `<a href="/practices/${practice.slug}/${s.slug}/">${esc(s.title)}</a>`).join(", ")}.</span>` : "";
         })()}</div>` : ""}
       </article>
-      ${renderFaq(a.faq, "Питання та відповіді")}
-      ${related ? `<section class="reveal" style="margin-top:2rem"><h2 style="font-size:1.5rem;margin-bottom:1rem">Читайте також</h2><div class="grid grid--3">${related}</div></section>` : ""}
     </div>
   </div>
 </div></section>
+${renderFaq(a.faq, "Питання та відповіді")}
+${related ? `<section class="section"><div class="container">
+  <div class="section__head section__head--center"><span class="eyebrow">Блог</span><h2>Читайте також</h2></div>
+  <div class="grid grid--3">${related}</div>
+</div></section>` : ""}
 ${ctaBand({ btn: "Отримати консультацію" })}
 <section class="section" id="consult"><div class="container" style="max-width:640px">
   ${leadForm({ id: `article-${a.slug}`, title: "Безкоштовна консультація юриста", source: `article:${a.slug}` })}

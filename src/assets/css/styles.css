@@ -610,7 +610,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 }
 .case-filter__btn:hover { border-color: var(--c-teal); color: var(--c-teal-d); }
 .case-filter__btn.is-active { background: var(--c-ink); border-color: var(--c-ink); color: #fff; }
-.case-card[hidden] { display: none; }
+.case-card[hidden], .post-card[hidden] { display: none; }
 .case-card__result {
   margin-top: auto; padding: 0.8rem 1rem; border-top: none; border-radius: var(--radius-sm);
   background: rgba(225,61,39,0.08); border: 1px solid rgba(225,61,39,0.20);
