@@ -17,6 +17,7 @@ export const icons = {
   pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M12 21s7-6 7-11a7 7 0 10-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>',
   mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
   clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  passport: '<svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="2.6"/><path d="M9 15.4c.8-1 1.9-1.5 3-1.5s2.2.5 3 1.5M10.5 19h3"/></svg>',
 };
 
 export const practiceIcon = {
@@ -24,6 +25,7 @@ export const practiceIcon = {
   tax: icons.doc, land: icons.globe, "real-estate": icons.building,
   litigation: icons.gavel, "criminal-business": icons.shield, ip: icons.doc,
   investment: icons.handshake, "it-law": icons.globe, "m-and-a": icons.building,
+  migration: icons.passport,
 };
 
 /* ---------- Logo ---------- */
@@ -69,7 +71,7 @@ export function header(practices, currentPath = "") {
     <a class="logo" href="/" aria-label="${esc(site.name)} — головна">${logoWord}</a>
     <nav class="nav" aria-label="Основна навігація"><ul class="nav__list">${navItems}</ul></nav>
     <div class="header__cta">
-      <a class="btn btn--primary" href="/contacts/#consult">Консультація</a>
+      <a class="btn btn--primary btn--sm" href="/contacts/#consult">Консультація</a>
     </div>
     <button class="burger" data-burger aria-label="Меню" aria-expanded="false" aria-controls="mobile-nav">Меню <i><span></span></i></button>
   </div>
@@ -97,15 +99,12 @@ export function leadForm({ id = "lead", title = "Отримати консуль
   return `<form class="lead-form" id="${id}" data-lead-form${site.leadEndpoint ? ` data-endpoint="${esc(site.leadEndpoint)}"` : ""}>
     <input type="hidden" name="source" value="${esc(source)}">
     <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-    <h3 style="margin-bottom:.4rem">${esc(title)}</h3>
-    <p style="color:var(--c-slate);font-size:.92rem;margin-bottom:1.2rem">Відповідаємо протягом 15 хвилин у робочий час. Перша консультація — безкоштовно.</p>
+    <h3 style="margin-bottom:.3rem">${esc(title)}</h3>
+    <p style="color:var(--c-slate);font-size:.9rem;margin-bottom:.9rem">Відповідаємо протягом 15 хвилин у робочий час. Перша консультація — безкоштовно.</p>
     <div class="form-note">Дякуємо! Ваш запит надіслано — ми зв’яжемося з вами найближчим часом.</div>
     <div class="field"><label for="${id}-name">Ваше ім’я</label><input id="${id}-name" name="name" type="text" required autocomplete="name" placeholder="Ім’я"></div>
-    <div class="form-row form-row--2">
-      <div class="field"><label for="${id}-phone">Телефон</label><input id="${id}-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+38 (0__) ___-__-__"></div>
-      <div class="field"><label for="${id}-email">E-mail</label><input id="${id}-email" name="email" type="email" autocomplete="email" placeholder="your@email.com"></div>
-    </div>
-    ${compact ? "" : `<div class="field"><label for="${id}-msg">Коротко про ситуацію</label><textarea id="${id}-msg" name="message" rows="3" placeholder="Опишіть ваше питання"></textarea></div>`}
+    <div class="field"><label for="${id}-phone">Телефон</label><input id="${id}-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+38 (0__) ___-__-__"></div>
+    ${compact ? "" : `<div class="field"><label for="${id}-msg">Коротко про ситуацію</label><textarea id="${id}-msg" name="message" rows="2" placeholder="Опишіть ваше питання"></textarea></div>`}
     ${site.turnstile && site.turnstile.siteKey ? `<div class="cf-turnstile" data-sitekey="${esc(site.turnstile.siteKey)}" data-theme="light" data-size="flexible" style="margin-bottom:1rem"></div>` : ""}
     <button class="btn btn--primary btn--block" type="submit">Замовити консультацію</button>
     <p class="form-consent">Натискаючи кнопку, ви погоджуєтесь з <a href="/privacy/">політикою конфіденційності</a>. Гарантуємо повну конфіденційність.</p>
@@ -149,7 +148,7 @@ export function footer(practices) {
     <div class="footer__grid">
       <div class="footer__brand">
         <a class="logo" href="/" aria-label="${esc(site.name)}">${logoWord}</a>
-        <p>${esc(site.legalName)}. Преміальний юридичний супровід бізнесу та приватних клієнтів у Києві з ${site.founded} року.</p>
+        <p>${esc(site.legalName)}. Юридичний супровід бізнесу та приватних клієнтів у Києві з ${site.founded} року.</p>
         <div class="chips mt-2">
           <a class="chip" href="${site.social.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
           <a class="chip" href="${site.social.facebook}" target="_blank" rel="noopener">Facebook</a>

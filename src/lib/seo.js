@@ -14,7 +14,7 @@ export function organizationSchema() {
     logo: abs("/assets/img/logo.svg"),
     image: abs("/assets/img/og-default.svg"),
     description:
-      "Юридична компанія преміум-класу в Києві: корпоративне, сімейне, військове, податкове право, M&A, IT Law, судові спори та кримінальний захист бізнесу.",
+      "Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.",
     telephone: site.phoneDisplay,
     email: site.email,
     priceRange: "$$$",

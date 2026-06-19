@@ -29,7 +29,7 @@ ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
   <span class="eyebrow">Про компанію</span>
   <h1>${esc(site.legalName)}</h1>
-  <p>Преміальна юридична компанія в Києві. ${site.stats.years} років захищаємо інтереси бізнесу, інвесторів та приватних клієнтів у найскладніших справах.</p>
+  <p>Юридична компанія в Києві. ${site.stats.years} років захищаємо інтереси бізнесу, інвесторів та приватних клієнтів у найскладніших справах.</p>
 </div></section>
 
 <section class="section"><div class="container">
@@ -37,7 +37,7 @@ ${breadcrumbs(crumbs)}
     <div class="reveal">
       <span class="eyebrow">Хто ми</span>
       <h2>Юридичний партнер, а не просто підрядник</h2>
-      <p class="lead">LEGIUS — це команда з ${site.stats.lawyers} адвокатів і юристів, об’єднаних навколо 12 практик. Ми супроводжуємо клієнтів на всіх етапах: від превентивного консалтингу до представництва у Верховному Суді.</p>
+      <p class="lead">LEGIUS — це команда з ${site.stats.lawyers} адвокатів і юристів, об’єднаних навколо ${practices.length} практик. Ми супроводжуємо клієнтів на всіх етапах: від превентивного консалтингу до представництва у Верховному Суді.</p>
       <p style="color:var(--c-slate)">Наша філософія проста: глибока спеціалізація замість універсальності. Саме тому понад ${site.stats.winRate} наших справ завершуються на користь клієнта.</p>
       <div class="chips mt-2">${trustBadges.map((b) => `<span class="chip">${esc(b)}</span>`).join("")}</div>
     </div>
@@ -67,7 +67,7 @@ ${breadcrumbs(crumbs)}
 <section class="section"><div class="container">
   <div class="section__head section__head--center"><span class="eyebrow">Команда</span><h2>Люди, які створюють LEGIUS</h2></div>
   <div class="grid grid--3">${team
-    .map((m) => `<a class="team-card reveal" href="/team/${m.slug}/"><div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" decoding="async" alt="${esc(m.name)}"></div><h3>${esc(m.name)}</h3><div class="role">${esc(m.role)}</div></a>`)
+    .map((m) => `<a class="team-card reveal" href="/team/${m.slug}/"><div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" decoding="async" alt="${esc(m.displayName || m.name)}"></div><h3>${esc(m.displayName || m.name)}</h3><div class="role">${esc(m.role)}</div></a>`)
     .join("")}</div>
 </div></section>
 
@@ -138,7 +138,7 @@ export function htmlSitemapPage({ practices, locations = [], team = [], pillars 
   }).join("");
 
   const locLinks = locations.map((l) => li(`/${l.slug}/`, l.navLabel || l.metaTitle)).join("");
-  const teamLinks = team.map((m) => li(`/team/${m.slug}/`, m.name)).join("");
+  const teamLinks = team.map((m) => li(`/team/${m.slug}/`, m.displayName || m.name)).join("");
 
   const blogBlocks = pillars.map((p) => {
     const arts = articles.filter((a) => a.cluster === p.cluster).map((a) => li(`/blog/${a.slug}/`, a.title)).join("");

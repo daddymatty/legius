@@ -266,6 +266,27 @@
     });
   }
 
+  /* ---- Cases: filter by specialization (homepage) ---- */
+  var caseFilter = document.querySelector("[data-case-filter]");
+  var caseGrid = document.querySelector("[data-case-grid]");
+  if (caseFilter && caseGrid) {
+    var caseCards = caseGrid.querySelectorAll(".case-card");
+    var btns = caseFilter.querySelectorAll(".case-filter__btn");
+    caseFilter.addEventListener("click", function (e) {
+      var btn = e.target.closest(".case-filter__btn");
+      if (!btn) return;
+      var f = btn.getAttribute("data-filter");
+      btns.forEach(function (b) {
+        var on = b === btn;
+        b.classList.toggle("is-active", on);
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      caseCards.forEach(function (c) {
+        c.hidden = !(f === "all" || c.getAttribute("data-practice") === f);
+      });
+    });
+  }
+
   /* ---- Current year in footer ---- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();

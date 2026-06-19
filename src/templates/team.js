@@ -8,8 +8,8 @@ export function teamIndexPage(team) {
   const cards = team
     .map(
       (m) => `<a class="team-card reveal" href="/team/${m.slug}/">
-        <div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" decoding="async" alt="${esc(m.name)} — ${esc(m.role)}"></div>
-        <h3>${esc(m.name)}</h3><div class="role">${esc(m.role)}</div>
+        <div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" decoding="async" alt="${esc(m.displayName || m.name)} — ${esc(m.role)}"></div>
+        <h3>${esc(m.displayName || m.name)}</h3><div class="role">${esc(m.role)}</div>
         <p style="color:var(--c-slate);font-size:.9rem;margin-top:.4rem">${esc(m.short)}</p>
       </a>`
     )
@@ -29,7 +29,7 @@ export function teamMemberPage(m, { practiceBySlug }) {
   const crumbs = [
     { name: "Головна", href: "/" },
     { name: "Команда", href: "/team/" },
-    { name: m.name, href: `/team/${m.slug}/` },
+    { name: m.displayName || m.name, href: `/team/${m.slug}/` },
   ];
   const list = (arr = []) => arr.map((x) => `<li style="display:flex;gap:.6rem"><span style="color:var(--c-gold)">${icons.check}</span><span>${esc(x)}</span></li>`).join("");
   const edu = (m.education || []).map((e) => `<li><strong>${esc(e.org)}</strong><br><span style="color:var(--c-muted)">${esc(e.degree)}${e.year ? ", " + e.year : ""}</span></li>`).join("");
@@ -43,10 +43,10 @@ export function teamMemberPage(m, { practiceBySlug }) {
 ${breadcrumbs(crumbs)}
 <section class="section"><div class="container">
   <div class="split">
-    <div class="reveal"><div class="media-frame team-photo" style="aspect-ratio:3/4;max-width:420px"><img src="${m.photo}" width="420" height="560" decoding="async" alt="${esc(m.name)} — ${esc(m.role)}"></div></div>
+    <div class="reveal"><div class="media-frame team-photo" style="aspect-ratio:3/4;max-width:420px"><img src="${m.photo}" width="420" height="560" decoding="async" alt="${esc(m.displayName || m.name)} — ${esc(m.role)}"></div></div>
     <div class="reveal">
       <span class="eyebrow">${esc(m.role)}</span>
-      <h1>${esc(m.name)}</h1>
+      <h1>${esc(m.displayName || m.name)}</h1>
       <p class="lead">${esc(m.short)}</p>
       <div class="chips mt-2">${practiceLinks}</div>
       <div class="hero__actions mt-3">
@@ -72,6 +72,6 @@ ${breadcrumbs(crumbs)}
 
 ${ctaBand()}
 <section class="section" id="consult"><div class="container" style="max-width:640px">
-  ${leadForm({ id: `team-${m.slug}`, title: `Консультація: ${m.name}`, source: `team:${m.slug}` })}
+  ${leadForm({ id: `team-${m.slug}`, title: `Консультація: ${m.displayName || m.name}`, source: `team:${m.slug}` })}
 </div></section>`;
 }

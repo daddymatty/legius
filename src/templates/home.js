@@ -4,15 +4,48 @@ import { icons, practiceIcon, leadForm, ctaBand } from "./components.js";
 import { renderFaq, escape as esc } from "./render.js";
 
 export function homePage({ practices, cases, team, articles, testimonials, homeFaq }) {
-  const practiceCards = practices
-    .map(
-      (p) => `<a class="card reveal" href="/practices/${p.slug}/">
+  const bySlug = Object.fromEntries(practices.map((p) => [p.slug, p]));
+
+  /* Punchy, benefit-led one-liners for the homepage practice cards. */
+  const pitch = {
+    "family-law": "Розлучення рідко буває тихим. Зробимо так, щоб ви вийшли з нього з майном і спокоєм.",
+    "criminal-business": "Обшук о 7 ранку — не час шукати адвоката. Краще, щоб номер уже був у вас.",
+    "corporate-law": "Поки бізнес росте, його хочуть забрати. Закриваємо лазівки для рейдерів і партнерів.",
+    "military-law": "ТЦК, ВЛК, відстрочка, виплати. Там, де інші бачать глухий кут, ми бачимо процедуру.",
+    "tax-law": "Заблокували накладні чи нарахували мільйони? Знаємо, де податкова перегинає — і як це зняти.",
+    "litigation": "Виграє не той, хто голосніше обіцяє, а той, хто приходить у суд з доказами. Ми приходимо.",
+    "real-estate": "Одна непомічена деталь у договорі — і квартира вже не ваша. Помічаємо.",
+    "land-law": "Земля любить порядок у документах. Наведемо його — від оренди до спору з владою.",
+    "ip-law": "Ваш бренд хтось уже копіює. Зареєструємо марку й змусимо це припинити.",
+    "investment": "Вкласти гроші легко. Ми робимо так, щоб їх потім можна було забрати.",
+    "it-law": "Код, команда, дані, інвестори. Збираємо це в структуру, яка не розсиплеться на масштабуванні.",
+    "m-and-a": "Купівля чи продаж бізнесу — це гра на мільйони, де виграють на деталях. Ведемо вас до закриття.",
+    "migration-law": "Дозвіл на працю, посвідка, громадянство. Проведемо крізь міграційну бюрократію — без відмов і зайвих місяців очікування.",
+  };
+
+  /* Grouped directions ("Згрупуй напрями") — by клієнтську логіку, не за алфавітом. */
+  const practiceGroups = [
+    { title: "Бізнес і капітал", slugs: ["corporate-law", "m-and-a", "investment", "it-law", "tax-law"] },
+    { title: "Захист і спори", slugs: ["criminal-business", "litigation", "military-law"] },
+    { title: "Майно та активи", slugs: ["real-estate", "land-law", "ip-law"] },
+    { title: "Приватним клієнтам", slugs: ["family-law", "migration-law"] },
+  ];
+
+  const practiceCard = (p) => `<a class="card reveal" href="/practices/${p.slug}/">
         ${practiceIcon[p.icon] || icons.scale}
         <h3>${esc(p.shortTitle)}</h3>
-        <p>${esc(p.summary)}</p>
+        <p>${esc(pitch[p.slug] || p.summary)}</p>
         <span class="card__link">Детальніше</span>
-      </a>`
-    )
+      </a>`;
+
+  const practiceBlocks = practiceGroups
+    .map((g) => {
+      const cards = g.slugs.map((s) => bySlug[s]).filter(Boolean).map(practiceCard).join("");
+      return `<div class="practice-group">
+        <h3 class="practice-group__title">${esc(g.title)}</h3>
+        <div class="grid grid--3">${cards}</div>
+      </div>`;
+    })
     .join("");
 
   const mosaicTiles = `
@@ -25,7 +58,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
       <span class="tile__cta">Кейси →</span>
     </a>
     <a class="tile tile--light" href="/team/">
-      <div><span class="tile__big">${site.stats.lawyers}</span><p>юристів у 12 практиках — від M&amp;A до військового права</p></div>
+      <div><span class="tile__big">${site.stats.lawyers}</span><p>юристів у ${practices.length} практиках — від M&amp;A до військового права</p></div>
       <span class="tile__cta">Команда →</span>
     </a>
     <a class="tile tile--gray" href="/about/">
@@ -44,15 +77,20 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
       <span class="tile__cta">Контакти →</span>
     </a>`;
 
-  const caseCards = cases
-    .slice(0, 6)
+  const featuredCases = cases.slice(0, 12);
+  const caseFilters = [...new Map(featuredCases.map((c) => [c.practice, c.practiceLabel])).entries()];
+  const caseFilterBar = `<div class="case-filter" data-case-filter>
+      <button type="button" class="case-filter__btn is-active" data-filter="all">Усі напрями</button>
+      ${caseFilters.map(([slug, label]) => `<button type="button" class="case-filter__btn" data-filter="${esc(slug)}">${esc(label)}</button>`).join("")}
+    </div>`;
+  const caseCards = featuredCases
     .map(
-      (c) => `<a class="case-card reveal" href="/cases/#${c.slug}">
+      (c) => `<a class="case-card reveal" data-practice="${esc(c.practice)}" href="/cases/#${c.slug}">
         <div class="case-card__body">
           <span class="tag">${esc(c.practiceLabel || c.tag)} · ${c.year}</span>
           <h3 style="font-size:1.15rem">${esc(c.title)}</h3>
           <p style="color:var(--c-slate);font-size:.92rem">${esc(c.problem)}</p>
-          <div class="case-card__result">${icons.check} ${esc(c.metric || c.result)}</div>
+          <div class="case-card__result">${icons.check}<span>${esc(c.metric || c.result)}</span></div>
         </div></a>`
     )
     .join("");
@@ -60,8 +98,8 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
   const teamCards = team
     .map(
       (m) => `<a class="team-card reveal" href="/team/${m.slug}/">
-        <div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" decoding="async" alt="${esc(m.name)} — ${esc(m.role)}"></div>
-        <h3>${esc(m.name)}</h3><div class="role">${esc(m.role)}</div>
+        <div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" decoding="async" alt="${esc(m.displayName || m.name)} — ${esc(m.role)}"></div>
+        <h3>${esc(m.displayName || m.name)}</h3><div class="role">${esc(m.role)}</div>
       </a>`
     )
     .join("");
@@ -81,7 +119,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
     .join("");
 
   const reviewCards = testimonials
-    .slice(0, 6)
+    .slice(0, 9)
     .map(
       (t) => `<div class="quote-card reveal">
         <div class="quote-card__stars">★★★★★</div>
@@ -123,8 +161,8 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
     <div class="reveal stack">
       <span class="eyebrow">Про компанію</span>
       <h2>Юридична фірма, якій довіряють найскладніше</h2>
-      <p class="lead">З ${site.founded} року ми супроводжуємо угоди, захищаємо в судах та вирішуємо кризові ситуації для українського й міжнародного бізнесу, власників та родин.</p>
-      <p style="color:var(--c-slate)">Ми не беремося за все підряд. Наша модель — глибока спеціалізація у 12 практиках, де кожну справу веде профільний партнер. Це дає прогнозований результат, контрольований бюджет і повну конфіденційність.</p>
+      <p class="about-text">З ${site.founded} року ми супроводжуємо угоди, захищаємо в судах та вирішуємо кризові ситуації для українського й міжнародного бізнесу, власників та родин.</p>
+      <p class="about-text">Ми не беремося за все підряд. Наша модель — глибока спеціалізація у ${practices.length} практиках, де кожну справу веде профільний партнер. Це дає прогнозований результат, контрольований бюджет і повну конфіденційність.</p>
       <div class="chips">${trust}</div>
       <a class="btn btn--dark" href="/about/">Дізнатися більше про нас</a>
     </div>
@@ -133,8 +171,8 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
 </div></section>
 
 <section class="section section--soft"><div class="container">
-  <div class="section__head section__head--center"><span class="eyebrow">Практики</span><h2>12 напрямів юридичної експертизи</h2><p class="lead">Оберіть напрям — і ознайомтеся з послугами, процесом роботи та реальними кейсами.</p></div>
-  <div class="grid grid--3">${practiceCards}</div>
+  <div class="section__head section__head--center"><span class="eyebrow">Практики</span><h2>${practices.length} напрямів юридичної експертизи</h2><p class="lead">Оберіть напрям — і ознайомтеся з послугами, процесом роботи та реальними кейсами.</p></div>
+  ${practiceBlocks}
 </div></section>
 
 <section class="section"><div class="container">
@@ -144,7 +182,8 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
 
 <section class="section section--soft"><div class="container">
   <div class="section__head section__head--center"><span class="eyebrow">Кейси</span><h2>Результати, які говорять самі за себе</h2><p class="lead">Окремі приклади справ, які ми довели до успішного результату.</p></div>
-  <div class="grid grid--3">${caseCards}</div>
+  ${caseFilterBar}
+  <div class="grid grid--3" data-case-grid>${caseCards}</div>
   <div class="text-center mt-3"><a class="btn btn--dark" href="/cases/">Усі кейси</a></div>
 </div></section>
 
@@ -162,25 +201,10 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
 
 <section class="section"><div class="container">
   <div class="section__head section__head--center"><span class="eyebrow">Відгуки</span><h2>Що кажуть наші клієнти</h2><p class="lead">Рейтинг ${site.rating.value} / 5 на основі ${site.rating.count} відгуків.</p></div>
-  <div class="grid grid--3">${reviewCards}</div>
+  <div class="hscroll" data-hscroll>${reviewCards}</div>
 </div></section>
 
 ${renderFaq(homeFaq, "Поширені запитання")}
 
-${ctaBand()}
-
-<section class="section section--soft" id="consult"><div class="container">
-  <div class="section__head section__head--center">
-    <span class="eyebrow">Контакти</span>
-    <h2>Залиште заявку — ми передзвонимо за 15 хвилин</h2>
-    <p class="lead">Опишіть вашу ситуацію, і профільний юрист підготує первинну оцінку та план дій.</p>
-  </div>
-  <div class="reveal" style="max-width:640px;margin-inline:auto">${leadForm({ id: "home-consult", title: "Безкоштовна консультація", source: "home-bottom" })}</div>
-  <div class="contact-row reveal">
-    <a href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
-    <a href="mailto:${site.email}">${icons.mail} ${esc(site.email)}</a>
-    <span>${icons.pin} ${esc(site.address.locality)}</span>
-    <span>${icons.clock} ${esc(site.hours)}</span>
-  </div>
-</div></section>`;
+${ctaBand()}`;
 }

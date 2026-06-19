@@ -555,3 +555,78 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ============================================================
+   Homepage refinements (header CTA, form, mosaic, cases, reviews)
+   ============================================================ */
+
+/* (1) Compact header CTA — less tall than the default .btn */
+.btn--sm { padding: 0.6rem 1.25rem; font-size: 0.9rem; }
+
+/* (2) Lead form — tighter so it takes less vertical space */
+.lead-form { padding: clamp(1.4rem, 3.2vw, 2rem); }
+.lead-form .field { margin-bottom: 0.8rem; }
+.lead-form .field input, .lead-form .field textarea { padding: 0.75rem 0.95rem; }
+
+/* (4) About block — single body-text size (heading стоїть окремо) */
+.about-text { font-size: 1.02rem; color: var(--c-slate); }
+
+/* (5) Grouped practice directions */
+.practice-group + .practice-group { margin-top: clamp(2rem, 4vw, 3rem); }
+.practice-group__title {
+  display: flex; align-items: center; gap: 0.9rem;
+  font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 800; margin-bottom: 1.2rem;
+}
+.practice-group__title::after { content: ""; flex: 1; height: 1px; background: var(--c-line); }
+
+/* (6) Mosaic — fix dark/red/gray heading contrast (headings inherit ink by
+   default, which was unreadable on dark tiles) */
+.tile--dark h3, .tile--red h3, .tile--gray h3 { color: #fff; }
+/* Equal-height bento on desktop: the two feature tiles span two rows so the
+   first and last cards match in height, while the checkerboard order stays. */
+@media (min-width: 1180px) {
+  .mosaic { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); }
+  .mosaic .tile { margin-bottom: 0; min-height: 0; }
+  .mosaic .tile:nth-child(1) { grid-area: a; }
+  .mosaic .tile:nth-child(2) { grid-area: b; }
+  .mosaic .tile:nth-child(3) { grid-area: c; }
+  .mosaic .tile:nth-child(4) { grid-area: d; }
+  .mosaic .tile:nth-child(5) { grid-area: e; }
+  .mosaic .tile:nth-child(6) { grid-area: f; }
+  .mosaic .tile:nth-child(7) { grid-area: g; }
+  .mosaic {
+    grid-template-areas:
+      "a b c"
+      "a d g"
+      "f e g";
+  }
+}
+
+/* (7) Cases — filter by specialization + prominent result badge */
+.case-filter { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin-bottom: clamp(1.6rem, 3vw, 2.2rem); }
+.case-filter__btn {
+  padding: 0.5rem 1.1rem; border-radius: 100px; border: 1.5px solid var(--c-line);
+  background: #fff; color: var(--c-slate); font-weight: 600; font-size: 0.86rem; transition: var(--transition);
+}
+.case-filter__btn:hover { border-color: var(--c-teal); color: var(--c-teal-d); }
+.case-filter__btn.is-active { background: var(--c-ink); border-color: var(--c-ink); color: #fff; }
+.case-card[hidden] { display: none; }
+.case-card__result {
+  margin-top: auto; padding: 0.8rem 1rem; border-top: none; border-radius: var(--radius-sm);
+  background: rgba(225,61,39,0.08); border: 1px solid rgba(225,61,39,0.20);
+  color: var(--c-teal-d); font-weight: 800; font-size: 1rem; line-height: 1.3;
+  display: flex; gap: 0.55rem; align-items: center;
+}
+.case-card__result svg { color: var(--c-teal); flex: none; }
+
+/* (9) Reviews — horizontal scroll instead of a tall stacked grid */
+.hscroll {
+  display: flex; gap: 1.25rem; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding-bottom: 1rem; margin-bottom: -1rem;
+  scrollbar-width: thin; -webkit-overflow-scrolling: touch;
+}
+.hscroll > * { flex: 0 0 86%; max-width: 380px; scroll-snap-align: start; }
+@media (min-width: 768px) { .hscroll > * { flex-basis: 46%; } }
+@media (min-width: 1024px) { .hscroll > * { flex-basis: 31%; } }
+.hscroll .quote-card { height: auto; }
+.quote-card blockquote { display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; overflow: hidden; }
