@@ -149,11 +149,6 @@ export function footer(practices) {
       <div class="footer__brand">
         <a class="logo" href="/" aria-label="${esc(site.name)}">${logoWord}</a>
         <p>${esc(site.legalName)}. Юридичний супровід бізнесу та приватних клієнтів у Києві з ${site.founded} року.</p>
-        <div class="chips mt-2">
-          <a class="chip" href="${site.social.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="chip" href="${site.social.facebook}" target="_blank" rel="noopener">Facebook</a>
-          <a class="chip" href="${site.social.youtube}" target="_blank" rel="noopener">YouTube</a>
-        </div>
       </div>
       <div><h4>Практики</h4><ul>${practiceLinks}<li><a href="/practices/">Усі практики →</a></li></ul></div>
       <div><h4>Компанія</h4><ul>
