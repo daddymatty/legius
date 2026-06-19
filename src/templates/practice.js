@@ -15,11 +15,12 @@ function findLawyer(p, team) {
 
 function lawyerCard(lawyer) {
   if (!lawyer) return "";
+  const name = lawyer.displayName || lawyer.name;
   return `<div class="card">
     <span class="eyebrow">Відповідальний адвокат</span>
     <a class="lawyer-card__row" href="/team/${lawyer.slug}/">
-      <img src="${lawyer.photo}" width="64" height="80" loading="lazy" decoding="async" alt="${esc(lawyer.name)} — ${esc(lawyer.role)}">
-      <span><b>${esc(lawyer.name)}</b><span>${esc(lawyer.role)}</span></span>
+      <img src="${lawyer.photo}" width="64" height="80" loading="lazy" decoding="async" alt="" aria-hidden="true">
+      <span><b>${esc(name)}</b> <span>${esc(lawyer.role)}</span></span>
     </a>
     <a class="btn btn--ghost btn--block" href="/team/${lawyer.slug}/">Профіль адвоката</a>
   </div>`;
