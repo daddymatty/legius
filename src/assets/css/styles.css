@@ -294,9 +294,9 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .content-aside__side { display: grid; gap: 1.5rem; }
 @media (min-width: 1024px) {
   .content-aside { grid-template-columns: minmax(0, 1fr) 360px; gap: 3rem; }
-  /* Not sticky: a tall lawyer-card + form was taller than the viewport, so a
-     sticky sidebar cut off the submit button. In normal flow the whole form
-     scrolls with the page and the button is always reachable. */
+  /* Sticky: now that the form is compact it fits the viewport, so it follows
+     the scroll and naturally releases at the end of the content column. */
+  .content-aside__side { position: sticky; top: 96px; }
 }
 .media-frame { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--c-mist); aspect-ratio: 4/3; }
 .media-frame img { width: 100%; height: 100%; object-fit: cover; }
