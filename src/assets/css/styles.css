@@ -630,3 +630,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 @media (min-width: 1024px) { .hscroll > * { flex-basis: 31%; } }
 .hscroll .quote-card { height: auto; }
 .quote-card blockquote { display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Blog: compact "hub guides" index (internal links to pillar pages) */
+.hub-links { display: grid; grid-template-columns: 1fr; border-top: 1px solid var(--c-line); }
+.hub-links a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.95rem 0.2rem; border-bottom: 1px solid var(--c-line); font-family: var(--font-head); font-weight: 700; transition: var(--transition); }
+.hub-links a span { display: inline-block; color: var(--c-teal); transition: var(--transition); }
+.hub-links a:hover { padding-left: 0.6rem; color: var(--c-teal-d); }
+.hub-links a:hover span { transform: translateX(4px); }
+@media (min-width: 640px) { .hub-links { grid-template-columns: 1fr 1fr; column-gap: 2.5rem; } }
+@media (min-width: 1024px) { .hub-links { grid-template-columns: 1fr 1fr 1fr; column-gap: 2.5rem; } }
+
+/* Article: centre the reading column within its grid cell (was hugging left
+   next to the table-of-contents aside) */
+@media (min-width: 1024px) { .article-layout .prose { margin-inline: auto; } }

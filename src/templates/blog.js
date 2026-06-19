@@ -17,14 +17,9 @@ function postCard(a) {
 
 export function blogIndexPage({ pillars, articles, clusterLabels }) {
   const crumbs = [{ name: "Головна", href: "/" }, { name: "Блог", href: "/blog/" }];
-  const pillarCards = pillars
-    .map(
-      (p) => `<a class="card reveal" href="/blog/${p.slug}/" style="background:linear-gradient(135deg,#0D0D0F,#1A1A20);color:#fff;border:none">
-        <span class="eyebrow">Стовпова сторінка</span>
-        <h3 style="color:#fff">${esc(p.title)}</h3>
-        <p style="color:#c4d0e4">${esc(p.excerpt)}</p>
-        <span class="card__link" style="color:var(--c-teal-l)">Відкрити хаб</span></a>`
-    )
+  const hubLabel = (p) => (articles.find((a) => a.cluster === p.cluster) || {}).clusterLabel || p.title;
+  const hubLinks = pillars
+    .map((p) => `<a href="/blog/${p.slug}/">${esc(hubLabel(p))}<span aria-hidden="true">→</span></a>`)
     .join("");
   const sorted = articles.slice().sort((a, b) => (a.date < b.date ? 1 : -1));
   const allCards = sorted.map(postCard).join("");
@@ -44,8 +39,8 @@ ${breadcrumbs(crumbs)}
   <p>Понад ${articles.length} експертних матеріалів про сімейне, військове, корпоративне та податкове право. Практичні роз’яснення від адвокатів.</p>
 </div></section>
 <section class="section"><div class="container">
-  <div class="section__head"><span class="eyebrow">Стовпові сторінки</span><h2>Оберіть напрям</h2></div>
-  <div class="grid grid--4">${pillarCards}</div>
+  <div class="section__head"><span class="eyebrow">Путівники</span><h2>Повні гайди за напрямами права</h2><p class="lead">Глибокі огляди кожної галузі — гарна точка входу, якщо вивчаєте тему з нуля.</p></div>
+  <nav class="hub-links" aria-label="Розділи блогу за напрямами">${hubLinks}</nav>
 </div></section>
 <section class="section section--soft"><div class="container">
   <div class="section__head section__head--center"><span class="eyebrow">Усі матеріали</span><h2>Статті за практиками</h2><p class="lead">Оберіть напрям, щоб відфільтрувати ${articles.length} публікацій.</p></div>
