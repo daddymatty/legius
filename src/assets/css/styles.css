@@ -470,7 +470,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--c-ink); color: var(--c-on-dark); padding-block: clamp(3rem, 6vw, 4.5rem) 2rem; }
-.footer__grid { display: grid; gap: 2.5rem; }
+.footer__grid { display: grid; gap: 2.5rem; align-items: start; }
 .footer__brand .logo { margin-bottom: 1rem; }
 .footer__brand p { font-size: 0.92rem; max-width: 36ch; }
 .footer h4 { color: #fff; font-family: var(--font-body); font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 1rem; }
@@ -521,7 +521,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   .grid--3 { grid-template-columns: repeat(2,1fr); }
   .grid--4 { grid-template-columns: repeat(2,1fr); }
   .util-bar__left { display: flex; }
-  .footer__grid { grid-template-columns: 2fr 1fr 1fr; }
+  .footer__grid { grid-template-columns: 1.5fr 1fr 1fr; }
   .features { grid-template-columns: 1fr 1fr; gap: 2rem 2.5rem; }
 }
 @media (min-width: 980px) {
@@ -536,7 +536,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   .grid--3 { grid-template-columns: repeat(3,1fr); }
   .grid--4 { grid-template-columns: repeat(4,1fr); }
   .hero__inner { grid-template-columns: 1.05fr 0.95fr; align-items: center; }
-  .footer__grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+  .footer__grid { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
   .article-layout { grid-template-columns: 260px 1fr; align-items: start; }
   .sticky-cta { display: none; }
   .mobile-nav { display: none; }
@@ -579,10 +579,28 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 }
 .practice-group__title::after { content: ""; flex: 1; height: 1px; background: var(--c-line); }
 
-/* (6) Mosaic — keep the original masonry layout (previous edition), but fix
-   the dark/red/gray heading contrast (headings inherit ink by default, which
-   was unreadable on dark tiles). */
+/* (6) Mosaic — fix dark/red/gray heading contrast (headings inherit ink by
+   default, which was unreadable on dark tiles) */
 .tile--dark h3, .tile--red h3, .tile--gray h3 { color: #fff; }
+/* Equal-height bento on desktop: the two feature tiles span two rows so the
+   first and last cards match in height, while the checkerboard order stays. */
+@media (min-width: 1180px) {
+  .mosaic { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); }
+  .mosaic .tile { margin-bottom: 0; min-height: 0; }
+  .mosaic .tile:nth-child(1) { grid-area: a; }
+  .mosaic .tile:nth-child(2) { grid-area: b; }
+  .mosaic .tile:nth-child(3) { grid-area: c; }
+  .mosaic .tile:nth-child(4) { grid-area: d; }
+  .mosaic .tile:nth-child(5) { grid-area: e; }
+  .mosaic .tile:nth-child(6) { grid-area: f; }
+  .mosaic .tile:nth-child(7) { grid-area: g; }
+  .mosaic {
+    grid-template-areas:
+      "a b c"
+      "a d g"
+      "f e g";
+  }
+}
 
 /* (7) Cases — filter by specialization + prominent result badge */
 .case-filter { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin-bottom: clamp(1.6rem, 3vw, 2.2rem); }
@@ -634,6 +652,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 @media (min-width: 640px) { .hub-links { grid-template-columns: 1fr 1fr; column-gap: 2.5rem; } }
 @media (min-width: 1024px) { .hub-links { grid-template-columns: 1fr 1fr 1fr; column-gap: 2.5rem; } }
 
-/* Article: centre the reading column within its grid cell (was hugging left
-   next to the table-of-contents aside) */
-@media (min-width: 1024px) { .article-layout .prose { margin-inline: auto; } }
+/* Article: wider reading column, centred within its grid cell (was narrow and
+   hugging left next to the table-of-contents aside) */
+@media (min-width: 1024px) { .article-layout .prose { max-width: 900px; margin-inline: auto; } }

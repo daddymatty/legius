@@ -109,7 +109,7 @@ ${breadcrumbs(crumbs)}
   <h1>${esc(p.h1)}</h1>
   <p>${esc(p.heroSub)}</p>
   <div class="hero__actions mt-2">
-    <a class="btn btn--primary" href="#consult">Отримати консультацію</a>
+    <a class="btn btn--primary" href="#practice-${p.slug}">Отримати консультацію</a>
     <a class="btn btn--ghost" style="color:#fff" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
   </div>
 </div></section>
@@ -139,11 +139,7 @@ ${renderFaq(p.faq, `FAQ: ${p.shortTitle}`)}
 
 ${relatedPractices(p.related, practiceBySlug)}
 
-${ctaBand({ title: `Потрібна допомога у сфері «${p.shortTitle}»?`, text: "Залиште заявку — профільний адвокат проаналізує вашу ситуацію та запропонує стратегію." })}
-
-<section class="section" id="consult"><div class="container" style="max-width:640px">
-  ${leadForm({ id: `practice-bottom-${p.slug}`, title: `Замовити консультацію: ${p.shortTitle}`, source: `practice-bottom:${p.slug}` })}
-</div></section>`;
+${ctaBand({ title: `Потрібна допомога у сфері «${p.shortTitle}»?`, text: "Залиште заявку — профільний адвокат проаналізує вашу ситуацію та запропонує стратегію." })}`;
 }
 
 /* ---------- Individual service page ---------- */
@@ -182,7 +178,7 @@ ${breadcrumbs(crumbs)}
   <h1>${esc(svc.title)}</h1>
   <p>${esc(content.heroSub)}</p>
   <div class="hero__actions mt-2">
-    <a class="btn btn--primary" href="#consult">Отримати консультацію</a>
+    <a class="btn btn--primary" href="#service-${p.slug}-${svc.slug}">Отримати консультацію</a>
     <a class="btn btn--ghost" style="color:#fff" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
   </div>
 </div></section>
@@ -201,11 +197,7 @@ ${breadcrumbs(crumbs)}
 
 ${renderFaq(content.faq, `Питання щодо послуги`)}
 
-${ctaBand({ title: `Потрібна послуга «${svc.title}»?`, text: "Залиште заявку — профільний адвокат проаналізує вашу ситуацію та запропонує рішення." })}
-
-<section class="section" id="consult"><div class="container" style="max-width:640px">
-  ${leadForm({ id: `service-bottom-${p.slug}-${svc.slug}`, title: `Замовити: ${svc.title}`, source: `service-bottom:${p.slug}/${svc.slug}` })}
-</div></section>`;
+${ctaBand({ title: `Потрібна послуга «${svc.title}»?`, text: "Залиште заявку — профільний адвокат проаналізує вашу ситуацію та запропонує рішення." })}`;
 }
 
 export function practicesIndexPage(practices) {

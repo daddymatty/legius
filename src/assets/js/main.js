@@ -334,8 +334,16 @@
     };
     var prev = car.querySelector("[data-carousel-prev]");
     var next = car.querySelector("[data-carousel-next]");
-    if (prev) prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: "smooth" }); });
-    if (next) next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: "smooth" }); });
+    var atEnd = function () { return track.scrollLeft + track.clientWidth >= track.scrollWidth - 4; };
+    var atStart = function () { return track.scrollLeft <= 4; };
+    if (next) next.addEventListener("click", function () {
+      if (atEnd()) track.scrollTo({ left: 0, behavior: "smooth" });        // loop to start
+      else track.scrollBy({ left: step(), behavior: "smooth" });
+    });
+    if (prev) prev.addEventListener("click", function () {
+      if (atStart()) track.scrollTo({ left: track.scrollWidth, behavior: "smooth" }); // loop to end
+      else track.scrollBy({ left: -step(), behavior: "smooth" });
+    });
   })();
 
   /* Blog index: practice filter + "show more" pagination (combined) */
