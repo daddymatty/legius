@@ -13,6 +13,7 @@ import ipLaw from "./ip-law.js";
 import investment from "./investment.js";
 import itLaw from "./it-law.js";
 import mAndA from "./m-and-a.js";
+import migrationLaw from "./migration-law.js";
 
 import familyLawExt from "./family-law-ext.js";
 import criminalBusinessExt from "./criminal-business-ext.js";
@@ -40,4 +41,5 @@ export const serviceOverrides = {
   "investment": { ...investment, ...investmentExt },
   "it-law": { ...itLaw, ...itLawExt },
   "m-and-a": { ...mAndA, ...mAndAExt },
+  "migration-law": { ...migrationLaw },
 };

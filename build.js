@@ -102,6 +102,8 @@ async function build() {
   console.log("→ Копіювання ассетів");
   await cp(path.join(__dirname, "src/assets"), path.join(DIST, "assets"), { recursive: true });
   await makePlaceholders(path.join(DIST, "assets/img"), { team });
+  /* Root /favicon.ico — browsers and Google request it here by default. */
+  await cp(path.join(__dirname, "src/assets/img/favicon.ico"), path.join(DIST, "favicon.ico"));
 
   /* Design preview/moodboard (standalone, noindex) — served at /design/. */
   if (existsSync(path.join(__dirname, "design"))) {
@@ -394,7 +396,11 @@ async function build() {
     JSON.stringify({
       name: site.legalName, short_name: site.name, lang: "uk",
       start_url: BASE + "/", display: "standalone", background_color: "#ffffff", theme_color: "#0e1c33",
-      icons: [{ src: BASE + "/assets/img/favicon.svg", sizes: "any", type: "image/svg+xml" }],
+      icons: [
+        { src: BASE + "/assets/img/favicon.svg", sizes: "any", type: "image/svg+xml" },
+        { src: BASE + "/assets/img/favicon-192.png", sizes: "192x192", type: "image/png" },
+        { src: BASE + "/assets/img/favicon-512.png", sizes: "512x512", type: "image/png", purpose: "any maskable" },
+      ],
     }),
     "utf8"
   );
