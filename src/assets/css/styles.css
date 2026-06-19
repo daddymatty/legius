@@ -355,6 +355,17 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--c-teal); box-shadow: 0 0 0 3px rgba(226,58,77,0.15); }
 .field--invalid input, .field--invalid textarea { border-color: #d64531; box-shadow: 0 0 0 3px rgba(214,69,49,0.12); }
 .field__err { color: #c0392b; font-size: 0.78rem; margin-top: 0.3rem; }
+
+/* HTML sitemap page */
+.sitemap { display: grid; gap: 1.4rem 2rem; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 700px) { .sitemap { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .sitemap { grid-template-columns: repeat(3, 1fr); } }
+.sitemap-col h2 { font-size: 1.2rem; margin-bottom: 0.6rem; }
+.sitemap-col h3 { font-size: 1rem; margin: 0.5rem 0 0.3rem; }
+.sitemap-col h3 a { color: var(--c-ink); font-weight: 700; }
+.sitemap-col ul { display: grid; gap: 0.3rem; margin-bottom: 0.8rem; }
+.sitemap-col a { color: var(--c-slate); font-size: 0.92rem; }
+.sitemap-col a:hover { color: var(--c-teal-d); }
 /* Accessible keyboard focus ring (does not affect mouse clicks) */
 a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--c-teal); outline-offset: 3px; border-radius: 3px; }
 .form-consent { font-size: 0.78rem; color: var(--c-muted); margin-top: 0.6rem; }

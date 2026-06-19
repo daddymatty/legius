@@ -19,6 +19,10 @@ export const site = {
   /* Analytics — empty = disabled (no GA scripts, no extra CSP domains).
      ga4: GA4 Measurement ID "G-XXXXXXX". gscVerification: Search Console meta token. */
   analytics: { ga4: "G-10B84LRHKX", gscVerification: "" },
+  /* Cloudflare Turnstile anti-spam. Empty siteKey = disabled (no widget, no
+     extra scripts/CSP). Set the public site key to enable; add TURNSTILE_SECRET
+     in the worker to enforce server-side. */
+  turnstile: { siteKey: "" },
   address: {
     street: "вул. Велика Васильківська, 5, БЦ «Прайм», 8 поверх",
     locality: "Київ",

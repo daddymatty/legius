@@ -25,7 +25,7 @@ import { locationPage } from "./src/templates/location.js";
 import { teamIndexPage, teamMemberPage } from "./src/templates/team.js";
 import { casesPage } from "./src/templates/cases.js";
 import { blogIndexPage, pillarPage, articlePage } from "./src/templates/blog.js";
-import { aboutPage, contactsPage, privacyPage, notFoundPage } from "./src/templates/pages.js";
+import { aboutPage, contactsPage, privacyPage, notFoundPage, htmlSitemapPage } from "./src/templates/pages.js";
 import {
   breadcrumbSchema, faqSchema, serviceSchema, serviceItemSchema, articleSchema,
   personSchema, localBusinessSchema,
@@ -365,6 +365,13 @@ async function build() {
     description: "Політика конфіденційності та обробки персональних даних на сайті юридичної компанії LEGIUS.",
     canonical: "/privacy/", noindex: true,
   }, privacyPage(), "/privacy/"), { index: false });
+
+  await writePage("sitemap", page({
+    title: "Карта сайту | LEGIUS",
+    description: "Карта сайту LEGIUS: усі практики, послуги, статті блогу, команда та сторінки компанії в одному списку.",
+    canonical: "/sitemap/",
+    schemas: [breadcrumbSchema([{ name: "Головна", href: "/" }, { name: "Карта сайту", href: "/sitemap/" }])],
+  }, htmlSitemapPage({ practices, locations, team, pillars, articles }), "/sitemap/"), { priority: "0.3" });
 
   await writeFile(path.join(DIST, "404.html"), applyBase(page({
     title: "404 — сторінку не знайдено | LEGIUS",
