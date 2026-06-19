@@ -449,7 +449,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .sticky-cta .s-cta { background: var(--c-teal); color: #ffffff; }
 
 /* ---------- Floating messengers ---------- */
-.messengers { position: fixed; right: 16px; bottom: 84px; z-index: 48; display: flex; flex-direction: column; gap: 10px; }
+.messengers { position: fixed; right: 16px; bottom: 90px; z-index: 48; display: flex; flex-direction: column; gap: 10px; }
 .messengers a { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm); transition: var(--transition); color: #fff; }
 .messengers a:hover { transform: scale(1.08); }
 .m-tg { background: #229ED9; } .m-wa { background: #25D366; } .m-vb { background: #7360F2; }
@@ -482,15 +482,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .scroll-progress span { display: block; height: 100%; width: 0; background: var(--c-teal); transform-origin: 0 50%; transition: width .08s linear; }
 
 /* Back-to-top button */
-.to-top { position: fixed; right: clamp(14px, 3vw, 28px); bottom: clamp(14px, 3vw, 28px); z-index: 90; width: 46px; height: 46px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; border: none; cursor: pointer; color: #fff; background: var(--c-teal); box-shadow: var(--shadow); opacity: 0; transform: translateY(12px); transition: opacity .25s ease, transform .25s ease, background .2s ease; }
+.to-top { position: fixed; right: 16px; bottom: 28px; z-index: 90; width: 52px; height: 52px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; border: none; cursor: pointer; color: #fff; background: var(--c-teal); box-shadow: var(--shadow-sm); opacity: 0; transform: translateY(12px); transition: opacity .25s ease, transform .25s ease, background .2s ease; }
+.to-top svg { width: 24px; height: 24px; }
 .to-top.show { opacity: 1; transform: none; }
 .to-top:hover { background: var(--c-teal-d); }
 @media (min-width: 1024px) { .to-top { bottom: 28px; } }
 /* Mobile: stack messengers above the back-to-top button, both clear of the
    sticky CTA bar (≈61px). to-top sits 10px under the messengers column. */
 @media (max-width: 1023px) {
-  .messengers { bottom: 132px; }
-  .to-top { right: 19px; bottom: 76px; }
+  .messengers { bottom: 138px; }
+  .to-top { bottom: 76px; }
 }
 
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
