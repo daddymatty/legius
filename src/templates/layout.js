@@ -91,8 +91,9 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 <meta name="twitter:description" content="${esc(description)}">
 <meta name="twitter:image" content="${abs(ogImage)}">
 
+<link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <meta name="theme-color" content="#0D0D0F">
 
 <!-- Speed: warm up connections to external origins -->
