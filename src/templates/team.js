@@ -21,7 +21,7 @@ ${breadcrumbs(crumbs)}
   <h1>Партнери, адвокати та юристи LEGIUS</h1>
   <p>Досвідчена команда, у якій кожну справу веде профільний фахівець. ${site.stats.lawyers} юристів, ${site.stats.years} років сукупної практики.</p>
 </div></section>
-<section class="section"><div class="container"><div class="grid grid--4">${cards}</div></div></section>
+<section class="section"><div class="container"><div class="grid grid--3">${cards}</div></div></section>
 ${ctaBand()}`;
 }
 

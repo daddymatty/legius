@@ -22,7 +22,7 @@ export const site = {
   /* Cloudflare Turnstile anti-spam. Empty siteKey = disabled (no widget, no
      extra scripts/CSP). Set the public site key to enable; add TURNSTILE_SECRET
      in the worker to enforce server-side. */
-  turnstile: { siteKey: "" },
+  turnstile: { siteKey: "0x4AAAAAADn2q--5_9ulL7Ys" },
   address: {
     street: "вул. Велика Васильківська, 5, БЦ «Прайм», 8 поверх",
     locality: "Київ",
