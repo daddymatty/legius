@@ -1,6 +1,6 @@
 /* Blog: index (hub), pillar page, article page. */
 import { site } from "../data/site.js";
-import { leadForm, ctaBand, breadcrumbs, icons } from "./components.js";
+import { ctaBand, breadcrumbs, icons } from "./components.js";
 import { renderProseSections, renderFaq, escape as esc } from "./render.js";
 import { practiceServices } from "../lib/services.js";
 
@@ -110,7 +110,7 @@ ${breadcrumbs(crumbs)}
       <article class="prose reveal">
         ${a.intro || `<p class="lead">${esc(a.excerpt)}</p>`}
         ${renderProseSections(a.sections)}
-        ${practice ? `<div class="callout">Потрібна персональна консультація з теми «${esc(practice.shortTitle)}»? <a href="/practices/${practice.slug}/">Перейдіть на сторінку практики</a> або <a href="#consult">залиште заявку</a> — відповімо протягом 15 хвилин.${(() => {
+        ${practice ? `<div class="callout">Потрібна персональна консультація з теми «${esc(practice.shortTitle)}»? <a href="/practices/${practice.slug}/">Перейдіть на сторінку практики</a> або <a href="/contacts/#consult">залиште заявку</a> — відповімо протягом 15 хвилин.${(() => {
           const svc = practiceServices(practice).slice(0, 3);
           return svc.length ? `<br><span style="font-size:.92em">Послуги напряму: ${svc.map((s) => `<a href="/practices/${practice.slug}/${s.slug}/">${esc(s.title)}</a>`).join(", ")}.</span>` : "";
         })()}</div>` : ""}
@@ -126,8 +126,5 @@ ${breadcrumbs(crumbs)}
     </div>
   </div>
 </div></section>
-${ctaBand({ btn: "Отримати консультацію" })}
-<section class="section" id="consult"><div class="container" style="max-width:640px">
-  ${leadForm({ id: `article-${a.slug}`, title: "Безкоштовна консультація юриста", source: `article:${a.slug}` })}
-</div></section>`;
+${ctaBand({ btn: "Отримати консультацію" })}`;
 }
