@@ -1,5 +1,5 @@
 /* Homepage — Hero, About, Practices, Advantages, Cases, Team, Posts, Testimonials, FAQ, Contacts + form. */
-import { site, trustBadges } from "../data/site.js";
+import { site } from "../data/site.js";
 import { icons, practiceIcon, leadForm, ctaBand } from "./components.js";
 import { renderFaq, escape as esc } from "./render.js";
 
@@ -23,29 +23,27 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
     "migration-law": "Дозвіл на працю, посвідка, громадянство. Проведемо крізь міграційну бюрократію — без відмов і зайвих місяців очікування.",
   };
 
-  /* Grouped directions ("Згрупуй напрями") — by клієнтську логіку, не за алфавітом. */
+  /* Directions grouped for the filter chips ("Усі практики", "Бізнесу" тощо). */
   const practiceGroups = [
-    { title: "Бізнес і капітал", slugs: ["corporate-law", "m-and-a", "investment", "it-law", "tax-law"] },
-    { title: "Захист і спори", slugs: ["criminal-business", "litigation", "military-law"] },
-    { title: "Майно та активи", slugs: ["real-estate", "land-law", "ip-law"] },
-    { title: "Приватним клієнтам", slugs: ["family-law", "migration-law"] },
+    { id: "business", title: "Бізнесу", slugs: ["corporate-law", "m-and-a", "investment", "it-law", "tax-law"] },
+    { id: "defense", title: "Захист і спори", slugs: ["criminal-business", "litigation", "military-law"] },
+    { id: "assets", title: "Майно та активи", slugs: ["real-estate", "land-law", "ip-law"] },
+    { id: "private", title: "Приватним клієнтам", slugs: ["family-law", "migration-law"] },
   ];
 
-  const practiceCard = (p) => `<a class="card reveal" href="/practices/${p.slug}/">
+  const practiceCard = (p, groupId) => `<a class="card reveal" data-group="${groupId}" href="/practices/${p.slug}/">
         ${practiceIcon[p.icon] || icons.scale}
         <h3>${esc(p.shortTitle)}</h3>
         <p>${esc(pitch[p.slug] || p.summary)}</p>
         <span class="card__link">Детальніше</span>
       </a>`;
 
-  const practiceBlocks = practiceGroups
-    .map((g) => {
-      const cards = g.slugs.map((s) => bySlug[s]).filter(Boolean).map(practiceCard).join("");
-      return `<div class="practice-group">
-        <h3 class="practice-group__title">${esc(g.title)}</h3>
-        <div class="grid grid--3">${cards}</div>
-      </div>`;
-    })
+  const practiceFilterBar = `<div class="case-filter" data-practice-filter>
+      <button type="button" class="case-filter__btn is-active" data-filter="all">Усі практики</button>
+      ${practiceGroups.map((g) => `<button type="button" class="case-filter__btn" data-filter="${g.id}">${esc(g.title)}</button>`).join("")}
+    </div>`;
+  const practiceCards = practiceGroups
+    .flatMap((g) => g.slugs.map((s) => bySlug[s]).filter(Boolean).map((p) => practiceCard(p, g.id)))
     .join("");
 
   const mosaicTiles = `
@@ -129,8 +127,6 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
     )
     .join("");
 
-  const trust = trustBadges.map((b) => `<span class="chip">${esc(b)}</span>`).join("");
-
   return `
 <section class="hero">
   <div class="hero__glow"></div>
@@ -151,7 +147,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
         <div class="stat"><strong>${site.stats.winRate}</strong><span>успішних рішень</span></div>
       </div>
     </div>
-    <div class="reveal">${leadForm({ id: "hero-form", title: "Отримати безкоштовну консультацію", source: "hero" })}</div>
+    <div class="reveal">${leadForm({ id: "hero-form", title: "Безкоштовна консультація", source: "hero", compact: true })}</div>
   </div>
   <a class="hero__scrollcue" href="#about" aria-label="Гортати далі"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
 </section>
@@ -163,7 +159,6 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
       <h2>Юридична фірма, якій довіряють найскладніше</h2>
       <p class="about-text">З ${site.founded} року ми супроводжуємо угоди, захищаємо в судах та вирішуємо кризові ситуації для українського й міжнародного бізнесу, власників та родин.</p>
       <p class="about-text">Ми не беремося за все підряд. Наша модель — глибока спеціалізація у ${practices.length} практиках, де кожну справу веде профільний партнер. Це дає прогнозований результат, контрольований бюджет і повну конфіденційність.</p>
-      <div class="chips">${trust}</div>
       <a class="btn btn--dark" href="/about/">Дізнатися більше про нас</a>
     </div>
     <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=70" width="640" height="480" loading="lazy" decoding="async" alt="Офіс юридичної компанії LEGIUS у центрі Києва"></div>
@@ -172,7 +167,8 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
 
 <section class="section section--soft"><div class="container">
   <div class="section__head section__head--center"><span class="eyebrow">Практики</span><h2>${practices.length} напрямів юридичної експертизи</h2><p class="lead">Оберіть напрям — і ознайомтеся з послугами, процесом роботи та реальними кейсами.</p></div>
-  ${practiceBlocks}
+  ${practiceFilterBar}
+  <div class="grid grid--3" data-practice-grid>${practiceCards}</div>
 </div></section>
 
 <section class="section"><div class="container">
@@ -201,7 +197,11 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
 
 <section class="section"><div class="container">
   <div class="section__head section__head--center"><span class="eyebrow">Відгуки</span><h2>Що кажуть наші клієнти</h2><p class="lead">Рейтинг ${site.rating.value} / 5 на основі ${site.rating.count} відгуків.</p></div>
-  <div class="hscroll" data-hscroll>${reviewCards}</div>
+  <div class="carousel" data-carousel>
+    <button class="carousel__nav carousel__nav--prev" type="button" data-carousel-prev aria-label="Попередні відгуки">‹</button>
+    <div class="hscroll" data-hscroll>${reviewCards}</div>
+    <button class="carousel__nav carousel__nav--next" type="button" data-carousel-next aria-label="Наступні відгуки">›</button>
+  </div>
 </div></section>
 
 ${renderFaq(homeFaq, "Поширені запитання")}
