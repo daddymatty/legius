@@ -18,7 +18,7 @@ export function layout(opts) {
     description,
     canonical,
     ogType = "website",
-    ogImage = "/assets/img/og-default.svg",
+    ogImage = "/assets/img/og-default.png",
     schemas = [],
     bodyClass = "",
     content = "",
@@ -78,6 +78,9 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${abs(canonical)}">
 <meta property="og:image" content="${abs(ogImage)}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${esc(site.name)} — ${esc(site.tagline)}">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
@@ -87,7 +90,13 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/img/favicon.svg">
-<meta name="theme-color" content="#0B1A33">
+<meta name="theme-color" content="#0D0D0F">
+
+<!-- Speed: warm up connections to external origins -->
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+${ga ? `<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">` : ""}
 
 <link rel="preload" href="/assets/fonts/montserrat-cyrillic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>

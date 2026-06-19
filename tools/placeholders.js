@@ -44,16 +44,17 @@ const office = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" wi
 const og = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="LEGIUS">
   <defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${NAVY}"/><stop offset="1" stop-color="${NAVY2}"/></linearGradient></defs>
   <rect width="1200" height="630" fill="url(#b)"/>
-  <circle cx="1010" cy="120" r="260" fill="${GOLD}" opacity="0.10"/>
+  <circle cx="600" cy="315" r="320" fill="${GOLD}" opacity="0.06"/>
+  <!-- content centered so it survives square/center crops on any platform -->
   <g>
-    <rect x="84" y="214" width="120" height="8" rx="4" fill="${BRASS}"/>
-    <rect x="84" y="240" width="120" height="8" rx="4" fill="#ffffff" opacity="0.95"/>
-    <rect x="84" y="266" width="120" height="8" rx="4" fill="#ffffff" opacity="0.95"/>
+    <rect x="540" y="150" width="120" height="8" rx="4" fill="${BRASS}"/>
+    <rect x="540" y="176" width="120" height="8" rx="4" fill="#ffffff" opacity="0.95"/>
+    <rect x="540" y="202" width="120" height="8" rx="4" fill="#ffffff" opacity="0.95"/>
   </g>
-  <text x="80" y="430" font-family="Arial, Helvetica, sans-serif" font-weight="300" letter-spacing="24" font-size="118" fill="#fff">LEGIUS</text>
-  <rect x="84" y="470" width="80" height="4" fill="${BRASS}"/>
-  <text x="84" y="520" font-family="Arial, sans-serif" font-size="28" fill="${GOLD}" letter-spacing="4">ЮРИДИЧНА КОМПАНІЯ · КИЇВ</text>
-  <text x="84" y="562" font-family="Arial, sans-serif" font-size="24" fill="#c4d0e4">Корпоративне · Сімейне · Військове · Податкове право</text>
+  <text x="600" y="385" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="300" letter-spacing="22" font-size="120" fill="#fff">LEGIUS</text>
+  <rect x="560" y="425" width="80" height="4" fill="${BRASS}"/>
+  <text x="600" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" fill="${GOLD}" letter-spacing="4">ЮРИДИЧНА КОМПАНІЯ · КИЇВ</text>
+  <text x="600" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#c4d0e4">Корпоративне · Сімейне · Військове · Податкове право</text>
 </svg>`;
 
 export async function makePlaceholders(imgDir, { team = [] } = {}) {
