@@ -29,6 +29,16 @@
 «🟢 Нова заявка — LEGIUS». Якщо ні — перевір секрети `BOT_TOKEN`/`CHAT_ID`
 та що бот доданий у потрібний чат.
 
+## Захист від спаму — Cloudflare Turnstile (необов'язково)
+
+Щоб форму не спамили боти:
+1. Cloudflare → **Turnstile** → **Add site** → домен `legius.com.ua` → отримаєш **Site Key** (публічний) і **Secret Key**.
+2. **Site Key** додай у сайт: `src/data/site.js` → `turnstile.siteKey` (або надішли його мені — впишу й перезберу).
+3. **Secret Key** додай у воркер як змінну `TURNSTILE_SECRET` (Settings → Variables and Secrets) і онови код воркера на актуальний `lead-telegram.js` (він уже містить перевірку токена).
+4. Після цього форма показуватиме віджет Turnstile, а воркер відхилятиме заявки без валідного токена.
+
+Поки `siteKey` порожній — Turnstile вимкнено, нічого зайвого не вантажиться.
+
 ## Альтернатива через термінал (wrangler)
 ```bash
 npm i -g wrangler

@@ -106,6 +106,7 @@ export function leadForm({ id = "lead", title = "Отримати консуль
       <div class="field"><label for="${id}-email">E-mail</label><input id="${id}-email" name="email" type="email" autocomplete="email" placeholder="your@email.com"></div>
     </div>
     ${compact ? "" : `<div class="field"><label for="${id}-msg">Коротко про ситуацію</label><textarea id="${id}-msg" name="message" rows="3" placeholder="Опишіть ваше питання"></textarea></div>`}
+    ${site.turnstile && site.turnstile.siteKey ? `<div class="cf-turnstile" data-sitekey="${esc(site.turnstile.siteKey)}" data-theme="light" data-size="flexible" style="margin-bottom:1rem"></div>` : ""}
     <button class="btn btn--primary btn--block" type="submit">Замовити консультацію</button>
     <p class="form-consent">Натискаючи кнопку, ви погоджуєтесь з <a href="/privacy/">політикою конфіденційності</a>. Гарантуємо повну конфіденційність.</p>
   </form>`;
@@ -172,7 +173,7 @@ export function footer(practices) {
     </div>
     <div class="footer__bottom">
       <span>© <span data-year>2026</span> ${esc(site.legalName)}. Усі права захищено.</span>
-      <span><a href="/privacy/">Політика конфіденційності</a> · <a href="/sitemap.xml">Карта сайту</a></span>
+      <span><a href="/privacy/">Політика конфіденційності</a> · <a href="/sitemap/">Карта сайту</a></span>
     </div>
   </div>
 </footer>${messengers()}`;

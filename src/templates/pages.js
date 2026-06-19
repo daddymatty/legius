@@ -2,6 +2,7 @@
 import { site, trustBadges } from "../data/site.js";
 import { leadForm, ctaBand, breadcrumbs, icons } from "./components.js";
 import { escape as esc } from "./render.js";
+import { practiceServices } from "../lib/services.js";
 
 export function aboutPage({ team, practices }) {
   const crumbs = [{ name: "Головна", href: "/" }, { name: "Про компанію", href: "/about/" }];
@@ -122,6 +123,44 @@ ${breadcrumbs(crumbs)}
   <h2>5. Ваші права</h2>
   <p>Ви маєте право на доступ, виправлення та видалення своїх даних. Для реалізації прав напишіть на <a href="mailto:${site.email}">${esc(site.email)}</a>.</p>
 </div></div></section>`;
+}
+
+export function htmlSitemapPage({ practices, locations = [], team = [], pillars = [], articles = [] }) {
+  const crumbs = [{ name: "Головна", href: "/" }, { name: "Карта сайту", href: "/sitemap/" }];
+  const li = (href, label) => `<li><a href="${href}">${esc(label)}</a></li>`;
+
+  const main = ["/ Головна", "/practices/ Усі практики", "/about/ Про компанію", "/team/ Команда", "/cases/ Кейси", "/blog/ Блог", "/contacts/ Контакти", "/privacy/ Політика конфіденційності"]
+    .map((s) => { const i = s.indexOf(" "); return li(s.slice(0, i), s.slice(i + 1)); }).join("");
+
+  const practiceBlocks = practices.map((p) => {
+    const svc = practiceServices(p).map((s) => li(`/practices/${p.slug}/${s.slug}/`, s.title)).join("");
+    return `<div class="sitemap-col"><h3><a href="/practices/${p.slug}/">${esc(p.shortTitle)}</a></h3><ul>${svc}</ul></div>`;
+  }).join("");
+
+  const locLinks = locations.map((l) => li(`/${l.slug}/`, l.navLabel || l.metaTitle)).join("");
+  const teamLinks = team.map((m) => li(`/team/${m.slug}/`, m.name)).join("");
+
+  const blogBlocks = pillars.map((p) => {
+    const arts = articles.filter((a) => a.cluster === p.cluster).map((a) => li(`/blog/${a.slug}/`, a.title)).join("");
+    return arts ? `<div class="sitemap-col"><h3><a href="/blog/${p.slug}/">${esc(p.title)}</a></h3><ul>${arts}</ul></div>` : "";
+  }).join("");
+
+  return `
+${breadcrumbs(crumbs)}
+<section class="page-hero"><div class="container">
+  <span class="eyebrow">Навігація</span>
+  <h1>Карта сайту</h1>
+  <p>Усі розділи LEGIUS в одному місці — практики, послуги, статті блогу, команда та інформація про компанію.</p>
+</div></section>
+<section class="section"><div class="container sitemap">
+  <div class="sitemap-col"><h2>Основні сторінки</h2><ul>${main}</ul></div>
+  ${locLinks ? `<div class="sitemap-col"><h2>Юристи по районах Києва</h2><ul>${locLinks}</ul></div>` : ""}
+  <div class="sitemap-col"><h2>Команда</h2><ul>${teamLinks}</ul></div>
+  <h2 style="grid-column:1/-1;margin-top:1rem">Практики та послуги</h2>
+  ${practiceBlocks}
+  <h2 style="grid-column:1/-1;margin-top:1rem">Блог</h2>
+  ${blogBlocks}
+</div></section>`;
 }
 
 export function notFoundPage() {

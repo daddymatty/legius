@@ -35,6 +35,8 @@ export function layout(opts) {
      strict 'self' (no inline JS); style-src allows inline due to style attrs. */
   const leadOrigin = site.leadEndpoint ? new URL(site.leadEndpoint).origin : "";
   const ga = (site.analytics && site.analytics.ga4) || "";
+  const turnstile = (site.turnstile && site.turnstile.siteKey) || "";
+  const cf = "https://challenges.cloudflare.com";
   const csp = [
     "default-src 'self'",
     "base-uri 'self'",
@@ -42,12 +44,13 @@ export function layout(opts) {
     `img-src 'self' https://images.unsplash.com${ga ? " https://*.google-analytics.com https://*.googletagmanager.com" : ""}`,
     "font-src 'self'",
     "style-src 'self' 'unsafe-inline'",
-    `script-src 'self'${ga ? " https://www.googletagmanager.com" : ""}`,
+    `script-src 'self'${ga ? " https://www.googletagmanager.com" : ""}${turnstile ? " " + cf : ""}`,
     `connect-src 'self'${leadOrigin ? " " + leadOrigin : ""}${ga ? " https://*.google-analytics.com https://*.googletagmanager.com" : ""}`,
-    "frame-src https://www.openstreetmap.org",
+    `frame-src https://www.openstreetmap.org${turnstile ? " " + cf : ""}`,
     "form-action 'self'",
     "upgrade-insecure-requests",
   ].join("; ");
+  const turnstileTag = turnstile ? `<script src="${cf}/turnstile/v0/api.js" async defer></script>` : "";
 
   /* GA4: load gtag.js; init lives in main.js (data-ga) so no inline script,
      keeping script-src strict. */
@@ -103,6 +106,7 @@ ${ga ? `<link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="stylesheet" href="/assets/css/styles.css?v=${v}">
 ${gscTag}
 ${gaTag}
+${turnstileTag}
 ${allSchemas.map(jsonLd).join("\n")}
 </head>
 <body class="${bodyClass}">

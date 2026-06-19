@@ -10,8 +10,10 @@
  *   CHAT_ID    — target chat id (your group / personal chat with the bot)
  *
  * Optional vars:
- *   THREAD_ID       — forum topic id, to post into a specific group topic
- *   ALLOWED_ORIGINS — comma-separated list (defaults below)
+ *   THREAD_ID        — forum topic id, to post into a specific group topic
+ *   TURNSTILE_SECRET — Cloudflare Turnstile secret; if set, the worker verifies
+ *                      the cf-turnstile-response token before sending (anti-spam)
+ *   ALLOWED_ORIGINS  — comma-separated list (defaults below)
  */
 
 const DEFAULT_ORIGINS = [
@@ -68,6 +70,19 @@ export default {
     const page = (data.page || "").toString().slice(0, 200);
 
     if (!name || !phone) return json({ ok: false, error: "required" }, 422);
+
+    // Optional Cloudflare Turnstile verification (enforced only if secret is set).
+    if (env.TURNSTILE_SECRET) {
+      const token = data["cf-turnstile-response"];
+      if (!token) return json({ ok: false, error: "captcha" }, 403);
+      const verify = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `secret=${encodeURIComponent(env.TURNSTILE_SECRET)}&response=${encodeURIComponent(token)}`,
+      });
+      const vr = await verify.json().catch(() => ({ success: false }));
+      if (!vr.success) return json({ ok: false, error: "captcha" }, 403);
+    }
 
     const text =
       `🟢 <b>Нова заявка — LEGIUS</b>\n\n` +
