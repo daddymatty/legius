@@ -151,6 +151,7 @@ async function build() {
           description: p.metaDescription,
           canonical: `/practices/${p.slug}/`,
           ogType: "article",
+          ogImage: `/assets/img/og/${p.slug}.png`,
           schemas: [
             serviceSchema(p),
             faqSchema(p.faq || []),
@@ -177,6 +178,7 @@ async function build() {
             description: sc.heroSub || `${svc.title}: послуга практики «${p.shortTitle}» від LEGIUS у Києві. Профільний адвокат, прозора вартість, конфіденційність. Безкоштовна консультація.`,
             canonical: `/practices/${p.slug}/${svc.slug}/`,
             ogType: "article",
+            ogImage: `/assets/img/og/${p.slug}.png`,
             schemas: [
               serviceItemSchema(p, svc, sc.heroSub),
               faqSchema(sc.faq || []),
