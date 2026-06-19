@@ -227,7 +227,7 @@ async function build() {
     page(
       {
         title: "Команда LEGIUS — адвокати та юристи у Києві",
-        description: "Партнери, адвокати та юристи юридичної компанії LEGIUS. Профільні фахівці з 12 практик: корпоративне, податкове, сімейне, військове право.",
+        description: `Партнери, адвокати та юристи юридичної компанії LEGIUS. Профільні фахівці з ${practices.length} практик: корпоративне, податкове, сімейне, військове, міграційне право.`,
         canonical: "/team/",
         schemas: [breadcrumbSchema([{ name: "Головна", href: "/" }, { name: "Команда", href: "/team/" }])],
       },
@@ -241,8 +241,8 @@ async function build() {
       `team/${m.slug}`,
       page(
         {
-          title: `${m.name} — ${m.role} | LEGIUS`,
-          description: `${m.name}, ${m.role} юридичної компанії LEGIUS. ${m.short}`,
+          title: `${m.displayName || m.name} — ${m.role} | LEGIUS`,
+          description: `${m.displayName || m.name}, ${m.role} юридичної компанії LEGIUS. ${m.short}`,
           canonical: `/team/${m.slug}/`,
           ogType: "profile",
           ogImage: m.photo,
@@ -251,7 +251,7 @@ async function build() {
             breadcrumbSchema([
               { name: "Головна", href: "/" },
               { name: "Команда", href: "/team/" },
-              { name: m.name, href: `/team/${m.slug}/` },
+              { name: m.displayName || m.name, href: `/team/${m.slug}/` },
             ]),
           ],
         },
@@ -348,7 +348,7 @@ async function build() {
   console.log("→ Про компанію / Контакти / Політика / 404");
   await writePage("about", page({
     title: "Про компанію LEGIUS — юридична фірма у Києві",
-    description: "LEGIUS — преміальна юридична компанія у Києві з 2009 року. 24 юристи, 12 практик, 94% виграних справ. Дізнайтеся про нашу команду та цінності.",
+    description: `LEGIUS — юридична компанія у Києві з ${site.founded} року. ${site.stats.lawyers} юристи, ${practices.length} практик, ${site.stats.winRate} виграних справ. Дізнайтеся про нашу команду та цінності.`,
     canonical: "/about/",
     schemas: [breadcrumbSchema([{ name: "Головна", href: "/" }, { name: "Про компанію", href: "/about/" }])],
   }, aboutPage({ team, practices }), "/about/"), { priority: "0.7" });

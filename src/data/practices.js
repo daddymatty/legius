@@ -22,10 +22,11 @@ import ipLaw from "./practices/ip-law.js";
 import investment from "./practices/investment.js";
 import itLaw from "./practices/it-law.js";
 import mAndA from "./practices/m-and-a.js";
+import migrationLaw from "./practices/migration-law.js";
 
 export const practices = [
   familyLaw, criminalBusiness, corporateLaw, militaryLaw, taxLaw, litigation,
-  realEstate, landLaw, ipLaw, investment, itLaw, mAndA,
+  realEstate, landLaw, ipLaw, investment, itLaw, mAndA, migrationLaw,
 ];
 
 export const practiceBySlug = Object.fromEntries(practices.map((p) => [p.slug, p]));

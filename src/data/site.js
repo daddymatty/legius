@@ -2,7 +2,7 @@
 export const site = {
   name: "LEGIUS",
   legalName: 'Адвокатське об’єднання «ЛЕГІУС»',
-  tagline: "Юридична компанія преміум-класу",
+  tagline: "Юридична компанія",
   domain: "https://legius.com.ua",
   locale: "uk_UA",
   lang: "uk",

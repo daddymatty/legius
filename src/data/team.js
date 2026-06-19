@@ -2,6 +2,7 @@ export const team = [
   {
     slug: "maksym-slobodianin",
     name: "Слободянін Максим Вікторович",
+    displayName: "Слободянін Максим",
     role: "Керуючий партнер",
     roleKey: "managing-partner",
     photo: "/assets/img/team/maksym-slobodianin.svg",
@@ -40,6 +41,7 @@ export const team = [
   {
     slug: "oleksandr-hordiienko",
     name: "Гордієнко Олександр Сергійович",
+    displayName: "Гордієнко Олександр",
     role: "Старший партнер",
     roleKey: "senior-partner",
     photo: "/assets/img/team/oleksandr-hordiienko.svg",
@@ -77,6 +79,7 @@ export const team = [
   {
     slug: "mykhailo-kobylianskyi",
     name: "Кобилянський Михайло Вікторович",
+    displayName: "Кобилянський Михайло",
     role: "Старший партнер",
     roleKey: "senior-partner",
     photo: "/assets/img/team/mykhailo-kobylianskyi.svg",
