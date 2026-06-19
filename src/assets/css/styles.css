@@ -109,6 +109,10 @@ h3 { font-size: var(--fs-lg); }
 .section--navy .eyebrow, .page-hero .eyebrow, .hero .eyebrow { color: var(--c-teal-l); }
 .section__head { max-width: 720px; margin-bottom: clamp(2.2rem, 4vw, 3.2rem); }
 .section__head--center { margin-inline: auto; text-align: center; }
+/* More breathing room around section headings */
+.section__head .eyebrow { margin-bottom: 1.2rem; }
+.section__head h2 { margin-bottom: 1rem; }
+.section--cta { padding-top: 0; }
 .lead { font-size: var(--fs-md); color: var(--c-slate); }
 .section--navy .lead { color: var(--c-on-dark); }
 
@@ -290,7 +294,9 @@ a.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .content-aside__side { display: grid; gap: 1.5rem; }
 @media (min-width: 1024px) {
   .content-aside { grid-template-columns: minmax(0, 1fr) 360px; gap: 3rem; }
-  .content-aside__side { position: sticky; top: 132px; }
+  /* Sticky, but cap to the viewport and scroll internally so a tall form's
+     submit button stays reachable instead of being cut off below the fold. */
+  .content-aside__side { position: sticky; top: 96px; max-height: calc(100vh - 112px); overflow-y: auto; overscroll-behavior: contain; }
 }
 .media-frame { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--c-mist); aspect-ratio: 4/3; }
 .media-frame img { width: 100%; height: 100%; object-fit: cover; }
@@ -473,16 +479,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .footer__grid { display: grid; gap: 2.5rem; align-items: start; }
 .footer__brand .logo { margin-bottom: 1rem; }
 .footer__brand p { font-size: 0.92rem; max-width: 36ch; }
-.footer h4 { color: #fff; font-family: var(--font-body); font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 1rem; }
-.footer ul { display: grid; gap: 0.55rem; }
-.footer a { font-size: 0.92rem; color: var(--c-on-dark); }
-.footer a:hover { color: var(--c-teal-l); }
+.site-footer h4 { color: #fff; font-family: var(--font-body); font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 1rem; }
+.site-footer ul { display: grid; gap: 0.55rem; }
+.site-footer a { font-size: 0.92rem; color: var(--c-on-dark); }
+.site-footer a:hover { color: var(--c-teal-l); }
 .footer__bottom { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; font-size: 0.82rem; }
 
 /* chips */
 .chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
 .chip { background: var(--c-mist); border: 1px solid var(--c-line); border-radius: 100px; padding: 0.45rem 1rem; font-size: 0.85rem; color: var(--c-slate); }
-.section--navy .chip, .footer .chip { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12); color: #cdd8ea; }
+.section--navy .chip, .site-footer .chip { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12); color: #cdd8ea; }
 
 /* utility */
 .text-center { text-align: center; }

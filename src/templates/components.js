@@ -112,7 +112,7 @@ export function leadForm({ id = "lead", title = "Отримати консуль
 }
 
 export function ctaBand({ title = "Потрібна юридична підтримка?", text = "Залиште заявку — провідний адвокат проаналізує вашу ситуацію та запропонує стратегію дій.", btn = "Безкоштовна консультація", href = "/contacts/#consult" } = {}) {
-  return `<section class="section"><div class="container"><div class="cta-band reveal">
+  return `<section class="section section--cta"><div class="container"><div class="cta-band reveal">
     <h2>${esc(title)}</h2><p>${esc(text)}</p>
     <div class="hero__actions">
       <a class="btn btn--primary" href="${href}">${esc(btn)}</a>
