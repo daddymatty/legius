@@ -1,7 +1,7 @@
 /* Global site configuration, navigation, contacts, brand. */
 export const site = {
   name: "LEGIUS",
-  legalName: 'Адвокатське об’єднання «ЛЕГІУС»',
+  legalName: 'Юридична компанія «ЛЕГІУС»',
   tagline: "Юридична компанія",
   domain: "https://legius.com.ua",
   locale: "uk_UA",
