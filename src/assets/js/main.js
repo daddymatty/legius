@@ -285,9 +285,46 @@
       });
     });
   }
-  /* Cases filter (homepage) + blog filter (blog index) */
+  /* Cases filter (homepage) */
   setupFilter(document.querySelector("[data-case-filter]"), document.querySelector("[data-case-grid]"), "data-practice");
-  setupFilter(document.querySelector("[data-blog-filter]"), document.querySelector("[data-blog-grid]"), "data-cluster");
+
+  /* Blog index: practice filter + "show more" pagination (combined) */
+  (function () {
+    var grid = document.querySelector("[data-blog-grid]");
+    if (!grid) return;
+    var bar = document.querySelector("[data-blog-filter]");
+    var moreWrap = document.querySelector("[data-blog-more]");
+    var moreBtn = moreWrap && moreWrap.querySelector("button");
+    var cards = [].slice.call(grid.querySelectorAll(".post-card"));
+    var STEP = 9;
+    var filter = "all";
+    var limit = STEP;
+    function render() {
+      var matched = 0, shown = 0;
+      cards.forEach(function (c) {
+        var ok = filter === "all" || c.getAttribute("data-cluster") === filter;
+        if (ok && shown < limit) { c.hidden = false; c.classList.add("in"); shown++; matched++; }
+        else { c.hidden = true; if (ok) matched++; }
+      });
+      if (moreWrap) moreWrap.hidden = matched <= limit;
+    }
+    if (bar) {
+      bar.addEventListener("click", function (e) {
+        var btn = e.target.closest("[data-filter]");
+        if (!btn) return;
+        filter = btn.getAttribute("data-filter");
+        limit = STEP;
+        bar.querySelectorAll("[data-filter]").forEach(function (b) {
+          var on = b === btn;
+          b.classList.toggle("is-active", on);
+          b.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        render();
+      });
+    }
+    if (moreBtn) moreBtn.addEventListener("click", function () { limit += STEP; render(); });
+    render();
+  })();
 
   /* ---- Current year in footer ---- */
   var y = document.querySelector("[data-year]");

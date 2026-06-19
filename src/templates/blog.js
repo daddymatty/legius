@@ -51,6 +51,7 @@ ${breadcrumbs(crumbs)}
   <div class="section__head section__head--center"><span class="eyebrow">Усі матеріали</span><h2>Статті за практиками</h2><p class="lead">Оберіть напрям, щоб відфільтрувати ${articles.length} публікацій.</p></div>
   ${filterBar}
   <div class="grid grid--3" data-blog-grid>${allCards}</div>
+  <div class="text-center mt-3" data-blog-more hidden><button class="btn btn--dark" type="button">Показати ще</button></div>
 </div></section>
 ${ctaBand()}`;
 }
