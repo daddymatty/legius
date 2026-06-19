@@ -4,7 +4,7 @@ export const team = [
     name: "Слободянін Максим Вікторович",
     role: "Керуючий партнер",
     roleKey: "managing-partner",
-    photo: "/assets/img/team/maksym-slobodianin.jpg",
+    photo: "/assets/img/team/maksym-slobodianin.svg",
     short: "Керує фірмою та особисто веде складні сімейні й господарські справи",
     specialization: [
       "Сімейне право",
