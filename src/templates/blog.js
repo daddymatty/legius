@@ -106,7 +106,7 @@ ${breadcrumbs(crumbs)}
 <section class="section"><div class="container">
   <div class="article-layout">
     <aside>${toc ? `<nav class="toc"><h4>Зміст</h4>${toc}</nav>` : ""}</aside>
-    <div>
+    <div class="article-body">
       <article class="prose reveal">
         ${a.intro || `<p class="lead">${esc(a.excerpt)}</p>`}
         ${renderProseSections(a.sections)}
@@ -115,14 +115,17 @@ ${breadcrumbs(crumbs)}
           return svc.length ? `<br><span style="font-size:.92em">Послуги напряму: ${svc.map((s) => `<a href="/practices/${practice.slug}/${s.slug}/">${esc(s.title)}</a>`).join(", ")}.</span>` : "";
         })()}</div>` : ""}
       </article>
+      ${a.faq && a.faq.length ? `<section class="article-block reveal" aria-label="Питання та відповіді">
+        <h2 class="article-block__title">Питання та відповіді</h2>
+        <div class="faq">${a.faq.map((f) => `<details><summary>${esc(f.q)}</summary><div>${f.a.startsWith("<") ? f.a : `<p>${esc(f.a)}</p>`}</div></details>`).join("")}</div>
+      </section>` : ""}
+      ${related ? `<section class="article-block reveal" aria-label="Читайте також">
+        <h2 class="article-block__title">Читайте також</h2>
+        <div class="grid grid--3">${related}</div>
+      </section>` : ""}
     </div>
   </div>
 </div></section>
-${renderFaq(a.faq, "Питання та відповіді")}
-${related ? `<section class="section"><div class="container">
-  <div class="section__head section__head--center"><span class="eyebrow">Блог</span><h2>Читайте також</h2></div>
-  <div class="grid grid--3">${related}</div>
-</div></section>` : ""}
 ${ctaBand({ btn: "Отримати консультацію" })}
 <section class="section" id="consult"><div class="container" style="max-width:640px">
   ${leadForm({ id: `article-${a.slug}`, title: "Безкоштовна консультація юриста", source: `article:${a.slug}` })}
