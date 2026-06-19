@@ -60,7 +60,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
   const teamCards = team
     .map(
       (m) => `<a class="team-card reveal" href="/team/${m.slug}/">
-        <div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" alt="${esc(m.name)} — ${esc(m.role)}"></div>
+        <div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" decoding="async" alt="${esc(m.name)} — ${esc(m.role)}"></div>
         <h3>${esc(m.name)}</h3><div class="role">${esc(m.role)}</div>
       </a>`
     )
@@ -128,7 +128,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
       <div class="chips">${trust}</div>
       <a class="btn btn--dark" href="/about/">Дізнатися більше про нас</a>
     </div>
-    <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=70" width="640" height="480" loading="lazy" alt="Офіс юридичної компанії LEGIUS у центрі Києва"></div>
+    <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=70" width="640" height="480" loading="lazy" decoding="async" alt="Офіс юридичної компанії LEGIUS у центрі Києва"></div>
   </div>
 </div></section>
 

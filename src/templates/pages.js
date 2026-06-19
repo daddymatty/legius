@@ -40,7 +40,7 @@ ${breadcrumbs(crumbs)}
       <p style="color:var(--c-slate)">Наша філософія проста: глибока спеціалізація замість універсальності. Саме тому понад ${site.stats.winRate} наших справ завершуються на користь клієнта.</p>
       <div class="chips mt-2">${trustBadges.map((b) => `<span class="chip">${esc(b)}</span>`).join("")}</div>
     </div>
-    <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=70" width="640" height="480" loading="lazy" alt="Офіс LEGIUS"></div>
+    <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=70" width="640" height="480" loading="lazy" decoding="async" alt="Офіс LEGIUS"></div>
   </div>
 </div></section>
 
@@ -66,7 +66,7 @@ ${breadcrumbs(crumbs)}
 <section class="section"><div class="container">
   <div class="section__head section__head--center"><span class="eyebrow">Команда</span><h2>Люди, які створюють LEGIUS</h2></div>
   <div class="grid grid--4">${team
-    .map((m) => `<a class="team-card reveal" href="/team/${m.slug}/"><div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" alt="${esc(m.name)}"></div><h3>${esc(m.name)}</h3><div class="role">${esc(m.role)}</div></a>`)
+    .map((m) => `<a class="team-card reveal" href="/team/${m.slug}/"><div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" decoding="async" alt="${esc(m.name)}"></div><h3>${esc(m.name)}</h3><div class="role">${esc(m.role)}</div></a>`)
     .join("")}</div>
 </div></section>
 

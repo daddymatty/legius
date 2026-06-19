@@ -30,6 +30,14 @@
         document.body.style.overflow = "";
       }
     });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && mnav.classList.contains("open")) {
+        mnav.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+        burger.focus();
+      }
+    });
   }
 
   /* ---- Reveal on scroll (IntersectionObserver) ---- */

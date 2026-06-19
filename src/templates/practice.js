@@ -18,7 +18,7 @@ function lawyerCard(lawyer) {
   return `<div class="card">
     <span class="eyebrow">Відповідальний адвокат</span>
     <a class="lawyer-card__row" href="/team/${lawyer.slug}/">
-      <img src="${lawyer.photo}" width="64" height="80" loading="lazy" alt="${esc(lawyer.name)} — ${esc(lawyer.role)}">
+      <img src="${lawyer.photo}" width="64" height="80" loading="lazy" decoding="async" alt="${esc(lawyer.name)} — ${esc(lawyer.role)}">
       <span><b>${esc(lawyer.name)}</b><span>${esc(lawyer.role)}</span></span>
     </a>
     <a class="btn btn--ghost btn--block" href="/team/${lawyer.slug}/">Профіль адвоката</a>

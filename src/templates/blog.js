@@ -2,6 +2,7 @@
 import { site } from "../data/site.js";
 import { leadForm, ctaBand, breadcrumbs, icons } from "./components.js";
 import { renderProseSections, renderFaq, escape as esc } from "./render.js";
+import { practiceServices } from "../lib/services.js";
 
 function postCard(a) {
   return `<a class="post-card reveal" href="/blog/${a.slug}/">
@@ -108,7 +109,10 @@ ${breadcrumbs(crumbs)}
       <article class="prose reveal">
         ${a.intro || `<p class="lead">${esc(a.excerpt)}</p>`}
         ${renderProseSections(a.sections)}
-        ${practice ? `<div class="callout">Потрібна персональна консультація з теми «${esc(practice.shortTitle)}»? <a href="/practices/${practice.slug}/">Перейдіть на сторінку практики</a> або <a href="#consult">залиште заявку</a> — відповімо протягом 15 хвилин.</div>` : ""}
+        ${practice ? `<div class="callout">Потрібна персональна консультація з теми «${esc(practice.shortTitle)}»? <a href="/practices/${practice.slug}/">Перейдіть на сторінку практики</a> або <a href="#consult">залиште заявку</a> — відповімо протягом 15 хвилин.${(() => {
+          const svc = practiceServices(practice).slice(0, 3);
+          return svc.length ? `<br><span style="font-size:.92em">Послуги напряму: ${svc.map((s) => `<a href="/practices/${practice.slug}/${s.slug}/">${esc(s.title)}</a>`).join(", ")}.</span>` : "";
+        })()}</div>` : ""}
       </article>
       ${renderFaq(a.faq, "Питання та відповіді")}
       ${related ? `<section class="reveal" style="margin-top:2rem"><h2 style="font-size:1.5rem;margin-bottom:1rem">Читайте також</h2><div class="grid grid--3">${related}</div></section>` : ""}

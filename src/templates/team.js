@@ -8,7 +8,7 @@ export function teamIndexPage(team) {
   const cards = team
     .map(
       (m) => `<a class="team-card reveal" href="/team/${m.slug}/">
-        <div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" alt="${esc(m.name)} — ${esc(m.role)}"></div>
+        <div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" decoding="async" alt="${esc(m.name)} — ${esc(m.role)}"></div>
         <h3>${esc(m.name)}</h3><div class="role">${esc(m.role)}</div>
         <p style="color:var(--c-slate);font-size:.9rem;margin-top:.4rem">${esc(m.short)}</p>
       </a>`
@@ -43,7 +43,7 @@ export function teamMemberPage(m, { practiceBySlug }) {
 ${breadcrumbs(crumbs)}
 <section class="section"><div class="container">
   <div class="split">
-    <div class="reveal"><div class="media-frame team-photo" style="aspect-ratio:3/4;max-width:420px"><img src="${m.photo}" width="420" height="560" alt="${esc(m.name)} — ${esc(m.role)}"></div></div>
+    <div class="reveal"><div class="media-frame team-photo" style="aspect-ratio:3/4;max-width:420px"><img src="${m.photo}" width="420" height="560" decoding="async" alt="${esc(m.name)} — ${esc(m.role)}"></div></div>
     <div class="reveal">
       <span class="eyebrow">${esc(m.role)}</span>
       <h1>${esc(m.name)}</h1>
