@@ -66,7 +66,7 @@ ${breadcrumbs(crumbs)}
 
 <section class="section"><div class="container">
   <div class="section__head section__head--center"><span class="eyebrow">Команда</span><h2>Люди, які створюють LEGIUS</h2></div>
-  <div class="grid grid--4">${team
+  <div class="grid grid--3">${team
     .map((m) => `<a class="team-card reveal" href="/team/${m.slug}/"><div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" decoding="async" alt="${esc(m.name)}"></div><h3>${esc(m.name)}</h3><div class="role">${esc(m.role)}</div></a>`)
     .join("")}</div>
 </div></section>
