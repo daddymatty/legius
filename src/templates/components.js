@@ -64,7 +64,6 @@ export function header(practices, currentPath = "") {
     </div>
     <div class="util-bar__right">
       <span>${esc(site.hours)}</span>
-      <span class="lang"><b>UA</b> <span>/ EN</span></span>
     </div>
   </div></div>
   <div class="container header__bar">
