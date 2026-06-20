@@ -113,7 +113,7 @@ export function serviceItemSchema(practice, svc, description) {
   };
 }
 
-export function articleSchema(article) {
+export function articleSchema(article, author) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -122,7 +122,9 @@ export function articleSchema(article) {
     inLanguage: "uk-UA",
     datePublished: article.date,
     dateModified: article.modified || article.date,
-    author: { "@type": "Organization", name: site.legalName, "@id": site.domain + "/#organization" },
+    author: author
+      ? { "@type": "Person", name: author.name, url: abs("/team/" + author.slug + "/"), jobTitle: author.role }
+      : { "@type": "Organization", name: site.legalName, "@id": site.domain + "/#organization" },
     publisher: { "@id": site.domain + "/#organization" },
     mainEntityOfPage: abs("/blog/" + article.slug + "/"),
     image: abs("/assets/img/og-default.svg"),

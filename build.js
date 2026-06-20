@@ -21,6 +21,7 @@ import { header, footer } from "./src/templates/components.js";
 import { homePage } from "./src/templates/home.js";
 import { practicePage, servicePage, practicesIndexPage } from "./src/templates/practice.js";
 import { practiceServices, serviceContent } from "./src/lib/services.js";
+import { articleAuthor } from "./src/lib/authors.js";
 import { locationPage } from "./src/templates/location.js";
 import { teamIndexPage, teamMemberPage } from "./src/templates/team.js";
 import { casesPage } from "./src/templates/cases.js";
@@ -330,7 +331,7 @@ async function build() {
           canonical: `/blog/${a.slug}/`,
           ogType: "article",
           schemas: [
-            articleSchema(a),
+            articleSchema(a, articleAuthor(a)),
             faqSchema(a.faq || []),
             breadcrumbSchema([
               { name: "Головна", href: "/" },
