@@ -281,12 +281,16 @@
         b.setAttribute("aria-pressed", on ? "true" : "false");
       });
       items.forEach(function (it) {
-        it.hidden = !(f === "all" || it.getAttribute(attr) === f);
+        var show = f === "all" || it.getAttribute(attr) === f;
+        it.hidden = !show;
+        if (show) it.classList.add("in"); /* reveal cards that were below the fold */
       });
     });
   }
   /* Practices filter (homepage) */
   setupFilter(document.querySelector("[data-practice-filter]"), document.querySelector("[data-practice-grid]"), "data-group");
+  /* Cases archive page: filter by specialization */
+  setupFilter(document.querySelector("[data-cases-filter]"), document.querySelector("[data-cases-grid]"), "data-practice");
 
   /* Cases filter (homepage): show 2 rows (6) by default; a selected practice
      reveals all its matching cases. */

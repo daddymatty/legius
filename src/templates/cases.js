@@ -6,7 +6,7 @@ export function casesPage(cases, practices) {
   const crumbs = [{ name: "Головна", href: "/" }, { name: "Кейси", href: "/cases/" }];
   const cards = cases
     .map(
-      (c) => `<article class="case-card reveal" id="${c.slug}">
+      (c) => `<article class="case-card reveal" data-practice="${esc(c.practice || "")}" id="${c.slug}">
         <div class="case-card__body">
           <span class="tag">${esc(c.practiceLabel || c.tag)} · ${c.year}</span>
           <h3 style="font-size:1.2rem">${esc(c.title)}</h3>
@@ -18,6 +18,17 @@ export function casesPage(cases, practices) {
       </article>`
     )
     .join("");
+
+  /* Specialization filter — practices present among the cases, in practices order. */
+  const seen = new Map();
+  cases.forEach((c) => { if (c.practice && !seen.has(c.practice)) seen.set(c.practice, c.practiceLabel || c.practice); });
+  const order = practices.map((p) => p.slug);
+  const entries = [...seen.entries()].sort((a, b) => order.indexOf(a[0]) - order.indexOf(b[0]));
+  const filterBar = `<div class="case-filter" data-cases-filter>
+      <button type="button" class="case-filter__btn is-active" data-filter="all">Усі напрями</button>
+      ${entries.map(([slug, label]) => `<button type="button" class="case-filter__btn" data-filter="${esc(slug)}">${esc(label)}</button>`).join("")}
+    </div>`;
+
   return `
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
@@ -25,6 +36,9 @@ ${breadcrumbs(crumbs)}
   <h1>Справи, які ми виграли</h1>
   <p>Понад ${cases.length} детальних прикладів роботи: проблема клієнта, наша стратегія та досягнутий результат у різних практиках.</p>
 </div></section>
-<section class="section"><div class="container"><div class="grid grid--3">${cards}</div></div></section>
+<section class="section"><div class="container">
+  ${filterBar}
+  <div class="grid grid--3" data-cases-grid>${cards}</div>
+</div></section>
 ${ctaBand({ title: "Маєте схожу ситуацію?", text: "Розкажіть про вашу справу — ми оцінимо перспективи та запропонуємо рішення." })}`;
 }
