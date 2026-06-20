@@ -350,7 +350,7 @@ async function build() {
   console.log("→ Про компанію / Контакти / Політика / 404");
   await writePage("about", page({
     title: "Про компанію LEGIUS — юридична фірма у Києві",
-    description: `LEGIUS — юридична компанія у Києві з ${site.founded} року. ${site.stats.lawyers} юристи, ${practices.length} практик, ${site.stats.winRate} виграних справ. Дізнайтеся про нашу команду та цінності.`,
+    description: `LEGIUS — юридична компанія у Києві з ${site.founded} року. ${site.stats.lawyers} юристів, ${practices.length} практик, ${site.stats.cases} проведених справ. Дізнайтеся про нашу команду та цінності.`,
     canonical: "/about/",
     schemas: [breadcrumbSchema([{ name: "Головна", href: "/" }, { name: "Про компанію", href: "/about/" }])],
   }, aboutPage({ team, practices }), "/about/"), { priority: "0.7" });

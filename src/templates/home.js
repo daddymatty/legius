@@ -52,7 +52,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
       <span class="tile__cta">Про компанію →</span>
     </a>
     <a class="tile tile--red" href="/cases/">
-      <div><span class="tile__big">${site.stats.winRate}</span><p>виграних справ — стратегія на основі реальних шансів, а не обіцянок</p></div>
+      <div><span class="tile__big">${site.stats.cases}</span><p>проведених справ — стратегія на основі реальних шансів, а не обіцянок</p></div>
       <span class="tile__cta">Кейси →</span>
     </a>
     <a class="tile tile--light" href="/team/">
@@ -142,9 +142,9 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
       </div>
       <div class="hero__trust">
         <div class="stat"><strong>${site.stats.years}</strong><span>років практики</span></div>
-        <div class="stat"><strong>${site.stats.cases}</strong><span>виграних справ</span></div>
+        <div class="stat"><strong>${site.stats.cases}</strong><span>проведених справ</span></div>
         <div class="stat"><strong>${site.stats.lawyers}</strong><span>юристів у команді</span></div>
-        <div class="stat"><strong>${site.stats.winRate}</strong><span>успішних рішень</span></div>
+        <div class="stat"><strong>${site.rating.value}</strong><span>рейтинг у Google</span></div>
       </div>
     </div>
     <div class="reveal">${leadForm({ id: "hero-form", title: "Безкоштовна консультація", source: "hero" })}</div>

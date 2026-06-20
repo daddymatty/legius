@@ -7,7 +7,7 @@ export const site = {
   locale: "uk_UA",
   lang: "uk",
   city: "Київ",
-  founded: 2009,
+  founded: 2011,
   phoneDisplay: "+38 (068) 888 44 00",
   phoneHref: "+380688884400",
   mobileDisplay: "+38 (068) 888 44 00",
@@ -48,9 +48,8 @@ export const site = {
   reviewsUrl: "https://share.google/FwMjzuvbjUkR7WBEH",
   stats: {
     years: "15+",
-    cases: "3 200+",
-    lawyers: "24",
-    winRate: "94%",
+    cases: "500+",
+    lawyers: "16",
   },
 };
 

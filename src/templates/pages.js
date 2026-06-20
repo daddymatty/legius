@@ -15,11 +15,10 @@ export function aboutPage({ team, practices }) {
     .map((v) => `<div class="feature reveal"><div class="feature__num">${icons.check}</div><div><h3>${esc(v.h)}</h3><p>${esc(v.p)}</p></div></div>`)
     .join("");
   const milestones = [
-    [String(site.founded), "Заснування компанії у Києві"],
-    ["2014", "Відкриття практики податкових спорів"],
-    ["2018", "Запуск напрямів M&A та IT Law"],
-    ["2022", "Створення практики військового права"],
-    ["2025", `${site.stats.cases} успішно завершених справ`],
+    [String(site.founded), "Заснування компанії у Києві та запуск корпоративної і кримінальної практик"],
+    ["2012", "Відкриття практики податкового права"],
+    ["2016", "Запуск цивільної практики"],
+    ["2025", `${site.stats.cases} проведених справ`],
   ]
     .map(([y, t]) => `<div class="feature reveal"><div class="feature__num">${y}</div><div><p style="color:var(--c-ink);font-weight:600">${esc(t)}</p></div></div>`)
     .join("");
@@ -38,7 +37,7 @@ ${breadcrumbs(crumbs)}
       <span class="eyebrow">Хто ми</span>
       <h2>Юридичний партнер, а не просто підрядник</h2>
       <p class="lead">LEGIUS — це команда з ${site.stats.lawyers} адвокатів і юристів, об’єднаних навколо ${practices.length} практик. Ми супроводжуємо клієнтів на всіх етапах: від превентивного консалтингу до представництва у Верховному Суді.</p>
-      <p style="color:var(--c-slate)">Наша філософія проста: глибока спеціалізація замість універсальності. Саме тому понад ${site.stats.winRate} наших справ завершуються на користь клієнта.</p>
+      <p style="color:var(--c-slate)">Наша філософія проста: глибока спеціалізація замість універсальності. Ми беремося лише за справи, у яких бачимо реальну стратегію, і доводимо їх до результату.</p>
     </div>
     <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=70" width="640" height="480" loading="lazy" decoding="async" alt="Офіс LEGIUS"></div>
   </div>
@@ -47,9 +46,9 @@ ${breadcrumbs(crumbs)}
 <section class="section section--navy"><div class="container">
   <div class="grid grid--4">
     <div><div class="feature__num" style="font-size:2.4rem">${site.stats.years}</div><p>років практики</p></div>
-    <div><div class="feature__num" style="font-size:2.4rem">${site.stats.cases}</div><p>виграних справ</p></div>
+    <div><div class="feature__num" style="font-size:2.4rem">${site.stats.cases}</div><p>проведених справ</p></div>
     <div><div class="feature__num" style="font-size:2.4rem">${site.stats.lawyers}</div><p>юристів</p></div>
-    <div><div class="feature__num" style="font-size:2.4rem">${site.stats.winRate}</div><p>успішних рішень</p></div>
+    <div><div class="feature__num" style="font-size:2.4rem">${site.rating.value}</div><p>рейтинг у Google</p></div>
   </div>
 </div></section>
 
