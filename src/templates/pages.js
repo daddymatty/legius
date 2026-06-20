@@ -39,7 +39,7 @@ ${breadcrumbs(crumbs)}
       <p class="lead">LEGIUS — це команда з ${site.stats.lawyers} адвокатів і юристів, об’єднаних навколо ${practices.length} практик. Ми супроводжуємо клієнтів на всіх етапах: від превентивного консалтингу до представництва у Верховному Суді.</p>
       <p style="color:var(--c-slate)">Наша філософія проста: глибока спеціалізація замість універсальності. Ми беремося лише за справи, у яких бачимо реальну стратегію, і доводимо їх до результату.</p>
     </div>
-    <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=70" width="640" height="480" loading="lazy" decoding="async" alt="Офіс LEGIUS"></div>
+    <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=70" srcset="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=70 1200w" sizes="(max-width: 700px) 92vw, 600px" width="640" height="480" loading="lazy" decoding="async" alt="Офіс LEGIUS"></div>
   </div>
 </div></section>
 
