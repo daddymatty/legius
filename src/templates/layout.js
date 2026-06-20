@@ -77,7 +77,9 @@ export function layout(opts) {
     "form-action 'self'",
     "upgrade-insecure-requests",
   ].join("; ");
-  const turnstileTag = turnstile ? `<script src="${cf}/turnstile/v0/api.js" async defer></script>` : "";
+  /* Turnstile script is loaded lazily from main.js (on form engagement / idle)
+     to keep the third-party widget off the initial render & LCP path. The CSP
+     above already allows challenges.cloudflare.com when a siteKey is set. */
 
   /* GA4: load gtag.js; init lives in main.js (data-ga) so no inline script,
      keeping script-src strict. */
@@ -118,8 +120,9 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 <meta name="twitter:description" content="${esc(desc)}">
 <meta name="twitter:image" content="${abs(ogImage)}">
 
-<link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96.png">
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <meta name="theme-color" content="#0D0D0F">
 
@@ -134,7 +137,6 @@ ${ga ? `<link rel="preconnect" href="https://www.googletagmanager.com">
 ${INLINE_CSS ? `<style>${INLINE_CSS}</style>` : `<link rel="stylesheet" href="/assets/css/styles.css?v=${v}">`}
 ${gscTag}
 ${gaTag}
-${turnstileTag}
 ${allSchemas.map(jsonLd).join("\n")}
 </head>
 <body class="${bodyClass}">

@@ -105,6 +105,32 @@
     if (first) first.focus();
     return !first;
   }
+  /* Lazy-load Cloudflare Turnstile: keep the third-party widget off the
+     initial render/LCP path (the hero form card was the LCP element and had
+     to wait for the widget). Load on first form engagement, with an idle
+     fallback so a token still exists even without interaction. Turnstile
+     implicitly renders any .cf-turnstile element once api.js loads. */
+  (function () {
+    if (!document.querySelector(".cf-turnstile")) return;
+    var loaded = false;
+    function loadTurnstile() {
+      if (loaded) return;
+      loaded = true;
+      var s = document.createElement("script");
+      s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
+      s.async = true; s.defer = true;
+      document.head.appendChild(s);
+    }
+    document.querySelectorAll("form[data-lead-form]").forEach(function (f) {
+      f.addEventListener("focusin", loadTurnstile, { once: true });
+      f.addEventListener("pointerdown", loadTurnstile, { once: true });
+    });
+    window.addEventListener("load", function () {
+      if ("requestIdleCallback" in window) requestIdleCallback(loadTurnstile, { timeout: 5000 });
+      else setTimeout(loadTurnstile, 3000);
+    });
+  })();
+
   document.querySelectorAll("form[data-lead-form]").forEach(function (form) {
     form.querySelectorAll("input, textarea").forEach(function (inp) {
       inp.addEventListener("input", function () { clearFieldError(inp); });

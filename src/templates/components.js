@@ -105,7 +105,7 @@ export function leadForm({ id = "lead", title = "Отримати консуль
     <div class="field"><label for="${id}-name">Ваше ім’я</label><input id="${id}-name" name="name" type="text" required autocomplete="name" placeholder="Ім’я"></div>
     <div class="field"><label for="${id}-phone">Телефон</label><input id="${id}-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+38 (0__) ___-__-__"></div>
     ${compact ? "" : `<div class="field"><label for="${id}-msg">Коротко про ситуацію</label><textarea id="${id}-msg" name="message" rows="2" placeholder="Опишіть ваше питання"></textarea></div>`}
-    ${site.turnstile && site.turnstile.siteKey ? `<div class="cf-turnstile" data-sitekey="${esc(site.turnstile.siteKey)}" data-theme="light" data-size="flexible" style="margin-bottom:1rem"></div>` : ""}
+    ${site.turnstile && site.turnstile.siteKey ? `<div class="cf-turnstile" data-sitekey="${esc(site.turnstile.siteKey)}" data-theme="light" data-size="flexible" style="margin-bottom:1rem;min-height:65px"></div>` : ""}
     <button class="btn btn--primary btn--block" type="submit">Замовити консультацію</button>
     <p class="form-consent">Натискаючи кнопку, ви погоджуєтесь з <a href="/privacy/">політикою конфіденційності</a>. Гарантуємо повну конфіденційність.</p>
   </form>`;
