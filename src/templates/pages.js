@@ -87,7 +87,7 @@ ${breadcrumbs(crumbs)}
     <div class="reveal">
       <ul class="contact-info">
         <li><span class="ico">${icons.pin}</span><div><strong>Адреса офісу</strong><br>${esc(site.address.street)}, ${esc(site.address.locality)}</div></li>
-        <li><span class="ico">${icons.phone}</span><div><strong>Телефони</strong><br><a href="tel:${site.phoneHref}">${esc(site.phoneDisplay)}</a><br><a href="tel:${site.mobileHref}">${esc(site.mobileDisplay)}</a></div></li>
+        <li><span class="ico">${icons.phone}</span><div><strong>Телефон</strong><br><a href="tel:${site.phoneHref}">${esc(site.phoneDisplay)}</a></div></li>
         <li><span class="ico">${icons.mail}</span><div><strong>E-mail</strong><br><a href="mailto:${site.email}">${esc(site.email)}</a></div></li>
         <li><span class="ico">${icons.clock}</span><div><strong>Графік роботи</strong><br>${esc(site.hours)}</div></li>
       </ul>
