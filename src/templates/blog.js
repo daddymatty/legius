@@ -3,7 +3,6 @@ import { site } from "../data/site.js";
 import { ctaBand, breadcrumbs, icons } from "./components.js";
 import { renderProseSections, renderFaq, escape as esc } from "./render.js";
 import { practiceServices } from "../lib/services.js";
-import { articleAuthor } from "../lib/authors.js";
 
 function postCard(a) {
   return `<a class="post-card reveal" href="/blog/${a.slug}/" data-cluster="${esc(a.cluster || "")}">
@@ -96,17 +95,6 @@ export function articlePage(a, { practiceBySlug, pillarBySlug, articleBySlug }) 
     .map(postCard)
     .join("");
   const practice = practiceBySlug[a.practice];
-  const author = articleAuthor(a);
-  const byline = author
-    ? `<div class="byline reveal">
-        <img class="byline__photo" src="${author.photo}" width="52" height="52" loading="lazy" decoding="async" alt="">
-        <div class="byline__meta">
-          <span class="byline__name">Автор: <a href="/team/${author.slug}/">${esc(author.displayName || author.name)}</a></span>
-          <span class="byline__role">${esc(author.role)} · ${author.experienceYears}+ років практики</span>
-          <span class="byline__date">Оновлено: ${esc(a.modified || a.date)}</span>
-        </div>
-      </div>`
-    : "";
 
   return `
 ${breadcrumbs(crumbs)}
@@ -119,7 +107,6 @@ ${breadcrumbs(crumbs)}
   <div class="article-layout">
     <aside>${toc ? `<nav class="toc"><h4>Зміст</h4>${toc}</nav>` : ""}</aside>
     <div class="article-body">
-      ${byline}
       <article class="prose reveal">
         ${a.intro || `<p class="lead">${esc(a.excerpt)}</p>`}
         ${renderProseSections(a.sections)}

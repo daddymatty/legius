@@ -21,7 +21,6 @@ import { header, footer } from "./src/templates/components.js";
 import { homePage } from "./src/templates/home.js";
 import { practicePage, servicePage, practicesIndexPage } from "./src/templates/practice.js";
 import { practiceServices, serviceContent } from "./src/lib/services.js";
-import { articleAuthor } from "./src/lib/authors.js";
 import { locationPage } from "./src/templates/location.js";
 import { teamIndexPage, teamMemberPage } from "./src/templates/team.js";
 import { casesPage } from "./src/templates/cases.js";
@@ -119,7 +118,7 @@ async function build() {
     page(
       {
         title: `${site.name} — ${site.tagline} у Києві | Адвокати та юристи`,
-        description: "Юридична компанія LEGIUS у Києві: корпоративне, сімейне, військове, податкове право, M&A, судові спори. 15+ років, 94% виграних справ. Безкоштовна консультація.",
+        description: "Юридична компанія LEGIUS у Києві: корпоративне, сімейне, військове, податкове право, M&A, судові спори. 15+ років практики, 500+ проведених справ. Безкоштовна консультація.",
         canonical: "/",
         schemas: [faqSchema(homeFaq)],
       },
@@ -135,8 +134,8 @@ async function build() {
     "practices",
     page(
       {
-        title: "Практики юридичної компанії LEGIUS — Київ | 12 напрямів",
-        description: "12 напрямів юридичної практики LEGIUS у Києві: корпоративне, податкове, сімейне, військове право, нерухомість, M&A, IT Law, судові спори.",
+        title: `Практики юридичної компанії LEGIUS — Київ | ${practices.length} напрямів`,
+        description: `${practices.length} напрямів юридичної практики LEGIUS у Києві: корпоративне, податкове, сімейне, військове, міграційне право, нерухомість, M&A, IT Law, судові спори.`,
         canonical: "/practices/",
         schemas: [breadcrumbSchema([{ name: "Головна", href: "/" }, { name: "Практики", href: "/practices/" }])],
       },
@@ -331,7 +330,7 @@ async function build() {
           canonical: `/blog/${a.slug}/`,
           ogType: "article",
           schemas: [
-            articleSchema(a, articleAuthor(a)),
+            articleSchema(a),
             faqSchema(a.faq || []),
             breadcrumbSchema([
               { name: "Головна", href: "/" },

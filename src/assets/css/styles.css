@@ -669,27 +669,3 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .article-block { margin-top: clamp(2.5rem, 5vw, 3.5rem); }
 .article-block__title { font-size: clamp(1.5rem, 3vw, 1.9rem); margin-bottom: 1.2rem; }
 .article-body .faq { max-width: none; margin-inline: 0; }
-
-/* Author byline (E-E-A-T): real attorney credited above each article */
-.byline {
-  display: flex;
-  align-items: center;
-  gap: .85rem;
-  padding-bottom: 1.4rem;
-  margin-bottom: 1.8rem;
-  border-bottom: 1px solid var(--c-line, #e6e6ea);
-}
-.byline__photo {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  object-fit: cover;
-  background: var(--c-soft, #f2f2f5);
-  flex: none;
-}
-.byline__meta { display: flex; flex-direction: column; line-height: 1.45; }
-.byline__name { font-weight: 600; color: var(--c-ink); }
-.byline__name a { color: inherit; text-decoration: none; border-bottom: 1px solid currentColor; }
-.byline__name a:hover { color: var(--c-red, #c8102e); }
-.byline__role { font-size: .9rem; color: var(--c-slate); }
-.byline__date { font-size: .82rem; color: var(--c-slate); opacity: .8; }
