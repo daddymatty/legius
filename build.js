@@ -105,11 +105,8 @@ async function build() {
   /* Root /favicon.ico — browsers and Google request it here by default. */
   await cp(path.join(__dirname, "src/assets/img/favicon.ico"), path.join(DIST, "favicon.ico"));
 
-  /* Design preview/moodboard (standalone, noindex) — served at /design/. */
-  if (existsSync(path.join(__dirname, "design"))) {
-    await cp(path.join(__dirname, "design"), path.join(DIST, "design"), { recursive: true });
-    console.log("→ Дизайн-прев'ю /design/");
-  }
+  /* Design preview/moodboard is intentionally NOT deployed (kept only in repo
+     as a local reference; it contained stale demo figures and noindex pages). */
 
   /* ---------- Home ---------- */
   console.log("→ Головна");

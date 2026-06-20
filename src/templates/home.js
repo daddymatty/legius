@@ -161,7 +161,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
       <p class="about-text">Ми не беремося за все підряд. Наша модель — глибока спеціалізація у ${practices.length} практиках, де кожну справу веде профільний партнер. Це дає прогнозований результат, контрольований бюджет і повну конфіденційність.</p>
       <a class="btn btn--dark" href="/about/">Дізнатися більше про нас</a>
     </div>
-    <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=70" width="640" height="480" loading="lazy" decoding="async" alt="Офіс юридичної компанії LEGIUS у центрі Києва"></div>
+    <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=70" srcset="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=480&q=70 480w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=70 1200w" sizes="(max-width: 700px) 92vw, 600px" width="640" height="480" loading="lazy" decoding="async" alt="Офіс юридичної компанії LEGIUS у центрі Києва"></div>
   </div>
 </div></section>
 
