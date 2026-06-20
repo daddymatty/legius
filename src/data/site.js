@@ -44,7 +44,8 @@ export const site = {
     youtube: "https://youtube.com/@legius-law",
     instagram: "https://instagram.com/legius.law",
   },
-  rating: { value: "4.9", count: 218 },
+  rating: { value: "5.0", count: 9 },
+  reviewsUrl: "https://share.google/FwMjzuvbjUkR7WBEH",
   stats: {
     years: "15+",
     cases: "3 200+",

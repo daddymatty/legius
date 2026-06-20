@@ -202,6 +202,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
     <div class="hscroll" data-hscroll>${reviewCards}</div>
     <button class="carousel__nav carousel__nav--next" type="button" data-carousel-next aria-label="Наступні відгуки">›</button>
   </div>
+  ${site.reviewsUrl ? `<div class="text-center mt-3"><a class="btn btn--dark" href="${site.reviewsUrl}" target="_blank" rel="noopener">Усі відгуки в Google</a></div>` : ""}
 </div></section>
 
 ${renderFaq(homeFaq, "Поширені запитання")}
