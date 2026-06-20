@@ -7,7 +7,7 @@ export const site = {
   locale: "uk_UA",
   lang: "uk",
   city: "Київ",
-  founded: 2009,
+  founded: 2011,
   phoneDisplay: "+38 (068) 888 44 00",
   phoneHref: "+380688884400",
   mobileDisplay: "+38 (068) 888 44 00",

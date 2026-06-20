@@ -15,11 +15,10 @@ export function aboutPage({ team, practices }) {
     .map((v) => `<div class="feature reveal"><div class="feature__num">${icons.check}</div><div><h3>${esc(v.h)}</h3><p>${esc(v.p)}</p></div></div>`)
     .join("");
   const milestones = [
-    [String(site.founded), "Заснування компанії у Києві"],
-    ["2014", "Відкриття практики податкових спорів"],
-    ["2018", "Запуск напрямів M&A та IT Law"],
-    ["2022", "Створення практики військового права"],
-    ["2025", `${site.stats.cases} успішно завершених справ`],
+    [String(site.founded), "Заснування компанії у Києві та запуск корпоративної і кримінальної практик"],
+    ["2012", "Відкриття практики податкового права"],
+    ["2016", "Запуск цивільної практики"],
+    ["2025", `${site.stats.cases} проведених справ`],
   ]
     .map(([y, t]) => `<div class="feature reveal"><div class="feature__num">${y}</div><div><p style="color:var(--c-ink);font-weight:600">${esc(t)}</p></div></div>`)
     .join("");
