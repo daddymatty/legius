@@ -33,7 +33,7 @@ ${breadcrumbs(crumbs)}
 
 <section class="section"><div class="container">
   <div class="split">
-    <div class="reveal">
+    <div class="reveal stack">
       <span class="eyebrow">Хто ми</span>
       <h2>Юридичний партнер, а не просто підрядник</h2>
       <p class="lead">LEGIUS — це команда з ${site.stats.lawyers} адвокатів і юристів, об’єднаних навколо ${practices.length} практик. Ми супроводжуємо клієнтів на всіх етапах: від превентивного консалтингу до представництва у Верховному Суді.</p>
