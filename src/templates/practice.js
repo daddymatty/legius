@@ -157,7 +157,7 @@ export function servicePage(p, svc, { practiceBySlug, team = [], articles = [] }
     ? `<div class="card">
         <h3 style="font-size:1.15rem;margin-bottom:0.8rem">Інші послуги напряму</h3>
         <ul style="display:grid;gap:0.5rem">${others
-          .map((s) => `<li><a href="/practices/${p.slug}/${s.slug}/" style="color:var(--c-slate)">${esc(s.title)}</a></li>`)
+          .map((s) => `<li><a class="side-link" href="/practices/${p.slug}/${s.slug}/">${esc(s.title)}</a></li>`)
           .join("")}</ul>
       </div>`
     : "";
@@ -166,7 +166,7 @@ export function servicePage(p, svc, { practiceBySlug, team = [], articles = [] }
     ? `<div class="card">
         <h3 style="font-size:1.15rem;margin-bottom:0.8rem">Статті за темою</h3>
         <ul style="display:grid;gap:0.5rem">${relArticles
-          .map((a) => `<li><a href="/blog/${a.slug}/" style="color:var(--c-slate)">${esc(a.title)}</a></li>`)
+          .map((a) => `<li><a class="side-link" href="/blog/${a.slug}/">${esc(a.title)}</a></li>`)
           .join("")}</ul>
       </div>`
     : "";

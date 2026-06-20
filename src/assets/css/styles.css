@@ -669,3 +669,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .article-block { margin-top: clamp(2.5rem, 5vw, 3.5rem); }
 .article-block__title { font-size: clamp(1.5rem, 3vw, 1.9rem); margin-bottom: 1.2rem; }
 .article-body .faq { max-width: none; margin-inline: 0; }
+
+/* Sidebar links ("Інші послуги напряму", "Статті за темою"): clear hover/focus state */
+.side-link {
+  display: inline-block;
+  color: var(--c-slate);
+  transition: color var(--transition), padding-left var(--transition);
+}
+.side-link:hover,
+.side-link:focus-visible {
+  color: var(--c-teal-d);
+  padding-left: 0.35rem;
+}
+.side-link:hover { text-decoration: underline; text-underline-offset: 3px; }
