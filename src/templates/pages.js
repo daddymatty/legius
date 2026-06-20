@@ -38,7 +38,7 @@ ${breadcrumbs(crumbs)}
       <span class="eyebrow">Хто ми</span>
       <h2>Юридичний партнер, а не просто підрядник</h2>
       <p class="lead">LEGIUS — це команда з ${site.stats.lawyers} адвокатів і юристів, об’єднаних навколо ${practices.length} практик. Ми супроводжуємо клієнтів на всіх етапах: від превентивного консалтингу до представництва у Верховному Суді.</p>
-      <p style="color:var(--c-slate)">Наша філософія проста: глибока спеціалізація замість універсальності. Саме тому понад ${site.stats.winRate} наших справ завершуються на користь клієнта.</p>
+      <p style="color:var(--c-slate)">Наша філософія проста: глибока спеціалізація замість універсальності. Ми беремося лише за справи, у яких бачимо реальну стратегію, і доводимо їх до результату.</p>
     </div>
     <div class="reveal media-frame"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=70" width="640" height="480" loading="lazy" decoding="async" alt="Офіс LEGIUS"></div>
   </div>
@@ -47,9 +47,9 @@ ${breadcrumbs(crumbs)}
 <section class="section section--navy"><div class="container">
   <div class="grid grid--4">
     <div><div class="feature__num" style="font-size:2.4rem">${site.stats.years}</div><p>років практики</p></div>
-    <div><div class="feature__num" style="font-size:2.4rem">${site.stats.cases}</div><p>виграних справ</p></div>
+    <div><div class="feature__num" style="font-size:2.4rem">${site.stats.cases}</div><p>проведених справ</p></div>
     <div><div class="feature__num" style="font-size:2.4rem">${site.stats.lawyers}</div><p>юристів</p></div>
-    <div><div class="feature__num" style="font-size:2.4rem">${site.stats.winRate}</div><p>успішних рішень</p></div>
+    <div><div class="feature__num" style="font-size:2.4rem">${site.rating.value}</div><p>рейтинг у Google</p></div>
   </div>
 </div></section>
 

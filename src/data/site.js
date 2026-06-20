@@ -48,9 +48,8 @@ export const site = {
   reviewsUrl: "https://share.google/FwMjzuvbjUkR7WBEH",
   stats: {
     years: "15+",
-    cases: "3 200+",
-    lawyers: "24",
-    winRate: "94%",
+    cases: "500+",
+    lawyers: "16",
   },
 };
 
