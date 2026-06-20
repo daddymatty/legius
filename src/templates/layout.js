@@ -1,6 +1,20 @@
 /* Base HTML document with full technical SEO head. */
+import { readFileSync } from "node:fs";
 import { site } from "../data/site.js";
 import { websiteSchema, organizationSchema } from "../lib/seo.js";
+
+/* Inline the site CSS to remove the render-blocking stylesheet request (our
+   strict script-src CSP rules out the usual async-CSS onload trick; inline
+   <style> is allowed by style-src 'unsafe-inline'). Relative font url()s are
+   rewritten to root-absolute so they resolve from any page depth. Falls back
+   to an external <link> if the file can't be read. */
+let INLINE_CSS = null;
+try {
+  INLINE_CSS = readFileSync(new URL("../assets/css/styles.css", import.meta.url), "utf8")
+    .replace(/url\(("?)\.\.\/fonts\//g, 'url($1/assets/fonts/');
+} catch {
+  INLINE_CSS = null;
+}
 
 const abs = (p) => (p && p.startsWith("http") ? p : site.domain + (p || "/"));
 const esc = (s = "") => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -117,7 +131,7 @@ ${ga ? `<link rel="preconnect" href="https://www.googletagmanager.com">
 
 <link rel="preload" href="/assets/fonts/montserrat-cyrillic-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/styles.css?v=${v}">
+${INLINE_CSS ? `<style>${INLINE_CSS}</style>` : `<link rel="stylesheet" href="/assets/css/styles.css?v=${v}">`}
 ${gscTag}
 ${gaTag}
 ${turnstileTag}
