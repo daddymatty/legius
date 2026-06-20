@@ -29,9 +29,10 @@ import clusterInvestment, { pillar as pillarInvestment } from "./blog/cluster-in
 import clusterItLaw, { pillar as pillarItLaw } from "./blog/cluster-it-law.js";
 import clusterMandA, { pillar as pillarMandA } from "./blog/cluster-m-and-a.js";
 import clusterCriminal, { pillar as pillarCriminal } from "./blog/cluster-criminal-business.js";
+import clusterMigration, { pillar as pillarMigration } from "./blog/cluster-migration-law.js";
 
-const extraClusters = [clusterLitigation, clusterRealEstate, clusterLandLaw, clusterIpLaw, clusterInvestment, clusterItLaw, clusterMandA, clusterCriminal];
-const extraPillars = [pillarLitigation, pillarRealEstate, pillarLandLaw, pillarIpLaw, pillarInvestment, pillarItLaw, pillarMandA, pillarCriminal].filter(Boolean);
+const extraClusters = [clusterLitigation, clusterRealEstate, clusterLandLaw, clusterIpLaw, clusterInvestment, clusterItLaw, clusterMandA, clusterCriminal, clusterMigration];
+const extraPillars = [pillarLitigation, pillarRealEstate, pillarLandLaw, pillarIpLaw, pillarInvestment, pillarItLaw, pillarMandA, pillarCriminal, pillarMigration].filter(Boolean);
 
 /* Batch 2: more articles deepening the newer practice clusters. */
 import clusterLitigation2 from "./blog/cluster-litigation-2.js";
