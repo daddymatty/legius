@@ -5,6 +5,18 @@ import { websiteSchema, organizationSchema } from "../lib/seo.js";
 const abs = (p) => (p && p.startsWith("http") ? p : site.domain + (p || "/"));
 const esc = (s = "") => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+/* Keep meta descriptions within the ~160-char SERP snippet limit. Prefers a
+   sentence boundary, falls back to a word boundary with an ellipsis. */
+function clampDesc(s = "", max = 158) {
+  s = String(s).trim().replace(/\s+/g, " ");
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max);
+  const end = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("! "), cut.lastIndexOf("? "));
+  if (end > max * 0.6) return cut.slice(0, end + 1).trim();
+  const sp = cut.lastIndexOf(" ");
+  return (sp > 0 ? cut.slice(0, sp) : cut).trim() + "…";
+}
+
 export function jsonLd(obj) {
   return `<script type="application/ld+json">${JSON.stringify(obj)}</script>`;
 }
@@ -28,6 +40,7 @@ export function layout(opts) {
   } = opts;
 
   const allSchemas = [websiteSchema(), organizationSchema(), ...schemas];
+  const desc = clampDesc(description); /* trimmed to the SERP snippet limit */
   const v = process.env.ASSET_V || "1"; /* cache-busting for CSS/JS */
 
   /* Content-Security-Policy (enforced via meta — works on GitHub Pages too).
@@ -67,7 +80,7 @@ export function layout(opts) {
 <meta http-equiv="Content-Security-Policy" content="${csp}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>${esc(title)}</title>
-<meta name="description" content="${esc(description)}">
+<meta name="description" content="${esc(desc)}">
 ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">'}
 <link rel="canonical" href="${abs(canonical)}">
 <meta name="author" content="${esc(site.legalName)}">
@@ -78,7 +91,7 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 <meta property="og:site_name" content="${esc(site.name)}">
 <meta property="og:locale" content="${site.locale}">
 <meta property="og:title" content="${esc(title)}">
-<meta property="og:description" content="${esc(description)}">
+<meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${abs(canonical)}">
 <meta property="og:image" content="${abs(ogImage)}">
 <meta property="og:image:width" content="1200">
@@ -88,7 +101,7 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
-<meta name="twitter:description" content="${esc(description)}">
+<meta name="twitter:description" content="${esc(desc)}">
 <meta name="twitter:image" content="${abs(ogImage)}">
 
 <link rel="icon" href="/favicon.ico" sizes="32x32">

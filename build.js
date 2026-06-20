@@ -176,7 +176,7 @@ async function build() {
         `practices/${p.slug}/${svc.slug}`,
         page(
           {
-            title: `${svc.title} — ${p.shortTitle} | ${site.name}`,
+            title: `${svc.title} | ${site.name}`,
             description: sc.heroSub || `${svc.title}: послуга практики «${p.shortTitle}» від LEGIUS у Києві. Профільний адвокат, прозора вартість, конфіденційність. Безкоштовна консультація.`,
             canonical: `/practices/${p.slug}/${svc.slug}/`,
             ogType: "article",
