@@ -77,7 +77,7 @@ async function writePage(routePath, html, { lastmod, priority = "0.6", changefre
   if (index) {
     sitemapUrls.push({
       loc: site.domain + (routePath === "/" ? "/" : "/" + routePath + "/"),
-      lastmod: lastmod || new Date().toISOString().slice(0, 10),
+      lastmod: lastmod || "", /* omit rather than stamp build date — a real change date only, so the sitemap doesn't tell Google "everything changed today" on each deploy */
       priority, changefreq,
     });
   }
@@ -385,7 +385,7 @@ async function build() {
     "utf8"
   );
   const sm = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls
-    .map((u) => `  <url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod><changefreq>${u.changefreq}</changefreq><priority>${u.priority}</priority></url>`)
+    .map((u) => `  <url><loc>${u.loc}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}<changefreq>${u.changefreq}</changefreq><priority>${u.priority}</priority></url>`)
     .join("\n")}\n</urlset>\n`;
   await writeFile(path.join(DIST, "sitemap.xml"), sm, "utf8");
   await writeFile(
