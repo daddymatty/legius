@@ -24,13 +24,13 @@ export const site = {
      in the worker to enforce server-side. */
   turnstile: { siteKey: "0x4AAAAAADn2q--5_9ulL7Ys" },
   address: {
-    street: "вул. Велика Васильківська, 5, БЦ «Прайм», 8 поверх",
+    street: "вул. Євгена Сверстюка, 11-А, БЦ «Новий»",
     locality: "Київ",
     region: "Київська область",
-    postal: "01004",
+    postal: "02002",
     country: "UA",
-    lat: 50.4393,
-    lng: 30.5221,
+    lat: 50.4491,
+    lng: 30.6009,
   },
   hours: "Пн–Пт 09:00–19:00",
   messengers: {
