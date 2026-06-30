@@ -140,6 +140,7 @@ export function personSchema(member) {
     url: abs("/team/" + member.slug + "/"),
     knowsAbout: member.specialization,
     alumniOf: member.education?.map((e) => e.org),
+    sameAs: member.erau ? [member.erau] : undefined,
   };
 }
 
