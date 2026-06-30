@@ -1,5 +1,6 @@
 /* Shared UI components: header, footer, forms, CTA bands, messengers, sticky bar, cards. */
 import { site, mainNav } from "../data/site.js";
+import { locations } from "../data/locations.js";
 
 const esc = (s = "") => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
@@ -164,6 +165,12 @@ export function footer(practices) {
         <li>${esc(site.hours)}</li>
       </ul></div>
     </div>
+    <nav class="footer__locations" aria-label="Юридичні послуги в Києві">
+      <h4>Юридичні послуги в Києві</h4>
+      <div class="footer__locations-list">${locations
+        .map((l) => `<a href="/${l.slug}/">${esc(l.navLabel)}</a>`)
+        .join("")}</div>
+    </nav>
     <div class="footer__bottom">
       <span>© <span data-year>2026</span> ${esc(site.legalName)}. Усі права захищено.</span>
       <span><a href="/privacy/">Політика конфіденційності</a> · <a href="/sitemap/">Карта сайту</a></span>
