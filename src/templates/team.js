@@ -63,7 +63,7 @@ ${breadcrumbs(crumbs)}
     <div class="reveal" style="display:grid;gap:1.5rem">
       <div class="card"><h3 style="font-size:1.1rem;margin-bottom:.8rem">Спеціалізація</h3><ul style="display:grid;gap:.5rem">${list(m.specialization)}</ul></div>
       <div class="card"><h3 style="font-size:1.1rem;margin-bottom:.8rem">Освіта</h3><ul style="display:grid;gap:.8rem">${edu}</ul></div>
-      <div class="card"><h3 style="font-size:1.1rem;margin-bottom:.8rem">Сертифікати та членства</h3><ul style="display:grid;gap:.5rem">${list(m.certificates)}</ul></div>
+      <div class="card"><h3 style="font-size:1.1rem;margin-bottom:.8rem">Кваліфікація</h3><ul style="display:grid;gap:.5rem">${list(m.certificates)}</ul></div>
       ${m.erau ? `<div class="card"><h3 style="font-size:1.1rem;margin-bottom:.8rem">Реєстр адвокатів</h3><a href="${esc(m.erau)}" target="_blank" rel="noopener" style="color:var(--c-teal-d);font-weight:600;display:inline-flex;gap:.4rem;align-items:center">Профіль у Єдиному реєстрі адвокатів України (НААУ) ↗</a></div>` : ""}
       <div class="card"><h3 style="font-size:1.1rem;margin-bottom:.8rem">Професійні досягнення</h3><ul style="display:grid;gap:.5rem">${list(m.achievements)}</ul></div>
       ${m.languages ? `<div class="card"><h3 style="font-size:1.1rem;margin-bottom:.8rem">Мови</h3><div class="chips">${m.languages.map((l) => `<span class="chip">${esc(l)}</span>`).join("")}</div></div>` : ""}
