@@ -35,7 +35,7 @@
   --c-mist-2: #ECECEE;
   --c-line: #E4E4E7;
   --c-slate: #2A2A30;
-  --c-muted: #84848E;
+  --c-muted: #6B6B76; /* ≥4.5:1 on white (WCAG AA) — was #84848E at ~3.9:1 */
   --c-on-dark: #B7B7C0;
 
   /* Typography */
