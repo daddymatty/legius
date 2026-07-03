@@ -124,6 +124,7 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="ro
 <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96.png">
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0D0D0F">
 
 <!-- Speed: warm up connections to external origins -->

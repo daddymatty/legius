@@ -392,7 +392,7 @@ async function build() {
     path.join(DIST, "site.webmanifest"),
     JSON.stringify({
       name: site.legalName, short_name: site.name, lang: "uk",
-      start_url: BASE + "/", display: "standalone", background_color: "#ffffff", theme_color: "#0e1c33",
+      start_url: BASE + "/", display: "standalone", background_color: "#ffffff", theme_color: "#0D0D0F",
       icons: [
         { src: BASE + "/assets/img/favicon.svg", sizes: "any", type: "image/svg+xml" },
         { src: BASE + "/assets/img/favicon-192.png", sizes: "192x192", type: "image/png" },

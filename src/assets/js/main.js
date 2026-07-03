@@ -83,14 +83,16 @@
     var field = input.closest(".field");
     if (!field) return;
     field.classList.add("field--invalid");
+    input.setAttribute("aria-invalid", "true");
     var err = field.querySelector(".field__err");
-    if (!err) { err = document.createElement("div"); err.className = "field__err"; field.appendChild(err); }
+    if (!err) { err = document.createElement("div"); err.className = "field__err"; err.setAttribute("role", "alert"); field.appendChild(err); }
     err.textContent = msg;
   }
   function clearFieldError(input) {
     var field = input.closest(".field");
     if (!field) return;
     field.classList.remove("field--invalid");
+    input.removeAttribute("aria-invalid");
     var err = field.querySelector(".field__err");
     if (err) err.textContent = "";
   }
