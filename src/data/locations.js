@@ -1,4 +1,4 @@
-/* Local SEO landing pages — LEGIUS (legius.ua).
+/* Local SEO landing pages — LEGIUS (legius.com.ua).
    Each entry shape:
    {
      slug, navLabel,

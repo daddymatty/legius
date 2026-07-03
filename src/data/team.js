@@ -34,7 +34,7 @@ export const team = [
     ],
     practices: ["family-law", "litigation", "tax-law"],
     languages: ["Українська", "Англійська", "Польська"],
-    email: "m.slobodianin@legius.ua",
+    email: "m.slobodianin@legius.com.ua",
   },
   {
     slug: "oleksandr-hordiienko",
@@ -67,7 +67,7 @@ export const team = [
     ],
     practices: ["corporate-law", "m-and-a", "investment", "it-law", "ip-law"],
     languages: ["Українська", "Англійська"],
-    email: "o.hordiienko@legius.ua",
+    email: "o.hordiienko@legius.com.ua",
   },
   {
     slug: "mykhailo-kobylianskyi",
@@ -103,6 +103,6 @@ export const team = [
     ],
     practices: ["criminal-business", "litigation"],
     languages: ["Українська", "Англійська"],
-    email: "m.kobylianskyi@legius.ua",
+    email: "m.kobylianskyi@legius.com.ua",
   },
 ];
