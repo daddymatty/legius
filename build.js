@@ -402,6 +402,28 @@ async function build() {
     "utf8"
   );
 
+  /* ---------- Legacy URL redirects (old WordPress paths with potential backlinks) ----------
+     GitHub Pages serves static files only (no server-side 301), so redirect via
+     meta-refresh + JS + rel=canonical. noindex keeps the stub out of the index while
+     passing users and canonical signal to the new URL. */
+  const redirects = [
+    { from: "kontakti", to: "/contacts/" },
+  ];
+  for (const r of redirects) {
+    const target = site.domain + r.to;
+    const stub = `<!doctype html><html lang="uk"><head><meta charset="utf-8">` +
+      `<meta name="robots" content="noindex,follow">` +
+      `<link rel="canonical" href="${target}">` +
+      `<meta http-equiv="refresh" content="0; url=${r.to}">` +
+      `<title>Сторінку переміщено — LEGIUS</title>` +
+      `<script>location.replace(${JSON.stringify(r.to)});</script></head>` +
+      `<body><p>Сторінку переміщено. Якщо перехід не відбувся автоматично, ` +
+      `<a href="${r.to}">перейдіть на нову сторінку</a>.</p></body></html>`;
+    const dir = path.join(DIST, r.from);
+    await mkdir(dir, { recursive: true });
+    await writeFile(path.join(dir, "index.html"), stub, "utf8");
+  }
+
   /* GitHub Pages: disable Jekyll processing so all files are served as-is. */
   await writeFile(path.join(DIST, ".nojekyll"), "", "utf8");
 
