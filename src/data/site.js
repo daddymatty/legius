@@ -24,7 +24,7 @@ export const site = {
      in the worker to enforce server-side. */
   turnstile: { siteKey: "0x4AAAAAADn2q--5_9ulL7Ys" },
   address: {
-    street: "вул. Євгена Сверстюка, 11-А, БЦ «Новий»",
+    street: "вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203",
     locality: "Київ",
     region: "Київська область",
     postal: "02002",
@@ -44,7 +44,7 @@ export const site = {
     youtube: "https://youtube.com/@legius-law",
     instagram: "https://instagram.com/legius.law",
   },
-  rating: { value: "5.0", count: 9 },
+  rating: { value: "5.0", count: 10 },
   reviewsUrl: "https://share.google/FwMjzuvbjUkR7WBEH",
   stats: {
     years: "15+",
