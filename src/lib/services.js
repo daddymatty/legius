@@ -74,5 +74,9 @@ export function serviceContent(p, svc) {
     heroSub: override.heroSub || template.heroSub,
     sections: override.sections && override.sections.length ? override.sections : template.sections,
     faq: override.faq && override.faq.length ? override.faq : template.faq,
+    /* Optional SEO overrides: <title> and visible H1 may target a geo/commercial
+       phrasing while svc.title stays the short menu/breadcrumb label. */
+    metaTitle: override.metaTitle || "",
+    h1: override.h1 || "",
   };
 }

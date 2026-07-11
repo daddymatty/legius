@@ -175,7 +175,7 @@ export function servicePage(p, svc, { practiceBySlug, team = [], articles = [] }
 ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
   <span class="eyebrow"><a href="/practices/${p.slug}/" style="color:inherit">${esc(p.shortTitle)}</a></span>
-  <h1>${esc(svc.title)}</h1>
+  <h1>${esc(content.h1 || svc.title)}</h1>
   <p>${esc(content.heroSub)}</p>
   <div class="hero__actions mt-2">
     <a class="btn btn--primary" href="#service-${p.slug}-${svc.slug}">Отримати консультацію</a>
