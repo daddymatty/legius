@@ -1,6 +1,6 @@
 /* Practice area page (overview + services hub) + individual service pages. */
 import { site } from "../data/site.js";
-import { leadForm, ctaBand, breadcrumbs, icons } from "./components.js";
+import { leadForm, ctaBand, breadcrumbs, icons, searchInline } from "./components.js";
 import { renderSections, renderFaq, relatedPractices, escape as esc } from "./render.js";
 import { practiceServices, serviceContent } from "../lib/services.js";
 
@@ -215,10 +215,11 @@ export function practicesIndexPage(practices) {
     .join("");
   return `
 ${breadcrumbs(crumbs)}
-<section class="page-hero"><div class="container">
+<section class="page-hero page-hero--search"><div class="container">
   <span class="eyebrow">Практики</span>
   <h1>Напрями юридичної практики</h1>
   <p>${practices.length} спеціалізацій, у яких ми системно досягаємо результату для бізнесу та приватних клієнтів у Києві та по всій Україні.</p>
+  <div class="page-hero__search">${searchInline("Знайти послугу: реєстрація ТОВ, обшук, поділ майна…")}</div>
 </div></section>
 <section class="section"><div class="container"><div class="practice-list reveal">${list}</div></div></section>
 ${ctaBand()}`;
