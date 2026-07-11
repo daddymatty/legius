@@ -4,9 +4,13 @@ import { ctaBand, breadcrumbs, icons, searchInline } from "./components.js";
 import { renderProseSections, renderFaq, escape as esc } from "./render.js";
 import { practiceServices } from "../lib/services.js";
 
+/* дзеркалимо обкладинку у половини статей (за хешем слага), щоб сусідні
+   картки одного кластера не виглядали однаково */
+const coverFlip = (slug = "") => [...slug].reduce((h, ch) => h + ch.charCodeAt(0), 0) % 2 === 1;
+
 function postCard(a) {
   return `<a class="post-card reveal" href="/blog/${a.slug}/" data-cluster="${esc(a.cluster || "")}">
-    <div class="post-card__img"></div>
+    <div class="post-card__img${coverFlip(a.slug) ? " post-card__img--flip" : ""}"><img src="/assets/img/covers/${esc(a.cluster || "default")}.svg" alt="" width="640" height="360" loading="lazy" decoding="async"></div>
     <div class="post-card__body">
       <span class="post-card__meta">${esc(a.clusterLabel || "Блог")} · ${(a.readMins || 6)} хв</span>
       <h3>${esc(a.title)}</h3>

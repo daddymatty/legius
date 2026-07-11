@@ -106,7 +106,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
     .slice(0, 3)
     .map(
       (a) => `<a class="post-card reveal" href="/blog/${a.slug}/">
-        <div class="post-card__img"></div>
+        <div class="post-card__img${[...a.slug].reduce((h, ch) => h + ch.charCodeAt(0), 0) % 2 ? " post-card__img--flip" : ""}"><img src="/assets/img/covers/${a.cluster || "default"}.svg" alt="" width="640" height="360" loading="lazy" decoding="async"></div>
         <div class="post-card__body">
           <span class="post-card__meta">${esc(a.practiceLabel || "Блог")} · ${(a.readMins || 6)} хв</span>
           <h3>${esc(a.title)}</h3>

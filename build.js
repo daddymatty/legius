@@ -21,6 +21,7 @@ import { header, footer } from "./src/templates/components.js";
 import { homePage } from "./src/templates/home.js";
 import { practicePage, servicePage, practicesIndexPage } from "./src/templates/practice.js";
 import { practiceServices, serviceContent } from "./src/lib/services.js";
+import { coverSVG, COVER_CLUSTERS } from "./src/lib/covers.js";
 import { locationPage } from "./src/templates/location.js";
 import { teamIndexPage, teamMemberPage } from "./src/templates/team.js";
 import { casesPage } from "./src/templates/cases.js";
@@ -381,6 +382,14 @@ async function build() {
     title: "404 — сторінку не знайдено | LEGIUS",
     description: "Сторінку не знайдено.", canonical: "/404.html", noindex: true,
   }, notFoundPage())), "utf8");
+
+  /* ---------- Обкладинки статей (тематичні, по кластерах) ---------- */
+  console.log("→ Обкладинки блогу:", COVER_CLUSTERS.length);
+  const coversDir = path.join(DIST, "assets", "img", "covers");
+  await mkdir(coversDir, { recursive: true });
+  for (const c of COVER_CLUSTERS) {
+    await writeFile(path.join(coversDir, `${c}.svg`), coverSVG(c), "utf8");
+  }
 
   /* ---------- Search index (client-side site search, see main.js) ---------- */
   console.log("→ Пошуковий індекс");
