@@ -2,6 +2,9 @@
 export const site = {
   name: "LEGIUS",
   legalName: 'Юридична компанія «ЛЕГІУС»',
+  /* Тимчасово приховати розділ «Команда» (сторінки, навігація, картки адвокатів).
+     Повернути: showTeam: true. Дані team.js не чіпаємо. */
+  showTeam: false,
   tagline: "Юридична компанія",
   domain: "https://legius.com.ua",
   locale: "uk_UA",
@@ -57,7 +60,7 @@ export const site = {
 export const mainNav = [
   { label: "Про компанію", href: "/about/" },
   { label: "Практики", href: "/practices/", dropdown: "practices" },
-  { label: "Команда", href: "/team/" },
+  ...(site.showTeam ? [{ label: "Команда", href: "/team/" }] : []),
   { label: "Кейси", href: "/cases/" },
   { label: "Блог", href: "/blog/" },
   { label: "Контакти", href: "/contacts/" },

@@ -62,12 +62,12 @@ ${breadcrumbs(crumbs)}
   <div class="features features--3">${milestones}</div>
 </div></section>
 
-<section class="section"><div class="container">
+${site.showTeam ? `<section class="section"><div class="container">
   <div class="section__head section__head--center"><span class="eyebrow">Команда</span><h2>Люди, які створюють LEGIUS</h2></div>
   <div class="grid grid--3">${team
     .map((m) => `<a class="team-card reveal" href="/team/${m.slug}/"><div class="team-card__photo"><img src="${m.photo}" width="300" height="400" loading="lazy" decoding="async" alt="${esc(m.displayName || m.name)}"></div><h3>${esc(m.displayName || m.name)}</h3><div class="role">${esc(m.role)}</div></a>`)
     .join("")}</div>
-</div></section>
+</div></section>` : ""}
 
 ${ctaBand()}`;
 }
@@ -127,7 +127,7 @@ export function htmlSitemapPage({ practices, locations = [], team = [], pillars 
   const crumbs = [{ name: "Головна", href: "/" }, { name: "Карта сайту", href: "/sitemap/" }];
   const li = (href, label) => `<li><a href="${href}">${esc(label)}</a></li>`;
 
-  const main = ["/ Головна", "/practices/ Усі практики", "/about/ Про компанію", "/team/ Команда", "/cases/ Кейси", "/blog/ Блог", "/contacts/ Контакти", "/privacy/ Політика конфіденційності"]
+  const main = ["/ Головна", "/practices/ Усі практики", "/about/ Про компанію", ...(site.showTeam ? ["/team/ Команда"] : []), "/cases/ Кейси", "/blog/ Блог", "/contacts/ Контакти", "/privacy/ Політика конфіденційності"]
     .map((s) => { const i = s.indexOf(" "); return li(s.slice(0, i), s.slice(i + 1)); }).join("");
 
   const practiceBlocks = practices.map((p) => {
@@ -136,7 +136,7 @@ export function htmlSitemapPage({ practices, locations = [], team = [], pillars 
   }).join("");
 
   const locLinks = locations.map((l) => li(`/${l.slug}/`, l.navLabel || l.metaTitle)).join("");
-  const teamLinks = team.map((m) => li(`/team/${m.slug}/`, m.displayName || m.name)).join("");
+  const teamLinks = site.showTeam ? team.map((m) => li(`/team/${m.slug}/`, m.displayName || m.name)).join("") : "";
 
   const blogBlocks = pillars.map((p) => {
     const arts = articles.filter((a) => a.cluster === p.cluster).map((a) => li(`/blog/${a.slug}/`, a.title)).join("");
@@ -148,12 +148,12 @@ ${breadcrumbs(crumbs)}
 <section class="page-hero"><div class="container">
   <span class="eyebrow">Навігація</span>
   <h1>Карта сайту</h1>
-  <p>Усі розділи LEGIUS в одному місці — практики, послуги, статті блогу, команда та інформація про компанію.</p>
+  <p>Усі розділи LEGIUS в одному місці — практики, послуги, статті блогу та інформація про компанію.</p>
 </div></section>
 <section class="section"><div class="container sitemap">
   <div class="sitemap-col"><h2>Основні сторінки</h2><ul>${main}</ul></div>
   ${locLinks ? `<div class="sitemap-col"><h2>Юристи по районах Києва</h2><ul>${locLinks}</ul></div>` : ""}
-  <div class="sitemap-col"><h2>Команда</h2><ul>${teamLinks}</ul></div>
+  ${teamLinks ? `<div class="sitemap-col"><h2>Команда</h2><ul>${teamLinks}</ul></div>` : ""}
   <h2 style="grid-column:1/-1;margin-top:1rem">Практики та послуги</h2>
   ${practiceBlocks}
   <h2 style="grid-column:1/-1;margin-top:1rem">Блог</h2>

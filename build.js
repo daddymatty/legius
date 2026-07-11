@@ -219,7 +219,9 @@ async function build() {
     );
   }
 
-  /* ---------- Team ---------- */
+  /* ---------- Team (вимкнено через site.showTeam=false — сторінки не генеруються,
+     старі URL /team/* редиректяться на /about/ у блоці redirects нижче) ---------- */
+  if (site.showTeam) {
   console.log("→ Команда:", team.length);
   await writePage(
     "team",
@@ -258,6 +260,9 @@ async function build() {
       ),
       { priority: "0.6" }
     );
+  }
+  } else {
+    console.log("→ Команда: приховано (showTeam=false)");
   }
 
   /* ---------- Cases ---------- */
@@ -408,6 +413,8 @@ async function build() {
      passing users and canonical signal to the new URL. */
   const redirects = [
     { from: "kontakti", to: "/contacts/" },
+    /* Команда тимчасово прихована — індексовані URL ведемо на /about/ */
+    ...(site.showTeam ? [] : ["team", ...team.map((m) => `team/${m.slug}`)].map((from) => ({ from, to: "/about/" }))),
   ];
   for (const r of redirects) {
     const target = site.domain + r.to;
