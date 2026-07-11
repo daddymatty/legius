@@ -14,7 +14,7 @@ function findLawyer(p, team) {
 }
 
 function lawyerCard(lawyer) {
-  if (!lawyer) return "";
+  if (!lawyer || !site.showTeam) return "";
   const name = lawyer.displayName || lawyer.name;
   return `<div class="card">
     <span class="eyebrow">Відповідальний адвокат</span>

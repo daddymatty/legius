@@ -152,7 +152,7 @@ export function footer(practices) {
       <div><h4>Практики</h4><ul>${practiceLinks}<li><a href="/practices/">Усі практики →</a></li></ul></div>
       <div><h4>Компанія</h4><ul>
         <li><a href="/about/">Про компанію</a></li>
-        <li><a href="/team/">Команда</a></li>
+        ${site.showTeam ? `<li><a href="/team/">Команда</a></li>` : ""}
         <li><a href="/cases/">Кейси</a></li>
         <li><a href="/blog/">Блог</a></li>
         <li><a href="/contacts/">Контакти</a></li>

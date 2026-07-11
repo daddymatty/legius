@@ -55,9 +55,9 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
       <div><span class="tile__big">${site.stats.cases}</span><p>проведених справ — стратегія на основі реальних шансів, а не обіцянок</p></div>
       <span class="tile__cta">Кейси →</span>
     </a>
-    <a class="tile tile--light" href="/team/">
+    <a class="tile tile--light" href="${site.showTeam ? "/team/" : "/about/"}">
       <div><span class="tile__big">${site.stats.lawyers}</span><p>юристів у ${practices.length} практиках — від M&amp;A до військового права</p></div>
-      <span class="tile__cta">Команда →</span>
+      <span class="tile__cta">${site.showTeam ? "Команда" : "Хто ми"} →</span>
     </a>
     <a class="tile tile--gray" href="/about/">
       <div><span class="tile__big">${site.rating.value}</span><p>середній рейтинг на основі ${site.rating.count} відгуків клієнтів</p></div>
@@ -183,11 +183,11 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
   <div class="text-center mt-3"><a class="btn btn--dark" href="/cases/">Усі кейси</a></div>
 </div></section>
 
-<section class="section"><div class="container">
+${site.showTeam ? `<section class="section"><div class="container">
   <div class="section__head section__head--center"><span class="eyebrow">Команда</span><h2>Адвокати та юристи, які будуть вести ваші справи</h2></div>
   <div class="grid grid--3">${teamCards}</div>
   <div class="text-center mt-3"><a class="btn btn--dark" href="/team/">Уся команда</a></div>
-</div></section>
+</div></section>` : ""}
 
 <section class="section section--soft"><div class="container">
   <div class="section__head section__head--center"><span class="eyebrow">Блог</span><h2>Останні публікації</h2><p class="lead">Практичні роз’яснення законодавства від наших юристів.</p></div>
