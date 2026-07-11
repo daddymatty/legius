@@ -382,6 +382,25 @@ async function build() {
     description: "Сторінку не знайдено.", canonical: "/404.html", noindex: true,
   }, notFoundPage())), "utf8");
 
+  /* ---------- Search index (client-side site search, see main.js) ---------- */
+  console.log("→ Пошуковий індекс");
+  const sx = [];
+  const sxEsc = (s = "") => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const sxAdd = (t, u, s, k = "") => sx.push({ t: sxEsc(t), u, s, k: sxEsc(k) });
+  sxAdd("Про компанію LEGIUS", "/about/", "Сторінка", "історія компанії хто ми юридична фірма київ");
+  sxAdd("Контакти та запис на консультацію", "/contacts/", "Сторінка", "адреса телефон консультація записатися офіс");
+  sxAdd("Кейси — виграні справи", "/cases/", "Сторінка", "результати перемоги приклади справ");
+  sxAdd("Блог — юридична бібліотека", "/blog/", "Сторінка", "статті поради роз'яснення");
+  for (const p of practices) {
+    sxAdd(p.shortTitle, `/practices/${p.slug}/`, "Практика", (p.services || []).join(" "));
+    for (const svc of practiceServices(p)) sxAdd(svc.title, `/practices/${p.slug}/${svc.slug}/`, "Послуга", p.shortTitle);
+  }
+  for (const l of locations) sxAdd(l.navLabel || l.metaTitle, `/${l.slug}/`, "Адвокат поруч", "район київ адвокат юрист");
+  for (const p of pillars) sxAdd(p.title, `/blog/${p.slug}/`, "Гайд", p.cluster);
+  for (const a of articles) sxAdd(a.title, `/blog/${a.slug}/`, "Стаття", (a.keywords || []).join(" "));
+  for (const c of cases) sxAdd(c.title, `/cases/${c.slug}/`, "Кейс", c.practiceLabel || "");
+  await writeFile(path.join(DIST, "search-index.json"), JSON.stringify(sx), "utf8");
+
   /* ---------- robots.txt, sitemap.xml, manifest ---------- */
   console.log("→ robots.txt, sitemap.xml, manifest");
   await writeFile(

@@ -18,7 +18,30 @@ export const icons = {
   mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
   clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
   passport: '<svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="2.6"/><path d="M9 15.4c.8-1 1.9-1.5 3-1.5s2.2.5 3 1.5M10.5 19h3"/></svg>',
+  search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>',
 };
+
+/* ---------- Site search (index: /search-index.json, logic: main.js) ---------- */
+export function searchInline(placeholder = "Пошук по сайту…") {
+  return `<div class="search-inline" data-search-scope>
+    <div class="search-inline__field">${icons.search}<input type="search" data-search-input placeholder="${esc(placeholder)}" aria-label="Пошук по сайту" autocomplete="off"></div>
+    <div class="search-results" data-search-results hidden></div>
+  </div>`;
+}
+
+function searchModal() {
+  return `<div class="search-modal" data-search-modal hidden>
+  <div class="search-modal__backdrop" data-search-close></div>
+  <div class="search-modal__panel" role="dialog" aria-modal="true" aria-label="Пошук по сайту" data-search-scope>
+    <div class="search-modal__bar">
+      ${icons.search}
+      <input type="search" data-search-input placeholder="Розлучення, спадщина, податкова перевірка…" aria-label="Пошук по сайту" autocomplete="off">
+      <button type="button" class="search-modal__close" data-search-close aria-label="Закрити пошук">✕</button>
+    </div>
+    <div class="search-results" data-search-results hidden></div>
+  </div>
+</div>`;
+}
 
 export const practiceIcon = {
   family: icons.handshake, military: icons.shield, corporate: icons.building,
@@ -70,11 +93,14 @@ export function header(practices, currentPath = "") {
     <a class="logo" href="/" aria-label="${esc(site.name)} — головна">${logoWord}</a>
     <nav class="nav" aria-label="Основна навігація"><ul class="nav__list">${navItems}</ul></nav>
     <div class="header__cta">
+      <button type="button" class="header-search" data-search-open aria-label="Пошук по сайту">${icons.search}</button>
       <a class="btn btn--primary btn--sm" href="/contacts/#consult">Консультація</a>
     </div>
+    <button type="button" class="header-search header-search--mobile" data-search-open aria-label="Пошук по сайту">${icons.search}</button>
     <button class="burger" data-burger aria-label="Меню" aria-expanded="false" aria-controls="mobile-nav">Меню <i><span></span></i></button>
   </div>
 </header>
+${searchModal()}
 <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
   ${mobileItems}
   <a class="btn btn--primary btn--block" href="/contacts/#consult">Безкоштовна консультація</a>

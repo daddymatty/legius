@@ -40,6 +40,96 @@
     });
   }
 
+  /* ---- Site search (index: /search-index.json, generated at build) ---- */
+  (function () {
+    var idx = null, loading = false, pending = null;
+    function norm(s) { return s.toLowerCase().replace(/[«»"'’ʼ`]/g, "").replace(/\s+/g, " "); }
+    function load() {
+      if (idx || loading) return;
+      loading = true;
+      fetch("/search-index.json").then(function (r) { return r.json(); }).then(function (d) {
+        idx = d.map(function (e) { e.nt = norm(e.t); e.nk = norm(e.k || ""); return e; });
+        if (pending) { pending(); pending = null; }
+      }).catch(function () { loading = false; });
+    }
+    function query(q) {
+      q = norm(q.trim());
+      if (q.length < 2 || !idx) return null;
+      var toks = q.split(" ");
+      /* легкий "стемінг" для української: відрізаємо до 2 кінцевих літер
+         (спадщина → спадщин), щоб збігалися відмінки */
+      var stems = toks.map(function (t) { return t.length >= 5 ? t.slice(0, t.length - 2) : t; });
+      var res = [];
+      for (var i = 0; i < idx.length; i++) {
+        var e = idx[i], score = 0, ok = true;
+        for (var j = 0; j < toks.length; j++) {
+          var t = toks[j], st = stems[j], pt = e.nt.indexOf(t);
+          if (pt >= 0) score += pt === 0 ? 5 : 3;
+          else if (e.nt.indexOf(st) >= 0) score += e.nt.indexOf(st) === 0 ? 4 : 2;
+          else if (e.nk.indexOf(t) >= 0) score += 1;
+          else if (e.nk.indexOf(st) >= 0) score += 1;
+          else { ok = false; break; }
+        }
+        if (ok) res.push([score, e]);
+      }
+      res.sort(function (a, b) { return b[0] - a[0]; });
+      return res.slice(0, 10).map(function (r) { return r[1]; });
+    }
+    function render(list, box) {
+      if (list === null) { box.hidden = true; box.innerHTML = ""; return; }
+      box.hidden = false;
+      if (!list.length) {
+        box.innerHTML = '<div class="search-empty">Нічого не знайдено. Спробуйте інше слово — або <a href="/contacts/#consult">запитайте нас напряму</a>.</div>';
+        return;
+      }
+      box.innerHTML = list.map(function (e) {
+        return '<a class="search-hit" href="' + e.u + '"><span class="search-hit__type">' + e.s + '</span><span class="search-hit__title">' + e.t + "</span></a>";
+      }).join("");
+    }
+    var scopes = document.querySelectorAll("[data-search-scope]");
+    for (var s = 0; s < scopes.length; s++) {
+      (function (scope) {
+        var inp = scope.querySelector("[data-search-input]");
+        var box = scope.querySelector("[data-search-results]");
+        if (!inp || !box) return;
+        function run() { render(query(inp.value), box); }
+        inp.addEventListener("focus", load);
+        inp.addEventListener("input", function () {
+          if (!idx) { load(); pending = run; return; }
+          run();
+        });
+        inp.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            var first = box.querySelector(".search-hit");
+            if (first) location.href = first.getAttribute("href");
+          }
+        });
+      })(scopes[s]);
+    }
+    /* modal open/close */
+    var modal = document.querySelector("[data-search-modal]");
+    if (modal) {
+      var minput = modal.querySelector("[data-search-input]");
+      var openModal = function () {
+        modal.hidden = false;
+        document.body.style.overflow = "hidden";
+        load();
+        setTimeout(function () { minput.focus(); }, 30);
+      };
+      var closeModal = function () {
+        modal.hidden = true;
+        document.body.style.overflow = "";
+      };
+      var openers = document.querySelectorAll("[data-search-open]");
+      for (var o = 0; o < openers.length; o++) openers[o].addEventListener("click", openModal);
+      var closers = modal.querySelectorAll("[data-search-close]");
+      for (var c = 0; c < closers.length; c++) closers[c].addEventListener("click", closeModal);
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !modal.hidden) closeModal();
+      });
+    }
+  })();
+
   /* ---- Reveal on scroll (IntersectionObserver) ---- */
   var reveals = document.querySelectorAll(".reveal");
   /* Stagger reveals that share a parent (e.g. grid cards) for a cascade effect. */

@@ -1,6 +1,6 @@
 /* Blog: index (hub), pillar page, article page. */
 import { site } from "../data/site.js";
-import { ctaBand, breadcrumbs, icons } from "./components.js";
+import { ctaBand, breadcrumbs, icons, searchInline } from "./components.js";
 import { renderProseSections, renderFaq, escape as esc } from "./render.js";
 import { practiceServices } from "../lib/services.js";
 
@@ -33,10 +33,11 @@ export function blogIndexPage({ pillars, articles, clusterLabels }) {
     </div>`;
   return `
 ${breadcrumbs(crumbs)}
-<section class="page-hero"><div class="container">
+<section class="page-hero page-hero--search"><div class="container">
   <span class="eyebrow">Блог · Юридичний хаб знань</span>
   <h1>Юридична бібліотека LEGIUS</h1>
   <p>Понад ${articles.length} експертних матеріалів про сімейне, військове, корпоративне та податкове право. Практичні роз’яснення від адвокатів.</p>
+  <div class="page-hero__search">${searchInline("Знайти статтю: розлучення, спадщина, мобілізація…")}</div>
 </div></section>
 <section class="section"><div class="container">
   <div class="section__head"><span class="eyebrow">Путівники</span><h2>Повні гайди за напрямами права</h2><p class="lead">Глибокі огляди кожної галузі — гарна точка входу, якщо вивчаєте тему з нуля.</p></div>
