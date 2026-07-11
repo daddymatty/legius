@@ -112,7 +112,8 @@ h3 { font-size: var(--fs-lg); }
 /* More breathing room around section headings */
 .section__head .eyebrow { margin-bottom: 1.2rem; }
 .section__head h2 { margin-bottom: 1rem; }
-.section--cta { padding-top: 0; }
+/* симетричні відступи: CTA-стрічка по центру білої смуги, а не притиснута до верху */
+.section--cta { padding-block: calc(var(--section-y) * 0.7); }
 .lead { font-size: var(--fs-md); color: var(--c-slate); }
 .section--navy .lead { color: var(--c-on-dark); }
 
