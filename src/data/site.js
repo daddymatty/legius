@@ -2,9 +2,9 @@
 export const site = {
   name: "LEGIUS",
   legalName: 'Юридична компанія «ЛЕГІУС»',
-  /* Тимчасово приховати розділ «Команда» (сторінки, навігація, картки адвокатів).
-     Повернути: showTeam: true. Дані team.js не чіпаємо. */
-  showTeam: false,
+  /* Розділ «Команда» (сторінки, навігація, картки адвокатів).
+     false = тимчасово приховати; дані team.js не чіпаємо. */
+  showTeam: true,
   tagline: "Юридична компанія",
   domain: "https://legius.com.ua",
   locale: "uk_UA",
