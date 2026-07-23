@@ -96,7 +96,7 @@ ${breadcrumbs(crumbs)}
         <a class="chip" href="${site.messengers.whatsapp}" target="_blank" rel="noopener">WhatsApp</a>
         <a class="chip" href="${site.messengers.viber}" target="_blank" rel="noopener">Viber</a>
       </div>
-      <div class="map-frame mt-3"><iframe title="Мапа офісу LEGIUS" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=${(site.address.lng - 0.012).toFixed(4)}%2C${(site.address.lat - 0.006).toFixed(4)}%2C${(site.address.lng + 0.012).toFixed(4)}%2C${(site.address.lat + 0.006).toFixed(4)}&layer=mapnik&marker=${site.address.lat}%2C${site.address.lng}"></iframe></div>
+      <div class="map-frame mt-3"><iframe title="Мапа офісу LEGIUS (Google Maps)" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://www.google.com/maps?q=${encodeURIComponent(`LEGIUS, ${site.address.street}, ${site.address.locality}`)}&hl=uk&z=16&output=embed"></iframe></div>
     </div>
     <div class="reveal" id="consult">${leadForm({ id: "contacts-form", title: "Записатися на консультацію", source: "contacts" })}</div>
   </div>

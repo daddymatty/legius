@@ -73,7 +73,7 @@ export function layout(opts) {
     "style-src 'self' 'unsafe-inline'",
     `script-src 'self'${ga ? " https://www.googletagmanager.com" : ""}${turnstile ? " " + cf : ""}`,
     `connect-src 'self'${leadOrigin ? " " + leadOrigin : ""}${ga ? " https://*.google-analytics.com https://*.googletagmanager.com" : ""}`,
-    `frame-src https://www.openstreetmap.org${turnstile ? " " + cf : ""}`,
+    `frame-src https://www.google.com https://consent.google.com${turnstile ? " " + cf : ""}`,
     "form-action 'self'",
     "upgrade-insecure-requests",
   ].join("; ");
