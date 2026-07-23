@@ -1,9 +1,10 @@
 /**
- * LEGIUS — lead-form → Telegram proxy (Cloudflare Worker).
+ * LEGIUS — lead-form → Telegram + Zoho CRM proxy (Cloudflare Worker).
  *
  * Keeps the bot token server-side (as an encrypted Worker secret), so it is
  * NEVER exposed in the static site's source. The site form POSTs JSON here;
- * this worker validates it and forwards a formatted message to Telegram.
+ * this worker validates it, forwards a formatted message to Telegram and
+ * (optionally) creates a Lead in Zoho CRM.
  *
  * Required secrets (set with `wrangler secret put` or in the dashboard):
  *   BOT_TOKEN  — Telegram bot token from @BotFather
@@ -14,6 +15,13 @@
  *   TURNSTILE_SECRET — Cloudflare Turnstile secret; if set, the worker verifies
  *                      the cf-turnstile-response token before sending (anti-spam)
  *   ALLOWED_ORIGINS  — comma-separated list (defaults below)
+ *
+ * Optional Zoho CRM integration (enabled when all three secrets are set):
+ *   ZOHO_CLIENT_ID     — Self Client ID (api-console.zoho.eu)
+ *   ZOHO_CLIENT_SECRET — Self Client secret
+ *   ZOHO_REFRESH_TOKEN — OAuth refresh token (scope ZohoCRM.modules.leads.CREATE)
+ *   ZOHO_ACCOUNTS_BASE — optional, default https://accounts.zoho.eu
+ *   ZOHO_API_BASE      — optional, default https://www.zohoapis.eu
  */
 
 const DEFAULT_ORIGINS = [
@@ -35,8 +43,55 @@ function corsHeaders(origin, allowed) {
 const esc = (s = "") =>
   String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
+/* ---------- Zoho CRM: create a Lead (fire-and-forget) ---------- */
+
+let zohoToken = null; /* { value, expires } — кешується між викликами воркера */
+
+async function zohoAccessToken(env) {
+  if (zohoToken && zohoToken.expires > Date.now()) return zohoToken.value;
+  const base = env.ZOHO_ACCOUNTS_BASE || "https://accounts.zoho.eu";
+  const params = new URLSearchParams({
+    refresh_token: env.ZOHO_REFRESH_TOKEN,
+    client_id: env.ZOHO_CLIENT_ID,
+    client_secret: env.ZOHO_CLIENT_SECRET,
+    grant_type: "refresh_token",
+  });
+  const res = await fetch(`${base}/oauth/v2/token`, { method: "POST", body: params });
+  const data = await res.json().catch(() => ({}));
+  if (!data.access_token) throw new Error("zoho token: " + JSON.stringify(data).slice(0, 200));
+  zohoToken = { value: data.access_token, expires: Date.now() + 50 * 60 * 1000 };
+  return zohoToken.value;
+}
+
+async function zohoCreateLead(env, { name, phone, email, message, source, page }) {
+  const token = await zohoAccessToken(env);
+  const api = env.ZOHO_API_BASE || "https://www.zohoapis.eu";
+  const lead = {
+    Last_Name: name,                       /* обов'язкове поле модуля Leads */
+    Phone: phone,
+    Lead_Source: "Website",
+    Description:
+      (message ? `Повідомлення: ${message}\n` : "") +
+      (source ? `Форма: ${source}\n` : "") +
+      (page ? `Сторінка: ${page}` : ""),
+  };
+  if (email) lead.Email = email;
+  const res = await fetch(`${api}/crm/v8/Leads`, {
+    method: "POST",
+    headers: {
+      Authorization: `Zoho-oauthtoken ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ data: [lead] }),
+  });
+  if (!res.ok) {
+    const detail = await res.text().catch(() => "");
+    throw new Error("zoho lead: " + res.status + " " + detail.slice(0, 200));
+  }
+}
+
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const allowed = (env.ALLOWED_ORIGINS || DEFAULT_ORIGINS.join(","))
       .split(",")
       .map((s) => s.trim())
@@ -111,6 +166,17 @@ export default {
       const detail = await tgRes.text().catch(() => "");
       return json({ ok: false, error: "telegram", detail: detail.slice(0, 200) }, 502);
     }
+
+    /* Zoho CRM — не блокує відповідь користувачу і не ламає заявку при збої:
+       Telegram лишається основним каналом, CRM — дублювання для обліку. */
+    if (env.ZOHO_REFRESH_TOKEN && env.ZOHO_CLIENT_ID && env.ZOHO_CLIENT_SECRET) {
+      ctx.waitUntil(
+        zohoCreateLead(env, { name, phone, email, message, source, page }).catch((e) =>
+          console.log("zoho lead failed:", e.message)
+        )
+      );
+    }
+
     return json({ ok: true });
   },
 };
