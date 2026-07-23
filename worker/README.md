@@ -39,6 +39,40 @@
 
 Поки `siteKey` порожній — Turnstile вимкнено, нічого зайвого не вантажиться.
 
+## Zoho CRM — автостворення Лідів (необов'язково)
+
+Кожна заявка з форми, крім Telegram, створює Ліда в Zoho CRM (модуль Leads:
+ім'я, телефон, e-mail, повідомлення, з якої форми/сторінки прийшла).
+Вмикається трьома секретами — без них воркер працює як раніше.
+
+1. Зайди в **консоль API Zoho** (https://api-console.zoho.eu — або .com,
+   залежно від дата-центру акаунта; дивись, який домен у адресі, коли ти
+   залогінений у Zoho: zoho.eu чи zoho.com).
+2. **Add Client → Self Client → Create**. Отримаєш **Client ID** і **Client Secret**.
+3. Вкладка **Generate Code**: scope
+   `ZohoCRM.modules.leads.CREATE`
+   Time Duration: 10 minutes → **Create** → скопіюй одноразовий **grant code**
+   (діє 10 хв — одразу переходь до кроку 4).
+4. Обміняй grant code на **refresh token** (разова дія):
+   ```bash
+   curl -X POST "https://accounts.zoho.eu/oauth/v2/token" \
+     -d "grant_type=authorization_code" \
+     -d "client_id=<CLIENT_ID>" \
+     -d "client_secret=<CLIENT_SECRET>" \
+     -d "code=<GRANT_CODE>"
+   ```
+   У відповіді буде `refresh_token` — він безстроковий.
+5. У Cloudflare-воркері: **Settings → Variables and Secrets** → додай (тип Secret):
+   - `ZOHO_CLIENT_ID`
+   - `ZOHO_CLIENT_SECRET`
+   - `ZOHO_REFRESH_TOKEN`
+   Якщо акаунт НЕ на eu-датацентрі — додай ще текстові змінні
+   `ZOHO_ACCOUNTS_BASE` (напр. `https://accounts.zoho.com`) і
+   `ZOHO_API_BASE` (напр. `https://www.zohoapis.com`).
+6. Онови код воркера на актуальний `lead-telegram.js` → **Save and deploy**.
+7. Перевірка: тестова заявка з сайту → повідомлення в Telegram + новий запис
+   у CRM → Leads протягом секунд. Збій Zoho не блокує заявку (Telegram первинний).
+
 ## Альтернатива через термінал (wrangler)
 ```bash
 npm i -g wrangler
