@@ -247,15 +247,13 @@ Anthropic має офіційні Zoho-конектори (CRM, Books, Desk, Pro
    refresh token, і позначку дата-центру (`.eu`/`.com` — від нього
    залежить `accounts.zoho.*` і `www.zohoapis.*` у Worker).
 5. Секрети НЕ комітити в репозиторій — лише в Cloudflare Worker Secrets.
-6. ⚠️ Технічний нюанс для Worker: після перейменування значень списків
-   Zoho зберігає старі **actual_value** англійською. При створенні записів
-   через API треба передавати саме їх, а не українські назви з інтерфейсу:
-   - Справи, поле `Stage`: Консультація=`Qualification`,
-     Договір=`Needs Analysis`, Провадження=`Value Proposition`,
-     Суд=`Id. Decision Makers`, Виконання=`Proposal/Price Quote`,
-     Закрито (успішно)=`Closed Won`, Закрито (відмова)=`Closed Lost`.
-   - Заявки, поле `Lead_Status`: перевірити actual_value через
-     `GET /settings/fields?module=Leads` перед використанням.
+6. ⚠️ Технічний нюанс для Worker: значення picklist-полів (`Stage`,
+   `Lead_Status`) передавати **display-назвами, як в інтерфейсі**
+   («Консультація», «Нова» і т.д.). Перевірено на практиці: передане
+   старе англійське actual_value (`Qualification`) Zoho записує в запис
+   сирим рядком, і запис випадає з канбану/фільтрів. Перед запуском
+   Worker зробити один тестовий POST і перевірити, що запис став у
+   правильну колонку канбану.
 
 ---
 
