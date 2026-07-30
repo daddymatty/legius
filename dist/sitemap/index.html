@@ -233,7 +233,9 @@ h3 { font-size: var(--fs-lg); }
 .burger i::before { top: 0; } .burger i span { top: 6px; } .burger i::after { top: 12px; }
 .mobile-nav {
   position: fixed; inset: 120px 0 0 0; background: var(--c-ink); color: #fff;
-  z-index: 55; padding: 1.5rem var(--gutter) 3rem; overflow-y: auto;
+  z-index: 55; overflow-y: auto; -webkit-overflow-scrolling: touch;
+  /* нижній відступ із запасом під тулбар мобільного браузера та home-індикатор */
+  padding: 1.5rem var(--gutter) calc(5rem + env(safe-area-inset-bottom, 0px));
   transform: translateX(100%); transition: transform 0.3s ease; visibility: hidden;
 }
 .mobile-nav.open { transform: translateX(0); visibility: visible; }
@@ -864,6 +866,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=ms1k3lbl" defer></script>
+<script src="/assets/js/main.js?v=ms7lntle" defer></script>
 </body>
 </html>
