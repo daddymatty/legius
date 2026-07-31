@@ -114,6 +114,10 @@ h3 { font-size: var(--fs-lg); }
 .section__head h2 { margin-bottom: 1rem; }
 /* симетричні відступи: CTA-стрічка по центру білої смуги, а не притиснута до верху */
 .section--cta { padding-block: calc(var(--section-y) * 0.7); }
+/* Біла секція перед CTA-смугою: без стискання тут два білі відступи складаються
+   у «діру» (~200px+) між контентом і чорною стрічкою. Сірі (--soft) не чіпаємо —
+   їх фон вимагає симетричних внутрішніх відступів. */
+main > .section:not(.section--soft):has(+ .section--cta) { padding-bottom: calc(var(--section-y) * 0.35); }
 .lead { font-size: var(--fs-md); color: var(--c-slate); }
 .section--navy .lead { color: var(--c-on-dark); }
 
