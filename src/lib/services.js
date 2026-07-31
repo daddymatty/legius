@@ -78,5 +78,8 @@ export function serviceContent(p, svc) {
        phrasing while svc.title stays the short menu/breadcrumb label. */
     metaTitle: override.metaTitle || "",
     h1: override.h1 || "",
+    /* Optional curated sidebar reading list (article slugs); without it the
+       page falls back to the first N articles of the practice cluster. */
+    relatedArticles: override.relatedArticles || [],
   };
 }

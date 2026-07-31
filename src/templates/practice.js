@@ -161,7 +161,13 @@ export function servicePage(p, svc, { practiceBySlug, team = [], articles = [] }
           .join("")}</ul>
       </div>`
     : "";
-  const relArticles = articlesForPractice(articles, p.slug, 4);
+  /* Curated per-service reading list wins over the generic cluster head:
+     on ad landings the sidebar must match the service topic, not the
+     practice's first articles. */
+  const curated = (content.relatedArticles || [])
+    .map((slug) => articles.find((a) => a.slug === slug))
+    .filter(Boolean);
+  const relArticles = curated.length ? curated : articlesForPractice(articles, p.slug, 4);
   const articleList = relArticles.length
     ? `<div class="card">
         <h3 style="font-size:1.15rem;margin-bottom:0.8rem">Статті за темою</h3>
@@ -194,6 +200,8 @@ ${breadcrumbs(crumbs)}
     </aside>
   </div>
 </div></section>
+
+${whyUsBlock(p)}
 
 ${renderFaq(content.faq, `Питання щодо послуги`)}
 
