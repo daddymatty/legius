@@ -138,7 +138,7 @@ export function homePage({ practices, cases, team, articles, testimonials, homeF
       <p class="hero__sub">${esc(site.legalName)} — команда адвокатів і юристів, яка веде складні справи у корпоративному, податковому, сімейному та військовому праві. Перша консультація — безкоштовно.</p>
       <div class="hero__actions">
         <a class="btn btn--primary" href="#hero-form">Безкоштовна консультація</a>
-        <a class="btn btn--ghost" style="color:#fff" href="/practices/">Наші практики</a>
+        <a class="btn btn--ghost-dark" href="/practices/">Наші практики</a>
       </div>
       <div class="hero__trust">
         <div class="stat"><strong>${site.stats.years}</strong><span>років практики</span></div>

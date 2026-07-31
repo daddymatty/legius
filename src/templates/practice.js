@@ -110,7 +110,7 @@ ${breadcrumbs(crumbs)}
   <p>${esc(p.heroSub)}</p>
   <div class="hero__actions mt-2">
     <a class="btn btn--primary" href="#practice-${p.slug}">Отримати консультацію</a>
-    <a class="btn btn--ghost" style="color:#fff" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
+    <a class="btn btn--ghost-dark" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
   </div>
   ${ratingBadge()}
 </div></section>
@@ -186,7 +186,7 @@ ${breadcrumbs(crumbs)}
   <p>${esc(content.heroSub)}</p>
   <div class="hero__actions mt-2">
     <a class="btn btn--primary" href="#service-${p.slug}-${svc.slug}">Отримати консультацію</a>
-    <a class="btn btn--ghost" style="color:#fff" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
+    <a class="btn btn--ghost-dark" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
   </div>
   ${ratingBadge()}
 </div></section>
