@@ -503,6 +503,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .sticky-cta .s-call { background: var(--c-ink); color: #fff; }
 .sticky-cta .s-cta { background: var(--c-teal); color: #ffffff; }
 
+.form-msgr { font-size: 0.85rem; color: var(--c-muted); margin-top: 0.8rem; text-align: center; }
+.form-msgr a { font-weight: 700; color: var(--c-teal-d); }
+.form-msgr a:hover { text-decoration: underline; }
+
 /* ---------- Google rating badge (page-hero) ---------- */
 .rating-badge { display: inline-flex; align-items: center; gap: 0.55rem; margin-top: 1.1rem; font-size: 0.9rem; font-weight: 600; color: rgba(255,255,255,0.85); }
 .rating-badge__stars { color: var(--c-gold); letter-spacing: 2px; }
