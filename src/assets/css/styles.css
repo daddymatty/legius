@@ -119,6 +119,11 @@ h3 { font-size: var(--fs-lg); }
    їх фон вимагає симетричних внутрішніх відступів. */
 main > .section:not(.section--soft):has(+ .section--cta) { padding-bottom: calc(var(--section-y) * 0.35); }
 .section--tight-bottom { padding-bottom: calc(var(--section-y) * 0.35); }
+/* Стик двох секцій з ОДНАКОВИМ фоном (біле→біле, сіре→сіре): без стискання
+   їх відступи складаються у ~200px+ порожнечі. Верхній відступ другої секції
+   зменшуємо; стики зі зміною фону лишаються з повним повітрям. */
+.section:not(.section--soft):not(.section--navy):not(.section--cta) + .section:not(.section--soft):not(.section--navy):not(.section--cta) { padding-top: calc(var(--section-y) * 0.4); }
+.section--soft + .section--soft { padding-top: calc(var(--section-y) * 0.4); }
 .lead { font-size: var(--fs-md); color: var(--c-slate); }
 .section--navy .lead { color: var(--c-on-dark); }
 
