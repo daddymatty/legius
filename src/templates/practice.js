@@ -43,6 +43,23 @@ function whyUsBlock(p) {
   </div></section>`;
 }
 
+function casesBlock(cases, practiceSlug) {
+  const rel = (cases || []).filter((c) => c.practice === practiceSlug).slice(0, 3);
+  if (!rel.length) return "";
+  return `<section class="section reveal"><div class="container">
+        <div class="section__head"><span class="eyebrow">Кейси</span><h2>Наш досвід у цій сфері</h2></div>
+        <div class="grid grid--3">${rel
+          .map(
+            (c) => `<div class="case-card"><div class="case-card__body">
+              <span class="tag">${c.year}</span><h3 style="font-size:1.1rem">${esc(c.title)}</h3>
+              <p style="color:var(--c-slate);font-size:.92rem">${esc(c.problem)}</p>
+              <div class="case-card__result">${icons.check} ${esc(c.metric || c.result)}</div>
+            </div></div>`
+          )
+          .join("")}</div>
+      </div></section>`;
+}
+
 /* Blog articles that belong to this practice's cluster (interlinking). */
 function articlesForPractice(articles, slug, n) {
   return (articles || []).filter((a) => a.practice === slug && !a.pillar).slice(0, n);
@@ -86,21 +103,7 @@ export function practicePage(p, { practiceBySlug, cases, team = [], articles = [
       </div></section>`
     : "";
 
-  const relCases = cases.filter((c) => c.practice === p.slug).slice(0, 3);
-  const caseBlock = relCases.length
-    ? `<section class="section reveal"><div class="container">
-        <div class="section__head"><span class="eyebrow">Кейси</span><h2>Наш досвід у цій сфері</h2></div>
-        <div class="grid grid--3">${relCases
-          .map(
-            (c) => `<div class="case-card"><div class="case-card__body">
-              <span class="tag">${c.year}</span><h3 style="font-size:1.1rem">${esc(c.title)}</h3>
-              <p style="color:var(--c-slate);font-size:.92rem">${esc(c.problem)}</p>
-              <div class="case-card__result">${icons.check} ${esc(c.metric || c.result)}</div>
-            </div></div>`
-          )
-          .join("")}</div>
-      </div></section>`
-    : "";
+  const caseBlock = casesBlock(cases, p.slug);
 
   return `
 ${breadcrumbs(crumbs)}
@@ -144,7 +147,7 @@ ${ctaBand({ title: `Потрібна допомога у сфері «${p.shortT
 }
 
 /* ---------- Individual service page ---------- */
-export function servicePage(p, svc, { practiceBySlug, team = [], articles = [] }) {
+export function servicePage(p, svc, { practiceBySlug, team = [], articles = [], cases = [] }) {
   const crumbs = [
     { name: "Головна", href: "/" },
     { name: "Практики", href: "/practices/" },
@@ -202,6 +205,8 @@ ${breadcrumbs(crumbs)}
     </aside>
   </div>
 </div></section>
+
+${casesBlock(cases, p.slug)}
 
 ${whyUsBlock(p)}
 

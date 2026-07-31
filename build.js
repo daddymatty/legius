@@ -190,7 +190,7 @@ async function build() {
               ]),
             ],
           },
-          servicePage(p, svc, { practiceBySlug, team, articles })
+          servicePage(p, svc, { practiceBySlug, team, articles, cases })
         ),
         { priority: "0.7" }
       );
