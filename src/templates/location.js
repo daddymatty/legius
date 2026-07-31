@@ -16,7 +16,7 @@ ${breadcrumbs(crumbs)}
   <p>${esc(loc.heroSub)}</p>
   <div class="hero__actions mt-2">
     <a class="btn btn--primary" href="#consult">Безкоштовна консультація</a>
-    <a class="btn btn--ghost" style="color:#fff" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
+    <a class="btn btn--ghost-dark" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
   </div>
 </div></section>
 

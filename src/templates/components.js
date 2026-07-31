@@ -104,7 +104,7 @@ ${searchModal()}
 <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
   ${mobileItems}
   <a class="btn btn--primary btn--block" href="/contacts/#consult">Безкоштовна консультація</a>
-  <a class="btn btn--ghost btn--block" style="color:#fff;margin-top:.8rem" href="tel:${site.phoneHref}">Зателефонувати</a>
+  <a class="btn btn--ghost-dark btn--block" style="margin-top:.8rem" href="tel:${site.phoneHref}">Зателефонувати</a>
 </div>`;
 }
 
