@@ -133,6 +133,7 @@ export function leadForm({ id = "lead", title = "Отримати консуль
     ${site.turnstile && site.turnstile.siteKey ? `<div class="cf-turnstile" data-sitekey="${esc(site.turnstile.siteKey)}" data-theme="light" data-size="flexible" style="margin-bottom:1rem;min-height:65px"></div>` : ""}
     <button class="btn btn--primary btn--block" type="submit">Замовити консультацію</button>
     <p class="form-consent">Натискаючи кнопку, ви погоджуєтесь з <a href="/privacy/">політикою конфіденційності</a>. Гарантуємо повну конфіденційність.</p>
+    ${site.messengers ? `<p class="form-msgr">Зручніше написати? <a href="${site.messengers.telegram}" target="_blank" rel="noopener">Telegram</a> · <a href="${site.messengers.whatsapp}" target="_blank" rel="noopener">WhatsApp</a> · <a href="${site.messengers.viber}" target="_blank" rel="noopener">Viber</a></p>` : ""}
   </form>`;
 }
 
