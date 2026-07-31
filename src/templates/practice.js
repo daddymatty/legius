@@ -1,6 +1,6 @@
 /* Practice area page (overview + services hub) + individual service pages. */
 import { site } from "../data/site.js";
-import { leadForm, ctaBand, breadcrumbs, icons, searchInline } from "./components.js";
+import { leadForm, ctaBand, breadcrumbs, icons, searchInline, ratingBadge } from "./components.js";
 import { renderSections, renderFaq, relatedPractices, escape as esc } from "./render.js";
 import { practiceServices, serviceContent } from "../lib/services.js";
 
@@ -112,6 +112,7 @@ ${breadcrumbs(crumbs)}
     <a class="btn btn--primary" href="#practice-${p.slug}">Отримати консультацію</a>
     <a class="btn btn--ghost" style="color:#fff" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
   </div>
+  ${ratingBadge()}
 </div></section>
 
 <section class="section"><div class="container">
@@ -187,6 +188,7 @@ ${breadcrumbs(crumbs)}
     <a class="btn btn--primary" href="#service-${p.slug}-${svc.slug}">Отримати консультацію</a>
     <a class="btn btn--ghost" style="color:#fff" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
   </div>
+  ${ratingBadge()}
 </div></section>
 
 <section class="section"><div class="container">

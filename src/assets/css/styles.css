@@ -501,6 +501,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .sticky-cta .s-call { background: var(--c-ink); color: #fff; }
 .sticky-cta .s-cta { background: var(--c-teal); color: #ffffff; }
 
+/* ---------- Google rating badge (page-hero) ---------- */
+.rating-badge { display: inline-flex; align-items: center; gap: 0.55rem; margin-top: 1.1rem; font-size: 0.9rem; font-weight: 600; color: rgba(255,255,255,0.85); }
+.rating-badge__stars { color: var(--c-gold); letter-spacing: 2px; }
+.rating-badge:hover span:last-child { text-decoration: underline; }
+
 /* ---------- Floating messengers ---------- */
 .messengers { position: fixed; right: 16px; bottom: 90px; z-index: 48; display: flex; flex-direction: column; gap: 10px; }
 .messengers a { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm); transition: var(--transition); color: #fff; }

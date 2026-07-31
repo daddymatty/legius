@@ -146,6 +146,15 @@ export function ctaBand({ title = "Потрібна юридична підтр�
   </div></div></section>`;
 }
 
+/* ---------- Google rating badge (real GBP numbers only — no invented quotes) ---------- */
+export function ratingBadge() {
+  if (!site.rating || !site.reviewsUrl) return "";
+  return `<a class="rating-badge" href="${site.reviewsUrl}" target="_blank" rel="noopener nofollow">
+    <span class="rating-badge__stars" aria-hidden="true">★★★★★</span>
+    <span>${site.rating.value} · ${site.rating.count} відгуків на Google</span>
+  </a>`;
+}
+
 /* ---------- Floating messengers + sticky mobile CTA ---------- */
 export function messengers() {
   const tg = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.8 15.6l-.4 4c.5 0 .8-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.6.2 1.8-.8l3.3-15.4c.3-1.3-.5-1.8-1.4-1.5L2 9.2c-1.3.5-1.3 1.2-.2 1.5l5 1.6L18 5.4c.5-.4 1-.2.6.2"/></svg>';
