@@ -151,7 +151,7 @@ export function ratingBadge() {
   if (!site.rating || !site.reviewsUrl) return "";
   return `<a class="rating-badge" href="${site.reviewsUrl}" target="_blank" rel="noopener nofollow">
     <span class="rating-badge__stars" aria-hidden="true">★★★★★</span>
-    <span>${site.rating.value} · ${site.rating.count} відгуків на Google</span>
+    <span>${site.rating.value} — рейтинг на Google</span>
   </a>`;
 }
 
