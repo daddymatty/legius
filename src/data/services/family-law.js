@@ -1,6 +1,7 @@
 // Service sub-pages for the family-law practice of LEGIUS.
 export default {
   "spadkovi-spravy-ta-spory-pro-spadshchynu": {
+    relatedArticles: ["oformlennya-spadshchyny", "propushchenyy-strok-spadshchyna", "oskarzhennya-zapovitu", "obovyazkova-chastka-u-spadshchyni"],
     metaTitle: "Спадщина в Києві — оформлення, спадкові спори | LEGIUS",
     h1: "Спадкові справи в Києві: оформлення спадщини та спори",
     heroSub: "Адвокат зі спадкових справ у Києві: оформлення спадщини в нотаріуса, поновлення пропущених строків, оскарження заповітів і спори між спадкоємцями.",
@@ -42,6 +43,7 @@ export default {
   },
 
   "rozirvannya-shlyubu-cherez-ratss-ta-sud": {
+    relatedArticles: ["rozirvannya-shlyubu", "podil-mayna-podruzhzhya", "alimenty-na-dytynu", "rozluchennya-online"],
     metaTitle: "Розірвання шлюбу в Києві — адвокат із розлучень | LEGIUS",
     h1: "Розірвання шлюбу в Києві: через РАЦС та суд",
     heroSub: "Адвокат із розлучень у Києві: підбираємо найшвидший законний шлях — через РАЦС або суд — і беремо на себе підготовку документів та представництво в засіданнях.",
@@ -79,6 +81,7 @@ export default {
   },
 
   "podil-spilnoho-mayna-podruzhzhya": {
+    relatedArticles: ["podil-mayna-podruzhzhya", "podil-biznesu-pry-rozluchenni", "gromadyanskyy-shlyub", "spadkuvannya-podruzhzhyam"],
     metaTitle: "Поділ майна подружжя в Києві — адвокат | LEGIUS",
     h1: "Поділ спільного майна подружжя в Києві",
     heroSub: "Адвокат із поділу майна в Києві: захищаємо ваші інтереси при поділі нерухомості, бізнес-часток, авто й накопичень — від оцінки активів до виконання рішення суду.",
