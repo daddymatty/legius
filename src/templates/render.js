@@ -49,7 +49,7 @@ export function relatedPractices(slugs = [], practiceBySlug) {
     )
     .join("");
   if (!cards) return "";
-  return `<section class="section reveal"><div class="container">
+  return `<section class="section section--tight-bottom reveal"><div class="container">
     <div class="section__head"><span class="eyebrow">Суміжні практики</span><h2>Це може бути корисно</h2></div>
     <div class="grid grid--3">${cards}</div>
   </div></section>`;

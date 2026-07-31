@@ -118,6 +118,7 @@ h3 { font-size: var(--fs-lg); }
    у «діру» (~200px+) між контентом і чорною стрічкою. Сірі (--soft) не чіпаємо —
    їх фон вимагає симетричних внутрішніх відступів. */
 main > .section:not(.section--soft):has(+ .section--cta) { padding-bottom: calc(var(--section-y) * 0.35); }
+.section--tight-bottom { padding-bottom: calc(var(--section-y) * 0.35); }
 .lead { font-size: var(--fs-md); color: var(--c-slate); }
 .section--navy .lead { color: var(--c-on-dark); }
 
