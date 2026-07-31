@@ -149,9 +149,12 @@ export function ctaBand({ title = "Потрібна юридична підтр�
 /* ---------- Google rating badge (real GBP numbers only — no invented quotes) ---------- */
 export function ratingBadge() {
   if (!site.rating || !site.reviewsUrl) return "";
-  return `<a class="rating-badge" href="${site.reviewsUrl}" target="_blank" rel="noopener nofollow">
-    <span class="rating-badge__stars" aria-hidden="true">★★★★★</span>
-    <span>${site.rating.value} — рейтинг на Google</span>
+  /* Stars follow the actual GBP value from config — never hardcoded five. */
+  const full = Math.max(0, Math.min(5, Math.round(parseFloat(site.rating.value) || 0)));
+  const stars = "★".repeat(full) + "☆".repeat(5 - full);
+  return `<a class="rating-badge" href="${site.reviewsUrl}" target="_blank" rel="noopener nofollow" aria-label="Рейтинг ${site.rating.value} з 5 на Google">
+    <span class="rating-badge__stars" aria-hidden="true">${stars}</span>
+    <span>${site.rating.value} на Google</span>
   </a>`;
 }
 
