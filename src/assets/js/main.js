@@ -506,6 +506,16 @@
     render();
   })();
 
+  /* ---- Phone-tap tracking: calls are the primary lead channel, so every
+     tel: link click (sticky bar, hero, header, CTA band) becomes a GA4 event
+     that can be promoted to a key event / Ads conversion. ---- */
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+    if (!a || !window.gtag) return;
+    var inSticky = a.closest(".sticky-cta") ? "sticky_bar" : "page";
+    window.gtag("event", "call_click", { placement: inSticky, page_path: location.pathname });
+  });
+
   /* ---- Current year in footer ---- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
