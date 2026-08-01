@@ -119,7 +119,7 @@ export default {
   },
 
   "podil-spilnoho-mayna-podruzhzhya": {
-    relatedArticles: ["podil-mayna-podruzhzhya", "podil-biznesu-pry-rozluchenni", "gromadyanskyy-shlyub", "spadkuvannya-podruzhzhyam"],
+    relatedArticles: ["podil-mayna-podruzhzhya", "podil-ipotechnoyi-kvartyry", "podil-biznesu-pry-rozluchenni", "spadkuvannya-podruzhzhyam"],
     metaTitle: "Поділ майна подружжя в Києві — адвокат | LEGIUS",
     h1: "Поділ спільного майна подружжя в Києві",
     heroSub: "Адвокат із поділу майна в Києві: захищаємо ваші інтереси при поділі нерухомості, бізнес-часток, авто й накопичень — від оцінки активів до виконання рішення суду.",
@@ -175,7 +175,7 @@ export default {
   },
 
   "styahnennya-ta-zmina-rozmiru-alimentiv": {
-    relatedArticles: ["alimenty-na-dytynu", "alimenty-zaborhovanist", "zmenshennya-rozmiru-alimentiv", "alimenty-na-druzhynu"],
+    relatedArticles: ["alimenty-na-dytynu", "alimenty-z-fop", "alimenty-zaborhovanist", "zmenshennya-rozmiru-alimentiv"],
     metaTitle: "Аліменти в Києві — адвокат зі стягнення та зміни | LEGIUS",
     h1: "Аліменти в Києві: стягнення, зміна розміру, борг",
     heroSub: "Адвокат з аліментів у Києві: стягуємо у частці від доходу або у твердій сумі, домагаємося зміни розміру та повертаємо заборгованість, зокрема з ухильників.",
