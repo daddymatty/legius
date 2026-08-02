@@ -105,11 +105,11 @@
 
   <div class="sec" id="bankSec">Оберіть свій банк</div>
   <div class="banklist" id="bankList">
-<button class="bankrow" data-pkg="com.ftband.mono"><span class="bmark" style="background:#111111;color:#ffffff">mono</span><span class="bname">monobank</span><span class="chev">›</span></button>
-<button class="bankrow" data-pkg="ua.privatbank.ap24"><span class="bmark" style="background:#173d33;color:#96c93d">24</span><span class="bname">Приват24</span><span class="chev">›</span></button>
-<button class="bankrow" data-pkg="ua.com.abank"><span class="bmark" style="background:#43ba4c;color:#0b0b0b">à</span><span class="bname">А-Банк</span><span class="chev">›</span></button>
-<button class="bankrow" data-pkg="com.fuib.android.spot.online"><span class="bmark" style="background:#d7262c;color:#ffffff">пумб</span><span class="bname">ПУМБ</span><span class="chev">›</span></button>
-<button class="bankrow" data-pkg="ua.alfabank.mobile.android"><span class="bmark" style="background:#2b23e0;color:#ffffff">sense</span><span class="bname">Sense Bank</span><span class="chev">›</span></button>
+<button class="bankrow" data-pkg="com.ftband.mono" data-ios="mono"><span class="bmark" style="background:#111111;color:#ffffff">mono</span><span class="bname">monobank</span><span class="chev">›</span></button>
+<button class="bankrow" data-pkg="ua.privatbank.ap24" data-ios="privat24"><span class="bmark" style="background:#173d33;color:#96c93d">24</span><span class="bname">Приват24</span><span class="chev">›</span></button>
+<button class="bankrow" data-pkg="ua.com.abank" data-ios="abank24"><span class="bmark" style="background:#43ba4c;color:#0b0b0b">à</span><span class="bname">А-Банк</span><span class="chev">›</span></button>
+<button class="bankrow" data-pkg="com.fuib.android.spot.online" data-ios="pumb-online.app"><span class="bmark" style="background:#d7262c;color:#ffffff">пумб</span><span class="bname">ПУМБ</span><span class="chev">›</span></button>
+<button class="bankrow" data-pkg="ua.alfabank.mobile.android" data-ios="ua.alfabank.mobile.ios"><span class="bmark" style="background:#2b23e0;color:#ffffff">sense</span><span class="bname">Sense Bank</span><span class="chev">›</span></button>
 <button class="bankrow" data-pkg=""><span class="bmark other">🏦</span><span class="bname">Інший банк</span><span class="chev">›</span></button>
   </div>
 
@@ -245,32 +245,25 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     var payload = ["BCD", "002", "1", "UCT", "", R.name, R.iban, "UAH" + payAmount, R.taxid, "", "", purpose].join("\n");
     var PAYLINK = "https://bank.gov.ua/qr/" + b64uEncode(payload);
 
+    /* Вибір банку працює на обох платформах:
+       Android — intent із package застосунку;
+       iOS — заміна https на власну URL-схему банку (mono://bank.gov.ua/qr/…),
+       застосунок відкриває платіж НБУ сам. «Інший банк» — універсальне посилання. */
     var isAndroid = /android/i.test(navigator.userAgent);
-    if (isAndroid) {
-      /* Android: кожна кнопка відкриває конкретний застосунок через intent */
-      document.querySelectorAll(".bankrow").forEach(function (el) {
-        el.onclick = function () {
-          var pkg = el.getAttribute("data-pkg");
-          if (pkg) {
-            location.href = "intent://" + PAYLINK.replace("https://", "") + "#Intent;scheme=https;package=" + pkg + ";end";
-          } else {
-            location.href = PAYLINK;
-          }
-        };
-      });
-    } else {
-      /* iOS/десктоп: систему не обдуриш — посилання НБУ відкриває той банк,
-         який зареєстрував його в ОС. Тому чесно: одна кнопка + підказка. */
-      document.getElementById("bankSec").textContent = "Оплата в застосунку";
-      var bl = document.getElementById("bankList");
-      bl.innerHTML =
-        '<button class="bankrow" id="payBtn"><span class="bmark" style="background:#0D0D0F;color:#ffffff">₴</span>' +
-        '<span class="bname">Відкрити застосунок банку</span><span class="chev">›</span></button>' +
-        '<div style="padding:10px 16px 14px;font-size:12px;color:var(--mut);line-height:1.5">' +
-        'Відкриється банк, який на вашому телефоні обробляє платіжні посилання НБУ. ' +
-        'Потрібен інший банк? Оплатіть за реквізитами нижче — копіюються одним дотиком.</div>';
-      document.getElementById("payBtn").onclick = function () { location.href = PAYLINK; };
-    }
+    var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+    document.querySelectorAll(".bankrow").forEach(function (el) {
+      el.onclick = function () {
+        var pkg = el.getAttribute("data-pkg");
+        var ios = el.getAttribute("data-ios");
+        if (isAndroid && pkg) {
+          location.href = "intent://" + PAYLINK.replace("https://", "") + "#Intent;scheme=https;package=" + pkg + ";end";
+        } else if (isIOS && ios) {
+          location.href = PAYLINK.replace("https", ios);
+        } else {
+          location.href = PAYLINK;
+        }
+      };
+    });
 
     /* QR для оплати з іншого пристрою */
     try {
