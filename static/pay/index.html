@@ -107,9 +107,10 @@
   <div class="banklist" id="bankList">
 <button class="bankrow" data-pkg="com.ftband.mono" data-ios="mono"><span class="bmark" style="background:#111111;color:#ffffff">mono</span><span class="bname">monobank</span><span class="chev">›</span></button>
 <button class="bankrow" data-pkg="ua.privatbank.ap24" data-ios="privat24"><span class="bmark" style="background:#173d33;color:#96c93d">24</span><span class="bname">Приват24</span><span class="chev">›</span></button>
-<button class="bankrow" data-pkg="ua.com.abank" data-ios="abank24"><span class="bmark" style="background:#43ba4c;color:#0b0b0b">à</span><span class="bname">А-Банк</span><span class="chev">›</span></button>
 <button class="bankrow" data-pkg="com.fuib.android.spot.online" data-ios="pumb-online.app"><span class="bmark" style="background:#d7262c;color:#ffffff">пумб</span><span class="bname">ПУМБ</span><span class="chev">›</span></button>
+<button class="bankrow" data-pkg="ua.oschadbank.flumo" data-ios=""><span class="bmark" style="background:#00a651;color:#ffffff">ощад</span><span class="bname">Ощадбанк</span><span class="chev">›</span></button>
 <button class="bankrow" data-pkg="ua.alfabank.mobile.android" data-ios="ua.alfabank.mobile.ios"><span class="bmark" style="background:#2b23e0;color:#ffffff">sense</span><span class="bname">Sense Bank</span><span class="chev">›</span></button>
+<button class="bankrow" data-pkg="ua.com.abank" data-ios="abank24"><span class="bmark" style="background:#43ba4c;color:#0b0b0b">à</span><span class="bname">А-Банк</span><span class="chev">›</span></button>
 <button class="bankrow" id="moreBanks" type="button"><span class="bmark other">🏦</span><span class="bname">Інші банки</span><span class="chev" id="moreChev">⌄</span></button>
 <div id="moreList" hidden></div>
   </div>
@@ -249,21 +250,21 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     /* Додаткові банки з підтримкою платіжних посилань НБУ.
        android — package для intent; ios — URL-схема застосунку (порожня = на iOS не показуємо). */
     var EXTRA_BANKS = [
-      { n: "Укргазбанк", a: "com.ugb.app", i: "ecobank" },
-      { n: "Укрсіббанк", a: "com.ukrsibbank.uso.android", i: "com.ukrsibbank.ukrsibonline.new" },
-      { n: "izibank", a: "ua.izibank.app", i: "izibank" },
-      { n: "Банк Кредит Дніпро", a: "com.creditdnepr.mb", i: "freebank" },
-      { n: "Глобус Банк", a: "com.t18.bone.personal.globus", i: "globus" },
-      { n: "Креді Агріколь", a: "ua.creditagricole.mobile.app", i: "" },
-      { n: "ОТП Банк", a: "ua.otpbank.android", i: "otpbankua" },
-      { n: "Банк Восток", a: "com.vostok.bv", i: "vostok" },
-      { n: "Грант", a: "ua.grant.smart", i: "com.googleusercontent.apps.456251266404-2rofj361g8gfi6qsjcf9qjq768f3sd9v" },
-      { n: "Ідея Банк", a: "ua.ideabank.obank", i: "com.idea.obank" },
-      { n: "РАДАБАНК", a: "com.radabank.rb24", i: "radabank" },
-      { n: "ПРАВЕКС Банк", a: "ua.com.pravex.online", i: "fb181676614715502" },
-      { n: "МТБ Банк", a: "com.ua.mtb.bank", i: "mtb360" },
-      { n: "Winbank Ukraine", a: "ua.piraeusbank.mobile.app.pbu", i: "" },
-      { n: "Altbank Private", a: "by.st.alt.fiz", i: "" }
+      { n: "Укргазбанк", a: "com.ugb.app", i: "ecobank", c: "#009b3a", t: "#fff", m: "УГБ" },
+      { n: "Укрсіббанк", a: "com.ukrsibbank.uso.android", i: "com.ukrsibbank.ukrsibonline.new", c: "#008859", t: "#fff", m: "УС" },
+      { n: "izibank", a: "ua.izibank.app", i: "izibank", c: "#101010", t: "#ffd600", m: "izi" },
+      { n: "Банк Кредит Дніпро", a: "com.creditdnepr.mb", i: "freebank", c: "#00539f", t: "#fff", m: "КД" },
+      { n: "Глобус Банк", a: "com.t18.bone.personal.globus", i: "globus", c: "#f5821f", t: "#fff", m: "ГЛ" },
+      { n: "Креді Агріколь", a: "ua.creditagricole.mobile.app", i: "", c: "#009597", t: "#fff", m: "CA" },
+      { n: "ОТП Банк", a: "ua.otpbank.android", i: "otpbankua", c: "#52ae30", t: "#fff", m: "OTP" },
+      { n: "Банк Восток", a: "com.vostok.bv", i: "vostok", c: "#1b3d6d", t: "#fff", m: "БВ" },
+      { n: "Грант", a: "ua.grant.smart", i: "com.googleusercontent.apps.456251266404-2rofj361g8gfi6qsjcf9qjq768f3sd9v", c: "#4a4f5a", t: "#fff", m: "ГР" },
+      { n: "Ідея Банк", a: "ua.ideabank.obank", i: "com.idea.obank", c: "#ffd200", t: "#111", m: "ІБ" },
+      { n: "РАДАБАНК", a: "com.radabank.rb24", i: "radabank", c: "#e31e24", t: "#fff", m: "РБ" },
+      { n: "ПРАВЕКС Банк", a: "ua.com.pravex.online", i: "fb181676614715502", c: "#0066b3", t: "#fff", m: "ПР" },
+      { n: "МТБ Банк", a: "com.ua.mtb.bank", i: "mtb360", c: "#0072bc", t: "#fff", m: "МТБ" },
+      { n: "Winbank Ukraine", a: "ua.piraeusbank.mobile.app.pbu", i: "", c: "#01426a", t: "#fff", m: "WB" },
+      { n: "Altbank Private", a: "by.st.alt.fiz", i: "", c: "#111111", t: "#fff", m: "ALT" }
     ];
 
     /* Вибір банку працює на обох платформах:
@@ -277,13 +278,16 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     var moreList = document.getElementById("moreList");
     EXTRA_BANKS.forEach(function (bk) {
       if (isIOS && !bk.i) return; /* без iOS-схеми на iPhone не покажемо */
-      var init = bk.n.replace(/Банк\s+|\s+Банк|\s+Ukraine|\s+Private/g, "").trim().slice(0, 2);
       var btn = document.createElement("button");
       btn.className = "bankrow";
       btn.setAttribute("data-pkg", bk.a);
       btn.setAttribute("data-ios", bk.i);
-      btn.innerHTML = '<span class="bmark other" style="font-size:14px"></span><span class="bname"></span><span class="chev">›</span>';
-      btn.querySelector(".bmark").textContent = init;
+      btn.innerHTML = '<span class="bmark"></span><span class="bname"></span><span class="chev">›</span>';
+      var mark = btn.querySelector(".bmark");
+      mark.textContent = bk.m;
+      mark.style.background = bk.c;
+      mark.style.color = bk.t;
+      if (bk.m.length > 2) mark.style.fontSize = "12px";
       btn.querySelector(".bname").textContent = bk.n;
       moreList.appendChild(btn);
     });
@@ -300,6 +304,10 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
 
     document.querySelectorAll(".bankrow").forEach(function (el) {
       if (el.id === "moreBanks") return;
+      if (isIOS && el.hasAttribute("data-pkg") && !el.getAttribute("data-ios")) {
+        el.style.display = "none"; /* без iOS-схеми кнопка відкрила б чужий банк */
+        return;
+      }
       el.onclick = function () {
         var pkg = el.getAttribute("data-pkg");
         var ios = el.getAttribute("data-ios");
