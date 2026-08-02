@@ -106,6 +106,12 @@ async function build() {
   /* Root /favicon.ico — browsers and Google request it here by default. */
   await cp(path.join(__dirname, "src/assets/img/favicon.ico"), path.join(DIST, "favicon.ico"));
 
+  /* Static passthrough pages (e.g. /pay/ — сторінка рахунків): copied as-is,
+     self-contained, noindex, deliberately NOT у sitemap. */
+  if (existsSync(path.join(__dirname, "static"))) {
+    await cp(path.join(__dirname, "static"), DIST, { recursive: true });
+  }
+
   /* Design preview/moodboard is intentionally NOT deployed (kept only in repo
      as a local reference; it contained stale demo figures and noindex pages). */
 
