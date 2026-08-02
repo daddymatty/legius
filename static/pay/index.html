@@ -266,10 +266,17 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       bl.innerHTML =
         '<button class="bankrow" id="payBtn"><span class="bmark" style="background:#0D0D0F;color:#ffffff">₴</span>' +
         '<span class="bname">Відкрити застосунок банку</span><span class="chev">›</span></button>' +
+        '<button class="bankrow" id="payNbu"><span class="bmark other">🏦</span>' +
+        '<span class="bname">Інший банк — через сторінку НБУ</span><span class="chev">›</span></button>' +
         '<div style="padding:10px 16px 14px;font-size:12px;color:var(--mut);line-height:1.5">' +
-        'Відкриється банк, який на вашому телефоні обробляє платіжні посилання НБУ. ' +
-        'Потрібен інший банк? Скануйте QR нижче в його застосунку або оплатіть за реквізитами.</div>';
+        'Перша кнопка відкриє банк, закріплений за платіжними посиланнями на вашому телефоні. ' +
+        'Друга — сторінку Нацбанку з деталями платежу. Також можна сплатити за реквізитами нижче.</div>';
       document.getElementById("payBtn").onclick = function () { location.href = PAYLINK; };
+      /* відкладена навігація: iOS тоді не віддає перехід застосунку-перехоплювачу,
+         а відкриває сторінку НБУ в браузері */
+      document.getElementById("payNbu").onclick = function () {
+        setTimeout(function () { location.href = PAYLINK; }, 80);
+      };
     }
 
     /* QR для оплати з іншого пристрою */
