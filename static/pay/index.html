@@ -89,7 +89,7 @@
     <div class="logo">L<span class="e"><i></i><i></i><i></i></span>GIUS</div>
   </div>
 
-  <div class="hint" id="hint">Суму уточніть у повідомленні від юриста.</div>
+  <div class="hint" id="hint">Посилання на рахунок неповне.<br>Попросіть юриста надіслати його ще раз —<br>або зателефонуйте нам: <a href="tel:+380688884400" style="color:var(--accent);font-weight:700;text-decoration:none">+38 (068) 888 44 00</a></div>
 
   <div class="amount" id="amountCard">
     <div class="lbl">Сума до сплати</div>
@@ -109,8 +109,8 @@
 <button class="bankrow" data-pkg=""><span class="bmark other">🏦</span><span class="bname">Інший банк</span><span class="chev">›</span></button>
   </div>
 
-  <div class="sec">Реквізити на оплату</div>
-  <div class="req">
+  <div class="sec" id="reqSec">Реквізити на оплату</div>
+  <div class="req" id="reqBlock">
     <div class="row"><div><div class="lbl">Одержувач</div><div class="val" id="recvVal"></div></div><button class="copy" id="recvCopy" data-c="" aria-label="Копіювати одержувача">⧉</button></div>
     <div class="row"><div><div class="lbl">РНОКПП</div><div class="val" id="taxVal"></div></div><button class="copy" id="taxCopy" data-c="" aria-label="Копіювати РНОКПП">⧉</button></div>
     <div class="row"><div><div class="lbl" id="ibanLbl">IBAN</div><div class="val" id="ibanVal"></div></div><button class="copy" id="ibanCopy" data-c="" aria-label="Копіювати IBAN">⧉</button></div>
@@ -268,7 +268,10 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     document.getElementById("bankSec").hidden = true;
     document.getElementById("bankList").hidden = true;
     document.getElementById("qrWrap").hidden = true;
+    document.getElementById("reqSec").hidden = true;
+    document.getElementById("reqBlock").hidden = true;
     document.getElementById("hint").style.display = "block";
+    document.getElementById("payFooter").textContent = "Юридична компанія «ЛЕГІУС» · legius.com.ua";
   }
 
   }); /* end then(fragment) */
