@@ -110,7 +110,8 @@
 <button class="bankrow" data-pkg="ua.com.abank" data-ios="abank24"><span class="bmark" style="background:#43ba4c;color:#0b0b0b">à</span><span class="bname">А-Банк</span><span class="chev">›</span></button>
 <button class="bankrow" data-pkg="com.fuib.android.spot.online" data-ios="pumb-online.app"><span class="bmark" style="background:#d7262c;color:#ffffff">пумб</span><span class="bname">ПУМБ</span><span class="chev">›</span></button>
 <button class="bankrow" data-pkg="ua.alfabank.mobile.android" data-ios="ua.alfabank.mobile.ios"><span class="bmark" style="background:#2b23e0;color:#ffffff">sense</span><span class="bname">Sense Bank</span><span class="chev">›</span></button>
-<button class="bankrow" data-pkg=""><span class="bmark other">🏦</span><span class="bname">Інший банк</span><span class="chev">›</span></button>
+<button class="bankrow" id="moreBanks" type="button"><span class="bmark other">🏦</span><span class="bname">Інші банки</span><span class="chev" id="moreChev">⌄</span></button>
+<div id="moreList" hidden></div>
   </div>
 
   <div class="sec" id="reqSec">Реквізити на оплату</div>
@@ -245,13 +246,60 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     var payload = ["BCD", "002", "1", "UCT", "", R.name, R.iban, "UAH" + payAmount, R.taxid, "", "", purpose].join("\n");
     var PAYLINK = "https://bank.gov.ua/qr/" + b64uEncode(payload);
 
+    /* Додаткові банки з підтримкою платіжних посилань НБУ.
+       android — package для intent; ios — URL-схема застосунку (порожня = на iOS не показуємо). */
+    var EXTRA_BANKS = [
+      { n: "Укргазбанк", a: "com.ugb.app", i: "ecobank" },
+      { n: "Укрсіббанк", a: "com.ukrsibbank.uso.android", i: "com.ukrsibbank.ukrsibonline.new" },
+      { n: "izibank", a: "ua.izibank.app", i: "izibank" },
+      { n: "Банк Кредит Дніпро", a: "com.creditdnepr.mb", i: "freebank" },
+      { n: "Глобус Банк", a: "com.t18.bone.personal.globus", i: "globus" },
+      { n: "Креді Агріколь", a: "ua.creditagricole.mobile.app", i: "" },
+      { n: "ОТП Банк", a: "ua.otpbank.android", i: "otpbankua" },
+      { n: "Банк Восток", a: "com.vostok.bv", i: "vostok" },
+      { n: "Грант", a: "ua.grant.smart", i: "com.googleusercontent.apps.456251266404-2rofj361g8gfi6qsjcf9qjq768f3sd9v" },
+      { n: "Ідея Банк", a: "ua.ideabank.obank", i: "com.idea.obank" },
+      { n: "РАДАБАНК", a: "com.radabank.rb24", i: "radabank" },
+      { n: "ПРАВЕКС Банк", a: "ua.com.pravex.online", i: "fb181676614715502" },
+      { n: "МТБ Банк", a: "com.ua.mtb.bank", i: "mtb360" },
+      { n: "Winbank Ukraine", a: "ua.piraeusbank.mobile.app.pbu", i: "" },
+      { n: "Altbank Private", a: "by.st.alt.fiz", i: "" }
+    ];
+
     /* Вибір банку працює на обох платформах:
        Android — intent із package застосунку;
        iOS — заміна https на власну URL-схему банку (mono://bank.gov.ua/qr/…),
        застосунок відкриває платіж НБУ сам. «Інший банк» — універсальне посилання. */
     var isAndroid = /android/i.test(navigator.userAgent);
     var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+
+    /* рендер розгортуваного списку «Інші банки» */
+    var moreList = document.getElementById("moreList");
+    EXTRA_BANKS.forEach(function (bk) {
+      if (isIOS && !bk.i) return; /* без iOS-схеми на iPhone не покажемо */
+      var init = bk.n.replace(/Банк\s+|\s+Банк|\s+Ukraine|\s+Private/g, "").trim().slice(0, 2);
+      var btn = document.createElement("button");
+      btn.className = "bankrow";
+      btn.setAttribute("data-pkg", bk.a);
+      btn.setAttribute("data-ios", bk.i);
+      btn.innerHTML = '<span class="bmark other" style="font-size:14px"></span><span class="bname"></span><span class="chev">›</span>';
+      btn.querySelector(".bmark").textContent = init;
+      btn.querySelector(".bname").textContent = bk.n;
+      moreList.appendChild(btn);
+    });
+    /* універсальний запасний рядок */
+    var uni = document.createElement("button");
+    uni.className = "bankrow";
+    uni.innerHTML = '<span class="bmark other">🏦</span><span class="bname">Не знайшли свій банк?</span><span class="chev">›</span>';
+    moreList.appendChild(uni);
+
+    document.getElementById("moreBanks").onclick = function () {
+      moreList.hidden = !moreList.hidden;
+      document.getElementById("moreChev").textContent = moreList.hidden ? "⌄" : "⌃";
+    };
+
     document.querySelectorAll(".bankrow").forEach(function (el) {
+      if (el.id === "moreBanks") return;
       el.onclick = function () {
         var pkg = el.getAttribute("data-pkg");
         var ios = el.getAttribute("data-ios");
