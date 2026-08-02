@@ -160,9 +160,10 @@
     return t;
   }
   function logInvoice(d, retried) {
-    var tok = statsToken(false);
+    /* статистика — опційна: без збереженого кода працюємо мовчки, нічого не питаємо */
+    var tok = localStorage.getItem("legius_stats_token") || "";
     var st = document.getElementById("logStatus");
-    if (!tok) { st.textContent = "⚠ Не записано в статистику: код доступу не введено."; return; }
+    if (!tok) { st.textContent = ""; return; }
     st.textContent = "Записуємо в статистику…";
     fetch(WORKER + "/invoice", {
       method: "POST",
