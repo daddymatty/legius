@@ -111,9 +111,9 @@
 
   <div class="sec">Реквізити на оплату</div>
   <div class="req">
-    <div class="row"><div><div class="lbl">Одержувач</div><div class="val">ФОП Гордієнко Олександр Сергійович</div></div><button class="copy" data-c="ФОП Гордієнко Олександр Сергійович" aria-label="Копіювати одержувача">⧉</button></div>
-    <div class="row"><div><div class="lbl">РНОКПП</div><div class="val">3540107172</div></div><button class="copy" data-c="3540107172" aria-label="Копіювати РНОКПП">⧉</button></div>
-    <div class="row"><div><div class="lbl">IBAN · АТ Універсал Банк</div><div class="val">UA533220010000026005310108744</div></div><button class="copy" data-c="UA533220010000026005310108744" aria-label="Копіювати IBAN">⧉</button></div>
+    <div class="row"><div><div class="lbl">Одержувач</div><div class="val" id="recvVal"></div></div><button class="copy" id="recvCopy" data-c="" aria-label="Копіювати одержувача">⧉</button></div>
+    <div class="row"><div><div class="lbl">РНОКПП</div><div class="val" id="taxVal"></div></div><button class="copy" id="taxCopy" data-c="" aria-label="Копіювати РНОКПП">⧉</button></div>
+    <div class="row"><div><div class="lbl" id="ibanLbl">IBAN</div><div class="val" id="ibanVal"></div></div><button class="copy" id="ibanCopy" data-c="" aria-label="Копіювати IBAN">⧉</button></div>
     <div class="row"><div><div class="lbl">Призначення платежу</div><div class="val" id="purposeVal">Оплата за юридичні послуги</div></div><button class="copy" id="purposeCopy" data-c="Оплата за юридичні послуги" aria-label="Копіювати призначення">⧉</button></div>
   </div>
 
@@ -122,7 +122,7 @@
     <p>Відкрили на компʼютері? Скануйте QR<br>у застосунку свого банку</p>
   </div>
 
-  <footer>ФОП Гордієнко Олександр Сергійович · +380503286730</footer>
+  <footer id="payFooter"></footer>
 </div>
 <div class="toast" id="toast">Скопійовано</div>
 
@@ -132,9 +132,25 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
 </script>
 <script>
 (function () {
-  var RECEIVER = "ФОП Гордієнко Олександр Сергійович";
-  var IBAN = "UA533220010000026005310108744";
-  var TAXID = "3540107172";
+  /* Довідник отримувачів. Ключ передається у полі "r" фрагмента.
+     Додаючи юриста сюди — продублюй його в /pay/new/ (конструктор). */
+  var RECIPIENTS = {
+    hordiienko: {
+      name: "ФОП Гордієнко Олександр Сергійович",
+      iban: "UA533220010000026005310108744",
+      bank: "АТ Універсал Банк",
+      taxid: "3540107172",
+      phone: "+380503286730"
+    },
+    kobylianskyi: {
+      name: "ФОП Кобилянський Михайло Вікторович",
+      iban: "UA523220010000026000310057425",
+      bank: "АТ Універсал Банк",
+      taxid: "3506211556",
+      phone: "+380688884400"
+    }
+  };
+  var DEF_RECIPIENT = "hordiienko";
   var DEF_SVC = "Юридичні послуги";
   var DEF_PURPOSE = "Оплата за юридичні послуги";
 
@@ -162,15 +178,25 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
         data = {
           amount: a,
           svc: (parsed.s ? String(parsed.s) : DEF_SVC).slice(0, 120),
-          purpose: (parsed.p ? String(parsed.p) : DEF_PURPOSE).slice(0, 140)
+          purpose: (parsed.p ? String(parsed.p) : DEF_PURPOSE).slice(0, 140),
+          recipient: RECIPIENTS[parsed.r] ? parsed.r : DEF_RECIPIENT
         };
       }
     }
   } catch (e) { data = null; }
 
   var purpose = data ? data.purpose : DEF_PURPOSE;
+  var R = RECIPIENTS[data ? data.recipient : DEF_RECIPIENT];
   document.getElementById("purposeVal").textContent = purpose;
   document.getElementById("purposeCopy").setAttribute("data-c", purpose);
+  document.getElementById("recvVal").textContent = R.name;
+  document.getElementById("recvCopy").setAttribute("data-c", R.name);
+  document.getElementById("taxVal").textContent = R.taxid;
+  document.getElementById("taxCopy").setAttribute("data-c", R.taxid);
+  document.getElementById("ibanLbl").textContent = "IBAN · " + R.bank;
+  document.getElementById("ibanVal").textContent = R.iban;
+  document.getElementById("ibanCopy").setAttribute("data-c", R.iban);
+  document.getElementById("payFooter").textContent = R.name + " · " + R.phone;
 
   if (data) {
     /* сума на екрані: 7 000.00 */
@@ -183,7 +209,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     /* платіжне посилання НБУ (Постанова №11 від 01.02.2021, версія 002):
        сума в payload — без хвостових нулів, цілі без ".00" */
     var payAmount = String(n);
-    var payload = ["BCD", "002", "1", "UCT", "", RECEIVER, IBAN, "UAH" + payAmount, TAXID, "", "", purpose].join("\n");
+    var payload = ["BCD", "002", "1", "UCT", "", R.name, R.iban, "UAH" + payAmount, R.taxid, "", "", purpose].join("\n");
     var PAYLINK = "https://bank.gov.ua/qr/" + b64uEncode(payload);
 
     var isAndroid = /android/i.test(navigator.userAgent);
