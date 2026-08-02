@@ -133,6 +133,13 @@
       iban: "UA523220010000026000310057425",
       bank: "АТ Універсал Банк",
       taxid: "3506211556"
+    },
+    slobodianin: {
+      label: "Максим Слободянін — ФОП",
+      name: "ФОП Слободянін Максим Вікторович",
+      iban: "UA473220010000026005320028751",
+      bank: "АТ Універсал Банк",
+      taxid: "3492704158"
     }
   };
   var PAY_URL = location.origin + "/pay/";
@@ -140,6 +147,27 @@
   function b64uEncode(s) {
     var bin = unescape(encodeURIComponent(s));
     return btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  }
+  function bytesToB64u(u8) {
+    var bin = "";
+    for (var i = 0; i < u8.length; i++) bin += String.fromCharCode(u8[i]);
+    return btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  }
+  var RSHORT = { hordiienko: "h", kobylianskyi: "k", slobodianin: "s" };
+  var DEF_SVC = "Юридичні послуги";
+  var DEF_PURPOSE = "Оплата за юридичні послуги";
+  /* компактний фрагмент: дефолти опускаємо, кирилицю стискаємо deflate-ом */
+  function makeFragment(d) {
+    var compact = [d.a, RSHORT[d.r] || d.r, d.s === DEF_SVC ? "" : d.s, d.p === DEF_PURPOSE ? "" : d.p].join("\n");
+    var plain = "c" + b64uEncode(compact);
+    if (!window.CompressionStream) return Promise.resolve(plain);
+    return new Response(new Blob([compact]).stream().pipeThrough(new CompressionStream("deflate-raw")))
+      .arrayBuffer()
+      .then(function (buf) {
+        var z = "z" + bytesToB64u(new Uint8Array(buf));
+        return z.length < plain.length ? z : plain;
+      })
+      .catch(function () { return plain; });
   }
 
   var sel = document.getElementById("lawyer");
@@ -174,11 +202,13 @@
   var currentLink = "";
   makeBtn.onclick = function () {
     var a = amount.value.trim().replace(",", ".");
-    var d = { a: a, s: svc.value.trim() || "Юридичні послуги", p: purpose.value.trim(), r: sel.value };
-    currentLink = PAY_URL + "#" + b64uEncode(JSON.stringify(d));
-    document.getElementById("linkBox").textContent = currentLink;
-    document.getElementById("result").classList.add("show");
-    document.getElementById("result").scrollIntoView({ behavior: "smooth", block: "start" });
+    var d = { a: a, s: svc.value.trim() || DEF_SVC, p: purpose.value.trim(), r: sel.value };
+    makeFragment(d).then(function (fragStr) {
+      currentLink = PAY_URL + "#" + fragStr;
+      document.getElementById("linkBox").textContent = currentLink;
+      document.getElementById("result").classList.add("show");
+      document.getElementById("result").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   };
 
   function copyText(t) {

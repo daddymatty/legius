@@ -148,6 +148,13 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       bank: "АТ Універсал Банк",
       taxid: "3506211556",
       phone: "+380688884400"
+    },
+    slobodianin: {
+      name: "ФОП Слободянін Максим Вікторович",
+      iban: "UA473220010000026005320028751",
+      bank: "АТ Універсал Банк",
+      taxid: "3492704158",
+      phone: "+380688884400"
     }
   };
   var DEF_RECIPIENT = "hordiienko";
@@ -162,17 +169,39 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
     }).join(""));
   }
+  function b64uToBytes(s) {
+    s = s.replace(/-/g, "+").replace(/_/g, "/");
+    while (s.length % 4) s += "=";
+    var bin = atob(s), u = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+    return u;
+  }
+  var RSHORT = { h: "hordiienko", k: "kobylianskyi", s: "slobodianin" };
+  /* компактний формат: "сума\nюрист\nпослуга\nпризначення" (порожнє = дефолт) */
+  function parseCompact(text) {
+    var f = text.split("\n");
+    return { a: f[0] || "", r: RSHORT[f[1]] || f[1] || "", s: f[2] || "", p: f[3] || "" };
+  }
+  function readFragment(frag) {
+    if (frag.charAt(0) === "z" && window.DecompressionStream) {
+      return new Response(
+        new Blob([b64uToBytes(frag.slice(1))]).stream().pipeThrough(new DecompressionStream("deflate-raw"))
+      ).text().then(parseCompact);
+    }
+    if (frag.charAt(0) === "c") return Promise.resolve(parseCompact(b64uDecode(frag.slice(1))));
+    return Promise.resolve(JSON.parse(b64uDecode(frag))); /* легасі-формат перших рахунків */
+  }
   function b64uEncode(s) {
     var bin = unescape(encodeURIComponent(s));
     return btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
   }
 
-  /* дані рахунку з фрагмента URL */
+  /* дані рахунку з фрагмента URL (асинхронно через можливе розпакування) */
+  var frag = location.hash.slice(1);
+  (frag ? readFragment(frag) : Promise.resolve(null)).catch(function () { return null; }).then(function (parsed) {
   var data = null;
   try {
-    var frag = location.hash.slice(1);
-    if (frag) {
-      var parsed = JSON.parse(b64uDecode(frag));
+    if (parsed) {
       var a = String(parsed.a == null ? "" : parsed.a).replace(",", ".").trim();
       if (/^\d+(\.\d{1,2})?$/.test(a) && parseFloat(a) > 0) {
         data = {
@@ -241,6 +270,8 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     document.getElementById("qrWrap").hidden = true;
     document.getElementById("hint").style.display = "block";
   }
+
+  }); /* end then(fragment) */
 
   /* копіювання реквізитів */
   document.querySelectorAll(".copy").forEach(function (b) {
