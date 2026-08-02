@@ -91,7 +91,7 @@
     </div>
     <div class="field">
       <label for="purpose">Призначення платежу</label>
-      <textarea id="purpose" maxlength="140" placeholder="Напр.: Оплата за юридичні послуги згідно з договором №12 від 01.08.2026"></textarea>
+      <textarea id="purpose" maxlength="140">Сплата за юридичні послуги</textarea>
       <div class="meta"><span>заповнюється вручну — потрапить у платіж клієнта</span><span id="pCount">0/140</span></div>
     </div>
     <button class="btn" id="makeBtn" disabled>Створити посилання на оплату</button>
@@ -155,7 +155,7 @@
   }
   var RSHORT = { hordiienko: "h", kobylianskyi: "k", slobodianin: "s" };
   var DEF_SVC = "Юридичні послуги";
-  var DEF_PURPOSE = "Оплата за юридичні послуги";
+  var DEF_PURPOSE = "Сплата за юридичні послуги";
   /* компактний фрагмент: дефолти опускаємо, кирилицю стискаємо deflate-ом */
   function makeFragment(d) {
     var compact = [d.a, RSHORT[d.r] || d.r, d.s === DEF_SVC ? "" : d.s, d.p === DEF_PURPOSE ? "" : d.p].join("\n");
@@ -198,6 +198,7 @@
     makeBtn.disabled = !(amountOk() && purpose.value.trim().length >= 5);
   }
   amount.oninput = validate; purpose.oninput = validate; svc.oninput = validate;
+  validate();
 
   var currentLink = "";
   makeBtn.onclick = function () {
