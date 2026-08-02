@@ -107,11 +107,12 @@
     <div class="row2" style="margin-top:10px">
       <button class="btn2" id="copyMsg">Скопіювати повідомлення для клієнта</button>
     </div>
+    <div class="note" id="logStatus"></div>
     <div class="note">Клієнт на сторінці нічого не редагує — лише обирає банк і платить.
       Одне посилання = один рахунок; для нового рахунку сформуйте нове посилання.</div>
   </div>
 
-  <footer>Внутрішня сторінка LEGIUS · не для клієнтів</footer>
+  <footer>Внутрішня сторінка LEGIUS · не для клієнтів · <a href="/pay/stats/" style="color:var(--accent);text-decoration:none;font-weight:700">Статистика</a></footer>
 </div>
 <div class="toast" id="toast">Скопійовано</div>
 
@@ -143,6 +144,37 @@
     }
   };
   var PAY_URL = location.origin + "/pay/";
+  var WORKER = "https://legius-lead.mexn1n1.workers.dev";
+
+  /* спільний журнал рахунків: запис у воркер під кодом доступу */
+  function statsToken(force) {
+    var t = localStorage.getItem("legius_stats_token") || "";
+    if (!t || force) {
+      t = (prompt("Код доступу до статистики LEGIUS:") || "").trim();
+      if (t) localStorage.setItem("legius_stats_token", t);
+    }
+    return t;
+  }
+  function logInvoice(d, retried) {
+    var tok = statsToken(false);
+    var st = document.getElementById("logStatus");
+    if (!tok) { st.textContent = "⚠ Не записано в статистику: код доступу не введено."; return; }
+    st.textContent = "Записуємо в статистику…";
+    fetch(WORKER + "/invoice", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Stats-Token": tok },
+      body: JSON.stringify(d)
+    }).then(function (r) {
+      if (r.status === 401 && !retried) {
+        localStorage.removeItem("legius_stats_token");
+        statsToken(true);
+        return logInvoice(d, true);
+      }
+      st.textContent = r.ok ? "✓ Записано в спільну статистику" : "⚠ Не записано в статистику (код невірний?)";
+    }).catch(function () {
+      st.textContent = "⚠ Не записано в статистику: немає звʼязку. Посилання при цьому робоче.";
+    });
+  }
 
   function b64uEncode(s) {
     var bin = unescape(encodeURIComponent(s));
@@ -209,6 +241,7 @@
       document.getElementById("linkBox").textContent = currentLink;
       document.getElementById("result").classList.add("show");
       document.getElementById("result").scrollIntoView({ behavior: "smooth", block: "start" });
+      logInvoice(d);
     });
   };
 

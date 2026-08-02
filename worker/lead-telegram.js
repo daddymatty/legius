@@ -16,6 +16,11 @@
  *                      the cf-turnstile-response token before sending (anti-spam)
  *   ALLOWED_ORIGINS  — comma-separated list (defaults below)
  *
+ * Invoice stats (сторінки /pay/new/ та /pay/stats/ на сайті):
+ *   INVOICES     — KV namespace binding (Workers & Pages → KV → створити
+ *                  namespace, у воркері Settings → Bindings → KV → name INVOICES)
+ *   STATS_TOKEN  — секрет: код доступу, який юристи вводять на сторінках
+ *
  * Optional Zoho CRM integration (enabled when all three secrets are set):
  *   ZOHO_CLIENT_ID     — Self Client ID (api-console.zoho.eu)
  *   ZOHO_CLIENT_SECRET — Self Client secret
@@ -34,8 +39,8 @@ function corsHeaders(origin, allowed) {
   const ok = origin && allowed.includes(origin);
   return {
     "Access-Control-Allow-Origin": ok ? origin : allowed[0],
-    "Access-Control-Allow-Methods": "POST, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, X-Stats-Token",
     "Access-Control-Max-Age": "86400",
   };
 }
@@ -105,6 +110,71 @@ export default {
       });
 
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
+
+    /* ---------- Журнал рахунків (/pay/) ---------- */
+    const url = new URL(request.url);
+    if (url.pathname === "/invoice" || url.pathname === "/invoices") {
+      if (!env.INVOICES) return json({ ok: false, error: "kv_not_bound" }, 500);
+      if (!env.STATS_TOKEN || request.headers.get("X-Stats-Token") !== env.STATS_TOKEN) {
+        return json({ ok: false, error: "auth" }, 401);
+      }
+      const kyivMonth = (d) =>
+        new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Kyiv", year: "numeric", month: "2-digit" })
+          .format(d); /* → "2026-08" */
+
+      if (url.pathname === "/invoice" && request.method === "POST") {
+        let inv;
+        try { inv = await request.json(); } catch { return json({ ok: false, error: "json" }, 400); }
+        const r = String(inv.r || "").slice(0, 30);
+        const a = String(inv.a || "").slice(0, 12);
+        if (!/^[a-z]+$/.test(r) || !/^\d+(\.\d{1,2})?$/.test(a)) {
+          return json({ ok: false, error: "fields" }, 422);
+        }
+        const rec = {
+          t: Date.now(),
+          r,
+          a,
+          s: String(inv.s || "").slice(0, 120),
+          p: String(inv.p || "").slice(0, 140),
+        };
+        const key = `inv:${kyivMonth(new Date(rec.t))}:${rec.t}:${Math.random().toString(36).slice(2, 8)}`;
+        await env.INVOICES.put(key, JSON.stringify(rec));
+        /* дубль у Telegram — не блокує відповідь */
+        if (env.BOT_TOKEN && env.CHAT_ID) {
+          const NAMES = { hordiienko: "Гордієнко", kobylianskyi: "Кобилянський", slobodianin: "Слободянін" };
+          const msg = {
+            chat_id: env.CHAT_ID,
+            text: `🧾 <b>Рахунок</b> · ${esc(NAMES[r] || r)} — <b>${esc(a)} грн</b>\n${esc(rec.p)}`,
+            parse_mode: "HTML",
+            disable_web_page_preview: true,
+          };
+          if (env.THREAD_ID) msg.message_thread_id = Number(env.THREAD_ID);
+          ctx.waitUntil(
+            fetch(`https://api.telegram.org/bot${env.BOT_TOKEN}/sendMessage`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(msg),
+            }).catch(() => {})
+          );
+        }
+        return json({ ok: true });
+      }
+
+      if (url.pathname === "/invoices" && request.method === "GET") {
+        const month = url.searchParams.get("month") || kyivMonth(new Date());
+        if (!/^\d{4}-\d{2}$/.test(month)) return json({ ok: false, error: "month" }, 400);
+        const list = await env.INVOICES.list({ prefix: `inv:${month}:`, limit: 1000 });
+        const invoices = [];
+        for (const k of list.keys) {
+          const v = await env.INVOICES.get(k.name);
+          if (v) { try { invoices.push(JSON.parse(v)); } catch {} }
+        }
+        invoices.sort((x, y) => y.t - x.t);
+        return json({ ok: true, month, invoices });
+      }
+      return json({ ok: false, error: "method" }, 405);
+    }
+
     if (request.method !== "POST") return json({ ok: false, error: "method" }, 405);
 
     let data;
