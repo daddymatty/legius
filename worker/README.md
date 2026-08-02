@@ -81,3 +81,17 @@ wrangler deploy worker/lead-telegram.js --name legius-lead
 wrangler secret put BOT_TOKEN   # вставити токен
 wrangler secret put CHAT_ID     # вставити chat_id
 ```
+
+## Статистика рахунків (/pay/new/ + /pay/stats/)
+
+Щоб увімкнути спільний журнал рахунків, у Cloudflare Dashboard:
+
+1. **KV namespace:** Workers & Pages → KV → Create namespace → назва `legius-invoices`.
+2. **Прив'язка:** воркер `legius-lead` → Settings → Bindings → Add → KV Namespace →
+   Variable name: `INVOICES` → обрати `legius-invoices` → Save.
+3. **Код доступу:** воркер → Settings → Variables and Secrets → Add → тип Secret →
+   назва `STATS_TOKEN`, значення — вигаданий код (його вводитимуть юристи на сторінках).
+4. **Оновити код воркера:** вставити актуальний `lead-telegram.js` з цієї папки → Deploy.
+
+Після цього кожен створений рахунок пише запис у KV (і дублюється повідомленням
+у Telegram-чат заявок), а /pay/stats/ показує зведення за місяць по юристах.

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0D0D0F">
+<meta name="robots" content="noindex, nofollow">
+<title>Статистика рахунків — LEGIUS</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96.png">
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black:#0D0D0F; --ink:#101828; --mut:#818a9c; --line:#e9ecf2;
+    --bg:#f2f4f7; --card:#ffffff; --accent:#E13D27;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  .wrap { max-width:560px; margin:0 auto; padding-bottom:36px; }
+  .head { background:var(--black); color:#fff; padding:26px 20px 48px; border-top:3px solid var(--accent);
+           display:flex; flex-direction:column; align-items:center; gap:8px; }
+  .logo { display:flex; align-items:center; font-family:'Jost',Montserrat,system-ui,sans-serif;
+           font-weight:300; font-size:30px; letter-spacing:.34em; color:#fff; line-height:1; }
+  .logo .e { display:flex; flex-direction:column; justify-content:space-between;
+              width:.5em; height:.7em; margin-right:.34em; }
+  .logo .e i { display:block; width:100%; height:.052em; background:#fff; }
+  .logo .e i:first-child { background:var(--accent); }
+  .head .sub { font-size:12.5px; color:#9aa1af; letter-spacing:1.2px; text-transform:uppercase; }
+
+  .card { background:var(--card); border-radius:18px; margin:-28px 14px 0; padding:18px;
+           box-shadow:0 6px 20px rgba(13,13,15,.12); }
+  .monthbar { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+  .monthbar button { font:inherit; font-size:20px; border:none; background:#eef1f6; color:#5a6272;
+                      width:38px; height:38px; border-radius:10px; cursor:pointer; }
+  .monthbar .m { font-size:17px; font-weight:800; text-transform:capitalize; }
+
+  .cards { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:14px 14px 0; }
+  @media (min-width:480px) { .cards { grid-template-columns:repeat(3,1fr); } }
+  .stat { background:var(--card); border-radius:14px; padding:14px; box-shadow:0 1px 3px rgba(13,13,15,.06); }
+  .stat .who { font-size:12px; font-weight:700; color:var(--mut); letter-spacing:.4px; }
+  .stat .sum { font-size:19px; font-weight:800; margin-top:5px; font-variant-numeric:tabular-nums; }
+  .stat .cnt { font-size:12px; color:var(--mut); margin-top:2px; }
+  .stat.total { grid-column:1 / -1; border-left:3px solid var(--accent); }
+
+  .sec { margin:22px 18px 8px; font-size:13px; font-weight:700; letter-spacing:1.2px;
+          text-transform:uppercase; color:var(--mut); }
+  .list { background:var(--card); border-radius:18px; margin:0 14px; overflow:hidden;
+           box-shadow:0 1px 3px rgba(13,13,15,.06); }
+  .inv { display:flex; align-items:center; gap:12px; padding:12px 16px; border-bottom:1px solid var(--line); }
+  .inv:last-child { border-bottom:none; }
+  .inv .d { flex:none; width:52px; font-size:12px; color:var(--mut); font-variant-numeric:tabular-nums; }
+  .inv .who { flex:1; min-width:0; }
+  .inv .who b { display:block; font-size:14px; }
+  .inv .who span { display:block; font-size:11.5px; color:var(--mut); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .inv .a { flex:none; font-size:14.5px; font-weight:800; font-variant-numeric:tabular-nums; }
+  .empty { padding:26px 18px; text-align:center; color:var(--mut); font-size:14px; }
+
+  .actions { display:flex; gap:10px; margin:16px 14px 0; }
+  .btn2 { flex:1; font:inherit; font-size:14px; font-weight:700; padding:12px; border-radius:12px;
+           border:1.5px solid var(--line); background:#fff; color:var(--ink); cursor:pointer; text-align:center; text-decoration:none; }
+  .btn2:active { filter:brightness(.95); }
+  .note { font-size:11.5px; color:var(--mut); margin:14px 20px 0; line-height:1.5; text-align:center; }
+  footer { text-align:center; font-size:12px; color:var(--mut); margin-top:22px; padding:0 20px; }
+  footer a { color:var(--accent); text-decoration:none; font-weight:700; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div class="logo">L<span class="e"><i></i><i></i><i></i></span>GIUS</div>
+    <div class="sub">Статистика рахунків</div>
+  </div>
+
+  <div class="card">
+    <div class="monthbar">
+      <button id="prev" aria-label="Попередній місяць">‹</button>
+      <div class="m" id="monthLbl"></div>
+      <button id="next" aria-label="Наступний місяць">›</button>
+    </div>
+  </div>
+
+  <div class="cards" id="cards"></div>
+
+  <div class="sec">Рахунки за місяць</div>
+  <div class="list" id="list"></div>
+
+  <div class="actions">
+    <button class="btn2" id="csv">Завантажити CSV</button>
+    <a class="btn2" href="/pay/new/">+ Новий рахунок</a>
+  </div>
+
+  <div class="note">Журнал спільний для всіх пристроїв (зберігається на нашому сервері).
+    Фіксується момент створення посилання — факт оплати банк не повідомляє.</div>
+
+  <footer><a href="/pay/new/">← до конструктора рахунків</a></footer>
+</div>
+
+<script>
+(function () {
+  var NAMES = {
+    hordiienko: "Гордієнко",
+    kobylianskyi: "Кобилянський",
+    slobodianin: "Слободянін"
+  };
+  var MONTHS = ["січень","лютий","березень","квітень","травень","червень",
+                "липень","серпень","вересень","жовтень","листопад","грудень"];
+
+  var WORKER = "https://legius-lead.mexn1n1.workers.dev";
+  function statsToken(force) {
+    var t = localStorage.getItem("legius_stats_token") || "";
+    if (!t || force) {
+      t = (prompt("Код доступу до статистики LEGIUS:") || "").trim();
+      if (t) localStorage.setItem("legius_stats_token", t);
+    }
+    return t;
+  }
+  var cache = {}; /* month → invoices */
+  function fetchMonth(month, cb, retried) {
+    if (cache[month]) return cb(cache[month]);
+    var tok = statsToken(false);
+    if (!tok) return cb(null, "Код доступу не введено. Оновіть сторінку.");
+    fetch(WORKER + "/invoices?month=" + month, { headers: { "X-Stats-Token": tok } })
+      .then(function (r) {
+        if (r.status === 401 && !retried) {
+          localStorage.removeItem("legius_stats_token");
+          statsToken(true);
+          return fetchMonth(month, cb, true);
+        }
+        if (!r.ok) throw new Error("http " + r.status);
+        return r.json().then(function (j) { cache[month] = j.invoices || []; cb(cache[month]); });
+      })
+      .catch(function (e) { cb(null, "Не вдалося завантажити журнал (" + e.message + ")."); });
+  }
+  function fmt(n) {
+    var p = n.toFixed(2).split(".");
+    return p[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ") + "." + p[1];
+  }
+
+  var now = new Date();
+  var view = { y: now.getFullYear(), m: now.getMonth() };
+
+  function monthKey() { return view.y + "-" + String(view.m + 1).padStart(2, "0"); }
+
+  function render() {
+    document.getElementById("monthLbl").textContent = MONTHS[view.m] + " " + view.y;
+    var list0 = document.getElementById("list");
+    list0.innerHTML = '<div class="empty">Завантаження…</div>';
+    fetchMonth(monthKey(), function (rows, err) {
+      if (err) { list0.innerHTML = '<div class="empty">' + err + '</div>'; document.getElementById("cards").innerHTML = ""; return; }
+
+    /* зведення по юристах */
+    var agg = {}, total = 0, cnt = 0;
+    rows.forEach(function (x) {
+      var k = NAMES[x.r] ? x.r : "other";
+      agg[k] = agg[k] || { n: 0, s: 0 };
+      agg[k].n++; agg[k].s += parseFloat(x.a) || 0;
+      total += parseFloat(x.a) || 0; cnt++;
+    });
+    var cardsEl = document.getElementById("cards");
+    cardsEl.innerHTML = "";
+    Object.keys(NAMES).forEach(function (k) {
+      var a = agg[k] || { n: 0, s: 0 };
+      var el = document.createElement("div");
+      el.className = "stat";
+      el.innerHTML = '<div class="who">' + NAMES[k] + '</div><div class="sum">' + fmt(a.s) +
+        ' ₴</div><div class="cnt">' + a.n + ' рах.</div>';
+      cardsEl.appendChild(el);
+    });
+    var t = document.createElement("div");
+    t.className = "stat total";
+    t.innerHTML = '<div class="who">Разом за місяць</div><div class="sum">' + fmt(total) +
+      ' ₴</div><div class="cnt">' + cnt + ' рахунків</div>';
+    cardsEl.appendChild(t);
+
+    /* список рахунків */
+    var list = document.getElementById("list");
+    list.innerHTML = "";
+    if (!rows.length) {
+      list.innerHTML = '<div class="empty">За цей місяць рахунків із цього пристрою не формували.</div>';
+      return;
+    }
+    rows.forEach(function (x) {
+      var d = new Date(x.t);
+      var el = document.createElement("div");
+      el.className = "inv";
+      el.innerHTML = '<div class="d">' + String(d.getDate()).padStart(2, "0") + "." +
+        String(d.getMonth() + 1).padStart(2, "0") + '<br>' +
+        String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0") + '</div>' +
+        '<div class="who"><b>' + (NAMES[x.r] || x.r) + '</b><span></span></div>' +
+        '<div class="a">' + fmt(parseFloat(x.a) || 0) + ' ₴</div>';
+      el.querySelector(".who span").textContent = x.p || "";
+      list.appendChild(el);
+    });
+    }); /* end fetchMonth */
+  }
+
+  document.getElementById("prev").onclick = function () {
+    view.m--; if (view.m < 0) { view.m = 11; view.y--; } render();
+  };
+  document.getElementById("next").onclick = function () {
+    view.m++; if (view.m > 11) { view.m = 0; view.y++; } render();
+  };
+
+  document.getElementById("csv").onclick = function () {
+    var all = (cache[monthKey()] || []).slice().sort(function (a, b) { return a.t - b.t; });
+    var lines = ["Дата;Час;Юрист;Сума;Послуга;Призначення"];
+    all.forEach(function (x) {
+      var d = new Date(x.t);
+      lines.push([
+        d.toLocaleDateString("uk-UA"),
+        d.toLocaleTimeString("uk-UA", { hour: "2-digit", minute: "2-digit" }),
+        NAMES[x.r] || x.r,
+        String(x.a).replace(".", ","),
+        '"' + String(x.s || "").replace(/"/g, '""') + '"',
+        '"' + String(x.p || "").replace(/"/g, '""') + '"'
+      ].join(";"));
+    });
+    var blob = new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "legius-rakhunky-" + view.y + "-" + String(view.m + 1).padStart(2, "0") + ".csv";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
+
+  render();
+})();
+</script>
+</body>
+</html>
