@@ -183,10 +183,20 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     return u;
   }
   var RSHORT = { h: "hordiienko", k: "kobylianskyi", s: "slobodianin" };
+  /* "@№угоди|№договору" — шаблонне призначення з конструктора /docs/:
+     розгортається в повний текст, дата виводиться з № договору ДДММ-N/РР */
+  function expandPurpose(p) {
+    var m = /^@(\d+)\|(.+)$/.exec(p);
+    if (!m) return p;
+    var d = /^(\d{2})(\d{2})-\d+\/(\d{2})$/.exec(m[2]);
+    var dd = d ? " від " + d[1] + "." + d[2] + ".20" + d[3] : "";
+    return "Сплата за послуги, на підставі Додаткової угоди № " + m[1] + dd +
+      " до Договору № " + m[2] + dd;
+  }
   /* компактний формат: "сума\nюрист\nпослуга\nпризначення" (порожнє = дефолт) */
   function parseCompact(text) {
     var f = text.split("\n");
-    return { a: f[0] || "", r: RSHORT[f[1]] || f[1] || "", s: f[2] || "", p: f[3] || "" };
+    return { a: f[0] || "", r: RSHORT[f[1]] || f[1] || "", s: f[2] || "", p: expandPurpose(f[3] || "") };
   }
   function readFragment(frag) {
     if (frag.charAt(0) === "z" && window.DecompressionStream) {

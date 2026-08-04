@@ -607,10 +607,9 @@
   function updPayLink() {
     var total = parseFloat(($("rsum").value || "").replace(",", "."));
     if (!(total > 0)) { $("payBar").style.display = "none"; payLinkStr = ""; return; }
-    var dd = fmtDate($("cdate").value), un = parseInt($("unum").value, 10) || 1;
-    var purpose = "Сплата за послуги, на підставі Додаткової угоди № " + un + " від " + dd +
-      " до Договору № " + contractNo() + " від " + dd;
-    makeFragment({ a: String(total), r: sel.value, p: purpose }).then(function (fragStr) {
+    var un = parseInt($("unum").value, 10) || 1;
+    /* шаблонний код призначення — /pay/ сам розгорне повний текст (коротший лінк) */
+    makeFragment({ a: String(total), r: sel.value, p: "@" + un + "|" + contractNo() }).then(function (fragStr) {
       payLinkStr = PAY_URL + "#" + fragStr;
       $("payLink").textContent = payLinkStr;
       $("payBar").style.display = "block";
