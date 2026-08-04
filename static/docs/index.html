@@ -53,14 +53,6 @@
   .note { font-size:12px; color:var(--mut); margin-top:12px; line-height:1.5; }
   footer { text-align:center; font-size:12px; color:var(--mut); margin-top:24px; padding:0 20px; }
   .btn:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
-  .only-uhoda, .only-dohovir, .only-rakhunok, .only-ur { display:none; }
-  body[data-doc="dohovir"] .only-dohovir { display:block; }
-  body[data-doc="uhoda"] .only-uhoda { display:block; }
-  body[data-doc="rakhunok"] .only-rakhunok { display:block; }
-  body[data-doc="uhoda"] .only-ur, body[data-doc="rakhunok"] .only-ur { display:block; }
-  body[data-doc="dohovir"] .row2f.only-dohovir { display:flex; }
-  body[data-doc="uhoda"] .row2f.only-uhoda, body[data-doc="uhoda"] .row2f.only-ur { display:flex; }
-  body[data-doc="rakhunok"] .row2f.only-rakhunok, body[data-doc="rakhunok"] .row2f.only-ur { display:flex; }
 
   /* ---- друкований документ ---- */
   #docWrap { display:none; }
@@ -72,6 +64,7 @@
                     padding:10px 18px; cursor:pointer; }
   .docbar .print { background:var(--accent); color:#fff; }
   .docbar .back { background:#2a2a30; color:#fff; }
+  .docbar .one { background:#2a2a30; color:#c9ced8; font-size:13px; padding:10px 12px; }
   .sheet { background:#fff; max-width:794px; margin:18px auto; padding:57px 57px 57px 71px;
             box-shadow:0 6px 24px rgba(13,13,15,.15);
             font-family:'Times New Roman', Times, serif; font-size:10.5pt; line-height:1.32;
@@ -97,11 +90,15 @@
     body { background:#fff; }
     .docbar { display:none; }
     .sheet { box-shadow:none; margin:0; max-width:none; padding:0; }
+    #sheetU, #sheetR { page-break-before: always; }
+    body[data-print="d"] #sheetU, body[data-print="d"] #sheetR,
+    body[data-print="u"] #sheetD, body[data-print="u"] #sheetR,
+    body[data-print="r"] #sheetD, body[data-print="r"] #sheetU { display:none; }
     @page { size: A4; margin: 20mm 15mm 20mm 25mm; }
   }
 </style>
 </head>
-<body data-doc="dohovir">
+<body data-print="all">
 <div id="formWrap">
 <div class="wrap">
   <div class="head">
@@ -110,72 +107,30 @@
   </div>
   <div class="card">
     <div class="field">
-      <label for="doctype">Тип документа</label>
-      <select id="doctype">
-        <option value="dohovir">Договір про надання правничої допомоги</option>
-        <option value="uhoda">Додаткова угода до договору</option>
-        <option value="rakhunok">Рахунок-фактура</option>
-      </select>
-    </div>
-    <div class="field">
       <label for="lawyer">Адвокат</label>
       <select id="lawyer"></select>
     </div>
-
-    <div class="only-dohovir">
-      <div class="row2f">
-        <div class="field">
-          <label for="cdate">Дата договору</label>
-          <input id="cdate" type="date">
-        </div>
-        <div class="field">
-          <label for="cseq">№ за день</label>
-          <input id="cseq" type="number" min="1" step="1" value="1">
-        </div>
-      </div>
-      <div class="field"><div class="meta" id="numPreview"></div></div>
-    </div>
-
-    <div class="only-ur">
-      <div class="row2f only-ur">
-        <div class="field">
-          <label for="udn">№ договору</label>
-          <input id="udn" placeholder="напр. 0910-2/25" autocomplete="off">
-        </div>
-        <div class="field">
-          <label for="udd">Дата договору</label>
-          <input id="udd" type="date">
-        </div>
-      </div>
-      <div class="row2f only-ur">
-        <div class="field">
-          <label for="unum">№ додаткової угоди</label>
-          <input id="unum" type="number" min="1" step="1" value="1">
-        </div>
-        <div class="field">
-          <label for="udate">Дата угоди</label>
-          <input id="udate" type="date">
-        </div>
-      </div>
-    </div>
-
-    <div class="only-rakhunok">
-      <div class="row2f only-rakhunok">
-        <div class="field">
-          <label for="rnum">№ рахунку</label>
-          <input id="rnum" inputmode="numeric" placeholder="0001" autocomplete="off">
-        </div>
-        <div class="field">
-          <label for="rdate">Дата рахунку</label>
-          <input id="rdate" type="date">
-        </div>
+    <div class="row2f">
+      <div class="field">
+        <label for="cdate">Дата документів</label>
+        <input id="cdate" type="date">
       </div>
       <div class="field">
-        <label for="rsum">Сума, грн</label>
-        <input id="rsum" inputmode="decimal" placeholder="10000 або 10000.50" autocomplete="off">
-        <div class="meta" id="sumPreview"></div>
+        <label for="cseq">№ договору за день</label>
+        <input id="cseq" type="number" min="1" step="1" value="1">
       </div>
     </div>
+    <div class="row2f">
+      <div class="field">
+        <label for="unum">№ додаткової угоди</label>
+        <input id="unum" type="number" min="1" step="1" value="1">
+      </div>
+      <div class="field">
+        <label for="rnum">№ рахунку</label>
+        <input id="rnum" inputmode="numeric" placeholder="0001" autocomplete="off">
+      </div>
+    </div>
+    <div class="field"><div class="meta" id="numPreview"></div></div>
 
     <div class="sect">Клієнт</div>
     <div class="field">
@@ -190,11 +145,10 @@
           <option value="f">Жіноча</option>
         </select>
       </div>
-      <div class="field only-dohovir">
+      <div class="field">
         <label for="cdob">Дата народження</label>
         <input id="cdob" type="date">
       </div>
-      <div class="field only-uhoda" style="display:none"></div>
     </div>
     <div class="field">
       <label for="caddr">Зареєстрований(-а) за адресою <span style="text-transform:none;font-weight:500">(необов’язково)</span></label>
@@ -215,25 +169,31 @@
       <input id="cemail" type="email" placeholder="client@email.com" autocomplete="off">
     </div>
 
-    <div class="only-uhoda">
-      <div class="sect">Умови додаткової угоди</div>
+    <div class="sect">Умови</div>
+    <div class="field">
+      <label for="usubject">Предмет: правнича допомога з питань…</label>
+      <textarea id="usubject" rows="4" placeholder="напр.: підготовка та супровід звернення до Європейського суду з прав людини, включаючи підготовку формуляра заяви та інших необхідних документів"></textarea>
+      <div class="meta">Текст підставиться в п. 1 угоди після слів «…з наступних питань:»</div>
+    </div>
+    <div class="row2f">
       <div class="field">
-        <label for="usubject">Предмет: правнича допомога з питань… (п. 1)</label>
-        <textarea id="usubject" rows="4" placeholder="напр.: підготовка та подання позовної заяви від імені та в інтересах Клієнта до …"></textarea>
-        <div class="meta">Текст підставиться після слів «…з наступних питань:»</div>
+        <label for="uprice">Гонорар, грн</label>
+        <input id="uprice" inputmode="decimal" placeholder="напр. 90200" autocomplete="off">
       </div>
       <div class="field">
-        <label for="uprice">Вартість (п. 2 — повний текст пункту)</label>
-        <textarea id="uprice" rows="4">Сторони погодили, що вартість правничої допомоги, яка надається за цією Додатковою угодою, визначається на погодинній основі та становить ______ (________________) гривень 00 копійок за одну годину роботи адвоката.</textarea>
-      </div>
-      <div class="field">
-        <label for="uadvance">Аванс (п. 3.2 — повний текст пункту)</label>
-        <textarea id="uadvance" rows="3">У момент підписання цієї Додаткової угоди, Клієнт бере на себе обов’язок авансувати перші п’ять годин роботи Адвоката на підставі виставленого рахунку, відповідно до умов цієї Додаткової угоди.</textarea>
+        <label for="rsum">Сума рахунку, грн</label>
+        <input id="rsum" inputmode="decimal" autocomplete="off">
       </div>
     </div>
+    <div class="field"><div class="meta" id="sumPreview"></div></div>
+    <div class="field">
+      <label for="upay">Порядок оплати (п. 3.1 угоди)</label>
+      <textarea id="upay" rows="3">Оплата правничої допомоги здійснюється в наступному порядку: 100% вартості гонорару сплачується не пізніше 5 днів з моменту підписання даної Додаткової угоди.</textarea>
+    </div>
 
-    <button class="btn" id="makeBtn" disabled>Сформувати документ</button>
-    <div class="note">Дані нікуди не надсилаються — документ формується у вашому браузері.</div>
+    <button class="btn" id="makeBtn" disabled>Сформувати 3 документи</button>
+    <div class="note">Формуються одразу договір, додаткова угода та рахунок-фактура.
+      Дані нікуди не надсилаються — документи формуються у вашому браузері.</div>
   </div>
   <footer>Внутрішня сторінка LEGIUS · не для клієнтів</footer>
 </div>
@@ -242,9 +202,14 @@
 <div id="docWrap">
   <div class="docbar">
     <button class="back" onclick="document.body.classList.remove('doc-mode')">← Редагувати</button>
-    <button class="print" onclick="window.print()">Друк / Зберегти PDF</button>
+    <button class="print" data-p="all">Друк усіх</button>
+    <button class="one" data-p="d">Договір</button>
+    <button class="one" data-p="u">Угода</button>
+    <button class="one" data-p="r">Рахунок</button>
   </div>
-  <div class="sheet" id="sheet"></div>
+  <div class="sheet" id="sheetD"></div>
+  <div class="sheet" id="sheetU"></div>
+  <div class="sheet" id="sheetR"></div>
 </div>
 
 <script>
@@ -302,9 +267,8 @@
     "Дана Додаткова угода є невід’ємною частиною Договору про надання правничої допомоги № {{DN}} від {{DD}}."
   ];
   var SUB3 = [
-    "3.1. Оплата правничої допомоги здійснюється щомісячно, на підставі наданого Адвокатом Акта приймання-передачі наданої правничої допомоги та рахунку, відповідно до умов цієї Додаткової угоди.",
-    "3.2. {{ADVANCE}}",
-    "3.3. Клієнт також бере на себе зобов’язання по оплаті судових витрат, визначених п. 4.5. Розділу 4 Договору."
+    "3.1. {{PAYMENT}}",
+    "3.2. Клієнт також бере на себе зобов’язання по оплаті судових витрат, визначених п. 4.5. Розділу 4 Договору."
   ];
   var SUB6 = [
     "6.1. Правнича допомога вважаються наданою після підписання Сторонами Акту приймання-передачі наданої правничої допомоги.",
@@ -314,20 +278,13 @@
   ];
 
   var $ = function (id) { return document.getElementById(id); };
-  var doctype = $("doctype"), sel = $("lawyer");
+  var sel = $("lawyer");
   Object.keys(LAWYERS).forEach(function (k) {
     var o = document.createElement("option");
     o.value = k; o.textContent = LAWYERS[k].label;
     sel.appendChild(o);
   });
   $("cdate").valueAsDate = new Date();
-  $("udate").valueAsDate = new Date();
-
-  doctype.onchange = function () {
-    document.body.setAttribute("data-doc", doctype.value);
-    if (doctype.value === "rakhunok") prefillInvoiceNum();
-    validate();
-  };
 
   function fmtDate(iso) { var p = iso.split("-"); return p[2] + "." + p[1] + "." + p[0]; }
   var MONTHS_GEN = ["січня","лютого","березня","квітня","травня","червня",
@@ -403,16 +360,28 @@
   $("cdate").addEventListener("change", function () { prefillSeq(); updNumPreview(); });
   $("cseq").addEventListener("input", updNumPreview);
 
-  $("rdate").valueAsDate = new Date();
   function prefillInvoiceNum() {
     var used = parseInt(localStorage.getItem("legius_inv_num_" + sel.value) || "0", 10);
     $("rnum").value = String(used + 1).padStart(4, "0");
   }
-  sel.addEventListener("change", function () { if (doctype.value === "rakhunok") prefillInvoiceNum(); });
-  $("rsum").addEventListener("input", function () {
-    var v = parseFloat(this.value.replace(",", "."));
-    $("sumPreview").textContent = v > 0 ? fmtSum(v) + " (" + uahWords(v) + ")" : "";
+  sel.addEventListener("change", prefillInvoiceNum);
+  prefillInvoiceNum();
+
+  /* сума рахунку йде за гонораром, доки її не змінили вручну */
+  var rsumTouched = false;
+  $("rsum").addEventListener("input", function () { rsumTouched = true; updSumPreview(); });
+  $("uprice").addEventListener("input", function () {
+    if (!rsumTouched) $("rsum").value = this.value;
+    updSumPreview();
   });
+  function updSumPreview() {
+    var p = parseFloat(($("uprice").value || "").replace(",", "."));
+    var r = parseFloat(($("rsum").value || "").replace(",", "."));
+    var s = [];
+    if (p > 0) s.push("Гонорар: " + fmtSum(p) + " (" + uahWords(p) + ")");
+    if (r > 0 && r !== p) s.push("Рахунок: " + fmtSum(r) + " (" + uahWords(r) + ")");
+    $("sumPreview").textContent = s.join(" · ");
+  }
 
   /* стать: автопідказка з по батькові */
   $("cname").addEventListener("input", function () {
@@ -421,23 +390,17 @@
   });
 
   function validate() {
-    var okCommon = $("cname").value.trim().split(/\s+/).length >= 2 &&
-      /^\d{10}$/.test($("ctax").value.trim());
-    var ok;
-    if (doctype.value === "dohovir") {
-      ok = okCommon && $("cdate").value && $("cdob").value;
-    } else if (doctype.value === "uhoda") {
-      ok = okCommon && $("udn").value.trim() && $("udd").value && $("udate").value &&
-        $("usubject").value.trim().length > 5 && $("uprice").value.trim().length > 5 &&
-        $("uadvance").value.trim().length > 5;
-    } else {
-      ok = okCommon && $("udn").value.trim() && $("udd").value && $("udate").value &&
-        $("rnum").value.trim() && $("rdate").value &&
-        parseFloat(($("rsum").value || "").replace(",", ".")) > 0;
-    }
+    var ok = $("cname").value.trim().split(/\s+/).length >= 2 &&
+      /^\d{10}$/.test($("ctax").value.trim()) &&
+      $("cdate").value && $("cdob").value &&
+      $("usubject").value.trim().length > 5 &&
+      parseFloat(($("uprice").value || "").replace(",", ".")) > 0 &&
+      $("upay").value.trim().length > 5 &&
+      $("rnum").value.trim() &&
+      parseFloat(($("rsum").value || "").replace(",", ".")) > 0;
     $("makeBtn").disabled = !ok;
   }
-  ["cname","cdob","ctax","cdate","cseq","caddr","cphone","cemail","udn","udd","unum","udate","usubject","uprice","uadvance","cgender","rnum","rdate","rsum"]
+  ["cname","cdob","ctax","cdate","cseq","caddr","cphone","cemail","unum","usubject","uprice","upay","cgender","rnum","rsum"]
     .forEach(function (id) { $(id).addEventListener("input", validate); $(id).addEventListener("change", validate); });
   prefillSeq(); updNumPreview();
 
@@ -476,16 +439,15 @@
       esc(L.svid) + ", виданого " + esc(L.organ) + ", надалі за змістом Договору іменується «Адвокат», з однієї сторони та";
   }
 
+  function clientHeadHtml(C) {
+    return "<b>" + esc(C.name) + "</b>, " + esc(fmtDate($("cdob").value)) + " р.н., реєстраційний номер облікової картки платника податків: " +
+      esc(C.tax) + ", надалі за змістом Договору іменується «Клієнт» з другої сторони,";
+  }
+
   function renderDohovir() {
     var L = LAWYERS[sel.value], C = clientData();
-    var no = contractNo(), date = fmtDate($("cdate").value), dob = fmtDate($("cdob").value);
-    try {
-      var usedNow = parseInt($("cseq").value, 10) || 1;
-      var stored = parseInt(localStorage.getItem("legius_doc_seq_" + $("cdate").value) || "0", 10);
-      if (usedNow > stored) localStorage.setItem("legius_doc_seq_" + $("cdate").value, String(usedNow));
-    } catch (e) {}
-    var clientHead = "<b>" + esc(C.name) + "</b>, " + esc(dob) + " р.н., реєстраційний номер облікової картки платника податків: " +
-      esc(C.tax) + ", надалі за змістом Договору іменується «Клієнт» з другої сторони,";
+    var no = contractNo(), date = fmtDate($("cdate").value);
+    var clientHead = clientHeadHtml(C);
     var h = 0, s1 = 0, s2 = 0, out = [];
     PARAS.forEach(function (p) {
       var kind = p[0], text = p[1];
@@ -508,15 +470,17 @@
 
   function renderUhoda() {
     var L = LAWYERS[sel.value], C = clientData();
-    var dn = $("udn").value.trim(), dd = fmtDate($("udd").value),
-        un = parseInt($("unum").value, 10) || 1, ud = fmtDate($("udate").value);
+    var dn = contractNo(), dd = fmtDate($("cdate").value),
+        un = parseInt($("unum").value, 10) || 1;
+    var price = parseFloat($("uprice").value.replace(",", "."));
+    var priceText = "Сторони погодили, що вартість правничої допомоги, що надається за цією Додатковою угодою визначається у фіксованому розмірі та складає: " +
+      fmtSum(price) + " (" + uahWords(price) + ").";
     var out = [];
     out.push('<div class="title">ДОДАТКОВА УГОДА № ' + un + "</div>");
     out.push('<div class="title">ДО ДОГОВОРУ ПРО НАДАННЯ ПРАВНИЧОЇ ДОПОМОГИ № ' + esc(dn) + " від " + esc(dd) + "</div>");
-    out.push('<div class="cityline"><span>м. Київ</span><span>' + esc(ud) + "</span></div>");
+    out.push('<div class="cityline"><span>м. Київ</span><span>' + esc(dd) + "</span></div>");
     out.push('<p class="body">' + advHead(L) + "</p>");
-    out.push('<p class="body"><b>' + esc(C.name) + "</b>, реєстраційний номер облікової картки платника податків: " +
-      esc(C.tax) + ", надалі за змістом Договору іменується «Клієнт» з другої сторони,</p>");
+    out.push('<p class="body">' + clientHeadHtml(C) + "</p>");
     out.push('<p class="body">при спільному згадуванні «Сторони», а кожна окремо «Сторона», керуючись п. 4.2. розділу 4 Договору про надання правничої допомоги № ' +
       esc(dn) + " від " + esc(dd) + ", надалі іменується «Договір», уклали дану Додаткову угоду, надалі іменується «Додаткова угода» про наступне:</p>");
     var n = 0;
@@ -525,8 +489,8 @@
         n++;
         out.push('<p class="body">' + n + ". Порядок оплати гонорару:</p>");
         SUB3.forEach(function (t) {
-          t = t.replace("{{ADVANCE}}", esc($("uadvance").value.trim()));
-          out.push('<p class="body">' + (t.indexOf("{{") === -1 ? esc(t).replace(/^(\d\.\d\.)/, "$1") : t) + "</p>");
+          t = esc(t.replace("{{PAYMENT}}", $("upay").value.trim()));
+          out.push('<p class="body">' + t + "</p>");
         });
         return;
       }
@@ -537,13 +501,13 @@
         return;
       }
       n++;
-      var text = item
-        .replace("{{SUBJECT}}", esc($("usubject").value.trim()))
-        .replace("{{PRICE}}", esc($("uprice").value.trim()))
-        .replace("{{DN}}", esc(dn))
-        .replace("{{DD}}", esc(dd));
-      if (item.indexOf("{{SUBJECT}}") === -1 && item.indexOf("{{PRICE}}") === -1 &&
-          item.indexOf("{{DN}}") === -1) text = esc(item);
+      var subj = $("usubject").value.trim();
+      if (subj && !/[.!?»]$/.test(subj)) subj += ".";
+      var text = esc(item
+        .replace("{{SUBJECT}}", subj)
+        .replace("{{PRICE}}", priceText)
+        .replace("{{DN}}", dn)
+        .replace("{{DD}}", dd));
       out.push('<p class="body">' + n + ". " + text + "</p>");
     });
     out.push('<h2>РЕКВІЗИТИ ТА ПІДПИСИ СТОРІН</h2>');
@@ -553,17 +517,12 @@
 
   function renderRakhunok() {
     var L = LAWYERS[sel.value], C = clientData();
-    var dn = $("udn").value.trim(), dd = fmtDate($("udd").value),
-        un = parseInt($("unum").value, 10) || 1, ud = fmtDate($("udate").value);
+    var dn = contractNo(), dd = fmtDate($("cdate").value),
+        un = parseInt($("unum").value, 10) || 1;
     var num = $("rnum").value.trim();
     var total = parseFloat($("rsum").value.replace(",", "."));
-    try {
-      var nInt = parseInt(num, 10);
-      var stored = parseInt(localStorage.getItem("legius_inv_num_" + sel.value) || "0", 10);
-      if (nInt > stored) localStorage.setItem("legius_inv_num_" + sel.value, String(nInt));
-    } catch (e) {}
     var regWord = C.gender === "f" ? "Зареєстрована" : "Зареєстрований";
-    var purpose = "Сплата за послуги, на підставі Додаткової угоди № " + un + " від " + ud +
+    var purpose = "Сплата за послуги, на підставі Додаткової угоди № " + un + " від " + dd +
       " до Договору № " + dn + " від " + dd;
     var sig = SIGNATURES[sel.value] ? '<img src="' + SIGNATURES[sel.value] + '" alt="">' : "";
     return '<div style="font-size:9pt">Тел.: ' + esc(L.phone) + " Адреса електронної пошти: " + esc(L.email) + "</div>" +
@@ -574,7 +533,7 @@
         "Банківські реквізити:<br>IBAN: " + esc(L.iban) + "<br>" + esc(L.bank) + "<br>МФО " + esc(L.mfo) + "</div>" +
       "</div>" +
       '<table class="itable"><tr><th style="width:22%">Дата</th><th>Кому</th><th style="width:22%">Адреса доставки</th></tr>' +
-      "<tr><td>" + esc(fmtDateWords($("rdate").value)) + "</td>" +
+      "<tr><td>" + esc(fmtDateWords($("cdate").value)) + "</td>" +
       "<td><b>" + esc(C.name) + "</b>" +
       (C.addr ? "<br>" + regWord + " за адресою: " + esc(C.addr) : "") +
       "<br>РНОКПП: " + esc(C.tax) +
@@ -591,11 +550,32 @@
   }
 
   $("makeBtn").onclick = function () {
-    $("sheet").innerHTML = doctype.value === "dohovir" ? renderDohovir()
-      : doctype.value === "uhoda" ? renderUhoda() : renderRakhunok();
+    $("sheetD").innerHTML = renderDohovir();
+    $("sheetU").innerHTML = renderUhoda();
+    $("sheetR").innerHTML = renderRakhunok();
+    /* лічильники: № договору за день і № рахунку адвоката */
+    try {
+      var usedNow = parseInt($("cseq").value, 10) || 1;
+      var stored = parseInt(localStorage.getItem("legius_doc_seq_" + $("cdate").value) || "0", 10);
+      if (usedNow > stored) localStorage.setItem("legius_doc_seq_" + $("cdate").value, String(usedNow));
+      var nInt = parseInt($("rnum").value, 10);
+      var storedInv = parseInt(localStorage.getItem("legius_inv_num_" + sel.value) || "0", 10);
+      if (nInt > storedInv) localStorage.setItem("legius_inv_num_" + sel.value, String(nInt));
+    } catch (e) {}
     document.body.classList.add("doc-mode");
     window.scrollTo(0, 0);
   };
+
+  /* друк: усі документи або один */
+  Array.prototype.forEach.call(document.querySelectorAll(".docbar [data-p]"), function (b) {
+    b.onclick = function () {
+      document.body.setAttribute("data-print", b.getAttribute("data-p"));
+      window.print();
+    };
+  });
+  window.addEventListener("afterprint", function () {
+    document.body.setAttribute("data-print", "all");
+  });
 })();
 </script>
 </body>
