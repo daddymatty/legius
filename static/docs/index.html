@@ -86,9 +86,10 @@
   .sheet p.body { text-indent:24px; margin:0; }
   .sheet h2 { font-size:8.5pt; font-weight:bold; text-align:center; margin:5px 0 1px; }
   .sheet .req { display:flex; gap:24px; margin-top:10px; }
-  .sheet .req > div { flex:1; }
+  .sheet .req > div { flex:1; display:flex; flex-direction:column; }
   .sheet .req .rt { font-weight:bold; margin-bottom:5px; }
-  .sheet .sig { text-align:center; margin-top:22px; }
+  /* підписи сторін завжди на одному рівні — притискаємо до низу колонок */
+  .sheet .sig { text-align:center; margin-top:auto; padding-top:22px; white-space:nowrap; }
   .sheet table.htable { width:100%; border-collapse:collapse; margin:6px 0; }
   .sheet table.htable th, .sheet table.htable td { border:1px solid #000; padding:4px 6px;
     vertical-align:top; text-align:left; font-size:8.5pt; }
@@ -844,11 +845,14 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     });
   }
 
+  /* «№» не лишається в кінці рядка — приклеюємо його до номера нерозривним пробілом */
+  function nb(html) { return html.replace(/№\s+/g, "№ "); }
+
   $("makeBtn").onclick = function () {
     if (!$("cdate").value) { $("cdate").valueAsDate = new Date(); prefillSeq(); }
-    $("sheetD").innerHTML = isFop() ? renderDohovirFop() : renderDohovir();
-    $("sheetU").innerHTML = isFop() ? renderDodatok() : renderUhoda();
-    $("sheetR").innerHTML = renderRakhunok();
+    $("sheetD").innerHTML = nb(isFop() ? renderDohovirFop() : renderDohovir());
+    $("sheetU").innerHTML = nb(isFop() ? renderDodatok() : renderUhoda());
+    $("sheetR").innerHTML = nb(renderRakhunok());
     updPayLink();
     /* лічильники: № договору за день і № рахунку адвоката */
     try {
@@ -875,11 +879,23 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
   });
 
   /* ---- завантаження готових PDF (jsPDF + html2canvas) ---- */
+  /* A4 за вирахуванням полів друку: сторінка PDF завжди має цю ширину,
+     незалежно від екрана — інакше на телефоні договір розтягується
+     на 5 сторінок замість 2 */
+  var PDF_W = 794;
   function sheetToPdf(pdf, el, isFirst, fullBleed) {
-    var padT = el.style.paddingTop, padB = el.style.paddingBottom;
+    var prev = { pt: el.style.paddingTop, pb: el.style.paddingBottom,
+                 w: el.style.width, mw: el.style.maxWidth, m: el.style.margin };
     if (!fullBleed) { el.style.paddingTop = "0"; el.style.paddingBottom = "0"; }
-    return html2canvas(el, { scale: 2, backgroundColor: "#ffffff", logging: false }).then(function (canvas) {
-      if (!fullBleed) { el.style.paddingTop = padT; el.style.paddingBottom = padB; }
+    el.style.width = PDF_W + "px";
+    el.style.maxWidth = "none";
+    el.style.margin = "0";
+    return html2canvas(el, {
+      scale: 2, backgroundColor: "#ffffff", logging: false,
+      width: PDF_W, windowWidth: PDF_W
+    }).then(function (canvas) {
+      el.style.paddingTop = prev.pt; el.style.paddingBottom = prev.pb;
+      el.style.width = prev.w; el.style.maxWidth = prev.mw; el.style.margin = prev.m;
       var pxPerMm = canvas.width / 210;
       var topMm = fullBleed ? 0 : 14;
       var pagePx = Math.floor((297 - 2 * topMm) * pxPerMm);
