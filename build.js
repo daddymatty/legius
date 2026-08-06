@@ -449,6 +449,8 @@ async function build() {
   const redirects = [
     { from: "kontakti", to: "/contacts/" },
     { from: "poslugi-ta-vartist", to: "/practices/" },
+    /* дефолтна сторінка WordPress: досі в індексі, дає покази й переходи на 404 */
+    { from: "sample-page", to: "/" },
     /* Команда тимчасово прихована — індексовані URL ведемо на /about/ */
     ...(site.showTeam ? [] : ["team", ...team.map((m) => `team/${m.slug}`)].map((from) => ({ from, to: "/about/" }))),
   ];
