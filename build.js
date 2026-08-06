@@ -443,8 +443,9 @@ async function build() {
 
   /* ---------- Legacy URL redirects (old WordPress paths with potential backlinks) ----------
      GitHub Pages serves static files only (no server-side 301), so redirect via
-     meta-refresh + JS + rel=canonical. noindex keeps the stub out of the index while
-     passing users and canonical signal to the new URL. */
+     meta-refresh + JS + rel=canonical — Google трактує це як редирект і схлопує
+     заглушку в цільову сторінку. noindex тут свідомо НЕ ставимо: у парі з canonical
+     Google може перенести директиву на цільову сторінку. */
   const redirects = [
     { from: "kontakti", to: "/contacts/" },
     { from: "poslugi-ta-vartist", to: "/practices/" },
@@ -454,7 +455,6 @@ async function build() {
   for (const r of redirects) {
     const target = site.domain + r.to;
     const stub = `<!doctype html><html lang="uk"><head><meta charset="utf-8">` +
-      `<meta name="robots" content="noindex,follow">` +
       `<link rel="canonical" href="${target}">` +
       `<meta http-equiv="refresh" content="0; url=${r.to}">` +
       `<title>Сторінку переміщено — LEGIUS</title>` +
