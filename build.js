@@ -447,6 +447,7 @@ async function build() {
      passing users and canonical signal to the new URL. */
   const redirects = [
     { from: "kontakti", to: "/contacts/" },
+    { from: "poslugi-ta-vartist", to: "/practices/" },
     /* Команда тимчасово прихована — індексовані URL ведемо на /about/ */
     ...(site.showTeam ? [] : ["team", ...team.map((m) => `team/${m.slug}`)].map((from) => ({ from, to: "/about/" }))),
   ];
