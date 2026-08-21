@@ -43,7 +43,11 @@
   <url><loc>https://legius.com.ua/practices/corporate-law/due-diligence-ta-yurydychnyy-audyt/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://legius.com.ua/practices/corporate-law/vyrishennya-korporatyvnykh-sporiv/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://legius.com.ua/practices/corporate-law/zakhyst-vid-reyderskykh-zakhoplen/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://legius.com.ua/practices/corporate-law/litsenzuvannya-ta-dozvilni-protsedury/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://legius.com.ua/practices/corporate-law/litsenzuvannya-ta-dozvilni-dokumenty/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://legius.com.ua/practices/corporate-law/reyestratsiya-asotsiatsiy-i-hromadskykh-spilok/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://legius.com.ua/practices/corporate-law/otrymannya-statusu-neprybutkovosti/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://legius.com.ua/practices/corporate-law/podatkova-optymizatsiya-struktury-biznesu/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://legius.com.ua/practices/corporate-law/bukhhalterskyy-suprovid-fop-i-tov/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://legius.com.ua/practices/corporate-law/korporatyvnyy-komplayens/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://legius.com.ua/practices/corporate-law/reorhanizatsiya-ta-likvidatsiya-kompaniy/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://legius.com.ua/practices/corporate-law/korporatyvni-dohovory-aktsioneriv-ta-uchasnykiv/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -340,6 +344,11 @@
   <url><loc>https://legius.com.ua/blog/nerezydent-zasnovnyk-tov/</loc><lastmod>2026-08-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.com.ua/blog/zmina-mistseznakhodzhennya-tov/</loc><lastmod>2026-08-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.com.ua/blog/reyestratsiya-gromadskoyi-organizatsiyi/</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.com.ua/blog/gromadska-spilka/</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.com.ua/blog/reyestratsiya-asotsiatsiyi/</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.com.ua/blog/nepributkovyy-status/</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.com.ua/blog/dozvilni-dokumenty/</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.com.ua/blog/bukhhalterskyy-suprovid/</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.com.ua/blog/podatkova-perevirka/</loc><lastmod>2025-11-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.com.ua/blog/oskarzhennya-ppr/</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.com.ua/blog/blokuvannya-podatkovyh-nakladnyh/</loc><lastmod>2025-12-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -361,7 +370,7 @@
   <url><loc>https://legius.com.ua/blog/vidpovidalnist-za-uhylennya-212-kku/</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.com.ua/blog/podatkovyj-borg-aresht-rahunkiv/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.com.ua/blog/apelyaciya-do-dps/</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://legius.com.ua/blog/podatkove-planuvannya-biznesu/</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://legius.com.ua/blog/podatkove-planuvannya-biznesu/</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.com.ua/blog/podatkovyj-zapyt-dps/</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.com.ua/blog/zustrichni-zviryky-kontragentiv/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://legius.com.ua/blog/podatkovi-spory-sudova-praktyka/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
