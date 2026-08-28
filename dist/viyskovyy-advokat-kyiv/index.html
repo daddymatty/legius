@@ -501,9 +501,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .prose h2 { font-size: 1.7rem; margin-top: 2.4rem; padding-top: 0.4rem; font-weight: 800; }
 .prose h3 { font-size: 1.3rem; margin-top: 1.8rem; font-weight: 700; }
 .prose p, .prose li { color: #2b3a4f; font-size: 1.05rem; line-height: 1.8; }
-/* justified body copy only (long paragraphs) — NO hyphenation */
+/* body copy — вирівнювання по лівому краю: justify давав ріки пробілів
+   в українському тексті на вузьких колонках */
 .prose p, .page-hero p {
-  text-align: justify; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
+  text-align: left; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
 }
 /* centered section heads must stay centered (override any inherited align) */
 .section__head--center, .section__head--center .eyebrow,
@@ -845,6 +846,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="btn btn--primary" href="#consult">Безкоштовна консультація</a>
     <a class="btn btn--ghost-dark" href="tel:+380688884400"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg> +38 (068) 888 44 00</a>
   </div>
+  <div class="hero__trust">
+    <div class="stat"><strong>15+</strong><span>років практики</span></div>
+    <div class="stat"><strong>500+</strong><span>проведених справ</span></div>
+    <div class="stat"><strong>16</strong><span>юристів у команді</span></div>
+    <div class="stat"><strong>5.0</strong><span>рейтинг у Google</span></div>
+  </div>
 </div></section>
 
 <section class="section"><div class="container">
@@ -909,6 +916,26 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <div class="section__head section__head--center"><span class="eyebrow">FAQ</span><h2>Поширені запитання</h2></div>
     <div class="faq"><details><summary>Чи можна оскаржити дії ТЦК у Києві?</summary><div><p>Так. Неправомірні дії або бездіяльність ТЦК та СП оскаржуються в адміністративному порядку та через суд. Ми готуємо скарги й позови та представляємо інтереси клієнта в київських адміністративних судах.</p></div></details><details><summary>Що робити, якщо не згоден із висновком ВЛК?</summary><div><p>Висновок ВЛК можна оскаржити до вищої комісії або в суді, а також домогтися повторного обстеження. Ключове — правильно зібрати медичні документи; з цим ми допомагаємо.</p></div></details><details><summary>Чи допомагаєте ви у справах про СЗЧ?</summary><div><p>Так. Ми супроводжуємо такі провадження, аналізуємо обставини, що пом’якшують відповідальність, і вибудовуємо стратегію захисту з урахуванням актуальної судової практики.</p></div></details><details><summary>Як оформити відстрочку від мобілізації?</summary><div><p>Потрібно підтвердити наявність законної підстави документально й подати їх до ТЦК у встановленому порядку. Ми допомагаємо сформувати правильний пакет і оскаржити необґрунтовану відмову.</p></div></details><details><summary>Чи можна вирішити військово-правове питання дистанційно?</summary><div><p>Значну частину роботи — консультації, підготовку документів, скарг і позовів — ми виконуємо дистанційно. До судових засідань і органів за потреби виїжджає наш адвокат.</p></div></details></div>
   </div></section>
+
+<section class="section section--soft"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Відгуки</span>
+    <h2>Що кажуть клієнти</h2>
+  </div>
+  <div class="grid grid--3"><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Наша співпраця почалася ще з 2019 року, з тих пір звертаюсь тільки до цих юристів. Подобається, що спектр послуг широкий, і хлопці закривають практично всі питання, які виникають у нашої компанії. Коли є різні спеціалісти в різних галузях — це завжди…</blockquote>
+        <div class="quote-card__author">Сергій Іванюта<span>Відгук у Google</span></div>
+      </div><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Мій чоловік — американець, і він знаходиться в Україні як волонтер уже протягом трьох років. За цей час пан Олександр неодноразово допомагав йому з усіма формальностями, документами та юридичними нюансами. Він надавав корисні поради у складних ситуаціях.…</blockquote>
+        <div class="quote-card__author">Olga W.<span>Відгук у Google</span></div>
+      </div><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Я іноземець, і з самого початку, коли я приїхав в Україну, хлопці займалися моїми юридичними справами, відкриттям будівельного бізнесу, оформленням посвідки на проживання та дозволів на роботу для моїх співробітників. Усе пройшло без проблем, швидко та…</blockquote>
+        <div class="quote-card__author">Muhammed Abdulloev<span>Відгук у Google</span></div>
+      </div></div>
+</div></section>
 
 <section class="section section--tight-bottom reveal"><div class="container">
     <div class="section__head"><span class="eyebrow">Суміжні практики</span><h2>Це може бути корисно</h2></div>
@@ -977,6 +1004,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtcodcle" defer></script>
+<script src="/assets/js/main.js?v=mtcq66k9" defer></script>
 </body>
 </html>

@@ -501,9 +501,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .prose h2 { font-size: 1.7rem; margin-top: 2.4rem; padding-top: 0.4rem; font-weight: 800; }
 .prose h3 { font-size: 1.3rem; margin-top: 1.8rem; font-weight: 700; }
 .prose p, .prose li { color: #2b3a4f; font-size: 1.05rem; line-height: 1.8; }
-/* justified body copy only (long paragraphs) — NO hyphenation */
+/* body copy — вирівнювання по лівому краю: justify давав ріки пробілів
+   в українському тексті на вузьких колонках */
 .prose p, .page-hero p {
-  text-align: justify; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
+  text-align: left; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
 }
 /* centered section heads must stay centered (override any inherited align) */
 .section__head--center, .section__head--center .eyebrow,
@@ -845,6 +846,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="btn btn--primary" href="#consult">Безкоштовна консультація</a>
     <a class="btn btn--ghost-dark" href="tel:+380688884400"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg> +38 (068) 888 44 00</a>
   </div>
+  <div class="hero__trust">
+    <div class="stat"><strong>15+</strong><span>років практики</span></div>
+    <div class="stat"><strong>500+</strong><span>проведених справ</span></div>
+    <div class="stat"><strong>16</strong><span>юристів у команді</span></div>
+    <div class="stat"><strong>5.0</strong><span>рейтинг у Google</span></div>
+  </div>
 </div></section>
 
 <section class="section"><div class="container">
@@ -914,6 +921,26 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <div class="faq"><details><summary>Чим абонемент вигідніший за штатного юриста?</summary><div><p>Ви отримуєте команду з різними спеціалізаціями замість однієї людини, не платите за робоче місце, відпустки й лікарняні, а обсяг можна змінювати під поточні потреби. Штатний юрист доцільний за великого постійного документообігу.</p></div></details><details><summary>Чи входить судове представництво в абонемент?</summary><div><p>Зазвичай ні — воно виноситься як окремий проєкт, бо обсяг роботи в суді непередбачуваний. Ми говоримо про це на старті, а не після першого позову.</p></div></details><details><summary>З чого почати, якщо компанія працює давно без юриста?</summary><div><p>З юридичного аудиту: статут, договори, кадрові документи, реєстраційні дані. На виході — перелік ризиків із пріоритетами. Найчастіше проблеми знаходяться в повноваженнях директора, оформленні працівників і первинних документах.</p></div></details><details><summary>Чи можна працювати з підрядниками-ФОП замість найму?</summary><div><p>Формат законний, але якщо людина працює за графіком у вашому офісі на вашому обладнанні й не має інших замовників — це приховані трудові відносини з донарахуванням за весь період і штрафами за кожного працівника.</p></div></details><details><summary>Що робити при рейдерському захопленні?</summary><div><p>Реагувати негайно — тут вирішує швидкість. Чим більше реєстраційних дій встигне пройти, тим складніше повертати становище. Перший крок — зупинити подальші зміни в реєстрі.</p></div></details></div>
   </div></section>
 
+<section class="section section--soft"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Відгуки</span>
+    <h2>Що кажуть клієнти</h2>
+  </div>
+  <div class="grid grid--3"><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Наша співпраця почалася ще з 2019 року, з тих пір звертаюсь тільки до цих юристів. Подобається, що спектр послуг широкий, і хлопці закривають практично всі питання, які виникають у нашої компанії. Коли є різні спеціалісти в різних галузях — це завжди…</blockquote>
+        <div class="quote-card__author">Сергій Іванюта<span>Відгук у Google</span></div>
+      </div><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Мій чоловік — американець, і він знаходиться в Україні як волонтер уже протягом трьох років. За цей час пан Олександр неодноразово допомагав йому з усіма формальностями, документами та юридичними нюансами. Він надавав корисні поради у складних ситуаціях.…</blockquote>
+        <div class="quote-card__author">Olga W.<span>Відгук у Google</span></div>
+      </div><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Я іноземець, і з самого початку, коли я приїхав в Україну, хлопці займалися моїми юридичними справами, відкриттям будівельного бізнесу, оформленням посвідки на проживання та дозволів на роботу для моїх співробітників. Усе пройшло без проблем, швидко та…</blockquote>
+        <div class="quote-card__author">Muhammed Abdulloev<span>Відгук у Google</span></div>
+      </div></div>
+</div></section>
+
 <section class="section section--tight-bottom reveal"><div class="container">
     <div class="section__head"><span class="eyebrow">Суміжні практики</span><h2>Це може бути корисно</h2></div>
     <div class="grid grid--3"><a class="card" href="/practices/corporate-law/"><h3>Корпоративне право</h3><p>Юристи LEGIUS у Києві супроводжують бізнес на всіх етапах: реєстрація, корпоративне управління, due diligence, спори, захист від рейдерства та комплаєнс.</p><span class="card__link">Детальніше</span></a><a class="card" href="/practices/litigation/"><h3>Судові спори</h3><p>Команда LEGIUS веде складні судові процеси для бізнесу й приватних клієнтів: господарські та цивільні спори, адміністративне оскарження, стягнення боргів і супровід виконавчого провадження. Ми будуємо позицію на доказах і процесуальній стратегії, а не на обіцянках.</p><span class="card__link">Детальніше</span></a><a class="card" href="/practices/tax-law/"><h3>Податкове право</h3><p>Податкові перевірки, оскарження ППР, розблокування податкових накладних, відшкодування ПДВ, ТЦУ, КІК та податкове планування для бізнесу в Києві.</p><span class="card__link">Детальніше</span></a><a class="card" href="/practices/m-and-a/"><h3>M&amp;A (Злиття і поглинання)</h3><p>LEGIUS супроводжує угоди злиття та поглинання на всіх стадіях — від першого контакту сторін до post-merger інтеграції. Ми проводимо due diligence, структуруємо угоду, готуємо SPA та SHA, отримуємо дозволи АМКУ й захищаємо інтереси клієнта на переговорах і після закриття.</p><span class="card__link">Детальніше</span></a></div>
@@ -981,6 +1008,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtcodcle" defer></script>
+<script src="/assets/js/main.js?v=mtcq66k9" defer></script>
 </body>
 </html>
