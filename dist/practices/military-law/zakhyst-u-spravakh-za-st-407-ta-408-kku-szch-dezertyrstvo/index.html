@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://legius-lead.mexn1n1.workers.dev https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; frame-src https://www.google.com https://consent.google.com https://challenges.cloudflare.com; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://legius-lead.mexn1n1.workers.dev https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; frame-src https://www.google.com https://consent.google.com https://challenges.cloudflare.com; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Захист у справах за ст. 407 та 408 ККУ (СЗЧ, дезертирство) | LEGIUS</title>
 <meta name="description" content="Захищаємо військовослужбовців у кримінальних провадженнях за статтями 407 та 408 ККУ — самовільне залишення частини й дезертирство.">
@@ -786,6 +786,39 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   padding-left: 0.35rem;
 }
 .side-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---- Кроки роботи на посадкових ---- */
+.step-card { padding-top: clamp(1.8rem, 3vw, 2.2rem); }
+.step-card__num {
+  position: absolute; top: 0.9rem; right: 1.1rem; font-family: var(--font-head);
+  font-weight: 800; font-size: 2.6rem; line-height: 1; color: var(--c-line); pointer-events: none;
+}
+.step-card__icon { display: inline-flex; color: var(--c-teal); margin-bottom: 0.7rem; }
+.step-card__icon svg { width: 26px; height: 26px; }
+
+/* ---- CTA всередині тексту ---- */
+.inline-cta {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1.1rem; margin: 2.4rem 0; padding: clamp(1.4rem, 3vw, 1.9rem);
+  background: var(--c-mist); border: 1px solid var(--c-line);
+  border-left: 4px solid var(--c-teal); border-radius: var(--radius);
+}
+.inline-cta__text { flex: 1 1 320px; }
+.inline-cta__text strong {
+  display: block; font-family: var(--font-head); font-weight: 800;
+  font-size: 1.15rem; color: var(--c-ink); margin-bottom: 0.3rem;
+}
+.inline-cta__text span { font-size: 0.95rem; color: var(--c-muted); line-height: 1.6; }
+.inline-cta__actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.inline-cta__actions .btn { white-space: nowrap; }
+@media (max-width: 560px) { .inline-cta__actions .btn { flex: 1 1 100%; justify-content: center; } }
+
+/* Кнопки всередині .prose не мають успадковувати колір і підкреслення
+   від .prose a — інакше .btn--primary стає червоним текстом на червоному тлі */
+.prose .btn { text-decoration: none; }
+.prose .btn--primary { color: #fff; }
+.prose .btn--ghost { color: var(--c-ink); }
+.prose .btn--ghost-dark { color: #fff; }
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10B84LRHKX" data-ga="G-10B84LRHKX"></script>
@@ -976,6 +1009,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtcq66k9" defer></script>
+<script src="/assets/js/main.js?v=mtcrx008" defer></script>
 </body>
 </html>

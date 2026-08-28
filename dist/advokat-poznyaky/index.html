@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://legius-lead.mexn1n1.workers.dev https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; frame-src https://www.google.com https://consent.google.com https://challenges.cloudflare.com; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://legius-lead.mexn1n1.workers.dev https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; frame-src https://www.google.com https://consent.google.com https://challenges.cloudflare.com; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Адвокат Позняки Київ — юрист поруч на Позняках | LEGIUS</title>
 <meta name="description" content="Адвокат на Позняках у Києві: спори із забудовниками, нерухомість, сімейні та бізнес-питання. Поруч із метро Позняки, працюємо й онлайн.">
@@ -786,6 +786,39 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   padding-left: 0.35rem;
 }
 .side-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---- Кроки роботи на посадкових ---- */
+.step-card { padding-top: clamp(1.8rem, 3vw, 2.2rem); }
+.step-card__num {
+  position: absolute; top: 0.9rem; right: 1.1rem; font-family: var(--font-head);
+  font-weight: 800; font-size: 2.6rem; line-height: 1; color: var(--c-line); pointer-events: none;
+}
+.step-card__icon { display: inline-flex; color: var(--c-teal); margin-bottom: 0.7rem; }
+.step-card__icon svg { width: 26px; height: 26px; }
+
+/* ---- CTA всередині тексту ---- */
+.inline-cta {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1.1rem; margin: 2.4rem 0; padding: clamp(1.4rem, 3vw, 1.9rem);
+  background: var(--c-mist); border: 1px solid var(--c-line);
+  border-left: 4px solid var(--c-teal); border-radius: var(--radius);
+}
+.inline-cta__text { flex: 1 1 320px; }
+.inline-cta__text strong {
+  display: block; font-family: var(--font-head); font-weight: 800;
+  font-size: 1.15rem; color: var(--c-ink); margin-bottom: 0.3rem;
+}
+.inline-cta__text span { font-size: 0.95rem; color: var(--c-muted); line-height: 1.6; }
+.inline-cta__actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.inline-cta__actions .btn { white-space: nowrap; }
+@media (max-width: 560px) { .inline-cta__actions .btn { flex: 1 1 100%; justify-content: center; } }
+
+/* Кнопки всередині .prose не мають успадковувати колір і підкреслення
+   від .prose a — інакше .btn--primary стає червоним текстом на червоному тлі */
+.prose .btn { text-decoration: none; }
+.prose .btn--primary { color: #fff; }
+.prose .btn--ghost { color: var(--c-ink); }
+.prose .btn--ghost-dark { color: #fff; }
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10B84LRHKX" data-ga="G-10B84LRHKX"></script>
@@ -854,6 +887,34 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   </div>
 </div></section>
 
+<section class="section section--soft"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Як ми працюємо</span>
+    <h2>Чотири кроки без сюрпризів</h2>
+  </div>
+  <div class="grid grid--4"><div class="card step-card reveal">
+      <span class="step-card__num">1</span>
+      <span class="step-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span>
+      <h3>Консультація</h3>
+      <p>Розбираємо ситуацію і кажемо прямо, чи потрібен адвокат. Якщо впораєтесь самі — так і скажемо.</p>
+    </div><div class="card step-card reveal">
+      <span class="step-card__num">2</span>
+      <span class="step-card__icon" aria-hidden="true"><svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3H6v18h12V7l-4-4zM14 3v4h4M8 13h8M8 17h6"/></svg></span>
+      <h3>Документи</h3>
+      <p>Дивимося, що є на руках, чого бракує і які докази доведеться здобувати окремо.</p>
+    </div><div class="card step-card reveal">
+      <span class="step-card__num">3</span>
+      <span class="step-card__icon" aria-hidden="true"><svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 006 0L7 7zM17 7l-3 7a3 3 0 006 0l-3-7zM8 21h8"/></svg></span>
+      <h3>Оцінка перспективи</h3>
+      <p>Називаємо реалістичний сценарій, строки й обсяг роботи до того, як ви щось платите.</p>
+    </div><div class="card step-card reveal">
+      <span class="step-card__num">4</span>
+      <span class="step-card__icon" aria-hidden="true"><svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12l4-4 5 2 5-2 4 4M7 14l3 3 2-2 2 2 3-3"/></svg></span>
+      <h3>Робота у справі</h3>
+      <p>Ведемо справу й тримаємо в курсі. Ви завжди знаєте, на якому етапі процес.</p>
+    </div></div>
+</div></section>
+
 <section class="section"><div class="container">
   <div class="content-aside">
     <div class="content-aside__main prose reveal" style="max-width:none"><section class="reveal"><h2>Позняки: щільний мікрорайон зі своїм ритмом</h2><p>Позняки — один із найгустіше заселених мікрорайонів Києва. Висотна забудова навколо метро Позняки, торгові центри, школи й сотні ОСББ створюють особливе середовище, де правові питання виникають буквально на кожному кроці: від конфліктів із сусідами й паркування до спорів зі забудовниками.</p>
@@ -868,8 +929,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 <p>Ми перевіряємо документи на квартиру перед купівлею, аналізуємо репутацію забудовника й умови інвестиційного договору, супроводжуємо угоди та ведемо спори, якщо забудовник порушує зобов’язання. Особливо актуальні для Позняків справи про затримку передачі квартир: ми домагаємося як самого виконання, так і стягнення штрафних санкцій за прострочення. Деталі напряму — у розділі <a href="/practices/real-estate/">нерухомості</a>.</p>
 <blockquote>Більшість проблем із новобудовою можна попередити ще до підписання договору — варто лише вчасно показати його юристу.</blockquote></section>
 <section class="reveal"><h2>Поруч із метро Позняки</h2><p>Станція метро Позняки — серце мікрорайону, і ми орієнтуємося саме на неї, коли плануємо зустрічі чи виїзди. Клієнту не потрібно витрачати години на дорогу через увесь Київ: ми поруч і територіально, і за форматом роботи онлайн. Для зайнятої людини, яка поєднує роботу, родину й побут спального району, це принципово важливо.</p>
-<p>Справи мешканців Позняків розглядає переважно <a href="/advokat-darnytskyi-raion/">Дарницький районний суд</a> (цивільна канцелярія — вул. Олександра Кошиця, 5-А), де ми працюємо регулярно й знаємо його специфіку. Завдяки цьому ми точніше прогнозуємо строки й уникаємо зайвих затримок. Сусідній мікрорайон описано на сторінці <a href="/advokat-osokorky/">адвоката на Осокорках</a>, а ширшу картину лівобережжя — на сторінці <a href="/yuryst-livyy-bereh-kyiv/">юриста Лівого берега</a>.</p></section>
-<section class="reveal"><h2>Для мешканців і місцевого бізнесу</h2><p>На Позняках багато сімейного бізнесу: кав’ярні, салони краси, магазини на перших поверхах висоток, невеликі студії та ІТ-команди, що працюють із дому. Ми супроводжуємо таких підприємців у питаннях договорів оренди приміщень, відносин із орендодавцями ТРЦ, трудових відносин, реєстрації ФОП і ТОВ, аби вони зосередилися на справі, а не на паперах і ризиках. Невеликому бізнесу особливо цінно мати юриста, до якого можна звернутися з будь-яким питанням без роздування витрат на штатного фахівця.</p>
+<p>Справи мешканців Позняків розглядає переважно <a href="/advokat-darnytskyi-raion/">Дарницький районний суд</a> (цивільна канцелярія — вул. Олександра Кошиця, 5-А), де ми працюємо регулярно й знаємо його специфіку. Завдяки цьому ми точніше прогнозуємо строки й уникаємо зайвих затримок. Сусідній мікрорайон описано на сторінці <a href="/advokat-osokorky/">адвоката на Осокорках</a>, а ширшу картину лівобережжя — на сторінці <a href="/yuryst-livyy-bereh-kyiv/">юриста Лівого берега</a>.</p></section><div class="inline-cta reveal">
+  <div class="inline-cta__text">
+    <strong>Не впевнені, чи є у вас підстави?</strong>
+    <span>Перша консультація безкоштовна. Розберемо ситуацію і скажемо чесно, чи є перспектива.</span>
+  </div>
+  <div class="inline-cta__actions">
+    <a class="btn btn--primary" href="#consult">Отримати консультацію</a>
+    <a class="btn btn--ghost" href="tel:+380688884400"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg> +38 (068) 888 44 00</a>
+  </div>
+</div><section class="reveal"><h2>Для мешканців і місцевого бізнесу</h2><p>На Позняках багато сімейного бізнесу: кав’ярні, салони краси, магазини на перших поверхах висоток, невеликі студії та ІТ-команди, що працюють із дому. Ми супроводжуємо таких підприємців у питаннях договорів оренди приміщень, відносин із орендодавцями ТРЦ, трудових відносин, реєстрації ФОП і ТОВ, аби вони зосередилися на справі, а не на паперах і ризиках. Невеликому бізнесу особливо цінно мати юриста, до якого можна звернутися з будь-яким питанням без роздування витрат на штатного фахівця.</p>
 <p>Для мешканців же ми вирішуємо весь спектр побутових правових питань: сусідські конфлікти, заливи квартир, спадщину, сімейні спори, проблеми зі споживчими послугами. Чи то приватне питання, чи бізнес — почніть із розмови. <a href="/contacts/#consult">Запишіться на консультацію</a>, і адвокат поруч із вашим домом розбереться в ситуації швидко й по суті.</p></section>
 <section class="reveal"><h2>Життя у висотці: спори, яких варто уникати заздалегідь</h2><p>Позняки — це насамперед багатоповерхове життя. Тисячі квартир в одному ЖК, спільні двори, паркінги, дитячі майданчики, ліфти й комунікації, якими користуються сотні родин одночасно. Така щільність неминуче породжує тертя: гучні сусіди, незаконні перепланування, що загрожують конструкції будинку, суперечки про паркомісця, конфлікти навколо тарифів управителя. Більшості з них можна уникнути або вирішити мирно, якщо діяти грамотно й вчасно.</p>
 <p>Ми радимо мешканцям висоток не накопичувати дрібні конфлікти до точки кипіння, а вирішувати їх правовими методами на ранній стадії. Часто достатньо однієї офіційної претензії, складеної адвокатом, фіксації порушення чи звернення до ОСББ — і питання знімається без суду. Там же, де опонент не йде назустріч, ми готові захищати інтереси клієнта в повному обсязі.</p>
@@ -896,6 +965,27 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <p class="form-msgr">Зручніше написати? <a href="https://t.me/+380688884400" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/380688884400" target="_blank" rel="noopener">WhatsApp</a> · <a href="viber://chat?number=%2B380688884400" target="_blank" rel="noopener">Viber</a></p>
   </form></aside>
   </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Досвід</span>
+    <h2>Справи, які ми вели</h2>
+  </div>
+  <div class="grid grid--3"><div class="case-card reveal"><div class="case-card__body">
+        <span class="case-card__tag">Угода з нерухомістю · 2023</span>
+        <h3>Юридичний супровід купівлі комерційної нерухомості</h3>
+        <div class="case-card__result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 13l4 4L19 7"/></svg> Угода без юридичних ризиків</div>
+      </div></div><div class="case-card reveal"><div class="case-card__body">
+        <span class="case-card__tag">Право власності · 2025</span>
+        <h3>Спір про визнання права власності на нерухоме майно</h3>
+        <div class="case-card__result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 13l4 4L19 7"/></svg> Підтверджено право власності в суді</div>
+      </div></div><div class="case-card reveal"><div class="case-card__body">
+        <span class="case-card__tag">Будівництво · 2024</span>
+        <h3>Юридичний супровід будівництва житлового комплексу</h3>
+        <div class="case-card__result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 13l4 4L19 7"/></svg> Захищено залучення коштів від 200+ інвесторів</div>
+      </div></div></div>
+  <p class="text-center mt-2"><a class="btn btn--ghost" href="/cases/">Усі кейси</a></p>
 </div></section>
 
 <section class="section section--soft reveal"><div class="container">
@@ -990,6 +1080,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtcq66k9" defer></script>
+<script src="/assets/js/main.js?v=mtcrx008" defer></script>
 </body>
 </html>

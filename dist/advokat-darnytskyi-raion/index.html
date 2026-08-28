@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://legius-lead.mexn1n1.workers.dev https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; frame-src https://www.google.com https://consent.google.com https://challenges.cloudflare.com; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://legius-lead.mexn1n1.workers.dev https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; frame-src https://www.google.com https://consent.google.com https://challenges.cloudflare.com; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Адвокат Дарницький район Києва — суди, спори | LEGIUS</title>
 <meta name="description" content="Адвокат у Дарницькому районі Києва: Дарницький районний суд, цивільні, сімейні й житлові спори. Поруч із Позняками й Осокорками.">
@@ -786,6 +786,39 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   padding-left: 0.35rem;
 }
 .side-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---- Кроки роботи на посадкових ---- */
+.step-card { padding-top: clamp(1.8rem, 3vw, 2.2rem); }
+.step-card__num {
+  position: absolute; top: 0.9rem; right: 1.1rem; font-family: var(--font-head);
+  font-weight: 800; font-size: 2.6rem; line-height: 1; color: var(--c-line); pointer-events: none;
+}
+.step-card__icon { display: inline-flex; color: var(--c-teal); margin-bottom: 0.7rem; }
+.step-card__icon svg { width: 26px; height: 26px; }
+
+/* ---- CTA всередині тексту ---- */
+.inline-cta {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1.1rem; margin: 2.4rem 0; padding: clamp(1.4rem, 3vw, 1.9rem);
+  background: var(--c-mist); border: 1px solid var(--c-line);
+  border-left: 4px solid var(--c-teal); border-radius: var(--radius);
+}
+.inline-cta__text { flex: 1 1 320px; }
+.inline-cta__text strong {
+  display: block; font-family: var(--font-head); font-weight: 800;
+  font-size: 1.15rem; color: var(--c-ink); margin-bottom: 0.3rem;
+}
+.inline-cta__text span { font-size: 0.95rem; color: var(--c-muted); line-height: 1.6; }
+.inline-cta__actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.inline-cta__actions .btn { white-space: nowrap; }
+@media (max-width: 560px) { .inline-cta__actions .btn { flex: 1 1 100%; justify-content: center; } }
+
+/* Кнопки всередині .prose не мають успадковувати колір і підкреслення
+   від .prose a — інакше .btn--primary стає червоним текстом на червоному тлі */
+.prose .btn { text-decoration: none; }
+.prose .btn--primary { color: #fff; }
+.prose .btn--ghost { color: var(--c-ink); }
+.prose .btn--ghost-dark { color: #fff; }
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10B84LRHKX" data-ga="G-10B84LRHKX"></script>
@@ -854,6 +887,34 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   </div>
 </div></section>
 
+<section class="section section--soft"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Як ми працюємо</span>
+    <h2>Чотири кроки без сюрпризів</h2>
+  </div>
+  <div class="grid grid--4"><div class="card step-card reveal">
+      <span class="step-card__num">1</span>
+      <span class="step-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span>
+      <h3>Консультація</h3>
+      <p>Розбираємо ситуацію і кажемо прямо, чи потрібен адвокат. Якщо впораєтесь самі — так і скажемо.</p>
+    </div><div class="card step-card reveal">
+      <span class="step-card__num">2</span>
+      <span class="step-card__icon" aria-hidden="true"><svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3H6v18h12V7l-4-4zM14 3v4h4M8 13h8M8 17h6"/></svg></span>
+      <h3>Документи</h3>
+      <p>Дивимося, що є на руках, чого бракує і які докази доведеться здобувати окремо.</p>
+    </div><div class="card step-card reveal">
+      <span class="step-card__num">3</span>
+      <span class="step-card__icon" aria-hidden="true"><svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 006 0L7 7zM17 7l-3 7a3 3 0 006 0l-3-7zM8 21h8"/></svg></span>
+      <h3>Оцінка перспективи</h3>
+      <p>Називаємо реалістичний сценарій, строки й обсяг роботи до того, як ви щось платите.</p>
+    </div><div class="card step-card reveal">
+      <span class="step-card__num">4</span>
+      <span class="step-card__icon" aria-hidden="true"><svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12l4-4 5 2 5-2 4 4M7 14l3 3 2-2 2 2 3-3"/></svg></span>
+      <h3>Робота у справі</h3>
+      <p>Ведемо справу й тримаємо в курсі. Ви завжди знаєте, на якому етапі процес.</p>
+    </div></div>
+</div></section>
+
 <section class="section"><div class="container">
   <div class="content-aside">
     <div class="content-aside__main prose reveal" style="max-width:none"><section class="reveal"><h2>Дарницький район: великий, молодий, активний</h2><p>Дарницький район — один із найбільших і найдинамічніших у Києві. Сюди входять Позняки, Осокорки, Харківський масив, Червоний хутір, Бортничі. Тут активно зводять житло, відкривають бізнес, а отже — виникає чимало правових ситуацій, що потребують адвоката, який знає район.</p>
@@ -869,8 +930,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 <p>Наші адвокати регулярно представляють клієнтів саме в цьому суді й знають його практику та внутрішню логіку роботи канцелярії. Це дозволяє нам реалістично оцінювати перспективи, правильно розраховувати строки й уникати типових затримок, на яких губиться час у недосвідчених заявників. Для складних процесів радимо ознайомитися з нашою практикою <a href="/practices/litigation/">судових спорів</a>.</p>
 <blockquote>Місцевий адвокат — це не лише про географію, а про знання того, як насправді працює конкретний суд.</blockquote></section>
 <section class="reveal"><h2>Поруч із домом: Позняки, Осокорки та масиви</h2><p>Більшість наших клієнтів у районі — мешканці Позняків та Осокорків, тож зустрічі та виїзди ми плануємо з огляду на станції метро Позняки, Осокорки й Червоний хутір. Це економить час, особливо коли йдеться про термінові справи, де важлива кожна година: подати позов до спливу строку, встигнути на засідання, підготувати документи до перевірки.</p>
-<p>Ми розуміємо, що мешканцю щільного спального району часто простіше зустрітися поруч із домом або взагалі вирішити питання дистанційно, не відриваючись від роботи й родини. Окремі сторінки ми присвятили мешканцям <a href="/advokat-poznyaky/">Позняків</a> та <a href="/advokat-osokorky/">Осокорків</a> — там детальніше про специфіку цих мікрорайонів. А загальну картину лівобережжя описано на сторінці <a href="/yuryst-livyy-bereh-kyiv/">юриста Лівого берега</a>.</p></section>
-<section class="reveal"><h2>Чому мешканці Дарниці обирають LEGIUS</h2><p>Клієнти цінують поєднання трьох речей: близькість до дому, реальне знання місцевого суду й столичний рівень підготовки документів. Ми не ставимося до районних справ як до другорядних — кожна отримує повноцінну стратегію, незалежно від суми спору чи статусу клієнта. Для нас спір про залив квартири сусідами не менш важливий, ніж великий господарський процес.</p>
+<p>Ми розуміємо, що мешканцю щільного спального району часто простіше зустрітися поруч із домом або взагалі вирішити питання дистанційно, не відриваючись від роботи й родини. Окремі сторінки ми присвятили мешканцям <a href="/advokat-poznyaky/">Позняків</a> та <a href="/advokat-osokorky/">Осокорків</a> — там детальніше про специфіку цих мікрорайонів. А загальну картину лівобережжя описано на сторінці <a href="/yuryst-livyy-bereh-kyiv/">юриста Лівого берега</a>.</p></section><div class="inline-cta reveal">
+  <div class="inline-cta__text">
+    <strong>Не впевнені, чи є у вас підстави?</strong>
+    <span>Перша консультація безкоштовна. Розберемо ситуацію і скажемо чесно, чи є перспектива.</span>
+  </div>
+  <div class="inline-cta__actions">
+    <a class="btn btn--primary" href="#consult">Отримати консультацію</a>
+    <a class="btn btn--ghost" href="tel:+380688884400"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg> +38 (068) 888 44 00</a>
+  </div>
+</div><section class="reveal"><h2>Чому мешканці Дарниці обирають LEGIUS</h2><p>Клієнти цінують поєднання трьох речей: близькість до дому, реальне знання місцевого суду й столичний рівень підготовки документів. Ми не ставимося до районних справ як до другорядних — кожна отримує повноцінну стратегію, незалежно від суми спору чи статусу клієнта. Для нас спір про залив квартири сусідами не менш важливий, ніж великий господарський процес.</p>
 <p>Ще одна причина довіри — чесність на старті. Ми не беремо справ, у яких не бачимо реальної перспективи для клієнта, і прямо говоримо про це під час консультації. Якщо у вас спір із сусідами, забудовником, банком чи колишнім подружжям — почніть з консультації. <a href="/contacts/#consult">Запишіться на зустріч</a>, і ми оцінимо вашу ситуацію з урахуванням особливостей Дарницького району та запропонуємо конкретний план дій.</p></section>
 <section class="reveal"><h2>Типові справи мешканців Дарницького району</h2><p>За роки роботи в районі ми бачимо, які питання турбують його мешканців найчастіше. Розуміння цієї статистики допомагає нам діяти швидко: ми наперед знаємо, які докази знадобляться, куди звертатися й чого очікувати від опонента. Нижче — категорії, з якими до нас звертаються найчастіше саме з Дарниці, Позняків, Осокорків та Бортничів.</p>
 <ul>
@@ -897,6 +966,27 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <p class="form-msgr">Зручніше написати? <a href="https://t.me/+380688884400" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/380688884400" target="_blank" rel="noopener">WhatsApp</a> · <a href="viber://chat?number=%2B380688884400" target="_blank" rel="noopener">Viber</a></p>
   </form></aside>
   </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Досвід</span>
+    <h2>Справи, які ми вели</h2>
+  </div>
+  <div class="grid grid--3"><div class="case-card reveal"><div class="case-card__body">
+        <span class="case-card__tag">Стягнення боргу · 2024</span>
+        <h3>Стягнення дебіторської заборгованості з недобросовісного контрагента</h3>
+        <div class="case-card__result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 13l4 4L19 7"/></svg> Стягнуто борг із санкціями</div>
+      </div></div><div class="case-card reveal"><div class="case-card__body">
+        <span class="case-card__tag">Спір із Пенсійним фондом · 2026</span>
+        <h3>Скасування обмеження максимального розміру пенсії військового пенсіонера</h3>
+        <div class="case-card__result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 13l4 4L19 7"/></svg> Пенсію перераховано без обмеження максимальним розміром</div>
+      </div></div><div class="case-card reveal"><div class="case-card__body">
+        <span class="case-card__tag">Захист водія · 2025</span>
+        <h3>Закриття справи про керування у стані сп’яніння (ст. 130 КУпАП)</h3>
+        <div class="case-card__result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 13l4 4L19 7"/></svg> Провадження закрито, водія не позбавлено права керування</div>
+      </div></div></div>
+  <p class="text-center mt-2"><a class="btn btn--ghost" href="/cases/">Усі кейси</a></p>
 </div></section>
 
 <section class="section section--soft reveal"><div class="container">
@@ -991,6 +1081,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtcq66k9" defer></script>
+<script src="/assets/js/main.js?v=mtcrx008" defer></script>
 </body>
 </html>

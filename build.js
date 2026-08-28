@@ -219,7 +219,7 @@ async function build() {
             breadcrumbSchema([{ name: "Головна", href: "/" }, { name: loc.navLabel, href: `/${loc.slug}/` }]),
           ],
         },
-        locationPage(loc, { practiceBySlug }),
+        locationPage(loc, { practiceBySlug, cases }),
         `/${loc.slug}/`
       ),
       { priority: "0.8" }
