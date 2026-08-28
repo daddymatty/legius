@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://legius-lead.mexn1n1.workers.dev https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; frame-src https://www.google.com https://consent.google.com https://challenges.cloudflare.com; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://legius-lead.mexn1n1.workers.dev https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; frame-src https://www.google.com https://consent.google.com https://challenges.cloudflare.com; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Юрист для бізнесу Київ — абонентське обслуговування | LEGIUS</title>
 <meta name="description" content="Абонентське юридичне обслуговування бізнесу в Києві: договори, корпоративні питання, трудові відносини, перевірки, претензійна робота та суди.">
@@ -786,6 +786,39 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   padding-left: 0.35rem;
 }
 .side-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---- Кроки роботи на посадкових ---- */
+.step-card { padding-top: clamp(1.8rem, 3vw, 2.2rem); }
+.step-card__num {
+  position: absolute; top: 0.9rem; right: 1.1rem; font-family: var(--font-head);
+  font-weight: 800; font-size: 2.6rem; line-height: 1; color: var(--c-line); pointer-events: none;
+}
+.step-card__icon { display: inline-flex; color: var(--c-teal); margin-bottom: 0.7rem; }
+.step-card__icon svg { width: 26px; height: 26px; }
+
+/* ---- CTA всередині тексту ---- */
+.inline-cta {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1.1rem; margin: 2.4rem 0; padding: clamp(1.4rem, 3vw, 1.9rem);
+  background: var(--c-mist); border: 1px solid var(--c-line);
+  border-left: 4px solid var(--c-teal); border-radius: var(--radius);
+}
+.inline-cta__text { flex: 1 1 320px; }
+.inline-cta__text strong {
+  display: block; font-family: var(--font-head); font-weight: 800;
+  font-size: 1.15rem; color: var(--c-ink); margin-bottom: 0.3rem;
+}
+.inline-cta__text span { font-size: 0.95rem; color: var(--c-muted); line-height: 1.6; }
+.inline-cta__actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.inline-cta__actions .btn { white-space: nowrap; }
+@media (max-width: 560px) { .inline-cta__actions .btn { flex: 1 1 100%; justify-content: center; } }
+
+/* Кнопки всередині .prose не мають успадковувати колір і підкреслення
+   від .prose a — інакше .btn--primary стає червоним текстом на червоному тлі */
+.prose .btn { text-decoration: none; }
+.prose .btn--primary { color: #fff; }
+.prose .btn--ghost { color: var(--c-ink); }
+.prose .btn--ghost-dark { color: #fff; }
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10B84LRHKX" data-ga="G-10B84LRHKX"></script>
@@ -854,6 +887,34 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   </div>
 </div></section>
 
+<section class="section section--soft"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Як ми працюємо</span>
+    <h2>Чотири кроки без сюрпризів</h2>
+  </div>
+  <div class="grid grid--4"><div class="card step-card reveal">
+      <span class="step-card__num">1</span>
+      <span class="step-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span>
+      <h3>Консультація</h3>
+      <p>Розбираємо ситуацію і кажемо прямо, чи потрібен адвокат. Якщо впораєтесь самі — так і скажемо.</p>
+    </div><div class="card step-card reveal">
+      <span class="step-card__num">2</span>
+      <span class="step-card__icon" aria-hidden="true"><svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3H6v18h12V7l-4-4zM14 3v4h4M8 13h8M8 17h6"/></svg></span>
+      <h3>Документи</h3>
+      <p>Дивимося, що є на руках, чого бракує і які докази доведеться здобувати окремо.</p>
+    </div><div class="card step-card reveal">
+      <span class="step-card__num">3</span>
+      <span class="step-card__icon" aria-hidden="true"><svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 006 0L7 7zM17 7l-3 7a3 3 0 006 0l-3-7zM8 21h8"/></svg></span>
+      <h3>Оцінка перспективи</h3>
+      <p>Називаємо реалістичний сценарій, строки й обсяг роботи до того, як ви щось платите.</p>
+    </div><div class="card step-card reveal">
+      <span class="step-card__num">4</span>
+      <span class="step-card__icon" aria-hidden="true"><svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12l4-4 5 2 5-2 4 4M7 14l3 3 2-2 2 2 3-3"/></svg></span>
+      <h3>Робота у справі</h3>
+      <p>Ведемо справу й тримаємо в курсі. Ви завжди знаєте, на якому етапі процес.</p>
+    </div></div>
+</div></section>
+
 <section class="section"><div class="container">
   <div class="content-aside">
     <div class="content-aside__main prose reveal" style="max-width:none"><section class="reveal"><h2>Навіщо бізнесу постійний юрист</h2><p>Більшість компаній звертаються до юриста тоді, коли проблема вже сталася: контрагент не заплатив, прийшла перевірка, партнер заблокував рішення. На цій стадії вибір зазвичай між поганим і дуже поганим варіантом.</p>
@@ -874,8 +935,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 <li><b>Робота з підрядниками-ФОП замість найму.</b> Якщо людина працює за графіком у вашому офісі на вашому обладнанні й не має інших замовників — це приховані трудові відносини. Донарахування за весь період плюс штрафи за кожного працівника перевищують будь-яку економію.</li>
 <li><b>Договори без опису предмета.</b> Акт із формулюванням «послуги згідно з договором» не підтверджує нічого. Це найчастіша причина донарахувань на перевірці — не схеми, а відсутність нормальної первинки.</li>
 </ol>
-<p>Усі три виявляються за один аудит і виправляються без драми, якщо взятися до перевірки, а не після.</p></section>
-<section class="reveal"><h2>Формати</h2><ul>
+<p>Усі три виявляються за один аудит і виправляються без драми, якщо взятися до перевірки, а не після.</p></section><div class="inline-cta reveal">
+  <div class="inline-cta__text">
+    <strong>Не впевнені, чи є у вас підстави?</strong>
+    <span>Перша консультація безкоштовна. Розберемо ситуацію і скажемо чесно, чи є перспектива.</span>
+  </div>
+  <div class="inline-cta__actions">
+    <a class="btn btn--primary" href="#consult">Отримати консультацію</a>
+    <a class="btn btn--ghost" href="tel:+380688884400"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg> +38 (068) 888 44 00</a>
+  </div>
+</div><section class="reveal"><h2>Формати</h2><ul>
 <li><b>Юридичний аудит</b> — разова перевірка: статут, договори, кадрові документи, реєстраційні дані. На виході перелік ризиків із пріоритетами.</li>
 <li><b>Абонентське обслуговування</b> — фіксований обсяг годин або задач на місяць.</li>
 <li><b>Проєктна робота</b> — угода, реорганізація, вхід інвестора, <a href="/blog/due-diligence-biznesu/">due diligence</a> при купівлі бізнесу.</li>
@@ -914,6 +983,27 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <p class="form-msgr">Зручніше написати? <a href="https://t.me/+380688884400" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/380688884400" target="_blank" rel="noopener">WhatsApp</a> · <a href="viber://chat?number=%2B380688884400" target="_blank" rel="noopener">Viber</a></p>
   </form></aside>
   </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Досвід</span>
+    <h2>Справи, які ми вели</h2>
+  </div>
+  <div class="grid grid--3"><div class="case-card reveal"><div class="case-card__body">
+        <span class="case-card__tag">Корпоративне управління · 2022</span>
+        <h3>Створення товариства та корпоративний договір співзасновників</h3>
+        <div class="case-card__result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 13l4 4L19 7"/></svg> Запобігли майбутнім корпоративним конфліктам</div>
+      </div></div><div class="case-card reveal"><div class="case-card__body">
+        <span class="case-card__tag">Корпоративний спір · 2024</span>
+        <h3>Захист контролю над компанією у корпоративному конфлікті</h3>
+        <div class="case-card__result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 13l4 4L19 7"/></svg> Збережено контроль над компанією</div>
+      </div></div><div class="case-card reveal"><div class="case-card__body">
+        <span class="case-card__tag">Виключення учасника · 2025</span>
+        <h3>Виключення учасника з товариства за порушення обов’язків</h3>
+        <div class="case-card__result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 13l4 4L19 7"/></svg> Відновлено керованість товариства</div>
+      </div></div></div>
+  <p class="text-center mt-2"><a class="btn btn--ghost" href="/cases/">Усі кейси</a></p>
 </div></section>
 
 <section class="section section--soft reveal"><div class="container">
@@ -1008,6 +1098,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtcq66k9" defer></script>
+<script src="/assets/js/main.js?v=mtcrx008" defer></script>
 </body>
 </html>

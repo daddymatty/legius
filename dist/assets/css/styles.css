@@ -739,3 +739,36 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   padding-left: 0.35rem;
 }
 .side-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---- Кроки роботи на посадкових ---- */
+.step-card { padding-top: clamp(1.8rem, 3vw, 2.2rem); }
+.step-card__num {
+  position: absolute; top: 0.9rem; right: 1.1rem; font-family: var(--font-head);
+  font-weight: 800; font-size: 2.6rem; line-height: 1; color: var(--c-line); pointer-events: none;
+}
+.step-card__icon { display: inline-flex; color: var(--c-teal); margin-bottom: 0.7rem; }
+.step-card__icon svg { width: 26px; height: 26px; }
+
+/* ---- CTA всередині тексту ---- */
+.inline-cta {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1.1rem; margin: 2.4rem 0; padding: clamp(1.4rem, 3vw, 1.9rem);
+  background: var(--c-mist); border: 1px solid var(--c-line);
+  border-left: 4px solid var(--c-teal); border-radius: var(--radius);
+}
+.inline-cta__text { flex: 1 1 320px; }
+.inline-cta__text strong {
+  display: block; font-family: var(--font-head); font-weight: 800;
+  font-size: 1.15rem; color: var(--c-ink); margin-bottom: 0.3rem;
+}
+.inline-cta__text span { font-size: 0.95rem; color: var(--c-muted); line-height: 1.6; }
+.inline-cta__actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.inline-cta__actions .btn { white-space: nowrap; }
+@media (max-width: 560px) { .inline-cta__actions .btn { flex: 1 1 100%; justify-content: center; } }
+
+/* Кнопки всередині .prose не мають успадковувати колір і підкреслення
+   від .prose a — інакше .btn--primary стає червоним текстом на червоному тлі */
+.prose .btn { text-decoration: none; }
+.prose .btn--primary { color: #fff; }
+.prose .btn--ghost { color: var(--c-ink); }
+.prose .btn--ghost-dark { color: #fff; }

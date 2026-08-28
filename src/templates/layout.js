@@ -68,7 +68,7 @@ export function layout(opts) {
     "default-src 'self'",
     "base-uri 'self'",
     "object-src 'none'",
-    `img-src 'self' https://images.unsplash.com${ga ? " https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua" : ""}`,
+    `img-src 'self' data: https://images.unsplash.com${ga ? " https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua" : ""}`,
     "font-src 'self'",
     "style-src 'self' 'unsafe-inline'",
     `script-src 'self'${ga ? " https://www.googletagmanager.com" : ""}${turnstile ? " " + cf : ""}`,
