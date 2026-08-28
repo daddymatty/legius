@@ -1,7 +1,7 @@
 /* Local landing page. */
 import { site } from "../data/site.js";
 import { testimonials } from "../data/testimonials.js";
-import { leadForm, ctaBand, breadcrumbs, icons, stepsBlock, heroTrust, reviewsBlock, proseWithCta } from "./components.js";
+import { leadForm, ctaBand, breadcrumbs, icons, stepsBlock, heroTrust, reviewsBlock, proseWithCta, findLawyer, lawyerCard } from "./components.js";
 import { renderSections, renderFaq, relatedPractices, escape as esc } from "./render.js";
 
 /* Релевантний кейс: практику беремо з першого елемента related. */
@@ -27,8 +27,11 @@ function caseBlock(cases, loc) {
 </div></section>`;
 }
 
-export function locationPage(loc, { practiceBySlug, cases = [] }) {
+export function locationPage(loc, { practiceBySlug, cases = [], team = [] }) {
   const body = proseWithCta(loc.sections, renderSections);
+  /* відповідального адвоката беремо за першою пов'язаною практикою */
+  const practice = (loc.related || []).map((r) => practiceBySlug[r]).find(Boolean);
+  const lawyer = practice ? findLawyer(practice, team) : null;
 
   const crumbs = [
     { name: "Головна", href: "/" },
@@ -52,7 +55,8 @@ ${stepsBlock()}
 <section class="section"><div class="container">
   <div class="content-aside">
     <div class="content-aside__main prose reveal" style="max-width:none">${body}</div>
-    <aside class="content-aside__side reveal">${leadForm({ id: `loc-${loc.slug}`, title: "Отримати консультацію", source: `location:${loc.slug}` })}</aside>
+    <aside class="content-aside__side reveal">${lawyerCard(lawyer)}
+      ${leadForm({ id: `loc-${loc.slug}`, title: "Отримати консультацію", source: `location:${loc.slug}` })}</aside>
   </div>
 </div></section>
 
