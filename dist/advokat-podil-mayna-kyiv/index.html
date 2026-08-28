@@ -501,9 +501,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .prose h2 { font-size: 1.7rem; margin-top: 2.4rem; padding-top: 0.4rem; font-weight: 800; }
 .prose h3 { font-size: 1.3rem; margin-top: 1.8rem; font-weight: 700; }
 .prose p, .prose li { color: #2b3a4f; font-size: 1.05rem; line-height: 1.8; }
-/* justified body copy only (long paragraphs) — NO hyphenation */
+/* body copy — вирівнювання по лівому краю: justify давав ріки пробілів
+   в українському тексті на вузьких колонках */
 .prose p, .page-hero p {
-  text-align: justify; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
+  text-align: left; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
 }
 /* centered section heads must stay centered (override any inherited align) */
 .section__head--center, .section__head--center .eyebrow,
@@ -845,6 +846,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="btn btn--primary" href="#consult">Безкоштовна консультація</a>
     <a class="btn btn--ghost-dark" href="tel:+380688884400"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg> +38 (068) 888 44 00</a>
   </div>
+  <div class="hero__trust">
+    <div class="stat"><strong>15+</strong><span>років практики</span></div>
+    <div class="stat"><strong>500+</strong><span>проведених справ</span></div>
+    <div class="stat"><strong>16</strong><span>юристів у команді</span></div>
+    <div class="stat"><strong>5.0</strong><span>рейтинг у Google</span></div>
+  </div>
 </div></section>
 
 <section class="section"><div class="container">
@@ -901,6 +908,26 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <div class="section__head section__head--center"><span class="eyebrow">FAQ</span><h2>Поширені запитання</h2></div>
     <div class="faq"><details><summary>Чи ділиться квартира, куплена до шлюбу?</summary><div><p>За загальним правилом ні. Але якщо під час шлюбу в неї вкладалися спільні кошти — ремонт, реконструкція, погашення кредиту — вона може бути визнана спільною або другий з подружжя отримує компенсацію. Це доводиться документами про вкладення.</p></div></details><details><summary>Як ділиться квартира в іпотеці?</summary><div><p>Ділиться і сама нерухомість, і залишок боргу. Потрібно враховувати позицію банку як заставодержателя, тому варіант поділу підбирається з огляду на умови кредитного договору й внески сторін.</p></div></details><details><summary>Чи стане другий з подружжя учасником мого ТОВ?</summary><div><p>Ні. Ділиться вартість частки, а не управління компанією — автоматичного входу в товариство не відбувається. Для визначення суми потрібна оцінка бізнесу.</p></div></details><details><summary>Що робити, якщо майно переоформили на родичів?</summary><div><p>Подавати заяву про забезпечення позову одночасно з позовом — арешт майна і заборона реєстраційних дій, а також оспорювати правочини, вчинені без згоди другого з подружжя. Чим раніше, тим більше шансів: повертати продане складніше, ніж заборонити продаж.</p></div></details><details><summary>Минуло 5 років після розлучення — чи можна ще поділити майно?</summary><div><p>Так, якщо порушення вашого права сталося нещодавно. Три роки рахуються не від дати розлучення, а від дня, коли ви дізналися про порушення — наприклад, коли колишній чоловік продав спільну квартиру.</p></div></details><details><summary>Скільки становить судовий збір за поділ майна?</summary><div><p>1% ціни позову з нижньою межею 0,4 і верхньою 5 прожиткових мінімумів. Ціна позову рахується за вартістю вашої частки, а не всього майна — це законний спосіб не переплатити.</p></div></details></div>
   </div></section>
+
+<section class="section section--soft"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Відгуки</span>
+    <h2>Що кажуть клієнти</h2>
+  </div>
+  <div class="grid grid--3"><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Наша співпраця почалася ще з 2019 року, з тих пір звертаюсь тільки до цих юристів. Подобається, що спектр послуг широкий, і хлопці закривають практично всі питання, які виникають у нашої компанії. Коли є різні спеціалісти в різних галузях — це завжди…</blockquote>
+        <div class="quote-card__author">Сергій Іванюта<span>Відгук у Google</span></div>
+      </div><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Мій чоловік — американець, і він знаходиться в Україні як волонтер уже протягом трьох років. За цей час пан Олександр неодноразово допомагав йому з усіма формальностями, документами та юридичними нюансами. Він надавав корисні поради у складних ситуаціях.…</blockquote>
+        <div class="quote-card__author">Olga W.<span>Відгук у Google</span></div>
+      </div><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Я іноземець, і з самого початку, коли я приїхав в Україну, хлопці займалися моїми юридичними справами, відкриттям будівельного бізнесу, оформленням посвідки на проживання та дозволів на роботу для моїх співробітників. Усе пройшло без проблем, швидко та…</blockquote>
+        <div class="quote-card__author">Muhammed Abdulloev<span>Відгук у Google</span></div>
+      </div></div>
+</div></section>
 
 <section class="section section--tight-bottom reveal"><div class="container">
     <div class="section__head"><span class="eyebrow">Суміжні практики</span><h2>Це може бути корисно</h2></div>
@@ -969,6 +996,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtcodcle" defer></script>
+<script src="/assets/js/main.js?v=mtcq66k9" defer></script>
 </body>
 </html>

@@ -501,9 +501,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .prose h2 { font-size: 1.7rem; margin-top: 2.4rem; padding-top: 0.4rem; font-weight: 800; }
 .prose h3 { font-size: 1.3rem; margin-top: 1.8rem; font-weight: 700; }
 .prose p, .prose li { color: #2b3a4f; font-size: 1.05rem; line-height: 1.8; }
-/* justified body copy only (long paragraphs) — NO hyphenation */
+/* body copy — вирівнювання по лівому краю: justify давав ріки пробілів
+   в українському тексті на вузьких колонках */
 .prose p, .page-hero p {
-  text-align: justify; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
+  text-align: left; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
 }
 /* centered section heads must stay centered (override any inherited align) */
 .section__head--center, .section__head--center .eyebrow,
@@ -845,6 +846,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="btn btn--primary" href="#consult">Безкоштовна консультація</a>
     <a class="btn btn--ghost-dark" href="tel:+380688884400"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg> +38 (068) 888 44 00</a>
   </div>
+  <div class="hero__trust">
+    <div class="stat"><strong>15+</strong><span>років практики</span></div>
+    <div class="stat"><strong>500+</strong><span>проведених справ</span></div>
+    <div class="stat"><strong>16</strong><span>юристів у команді</span></div>
+    <div class="stat"><strong>5.0</strong><span>рейтинг у Google</span></div>
+  </div>
 </div></section>
 
 <section class="section"><div class="container">
@@ -916,6 +923,26 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <div class="faq"><details><summary>Чи приймаєте ви клієнтів з усіх районів Києва?</summary><div><p>Так. Ми працюємо по всьому місту — від Святошина до Дарниці. Більшість питань вирішуємо дистанційно, а до судів і державних органів виїжджає наш юрист незалежно від району.</p></div></details><details><summary>Скільки коштує перша консультація юриста в Києві?</summary><div><p>Вартість консультації фіксована й озвучується під час запису. Якщо після консультації ви укладаєте договір на супровід, її вартість зазвичай зараховується в загальний гонорар.</p></div></details><details><summary>Чи можна вирішити питання без особистого візиту в офіс?</summary><div><p>Здебільшого так. Документи ми приймаємо в електронному вигляді, консультуємо у відеоформаті, а представництво в судах і органах адвокат веде на підставі договору про надання правничої допомоги та ордера — без вашої присутності.</p></div></details><details><summary>Чи беретеся ви і за справи фізосіб, і за бізнес?</summary><div><p>Так, LEGIUS — фірма повного циклу. Ми супроводжуємо як приватні питання громадян, так і складні корпоративні та податкові проєкти компаній.</p></div></details><details><summary>Як швидко юрист почне займатися моєю справою?</summary><div><p>Після консультації та укладення договору ми приступаємо до роботи того ж або наступного робочого дня. У термінових справах із процесуальними строками реагуємо невідкладно.</p></div></details></div>
   </div></section>
 
+<section class="section section--soft"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Відгуки</span>
+    <h2>Що кажуть клієнти</h2>
+  </div>
+  <div class="grid grid--3"><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Наша співпраця почалася ще з 2019 року, з тих пір звертаюсь тільки до цих юристів. Подобається, що спектр послуг широкий, і хлопці закривають практично всі питання, які виникають у нашої компанії. Коли є різні спеціалісти в різних галузях — це завжди…</blockquote>
+        <div class="quote-card__author">Сергій Іванюта<span>Відгук у Google</span></div>
+      </div><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Мій чоловік — американець, і він знаходиться в Україні як волонтер уже протягом трьох років. За цей час пан Олександр неодноразово допомагав йому з усіма формальностями, документами та юридичними нюансами. Він надавав корисні поради у складних ситуаціях.…</blockquote>
+        <div class="quote-card__author">Olga W.<span>Відгук у Google</span></div>
+      </div><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Я іноземець, і з самого початку, коли я приїхав в Україну, хлопці займалися моїми юридичними справами, відкриттям будівельного бізнесу, оформленням посвідки на проживання та дозволів на роботу для моїх співробітників. Усе пройшло без проблем, швидко та…</blockquote>
+        <div class="quote-card__author">Muhammed Abdulloev<span>Відгук у Google</span></div>
+      </div></div>
+</div></section>
+
 <section class="section section--tight-bottom reveal"><div class="container">
     <div class="section__head"><span class="eyebrow">Суміжні практики</span><h2>Це може бути корисно</h2></div>
     <div class="grid grid--3"><a class="card" href="/practices/litigation/"><h3>Судові спори</h3><p>Команда LEGIUS веде складні судові процеси для бізнесу й приватних клієнтів: господарські та цивільні спори, адміністративне оскарження, стягнення боргів і супровід виконавчого провадження. Ми будуємо позицію на доказах і процесуальній стратегії, а не на обіцянках.</p><span class="card__link">Детальніше</span></a><a class="card" href="/practices/corporate-law/"><h3>Корпоративне право</h3><p>Юристи LEGIUS у Києві супроводжують бізнес на всіх етапах: реєстрація, корпоративне управління, due diligence, спори, захист від рейдерства та комплаєнс.</p><span class="card__link">Детальніше</span></a><a class="card" href="/practices/family-law/"><h3>Сімейне право</h3><p>Команда LEGIUS веде розлучення, поділ майна, аліментні та дитячі спори в Києві — стратегічно, конфіденційно і з фокусом на захист інтересів клієнта.</p><span class="card__link">Детальніше</span></a></div>
@@ -983,6 +1010,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtcodcle" defer></script>
+<script src="/assets/js/main.js?v=mtcq66k9" defer></script>
 </body>
 </html>

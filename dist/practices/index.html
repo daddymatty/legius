@@ -501,9 +501,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .prose h2 { font-size: 1.7rem; margin-top: 2.4rem; padding-top: 0.4rem; font-weight: 800; }
 .prose h3 { font-size: 1.3rem; margin-top: 1.8rem; font-weight: 700; }
 .prose p, .prose li { color: #2b3a4f; font-size: 1.05rem; line-height: 1.8; }
-/* justified body copy only (long paragraphs) — NO hyphenation */
+/* body copy — вирівнювання по лівому краю: justify давав ріки пробілів
+   в українському тексті на вузьких колонках */
 .prose p, .page-hero p {
-  text-align: justify; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
+  text-align: left; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
 }
 /* centered section heads must stay centered (override any inherited align) */
 .section__head--center, .section__head--center .eyebrow,
@@ -929,6 +930,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtcodcle" defer></script>
+<script src="/assets/js/main.js?v=mtcq66k9" defer></script>
 </body>
 </html>

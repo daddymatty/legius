@@ -501,9 +501,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .prose h2 { font-size: 1.7rem; margin-top: 2.4rem; padding-top: 0.4rem; font-weight: 800; }
 .prose h3 { font-size: 1.3rem; margin-top: 1.8rem; font-weight: 700; }
 .prose p, .prose li { color: #2b3a4f; font-size: 1.05rem; line-height: 1.8; }
-/* justified body copy only (long paragraphs) — NO hyphenation */
+/* body copy — вирівнювання по лівому краю: justify давав ріки пробілів
+   в українському тексті на вузьких колонках */
 .prose p, .page-hero p {
-  text-align: justify; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
+  text-align: left; -webkit-hyphens: none; hyphens: none; overflow-wrap: break-word;
 }
 /* centered section heads must stay centered (override any inherited align) */
 .section__head--center, .section__head--center .eyebrow,
@@ -845,6 +846,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="btn btn--primary" href="#consult">Безкоштовна консультація</a>
     <a class="btn btn--ghost-dark" href="tel:+380688884400"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg> +38 (068) 888 44 00</a>
   </div>
+  <div class="hero__trust">
+    <div class="stat"><strong>15+</strong><span>років практики</span></div>
+    <div class="stat"><strong>500+</strong><span>проведених справ</span></div>
+    <div class="stat"><strong>16</strong><span>юристів у команді</span></div>
+    <div class="stat"><strong>5.0</strong><span>рейтинг у Google</span></div>
+  </div>
 </div></section>
 
 <section class="section"><div class="container">
@@ -909,6 +916,26 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <div class="section__head section__head--center"><span class="eyebrow">FAQ</span><h2>Поширені запитання</h2></div>
     <div class="faq"><details><summary>Хто подає документи на бронювання — працівник чи підприємство?</summary><div><p>Підприємство. Це принципова відмінність від інших відстрочок: працівник не може оформити бронювання самостійно, ініціатором і виконавцем усієї підготовки виступає роботодавець.</p></div></details><details><summary>Чому списки на бронювання повертають найчастіше?</summary><div><p>Через неактуальні дані працівників у реєстрі та розбіжності між обліком підприємства й даними ТЦК. Більшість відмов технічні й усуваються швидко, якщо знати, що саме виправляти.</p></div></details><details><summary>Чи можна забронювати працівника, якщо облік вівся формально?</summary><div><p>Спершу доведеться привести облік до ладу — особові картки, повідомлення до ТЦК, звірка. Забронювати можна лише того, хто належним чином перебуває на військовому обліку з актуальними даними.</p></div></details><details><summary>Чи є бронювання безстроковим?</summary><div><p>Ні, воно надається на визначений строк і потребує поновлення, а також припиняється при звільненні працівника. Це варто враховувати в кадровому плануванні.</p></div></details><details><summary>Чи будь-яке підприємство може бронювати працівників?</summary><div><p>Ні. Механізм доступний підприємствам, які відповідають визначеним критеріям. Якщо компанія їм не відповідає, якість документів цього не змінить — ми говоримо про це на першій зустрічі.</p></div></details></div>
   </div></section>
+
+<section class="section section--soft"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Відгуки</span>
+    <h2>Що кажуть клієнти</h2>
+  </div>
+  <div class="grid grid--3"><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Наша співпраця почалася ще з 2019 року, з тих пір звертаюсь тільки до цих юристів. Подобається, що спектр послуг широкий, і хлопці закривають практично всі питання, які виникають у нашої компанії. Коли є різні спеціалісти в різних галузях — це завжди…</blockquote>
+        <div class="quote-card__author">Сергій Іванюта<span>Відгук у Google</span></div>
+      </div><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Мій чоловік — американець, і він знаходиться в Україні як волонтер уже протягом трьох років. За цей час пан Олександр неодноразово допомагав йому з усіма формальностями, документами та юридичними нюансами. Він надавав корисні поради у складних ситуаціях.…</blockquote>
+        <div class="quote-card__author">Olga W.<span>Відгук у Google</span></div>
+      </div><div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>Я іноземець, і з самого початку, коли я приїхав в Україну, хлопці займалися моїми юридичними справами, відкриттям будівельного бізнесу, оформленням посвідки на проживання та дозволів на роботу для моїх співробітників. Усе пройшло без проблем, швидко та…</blockquote>
+        <div class="quote-card__author">Muhammed Abdulloev<span>Відгук у Google</span></div>
+      </div></div>
+</div></section>
 
 <section class="section section--tight-bottom reveal"><div class="container">
     <div class="section__head"><span class="eyebrow">Суміжні практики</span><h2>Це може бути корисно</h2></div>
@@ -977,6 +1004,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtcodcle" defer></script>
+<script src="/assets/js/main.js?v=mtcq66k9" defer></script>
 </body>
 </html>
