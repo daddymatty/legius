@@ -1,5 +1,6 @@
 /* Blog: index (hub), pillar page, article page. */
 import { site } from "../data/site.js";
+import { landingFor } from "../data/landing-map.js";
 import { ctaBand, breadcrumbs, icons, searchInline } from "./components.js";
 import { renderProseSections, renderFaq, escape as esc } from "./render.js";
 import { practiceServices } from "../lib/services.js";
@@ -120,6 +121,15 @@ ${breadcrumbs(crumbs)}
           return svc.length ? `<br><span style="font-size:.92em">Послуги напряму: ${svc.map((s) => `<a href="/practices/${practice.slug}/${s.slug}/">${esc(s.title)}</a>`).join(", ")}.</span>` : "";
         })()}</div>` : ""}
       </article>
+      ${(() => {
+        const L = landingFor(a);
+        return L ? `<div class="inline-cta reveal">
+        <div class="inline-cta__text"><strong>${esc(L.ask)}</strong><span>Адвокати LEGIUS ведуть такі справи в Києві. Перша консультація — безкоштовна.</span></div>
+        <div class="inline-cta__actions">
+          <a class="btn btn--primary" href="${L.href}">${esc(L.label)}</a>
+          <a class="btn btn--ghost" href="tel:${site.phoneHref}">${esc(site.phoneDisplay)}</a>
+        </div></div>` : "";
+      })()}
       ${a.faq && a.faq.length ? `<section class="article-block reveal" aria-label="Питання та відповіді">
         <h2 class="article-block__title">Питання та відповіді</h2>
         <div class="faq">${a.faq.map((f) => `<details><summary>${esc(f.q)}</summary><div>${f.a.startsWith("<") ? f.a : `<p>${esc(f.a)}</p>`}</div></details>`).join("")}</div>
