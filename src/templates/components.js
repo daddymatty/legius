@@ -281,3 +281,26 @@ export function proseWithCta(sections, renderSections, href = "#consult") {
   const cut = secs.length >= 6 ? 3 : 2;
   return renderSections(secs.slice(0, cut)) + inlineCta(href) + renderSections(secs.slice(cut));
 }
+
+/* ---- Відповідальний адвокат (практики й посадкові) ---- */
+export function findLawyer(p, team) {
+  return (
+    (p.lead && team.find((m) => m.slug === p.lead)) ||
+    team.find((m) => (m.practices || []).includes(p.slug)) ||
+    team.find((m) => m.roleKey === "managing-partner") ||
+    team[0]
+  );
+}
+
+export function lawyerCard(lawyer) {
+  if (!lawyer || !site.showTeam) return "";
+  const name = lawyer.displayName || lawyer.name;
+  return `<div class="card">
+    <span class="eyebrow">Відповідальний адвокат</span>
+    <a class="lawyer-card__row" href="/team/${lawyer.slug}/">
+      <img src="${lawyer.photo}" width="64" height="80" loading="lazy" decoding="async" alt="" aria-hidden="true">
+      <span><b>${esc(name)}</b> <span>${esc(lawyer.role)}</span></span>
+    </a>
+    <a class="btn btn--ghost btn--block" href="/team/${lawyer.slug}/">Профіль адвоката</a>
+  </div>`;
+}

@@ -219,7 +219,7 @@ async function build() {
             breadcrumbSchema([{ name: "Головна", href: "/" }, { name: loc.navLabel, href: `/${loc.slug}/` }]),
           ],
         },
-        locationPage(loc, { practiceBySlug, cases }),
+        locationPage(loc, { practiceBySlug, cases, team }),
         `/${loc.slug}/`
       ),
       { priority: "0.8" }
@@ -415,6 +415,43 @@ async function build() {
   for (const a of articles) sxAdd(a.title, `/blog/${a.slug}/`, "Стаття", (a.keywords || []).join(" "));
   for (const c of cases) sxAdd(c.title, `/cases/${c.slug}/`, "Кейс", c.practiceLabel || "");
   await writeFile(path.join(DIST, "search-index.json"), JSON.stringify(sx), "utf8");
+
+  /* ---------- llms.txt ----------
+     Карта сайту для ШІ-асистентів. У серпні chatgpt.com дав 13 сесій
+     проти 41 у Google, з найкращою конверсією — канал реальний,
+     тож пояснюємо йому структуру сайту явно. */
+  console.log("→ llms.txt");
+  const llms = [
+    `# ${site.legalName}`,
+    "",
+    `> Адвокатське об'єднання у Києві. Ведемо справи у сімейному, військовому, корпоративному, податковому, міграційному праві, судові спори та захист бізнесу. Працюємо з ${site.founded} року. Перша консультація безкоштовна.`,
+    "",
+    `Телефон: ${site.phoneDisplay} · Email: ${site.email} · Сайт: ${site.domain}`,
+    "",
+    "## Практики",
+    ...practices.map((p) => `- [${p.shortTitle}](${site.domain}/practices/${p.slug}/): ${p.metaDescription || p.lead || ""}`),
+    "",
+    "## Сторінки послуг",
+    ...locations.map((l) => `- [${l.navLabel}](${site.domain}/${l.slug}/): ${l.metaDescription || ""}`),
+    "",
+    "## Довідкові матеріали",
+    ...pillars.map((p) => `- [${p.title}](${site.domain}/blog/${p.slug}/)`),
+    "",
+    `У блозі ${articles.length} статей з роз'ясненнями законодавства: ${site.domain}/blog/`,
+    "",
+    "## Довідка",
+    `- [Про компанію](${site.domain}/about/)`,
+    `- [Команда](${site.domain}/team/)`,
+    `- [Кейси](${site.domain}/cases/)`,
+    `- [Контакти](${site.domain}/contacts/)`,
+    "",
+    "## Примітки",
+    "- Матеріали на сайті мають інформаційний характер і не замінюють консультацію адвоката у конкретній справі.",
+    "- Номери судових справ і персональні дані клієнтів на сайті не публікуються.",
+    "- Актуальність норм звіряйте з чинним законодавством: посилання на строки й розміри платежів у статтях подані як механізм розрахунку, а не як фіксовані значення.",
+    "",
+  ].join("\n");
+  await writeFile(path.join(DIST, "llms.txt"), llms, "utf8");
 
   /* ---------- robots.txt, sitemap.xml, manifest ---------- */
   console.log("→ robots.txt, sitemap.xml, manifest");

@@ -28,6 +28,37 @@ export const landingMap = {
     { re: /reyestratsiya|statut|gromadsk|asotsiats|spilka|nepributkovyy|nerezydent|kapital|zbory|mistseznakhodzhennya|benefitsiar/, href: "/reyestratsiya-biznesu-kyiv/", label: "Реєстрація бізнесу", ask: "Реєструєте компанію чи вносите зміни?" },
     { re: /./, href: "/yuryst-dlya-biznesu-kyiv/", label: "Юрист для бізнесу", ask: "Потрібен юрист для компанії?" },
   ],
+  "migration-law": [
+    { re: /dozvil|pratsi|pratsevlashtuvannya|robotod/, href: "/advokat-dozvil-na-robotu-kyiv/", label: "Дозвіл на роботу для іноземця", ask: "Оформлюєте іноземного працівника?" },
+    { re: /./, href: "/advokat-dozvil-na-robotu-kyiv/", label: "Міграційний адвокат", ask: "Потрібна допомога з міграційними документами?" },
+  ],
+  litigation: [
+    { re: /./, href: "/advokat-sudovi-spory-kyiv/", label: "Адвокат у судових спорах", ask: "Готуєтесь до суду або вже в процесі?" },
+  ],
+  "criminal-business": [
+    { re: /./, href: "/advokat-zakhyst-biznesu-kyiv/", label: "Захист бізнесу", ask: "Обшук, допит або кримінальне провадження?" },
+  ],
+  "real-estate": [
+    { re: /./, href: "/yuryst-z-nerukhomosti-kyiv/", label: "Юрист з нерухомості", ask: "Купуєте нерухомість або виник спір?" },
+  ],
+  /* Практики без окремої посадкової — ведемо на сторінку практики.
+     Створювати для них майже дублікати немає сенсу: пошуковий намір
+     не розпадається на окремі підпослуги, і сторінки конкурували б між собою. */
+  "ip-law": [
+    { re: /./, href: "/practices/ip-law/", label: "Захист інтелектуальної власності", ask: "Реєструєте торгову марку або захищаєте права?" },
+  ],
+  "it-law": [
+    { re: /./, href: "/practices/it-law/", label: "Юрист для IT", ask: "Дія.City, контракти або персональні дані?" },
+  ],
+  "m-and-a": [
+    { re: /./, href: "/practices/m-and-a/", label: "Супровід угод M&A", ask: "Плануєте купівлю або продаж бізнесу?" },
+  ],
+  investment: [
+    { re: /./, href: "/practices/investment/", label: "Супровід інвестицій", ask: "Структуруєте інвестицію?" },
+  ],
+  "land-law": [
+    { re: /./, href: "/practices/land-law/", label: "Земельний юрист", ask: "Питання щодо земельної ділянки?" },
+  ],
   "tax-law": [
     { re: /./, href: "/podatkovyy-advokat-kyiv/", label: "Податковий адвокат", ask: "Перевірка, донарахування або блокування накладних?" },
   ],

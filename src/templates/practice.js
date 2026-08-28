@@ -1,31 +1,11 @@
 /* Practice area page (overview + services hub) + individual service pages. */
 import { site } from "../data/site.js";
 import { testimonials } from "../data/testimonials.js";
-import { leadForm, ctaBand, breadcrumbs, icons, searchInline, ratingBadge, stepsBlock, heroTrust, reviewsBlock, proseWithCta } from "./components.js";
+import { leadForm, ctaBand, breadcrumbs, icons, searchInline, ratingBadge, stepsBlock, heroTrust, reviewsBlock, proseWithCta, findLawyer, lawyerCard } from "./components.js";
 import { renderSections, renderFaq, relatedPractices, escape as esc } from "./render.js";
 import { practiceServices, serviceContent } from "../lib/services.js";
 
-function findLawyer(p, team) {
-  return (
-    (p.lead && team.find((m) => m.slug === p.lead)) ||
-    team.find((m) => (m.practices || []).includes(p.slug)) ||
-    team.find((m) => m.roleKey === "managing-partner") ||
-    team[0]
-  );
-}
 
-function lawyerCard(lawyer) {
-  if (!lawyer || !site.showTeam) return "";
-  const name = lawyer.displayName || lawyer.name;
-  return `<div class="card">
-    <span class="eyebrow">Відповідальний адвокат</span>
-    <a class="lawyer-card__row" href="/team/${lawyer.slug}/">
-      <img src="${lawyer.photo}" width="64" height="80" loading="lazy" decoding="async" alt="" aria-hidden="true">
-      <span><b>${esc(name)}</b> <span>${esc(lawyer.role)}</span></span>
-    </a>
-    <a class="btn btn--ghost btn--block" href="/team/${lawyer.slug}/">Профіль адвоката</a>
-  </div>`;
-}
 
 const WHY_US = [
   { h: "Профільний адвокат", p: "Вашу справу веде фахівець саме з цього напряму, а не «універсал»." },
