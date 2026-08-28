@@ -210,3 +210,74 @@ export function footer(practices) {
   </div>
 </footer>${messengers()}`;
 }
+
+/* ---- Спільні блоки для сторінок практик і посадкових ---- */
+
+const WORK_STEPS = [
+  { i: "phone", t: "Консультація", d: "Розбираємо ситуацію і кажемо прямо, чи потрібен адвокат. Якщо впораєтесь самі — так і скажемо." },
+  { i: "doc", t: "Документи", d: "Дивимося, що є на руках, чого бракує і які докази доведеться здобувати окремо." },
+  { i: "scale", t: "Оцінка перспективи", d: "Називаємо реалістичний сценарій, строки й обсяг роботи до того, як ви щось платите." },
+  { i: "handshake", t: "Робота у справі", d: "Ведемо справу й тримаємо в курсі. Ви завжди знаєте, на якому етапі процес." },
+];
+
+export function stepsBlock() {
+  return `<section class="section section--soft"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Як ми працюємо</span>
+    <h2>Чотири кроки без сюрпризів</h2>
+  </div>
+  <div class="grid grid--4">${WORK_STEPS.map(
+    (s, n) => `<div class="card step-card reveal">
+      <span class="step-card__num">${n + 1}</span>
+      <span class="step-card__icon" aria-hidden="true">${icons[s.i]}</span>
+      <h3>${esc(s.t)}</h3>
+      <p>${esc(s.d)}</p>
+    </div>`
+  ).join("")}</div>
+</div></section>`;
+}
+
+export function heroTrust() {
+  return `<div class="hero__trust">
+    <div class="stat"><strong>${site.stats.years}</strong><span>років практики</span></div>
+    <div class="stat"><strong>${site.stats.cases}</strong><span>проведених справ</span></div>
+    <div class="stat"><strong>${site.stats.lawyers}</strong><span>юристів у команді</span></div>
+    <div class="stat"><strong>${site.rating.value}</strong><span>рейтинг у Google</span></div>
+  </div>`;
+}
+
+export function inlineCta(href = "#consult", title = "Не впевнені, чи є у вас підстави?", text = "Перша консультація безкоштовна. Розберемо ситуацію і скажемо чесно, чи є перспектива.") {
+  return `<div class="inline-cta reveal">
+  <div class="inline-cta__text"><strong>${esc(title)}</strong><span>${esc(text)}</span></div>
+  <div class="inline-cta__actions">
+    <a class="btn btn--primary" href="${href}">Отримати консультацію</a>
+    <a class="btn btn--ghost" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
+  </div>
+</div>`;
+}
+
+export function reviewsBlock(testimonials, n = 3) {
+  const cards = (testimonials || []).slice(0, n).map(
+    (t) => `<div class="quote-card reveal">
+        <div class="quote-card__stars">★★★★★</div>
+        <blockquote>${esc(t.text.length > 260 ? t.text.slice(0, 257).replace(/\s+\S*$/, "") + "…" : t.text)}</blockquote>
+        <div class="quote-card__author">${esc(t.name)}<span>${esc(t.role)}</span></div>
+      </div>`
+  ).join("");
+  if (!cards) return "";
+  return `<section class="section section--soft"><div class="container">
+  <div class="section__head section__head--center">
+    <span class="eyebrow">Відгуки</span>
+    <h2>Що кажуть клієнти</h2>
+  </div>
+  <div class="grid grid--3">${cards}</div>
+</div></section>`;
+}
+
+/* Розбиває масив розділів навпіл і вставляє CTA всередину тексту. */
+export function proseWithCta(sections, renderSections, href = "#consult") {
+  const secs = sections || [];
+  if (secs.length < 4) return renderSections(secs);
+  const cut = secs.length >= 6 ? 3 : 2;
+  return renderSections(secs.slice(0, cut)) + inlineCta(href) + renderSections(secs.slice(cut));
+}
