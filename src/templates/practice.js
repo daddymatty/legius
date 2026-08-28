@@ -1,6 +1,7 @@
 /* Practice area page (overview + services hub) + individual service pages. */
 import { site } from "../data/site.js";
-import { leadForm, ctaBand, breadcrumbs, icons, searchInline, ratingBadge } from "./components.js";
+import { testimonials } from "../data/testimonials.js";
+import { leadForm, ctaBand, breadcrumbs, icons, searchInline, ratingBadge, stepsBlock, heroTrust, reviewsBlock, proseWithCta } from "./components.js";
 import { renderSections, renderFaq, relatedPractices, escape as esc } from "./render.js";
 import { practiceServices, serviceContent } from "../lib/services.js";
 
@@ -73,7 +74,7 @@ export function practicePage(p, { practiceBySlug, cases, team = [], articles = [
   ];
   const lawyer = findLawyer(p, team);
   const services = practiceServices(p);
-  const overview = renderSections(p.sections || []); // full practice content (fills the column next to the sticky aside)
+  const overview = proseWithCta(p.sections, renderSections, `#practice-${p.slug}`);
 
   const serviceCards = services
     .map(
@@ -115,8 +116,10 @@ ${breadcrumbs(crumbs)}
     <a class="btn btn--primary" href="#practice-${p.slug}">Отримати консультацію</a>
     <a class="btn btn--ghost-dark" href="tel:${site.phoneHref}">${icons.phone} ${esc(site.phoneDisplay)}</a>
   </div>
-  ${ratingBadge()}
+  ${heroTrust()}
 </div></section>
+
+${stepsBlock()}
 
 <section class="section"><div class="container">
   <div class="content-aside">
@@ -136,6 +139,8 @@ ${breadcrumbs(crumbs)}
 ${whyUsBlock(p)}
 
 ${caseBlock}
+
+${reviewsBlock(testimonials)}
 
 ${articleBlock}
 
