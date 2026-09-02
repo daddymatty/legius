@@ -819,6 +819,20 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .prose .btn--primary { color: #fff; }
 .prose .btn--ghost { color: var(--c-ink); }
 .prose .btn--ghost-dark { color: #fff; }
+
+/* Список суміжних посадкових під практикою */
+.link-columns {
+  display: grid; gap: 0.6rem 1.6rem; list-style: none; padding: 0;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+.link-columns li { display: flex; }
+.link-columns a {
+  flex: 1; display: flex; align-items: center; padding: 0.75rem 0.9rem;
+  background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius-sm, 8px);
+  color: var(--c-ink); text-decoration: none; font-weight: 600; font-size: 0.95rem;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+.link-columns a:hover { border-color: var(--c-teal); transform: translateY(-2px); }
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10B84LRHKX" data-ga="G-10B84LRHKX"></script>
@@ -1018,9 +1032,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
       </div></div>
 </div></section>
 
+<section class="section section--soft reveal"><div class="container">
+    <div class="section__head"><span class="eyebrow">Ще за напрямом</span><h2>Суміжні послуги: Нерухомість</h2></div>
+    <ul class="link-columns"><li><a href="/yuryst-livyy-bereh-kyiv/">Юрист Лівий берег</a></li><li><a href="/advokat-osokorky/">Адвокат Осокорки</a></li><li><a href="/yuryst-z-nerukhomosti-kyiv/">Юрист з нерухомості</a></li></ul>
+  </div></section>
+
 <section class="section section--tight-bottom reveal"><div class="container">
     <div class="section__head"><span class="eyebrow">Суміжні практики</span><h2>Це може бути корисно</h2></div>
-    <div class="grid grid--3"><a class="card" href="/practices/real-estate/"><h3>Нерухомість</h3><p>Супровід купівлі-продажу, due diligence, новобудови та інвестиційні договори, реєстрація права власності, оренда й спори з забудовниками в Києві.</p><span class="card__link">Детальніше</span></a></div>
+    <div class="grid grid--3"><a class="card" href="/advokat-osokorky/"><h3>Адвокат Осокорки</h3><p>Осокорки стрімко ростуть, а разом із ними — і правові питання мешканців. LEGIUS супроводжує жителів і власників бізнесу мікрорайону поруч і онлайн.</p><span class="card__link">Детальніше</span></a><a class="card" href="/advokat-darnytskyi-raion/"><h3>Адвокат Дарниця</h3><p>LEGIUS веде справи мешканців Дарницького району — від побутових спорів до представництва в Дарницькому районному суді міста Києва.</p><span class="card__link">Детальніше</span></a><a class="card" href="/practices/real-estate/"><h3>Нерухомість</h3><p>Супровід купівлі-продажу, due diligence, новобудови та інвестиційні договори, реєстрація права власності, оренда й спори з забудовниками в Києві.</p><span class="card__link">Детальніше</span></a><a class="card" href="/yuryst-livyy-bereh-kyiv/"><h3>Юрист Лівий берег</h3><p>Мешканцям лівобережжя не обов’язково долати мости заради юриста. LEGIUS обслуговує Дарницький і Дніпровський райони, працюючи поруч і онлайн.</p><span class="card__link">Детальніше</span></a></div>
   </div></section>
 
 <section class="section section--cta"><div class="container"><div class="cta-band reveal">
@@ -1085,6 +1104,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtiowg5v" defer></script>
+<script src="/assets/js/main.js?v=mtkmdrup" defer></script>
 </body>
 </html>
