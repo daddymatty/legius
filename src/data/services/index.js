@@ -18,6 +18,7 @@ import migrationLaw from "./migration-law.js";
 import familyLawExt from "./family-law-ext.js";
 import criminalBusinessExt from "./criminal-business-ext.js";
 import corporateLawExt from "./corporate-law-ext.js";
+import corporateLawExt2 from "./corporate-law-ext2.js";
 import militaryLawExt from "./military-law-ext.js";
 import taxLawExt from "./tax-law-ext.js";
 import litigationExt from "./litigation-ext.js";
@@ -31,7 +32,7 @@ import mAndAExt from "./m-and-a-ext.js";
 export const serviceOverrides = {
   "family-law": { ...familyLaw, ...familyLawExt },
   "criminal-business": { ...criminalBusiness, ...criminalBusinessExt },
-  "corporate-law": { ...corporateLaw, ...corporateLawExt },
+  "corporate-law": { ...corporateLaw, ...corporateLawExt, ...corporateLawExt2 },
   "military-law": { ...militaryLaw, ...militaryLawExt },
   "tax-law": { ...taxLaw, ...taxLawExt },
   "litigation": { ...litigation, ...litigationExt },
