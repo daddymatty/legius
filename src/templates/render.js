@@ -39,13 +39,21 @@ export function serviceList(services = []) {
   return `<ul style="display:grid;gap:.7rem">${items}</ul>`;
 }
 
-export function relatedPractices(slugs = [], practiceBySlug) {
+/* `related` у даних змішує слаги практик і посадкових. Раніше слаги посадкових
+   мовчки відкидалися — 20 редакційних звʼязків між посадковими не рендерилися. */
+export function relatedPractices(slugs = [], practiceBySlug, locationBySlug = {}) {
   const cards = slugs
-    .map((s) => practiceBySlug[s])
+    .map((s) => {
+      const p = practiceBySlug[s];
+      if (p) return { href: `/practices/${p.slug}/`, title: p.shortTitle, text: p.summary };
+      const l = locationBySlug[s];
+      if (l) return { href: `/${l.slug}/`, title: l.navLabel, text: l.heroSub };
+      return null;
+    })
     .filter(Boolean)
     .map(
-      (p) =>
-        `<a class="card" href="/practices/${p.slug}/"><h3>${esc(p.shortTitle)}</h3><p>${esc(p.summary)}</p><span class="card__link">Детальніше</span></a>`
+      (c) =>
+        `<a class="card" href="${c.href}"><h3>${esc(c.title)}</h3><p>${esc(c.text)}</p><span class="card__link">Детальніше</span></a>`
     )
     .join("");
   if (!cards) return "";

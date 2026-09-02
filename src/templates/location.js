@@ -27,7 +27,24 @@ function caseBlock(cases, loc) {
 </div></section>`;
 }
 
-export function locationPage(loc, { practiceBySlug, cases = [], team = [] }) {
+/* Сусідні посадкові тієї самої практики: без цього кожна комерційна сторінка
+   висить окремо і має 1–5 вхідних посилань. */
+function siblingBlock(loc, locations, practiceBySlug) {
+  const primary = (l) => (l.related || []).find((r) => practiceBySlug[r]);
+  const mine = primary(loc);
+  if (!mine) return "";
+  const sibs = (locations || []).filter((l) => l.slug !== loc.slug && primary(l) === mine).slice(0, 6);
+  if (!sibs.length) return "";
+  const label = practiceBySlug[mine].shortTitle;
+  return `<section class="section section--soft reveal"><div class="container">
+    <div class="section__head"><span class="eyebrow">Ще за напрямом</span><h2>Суміжні послуги: ${esc(label)}</h2></div>
+    <ul class="link-columns">${sibs
+      .map((l) => `<li><a href="/${l.slug}/">${esc(l.navLabel)}</a></li>`)
+      .join("")}</ul>
+  </div></section>`;
+}
+
+export function locationPage(loc, { practiceBySlug, locationBySlug = {}, locations = [], cases = [], team = [] }) {
   const body = proseWithCta(loc.sections, renderSections);
   /* відповідального адвоката беремо за першою пов'язаною практикою */
   const practice = (loc.related || []).map((r) => practiceBySlug[r]).find(Boolean);
@@ -66,7 +83,9 @@ ${renderFaq(loc.faq, "Поширені запитання")}
 
 ${reviewsBlock(testimonials)}
 
-${relatedPractices(loc.related, practiceBySlug)}
+${siblingBlock(loc, locations, practiceBySlug)}
+
+${relatedPractices(loc.related, practiceBySlug, locationBySlug)}
 
 ${ctaBand({ title: "Потрібен юрист поруч?", text: "Залиште заявку — ми зв’яжемося протягом 15 хвилин і запропонуємо зручний формат зустрічі: в офісі або онлайн." })}
 

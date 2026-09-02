@@ -205,6 +205,7 @@ async function build() {
 
   /* ---------- Local landing pages (root level) ---------- */
   console.log("→ Локальні сторінки:", locations.length);
+  const locationBySlug = Object.fromEntries(locations.map((l) => [l.slug, l]));
   for (const loc of locations) {
     await writePage(
       loc.slug,
@@ -219,7 +220,7 @@ async function build() {
             breadcrumbSchema([{ name: "Головна", href: "/" }, { name: loc.navLabel, href: `/${loc.slug}/` }]),
           ],
         },
-        locationPage(loc, { practiceBySlug, cases, team }),
+        locationPage(loc, { practiceBySlug, locationBySlug, locations, cases, team }),
         `/${loc.slug}/`
       ),
       { priority: "0.8" }
