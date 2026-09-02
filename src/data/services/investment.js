@@ -207,6 +207,7 @@ export default {
   },
 
   "suprovid-u-spetsialnykh-rezhymakh-diyacity-industrialni-park": {
+    metaTitle: "Дія.City та індустріальні парки: супровід — LEGIUS",
     heroSub:
       "Супроводжуємо вхід у Дія.City та індустріальні парки — оцінюємо відповідність критеріям, готуємо документи й оформлюємо резидентство для отримання податкових і митних пільг.",
     sections: [

@@ -423,6 +423,7 @@ export default {
   },
 
   "zasvidchennya-dokumentiv-apostyl-pereklady-nostryfikatsiya": {
+    metaTitle: "Апостиль, переклади, нострифікація — LEGIUS, Київ",
     heroSub: "Засвідчуємо іноземні документи для використання в Україні: апостиль, консульське засвідчення, офіційні переклади та нострифікація дипломів.",
     sections: [
       {
