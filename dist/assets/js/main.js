@@ -516,6 +516,28 @@
     window.gtag("event", "call_click", { placement: inSticky, page_path: location.pathname });
   });
 
+  /* ---- Мобільні месенджери: три плаваючі кнопки перекривали текст сторінки,
+     тому на вузьких екранах вони згорнуті за один перемикач. ---- */
+  (function () {
+    var box = document.querySelector(".messengers");
+    var btn = box ? box.querySelector(".m-toggle") : null;
+    if (!btn) return;
+    function setOpen(open) {
+      box.classList.toggle("messengers--open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      setOpen(btn.getAttribute("aria-expanded") !== "true");
+    });
+    document.addEventListener("click", function (e) {
+      if (!box.contains(e.target)) setOpen(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" || e.key === "Esc") setOpen(false);
+    });
+  })();
+
   /* ---- Current year in footer ---- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();

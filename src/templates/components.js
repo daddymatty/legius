@@ -164,10 +164,17 @@ export function messengers() {
   const tg = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.8 15.6l-.4 4c.5 0 .8-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.6.2 1.8-.8l3.3-15.4c.3-1.3-.5-1.8-1.4-1.5L2 9.2c-1.3.5-1.3 1.2-.2 1.5l5 1.6L18 5.4c.5-.4 1-.2.6.2"/></svg>';
   const wa = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.6 6.6 0 01-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.7.8-.9 1.7-.6 2.8.6 2 2 3.6 3.9 4.6 2.4 1.2 2.9.9 3.4.9.7-.1 1.4-.6 1.6-1.2.2-.6.2-1 .1-1.1z"/></svg>';
   const vb = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.9 2 3 5.2 3 9.7c0 2.4 1.2 4.5 3.2 5.9v3.9l3-1.7c.9.2 1.9.3 2.8.3 5.1 0 9-3.2 9-7.7S17.1 2 12 2zm0 13.8c-.9 0-1.7-.1-2.5-.3l-.4-.1-2 1.1v-2.1l-.4-.3C5.1 13 4.2 11.4 4.2 9.7 4.2 6 7.6 3.2 12 3.2s7.8 2.8 7.8 6.5S16.4 15.8 12 15.8z"/></svg>';
+  const chat = '<svg class="ico-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.4 8.4 0 01-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.4 8.4 0 013.8-.9h.5a8.5 8.5 0 018 8v.5z"/></svg>';
+  const close = '<svg class="ico-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+  /* На вузьких екранах три кнопки перекривали текст, тому вони згорнуті
+     за один перемикач — див. .m-toggle у styles.css і main.js. */
   return `<div class="messengers" aria-label="Месенджери">
-    <a class="m-tg" href="${site.messengers.telegram}" target="_blank" rel="noopener" aria-label="Telegram">${tg}</a>
-    <a class="m-wa" href="${site.messengers.whatsapp}" target="_blank" rel="noopener" aria-label="WhatsApp">${wa}</a>
-    <a class="m-vb" href="${site.messengers.viber}" target="_blank" rel="noopener" aria-label="Viber">${vb}</a>
+    <div class="messengers__list" id="messenger-list">
+      <a class="m-tg" href="${site.messengers.telegram}" target="_blank" rel="noopener" aria-label="Telegram">${tg}</a>
+      <a class="m-wa" href="${site.messengers.whatsapp}" target="_blank" rel="noopener" aria-label="WhatsApp">${wa}</a>
+      <a class="m-vb" href="${site.messengers.viber}" target="_blank" rel="noopener" aria-label="Viber">${vb}</a>
+    </div>
+    <button type="button" class="m-toggle" aria-expanded="false" aria-controls="messenger-list" aria-label="Написати в месенджер">${chat}${close}</button>
   </div>
   <div class="sticky-cta" aria-label="Швидкі дії">
     <a class="s-call" href="tel:${site.phoneHref}">${icons.phone} Подзвонити</a>
