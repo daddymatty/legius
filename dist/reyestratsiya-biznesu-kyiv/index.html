@@ -535,7 +535,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 
 .article-layout { display: grid; gap: 2.5rem; }
 .toc { background: var(--c-mist); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.4rem; position: sticky; top: 132px; }
-.toc h4 { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
+.toc .toc__title { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
 .toc a { display: block; padding: 0.35rem 0; font-size: 0.9rem; color: var(--c-slate); }
 .toc a:hover { color: var(--c-teal-d); }
 
@@ -833,18 +833,35 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   transition: border-color 0.18s ease, transform 0.18s ease;
 }
 .link-columns a:hover { border-color: var(--c-teal); transform: translateY(-2px); }
+
+/* Таблиці не повинні розпирати сторінку на мобільному */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.4rem 0; max-width: 100%; }
+.table-wrap > table { margin: 0; min-width: 460px; }
+/* На вузькому екрані таблиця завжди ширша за контейнер — показуємо, що її
+   можна прогорнути вбік, тінню на правому краї. */
+@media (max-width: 720px) {
+  .table-wrap { box-shadow: inset -14px 0 14px -14px rgba(15, 23, 42, 0.3); border-radius: var(--radius-sm); }
+}
+
+/* Пропустити навігацію — для клавіатури та зчитувачів екрана */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 200;
+  padding: 0.7rem 1.1rem; background: var(--c-ink); color: #fff;
+  font-weight: 700; border-radius: 0 0 var(--radius-sm) 0; text-decoration: none;
+}
+.skip-link:focus { left: 0; }
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10B84LRHKX" data-ga="G-10B84LRHKX"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://legius.com.ua/#website","url":"https://legius.com.ua/","name":"LEGIUS","inLanguage":"uk-UA","publisher":{"@id":"https://legius.com.ua/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://legius.com.ua/blog/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","@id":"https://legius.com.ua/#organization","name":"Юридична компанія «ЛЕГІУС»","alternateName":"LEGIUS","url":"https://legius.com.ua/","logo":"https://legius.com.ua/assets/img/logo.svg","image":"https://legius.com.ua/assets/img/og-default.svg","description":"Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.","telephone":"+38 (068) 888 44 00","email":"office@legius.com.ua","priceRange":"$$$","foundingDate":"2011","areaServed":["Київ","Київська область","Україна"],"address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},"sameAs":["https://facebook.com/legius.law","https://linkedin.com/company/legius-law","https://youtube.com/@legius-law","https://instagram.com/legius.law"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":16}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","@id":"https://legius.com.ua/#organization","name":"Юридична компанія «ЛЕГІУС»","alternateName":"LEGIUS","url":"https://legius.com.ua/","logo":"https://legius.com.ua/assets/img/logo.svg","image":"https://legius.com.ua/assets/img/og-default.png","description":"Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.","telephone":"+38 (068) 888 44 00","email":"office@legius.com.ua","priceRange":"$$$","foundingDate":"2011","areaServed":["Київ","Київська область","Україна"],"address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},"sameAs":["https://facebook.com/legius.law","https://linkedin.com/company/legius-law","https://youtube.com/@legius-law","https://instagram.com/legius.law"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":16}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Attorney","name":"LEGIUS — Реєстрація бізнесу в Києві: ТОВ, ФОП, ГО","description":"Реєстрація ТОВ, ФОП і громадських організацій у Києві: вибір форми та системи оподаткування, статут, КВЕДи, неприбутковий статус, рахунок.","url":"https://legius.com.ua/reyestratsiya-biznesu-kyiv/","telephone":"+38 (068) 888 44 00","priceRange":"$$$","areaServed":"Київ","address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"parentOrganization":{"@id":"https://legius.com.ua/#organization"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Скільки коштує реєстрація ФОП і ГО?","acceptedAnswer":{"@type":"Answer","text":"Державна реєстрація ФОП і громадських об’єднань безоплатна — адміністративний збір за ці дії не справляється. Витрати виникають лише за юридичний супровід і послуги нотаріуса, якщо ви їх залучаєте."}},{"@type":"Question","name":"Скільки триває реєстрація?","acceptedAnswer":{"@type":"Answer","text":"ФОП при поданні онлайн з кваліфікованим електронним підписом — зазвичай один робочий день. ТОВ реєструється так само швидко, але більше часу займає підготовка статуту й домовленостей засновників. Для громадських об’єднань строк розгляду коротший за загальний."}},{"@type":"Question","name":"Чи можна зареєструватися, перебуваючи за кордоном?","acceptedAnswer":{"@type":"Answer","text":"Так — онлайн за наявності чинного кваліфікованого електронного підпису або через представника за довіреністю. Довіреність, видана за кордоном, потребує апостиля або консульської легалізації та нотаріального перекладу."}},{"@type":"Question","name":"Що обрати — ФОП чи ТОВ?","acceptedAnswer":{"@type":"Answer","text":"ФОП простіший і дешевший, але підприємець відповідає всім особистим майном, а сам ФОП не можна продати чи поділити на частки. ТОВ доцільне за наявності партнерів, великих контрагентів або планів залучати інвестиції."}},{"@type":"Question","name":"Чи отримує громадська організація неприбутковий статус автоматично?","acceptedAnswer":{"@type":"Answer","text":"Ні. Це окрема податкова процедура після державної реєстрації. Без неї всі надходження, включно з грантами й внесками, потрапляють під податок на прибуток."}},{"@type":"Question","name":"Чи можна змінити КВЕД або групу податку згодом?","acceptedAnswer":{"@type":"Answer","text":"Так, це окремі реєстраційні дії. Але доцільніше врахувати плани одразу: помилка з групою може коштувати права на спрощену систему, а дохід за незареєстрованим КВЕДом оподатковується за іншими правилами."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Головна","item":"https://legius.com.ua/"},{"@type":"ListItem","position":2,"name":"Реєстрація бізнесу","item":"https://legius.com.ua/reyestratsiya-biznesu-kyiv/"}]}</script>
 </head>
 <body class="">
 <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-<a href="#main" class="visually-hidden">Перейти до основного змісту</a>
+<a href="#main" class="skip-link">Перейти до основного змісту</a>
 <header class="site-header" data-header>
   <div class="util-bar" data-utilbar><div class="container">
     <div class="util-bar__left">
@@ -932,7 +949,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 <section class="section"><div class="container">
   <div class="content-aside">
     <div class="content-aside__main prose reveal" style="max-width:none"><section class="reveal"><h2>Спершу форма, потім документи</h2><p>Помилка з організаційно-правовою формою виправляється не заявою, а повною перереєстрацією. Тому починаємо не з подання документів, а з питання, що ви плануєте робити.</p>
-<table>
+<div class="table-wrap"><table>
 <thead><tr><th>Форма</th><th>Кому підходить</th><th>Ключова особливість</th></tr></thead>
 <tbody>
 <tr><td><b>ФОП</b></td><td>фриланс, послуги, роздріб, старт без партнерів</td><td>найпростіша звітність, але відповідальність усім особистим майном</td></tr>
@@ -940,7 +957,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 <tr><td><b>Громадська організація</b></td><td>адвокація, освіта, культура, спорт, гранти</td><td>неприбутковий статус, кошти не виводяться засновникам</td></tr>
 <tr><td><b>Громадська спілка</b></td><td>об’єднання компаній, галузеві асоціації</td><td>засновники — юридичні особи</td></tr>
 </tbody>
-</table>
+</table></div>
 <p>Порівняння двох головних варіантів — у матеріалі <a href="/blog/reyestratsiya-fop-vs-tov/">ФОП чи ТОВ</a>.</p></section>
 <section class="reveal"><h2>Реєстрація ФОП</h2><p>Найшвидший старт: <b>державний збір не справляється</b>, подання можливе онлайн з кваліфікованим електронним підписом, реєстрація зазвичай відбувається за один робочий день.</p>
 <p>Основна робота не в заяві, а навколо неї:</p>
@@ -1122,6 +1139,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtknpmpz" defer></script>
+<script src="/assets/js/main.js?v=mtli8ve2" defer></script>
 </body>
 </html>

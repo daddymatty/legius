@@ -535,7 +535,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 
 .article-layout { display: grid; gap: 2.5rem; }
 .toc { background: var(--c-mist); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.4rem; position: sticky; top: 132px; }
-.toc h4 { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
+.toc .toc__title { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
 .toc a { display: block; padding: 0.35rem 0; font-size: 0.9rem; color: var(--c-slate); }
 .toc a:hover { color: var(--c-teal-d); }
 
@@ -833,18 +833,35 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   transition: border-color 0.18s ease, transform 0.18s ease;
 }
 .link-columns a:hover { border-color: var(--c-teal); transform: translateY(-2px); }
+
+/* Таблиці не повинні розпирати сторінку на мобільному */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.4rem 0; max-width: 100%; }
+.table-wrap > table { margin: 0; min-width: 460px; }
+/* На вузькому екрані таблиця завжди ширша за контейнер — показуємо, що її
+   можна прогорнути вбік, тінню на правому краї. */
+@media (max-width: 720px) {
+  .table-wrap { box-shadow: inset -14px 0 14px -14px rgba(15, 23, 42, 0.3); border-radius: var(--radius-sm); }
+}
+
+/* Пропустити навігацію — для клавіатури та зчитувачів екрана */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 200;
+  padding: 0.7rem 1.1rem; background: var(--c-ink); color: #fff;
+  font-weight: 700; border-radius: 0 0 var(--radius-sm) 0; text-decoration: none;
+}
+.skip-link:focus { left: 0; }
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10B84LRHKX" data-ga="G-10B84LRHKX"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://legius.com.ua/#website","url":"https://legius.com.ua/","name":"LEGIUS","inLanguage":"uk-UA","publisher":{"@id":"https://legius.com.ua/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://legius.com.ua/blog/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","@id":"https://legius.com.ua/#organization","name":"Юридична компанія «ЛЕГІУС»","alternateName":"LEGIUS","url":"https://legius.com.ua/","logo":"https://legius.com.ua/assets/img/logo.svg","image":"https://legius.com.ua/assets/img/og-default.svg","description":"Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.","telephone":"+38 (068) 888 44 00","email":"office@legius.com.ua","priceRange":"$$$","foundingDate":"2011","areaServed":["Київ","Київська область","Україна"],"address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},"sameAs":["https://facebook.com/legius.law","https://linkedin.com/company/legius-law","https://youtube.com/@legius-law","https://instagram.com/legius.law"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":16}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Реєстрація асоціації: галузеві та професійні об’єднання","description":"Як зареєструвати галузеву або професійну асоціацію: вибір організаційної форми, статут, членські внески та антимонопольні ризики. LEGIUS, Київ.","inLanguage":"uk-UA","datePublished":"2026-08-21","dateModified":"2026-08-21","author":{"@type":"Organization","name":"Юридична компанія «ЛЕГІУС»","@id":"https://legius.com.ua/#organization"},"publisher":{"@id":"https://legius.com.ua/#organization"},"mainEntityOfPage":"https://legius.com.ua/blog/reyestratsiya-asotsiatsiyi/","image":"https://legius.com.ua/assets/img/og-default.svg"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","@id":"https://legius.com.ua/#organization","name":"Юридична компанія «ЛЕГІУС»","alternateName":"LEGIUS","url":"https://legius.com.ua/","logo":"https://legius.com.ua/assets/img/logo.svg","image":"https://legius.com.ua/assets/img/og-default.png","description":"Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.","telephone":"+38 (068) 888 44 00","email":"office@legius.com.ua","priceRange":"$$$","foundingDate":"2011","areaServed":["Київ","Київська область","Україна"],"address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},"sameAs":["https://facebook.com/legius.law","https://linkedin.com/company/legius-law","https://youtube.com/@legius-law","https://instagram.com/legius.law"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":16}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Реєстрація асоціації: галузеві та професійні об’єднання","description":"Як зареєструвати галузеву або професійну асоціацію: вибір організаційної форми, статут, членські внески та антимонопольні ризики. LEGIUS, Київ.","inLanguage":"uk-UA","datePublished":"2026-08-21","dateModified":"2026-08-21","author":{"@type":"Organization","name":"Юридична компанія «ЛЕГІУС»","@id":"https://legius.com.ua/#organization"},"publisher":{"@id":"https://legius.com.ua/#organization"},"mainEntityOfPage":"https://legius.com.ua/blog/reyestratsiya-asotsiatsiyi/","image":"https://legius.com.ua/assets/img/og-default.png"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Чи існує в Україні форма «асоціація»?","acceptedAnswer":{"@type":"Answer","text":"Як окремої організаційно-правової форми в звичному розумінні — ні. «Асоціація» це найменування, яке організація бере собі сама, а юридично вона існує у формі громадської спілки, громадської організації або об’єднання підприємств."}},{"@type":"Question","name":"Яку форму обрати для галузевої асоціації компаній?","acceptedAnswer":{"@type":"Answer","text":"У більшості випадків — громадську спілку. Вона засновується юридичними особами, дає неприбутковий статус, дозволяє залучати гранти й підходить для представництва інтересів галузі."}},{"@type":"Question","name":"Скільки коштує реєстрація асоціації?","acceptedAnswer":{"@type":"Answer","text":"Державна реєстрація громадського об’єднання безоплатна — адміністративний збір не справляється. Витрати виникають лише за юридичний супровід і послуги нотаріуса, якщо ви їх залучаєте."}},{"@type":"Question","name":"Чи може асоціація встановлювати рекомендовані ціни для членів?","acceptedAnswer":{"@type":"Answer","text":"Ні, це пряма зона антимонопольного ризику. Обговорення цін, поширення рекомендованих прайсів чи мінімальних тарифів серед конкурентів може кваліфікуватися як заборонені узгоджені дії, причому відповідальність несе і саме об’єднання."}},{"@type":"Question","name":"Чи повертаються членські внески при виході з асоціації?","acceptedAnswer":{"@type":"Answer","text":"За загальним правилом ні, але це питання має бути прямо врегульоване у статуті. Неврегульованість внесків — одне з найчастіших джерел внутрішніх конфліктів в об’єднаннях."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Головна","item":"https://legius.com.ua/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://legius.com.ua/blog/"},{"@type":"ListItem","position":3,"name":"Корпоративне право України 2026: реєстрація бізнесу, управління та захист компанії","item":"https://legius.com.ua/blog/korporatyvne-pravo/"},{"@type":"ListItem","position":4,"name":"Реєстрація асоціації: яку форму обрати для об’єднання","item":"https://legius.com.ua/blog/reyestratsiya-asotsiatsiyi/"}]}</script>
 </head>
 <body class="">
 <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-<a href="#main" class="visually-hidden">Перейти до основного змісту</a>
+<a href="#main" class="skip-link">Перейти до основного змісту</a>
 <header class="site-header" data-header>
   <div class="util-bar" data-utilbar><div class="container">
     <div class="util-bar__left">
@@ -892,21 +909,21 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 </div></section>
 <section class="section"><div class="container">
   <div class="article-layout">
-    <aside><nav class="toc"><h4>Зміст</h4><a href="#s1">Асоціація — це не форма, а назва</a><a href="#s2">Три можливі конструкції</a><a href="#s3">Що обрати під конкретну мету</a><a href="#s4">Порядок створення</a><a href="#s5">Членські внески та фінансування</a><a href="#s6">Антимонопольні ризики</a><a href="#s7">Типові помилки</a></nav></aside>
+    <aside><nav class="toc" aria-label="Зміст статті"><h2 class="toc__title">Зміст</h2><a href="#s1">Асоціація — це не форма, а назва</a><a href="#s2">Три можливі конструкції</a><a href="#s3">Що обрати під конкретну мету</a><a href="#s4">Порядок створення</a><a href="#s5">Членські внески та фінансування</a><a href="#s6">Антимонопольні ризики</a><a href="#s7">Типові помилки</a></nav></aside>
     <div class="article-body">
       <article class="prose reveal">
         <p class="lead">«Асоціація» — це не окрема організаційно-правова форма, а назва. Пояснюємо, яку форму обрати під конкретну мету і які ризики виникають, коли конкуренти збираються за одним столом.</p>
         <section id="s1"><h2>Асоціація — це не форма, а назва</h2><p>Перше, що варто зрозуміти: в українському законодавстві немає організаційно-правової форми під назвою «асоціація» у тому вигляді, у якому це слово вживають у розмові.</p>
 <p>«Асоціація виробників», «асоціація перевізників», «професійна асоціація» — це <b>найменування</b>, яке організація бере собі сама. А юридично вона існує в одній із передбачених законом форм, і саме її треба обрати свідомо.</p>
 <p>Наслідок практичний: питання «як зареєструвати асоціацію» насправді означає «яку форму обрати під наші цілі». Від відповіді залежить склад засновників, оподаткування, можливість отримувати гранти й межі допустимої діяльності.</p></section>
-<section id="s2"><h2>Три можливі конструкції</h2><table>
+<section id="s2"><h2>Три можливі конструкції</h2><div class="table-wrap"><table>
 <thead><tr><th>Форма</th><th>Хто засновує</th><th>Мета</th><th>Прибуток</th></tr></thead>
 <tbody>
 <tr><td><b>Громадська спілка</b></td><td>юридичні особи приватного права</td><td>представництво інтересів, стандарти, діалог з владою</td><td>неприбуткова</td></tr>
 <tr><td><b>Громадська організація</b></td><td>фізичні особи</td><td>професійна спільнота, обмін досвідом, освіта</td><td>неприбуткова</td></tr>
 <tr><td><b>Об’єднання підприємств</b></td><td>підприємства</td><td>координація господарської діяльності</td><td>залежить від конструкції</td></tr>
 </tbody>
-</table>
+</table></div>
 <p><b>Громадська спілка</b> — найпоширеніший і найпрактичніший варіант для галузевого об’єднання компаній. Детально розібраний у матеріалі про <a href="/blog/gromadska-spilka/">громадську спілку</a>.</p>
 <p><b>Громадська організація</b> підходить, коли об’єднуються не компанії, а люди за професійною ознакою — лікарі, оцінювачі, тренери, ІТ-фахівці. Порядок реєстрації описаний у матеріалі про <a href="/blog/reyestratsiya-gromadskoyi-organizatsiyi/">реєстрацію ГО</a>.</p>
 <p><b>Об’єднання підприємств</b> — окрема конструкція для координації господарської діяльності. Її регулювання суттєво змінилося у зв’язку з реформою господарського законодавства, тому перед вибором цього варіанта потрібно звіряти чинні норми. На практиці для більшості галузевих об’єднань вона надлишкова.</p></section>
@@ -1043,6 +1060,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtknpmpz" defer></script>
+<script src="/assets/js/main.js?v=mtli8ve2" defer></script>
 </body>
 </html>

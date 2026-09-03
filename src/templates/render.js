@@ -1,16 +1,23 @@
 /* Reusable render helpers for page bodies. */
 const esc = (s = "") => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+/* Таблиці в авторському HTML ширші за 390px розпирали всю сторінку на мобільному
+   (Google рахує це як «Content wider than screen»). Загортаємо кожну в контейнер
+   із власним горизонтальним скролом. */
+export function wrapTables(html = "") {
+  return String(html).replace(/<table\b/g, '<div class="table-wrap"><table').replace(/<\/table>/g, "</table></div>");
+}
+
 export function renderSections(sections = []) {
   return sections
-    .map((s) => `<section class="reveal"><h2>${esc(s.h2)}</h2>${s.html}</section>`)
+    .map((s) => `<section class="reveal"><h2>${esc(s.h2)}</h2>${wrapTables(s.html)}</section>`)
     .join("\n");
 }
 
 export function renderProseSections(sections = []) {
   /* sections with id for TOC anchors */
   return sections
-    .map((s) => `<section id="${s.id || ""}"><h2>${esc(s.h2)}</h2>${s.html}</section>`)
+    .map((s) => `<section id="${s.id || ""}"><h2>${esc(s.h2)}</h2>${wrapTables(s.html)}</section>`)
     .join("\n");
 }
 
@@ -19,7 +26,7 @@ export function renderFaq(faqs = [], heading = "Поширені запитан�
   const items = faqs
     .map(
       (f) =>
-        `<details><summary>${esc(f.q)}</summary><div>${f.a.startsWith("<") ? f.a : `<p>${esc(f.a)}</p>`}</div></details>`
+        `<details><summary>${esc(f.q)}</summary><div>${f.a.startsWith("<") ? wrapTables(f.a) : `<p>${esc(f.a)}</p>`}</div></details>`
     )
     .join("");
   return `<section class="section section--soft reveal"><div class="container">

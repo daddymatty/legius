@@ -488,7 +488,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 
 .article-layout { display: grid; gap: 2.5rem; }
 .toc { background: var(--c-mist); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.4rem; position: sticky; top: 132px; }
-.toc h4 { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
+.toc .toc__title { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
 .toc a { display: block; padding: 0.35rem 0; font-size: 0.9rem; color: var(--c-slate); }
 .toc a:hover { color: var(--c-teal-d); }
 
@@ -786,3 +786,20 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   transition: border-color 0.18s ease, transform 0.18s ease;
 }
 .link-columns a:hover { border-color: var(--c-teal); transform: translateY(-2px); }
+
+/* Таблиці не повинні розпирати сторінку на мобільному */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.4rem 0; max-width: 100%; }
+.table-wrap > table { margin: 0; min-width: 460px; }
+/* На вузькому екрані таблиця завжди ширша за контейнер — показуємо, що її
+   можна прогорнути вбік, тінню на правому краї. */
+@media (max-width: 720px) {
+  .table-wrap { box-shadow: inset -14px 0 14px -14px rgba(15, 23, 42, 0.3); border-radius: var(--radius-sm); }
+}
+
+/* Пропустити навігацію — для клавіатури та зчитувачів екрана */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 200;
+  padding: 0.7rem 1.1rem; background: var(--c-ink); color: #fff;
+  font-weight: 700; border-radius: 0 0 var(--radius-sm) 0; text-decoration: none;
+}
+.skip-link:focus { left: 0; }
