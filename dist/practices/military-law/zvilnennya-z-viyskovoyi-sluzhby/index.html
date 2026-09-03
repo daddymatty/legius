@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://legius-lead.mexn1n1.workers.dev https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com https://*.google.com.ua; frame-src https://www.google.com https://consent.google.com https://challenges.cloudflare.com; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>Звільнення з військової служби | LEGIUS</title>
+<title>Супровід звільнення з військової служби | LEGIUS</title>
 <meta name="description" content="Консультуємо щодо законних підстав для звільнення з військової служби та супроводжуємо відповідні процедури — за станом здоров’я, сімейними обставинами й…">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://legius.com.ua/practices/military-law/zvilnennya-z-viyskovoyi-sluzhby/">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="LEGIUS">
 <meta property="og:locale" content="uk_UA">
-<meta property="og:title" content="Звільнення з військової служби | LEGIUS">
+<meta property="og:title" content="Супровід звільнення з військової служби | LEGIUS">
 <meta property="og:description" content="Консультуємо щодо законних підстав для звільнення з військової служби та супроводжуємо відповідні процедури — за станом здоров’я, сімейними обставинами й…">
 <meta property="og:url" content="https://legius.com.ua/practices/military-law/zvilnennya-z-viyskovoyi-sluzhby/">
 <meta property="og:image" content="https://legius.com.ua/assets/img/og/military-law.png">
@@ -26,7 +26,7 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Звільнення з військової служби | LEGIUS">
+<meta name="twitter:title" content="Супровід звільнення з військової служби | LEGIUS">
 <meta name="twitter:description" content="Консультуємо щодо законних підстав для звільнення з військової служби та супроводжуємо відповідні процедури — за станом здоров’я, сімейними обставинами й…">
 <meta name="twitter:image" content="https://legius.com.ua/assets/img/og/military-law.png">
 
@@ -535,7 +535,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 
 .article-layout { display: grid; gap: 2.5rem; }
 .toc { background: var(--c-mist); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.4rem; position: sticky; top: 132px; }
-.toc h4 { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
+.toc .toc__title { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
 .toc a { display: block; padding: 0.35rem 0; font-size: 0.9rem; color: var(--c-slate); }
 .toc a:hover { color: var(--c-teal-d); }
 
@@ -833,18 +833,35 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   transition: border-color 0.18s ease, transform 0.18s ease;
 }
 .link-columns a:hover { border-color: var(--c-teal); transform: translateY(-2px); }
+
+/* Таблиці не повинні розпирати сторінку на мобільному */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.4rem 0; max-width: 100%; }
+.table-wrap > table { margin: 0; min-width: 460px; }
+/* На вузькому екрані таблиця завжди ширша за контейнер — показуємо, що її
+   можна прогорнути вбік, тінню на правому краї. */
+@media (max-width: 720px) {
+  .table-wrap { box-shadow: inset -14px 0 14px -14px rgba(15, 23, 42, 0.3); border-radius: var(--radius-sm); }
+}
+
+/* Пропустити навігацію — для клавіатури та зчитувачів екрана */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 200;
+  padding: 0.7rem 1.1rem; background: var(--c-ink); color: #fff;
+  font-weight: 700; border-radius: 0 0 var(--radius-sm) 0; text-decoration: none;
+}
+.skip-link:focus { left: 0; }
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10B84LRHKX" data-ga="G-10B84LRHKX"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://legius.com.ua/#website","url":"https://legius.com.ua/","name":"LEGIUS","inLanguage":"uk-UA","publisher":{"@id":"https://legius.com.ua/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://legius.com.ua/blog/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","@id":"https://legius.com.ua/#organization","name":"Юридична компанія «ЛЕГІУС»","alternateName":"LEGIUS","url":"https://legius.com.ua/","logo":"https://legius.com.ua/assets/img/logo.svg","image":"https://legius.com.ua/assets/img/og-default.svg","description":"Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.","telephone":"+38 (068) 888 44 00","email":"office@legius.com.ua","priceRange":"$$$","foundingDate":"2011","areaServed":["Київ","Київська область","Україна"],"address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},"sameAs":["https://facebook.com/legius.law","https://linkedin.com/company/legius-law","https://youtube.com/@legius-law","https://instagram.com/legius.law"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":16}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","@id":"https://legius.com.ua/#organization","name":"Юридична компанія «ЛЕГІУС»","alternateName":"LEGIUS","url":"https://legius.com.ua/","logo":"https://legius.com.ua/assets/img/logo.svg","image":"https://legius.com.ua/assets/img/og-default.png","description":"Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.","telephone":"+38 (068) 888 44 00","email":"office@legius.com.ua","priceRange":"$$$","foundingDate":"2011","areaServed":["Київ","Київська область","Україна"],"address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},"sameAs":["https://facebook.com/legius.law","https://linkedin.com/company/legius-law","https://youtube.com/@legius-law","https://instagram.com/legius.law"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":16}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Звільнення з військової служби","category":"Військове право","provider":{"@id":"https://legius.com.ua/#organization"},"areaServed":{"@type":"City","name":"Київ"},"name":"Звільнення з військової служби","description":"Консультуємо щодо законних підстав для звільнення з військової служби та супроводжуємо відповідні процедури — за станом здоров’я, сімейними обставинами й іншими підставами, передбаченими законом.","url":"https://legius.com.ua/practices/military-law/zvilnennya-z-viyskovoyi-sluzhby/"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"На яких підставах можна звільнитися з військової служби?","acceptedAnswer":{"@type":"Answer","text":"Закон передбачає звільнення за станом здоров’я, сімейними обставинами, досягненням граничного віку та іншими підставами. У період мобілізації перелік має свої особливості, тому кожен випадок ми оцінюємо індивідуально й обираємо найбільш обґрунтовану підставу."}},{"@type":"Question","name":"Чи можна звільнитися за станом здоров’я?","acceptedAnswer":{"@type":"Answer","text":"Так, за наявності висновку ВЛК про непридатність до військової служби. Тому ключовим етапом часто є саме проходження або оскарження висновку ВЛК, який ми супроводжуємо разом із процедурою звільнення."}},{"@type":"Question","name":"Що робити, якщо командування відмовляє у звільненні?","acceptedAnswer":{"@type":"Answer","text":"Неправомірну відмову або бездіяльність командування можна оскаржити в адміністративному суді за правилами КАС України. Важливо не пропустити строк звернення й мати належно зібрані підтверджуючі документи, у чому ми допомагаємо."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Головна","item":"https://legius.com.ua/"},{"@type":"ListItem","position":2,"name":"Практики","item":"https://legius.com.ua/practices/"},{"@type":"ListItem","position":3,"name":"Військове право","item":"https://legius.com.ua/practices/military-law/"},{"@type":"ListItem","position":4,"name":"Звільнення з військової служби","item":"https://legius.com.ua/practices/military-law/zvilnennya-z-viyskovoyi-sluzhby/"}]}</script>
 </head>
 <body class="">
 <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-<a href="#main" class="visually-hidden">Перейти до основного змісту</a>
+<a href="#main" class="skip-link">Перейти до основного змісту</a>
 <header class="site-header" data-header>
   <div class="util-bar" data-utilbar><div class="container">
     <div class="util-bar__left">
@@ -887,7 +904,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 <nav class="breadcrumbs" aria-label="Хлібні крихти"><div class="container"><ol><li><a href="/">Головна</a></li><li><a href="/practices/">Практики</a></li><li><a href="/practices/military-law/">Військове право</a></li><li aria-current="page">Звільнення з військової служби</li></ol></div></nav>
 <section class="page-hero"><div class="container">
   <span class="eyebrow"><a href="/practices/military-law/" style="color:inherit">Військове право</a></span>
-  <h1>Звільнення з військової служби</h1>
+  <h1>Супровід звільнення з військової служби</h1>
   <p>Консультуємо щодо законних підстав для звільнення з військової служби та супроводжуємо відповідні процедури — за станом здоров’я, сімейними обставинами й іншими підставами, передбаченими законом.</p>
   <div class="hero__actions mt-2">
     <a class="btn btn--primary" href="#service-military-law-zvilnennya-z-viyskovoyi-sluzhby">Отримати консультацію</a>
@@ -1023,6 +1040,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtknpmpz" defer></script>
+<script src="/assets/js/main.js?v=mtli8ve2" defer></script>
 </body>
 </html>

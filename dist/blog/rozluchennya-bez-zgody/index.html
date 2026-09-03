@@ -535,7 +535,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 
 .article-layout { display: grid; gap: 2.5rem; }
 .toc { background: var(--c-mist); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.4rem; position: sticky; top: 132px; }
-.toc h4 { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
+.toc .toc__title { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
 .toc a { display: block; padding: 0.35rem 0; font-size: 0.9rem; color: var(--c-slate); }
 .toc a:hover { color: var(--c-teal-d); }
 
@@ -833,18 +833,35 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   transition: border-color 0.18s ease, transform 0.18s ease;
 }
 .link-columns a:hover { border-color: var(--c-teal); transform: translateY(-2px); }
+
+/* Таблиці не повинні розпирати сторінку на мобільному */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.4rem 0; max-width: 100%; }
+.table-wrap > table { margin: 0; min-width: 460px; }
+/* На вузькому екрані таблиця завжди ширша за контейнер — показуємо, що її
+   можна прогорнути вбік, тінню на правому краї. */
+@media (max-width: 720px) {
+  .table-wrap { box-shadow: inset -14px 0 14px -14px rgba(15, 23, 42, 0.3); border-radius: var(--radius-sm); }
+}
+
+/* Пропустити навігацію — для клавіатури та зчитувачів екрана */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 200;
+  padding: 0.7rem 1.1rem; background: var(--c-ink); color: #fff;
+  font-weight: 700; border-radius: 0 0 var(--radius-sm) 0; text-decoration: none;
+}
+.skip-link:focus { left: 0; }
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10B84LRHKX" data-ga="G-10B84LRHKX"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://legius.com.ua/#website","url":"https://legius.com.ua/","name":"LEGIUS","inLanguage":"uk-UA","publisher":{"@id":"https://legius.com.ua/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://legius.com.ua/blog/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","@id":"https://legius.com.ua/#organization","name":"Юридична компанія «ЛЕГІУС»","alternateName":"LEGIUS","url":"https://legius.com.ua/","logo":"https://legius.com.ua/assets/img/logo.svg","image":"https://legius.com.ua/assets/img/og-default.svg","description":"Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.","telephone":"+38 (068) 888 44 00","email":"office@legius.com.ua","priceRange":"$$$","foundingDate":"2011","areaServed":["Київ","Київська область","Україна"],"address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},"sameAs":["https://facebook.com/legius.law","https://linkedin.com/company/legius-law","https://youtube.com/@legius-law","https://instagram.com/legius.law"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":16}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Як розлучитися, якщо чоловік або дружина проти","description":"Чи можна розлучитися, якщо друга сторона проти або уникає суду: порядок подання позову, строк на примирення, розгляд без відповідача. LEGIUS, Київ.","inLanguage":"uk-UA","datePublished":"2026-08-20","dateModified":"2026-08-20","author":{"@type":"Organization","name":"Юридична компанія «ЛЕГІУС»","@id":"https://legius.com.ua/#organization"},"publisher":{"@id":"https://legius.com.ua/#organization"},"mainEntityOfPage":"https://legius.com.ua/blog/rozluchennya-bez-zgody/","image":"https://legius.com.ua/assets/img/og-default.svg"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","@id":"https://legius.com.ua/#organization","name":"Юридична компанія «ЛЕГІУС»","alternateName":"LEGIUS","url":"https://legius.com.ua/","logo":"https://legius.com.ua/assets/img/logo.svg","image":"https://legius.com.ua/assets/img/og-default.png","description":"Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.","telephone":"+38 (068) 888 44 00","email":"office@legius.com.ua","priceRange":"$$$","foundingDate":"2011","areaServed":["Київ","Київська область","Україна"],"address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},"sameAs":["https://facebook.com/legius.law","https://linkedin.com/company/legius-law","https://youtube.com/@legius-law","https://instagram.com/legius.law"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":16}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Як розлучитися, якщо чоловік або дружина проти","description":"Чи можна розлучитися, якщо друга сторона проти або уникає суду: порядок подання позову, строк на примирення, розгляд без відповідача. LEGIUS, Київ.","inLanguage":"uk-UA","datePublished":"2026-08-20","dateModified":"2026-08-20","author":{"@type":"Organization","name":"Юридична компанія «ЛЕГІУС»","@id":"https://legius.com.ua/#organization"},"publisher":{"@id":"https://legius.com.ua/#organization"},"mainEntityOfPage":"https://legius.com.ua/blog/rozluchennya-bez-zgody/","image":"https://legius.com.ua/assets/img/og-default.png"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Чи можна розлучитися, якщо чоловік або дружина проти?","acceptedAnswer":{"@type":"Answer","text":"Так. Згода другої сторони не потрібна — суд розриває шлюб, якщо встановить, що подальше спільне життя суперечить інтересам одного з подружжя. Заперечення відповідача впливає лише на тривалість процесу."}},{"@type":"Question","name":"Чи розгляне суд справу, якщо відповідач не приходить?","acceptedAnswer":{"@type":"Answer","text":"Так. Неявка відповідача, повідомленого належним чином, не перешкоджає розгляду. Ключове — щоб у справі були докази належного виклику: рекомендовані листи, дані про вручення або відомості про розміщення оголошення."}},{"@type":"Question","name":"Скільки триває строк на примирення?","acceptedAnswer":{"@type":"Answer","text":"Закон встановлює граничну тривалість такого строку, і надання його є правом, а не обов’язком суду. Суд не надає строк, якщо це суперечить моральним засадам суспільства — зокрема за наявності доказів домашнього насильства."}},{"@type":"Question","name":"Чи можна подати позов за своїм місцем проживання?","acceptedAnswer":{"@type":"Answer","text":"Так, якщо з позивачем проживають малолітні або неповнолітні діти. Це виняток із загального правила про подання позову за місцем проживання відповідача."}},{"@type":"Question","name":"Що робити, якщо невідомо, де живе друга сторона?","acceptedAnswer":{"@type":"Answer","text":"Позов подається за останнім відомим місцем проживання або за місцезнаходженням майна відповідача. Суд здійснює виклик через оголошення на офіційному вебпорталі судової влади, і такий виклик вважається належним."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Головна","item":"https://legius.com.ua/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://legius.com.ua/blog/"},{"@type":"ListItem","position":3,"name":"Сімейне право в Україні 2026: повний путівник для подружжя та батьків","item":"https://legius.com.ua/blog/simeyne-pravo/"},{"@type":"ListItem","position":4,"name":"Розлучення без згоди другого з подружжя: чи можливо","item":"https://legius.com.ua/blog/rozluchennya-bez-zgody/"}]}</script>
 </head>
 <body class="">
 <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-<a href="#main" class="visually-hidden">Перейти до основного змісту</a>
+<a href="#main" class="skip-link">Перейти до основного змісту</a>
 <header class="site-header" data-header>
   <div class="util-bar" data-utilbar><div class="container">
     <div class="util-bar__left">
@@ -892,7 +909,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 </div></section>
 <section class="section"><div class="container">
   <div class="article-layout">
-    <aside><nav class="toc"><h4>Зміст</h4><a href="#s1">Згода другої сторони не потрібна</a><a href="#s2">Куди подавати позов</a><a href="#s3">Строк на примирення</a><a href="#s4">Якщо відповідач ігнорує засідання</a><a href="#s5">Якщо місце проживання невідоме</a><a href="#s6">Скільки це триває</a><a href="#s7">Єдине законодавче обмеження</a></nav></aside>
+    <aside><nav class="toc" aria-label="Зміст статті"><h2 class="toc__title">Зміст</h2><a href="#s1">Згода другої сторони не потрібна</a><a href="#s2">Куди подавати позов</a><a href="#s3">Строк на примирення</a><a href="#s4">Якщо відповідач ігнорує засідання</a><a href="#s5">Якщо місце проживання невідоме</a><a href="#s6">Скільки це триває</a><a href="#s7">Єдине законодавче обмеження</a></nav></aside>
     <div class="article-body">
       <article class="prose reveal">
         <p class="lead">Згода другого з подружжя не потрібна — суд не може змусити людину залишатися у шлюбі. Пояснюємо, як подати позов, що робити при ігноруванні засідань і скільки це триває.</p>
@@ -921,7 +938,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 <p>Позов подається за останнім відомим місцем проживання відповідача або за місцезнаходженням його майна. Суд надсилає повістки на цю адресу, а за відсутності відомостей здійснює виклик через оголошення на офіційному вебпорталі судової влади. Такий виклик вважається належним.</p>
 <p>Окремо варто перевірити, чи не змінилися обставини: якщо особа виїхала за кордон, це не перешкода для розгляду. Якщо особа зникла безвісти в умовах бойових дій — це окремий статус із власними наслідками, і його не варто плутати з ухиленням від суду.</p></section>
 <section id="s6"><h2>Скільки це триває</h2><p>Реалістичні орієнтири залежать від поведінки відповідача.</p>
-<table>
+<div class="table-wrap"><table>
 <thead><tr><th>Сценарій</th><th>Орієнтовний строк</th></tr></thead>
 <tbody>
 <tr><td>Відповідач визнає позов</td><td>найшвидший варіант, кілька засідань</td></tr>
@@ -929,7 +946,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 <tr><td>Відповідач не з’являється, повідомлений належно</td><td>кілька відкладень, далі розгляд без нього</td></tr>
 <tr><td>Місце проживання невідоме, виклик через оголошення</td><td>додатковий час на процедуру виклику</td></tr>
 </tbody>
-</table>
+</table></div>
 <p>Прискорити процес неможливо, але можна не сповільнювати його самому: подати повний пакет документів одразу, забезпечити правильні адреси для повідомлень і не пропускати засідання.</p></section>
 <section id="s7"><h2>Єдине законодавче обмеження</h2><p>Заборона одна, і вона стосується лише чоловіка. Позов про розірвання шлюбу не може бути пред’явлений <b>чоловіком</b> протягом вагітності дружини та протягом одного року після народження дитини.</p>
 <p>Винятки з цього правила існують, але вони вузькі й потребують доведення конкретних обставин. Для дружини такого обмеження немає — вона може подати позов у будь-який час.</p>
@@ -1020,6 +1037,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtknpmpz" defer></script>
+<script src="/assets/js/main.js?v=mtli8ve2" defer></script>
 </body>
 </html>

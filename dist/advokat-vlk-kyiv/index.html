@@ -535,7 +535,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 
 .article-layout { display: grid; gap: 2.5rem; }
 .toc { background: var(--c-mist); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.4rem; position: sticky; top: 132px; }
-.toc h4 { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
+.toc .toc__title { font-family: var(--font-body); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-muted); margin-bottom: 0.8rem; }
 .toc a { display: block; padding: 0.35rem 0; font-size: 0.9rem; color: var(--c-slate); }
 .toc a:hover { color: var(--c-teal-d); }
 
@@ -833,18 +833,35 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   transition: border-color 0.18s ease, transform 0.18s ease;
 }
 .link-columns a:hover { border-color: var(--c-teal); transform: translateY(-2px); }
+
+/* Таблиці не повинні розпирати сторінку на мобільному */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.4rem 0; max-width: 100%; }
+.table-wrap > table { margin: 0; min-width: 460px; }
+/* На вузькому екрані таблиця завжди ширша за контейнер — показуємо, що її
+   можна прогорнути вбік, тінню на правому краї. */
+@media (max-width: 720px) {
+  .table-wrap { box-shadow: inset -14px 0 14px -14px rgba(15, 23, 42, 0.3); border-radius: var(--radius-sm); }
+}
+
+/* Пропустити навігацію — для клавіатури та зчитувачів екрана */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 200;
+  padding: 0.7rem 1.1rem; background: var(--c-ink); color: #fff;
+  font-weight: 700; border-radius: 0 0 var(--radius-sm) 0; text-decoration: none;
+}
+.skip-link:focus { left: 0; }
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10B84LRHKX" data-ga="G-10B84LRHKX"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://legius.com.ua/#website","url":"https://legius.com.ua/","name":"LEGIUS","inLanguage":"uk-UA","publisher":{"@id":"https://legius.com.ua/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://legius.com.ua/blog/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","@id":"https://legius.com.ua/#organization","name":"Юридична компанія «ЛЕГІУС»","alternateName":"LEGIUS","url":"https://legius.com.ua/","logo":"https://legius.com.ua/assets/img/logo.svg","image":"https://legius.com.ua/assets/img/og-default.svg","description":"Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.","telephone":"+38 (068) 888 44 00","email":"office@legius.com.ua","priceRange":"$$$","foundingDate":"2011","areaServed":["Київ","Київська область","Україна"],"address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},"sameAs":["https://facebook.com/legius.law","https://linkedin.com/company/legius-law","https://youtube.com/@legius-law","https://instagram.com/legius.law"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":16}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","@id":"https://legius.com.ua/#organization","name":"Юридична компанія «ЛЕГІУС»","alternateName":"LEGIUS","url":"https://legius.com.ua/","logo":"https://legius.com.ua/assets/img/logo.svg","image":"https://legius.com.ua/assets/img/og-default.png","description":"Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.","telephone":"+38 (068) 888 44 00","email":"office@legius.com.ua","priceRange":"$$$","foundingDate":"2011","areaServed":["Київ","Київська область","Україна"],"address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},"sameAs":["https://facebook.com/legius.law","https://linkedin.com/company/legius-law","https://youtube.com/@legius-law","https://instagram.com/legius.law"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":16}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Attorney","name":"LEGIUS — Оскарження висновку ВЛК: допомога адвоката в Києві","description":"Адвокат з питань ВЛК у Києві: оскарження висновку до вищої комісії та через суд, повторний і контрольний огляд, ВЛК для військовослужбовця.","url":"https://legius.com.ua/advokat-vlk-kyiv/","telephone":"+38 (068) 888 44 00","priceRange":"$$$","areaServed":"Київ","address":{"@type":"PostalAddress","streetAddress":"вул. Євгена Сверстюка, 11-А, БЦ «Новий», офіс 1203","addressLocality":"Київ","addressRegion":"Київська область","postalCode":"02002","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4491,"longitude":30.6009},"parentOrganization":{"@id":"https://legius.com.ua/#organization"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Чи є оскарження ВЛК ухиленням від мобілізації?","acceptedAnswer":{"@type":"Answer","text":"Ні. Оскарження — передбачений законом механізм перегляду висновку, і користування ним є законною поведінкою. Ухиленням є неявка за викликом та інші прямо заборонені законом дії."}},{"@type":"Question","name":"Що робити, якщо не видають висновок ВЛК на руки?","acceptedAnswer":{"@type":"Answer","text":"Подати письмову заяву про надання копії до тієї самої комісії з фіксацією дати подання. Ненадання документа саме по собі є підставою для звернення до суду, тому крок не марний у будь-якому разі."}},{"@type":"Question","name":"Куди звертатися спершу — до вищої комісії чи до суду?","acceptedAnswer":{"@type":"Answer","text":"Якщо проблема в неповноті медичних документів — до вищої комісії, це швидше й дешевше. Якщо порушено процедуру огляду або комісія проігнорувала надані документи — до суду має сенс іти одразу."}},{"@type":"Question","name":"Які документи вирішують справу?","acceptedAnswer":{"@type":"Answer","text":"Не сам діагноз, а підтвердження ступеня порушення функції: свіжі інструментальні дослідження, виписки зі стаціонару, висновки профільних спеціалістів із зазначенням ступеня. Розклад хвороб оперує саме ступенем."}},{"@type":"Question","name":"Скільки часу є на оскарження?","acceptedAnswer":{"@type":"Answer","text":"Строки залежать від обраного шляху. Загальний строк звернення до адміністративного суду — шість місяців від дня, коли особа дізналася про порушення права, але при досудовому оскарженні він може бути значно коротшим. Пропущений строк — найчастіша причина програшу."}},{"@type":"Question","name":"Чи гарантуєте результат?","acceptedAnswer":{"@type":"Answer","text":"Ні. Результат залежить від стану здоров’я та медичних документів. Ми оцінюємо перспективність на першій консультації й прямо говоримо, коли оскарження не має сенсу."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Головна","item":"https://legius.com.ua/"},{"@type":"ListItem","position":2,"name":"Оскарження ВЛК","item":"https://legius.com.ua/advokat-vlk-kyiv/"}]}</script>
 </head>
 <body class="">
 <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-<a href="#main" class="visually-hidden">Перейти до основного змісту</a>
+<a href="#main" class="skip-link">Перейти до основного змісту</a>
 <header class="site-header" data-header>
   <div class="util-bar" data-utilbar><div class="container">
     <div class="util-bar__left">
@@ -950,7 +967,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="btn btn--primary" href="#consult">Отримати консультацію</a>
     <a class="btn btn--ghost" href="tel:+380688884400"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg> +38 (068) 888 44 00</a>
   </div>
-</div><section class="reveal"><h2>Два шляхи оскарження</h2><table>
+</div><section class="reveal"><h2>Два шляхи оскарження</h2><div class="table-wrap"><table>
 <thead><tr><th></th><th>Вища комісія</th><th>Суд</th></tr></thead>
 <tbody>
 <tr><td>Що оцінюють</td><td>стан здоров’я по суті</td><td>законність рішення та процедуру</td></tr>
@@ -958,7 +975,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 <tr><td>Головний інструмент</td><td>нові медичні документи, додаткове обстеження</td><td>судово-медична експертиза</td></tr>
 <tr><td>Витрати</td><td>здебільшого відсутні</td><td>судовий збір, експертиза, представництво</td></tr>
 </tbody>
-</table>
+</table></div>
 <p>Практичне правило: якщо проблема в неповноті документів — починаємо з вищої комісії, це швидше й дешевше. Якщо порушено процедуру або комісія проігнорувала надані документи — сенс іти до суду з’являється одразу.</p>
 <p>Паралельно існує механізм повторного та контрольного огляду — це різні речі, які часто плутають. Розбір — у матеріалі про <a href="/blog/vlk-povtornyy-kontrolnyy-ohlyad/">повторний і контрольний огляд</a>. Судовий шлях описаний у статті про <a href="/blog/oskarzhennya-vlk-cherez-sud/">оскарження ВЛК через суд</a>.</p></section>
 <section class="reveal"><h2>Для військовослужбовців</h2><p>Тут процедура відрізняється в одному принциповому моменті: <b>направлення на комісію видає командування</b>, і військовослужбовець не може звернутися на ВЛК самостійно так само вільно, як цивільна особа.</p>
@@ -1112,6 +1129,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
     <a class="s-cta" href="/contacts/#consult">Консультація</a>
   </div>
 <button class="to-top" data-to-top aria-label="Нагору" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="/assets/js/main.js?v=mtknpmpz" defer></script>
+<script src="/assets/js/main.js?v=mtli8ve2" defer></script>
 </body>
 </html>

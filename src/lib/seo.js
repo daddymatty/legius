@@ -12,7 +12,7 @@ export function organizationSchema() {
     alternateName: site.name,
     url: site.domain + "/",
     logo: abs("/assets/img/logo.svg"),
-    image: abs("/assets/img/og-default.svg"),
+    image: abs("/assets/img/og-default.png"),
     description:
       "Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.",
     telephone: site.phoneDisplay,
@@ -125,7 +125,7 @@ export function articleSchema(article) {
     author: { "@type": "Organization", name: site.legalName, "@id": site.domain + "/#organization" },
     publisher: { "@id": site.domain + "/#organization" },
     mainEntityOfPage: abs("/blog/" + article.slug + "/"),
-    image: abs("/assets/img/og-default.svg"),
+    image: abs("/assets/img/og-default.png"),
   };
 }
 

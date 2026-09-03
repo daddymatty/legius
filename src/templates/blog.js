@@ -111,7 +111,7 @@ ${breadcrumbs(crumbs)}
 </div></section>
 <section class="section"><div class="container">
   <div class="article-layout">
-    <aside>${toc ? `<nav class="toc"><h4>Зміст</h4>${toc}</nav>` : ""}</aside>
+    <aside>${toc ? `<nav class="toc" aria-label="Зміст статті"><h2 class="toc__title">Зміст</h2>${toc}</nav>` : ""}</aside>
     <div class="article-body">
       <article class="prose reveal">
         ${a.intro || `<p class="lead">${esc(a.excerpt)}</p>`}
