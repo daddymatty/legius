@@ -1,5 +1,6 @@
 export default {
   slug: "migration-law",
+  lead: "oleksandr-hordiienko",
   icon: "migration",
   lead: "oleksandr-hordiienko",
   navLabel: "Міграційне право",

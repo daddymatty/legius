@@ -65,7 +65,7 @@ export const team = [
       "Структурував корпоративний договір для пулу інвесторів",
       "Забезпечив легалізацію та релокацію команди іноземного інвестора в Україні",
     ],
-    practices: ["corporate-law", "m-and-a", "investment", "it-law", "ip-law"],
+    practices: ["corporate-law", "m-and-a", "investment", "it-law", "ip-law", "migration-law"],
     languages: ["Українська", "Англійська"],
     email: "hordiienko@legius.com.ua",
   },
