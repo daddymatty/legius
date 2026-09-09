@@ -42,7 +42,15 @@
     else if (/(^|\.)(facebook|instagram|linkedin|t\.me|telegram)/.test(ref)) channel = "Соцмережі";
     else if (ref) channel = "Перехід: " + ref;
 
-    if (!channel && readAttr()) return; /* прямий захід не перетирає збережене */
+    /* Прямий захід не перетирає збережене джерело, але лише поки воно свіже:
+       клік по оголошенню піврічної давності не має приписувати собі заявку. */
+    var prev = readAttr();
+    var fresh = false;
+    if (prev && prev.ts) {
+      var age = Date.now() - new Date(prev.ts).getTime();
+      fresh = age >= 0 && age < 30 * 24 * 60 * 60 * 1000;
+    }
+    if (!channel && fresh) return;
     if (!channel) channel = "Прямий захід";
     try {
       localStorage.setItem(ATTR_KEY, JSON.stringify({
