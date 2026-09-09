@@ -302,12 +302,16 @@ export function findLawyer(p, team) {
 export function lawyerCard(lawyer) {
   if (!lawyer || !site.showTeam) return "";
   const name = lawyer.displayName || lawyer.name;
+  /* «Адвокат» — професійний статус, підтверджений свідоцтвом і записом у ЄРАУ.
+     Хто його не має, підписується юристом: інакше це недостовірне твердження
+     про конкретну людину. */
+  const isAdvocate = Boolean(lawyer.erau);
   return `<div class="card">
-    <span class="eyebrow">Відповідальний адвокат</span>
+    <span class="eyebrow">${isAdvocate ? "Відповідальний адвокат" : "Відповідальний юрист"}</span>
     <a class="lawyer-card__row" href="/team/${lawyer.slug}/">
       <img src="${lawyer.photo}" width="64" height="80" loading="lazy" decoding="async" alt="" aria-hidden="true">
       <span><b>${esc(name)}</b> <span>${esc(lawyer.role)}</span></span>
     </a>
-    <a class="btn btn--ghost btn--block" href="/team/${lawyer.slug}/">Профіль адвоката</a>
+    <a class="btn btn--ghost btn--block" href="/team/${lawyer.slug}/">${isAdvocate ? "Профіль адвоката" : "Профіль юриста"}</a>
   </div>`;
 }
