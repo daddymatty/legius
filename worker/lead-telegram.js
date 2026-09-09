@@ -74,7 +74,11 @@ async function zohoCreateLead(env, { name, phone, email, message, source, page, 
   const lead = {
     Last_Name: name,                       /* обов'язкове поле модуля Leads */
     Phone: phone,
-    Lead_Source: "Website",
+    /* Picklist-поля приймають display-значення як в UI (укр.), не en-actual:
+       чуже значення Zoho пише сирим рядком і заявка випадає з фільтрів.
+       «Сайт» = перейменоване значення «Загрузка из Интернет» (crm/site-integration.md). */
+    Lead_Source: "Сайт",
+    Lead_Status: "Нова",
     Description:
       (message ? `Повідомлення: ${message}\n` : "") +
       (channel ? `Канал: ${channel}\n` : "") +
