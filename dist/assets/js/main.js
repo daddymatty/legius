@@ -538,6 +538,15 @@
     });
   })();
 
+  /* ---- Месенджери — теж канал заявок. Без цієї події перехід у Telegram,
+     WhatsApp чи Viber не потрапляв у GA4 взагалі. ---- */
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest(".messengers a") : null;
+    if (!a || !window.gtag) return;
+    var net = a.classList.contains("m-tg") ? "telegram" : a.classList.contains("m-wa") ? "whatsapp" : a.classList.contains("m-vb") ? "viber" : "other";
+    window.gtag("event", "messenger_click", { network: net, page_path: location.pathname });
+  });
+
   /* ---- Current year in footer ---- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
