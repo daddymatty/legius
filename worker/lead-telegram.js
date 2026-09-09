@@ -68,7 +68,7 @@ async function zohoAccessToken(env) {
   return zohoToken.value;
 }
 
-async function zohoCreateLead(env, { name, phone, email, message, source, page }) {
+async function zohoCreateLead(env, { name, phone, email, message, source, page, channel, utm, gclid }) {
   const token = await zohoAccessToken(env);
   const api = env.ZOHO_API_BASE || "https://www.zohoapis.eu";
   const lead = {
@@ -77,6 +77,9 @@ async function zohoCreateLead(env, { name, phone, email, message, source, page }
     Lead_Source: "Website",
     Description:
       (message ? `Повідомлення: ${message}\n` : "") +
+      (channel ? `Канал: ${channel}\n` : "") +
+      (utm ? `UTM: ${utm}\n` : "") +
+      (gclid ? `gclid: ${gclid}\n` : "") +
       (source ? `Форма: ${source}\n` : "") +
       (page ? `Сторінка: ${page}` : ""),
   };
@@ -193,6 +196,12 @@ export default {
     const message = (data.message || "").toString().trim().slice(0, 2000);
     const source = (data.source || "site").toString().slice(0, 60);
     const page = (data.page || "").toString().slice(0, 200);
+    /* Атрибуція з сайту: звідки прийшов відвідувач до заявки. */
+    const channel = (data.channel || "").toString().slice(0, 60);
+    const gclid = (data.gclid || "").toString().slice(0, 120);
+    const utm = (data.utm || "").toString().slice(0, 200);
+    const ref = (data.ref || "").toString().slice(0, 100);
+    const landing = (data.landing || "").toString().slice(0, 200);
 
     if (!name || !phone) return json({ ok: false, error: "required" }, 422);
 
@@ -215,6 +224,11 @@ export default {
       `📞 <b>Телефон:</b> ${esc(phone)}\n` +
       (email ? `✉️ <b>E-mail:</b> ${esc(email)}\n` : "") +
       (message ? `📝 <b>Повідомлення:</b> ${esc(message)}\n` : "") +
+      `\n📣 <b>Канал:</b> ${esc(channel || "невідомо")}\n` +
+      (utm ? `🏷 <b>UTM:</b> ${esc(utm)}\n` : "") +
+      (gclid ? `🆔 <b>gclid:</b> <code>${esc(gclid)}</code>\n` : "") +
+      (ref ? `↩️ <b>Реферер:</b> ${esc(ref)}\n` : "") +
+      (landing && landing !== page ? `🚪 <b>Вхід:</b> ${esc(landing)}\n` : "") +
       `\n📍 <b>Форма:</b> ${esc(source)}\n` +
       `🔗 <b>Сторінка:</b> ${esc(page)}`;
 
@@ -241,7 +255,7 @@ export default {
        Telegram лишається основним каналом, CRM — дублювання для обліку. */
     if (env.ZOHO_REFRESH_TOKEN && env.ZOHO_CLIENT_ID && env.ZOHO_CLIENT_SECRET) {
       ctx.waitUntil(
-        zohoCreateLead(env, { name, phone, email, message, source, page }).catch((e) =>
+        zohoCreateLead(env, { name, phone, email, message, source, page, channel, utm, gclid }).catch((e) =>
           console.log("zoho lead failed:", e.message)
         )
       );

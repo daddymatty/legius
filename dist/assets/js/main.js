@@ -12,6 +12,50 @@
     window.gtag("config", gaId, { anonymize_ip: true });
   }
 
+  /* ---- Атрибуція: звідки прийшов відвідувач. Без цього заявка з реклами
+     й заявка з органіки виглядають у Telegram та CRM однаково. Зберігаємо
+     останнє непусте джерело: прямий захід не стирає попередню рекламу. ---- */
+  var ATTR_KEY = "legius_attr";
+  function readAttr() {
+    try { return JSON.parse(localStorage.getItem(ATTR_KEY) || "null"); } catch (e) { return null; }
+  }
+  function hostOf(u) {
+    try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return ""; }
+  }
+  (function captureAttr() {
+    var q = new URLSearchParams(location.search);
+    var gclid = q.get("gclid") || q.get("wbraid") || q.get("gbraid") || "";
+    var uSrc = q.get("utm_source") || "";
+    var uMed = q.get("utm_medium") || "";
+    var uCmp = q.get("utm_campaign") || "";
+    var uTrm = q.get("utm_term") || "";
+    var ref = hostOf(document.referrer);
+    if (ref === location.hostname.replace(/^www\./, "")) ref = "";
+
+    var channel = "";
+    var paid = uMed === "cpc" || uMed === "ppc" || uMed === "paid";
+    if (gclid || (paid && /google/i.test(uSrc))) channel = "Google Ads";
+    else if (paid) channel = "Реклама: " + (uSrc || "невідомо");
+    else if (uSrc) channel = "UTM: " + uSrc;
+    else if (/(^|\.)google\./.test(ref)) channel = "Google — органіка";
+    else if (/(^|\.)(bing|duckduckgo|yahoo|ecosia)\./.test(ref)) channel = "Пошук — органіка";
+    else if (/(^|\.)(facebook|instagram|linkedin|t\.me|telegram)/.test(ref)) channel = "Соцмережі";
+    else if (ref) channel = "Перехід: " + ref;
+
+    if (!channel && readAttr()) return; /* прямий захід не перетирає збережене */
+    if (!channel) channel = "Прямий захід";
+    try {
+      localStorage.setItem(ATTR_KEY, JSON.stringify({
+        channel: channel,
+        gclid: gclid,
+        utm: [uSrc, uMed, uCmp, uTrm].filter(Boolean).join(" / "),
+        ref: ref,
+        landing: location.pathname,
+        ts: new Date().toISOString(),
+      }));
+    } catch (e) {}
+  })();
+
   /* ---- Mobile navigation ---- */
   var burger = document.querySelector("[data-burger]");
   var mnav = document.querySelector("[data-mobile-nav]");
@@ -234,6 +278,14 @@
       if (!validateLeadForm(form)) return; /* show inline errors, don't submit */
       data.page = location.pathname;
       data.ts = new Date().toISOString();
+      var attr = readAttr();
+      if (attr) {
+        data.channel = attr.channel || "";
+        data.gclid = attr.gclid || "";
+        data.utm = attr.utm || "";
+        data.ref = attr.ref || "";
+        data.landing = attr.landing || "";
+      }
 
       try {
         var store = JSON.parse(localStorage.getItem("legius_leads") || "[]");
