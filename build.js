@@ -214,6 +214,10 @@ async function build() {
           title: loc.metaTitle,
           description: loc.metaDescription,
           canonical: `/${loc.slug}/`,
+          ogImage: (() => {
+            const pr = (loc.related || []).find((r) => practiceBySlug[r]);
+            return pr ? `/assets/img/og/${pr}.png` : "/assets/img/og-default.png";
+          })(),
           schemas: [
             localBusinessSchema(loc),
             faqSchema(loc.faq || []),
@@ -254,7 +258,7 @@ async function build() {
           description: `${m.displayName || m.name}, ${m.role} юридичної компанії LEGIUS. ${m.short}`,
           canonical: `/team/${m.slug}/`,
           ogType: "profile",
-          ogImage: m.photo,
+          ogImage: "/assets/img/og-default.png",
           schemas: [
             personSchema(m),
             breadcrumbSchema([
@@ -315,6 +319,7 @@ async function build() {
           description: p.metaDescription,
           canonical: `/blog/${p.slug}/`,
           ogType: "article",
+          ogImage: p.practice ? `/assets/img/og/${p.practice}.png` : "/assets/img/og-default.png",
           schemas: [
             articleSchema(p),
             faqSchema(p.faq || []),
@@ -339,6 +344,7 @@ async function build() {
           description: a.metaDescription,
           canonical: `/blog/${a.slug}/`,
           ogType: "article",
+          ogImage: a.practice ? `/assets/img/og/${a.practice}.png` : "/assets/img/og-default.png",
           schemas: [
             articleSchema(a),
             faqSchema(a.faq || []),
@@ -453,6 +459,43 @@ async function build() {
     "",
   ].join("\n");
   await writeFile(path.join(DIST, "llms.txt"), llms, "utf8");
+
+  /* ---------- RSS ----------
+     Стрічка потрібна і читачам, і агрегаторам, і краулерам мовних моделей:
+     це найдешевший канал розповсюдження для блогу з сотнями матеріалів. */
+  console.log("→ blog/rss.xml");
+  const rssEsc = (t = "") =>
+    String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  const rssItems = [...articles]
+    .sort((a, b) => String(b.modified || b.date || "").localeCompare(String(a.modified || a.date || "")))
+    .slice(0, 50)
+    .map((a) => {
+      const url = `${site.domain}/blog/${a.slug}/`;
+      const d = new Date(a.modified || a.date || Date.now());
+      return `    <item>
+      <title>${rssEsc(a.title)}</title>
+      <link>${url}</link>
+      <guid isPermaLink="true">${url}</guid>
+      <pubDate>${d.toUTCString()}</pubDate>
+      <category>${rssEsc(a.practiceLabel || "Блог")}</category>
+      <description>${rssEsc(a.excerpt || a.metaDescription || "")}</description>
+    </item>`;
+    })
+    .join("\n");
+  const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${rssEsc(site.legalName)} — блог</title>
+    <link>${site.domain}/blog/</link>
+    <atom:link href="${site.domain}/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
+    <language>uk</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+${rssItems}
+  </channel>
+</rss>
+`;
+  await writeFile(path.join(DIST, "blog/rss.xml"), rss, "utf8");
 
   /* ---------- robots.txt, sitemap.xml, manifest ---------- */
   console.log("→ robots.txt, sitemap.xml, manifest");
