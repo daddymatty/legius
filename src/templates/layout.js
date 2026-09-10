@@ -95,6 +95,7 @@ export function layout(opts) {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="Content-Security-Policy" content="${csp}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="alternate" type="application/rss+xml" title="${esc(site.legalName)} — блог" href="/blog/rss.xml">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 ${noindex ? '<meta name="robots" content="noindex, nofollow">' : '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">'}

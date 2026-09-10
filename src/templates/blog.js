@@ -121,6 +121,14 @@ ${breadcrumbs(crumbs)}
           return svc.length ? `<br><span style="font-size:.92em">Послуги напряму: ${svc.map((s) => `<a href="/practices/${practice.slug}/${s.slug}/">${esc(s.title)}</a>`).join(", ")}.</span>` : "";
         })()}</div>` : ""}
       </article>
+      <div class="article-sign reveal">
+        <img src="/assets/img/logo-512.png" width="44" height="44" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <div>
+          <b>Матеріал підготувала команда ${esc(site.name)}</b>
+          <span>Юридична компанія в Києві, практика з ${site.founded} року. Текст має інформаційний характер: обставини кожної справи різні, і остаточний висновок можливий лише після розбору документів.</span>
+          <span class="article-sign__links"><a href="/about/">Про компанію</a> · <a href="/team/">Наші адвокати</a> · <a href="/blog/rss.xml">RSS</a></span>
+        </div>
+      </div>
       ${(() => {
         const L = landingFor(a);
         return L ? `<div class="inline-cta reveal">

@@ -11,7 +11,7 @@ export function organizationSchema() {
     name: site.legalName,
     alternateName: site.name,
     url: site.domain + "/",
-    logo: abs("/assets/img/logo.svg"),
+    logo: abs("/assets/img/logo-512.png"),
     image: abs("/assets/img/og-default.png"),
     description:
       "Юридична компанія в Києві: корпоративне, сімейне, військове, податкове, міграційне право, M&A, IT Law, судові спори та кримінальний захист бізнесу.",
@@ -35,6 +35,16 @@ export function organizationSchema() {
       opens: "09:00",
       closes: "19:00",
     },
+    slogan: "Юридичний партнер, а не просто підрядник",
+    numberOfEmployees: { "@type": "QuantitativeValue", value: Number(String(site.stats.lawyers).replace(/\D/g, "")) || undefined },
+    /* knowsAbout описує компетенції організації — сигнал для звʼязування
+       бренду з тематикою в графі знань Google. */
+    knowsAbout: [
+      "Сімейне право", "Корпоративне право", "Військове право", "Податкове право",
+      "Судові спори", "Нерухомість", "Земельне право", "Інтелектуальна власність",
+      "Супровід інвестицій", "IT-право", "Злиття та поглинання",
+      "Кримінальний захист бізнесу", "Міграційне право",
+    ],
     sameAs: Object.values(site.social),
     aggregateRating: {
       "@type": "AggregateRating",
@@ -125,7 +135,7 @@ export function articleSchema(article) {
     author: { "@type": "Organization", name: site.legalName, "@id": site.domain + "/#organization" },
     publisher: { "@id": site.domain + "/#organization" },
     mainEntityOfPage: abs("/blog/" + article.slug + "/"),
-    image: abs("/assets/img/og-default.png"),
+    image: abs(article.practice ? `/assets/img/og/${article.practice}.png` : "/assets/img/og-default.png"),
   };
 }
 

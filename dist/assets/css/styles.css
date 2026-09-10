@@ -828,3 +828,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   font-weight: 700; border-radius: 0 0 var(--radius-sm) 0; text-decoration: none;
 }
 .skip-link:focus { left: 0; }
+
+/* Підпис під статтею — бренд у кінці кожного матеріалу */
+.article-sign {
+  display: flex; gap: 1rem; align-items: flex-start; margin: 2.4rem 0 0;
+  padding: 1.2rem 1.3rem; background: var(--c-mist);
+  border: 1px solid var(--c-line); border-radius: var(--radius);
+}
+.article-sign img { flex: none; border-radius: 10px; }
+.article-sign b { display: block; font-family: var(--font-head); font-size: 1rem; color: var(--c-ink); margin-bottom: 0.25rem; }
+.article-sign span { display: block; font-size: 0.9rem; color: var(--c-muted); line-height: 1.6; }
+.article-sign__links { margin-top: 0.5rem; }
+.article-sign__links a { color: var(--c-teal-d); font-weight: 600; }
