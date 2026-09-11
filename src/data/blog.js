@@ -45,6 +45,10 @@ import clusterMandA2 from "./blog/cluster-m-and-a-2.js";
 import clusterCriminal2 from "./blog/cluster-criminal-business-2.js";
 const extraClusters2 = [clusterLitigation2, clusterRealEstate2, clusterLandLaw2, clusterIpLaw2, clusterInvestment2, clusterItLaw2, clusterMandA2, clusterCriminal2];
 
+/* Теми з контент-плану, які лишалися незакритими (банкрутство фізособи,
+   моральна шкода, єВідновлення). Статті лягають у вже наявні кластери. */
+import clusterPlanGaps from "./blog/cluster-plan-gaps.js";
+
 export const pillars = [...basePillars, ...extraPillars];
 export const articles = [
   ...clusterFamily,
@@ -54,6 +58,7 @@ export const articles = [
   ...generatedArticles,
   ...extraClusters.flatMap((c) => c || []),
   ...extraClusters2.flatMap((c) => c || []),
+  ...clusterPlanGaps,
 ];
 
 export const articleBySlug = Object.fromEntries(articles.map((a) => [a.slug, a]));
