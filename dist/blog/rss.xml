@@ -6,7 +6,31 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 11 Sep 2026 08:06:19 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 08:27:33 GMT</lastBuildDate>
+    <item>
+      <title>Банкрутство фізичної особи: як законно списати борги</title>
+      <link>https://legius.com.ua/blog/bankrutstvo-fizychnoyi-osoby/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/bankrutstvo-fizychnoyi-osoby/</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>З 2019 року фізична особа може офіційно списати борги через суд. Розбираємо, кому це доступно, скільки коштує і що залишиться непогашеним.</description>
+    </item>
+    <item>
+      <title>Відшкодування моральної шкоди: підстави, докази, розмір</title>
+      <link>https://legius.com.ua/blog/moralna-shkoda-vidshkoduvannya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/moralna-shkoda-vidshkoduvannya/</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Моральну шкоду присуджують не за самим фактом порушення, а за доведеними стражданнями. Розбираємо, що саме доводити і як формувати суму.</description>
+    </item>
+    <item>
+      <title>єВідновлення: компенсація за пошкоджене і знищене житло</title>
+      <link>https://legius.com.ua/blog/evidnovlennya-kompensatsiya-za-zhytlo/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/evidnovlennya-kompensatsiya-za-zhytlo/</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Нерухомість</category>
+      <description>Держава компенсує ремонт пошкодженого житла й видає житловий сертифікат за зруйноване. Розбираємо порядок крок за кроком і типові причини відмов.</description>
+    </item>
     <item>
       <title>Ризиковість платника ПДВ: як зняти статус і розблокувати роботу</title>
       <link>https://legius.com.ua/blog/ryzykovist-platnyka-pdv/</link>
@@ -382,30 +406,6 @@
       <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Коли спадщина — це передусім борги або сімейна домовленість вимагає перерозподілу часток, закон дозволяє відмовитися. Як оформити відмову, на чию користь можна це зробити і чи можна її скасувати.</description>
-    </item>
-    <item>
-      <title>Черги спадкування за законом: хто успадковує без заповіту</title>
-      <link>https://legius.com.ua/blog/cherhy-spadkuvannya-za-zakonom/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/cherhy-spadkuvannya-za-zakonom/</guid>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Якщо заповіту немає, майно розподіляє закон — за п'ятьма чергами спадкоємців. Хто входить до кожної черги, коли онуки спадкують за правом представлення і як цивільній дружині довести право на спадщину.</description>
-    </item>
-    <item>
-      <title>Оформлення спадщини в Україні: покрокова процедура</title>
-      <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/oformlennya-spadshchyny/</guid>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Покрокова процедура оформлення спадщини: куди звертатися, який строк не можна пропустити, які документи готувати та коли спадщину доведеться захищати в суді.</description>
-    </item>
-    <item>
-      <title>Пропущений строк прийняття спадщини: як поновити права</title>
-      <link>https://legius.com.ua/blog/propushchenyy-strok-spadshchyna/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/propushchenyy-strok-spadshchyna/</guid>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Що робити, коли шестимісячний строк прийняття спадщини пропущено: письмова згода інших спадкоємців, додатковий строк через суд і які причини суди визнають поважними.</description>
     </item>
   </channel>
 </rss>
