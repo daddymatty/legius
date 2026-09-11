@@ -46,11 +46,12 @@ export function organizationSchema() {
       "Кримінальний захист бізнесу", "Міграційне право",
     ],
     sameAs: Object.values(site.social),
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: site.rating.value,
-      reviewCount: site.rating.count,
-    },
+    /* aggregateRating свідомо не віддаємо. Google з 2019 року не показує в
+       сніпетах «власні» відгуки — ті, що розміщені на сайті самої компанії,
+       — тож користі від розмітки немає. А заявлений reviewCount, який не
+       підкріплений видимими відгуками з розміткою Review, є ризиком:
+       структуровані дані мають відповідати вмісту сторінки. Рейтинг
+       компанії Google і так бере з Google Business Profile. */
   };
 }
 
