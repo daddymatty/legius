@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 11 Sep 2026 08:27:33 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 08:44:19 GMT</lastBuildDate>
     <item>
       <title>Банкрутство фізичної особи: як законно списати борги</title>
       <link>https://legius.com.ua/blog/bankrutstvo-fizychnoyi-osoby/</link>
@@ -30,6 +30,22 @@
       <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
       <category>Нерухомість</category>
       <description>Держава компенсує ремонт пошкодженого житла й видає житловий сертифікат за зруйноване. Розбираємо порядок крок за кроком і типові причини відмов.</description>
+    </item>
+    <item>
+      <title>Абонентське юридичне обслуговування бізнесу: коли це вигідно</title>
+      <link>https://legius.com.ua/blog/abonentske-yurydychne-obsluhovuvannya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/abonentske-yurydychne-obsluhovuvannya/</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Абонентське обслуговування — не «юрист про запас», а спосіб перенести юридичну функцію назовні. Розбираємо, що туди входить, які моделі оплати існують і де межа вигоди.</description>
+    </item>
+    <item>
+      <title>Позовна заява: структура, вимоги закону і типові помилки</title>
+      <link>https://legius.com.ua/blog/pozovna-zayava-struktura/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/pozovna-zayava-struktura/</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Позов повертають не через складність справи, а через формальності. Розбираємо структуру заяви за трьома кодексами та помилки, на яких найчастіше зупиняються.</description>
     </item>
     <item>
       <title>Ризиковість платника ПДВ: як зняти статус і розблокувати роботу</title>
@@ -390,22 +406,6 @@
       <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Заповіт складено не на вас — але закон гарантує частину спадщини окремим категоріям спадкоємців. Хто має право на обов'язкову частку, як вона рахується та коли суд може її зменшити.</description>
-    </item>
-    <item>
-      <title>Чи переходять борги у спадщину: кредити померлого та захист спадкоємців</title>
-      <link>https://legius.com.ua/blog/spadkuvannya-borhiv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/spadkuvannya-borhiv/</guid>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Разом із квартирою можна успадкувати й кредит. Розбираємо, які борги переходять у спадщину, чому спадкоємець ніколи не платить більше за вартість отриманого майна та коли вигідніше відмовитися.</description>
-    </item>
-    <item>
-      <title>Відмова від спадщини: як оформити та які наслідки</title>
-      <link>https://legius.com.ua/blog/vidmova-vid-spadshchyny/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vidmova-vid-spadshchyny/</guid>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Коли спадщина — це передусім борги або сімейна домовленість вимагає перерозподілу часток, закон дозволяє відмовитися. Як оформити відмову, на чию користь можна це зробити і чи можна її скасувати.</description>
     </item>
   </channel>
 </rss>
