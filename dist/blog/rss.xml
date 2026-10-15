@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Thu, 15 Oct 2026 16:22:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 16:41:39 GMT</lastBuildDate>
     <item>
       <title>Обмежено придатний: статус скасовано — що це означає</title>
       <link>https://legius.com.ua/blog/obmezheno-prydatnyy/</link>
@@ -16,12 +16,36 @@
       <description>Категорії «обмежено придатний» більше не існує — її скасували у травні 2024 року. Розбираємо, чим її замінили і що робити тим, хто не встиг пройти повторний огляд.</description>
     </item>
     <item>
+      <title>Звільнення з військової служби: підстави, рапорт, строки</title>
+      <link>https://legius.com.ua/blog/zvilnennya-z-viyskovoyi-sluzhby/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zvilnennya-z-viyskovoyi-sluzhby/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Перелік підстав закритий, а рапорт має бути розглянутий за 30 днів. Розбираємо, як подати його правильно і як діяти при мовчанні командування.</description>
+    </item>
+    <item>
+      <title>Статус УБД: як оформити, якщо командир не вніс дані</title>
+      <link>https://legius.com.ua/blog/status-ubd-oformlennya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/status-ubd-oformlennya/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Статус має надаватися автоматично через реєстр. Розбираємо, що робити, коли цього не сталося, і як оскаржити відмову комісії.</description>
+    </item>
+    <item>
       <title>Перетин кордону військовозобовʼязаними: хто має право на виїзд</title>
       <link>https://legius.com.ua/blog/peretyn-kordonu-viyskovozobovyazanymy/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/peretyn-kordonu-viyskovozobovyazanymy/</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Розбираємо підстави для виїзду за постановою № 57, потрібні документи й найчастішу причину, через яку людину не випускають попри наявність права.</description>
+    </item>
+    <item>
+      <title>Оновлення військово-облікових даних: «Резерв+», ЦНАП, ТЦК</title>
+      <link>https://legius.com.ua/blog/onovlennya-danykh-rezerv-plus/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/onovlennya-danykh-rezerv-plus/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Більшість дій уже не потребують візиту до ТЦК. Розбираємо, що оновлюється онлайн, що ні, і як діяти, коли реєстр вас не бачить.</description>
     </item>
     <item>
       <title>Штрафи за порушення військового обліку: за що і скільки</title>
@@ -382,30 +406,6 @@
       <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Розбираємо скликання зборів, повідомлення учасників, необхідну кількість голосів, заочне голосування та вимоги до протоколу — і чому саме процедурні помилки скасовують рішення.</description>
-    </item>
-    <item>
-      <title>Відповідальність директора ТОВ: за що відповідає керівник</title>
-      <link>https://legius.com.ua/blog/vidpovidalnist-dyrektora-tov/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vidpovidalnist-dyrektora-tov/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Розбираємо чотири рівні відповідальності керівника — від відшкодування збитків товариству до субсидіарної відповідальності при банкрутстві — і що реально зменшує ризик.</description>
-    </item>
-    <item>
-      <title>ТОВ з іноземним засновником: реєстрація та документи</title>
-      <link>https://legius.com.ua/blog/nerezydent-zasnovnyk-tov/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/nerezydent-zasnovnyk-tov/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Розбираємо, які документи потрібні іноземному засновнику, навіщо нерезиденту український податковий номер, як вносити вклад із-за кордону та які обмеження діють.</description>
-    </item>
-    <item>
-      <title>Зміна місцезнаходження ТОВ і зміна КВЕД: що врахувати</title>
-      <link>https://legius.com.ua/blog/zmina-mistseznakhodzhennya-tov/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zmina-mistseznakhodzhennya-tov/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Пояснюємо процедуру зміни адреси й видів діяльності ТОВ і головну пастку — чому після переїзду в інший регіон податки ще певний час сплачуються за старим місцем обліку.</description>
     </item>
   </channel>
 </rss>
