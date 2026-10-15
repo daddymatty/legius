@@ -4,15 +4,15 @@
 
 **Формула ризику:** обсяг тіла статті (<450 слів +3, <700 +1) +
 «страхувальні» формулювання ×2 + службова позначка `expand` +
-волатильність напряму (військове/податкове/міграційне 3,
-корпоративне/IT/нерухомість/земельне/кримінал 2, решта 1).
+волатильність напряму.
 
 | | |
 |---|---|
 | Статей усього | 261 |
-| Коротших за 450 слів | 140 (старт 147) |
-| Із позначкою `expand` | 206 (старт 213) |
-| Високий ризик (≥7) | 49 (старт 54) |
+| Опрацьовано | **11** |
+| Коротших за 450 слів | 137 (старт 147) |
+| Із позначкою `expand` | 203 (старт 213) |
+| Високий ризик (≥7) | 46 (старт 54) |
 | Середній (5–6) | 104 |
 
 ## ✅ Опрацьовано
@@ -27,14 +27,14 @@
 | `mobilizatsiya-fop` | 658 |
 | `kontrakt-18-24` | 548 |
 | `litsenzuvannya-diyalnosti` | 622 |
+| `zvilnennya-z-viyskovoyi-sluzhby` | 691 |
+| `status-ubd-oformlennya` | 481 |
+| `onovlennya-danykh-rezerv-plus` | 538 |
 
 ## Високий ризик — перевіряти першими
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 7 | 183 | 0 | military-law | `zvilnennya-z-viyskovoyi-sluzhby` |
-| 7 | 183 | 0 | military-law | `status-ubd-oformlennya` |
-| 7 | 184 | 0 | military-law | `onovlennya-danykh-rezerv-plus` |
 | 7 | 184 | 0 | military-law | `yak-perevirytys-vlk-pidgotovka` |
 | 7 | 184 | 0 | tax-law | `podatkovyj-borg-aresht-rahunkiv` |
 | 7 | 185 | 0 | military-law | `demobilizatsiya` |
