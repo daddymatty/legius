@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Thu, 15 Oct 2026 16:00:40 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 16:14:50 GMT</lastBuildDate>
     <item>
       <title>Обмежено придатний: статус скасовано — що це означає</title>
       <link>https://legius.com.ua/blog/obmezheno-prydatnyy/</link>
@@ -22,6 +22,22 @@
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Розбираємо підстави для виїзду за постановою № 57, потрібні документи й найчастішу причину, через яку людину не випускають попри наявність права.</description>
+    </item>
+    <item>
+      <title>Штрафи за порушення військового обліку: за що і скільки</title>
+      <link>https://legius.com.ua/blog/shtrafy-viyskovyy-oblik/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/shtrafy-viyskovyy-oblik/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Розбираємо склади порушень, суми, строки сплати та наслідки прострочення — зокрема подвоєння штрафу при передачі виконавцям.</description>
+    </item>
+    <item>
+      <title>Оскарження штрафу ТЦК: підстави, строк і порядок</title>
+      <link>https://legius.com.ua/blog/oskarzhennya-shtrafu-tck/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-shtrafu-tck/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Постанову ТЦК можна скасувати, але строк короткий — десять днів. Розбираємо підстави, які реально працюють, і порядок дій.</description>
     </item>
     <item>
       <title>Військовий облік жінок: хто зобовʼязаний і чи це мобілізація</title>
@@ -390,22 +406,6 @@
       <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Розбираємо, що насправді означає «розшук ТЦК», які наслідки він тягне і чому зволікання зазвичай погіршує ситуацію.</description>
-    </item>
-    <item>
-      <title>Аліменти з ФОП: як розрахувати та стягнути з підприємця</title>
-      <link>https://legius.com.ua/blog/alimenty-z-fop/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-z-fop/</guid>
-      <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Доходи підприємця не видно у зарплатній відомості — тому аліменти з ФОП мають свої правила. Розбираємо, з чого рахується частка, коли вигідніша тверда сума і як діяти, якщо доходи занижуються.</description>
-    </item>
-    <item>
-      <title>Іпотечна квартира при розлученні: як ділиться житло і борг</title>
-      <link>https://legius.com.ua/blog/podil-ipotechnoyi-kvartyry/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/podil-ipotechnoyi-kvartyry/</guid>
-      <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Квартира в іпотеці ділиться разом із боргом — і без банку тут не обійтися. Розбираємо чотири робочі сценарії поділу, роль першого внеску та найчастіші помилки подружжя.</description>
     </item>
   </channel>
 </rss>
