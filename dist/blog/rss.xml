@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Thu, 15 Oct 2026 16:41:39 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 17:01:22 GMT</lastBuildDate>
     <item>
       <title>Обмежено придатний: статус скасовано — що це означає</title>
       <link>https://legius.com.ua/blog/obmezheno-prydatnyy/</link>
@@ -80,6 +80,14 @@
       <description>Мільйон виплачують не за факт підписання, а за умови тривалої участі в бойових діях. Розбираємо, що саме треба знати до підпису.</description>
     </item>
     <item>
+      <title>Демобілізація: що є насправді, а що поки лише в планах</title>
+      <link>https://legius.com.ua/blog/demobilizatsiya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/demobilizatsiya/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Закону про загальну демобілізацію немає, служба триває до особливого розпорядження. Але індивідуальні підстави працюють щомісяця — і саме з ними варто працювати.</description>
+    </item>
+    <item>
       <title>Військовий облік жінок: хто зобовʼязаний і чи це мобілізація</title>
       <link>https://legius.com.ua/blog/viyskovyy-oblik-zhinok/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/viyskovyy-oblik-zhinok/</guid>
@@ -88,12 +96,28 @@
       <description>Обовʼязковий облік стосується лише жінок з медичною та фармацевтичною освітою. Розбираємо строки, обовʼязки й головне непорозуміння: облік не дорівнює призову.</description>
     </item>
     <item>
+      <title>Підготовка до ВЛК: як зібрати документи та діяти правильно</title>
+      <link>https://legius.com.ua/blog/yak-perevirytys-vlk-pidgotovka/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/yak-perevirytys-vlk-pidgotovka/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Практичні поради з підготовки до ВЛК: кого направляють на огляд, які медичні документи зібрати заздалегідь, як діяти під час комісії та як захистити свої права.</description>
+    </item>
+    <item>
       <title>Ліцензування діяльності: коли потрібна ліцензія і як її отримати</title>
       <link>https://legius.com.ua/blog/litsenzuvannya-diyalnosti/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/litsenzuvannya-diyalnosti/</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Перелік ліцензованих видів діяльності — виключний. Розбираємо, як отримати ліцензію, з якого дня виникає право працювати і чим загрожує безліцензійна діяльність.</description>
+    </item>
+    <item>
+      <title>Податковий борг та арешт рахунків: як захистити активи</title>
+      <link>https://legius.com.ua/blog/podatkovyj-borg-aresht-rahunkiv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/podatkovyj-borg-aresht-rahunkiv/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Пояснюємо, як виникає податковий борг, коли застосовується податкова застава й арешт рахунків і майна, який порядок стягнення та як бізнесу захистити активи.</description>
     </item>
     <item>
       <title>Банкрутство фізичної особи: як законно списати борги</title>
@@ -382,30 +406,6 @@
       <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Пояснюємо, чому запис про припинення в реєстрі не означає кінця зобов’язань, яку звітність подати останньою та як не залишити за собою борг з ЄСВ.</description>
-    </item>
-    <item>
-      <title>Кінцевий бенефіціарний власник і структура власності ТОВ</title>
-      <link>https://legius.com.ua/blog/kintsevyy-benefitsiarnyy-vlasnyk/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/kintsevyy-benefitsiarnyy-vlasnyk/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Пояснюємо, за якими ознаками визначають КБВ, як виглядає схема структури власності, коли її треба подавати й чому за неподання штрафують саме керівника.</description>
-    </item>
-    <item>
-      <title>Збільшення статутного капіталу ТОВ: способи та процедура</title>
-      <link>https://legius.com.ua/blog/zbilshennya-statutnoho-kapitalu-tov/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zbilshennya-statutnoho-kapitalu-tov/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Розбираємо збільшення статутного капіталу за рахунок додаткових вкладів і нерозподіленого прибутку: чим вони відрізняються, як не розмити частки й де найчастіше помиляються.</description>
-    </item>
-    <item>
-      <title>Загальні збори учасників ТОВ: скликання, кворум, протокол</title>
-      <link>https://legius.com.ua/blog/zahalni-zbory-uchasnykiv-tov/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zahalni-zbory-uchasnykiv-tov/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Розбираємо скликання зборів, повідомлення учасників, необхідну кількість голосів, заочне голосування та вимоги до протоколу — і чому саме процедурні помилки скасовують рішення.</description>
     </item>
   </channel>
 </rss>
