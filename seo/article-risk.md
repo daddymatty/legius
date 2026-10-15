@@ -10,9 +10,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Коротших за 450 слів | 143 |
-| Зі «страхувальними» формулюваннями | 5 |
-| Високий ризик (≥7) | 52 |
+| Коротших за 450 слів | 140 (старт 147) |
+| Із позначкою `expand` | 206 (старт 213) |
+| Високий ризик (≥7) | 49 (старт 54) |
 | Середній (5–6) | 104 |
 
 ## ✅ Опрацьовано
@@ -24,14 +24,14 @@
 | `viyskovyy-oblik-zhinok` | 500 |
 | `shtrafy-viyskovyy-oblik` | 648 |
 | `oskarzhennya-shtrafu-tck` | 542 |
+| `mobilizatsiya-fop` | 658 |
+| `kontrakt-18-24` | 548 |
+| `litsenzuvannya-diyalnosti` | 622 |
 
 ## Високий ризик — перевіряти першими
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 8 | 253 | 1 | corporate-law | `litsenzuvannya-diyalnosti` |
-| 7 | 178 | 0 | military-law | `kontrakt-18-24` |
-| 7 | 180 | 0 | military-law | `mobilizatsiya-fop` |
 | 7 | 183 | 0 | military-law | `zvilnennya-z-viyskovoyi-sluzhby` |
 | 7 | 183 | 0 | military-law | `status-ubd-oformlennya` |
 | 7 | 184 | 0 | military-law | `onovlennya-danykh-rezerv-plus` |
