@@ -6,7 +6,15 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Thu, 24 Sep 2026 20:47:50 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 15:53:26 GMT</lastBuildDate>
+    <item>
+      <title>Обмежено придатний: статус скасовано — що це означає</title>
+      <link>https://legius.com.ua/blog/obmezheno-prydatnyy/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/obmezheno-prydatnyy/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Категорії «обмежено придатний» більше не існує — її скасували у травні 2024 року. Розбираємо, чим її замінили і що робити тим, хто не встиг пройти повторний огляд.</description>
+    </item>
     <item>
       <title>Банкрутство фізичної особи: як законно списати борги</title>
       <link>https://legius.com.ua/blog/bankrutstvo-fizychnoyi-osoby/</link>
@@ -398,14 +406,6 @@
       <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Заповіт, складений з помилками, — подарунок для тих, хто захоче його оскаржити. Розбираємо вимоги до форми, види заповітів, межі свободи заповідача та як скласти документ, що витримає перевірку судом.</description>
-    </item>
-    <item>
-      <title>Обов'язкова частка у спадщині: хто має право попри заповіт</title>
-      <link>https://legius.com.ua/blog/obovyazkova-chastka-u-spadshchyni/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/obovyazkova-chastka-u-spadshchyni/</guid>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Заповіт складено не на вас — але закон гарантує частину спадщини окремим категоріям спадкоємців. Хто має право на обов'язкову частку, як вона рахується та коли суд може її зменшити.</description>
     </item>
   </channel>
 </rss>
