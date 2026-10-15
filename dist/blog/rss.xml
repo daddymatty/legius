@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Thu, 15 Oct 2026 16:14:50 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 16:22:00 GMT</lastBuildDate>
     <item>
       <title>Обмежено придатний: статус скасовано — що це означає</title>
       <link>https://legius.com.ua/blog/obmezheno-prydatnyy/</link>
@@ -40,12 +40,36 @@
       <description>Постанову ТЦК можна скасувати, але строк короткий — десять днів. Розбираємо підстави, які реально працюють, і порядок дій.</description>
     </item>
     <item>
+      <title>Мобілізація ФОП: податкові пільги, бронювання, бізнес</title>
+      <link>https://legius.com.ua/blog/mobilizatsiya-fop/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/mobilizatsiya-fop/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Головне про ФОП під час служби: повне звільнення від податків діє навіть при отриманні доходу, але лише якщо ФОП зареєстровано до призову.</description>
+    </item>
+    <item>
+      <title>Контракт 18–24: умови, мільйон гривень і що читати в тексті</title>
+      <link>https://legius.com.ua/blog/kontrakt-18-24/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/kontrakt-18-24/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Мільйон виплачують не за факт підписання, а за умови тривалої участі в бойових діях. Розбираємо, що саме треба знати до підпису.</description>
+    </item>
+    <item>
       <title>Військовий облік жінок: хто зобовʼязаний і чи це мобілізація</title>
       <link>https://legius.com.ua/blog/viyskovyy-oblik-zhinok/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/viyskovyy-oblik-zhinok/</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Обовʼязковий облік стосується лише жінок з медичною та фармацевтичною освітою. Розбираємо строки, обовʼязки й головне непорозуміння: облік не дорівнює призову.</description>
+    </item>
+    <item>
+      <title>Ліцензування діяльності: коли потрібна ліцензія і як її отримати</title>
+      <link>https://legius.com.ua/blog/litsenzuvannya-diyalnosti/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/litsenzuvannya-diyalnosti/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Перелік ліцензованих видів діяльності — виключний. Розбираємо, як отримати ліцензію, з якого дня виникає право працювати і чим загрожує безліцензійна діяльність.</description>
     </item>
     <item>
       <title>Банкрутство фізичної особи: як законно списати борги</title>
@@ -382,30 +406,6 @@
       <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Пояснюємо процедуру зміни адреси й видів діяльності ТОВ і головну пастку — чому після переїзду в інший регіон податки ще певний час сплачуються за старим місцем обліку.</description>
-    </item>
-    <item>
-      <title>Повторний і контрольний огляд ВЛК: коли призначають і як підготуватися</title>
-      <link>https://legius.com.ua/blog/vlk-povtornyy-kontrolnyy-ohlyad/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vlk-povtornyy-kontrolnyy-ohlyad/</guid>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо два різні механізми перегляду висновку ВЛК: повторний огляд після лікування та контрольний огляд вищою комісією.</description>
-    </item>
-    <item>
-      <title>ВЛК для військовослужбовця: направлення, порядок, оскарження</title>
-      <link>https://legius.com.ua/blog/vlk-viyskovosluzhbovtsyu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vlk-viyskovosluzhbovtsyu/</guid>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Для тих, хто вже служить, порядок проходження ВЛК відрізняється від цивільного: направлення видає командування, а від висновку залежить продовження служби.</description>
-    </item>
-    <item>
-      <title>Розшук ТЦК: що це означає і що робити далі</title>
-      <link>https://legius.com.ua/blog/rozshuk-tck-shcho-robyty/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/rozshuk-tck-shcho-robyty/</guid>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо, що насправді означає «розшук ТЦК», які наслідки він тягне і чому зволікання зазвичай погіршує ситуацію.</description>
     </item>
   </channel>
 </rss>
