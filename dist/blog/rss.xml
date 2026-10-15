@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Thu, 15 Oct 2026 15:53:26 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 16:00:40 GMT</lastBuildDate>
     <item>
       <title>Обмежено придатний: статус скасовано — що це означає</title>
       <link>https://legius.com.ua/blog/obmezheno-prydatnyy/</link>
@@ -14,6 +14,22 @@
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Категорії «обмежено придатний» більше не існує — її скасували у травні 2024 року. Розбираємо, чим її замінили і що робити тим, хто не встиг пройти повторний огляд.</description>
+    </item>
+    <item>
+      <title>Перетин кордону військовозобовʼязаними: хто має право на виїзд</title>
+      <link>https://legius.com.ua/blog/peretyn-kordonu-viyskovozobovyazanymy/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/peretyn-kordonu-viyskovozobovyazanymy/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Розбираємо підстави для виїзду за постановою № 57, потрібні документи й найчастішу причину, через яку людину не випускають попри наявність права.</description>
+    </item>
+    <item>
+      <title>Військовий облік жінок: хто зобовʼязаний і чи це мобілізація</title>
+      <link>https://legius.com.ua/blog/viyskovyy-oblik-zhinok/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/viyskovyy-oblik-zhinok/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Обовʼязковий облік стосується лише жінок з медичною та фармацевтичною освітою. Розбираємо строки, обовʼязки й головне непорозуміння: облік не дорівнює призову.</description>
     </item>
     <item>
       <title>Банкрутство фізичної особи: як законно списати борги</title>
@@ -390,22 +406,6 @@
       <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Квартира в іпотеці ділиться разом із боргом — і без банку тут не обійтися. Розбираємо чотири робочі сценарії поділу, роль першого внеску та найчастіші помилки подружжя.</description>
-    </item>
-    <item>
-      <title>Спадковий договір: альтернатива заповіту, яку складно оскаржити</title>
-      <link>https://legius.com.ua/blog/spadkovyy-dohovir/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/spadkovyy-dohovir/</guid>
-      <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Майно за спадковим договором не входить до спадщини — на нього не претендують ні черги спадкоємців, ні обов'язкова частка. Розбираємо, як працює цей інструмент і чим він сильніший за заповіт.</description>
-    </item>
-    <item>
-      <title>Як скласти заповіт в Україні: форма, вартість, типові помилки</title>
-      <link>https://legius.com.ua/blog/yak-sklasty-zapovit/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/yak-sklasty-zapovit/</guid>
-      <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Заповіт, складений з помилками, — подарунок для тих, хто захоче його оскаржити. Розбираємо вимоги до форми, види заповітів, межі свободи заповідача та як скласти документ, що витримає перевірку судом.</description>
     </item>
   </channel>
 </rss>
