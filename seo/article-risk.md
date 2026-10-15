@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **14** |
-| Коротших за 450 слів | 134 (старт 147) |
-| Із позначкою `expand` | 200 (старт 213) |
-| Високий ризик (≥7), лишилось | 58 |
+| Опрацьовано | **17** |
+| Коротших за 450 слів | 131 (старт 147) |
+| Із позначкою `expand` | 197 (старт 213) |
+| Високий ризик (≥7), лишилось | 55 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -38,14 +38,14 @@
 | `demobilizatsiya` | 552 | military-law |
 | `podatkovyj-borg-aresht-rahunkiv` | 1018 | tax-law |
 | `yak-perevirytys-vlk-pidgotovka` | 957 | military-law |
+| `bronyuvannya-pratsivnykiv` | 977 | military-law |
+| `vlk-nepridatnist` | 810 | military-law |
+| `oskarzhennya-vlk-cherez-sud` | 855 | military-law |
 
 ## Високий ризик — перевіряти першими
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 9 | 192 | 1 | military-law | `vlk-nepridatnist` |
-| 9 | 193 | 1 | military-law | `oskarzhennya-vlk-cherez-sud` |
-| 9 | 210 | 1 | military-law | `bronyuvannya-pratsivnykiv` |
 | 9 | 266 | 1 | tax-law | `vidshkoduvannya-pdv` |
 | 9 | 341 | 1 | migration-law | `viza-d-v-ukrayinu` |
 | 9 | 400 | 1 | migration-law | `oskarzhennya-vydvorennya-inozemtsya` |

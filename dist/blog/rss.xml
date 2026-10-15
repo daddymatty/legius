@@ -6,7 +6,23 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Thu, 15 Oct 2026 17:01:22 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 20:54:22 GMT</lastBuildDate>
+    <item>
+      <title>Бронювання працівників: як підприємству отримати відстрочку для співробітників</title>
+      <link>https://legius.com.ua/blog/bronyuvannya-pratsivnykiv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/bronyuvannya-pratsivnykiv/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Пояснюємо умови бронювання працівників, статус критично важливого підприємства, зарплатний критерій, ліміт 50 % і типові помилки роботодавців.</description>
+    </item>
+    <item>
+      <title>Непридатність до військової служби: підстави та оформлення</title>
+      <link>https://legius.com.ua/blog/vlk-nepridatnist/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vlk-nepridatnist/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Пояснюємо, що означає непридатність до служби, чим вона відрізняється від тимчасової непридатності, хто виключає з військового обліку та які документи мають вагу.</description>
+    </item>
     <item>
       <title>Обмежено придатний: статус скасовано — що це означає</title>
       <link>https://legius.com.ua/blog/obmezheno-prydatnyy/</link>
@@ -86,6 +102,14 @@
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Закону про загальну демобілізацію немає, служба триває до особливого розпорядження. Але індивідуальні підстави працюють щомісяця — і саме з ними варто працювати.</description>
+    </item>
+    <item>
+      <title>Оскарження ВЛК через суд: коли і як це робити</title>
+      <link>https://legius.com.ua/blog/oskarzhennya-vlk-cherez-sud/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-vlk-cherez-sud/</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Пояснюємо, коли доцільне судове оскарження висновку ВЛК, які строки звернення діють, як правильно сформулювати вимоги та що суд може і чого не може.</description>
     </item>
     <item>
       <title>Військовий облік жінок: хто зобовʼязаний і чи це мобілізація</title>
@@ -382,30 +406,6 @@
       <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Пояснюємо, коли переведення можливе, які підстави реально працюють, як правильно оформити рапорт і чому головна проблема тут — не право, а згода двох командирів.</description>
-    </item>
-    <item>
-      <title>Служба за контрактом: умови, строк, припинення</title>
-      <link>https://legius.com.ua/blog/sluzhba-za-kontraktom/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/sluzhba-za-kontraktom/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо, чим контракт відрізняється від мобілізації, що саме варто прочитати до підписання, які гарантії він дає і за яких підстав може бути припинений достроково.</description>
-    </item>
-    <item>
-      <title>Реєстрація ФОП у 2026 році: покроковий порядок</title>
-      <link>https://legius.com.ua/blog/reyestratsiya-fop/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-fop/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Розбираємо реєстрацію ФОП по кроках: де подати заяву, як обрати КВЕДи та групу єдиного податку, коли потрібен ПРРО і які обов’язки виникають одразу після реєстрації.</description>
-    </item>
-    <item>
-      <title>Закриття ФОП: припинення діяльності без боргів і штрафів</title>
-      <link>https://legius.com.ua/blog/zakryttya-fop/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zakryttya-fop/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Пояснюємо, чому запис про припинення в реєстрі не означає кінця зобов’язань, яку звітність подати останньою та як не залишити за собою борг з ЄСВ.</description>
     </item>
   </channel>
 </rss>
