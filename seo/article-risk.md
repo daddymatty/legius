@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **32** |
-| Коротших за 450 слів | 116 (старт 147) |
-| Із позначкою `expand` | 182 (старт 213) |
-| Високий ризик (≥7), лишилось | 40 |
+| Опрацьовано | **35** |
+| Коротших за 450 слів | 113 (старт 147) |
+| Із позначкою `expand` | 179 (старт 213) |
+| Високий ризик (≥7), лишилось | 37 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -56,6 +56,9 @@
 | `yedynyj-podatok-grupy-fop` | 977 | tax-law |
 | `transfertne-cinoutvorennya` | 1011 | tax-law |
 | `podatkova-amnistiya` | 809 | tax-law |
+| `vyplaty-poranenym-simyam` | 1160 | military-law |
+| `oskarzhennya-povistky` | 922 | military-law |
+| `vidstrochka-opikunam` | 870 | military-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -65,14 +68,11 @@
 | 8 | 231 | 1 | corporate-law | `antymonopolne-pravo` |
 | 8 | 257 | 1 | corporate-law | `zmina-dyrektora-tov` |
 | 8 | 1234 | 2 | military-law | `vlk-oskarzhennya` |
-| 7 | 188 | 0 | military-law | `vyplaty-poranenym-simyam` |
 | 7 | 188 | 0 | tax-law | `opodatkuvannya-nerezydentiv` |
 | 7 | 189 | 0 | tax-law | `shtrafy-dps` |
-| 7 | 193 | 0 | military-law | `oskarzhennya-povistky` |
 | 7 | 193 | 0 | tax-law | `podatkovyj-kompromis` |
 | 7 | 193 | 0 | tax-law | `opodatkuvannya-dyvidendiv` |
 | 7 | 194 | 0 | tax-law | `podatkovi-spory-sudova-praktyka` |
-| 7 | 196 | 0 | military-law | `vidstrochka-opikunam` |
 | 7 | 202 | 0 | military-law | `dezertyrstvo-stattya-408` |
 | 7 | 204 | 0 | tax-law | `podatkovyj-zapyt-dps` |
 | 7 | 208 | 0 | tax-law | `zustrichni-zviryky-kontragentiv` |
