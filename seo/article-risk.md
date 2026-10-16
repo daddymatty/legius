@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **60** |
+| Опрацьовано | **63** |
 | Коротших за 450 слів | 89 (старт 147) |
-| Із позначкою `expand` | 154 (старт 213) |
-| Високий ризик (≥7), лишилось | 12 |
+| Із позначкою `expand` | 151 (старт 213) |
+| Високий ризик (≥7), лишилось | 9 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -84,6 +84,9 @@
 | `etapy-uhody-ma` | 1076 | m-and-a |
 | `share-deal-asset-deal` | 954 | m-and-a |
 | `garantiyi-ta-indemniti` | 1086 | m-and-a |
+| `gromadska-spilka` | 1149 | corporate-law |
+| `reyestratsiya-asotsiatsiyi` | 1145 | corporate-law |
+| `dozvilni-dokumenty` | 1379 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -98,9 +101,6 @@
 | 7 | 426 | 1 | investment | `derzhpidtrymka-znachni-investytsiyi` |
 | 7 | 557 | 1 | military-law | `sluzhba-za-kontraktom` |
 | 7 | 643 | 1 | military-law | `vidstrochka-doglyad-za-osoboyu-z-invalidnistyu` |
-| 7 | 741 | 2 | corporate-law | `gromadska-spilka` |
-| 7 | 779 | 2 | corporate-law | `reyestratsiya-asotsiatsiyi` |
-| 7 | 788 | 2 | corporate-law | `dozvilni-dokumenty` |
 
 ## Середній ризик
 
