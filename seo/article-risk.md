@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **42** |
-| Коротших за 450 слів | 107 (старт 147) |
-| Із позначкою `expand` | 173 (старт 213) |
-| Високий ризик (≥7), лишилось | 30 |
+| Опрацьовано | **45** |
+| Коротших за 450 слів | 104 (старт 147) |
+| Із позначкою `expand` | 170 (старт 213) |
+| Високий ризик (≥7), лишилось | 27 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -66,15 +66,15 @@
 | `antymonopolne-pravo` | 899 | corporate-law |
 | `zmina-dyrektora-tov` | 919 | corporate-law |
 | `vlk-oskarzhennya` | 1234 | military-law |
+| `shtrafy-dps` | 917 | tax-law |
+| `opodatkuvannya-dyvidendiv` | 895 | tax-law |
+| `podatkovyj-kompromis` | 889 | tax-law |
 
 ## Високий ризик — перевіряти першими
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
 | 7 | 188 | 0 | tax-law | `opodatkuvannya-nerezydentiv` |
-| 7 | 189 | 0 | tax-law | `shtrafy-dps` |
-| 7 | 193 | 0 | tax-law | `podatkovyj-kompromis` |
-| 7 | 193 | 0 | tax-law | `opodatkuvannya-dyvidendiv` |
 | 7 | 194 | 0 | tax-law | `podatkovi-spory-sudova-praktyka` |
 | 7 | 204 | 0 | tax-law | `podatkovyj-zapyt-dps` |
 | 7 | 208 | 0 | tax-law | `zustrichni-zviryky-kontragentiv` |
