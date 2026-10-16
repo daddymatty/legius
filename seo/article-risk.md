@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **66** |
-| Коротших за 450 слів | 86 (старт 147) |
-| Із позначкою `expand` | 148 (старт 213) |
-| Високий ризик (≥7), лишилось | 6 |
+| Опрацьовано | **69** |
+| Коротших за 450 слів | 83 (старт 147) |
+| Із позначкою `expand` | 145 (старт 213) |
+| Високий ризик (≥7), лишилось | 3 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -90,14 +90,14 @@
 | `kik-kontrolovani-inozemni-kompanii` | 1746 | tax-law |
 | `podatkovi-spory-sudova-praktyka` | 1301 | tax-law |
 | `alimenty-z-inozemtsya` | 1434 | family-law |
+| `vykonannya-sudovoho-rishennya` | 1342 | litigation |
+| `prava-pry-dopyti` | 1313 | criminal-business |
+| `rozluchennya-z-inozemtsem` | 1136 | family-law |
 
 ## Високий ризик — перевіряти першими
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 7 | 238 | 1 | family-law | `rozluchennya-z-inozemtsem` |
-| 7 | 386 | 1 | litigation | `vykonannya-sudovoho-rishennya` |
-| 7 | 401 | 1 | criminal-business | `prava-pry-dopyti` |
 | 7 | 426 | 1 | investment | `derzhpidtrymka-znachni-investytsiyi` |
 | 7 | 557 | 1 | military-law | `sluzhba-za-kontraktom` |
 | 7 | 643 | 1 | military-law | `vidstrochka-doglyad-za-osoboyu-z-invalidnistyu` |
