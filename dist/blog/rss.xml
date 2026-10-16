@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 22:21:44 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 22:31:36 GMT</lastBuildDate>
     <item>
       <title>Розлучення з іноземцем: підсудність і визнання рішення</title>
       <link>https://legius.com.ua/blog/rozluchennya-z-inozemtsem/</link>
@@ -16,12 +16,36 @@
       <description>Коли достатньо ДРАЦС, а коли без суду не обійтися, хто визначає підсудність, якщо обоє живуть за кордоном, чому при судовому розлученні не видають свідоцтва і як легалізувати результат.</description>
     </item>
     <item>
+      <title>Заборгованість з аліментів: як стягнути борг і пеню</title>
+      <link>https://legius.com.ua/blog/alimenty-zaborhovanist/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-zaborhovanist/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Як рахується борг, якщо платник не працює, як правильно нарахувати пеню за ст. 196 СК, які санкції настають на 3, 4 місяці та на 1, 2, 3 роки боргу і що робити стягувачу.</description>
+    </item>
+    <item>
       <title>Стягнення аліментів з іноземця та боржника за кордоном</title>
       <link>https://legius.com.ua/blog/alimenty-z-inozemtsya/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-z-inozemtsya/</guid>
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Пояснюємо два робочі шляхи стягнення аліментів з боржника за кордоном, які конвенції діють, що саме входить до клопотання про визнання рішення та які суми діють у 2026 році.</description>
+    </item>
+    <item>
+      <title>Зміна прізвища дитини: коли потрібна згода батька</title>
+      <link>https://legius.com.ua/blog/zmina-prizvyshcha-dytyny/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zmina-prizvyshcha-dytyny/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Шість випадків, коли згода другого з батьків не потрібна, вікові правила за ст. 148 СК, різниця між зміною прізвища і по батькові та порядок при спорі.</description>
+    </item>
+    <item>
+      <title>Режим окремого проживання подружжя: що це і навіщо</title>
+      <link>https://legius.com.ua/blog/rozdilne-prozhyvannya-podruzhzhya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/rozdilne-prozhyvannya-podruzhzhya/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Що дає режим окремого проживання за ст. 119–120 СК, чому він діє лише на майбутнє, що саме змінюється для майна й дітей і коли суд відмовляє у його встановленні.</description>
     </item>
     <item>
       <title>Відстрочка для студентів та аспірантів: умови та оформлення</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Міграційне право</category>
       <description>Розбираємо умови прийняття до громадянства України за статтею 9: ценз осілості та винятки з нього, іспити, законні джерела існування, чотири види декларацій і спрощений порядок.</description>
-    </item>
-    <item>
-      <title>Громадянство України за шлюбом з громадянином України</title>
-      <link>https://legius.com.ua/blog/gromadyanstvo-za-shlyubom-z-gromadyaninom/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/gromadyanstvo-za-shlyubom-z-gromadyaninom/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Міграційне право</category>
-      <description>Пояснюємо, як шлюб із громадянином України впливає на натуралізацію: правило трьох років, повне звільнення від цензу осілості, які умови залишаються та чому перевіряють реальність шлюбу.</description>
-    </item>
-    <item>
-      <title>Дозвіл на імміграцію: квота та позаквотні підстави</title>
-      <link>https://legius.com.ua/blog/immigratsiyna-kvota-dozvil-na-immigratsiyu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/immigratsiyna-kvota-dozvil-na-immigratsiyu/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Міграційне право</category>
-      <description>Розбираємо дозвіл на імміграцію за статтею 4 Закону: різницю між квотними й позаквотними підставами, вимогу двох років шлюбу та чому дозвіл діє лише рік.</description>
-    </item>
-    <item>
-      <title>Віза D в Україну: підстави, документи та оформлення</title>
-      <link>https://legius.com.ua/blog/viza-d-v-ukrayinu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/viza-d-v-ukrayinu/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Міграційне право</category>
-      <description>Пояснюємо, що таке довгострокова віза типу D, кому вона потрібна для тривалого проживання, які підкатегорії існують, скільки триває розгляд і що впливає на відмову.</description>
     </item>
   </channel>
 </rss>

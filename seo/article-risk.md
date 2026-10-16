@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **72** |
-| Коротших за 450 слів | 82 (старт 147) |
-| Із позначкою `expand` | 142 (старт 213) |
+| Опрацьовано | **75** |
+| Коротших за 450 слів | 79 (старт 147) |
+| Із позначкою `expand` | 139 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 105 |
+| Середній (5–6), лишилось | 102 |
 
 ## ✅ Опрацьовано
 
@@ -96,6 +96,9 @@
 | `sluzhba-za-kontraktom` | 1430 | military-law |
 | `vidstrochka-doglyad-za-osoboyu-z-invalidnistyu` | 1260 | military-law |
 | `derzhpidtrymka-znachni-investytsiyi` | 1204 | investment |
+| `rozdilne-prozhyvannya-podruzhzhya` | 1104 | family-law |
+| `zmina-prizvyshcha-dytyny` | 1173 | family-law |
+| `alimenty-zaborhovanist` | 1155 | family-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -147,9 +150,6 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 218 | 0 | family-law | `rozdilne-prozhyvannya-podruzhzhya` |
-| 5 | 219 | 0 | family-law | `zmina-prizvyshcha-dytyny` |
-| 5 | 220 | 0 | family-law | `alimenty-zaborhovanist` |
 | 5 | 221 | 0 | family-law | `shlyub-z-inozemtsem` |
 | 5 | 221 | 0 | family-law | `zmenshennya-rozmiru-alimentiv` |
 | 5 | 225 | 0 | family-law | `gromadyanskyy-shlyub` |
