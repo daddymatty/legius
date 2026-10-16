@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **69** |
+| Опрацьовано | **71** |
 | Коротших за 450 слів | 83 (старт 147) |
-| Із позначкою `expand` | 145 (старт 213) |
-| Високий ризик (≥7), лишилось | 3 |
+| Із позначкою `expand` | 143 (старт 213) |
+| Високий ризик (≥7), лишилось | 1 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -93,14 +93,14 @@
 | `vykonannya-sudovoho-rishennya` | 1342 | litigation |
 | `prava-pry-dopyti` | 1313 | criminal-business |
 | `rozluchennya-z-inozemtsem` | 1136 | family-law |
+| `sluzhba-za-kontraktom` | 1430 | military-law |
+| `vidstrochka-doglyad-za-osoboyu-z-invalidnistyu` | 1260 | military-law |
 
 ## Високий ризик — перевіряти першими
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
 | 7 | 426 | 1 | investment | `derzhpidtrymka-znachni-investytsiyi` |
-| 7 | 557 | 1 | military-law | `sluzhba-za-kontraktom` |
-| 7 | 643 | 1 | military-law | `vidstrochka-doglyad-za-osoboyu-z-invalidnistyu` |
 
 ## Середній ризик
 

@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 22:07:16 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 22:16:01 GMT</lastBuildDate>
     <item>
       <title>Розлучення з іноземцем: підсудність і визнання рішення</title>
       <link>https://legius.com.ua/blog/rozluchennya-z-inozemtsem/</link>
@@ -70,6 +70,22 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Розбираємо склад дезертирства за ст. 408 ККУ, межу між ним і СЗЧ, строки покарання, як доводиться мета ухилитися та що зі спрощеною програмою повернення.</description>
+    </item>
+    <item>
+      <title>Відстрочка по догляду за особою з інвалідністю</title>
+      <link>https://legius.com.ua/blog/vidstrochka-doglyad-za-osoboyu-z-invalidnistyu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vidstrochka-doglyad-za-osoboyu-z-invalidnistyu/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Хто саме має право на відстрочку через догляд, чому наявність інвалідності в родині ще не дає її автоматично, як працює автопродовження для 22 категорій і за що найчастіше відмовляють.</description>
+    </item>
+    <item>
+      <title>Служба за контрактом: умови, строк, припинення</title>
+      <link>https://legius.com.ua/blog/sluzhba-za-kontraktom/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/sluzhba-za-kontraktom/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Чим контракт відрізняється від мобілізації, які строки встановила постанова № 768, як рахується відстрочка після служби і що саме перевірити до підписання.</description>
     </item>
     <item>
       <title>Зміна директора ТОВ: порядок, документи та типові помилки</title>
@@ -390,22 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Міграційне право</category>
       <description>Пояснюємо, за що іноземцю забороняють в’їзд в Україну, який орган це вирішує, як перевірити наявність заборони та як скасувати її в адміністративному чи судовому порядку.</description>
-    </item>
-    <item>
-      <title>Оскарження примусового видворення іноземця з України</title>
-      <link>https://legius.com.ua/blog/oskarzhennya-vydvorennya-inozemtsya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-vydvorennya-inozemtsya/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Міграційне право</category>
-      <description>Розмежовуємо примусове повернення за ст. 26 і примусове видворення за ст. 30 Закону про правовий статус іноземців, показуємо наслідки кожного та порядок оскарження.</description>
-    </item>
-    <item>
-      <title>Працевлаштування іноземців в IT: Дія City та гіг-контракти</title>
-      <link>https://legius.com.ua/blog/pratsevlashtuvannya-inozemtsiv-v-it/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/pratsevlashtuvannya-inozemtsiv-v-it/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Міграційне право</category>
-      <description>Розбираємо працевлаштування іноземців в IT: чим гіг-контракт резидента Дія City відрізняється від звичайного найму, строк дозволу до 3 років і хто звільнений від зарплатного порога.</description>
     </item>
   </channel>
 </rss>
