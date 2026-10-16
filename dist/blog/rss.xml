@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 20:36:28 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 20:42:56 GMT</lastBuildDate>
     <item>
       <title>Відстрочка для студентів та аспірантів: умови та оформлення</title>
       <link>https://legius.com.ua/blog/vidstrochka-dlya-studentiv/</link>
@@ -134,6 +134,30 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Одноразове (спеціальне) добровільне декларування діяло з 1 вересня 2021 до 1 березня 2023 року й завершилося. Пояснюємо, що це означає для власників незадекларованих активів зараз.</description>
+    </item>
+    <item>
+      <title>Врегулювання спору з ДПС: розстрочення та відстрочення боргу</title>
+      <link>https://legius.com.ua/blog/podatkovyj-kompromis/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/podatkovyj-kompromis/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо механізм розстрочення та відстрочення податкового боргу: підстави, ціну у вигляді процентів, межі повноважень органів ДПС і чому застава не знімається.</description>
+    </item>
+    <item>
+      <title>Штрафи ДПС: за що і скільки платить бізнес</title>
+      <link>https://legius.com.ua/blog/shtrafy-dps/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/shtrafy-dps/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо розміри штрафів ДПС: 340 і 1020 грн за звітність, 5 % і 10 % за прострочення сплати, 25 % і 50 % за умисність — і чому умисність є головним питанням спору.</description>
+    </item>
+    <item>
+      <title>Оподаткування дивідендів: ставки для резидентів і нерезидентів</title>
+      <link>https://legius.com.ua/blog/opodatkuvannya-dyvidendiv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/opodatkuvannya-dyvidendiv/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо ставки ПДФО з дивідендів 5 % і 9 % та від чого вони залежать, військовий збір, авансовий внесок з податку на прибуток і податок на репатріацію.</description>
     </item>
     <item>
       <title>Як отримати посвідку на проживання в Україні: підстави, документи, строки</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 22 Aug 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Рішення суду про графік побачень — половина справи. Розбираємо, як його отримати, як фіксувати перешкоджання і які реальні важелі має виконавча служба, коли рішення не виконують.</description>
-    </item>
-    <item>
-      <title>Скільки коштує розлучення: судовий збір і обов’язкові витрати</title>
-      <link>https://legius.com.ua/blog/skilky-koshtuye-rozluchennya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/skilky-koshtuye-rozluchennya/</guid>
-      <pubDate>Sat, 22 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Розбираємо всі обов’язкові платежі при розлученні — від судового збору до держмита і витрат на документи — і пояснюємо, як розрахувати суму самостійно за формулою закону.</description>
-    </item>
-    <item>
-      <title>Аліменти з безробітного: як стягнути, якщо немає доходу</title>
-      <link>https://legius.com.ua/blog/alimenty-z-bezrobitnoho/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-z-bezrobitnoho/</guid>
-      <pubDate>Sat, 22 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Відсутність офіційної роботи не звільняє від аліментів. Пояснюємо, як визначається розмір, за якою формулою рахується борг непрацюючого і які обмеження застосовує виконавець.</description>
-    </item>
-    <item>
-      <title>Визнання недієздатним та опіка над дорослим</title>
-      <link>https://legius.com.ua/blog/vyznannya-nediyezdatnym-opika/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vyznannya-nediyezdatnym-opika/</guid>
-      <pubDate>Sat, 22 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Деменція, інсульт, тяжкий психічний розлад — і родина не може розпоряджатися майном чи оформити виплати. Пояснюємо, як проходить процедура та чим недієздатність відрізняється від обмеження дієздатності.</description>
     </item>
   </channel>
 </rss>
