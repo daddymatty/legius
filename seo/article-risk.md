@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **45** |
-| Коротших за 450 слів | 104 (старт 147) |
-| Із позначкою `expand` | 170 (старт 213) |
-| Високий ризик (≥7), лишилось | 27 |
+| Опрацьовано | **48** |
+| Коротших за 450 слів | 101 (старт 147) |
+| Із позначкою `expand` | 167 (старт 213) |
+| Високий ризик (≥7), лишилось | 24 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -69,6 +69,9 @@
 | `shtrafy-dps` | 917 | tax-law |
 | `opodatkuvannya-dyvidendiv` | 895 | tax-law |
 | `podatkovyj-kompromis` | 889 | tax-law |
+| `podatkovyj-zapyt-dps` | 863 | tax-law |
+| `zustrichni-zviryky-kontragentiv` | 908 | tax-law |
+| `apelyaciya-do-dps` | 897 | tax-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -76,9 +79,6 @@
 |---|---|---|---|---|
 | 7 | 188 | 0 | tax-law | `opodatkuvannya-nerezydentiv` |
 | 7 | 194 | 0 | tax-law | `podatkovi-spory-sudova-praktyka` |
-| 7 | 204 | 0 | tax-law | `podatkovyj-zapyt-dps` |
-| 7 | 208 | 0 | tax-law | `zustrichni-zviryky-kontragentiv` |
-| 7 | 210 | 0 | tax-law | `apelyaciya-do-dps` |
 | 7 | 217 | 0 | tax-law | `perehid-na-zagalnu-systemu` |
 | 7 | 217 | 0 | tax-law | `vidpovidalnist-za-uhylennya-212-kku` |
 | 7 | 222 | 0 | tax-law | `kik-kontrolovani-inozemni-kompanii` |

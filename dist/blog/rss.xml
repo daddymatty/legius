@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 20:42:56 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 20:49:32 GMT</lastBuildDate>
     <item>
       <title>Відстрочка для студентів та аспірантів: умови та оформлення</title>
       <link>https://legius.com.ua/blog/vidstrochka-dlya-studentiv/</link>
@@ -158,6 +158,30 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Розбираємо ставки ПДФО з дивідендів 5 % і 9 % та від чого вони залежать, військовий збір, авансовий внесок з податку на прибуток і податок на репатріацію.</description>
+    </item>
+    <item>
+      <title>Апеляція до ДПС: адміністративне оскарження | LEGIUS</title>
+      <link>https://legius.com.ua/blog/apelyaciya-do-dps/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/apelyaciya-do-dps/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Покроково про адміністративне оскарження рішень ДПС: строки за ст. 56 ПКУ, зміст скарги, правило автоматичного задоволення при простроченні та результати розгляду.</description>
+    </item>
+    <item>
+      <title>Податковий запит ДПС: як відповідати і коли можна не відповідати</title>
+      <link>https://legius.com.ua/blog/podatkovyj-zapyt-dps/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/podatkovyj-zapyt-dps/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо запит ДПС: 15 робочих днів на відповідь, 10 для зустрічної звірки, обов’язкові реквізити за п. 73.3 ПКУ та наслідки ненадання відповіді.</description>
+    </item>
+    <item>
+      <title>Зустрічні звірки контрагентів: порядок і наслідки для бізнесу</title>
+      <link>https://legius.com.ua/blog/zustrichni-zviryky-kontragentiv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zustrichni-zviryky-kontragentiv/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо зустрічну звірку: підстави за п. 73.5 ПКУ та Порядком № 1232, 10 робочих днів на документи, довідку проти акта про неможливість і наслідки для контрагентів.</description>
     </item>
     <item>
       <title>Як отримати посвідку на проживання в Україні: підстави, документи, строки</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Абонентське обслуговування — не «юрист про запас», а спосіб перенести юридичну функцію назовні. Розбираємо, що туди входить, які моделі оплати існують і де межа вигоди.</description>
-    </item>
-    <item>
-      <title>Позовна заява: структура, вимоги закону і типові помилки</title>
-      <link>https://legius.com.ua/blog/pozovna-zayava-struktura/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/pozovna-zayava-struktura/</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Судові спори</category>
-      <description>Позов повертають не через складність справи, а через формальності. Розбираємо структуру заяви за трьома кодексами та помилки, на яких найчастіше зупиняються.</description>
-    </item>
-    <item>
-      <title>Ризиковість платника ПДВ: як зняти статус і розблокувати роботу</title>
-      <link>https://legius.com.ua/blog/ryzykovist-platnyka-pdv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/ryzykovist-platnyka-pdv/</guid>
-      <pubDate>Sat, 29 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Статус ризиковості зупиняє реєстрацію всіх податкових накладних одразу. Розбираємо критерії, порядок зняття, таблицю даних платника і що встигнути в перші дні.</description>
-    </item>
-    <item>
-      <title>Графік побачень з дитиною: як встановити і як виконати</title>
-      <link>https://legius.com.ua/blog/uchast-batka-u-vykhovanni/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/uchast-batka-u-vykhovanni/</guid>
-      <pubDate>Sat, 22 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Рішення суду про графік побачень — половина справи. Розбираємо, як його отримати, як фіксувати перешкоджання і які реальні важелі має виконавча служба, коли рішення не виконують.</description>
     </item>
   </channel>
 </rss>
