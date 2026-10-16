@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **63** |
-| Коротших за 450 слів | 89 (старт 147) |
-| Із позначкою `expand` | 151 (старт 213) |
-| Високий ризик (≥7), лишилось | 9 |
+| Опрацьовано | **66** |
+| Коротших за 450 слів | 86 (старт 147) |
+| Із позначкою `expand` | 148 (старт 213) |
+| Високий ризик (≥7), лишилось | 6 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -87,14 +87,14 @@
 | `gromadska-spilka` | 1149 | corporate-law |
 | `reyestratsiya-asotsiatsiyi` | 1145 | corporate-law |
 | `dozvilni-dokumenty` | 1379 | corporate-law |
+| `kik-kontrolovani-inozemni-kompanii` | 1746 | tax-law |
+| `podatkovi-spory-sudova-praktyka` | 1301 | tax-law |
+| `alimenty-z-inozemtsya` | 1434 | family-law |
 
 ## Високий ризик — перевіряти першими
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 7 | 194 | 0 | tax-law | `podatkovi-spory-sudova-praktyka` |
-| 7 | 222 | 0 | tax-law | `kik-kontrolovani-inozemni-kompanii` |
-| 7 | 226 | 1 | family-law | `alimenty-z-inozemtsya` |
 | 7 | 238 | 1 | family-law | `rozluchennya-z-inozemtsem` |
 | 7 | 386 | 1 | litigation | `vykonannya-sudovoho-rishennya` |
 | 7 | 401 | 1 | criminal-business | `prava-pry-dopyti` |

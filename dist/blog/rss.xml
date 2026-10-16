@@ -6,7 +6,15 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 21:42:25 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 21:56:36 GMT</lastBuildDate>
+    <item>
+      <title>Стягнення аліментів з іноземця та боржника за кордоном</title>
+      <link>https://legius.com.ua/blog/alimenty-z-inozemtsya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-z-inozemtsya/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Пояснюємо два робочі шляхи стягнення аліментів з боржника за кордоном, які конвенції діють, що саме входить до клопотання про визнання рішення та які суми діють у 2026 році.</description>
+    </item>
     <item>
       <title>Відстрочка для студентів та аспірантів: умови та оформлення</title>
       <link>https://legius.com.ua/blog/vidstrochka-dlya-studentiv/</link>
@@ -176,6 +184,14 @@
       <description>Розбираємо правила трансфертного ціноутворення за статтею 39 ПКУ: три фільтри контрольованості, вартісні критерії, звітність, документацію та принцип «витягнутої руки».</description>
     </item>
     <item>
+      <title>КІК: контрольовані іноземні компанії — звітність та податки</title>
+      <link>https://legius.com.ua/blog/kik-kontrolovani-inozemni-kompanii/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/kik-kontrolovani-inozemni-kompanii/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо правила КІК із конкретними цифрами: пороги володіння, строки звіту та повідомлення, п’ять підстав звільнення, ставки 18 % і 9 % та мораторій на штрафи, який не є прощенням.</description>
+    </item>
+    <item>
       <title>Податкова амністія в Україні: чи діє добровільне декларування</title>
       <link>https://legius.com.ua/blog/podatkova-amnistiya/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/podatkova-amnistiya/</guid>
@@ -254,6 +270,14 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Розбираємо зустрічну звірку: підстави за п. 73.5 ПКУ та Порядком № 1232, 10 робочих днів на документи, довідку проти акта про неможливість і наслідки для контрагентів.</description>
+    </item>
+    <item>
+      <title>Податкові спори в суді: судова практика та шанси на успіх</title>
+      <link>https://legius.com.ua/blog/podatkovi-spory-sudova-praktyka/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/podatkovi-spory-sudova-praktyka/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Головне про судові податкові спори: строк звернення після рішення Великої Палати від 16.07.2025 (1095 днів більше не працюють), стадії процесу, доказування та позиції Верховного Суду.</description>
     </item>
     <item>
       <title>Етапи угоди M&amp;A: від NDA до закриття</title>
@@ -382,30 +406,6 @@
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Категорії «обмежено придатний» більше не існує — її скасували у травні 2024 року. Розбираємо, чим її замінили і що робити тим, хто не встиг пройти повторний огляд.</description>
-    </item>
-    <item>
-      <title>Звільнення з військової служби: підстави, рапорт, строки</title>
-      <link>https://legius.com.ua/blog/zvilnennya-z-viyskovoyi-sluzhby/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zvilnennya-z-viyskovoyi-sluzhby/</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Перелік підстав закритий, а рапорт має бути розглянутий за 30 днів. Розбираємо, як подати його правильно і як діяти при мовчанні командування.</description>
-    </item>
-    <item>
-      <title>Статус УБД: як оформити, якщо командир не вніс дані</title>
-      <link>https://legius.com.ua/blog/status-ubd-oformlennya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/status-ubd-oformlennya/</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Статус має надаватися автоматично через реєстр. Розбираємо, що робити, коли цього не сталося, і як оскаржити відмову комісії.</description>
-    </item>
-    <item>
-      <title>Перетин кордону військовозобовʼязаними: хто має право на виїзд</title>
-      <link>https://legius.com.ua/blog/peretyn-kordonu-viyskovozobovyazanymy/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/peretyn-kordonu-viyskovozobovyazanymy/</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо підстави для виїзду за постановою № 57, потрібні документи й найчастішу причину, через яку людину не випускають попри наявність права.</description>
     </item>
   </channel>
 </rss>
