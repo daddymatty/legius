@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **51** |
-| Коротших за 450 слів | 98 (старт 147) |
-| Із позначкою `expand` | 163 (старт 213) |
-| Високий ризик (≥7), лишилось | 21 |
+| Опрацьовано | **54** |
+| Коротших за 450 слів | 95 (старт 147) |
+| Із позначкою `expand` | 160 (старт 213) |
+| Високий ризик (≥7), лишилось | 18 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -75,6 +75,9 @@
 | `vidpovidalnist-za-uhylennya-212-kku` | 1071 | tax-law |
 | `opodatkuvannya-nerezydentiv` | 937 | tax-law |
 | `perehid-na-zagalnu-systemu` | 886 | tax-law |
+| `podatkova-perevirka` | 937 | tax-law |
+| `oskarzhennya-ppr` | 955 | tax-law |
+| `pdfo-ta-esv` | 927 | tax-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -83,16 +86,13 @@
 | 7 | 194 | 0 | tax-law | `podatkovi-spory-sudova-praktyka` |
 | 7 | 222 | 0 | tax-law | `kik-kontrolovani-inozemni-kompanii` |
 | 7 | 226 | 1 | family-law | `alimenty-z-inozemtsya` |
-| 7 | 227 | 0 | tax-law | `pdfo-ta-esv` |
 | 7 | 238 | 1 | family-law | `rozluchennya-z-inozemtsem` |
-| 7 | 347 | 0 | tax-law | `oskarzhennya-ppr` |
 | 7 | 386 | 1 | litigation | `vykonannya-sudovoho-rishennya` |
 | 7 | 394 | 0 | migration-law | `pratsevlashtuvannya-inozemtsiv-v-it` |
 | 7 | 401 | 1 | criminal-business | `prava-pry-dopyti` |
 | 7 | 408 | 1 | m-and-a | `share-deal-asset-deal` |
 | 7 | 409 | 1 | m-and-a | `garantiyi-ta-indemniti` |
 | 7 | 417 | 1 | m-and-a | `etapy-uhody-ma` |
-| 7 | 426 | 0 | tax-law | `podatkova-perevirka` |
 | 7 | 426 | 1 | investment | `derzhpidtrymka-znachni-investytsiyi` |
 | 7 | 428 | 0 | migration-law | `immigratsiyna-kvota-dozvil-na-immigratsiyu` |
 | 7 | 433 | 0 | migration-law | `posvidka-na-postiyne-prozhyvannya-pidstavy` |
