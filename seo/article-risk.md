@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **82** |
-| Коротших за 450 слів | 72 (старт 147) |
-| Із позначкою `expand` | 132 (старт 213) |
+| Опрацьовано | **85** |
+| Коротших за 450 слів | 69 (старт 147) |
+| Із позначкою `expand` | 129 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 95 |
+| Середній (5–6), лишилось | 92 |
 
 ## ✅ Опрацьовано
 
@@ -106,6 +106,9 @@
 | `vstanovlennya-batkivstva` | 1333 | family-law |
 | `spadkuvannya-podruzhzhyam` | 1338 | family-law |
 | `dohovirna-robota` | 1165 | corporate-law |
+| `zminy-do-statutu-tov` | 1031 | corporate-law |
+| `dyvidendy-tov` | 982 | corporate-law |
+| `likvidatsiya-kompanii` | 1010 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -117,9 +120,6 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 228 | 0 | corporate-law | `zminy-do-statutu-tov` |
-| 6 | 235 | 0 | corporate-law | `dyvidendy-tov` |
-| 6 | 235 | 0 | corporate-law | `likvidatsiya-kompanii` |
 | 6 | 238 | 0 | corporate-law | `kep-elektronnyy-dokumentoobih` |
 | 6 | 244 | 0 | corporate-law | `due-diligence-biznesu` |
 | 6 | 244 | 0 | corporate-law | `korporatyvne-upravlinnya-tov` |

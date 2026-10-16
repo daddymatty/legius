@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 23:02:08 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 23:11:14 GMT</lastBuildDate>
     <item>
       <title>Встановлення батьківства: добровільно та через суд</title>
       <link>https://legius.com.ua/blog/vstanovlennya-batkivstva/</link>
@@ -168,6 +168,22 @@
       <description>Покроковий порядок зміни директора ТОВ: що вирішують учасники, які документи подаються реєстратору, як оформлюються накази та з якого моменту діють повноваження.</description>
     </item>
     <item>
+      <title>Дивіденди в ТОВ: порядок нарахування та виплати учасникам</title>
+      <link>https://legius.com.ua/blog/dyvidendy-tov/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/dyvidendy-tov/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Порядок виплати дивідендів у ТОВ із цифрами: період кратний кварталу, строк шість місяців, чотири обмеження за ст. 27 і коли ПДФО 5 %, коли 9 %, а коли 18 %.</description>
+    </item>
+    <item>
+      <title>Ліквідація компанії: як закрити ТОВ законно та без боргів</title>
+      <link>https://legius.com.ua/blog/likvidatsiya-kompanii/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/likvidatsiya-kompanii/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Що обов'язково має містити рішення про ліквідацію, чому строк для кредиторів від двох до шести місяців, у якій черговості гасять борги і чому реальний строк 4–9 місяців.</description>
+    </item>
+    <item>
       <title>Договірна робота в компанії: як убезпечити бізнес від ризиків</title>
       <link>https://legius.com.ua/blog/dohovirna-robota/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/dohovirna-robota/</guid>
@@ -182,6 +198,14 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Розбираємо, коли угода потребує дозволу АМКУ, чому її заборонено закривати до його отримання, які види порушень існують і як рахуються штрафи у відсотках доходу.</description>
+    </item>
+    <item>
+      <title>Зміни до статуту ТОВ: коли потрібні та як зареєструвати</title>
+      <link>https://legius.com.ua/blog/zminy-do-statutu-tov/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zminy-do-statutu-tov/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Скільки голосів насправді потрібно, чому зміни бувають лише новою редакцією, чиї підписи посвідчує нотаріус і що змінилося в корпоративному управлінні з 28 серпня 2025 року.</description>
     </item>
     <item>
       <title>Громадська спілка: реєстрація об’єднання юридичних осіб</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Головне про судові податкові спори: строк звернення після рішення Великої Палати від 16.07.2025 (1095 днів більше не працюють), стадії процесу, доказування та позиції Верховного Суду.</description>
-    </item>
-    <item>
-      <title>Виконання судового рішення в Україні: виконавче провадження покроково</title>
-      <link>https://legius.com.ua/blog/vykonannya-sudovoho-rishennya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vykonannya-sudovoho-rishennya/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Судові спори</category>
-      <description>Як перетворити рішення суду на реальні кошти: строки пред’явлення, виконавчий збір, вибір виконавця, розшук і арешт активів, а також зміни, що діють із 23 жовтня 2026 року.</description>
-    </item>
-    <item>
-      <title>Державна підтримка інвестицій зі значними інвестиціями та спеціальний договір</title>
-      <link>https://legius.com.ua/blog/derzhpidtrymka-znachni-investytsiyi/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/derzhpidtrymka-znachni-investytsiyi/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Супровід інвестицій</category>
-      <description>Критерії проєкту зі значними інвестиціями після зниження порога до 12 млн євро, форми й межі державної підтримки, етапи укладення спеціального інвестиційного договору та підстави повернення компенсації.</description>
-    </item>
-    <item>
-      <title>Етапи угоди M&amp;A: від NDA до закриття</title>
-      <link>https://legius.com.ua/blog/etapy-uhody-ma/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/etapy-uhody-ma/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>M&amp;A (Злиття і поглинання)</category>
-      <description>Розбираємо етапи угоди M&amp;A: що робити на кожному, де найчастіше зриваються угоди, як працює переважне право учасників ТОВ і чому дозвіл АМКУ впливає на графік.</description>
     </item>
   </channel>
 </rss>
