@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 22:16:01 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 22:21:44 GMT</lastBuildDate>
     <item>
       <title>Розлучення з іноземцем: підсудність і визнання рішення</title>
       <link>https://legius.com.ua/blog/rozluchennya-z-inozemtsem/</link>
@@ -312,6 +312,14 @@
       <description>Як перетворити рішення суду на реальні кошти: строки пред’явлення, виконавчий збір, вибір виконавця, розшук і арешт активів, а також зміни, що діють із 23 жовтня 2026 року.</description>
     </item>
     <item>
+      <title>Державна підтримка інвестицій зі значними інвестиціями та спеціальний договір</title>
+      <link>https://legius.com.ua/blog/derzhpidtrymka-znachni-investytsiyi/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/derzhpidtrymka-znachni-investytsiyi/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Супровід інвестицій</category>
+      <description>Критерії проєкту зі значними інвестиціями після зниження порога до 12 млн євро, форми й межі державної підтримки, етапи укладення спеціального інвестиційного договору та підстави повернення компенсації.</description>
+    </item>
+    <item>
       <title>Етапи угоди M&amp;A: від NDA до закриття</title>
       <link>https://legius.com.ua/blog/etapy-uhody-ma/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/etapy-uhody-ma/</guid>
@@ -398,14 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Міграційне право</category>
       <description>Пояснюємо, що таке довгострокова віза типу D, кому вона потрібна для тривалого проживання, які підкатегорії існують, скільки триває розгляд і що впливає на відмову.</description>
-    </item>
-    <item>
-      <title>Як зняти заборону в’їзду в Україну іноземцю</title>
-      <link>https://legius.com.ua/blog/znyaty-zaboronu-vyizdu-v-ukrayinu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/znyaty-zaboronu-vyizdu-v-ukrayinu/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Міграційне право</category>
-      <description>Пояснюємо, за що іноземцю забороняють в’їзд в Україну, який орган це вирішує, як перевірити наявність заборони та як скасувати її в адміністративному чи судовому порядку.</description>
     </item>
   </channel>
 </rss>
