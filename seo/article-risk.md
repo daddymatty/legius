@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **35** |
-| Коротших за 450 слів | 113 (старт 147) |
-| Із позначкою `expand` | 179 (старт 213) |
-| Високий ризик (≥7), лишилось | 37 |
+| Опрацьовано | **38** |
+| Коротших за 450 слів | 110 (старт 147) |
+| Із позначкою `expand` | 176 (старт 213) |
+| Високий ризик (≥7), лишилось | 34 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -59,6 +59,9 @@
 | `vyplaty-poranenym-simyam` | 1160 | military-law |
 | `oskarzhennya-povistky` | 922 | military-law |
 | `vidstrochka-opikunam` | 870 | military-law |
+| `dezertyrstvo-stattya-408` | 959 | military-law |
+| `vidstrochka-dlya-studentiv` | 802 | military-law |
+| `vidstrochka-bagatoditnym` | 826 | military-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -73,12 +76,9 @@
 | 7 | 193 | 0 | tax-law | `podatkovyj-kompromis` |
 | 7 | 193 | 0 | tax-law | `opodatkuvannya-dyvidendiv` |
 | 7 | 194 | 0 | tax-law | `podatkovi-spory-sudova-praktyka` |
-| 7 | 202 | 0 | military-law | `dezertyrstvo-stattya-408` |
 | 7 | 204 | 0 | tax-law | `podatkovyj-zapyt-dps` |
 | 7 | 208 | 0 | tax-law | `zustrichni-zviryky-kontragentiv` |
-| 7 | 210 | 0 | military-law | `vidstrochka-bagatoditnym` |
 | 7 | 210 | 0 | tax-law | `apelyaciya-do-dps` |
-| 7 | 212 | 0 | military-law | `vidstrochka-dlya-studentiv` |
 | 7 | 217 | 0 | tax-law | `perehid-na-zagalnu-systemu` |
 | 7 | 217 | 0 | tax-law | `vidpovidalnist-za-uhylennya-212-kku` |
 | 7 | 222 | 0 | tax-law | `kik-kontrolovani-inozemni-kompanii` |
