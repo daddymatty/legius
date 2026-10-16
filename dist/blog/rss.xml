@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 23:20:35 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 23:43:24 GMT</lastBuildDate>
     <item>
       <title>Встановлення батьківства: добровільно та через суд</title>
       <link>https://legius.com.ua/blog/vstanovlennya-batkivstva/</link>
@@ -56,6 +56,22 @@
       <description>Як рахується борг, якщо платник не працює, як правильно нарахувати пеню за ст. 196 СК, які санкції настають на 3, 4 місяці та на 1, 2, 3 роки боргу і що робити стягувачу.</description>
     </item>
     <item>
+      <title>Виїзд дитини за кордон без згоди одного з батьків</title>
+      <link>https://legius.com.ua/blog/vyizd-dytyny-za-kordon/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vyizd-dytyny-za-kordon/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Під час воєнного стану дитину до 16 років можна вивезти в супроводі одного з батьків без нотаріальної згоди другого. Розбираємо правила ПКМУ № 57, підстави виїзду без згоди, дозвіл суду та позицію Верховного Суду щодо заборони виїзду.</description>
+    </item>
+    <item>
+      <title>Усиновлення дитини в Україні: умови та порядок</title>
+      <link>https://legius.com.ua/blog/usynovlennya-dytyny/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/usynovlennya-dytyny/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>З 5 серпня 2026 року справи про усиновлення розглядає суддя одноособово, без присяжних, з обов'язковою участю прокурора і не довше 30 днів. Розбираємо вимоги до усиновлювача, етапи процедури, таємницю усиновлення та правові наслідки.</description>
+    </item>
+    <item>
       <title>Цивільний шлюб: права та поділ майна без реєстрації</title>
       <link>https://legius.com.ua/blog/gromadyanskyy-shlyub/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/gromadyanskyy-shlyub/</guid>
@@ -86,6 +102,14 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Шість випадків, коли згода другого з батьків не потрібна, вікові правила за ст. 148 СК, різниця між зміною прізвища і по батькові та порядок при спорі.</description>
+    </item>
+    <item>
+      <title>Сімейна медіація: як вирішити спір без суду</title>
+      <link>https://legius.com.ua/blog/simeyna-mediatsiya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/simeyna-mediatsiya/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Медіація — позасудова добровільна процедура за Законом № 1875-IX. Розбираємо принципи, три різні угоди процедури, як надати домовленостям юридичну силу та чому в спорах про дітей медіація має власне обмеження.</description>
     </item>
     <item>
       <title>Режим окремого проживання подружжя: що це і навіщо</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Розбираємо ставки ПДФО з дивідендів 5 % і 9 % та від чого вони залежать, військовий збір, авансовий внесок з податку на прибуток і податок на репатріацію.</description>
-    </item>
-    <item>
-      <title>Оподаткування нерезидентів: податок на репатріацію та звітність</title>
-      <link>https://legius.com.ua/blog/opodatkuvannya-nerezydentiv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/opodatkuvannya-nerezydentiv/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо податок на репатріацію: базову ставку 15 %, перелік доходів, різницю між юрособою й фізособою-нерезидентом, додаток ПН і умови пільги за міжнародним договором.</description>
-    </item>
-    <item>
-      <title>Стаття 212 ККУ: кримінальна відповідальність за ухилення від податків</title>
-      <link>https://legius.com.ua/blog/vidpovidalnist-za-uhylennya-212-kku/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vidpovidalnist-za-uhylennya-212-kku/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо склад за ст. 212 ККУ: пороги значного, великого й особливо великого розміру, чому умисел є ключовим елементом і як працює звільнення за частиною 4.</description>
-    </item>
-    <item>
-      <title>Апеляція до ДПС: адміністративне оскарження | LEGIUS</title>
-      <link>https://legius.com.ua/blog/apelyaciya-do-dps/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/apelyaciya-do-dps/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Покроково про адміністративне оскарження рішень ДПС: строки за ст. 56 ПКУ, зміст скарги, правило автоматичного задоволення при простроченні та результати розгляду.</description>
     </item>
   </channel>
 </rss>
