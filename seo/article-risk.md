@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **27** |
-| Коротших за 450 слів | 121 (старт 147) |
-| Із позначкою `expand` | 187 (старт 213) |
-| Високий ризик (≥7), лишилось | 45 |
+| Опрацьовано | **29** |
+| Коротших за 450 слів | 119 (старт 147) |
+| Із позначкою `expand` | 185 (старт 213) |
+| Високий ризик (≥7), лишилось | 43 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -51,6 +51,8 @@
 | `blokuvannya-podatkovyh-nakladnyh` | 869 | tax-law |
 | `rozblokuvannya-podatkovyh-nakladnyh` | 950 | tax-law |
 | `vidshkoduvannya-pdv` | 845 | tax-law |
+| `vydy-podatkovyh-perevirok` | 1005 | tax-law |
+| `oskarzhennya-ppr-administratyvne-vs-sudove` | 873 | tax-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -83,8 +85,6 @@
 | 7 | 238 | 1 | family-law | `rozluchennya-z-inozemtsem` |
 | 7 | 241 | 0 | tax-law | `transfertne-cinoutvorennya` |
 | 7 | 242 | 0 | tax-law | `yedynyj-podatok-grupy-fop` |
-| 7 | 252 | 0 | tax-law | `oskarzhennya-ppr-administratyvne-vs-sudove` |
-| 7 | 264 | 0 | tax-law | `vydy-podatkovyh-perevirok` |
 | 7 | 347 | 0 | tax-law | `oskarzhennya-ppr` |
 | 7 | 386 | 1 | litigation | `vykonannya-sudovoho-rishennya` |
 | 7 | 394 | 0 | migration-law | `pratsevlashtuvannya-inozemtsiv-v-it` |
