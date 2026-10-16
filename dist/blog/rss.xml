@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 12:17:02 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 12:56:01 GMT</lastBuildDate>
     <item>
       <title>Блокування податкових накладних: причини та як розблокувати</title>
       <link>https://legius.com.ua/blog/blokuvannya-podatkovyh-nakladnyh/</link>
@@ -46,6 +46,30 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Покрокова інструкція з розблокування податкових накладних: які пояснення та документи подати, як скласти таблицю даних платника й на що спирається оскарження відмови комісії.</description>
+    </item>
+    <item>
+      <title>Єдиний податок: групи ФОП, ліміти доходу та ставки</title>
+      <link>https://legius.com.ua/blog/yedynyj-podatok-grupy-fop/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/yedynyj-podatok-grupy-fop/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо три групи єдиного податку для ФОП: ліміти доходу, ставки, обмеження щодо працівників і видів діяльності, обов’язкові платежі та наслідки перевищення ліміту.</description>
+    </item>
+    <item>
+      <title>Трансфертне ціноутворення: контрольовані операції та звітність</title>
+      <link>https://legius.com.ua/blog/transfertne-cinoutvorennya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/transfertne-cinoutvorennya/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо правила трансфертного ціноутворення за статтею 39 ПКУ: три фільтри контрольованості, вартісні критерії, звітність, документацію та принцип «витягнутої руки».</description>
+    </item>
+    <item>
+      <title>Податкова амністія в Україні: чи діє добровільне декларування</title>
+      <link>https://legius.com.ua/blog/podatkova-amnistiya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/podatkova-amnistiya/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Одноразове (спеціальне) добровільне декларування діяло з 1 вересня 2021 до 1 березня 2023 року й завершилося. Пояснюємо, що це означає для власників незадекларованих активів зараз.</description>
     </item>
     <item>
       <title>Як отримати посвідку на проживання в Україні: підстави, документи, строки</title>
@@ -382,30 +406,6 @@
       <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Пояснюємо, з якого саме доходу військовослужбовця утримуються аліменти, чому виникають спори щодо додаткових виплат і як діяти, якщо гроші не надходять.</description>
-    </item>
-    <item>
-      <title>Аліменти у твердій грошовій сумі: коли вигідніше</title>
-      <link>https://legius.com.ua/blog/alimenty-tverda-groshova-suma/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-tverda-groshova-suma/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Розбираємо, у яких випадках тверда сума вигідніша за частку від заробітку, як довести реальні витрати на дитину та рівень доходу платника і чому суд рідко присуджує максимум.</description>
-    </item>
-    <item>
-      <title>Строк для поділу майна після розлучення: три роки від чого</title>
-      <link>https://legius.com.ua/blog/strok-pozovnoyi-davnosti-podil-mayna/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/strok-pozovnoyi-davnosti-podil-mayna/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Найпоширеніша помилка — вважати, що три роки рахуються від дати розлучення. Пояснюємо, від чого насправді починається відлік і коли поділ можливий навіть через десять років.</description>
-    </item>
-    <item>
-      <title>Аліменти після 18 років: коли батьки платять до 23</title>
-      <link>https://legius.com.ua/blog/alimenty-pislya-18-rokiv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-pislya-18-rokiv/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Аліменти не продовжуються автоматично після повноліття. Пояснюємо, за яких умов виникає обов’язок утримувати студента до 23 років і чому потрібне нове рішення суду.</description>
     </item>
   </channel>
 </rss>
