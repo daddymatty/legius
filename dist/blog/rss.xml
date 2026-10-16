@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 11:48:04 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 12:17:02 GMT</lastBuildDate>
     <item>
       <title>Блокування податкових накладних: причини та як розблокувати</title>
       <link>https://legius.com.ua/blog/blokuvannya-podatkovyh-nakladnyh/</link>
@@ -22,6 +22,22 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Пояснюємо порядок бюджетного відшкодування ПДВ: умови, строки перевірок, роботу Реєстру заяв, скорочені строки для «білого бізнесу» та дії у разі відмови чи зменшення суми.</description>
+    </item>
+    <item>
+      <title>Види податкових перевірок: камеральні, документальні, фактичні</title>
+      <link>https://legius.com.ua/blog/vydy-podatkovyh-perevirok/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vydy-podatkovyh-perevirok/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо три види податкових перевірок за ПКУ, таблицю строків за статтею 82, різницю між виїзними та невиїзними і те, як вид перевірки визначає тактику захисту.</description>
+    </item>
+    <item>
+      <title>Адміністративне чи судове оскарження ППР: що обрати бізнесу</title>
+      <link>https://legius.com.ua/blog/oskarzhennya-ppr-administratyvne-vs-sudove/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-ppr-administratyvne-vs-sudove/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Порівнюємо два шляхи оскарження ППР: строки за статтею 56 ПКУ, правило автоматичного задоволення скарги, неузгодженість зобов’язання та критерії вибору між скаргою і позовом.</description>
     </item>
     <item>
       <title>Розблокування податкових накладних: покрокова інструкція</title>
@@ -390,22 +406,6 @@
       <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Аліменти не продовжуються автоматично після повноліття. Пояснюємо, за яких умов виникає обов’язок утримувати студента до 23 років і чому потрібне нове рішення суду.</description>
-    </item>
-    <item>
-      <title>Незаконне вивезення дитини за кордон: Гаазька конвенція</title>
-      <link>https://legius.com.ua/blog/haazka-konventsiya-vykradennya-dytyny/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/haazka-konventsiya-vykradennya-dytyny/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Розбираємо механізм Гаазької конвенції 1980 року: коли переміщення вважається незаконним, чому критично важливий перший рік і за яких підстав суд може відмовити у поверненні.</description>
-    </item>
-    <item>
-      <title>Розлучення без згоди другого з подружжя: чи можливо</title>
-      <link>https://legius.com.ua/blog/rozluchennya-bez-zgody/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/rozluchennya-bez-zgody/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Згода другого з подружжя не потрібна — суд не може змусити людину залишатися у шлюбі. Пояснюємо, як подати позов, що робити при ігноруванні засідань і скільки це триває.</description>
     </item>
   </channel>
 </rss>
