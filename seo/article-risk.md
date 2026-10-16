@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **38** |
-| Коротших за 450 слів | 110 (старт 147) |
-| Із позначкою `expand` | 176 (старт 213) |
-| Високий ризик (≥7), лишилось | 34 |
+| Опрацьовано | **42** |
+| Коротших за 450 слів | 107 (старт 147) |
+| Із позначкою `expand` | 173 (старт 213) |
+| Високий ризик (≥7), лишилось | 30 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -62,15 +62,15 @@
 | `dezertyrstvo-stattya-408` | 959 | military-law |
 | `vidstrochka-dlya-studentiv` | 802 | military-law |
 | `vidstrochka-bagatoditnym` | 826 | military-law |
+| `oskarzhennya-vydvorennya-inozemtsya` | 877 | migration-law |
+| `antymonopolne-pravo` | 899 | corporate-law |
+| `zmina-dyrektora-tov` | 919 | corporate-law |
+| `vlk-oskarzhennya` | 1234 | military-law |
 
 ## Високий ризик — перевіряти першими
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 9 | 400 | 1 | migration-law | `oskarzhennya-vydvorennya-inozemtsya` |
-| 8 | 231 | 1 | corporate-law | `antymonopolne-pravo` |
-| 8 | 257 | 1 | corporate-law | `zmina-dyrektora-tov` |
-| 8 | 1234 | 2 | military-law | `vlk-oskarzhennya` |
 | 7 | 188 | 0 | tax-law | `opodatkuvannya-nerezydentiv` |
 | 7 | 189 | 0 | tax-law | `shtrafy-dps` |
 | 7 | 193 | 0 | tax-law | `podatkovyj-kompromis` |

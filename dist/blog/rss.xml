@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 19:54:33 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 20:36:28 GMT</lastBuildDate>
     <item>
       <title>Відстрочка для студентів та аспірантів: умови та оформлення</title>
       <link>https://legius.com.ua/blog/vidstrochka-dlya-studentiv/</link>
@@ -54,6 +54,22 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Розбираємо склад дезертирства за ст. 408 ККУ, межу між ним і СЗЧ, строки покарання, як доводиться мета ухилитися та що зі спрощеною програмою повернення.</description>
+    </item>
+    <item>
+      <title>Зміна директора ТОВ: порядок, документи та типові помилки</title>
+      <link>https://legius.com.ua/blog/zmina-dyrektora-tov/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zmina-dyrektora-tov/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Покроковий порядок зміни директора ТОВ: що вирішують учасники, які документи подаються реєстратору, як оформлюються накази та з якого моменту діють повноваження.</description>
+    </item>
+    <item>
+      <title>Антимонопольне право: дозвіл АМКУ, порушення та штрафи</title>
+      <link>https://legius.com.ua/blog/antymonopolne-pravo/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/antymonopolne-pravo/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Розбираємо, коли угода потребує дозволу АМКУ, чому її заборонено закривати до його отримання, які види порушень існують і як рахуються штрафи у відсотках доходу.</description>
     </item>
     <item>
       <title>Блокування податкових накладних: причини та як розблокувати</title>
@@ -166,6 +182,14 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Міграційне право</category>
       <description>Пояснюємо, за що іноземцю забороняють в’їзд в Україну, який орган це вирішує, як перевірити наявність заборони та як скасувати її в адміністративному чи судовому порядку.</description>
+    </item>
+    <item>
+      <title>Оскарження примусового видворення іноземця з України</title>
+      <link>https://legius.com.ua/blog/oskarzhennya-vydvorennya-inozemtsya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-vydvorennya-inozemtsya/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Міграційне право</category>
+      <description>Розмежовуємо примусове повернення за ст. 26 і примусове видворення за ст. 30 Закону про правовий статус іноземців, показуємо наслідки кожного та порядок оскарження.</description>
     </item>
     <item>
       <title>Бронювання працівників: як підприємству отримати відстрочку для співробітників</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 22 Aug 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Деменція, інсульт, тяжкий психічний розлад — і родина не може розпоряджатися майном чи оформити виплати. Пояснюємо, як проходить процедура та чим недієздатність відрізняється від обмеження дієздатності.</description>
-    </item>
-    <item>
-      <title>Реєстрація громадської організації: покроковий порядок</title>
-      <link>https://legius.com.ua/blog/reyestratsiya-gromadskoyi-organizatsiyi/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-gromadskoyi-organizatsiyi/</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Розбираємо реєстрацію ГО по кроках: скільки потрібно засновників, що має бути у статуті, як отримати неприбутковий статус і чим ГО відрізняється від благодійного фонду.</description>
-    </item>
-    <item>
-      <title>Громадська спілка: реєстрація об’єднання юридичних осіб</title>
-      <link>https://legius.com.ua/blog/gromadska-spilka/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/gromadska-spilka/</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Пояснюємо, чим громадська спілка відрізняється від громадської організації, хто може її засновувати, як проходить реєстрація і чому саме ця форма підходить для галузевих об’єднань.</description>
-    </item>
-    <item>
-      <title>Реєстрація асоціації: яку форму обрати для об’єднання</title>
-      <link>https://legius.com.ua/blog/reyestratsiya-asotsiatsiyi/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-asotsiatsiyi/</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>«Асоціація» — це не окрема організаційно-правова форма, а назва. Пояснюємо, яку форму обрати під конкретну мету і які ризики виникають, коли конкуренти збираються за одним столом.</description>
     </item>
   </channel>
 </rss>
