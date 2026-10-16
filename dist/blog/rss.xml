@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 21:01:38 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 21:11:02 GMT</lastBuildDate>
     <item>
       <title>Відстрочка для студентів та аспірантів: умови та оформлення</title>
       <link>https://legius.com.ua/blog/vidstrochka-dlya-studentiv/</link>
@@ -70,6 +70,22 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Розбираємо, коли угода потребує дозволу АМКУ, чому її заборонено закривати до його отримання, які види порушень існують і як рахуються штрафи у відсотках доходу.</description>
+    </item>
+    <item>
+      <title>Податкова перевірка: види, підстави та як підготуватися бізнесу</title>
+      <link>https://legius.com.ua/blog/podatkova-perevirka/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/podatkova-perevirka/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо, як призначають податкову перевірку, які документи перевіряльники мають предʼявити, які права має платник і що робити з актом перевірки.</description>
+    </item>
+    <item>
+      <title>Оскарження ППР: підстави, строки та стратегія захисту</title>
+      <link>https://legius.com.ua/blog/oskarzhennya-ppr/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-ppr/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо оскарження ППР: що в ньому перевіряти одразу, як працює неузгодженість зобов’язання, які підстави скасування дають результат і що робити в перші дні.</description>
     </item>
     <item>
       <title>Блокування податкових накладних: причини та як розблокувати</title>
@@ -158,6 +174,14 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Розбираємо розміри штрафів ДПС: 340 і 1020 грн за звітність, 5 % і 10 % за прострочення сплати, 25 % і 50 % за умисність — і чому умисність є головним питанням спору.</description>
+    </item>
+    <item>
+      <title>ПДФО, військовий збір та ЄСВ: ставки й хто що платить</title>
+      <link>https://legius.com.ua/blog/pdfo-ta-esv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/pdfo-ta-esv/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо зарплатні податки: 18 % ПДФО і 5 % військового збору з працівника, 22 % ЄСВ понад зарплату, максимальна база 20 мінімальних зарплат і розрахунок від мінімалки.</description>
     </item>
     <item>
       <title>Оподаткування дивідендів: ставки для резидентів і нерезидентів</title>
@@ -382,30 +406,6 @@
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Практичні поради з підготовки до ВЛК: кого направляють на огляд, які медичні документи зібрати заздалегідь, як діяти під час комісії та як захистити свої права.</description>
-    </item>
-    <item>
-      <title>Ліцензування діяльності: коли потрібна ліцензія і як її отримати</title>
-      <link>https://legius.com.ua/blog/litsenzuvannya-diyalnosti/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/litsenzuvannya-diyalnosti/</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Перелік ліцензованих видів діяльності — виключний. Розбираємо, як отримати ліцензію, з якого дня виникає право працювати і чим загрожує безліцензійна діяльність.</description>
-    </item>
-    <item>
-      <title>Податковий борг та арешт рахунків: як захистити активи</title>
-      <link>https://legius.com.ua/blog/podatkovyj-borg-aresht-rahunkiv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/podatkovyj-borg-aresht-rahunkiv/</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Пояснюємо, як виникає податковий борг, коли застосовується податкова застава й арешт рахунків і майна, який порядок стягнення та як бізнесу захистити активи.</description>
-    </item>
-    <item>
-      <title>Банкрутство фізичної особи: як законно списати борги</title>
-      <link>https://legius.com.ua/blog/bankrutstvo-fizychnoyi-osoby/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/bankrutstvo-fizychnoyi-osoby/</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-      <category>Судові спори</category>
-      <description>З 2019 року фізична особа може офіційно списати борги через суд. Розбираємо, кому це доступно, скільки коштує і що залишиться непогашеним.</description>
     </item>
   </channel>
 </rss>
