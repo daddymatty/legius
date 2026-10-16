@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **54** |
-| Коротших за 450 слів | 95 (старт 147) |
-| Із позначкою `expand` | 160 (старт 213) |
-| Високий ризик (≥7), лишилось | 18 |
+| Опрацьовано | **57** |
+| Коротших за 450 слів | 92 (старт 147) |
+| Із позначкою `expand` | 157 (старт 213) |
+| Високий ризик (≥7), лишилось | 15 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -78,6 +78,9 @@
 | `podatkova-perevirka` | 937 | tax-law |
 | `oskarzhennya-ppr` | 955 | tax-law |
 | `pdfo-ta-esv` | 927 | tax-law |
+| `immigratsiyna-kvota-dozvil-na-immigratsiyu` | 989 | migration-law |
+| `posvidka-na-postiyne-prozhyvannya-pidstavy` | 929 | migration-law |
+| `pratsevlashtuvannya-inozemtsiv-v-it` | 992 | migration-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -88,14 +91,11 @@
 | 7 | 226 | 1 | family-law | `alimenty-z-inozemtsya` |
 | 7 | 238 | 1 | family-law | `rozluchennya-z-inozemtsem` |
 | 7 | 386 | 1 | litigation | `vykonannya-sudovoho-rishennya` |
-| 7 | 394 | 0 | migration-law | `pratsevlashtuvannya-inozemtsiv-v-it` |
 | 7 | 401 | 1 | criminal-business | `prava-pry-dopyti` |
 | 7 | 408 | 1 | m-and-a | `share-deal-asset-deal` |
 | 7 | 409 | 1 | m-and-a | `garantiyi-ta-indemniti` |
 | 7 | 417 | 1 | m-and-a | `etapy-uhody-ma` |
 | 7 | 426 | 1 | investment | `derzhpidtrymka-znachni-investytsiyi` |
-| 7 | 428 | 0 | migration-law | `immigratsiyna-kvota-dozvil-na-immigratsiyu` |
-| 7 | 433 | 0 | migration-law | `posvidka-na-postiyne-prozhyvannya-pidstavy` |
 | 7 | 557 | 1 | military-law | `sluzhba-za-kontraktom` |
 | 7 | 643 | 1 | military-law | `vidstrochka-doglyad-za-osoboyu-z-invalidnistyu` |
 | 7 | 741 | 2 | corporate-law | `gromadska-spilka` |
