@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 21:26:31 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 21:42:25 GMT</lastBuildDate>
     <item>
       <title>Відстрочка для студентів та аспірантів: умови та оформлення</title>
       <link>https://legius.com.ua/blog/vidstrochka-dlya-studentiv/</link>
@@ -70,6 +70,30 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Розбираємо, коли угода потребує дозволу АМКУ, чому її заборонено закривати до його отримання, які види порушень існують і як рахуються штрафи у відсотках доходу.</description>
+    </item>
+    <item>
+      <title>Громадська спілка: реєстрація об’єднання юридичних осіб</title>
+      <link>https://legius.com.ua/blog/gromadska-spilka/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/gromadska-spilka/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Пояснюємо, чим громадська спілка відрізняється від громадської організації, хто може її засновувати, як проходить реєстрація і чому саме ця форма підходить для галузевих об’єднань.</description>
+    </item>
+    <item>
+      <title>Реєстрація асоціації: яку форму обрати для об’єднання</title>
+      <link>https://legius.com.ua/blog/reyestratsiya-asotsiatsiyi/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-asotsiatsiyi/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>«Асоціація» — це не окрема організаційно-правова форма, а назва. Пояснюємо, яку форму обрати під конкретну мету і які ризики виникають, коли конкуренти збираються за одним столом.</description>
+    </item>
+    <item>
+      <title>Дозвільні документи для бізнесу: як отримати</title>
+      <link>https://legius.com.ua/blog/dozvilni-dokumenty/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/dozvilni-dokumenty/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Розбираємо різницю між ліцензією і дозволом, найпоширеніші дозвільні документи, декларативний принцип, мовчазну згоду та порядок дій при відмові.</description>
     </item>
     <item>
       <title>Податкова перевірка: види, підстави та як підготуватися бізнесу</title>
@@ -382,30 +406,6 @@
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Розбираємо підстави для виїзду за постановою № 57, потрібні документи й найчастішу причину, через яку людину не випускають попри наявність права.</description>
-    </item>
-    <item>
-      <title>Оновлення військово-облікових даних: «Резерв+», ЦНАП, ТЦК</title>
-      <link>https://legius.com.ua/blog/onovlennya-danykh-rezerv-plus/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/onovlennya-danykh-rezerv-plus/</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Більшість дій уже не потребують візиту до ТЦК. Розбираємо, що оновлюється онлайн, що ні, і як діяти, коли реєстр вас не бачить.</description>
-    </item>
-    <item>
-      <title>Штрафи за порушення військового обліку: за що і скільки</title>
-      <link>https://legius.com.ua/blog/shtrafy-viyskovyy-oblik/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/shtrafy-viyskovyy-oblik/</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо склади порушень, суми, строки сплати та наслідки прострочення — зокрема подвоєння штрафу при передачі виконавцям.</description>
-    </item>
-    <item>
-      <title>Оскарження штрафу ТЦК: підстави, строк і порядок</title>
-      <link>https://legius.com.ua/blog/oskarzhennya-shtrafu-tck/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-shtrafu-tck/</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Постанову ТЦК можна скасувати, але строк короткий — десять днів. Розбираємо підстави, які реально працюють, і порядок дій.</description>
     </item>
   </channel>
 </rss>
