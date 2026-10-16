@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **29** |
-| Коротших за 450 слів | 119 (старт 147) |
-| Із позначкою `expand` | 185 (старт 213) |
-| Високий ризик (≥7), лишилось | 43 |
+| Опрацьовано | **32** |
+| Коротших за 450 слів | 116 (старт 147) |
+| Із позначкою `expand` | 182 (старт 213) |
+| Високий ризик (≥7), лишилось | 40 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -53,6 +53,9 @@
 | `vidshkoduvannya-pdv` | 845 | tax-law |
 | `vydy-podatkovyh-perevirok` | 1005 | tax-law |
 | `oskarzhennya-ppr-administratyvne-vs-sudove` | 873 | tax-law |
+| `yedynyj-podatok-grupy-fop` | 977 | tax-law |
+| `transfertne-cinoutvorennya` | 1011 | tax-law |
+| `podatkova-amnistiya` | 809 | tax-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -81,10 +84,7 @@
 | 7 | 222 | 0 | tax-law | `kik-kontrolovani-inozemni-kompanii` |
 | 7 | 226 | 1 | family-law | `alimenty-z-inozemtsya` |
 | 7 | 227 | 0 | tax-law | `pdfo-ta-esv` |
-| 7 | 229 | 0 | tax-law | `podatkova-amnistiya` |
 | 7 | 238 | 1 | family-law | `rozluchennya-z-inozemtsem` |
-| 7 | 241 | 0 | tax-law | `transfertne-cinoutvorennya` |
-| 7 | 242 | 0 | tax-law | `yedynyj-podatok-grupy-fop` |
 | 7 | 347 | 0 | tax-law | `oskarzhennya-ppr` |
 | 7 | 386 | 1 | litigation | `vykonannya-sudovoho-rishennya` |
 | 7 | 394 | 0 | migration-law | `pratsevlashtuvannya-inozemtsiv-v-it` |
