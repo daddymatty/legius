@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 22:31:36 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 22:42:12 GMT</lastBuildDate>
     <item>
       <title>Розлучення з іноземцем: підсудність і визнання рішення</title>
       <link>https://legius.com.ua/blog/rozluchennya-z-inozemtsem/</link>
@@ -14,6 +14,14 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Коли достатньо ДРАЦС, а коли без суду не обійтися, хто визначає підсудність, якщо обоє живуть за кордоном, чому при судовому розлученні не видають свідоцтва і як легалізувати результат.</description>
+    </item>
+    <item>
+      <title>Шлюб з іноземцем в Україні: реєстрація та документи</title>
+      <link>https://legius.com.ua/blog/shlyub-z-inozemtsem/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/shlyub-z-inozemtsem/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Який насправді перелік документів вимагають Правила, чому законність перебування перевіряється на день реєстрації, як скоротити місячний строк і чи дає шлюб право на проживання.</description>
     </item>
     <item>
       <title>Заборгованість з аліментів: як стягнути борг і пеню</title>
@@ -24,12 +32,28 @@
       <description>Як рахується борг, якщо платник не працює, як правильно нарахувати пеню за ст. 196 СК, які санкції настають на 3, 4 місяці та на 1, 2, 3 роки боргу і що робити стягувачу.</description>
     </item>
     <item>
+      <title>Цивільний шлюб: права та поділ майна без реєстрації</title>
+      <link>https://legius.com.ua/blog/gromadyanskyy-shlyub/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/gromadyanskyy-shlyub/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Які майнові права виникають без реєстрації шлюбу, чому Верховний Суд не визнає доказом показання свідків і спільні фотографії, і чим відрізняється доказування для поділу майна та для спадкування.</description>
+    </item>
+    <item>
       <title>Стягнення аліментів з іноземця та боржника за кордоном</title>
       <link>https://legius.com.ua/blog/alimenty-z-inozemtsya/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-z-inozemtsya/</guid>
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Пояснюємо два робочі шляхи стягнення аліментів з боржника за кордоном, які конвенції діють, що саме входить до клопотання про визнання рішення та які суми діють у 2026 році.</description>
+    </item>
+    <item>
+      <title>Зменшення розміру аліментів: підстави та порядок</title>
+      <link>https://legius.com.ua/blog/zmenshennya-rozmiru-alimentiv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zmenshennya-rozmiru-alimentiv/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Чому перелік підстав у ст. 192 СК вужчий, ніж здається, які обставини Верховний Суд прямо не визнає підставою для зменшення і де межа, нижче за яку аліменти не зменшують.</description>
     </item>
     <item>
       <title>Зміна прізвища дитини: коли потрібна згода батька</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Міграційне право</category>
       <description>Пояснюємо, на яких підставах іноземець отримує посвідку на тимчасове проживання, які потрібні документи, у які строки подавати заяву та чому відмовляють.</description>
-    </item>
-    <item>
-      <title>Постійна посвідка на проживання: підстави та оформлення</title>
-      <link>https://legius.com.ua/blog/posvidka-na-postiyne-prozhyvannya-pidstavy/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/posvidka-na-postiyne-prozhyvannya-pidstavy/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Міграційне право</category>
-      <description>Розбираємо постійну посвідку: її звʼязок із дозволом на імміграцію, відмінності від тимчасової, документи, строк оформлення та права, які вона відкриває.</description>
-    </item>
-    <item>
-      <title>Дозвіл на застосування праці іноземця: інструкція для роботодавця</title>
-      <link>https://legius.com.ua/blog/dozvil-na-pratsyu-inozemtsya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/dozvil-na-pratsyu-inozemtsya/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Міграційне право</category>
-      <description>Пояснюємо, як українському роботодавцю отримати дозвіл на застосування праці іноземця, скільки це коштує, які строки діють, хто звільнений від дозволу та чим ризикує компанія.</description>
-    </item>
-    <item>
-      <title>Як отримати громадянство України: натуралізація, умови та строк проживання</title>
-      <link>https://legius.com.ua/blog/yak-otrymaty-gromadyanstvo-ukrayiny/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/yak-otrymaty-gromadyanstvo-ukrayiny/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Міграційне право</category>
-      <description>Розбираємо умови прийняття до громадянства України за статтею 9: ценз осілості та винятки з нього, іспити, законні джерела існування, чотири види декларацій і спрощений порядок.</description>
     </item>
   </channel>
 </rss>
