@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **24** |
-| Коротших за 450 слів | 124 (старт 147) |
-| Із позначкою `expand` | 190 (старт 213) |
-| Високий ризик (≥7), лишилось | 48 |
+| Опрацьовано | **27** |
+| Коротших за 450 слів | 121 (старт 147) |
+| Із позначкою `expand` | 187 (старт 213) |
+| Високий ризик (≥7), лишилось | 45 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -48,12 +48,14 @@
 | `yak-otrymaty-gromadyanstvo-ukrayiny` | 1355 | migration-law |
 | `gromadyanstvo-za-shlyubom-z-gromadyaninom` | 964 | migration-law |
 | `rozshuk-tck-shcho-robyty` | 805 | military-law |
+| `blokuvannya-podatkovyh-nakladnyh` | 869 | tax-law |
+| `rozblokuvannya-podatkovyh-nakladnyh` | 950 | tax-law |
+| `vidshkoduvannya-pdv` | 845 | tax-law |
 
 ## Високий ризик — перевіряти першими
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 9 | 266 | 1 | tax-law | `vidshkoduvannya-pdv` |
 | 9 | 400 | 1 | migration-law | `oskarzhennya-vydvorennya-inozemtsya` |
 | 8 | 231 | 1 | corporate-law | `antymonopolne-pravo` |
 | 8 | 257 | 1 | corporate-law | `zmina-dyrektora-tov` |
@@ -78,12 +80,10 @@
 | 7 | 226 | 1 | family-law | `alimenty-z-inozemtsya` |
 | 7 | 227 | 0 | tax-law | `pdfo-ta-esv` |
 | 7 | 229 | 0 | tax-law | `podatkova-amnistiya` |
-| 7 | 230 | 0 | tax-law | `rozblokuvannya-podatkovyh-nakladnyh` |
 | 7 | 238 | 1 | family-law | `rozluchennya-z-inozemtsem` |
 | 7 | 241 | 0 | tax-law | `transfertne-cinoutvorennya` |
 | 7 | 242 | 0 | tax-law | `yedynyj-podatok-grupy-fop` |
 | 7 | 252 | 0 | tax-law | `oskarzhennya-ppr-administratyvne-vs-sudove` |
-| 7 | 253 | 0 | tax-law | `blokuvannya-podatkovyh-nakladnyh` |
 | 7 | 264 | 0 | tax-law | `vydy-podatkovyh-perevirok` |
 | 7 | 347 | 0 | tax-law | `oskarzhennya-ppr` |
 | 7 | 386 | 1 | litigation | `vykonannya-sudovoho-rishennya` |

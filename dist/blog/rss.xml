@@ -6,7 +6,31 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 09:39:03 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 11:48:04 GMT</lastBuildDate>
+    <item>
+      <title>Блокування податкових накладних: причини та як розблокувати</title>
+      <link>https://legius.com.ua/blog/blokuvannya-podatkovyh-nakladnyh/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/blokuvannya-podatkovyh-nakladnyh/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Розбираємо механіку блокування податкових накладних: дві стадії перевірки в СМКОР, критерії ризиковості платника й операції, наслідки для бізнесу та перші дії.</description>
+    </item>
+    <item>
+      <title>Відшкодування ПДВ із бюджету: порядок, строки та спори з ДПС</title>
+      <link>https://legius.com.ua/blog/vidshkoduvannya-pdv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vidshkoduvannya-pdv/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Пояснюємо порядок бюджетного відшкодування ПДВ: умови, строки перевірок, роботу Реєстру заяв, скорочені строки для «білого бізнесу» та дії у разі відмови чи зменшення суми.</description>
+    </item>
+    <item>
+      <title>Розблокування податкових накладних: покрокова інструкція</title>
+      <link>https://legius.com.ua/blog/rozblokuvannya-podatkovyh-nakladnyh/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/rozblokuvannya-podatkovyh-nakladnyh/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Покрокова інструкція з розблокування податкових накладних: які пояснення та документи подати, як скласти таблицю даних платника й на що спирається оскарження відмови комісії.</description>
+    </item>
     <item>
       <title>Як отримати посвідку на проживання в Україні: підстави, документи, строки</title>
       <link>https://legius.com.ua/blog/yak-otrymaty-posvidku-na-prozhyvannya/</link>
@@ -382,30 +406,6 @@
       <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Згода другого з подружжя не потрібна — суд не може змусити людину залишатися у шлюбі. Пояснюємо, як подати позов, що робити при ігноруванні засідань і скільки це триває.</description>
-    </item>
-    <item>
-      <title>Поновлення батьківських прав: підстави та порядок</title>
-      <link>https://legius.com.ua/blog/ponovlennya-batkivskykh-prav/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/ponovlennya-batkivskykh-prav/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Позбавлення батьківських прав не є остаточним. Пояснюємо, що саме потрібно довести суду, коли поновлення вже неможливе і чому думка дитини часто стає вирішальною.</description>
-    </item>
-    <item>
-      <title>Оскарження висновку ВЛК: повний порядок дій у 2026 році</title>
-      <link>https://legius.com.ua/blog/vlk-oskarzhennya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vlk-oskarzhennya/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Покроковий розбір оскарження висновку ВЛК: як отримати сам висновок, коли звертатися до вищої комісії, а коли одразу до суду, які медичні документи мають вагу і через які помилки скарги програють.</description>
-    </item>
-    <item>
-      <title>Військовий облік на підприємстві: обов’язки роботодавця</title>
-      <link>https://legius.com.ua/blog/viyskovyy-oblik-na-pidpryyemstvi/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/viyskovyy-oblik-na-pidpryyemstvi/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо, що саме зобов’язане робити підприємство: вести облік військовозобов’язаних працівників, звірятися з ТЦК, подавати повідомлення — і за що штрафують керівника.</description>
     </item>
   </channel>
 </rss>
