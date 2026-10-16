@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 07:33:20 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 09:39:03 GMT</lastBuildDate>
     <item>
       <title>Як отримати посвідку на проживання в Україні: підстави, документи, строки</title>
       <link>https://legius.com.ua/blog/yak-otrymaty-posvidku-na-prozhyvannya/</link>
@@ -22,6 +22,22 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Міграційне право</category>
       <description>Пояснюємо, як українському роботодавцю отримати дозвіл на застосування праці іноземця, скільки це коштує, які строки діють, хто звільнений від дозволу та чим ризикує компанія.</description>
+    </item>
+    <item>
+      <title>Як отримати громадянство України: натуралізація, умови та строк проживання</title>
+      <link>https://legius.com.ua/blog/yak-otrymaty-gromadyanstvo-ukrayiny/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/yak-otrymaty-gromadyanstvo-ukrayiny/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Міграційне право</category>
+      <description>Розбираємо умови прийняття до громадянства України за статтею 9: ценз осілості та винятки з нього, іспити, законні джерела існування, чотири види декларацій і спрощений порядок.</description>
+    </item>
+    <item>
+      <title>Громадянство України за шлюбом з громадянином України</title>
+      <link>https://legius.com.ua/blog/gromadyanstvo-za-shlyubom-z-gromadyaninom/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/gromadyanstvo-za-shlyubom-z-gromadyaninom/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Міграційне право</category>
+      <description>Пояснюємо, як шлюб із громадянином України впливає на натуралізацію: правило трьох років, повне звільнення від цензу осілості, які умови залишаються та чому перевіряють реальність шлюбу.</description>
     </item>
     <item>
       <title>Віза D в Україну: підстави, документи та оформлення</title>
@@ -390,22 +406,6 @@
       <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Розбираємо, що саме зобов’язане робити підприємство: вести облік військовозобов’язаних працівників, звірятися з ТЦК, подавати повідомлення — і за що штрафують керівника.</description>
-    </item>
-    <item>
-      <title>Зниклий безвісти: правовий статус і що робити родині</title>
-      <link>https://legius.com.ua/blog/znyklyy-bezvisty-status/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/znyklyy-bezvisty-status/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Пояснюємо три різні правові стани, які часто плутають — зниклий безвісти, безвісно відсутній і оголошений померлим — і що робить кожен із них із виплатами й майном.</description>
-    </item>
-    <item>
-      <title>Відпустка військовослужбовця: види, тривалість, відмова</title>
-      <link>https://legius.com.ua/blog/vidpustka-viyskovosluzhbovtsya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vidpustka-viyskovosluzhbovtsya/</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо види відпусток військовослужбовця, підстави для кожної, порядок подання рапорту й механізм дій, якщо командування відмовляє без правових підстав.</description>
     </item>
   </channel>
 </rss>

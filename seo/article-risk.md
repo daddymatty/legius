@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **21** |
-| Коротших за 450 слів | 127 (старт 147) |
-| Із позначкою `expand` | 193 (старт 213) |
-| Високий ризик (≥7), лишилось | 51 |
+| Опрацьовано | **24** |
+| Коротших за 450 слів | 124 (старт 147) |
+| Із позначкою `expand` | 190 (старт 213) |
+| Високий ризик (≥7), лишилось | 48 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -45,6 +45,9 @@
 | `dozvil-na-pratsyu-inozemtsya` | 822 | migration-law |
 | `viza-d-v-ukrayinu` | 904 | migration-law |
 | `znyaty-zaboronu-vyizdu-v-ukrayinu` | 930 | migration-law |
+| `yak-otrymaty-gromadyanstvo-ukrayiny` | 1355 | migration-law |
+| `gromadyanstvo-za-shlyubom-z-gromadyaninom` | 964 | migration-law |
+| `rozshuk-tck-shcho-robyty` | 805 | military-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -52,7 +55,6 @@
 |---|---|---|---|---|
 | 9 | 266 | 1 | tax-law | `vidshkoduvannya-pdv` |
 | 9 | 400 | 1 | migration-law | `oskarzhennya-vydvorennya-inozemtsya` |
-| 9 | 422 | 1 | military-law | `rozshuk-tck-shcho-robyty` |
 | 8 | 231 | 1 | corporate-law | `antymonopolne-pravo` |
 | 8 | 257 | 1 | corporate-law | `zmina-dyrektora-tov` |
 | 8 | 1234 | 2 | military-law | `vlk-oskarzhennya` |
@@ -86,9 +88,7 @@
 | 7 | 347 | 0 | tax-law | `oskarzhennya-ppr` |
 | 7 | 386 | 1 | litigation | `vykonannya-sudovoho-rishennya` |
 | 7 | 394 | 0 | migration-law | `pratsevlashtuvannya-inozemtsiv-v-it` |
-| 7 | 398 | 0 | migration-law | `gromadyanstvo-za-shlyubom-z-gromadyaninom` |
 | 7 | 401 | 1 | criminal-business | `prava-pry-dopyti` |
-| 7 | 407 | 0 | migration-law | `yak-otrymaty-gromadyanstvo-ukrayiny` |
 | 7 | 408 | 1 | m-and-a | `share-deal-asset-deal` |
 | 7 | 409 | 1 | m-and-a | `garantiyi-ta-indemniti` |
 | 7 | 417 | 1 | m-and-a | `etapy-uhody-ma` |
