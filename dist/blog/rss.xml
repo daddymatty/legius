@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 21:18:19 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 21:26:31 GMT</lastBuildDate>
     <item>
       <title>Відстрочка для студентів та аспірантів: умови та оформлення</title>
       <link>https://legius.com.ua/blog/vidstrochka-dlya-studentiv/</link>
@@ -232,6 +232,30 @@
       <description>Розбираємо зустрічну звірку: підстави за п. 73.5 ПКУ та Порядком № 1232, 10 робочих днів на документи, довідку проти акта про неможливість і наслідки для контрагентів.</description>
     </item>
     <item>
+      <title>Етапи угоди M&amp;A: від NDA до закриття</title>
+      <link>https://legius.com.ua/blog/etapy-uhody-ma/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/etapy-uhody-ma/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>M&amp;A (Злиття і поглинання)</category>
+      <description>Розбираємо етапи угоди M&amp;A: що робити на кожному, де найчастіше зриваються угоди, як працює переважне право учасників ТОВ і чому дозвіл АМКУ впливає на графік.</description>
+    </item>
+    <item>
+      <title>Share deal чи asset deal: як обрати структуру угоди</title>
+      <link>https://legius.com.ua/blog/share-deal-asset-deal/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/share-deal-asset-deal/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>M&amp;A (Злиття і поглинання)</category>
+      <description>Порівнюємо share deal і asset deal: що саме переходить до покупця, де залишаються зобов’язання минулих періодів, як складність оформлення різниться і коли що обирати.</description>
+    </item>
+    <item>
+      <title>Гарантії та індемніті в угодах M&amp;A: як захистити покупця</title>
+      <link>https://legius.com.ua/blog/garantiyi-ta-indemniti/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/garantiyi-ta-indemniti/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>M&amp;A (Злиття і поглинання)</category>
+      <description>Розбираємо механізми захисту покупця в M&amp;A: різницю між гарантіями та індемніті, роль disclosure letter, обмеження відповідальності продавця та забезпечення виплати.</description>
+    </item>
+    <item>
       <title>Як отримати посвідку на проживання в Україні: підстави, документи, строки</title>
       <link>https://legius.com.ua/blog/yak-otrymaty-posvidku-na-prozhyvannya/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/yak-otrymaty-posvidku-na-prozhyvannya/</guid>
@@ -382,30 +406,6 @@
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Постанову ТЦК можна скасувати, але строк короткий — десять днів. Розбираємо підстави, які реально працюють, і порядок дій.</description>
-    </item>
-    <item>
-      <title>Мобілізація ФОП: податкові пільги, бронювання, бізнес</title>
-      <link>https://legius.com.ua/blog/mobilizatsiya-fop/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/mobilizatsiya-fop/</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Головне про ФОП під час служби: повне звільнення від податків діє навіть при отриманні доходу, але лише якщо ФОП зареєстровано до призову.</description>
-    </item>
-    <item>
-      <title>Контракт 18–24: умови, мільйон гривень і що читати в тексті</title>
-      <link>https://legius.com.ua/blog/kontrakt-18-24/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/kontrakt-18-24/</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Мільйон виплачують не за факт підписання, а за умови тривалої участі в бойових діях. Розбираємо, що саме треба знати до підпису.</description>
-    </item>
-    <item>
-      <title>Демобілізація: що є насправді, а що поки лише в планах</title>
-      <link>https://legius.com.ua/blog/demobilizatsiya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/demobilizatsiya/</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Закону про загальну демобілізацію немає, служба триває до особливого розпорядження. Але індивідуальні підстави працюють щомісяця — і саме з ними варто працювати.</description>
     </item>
   </channel>
 </rss>
