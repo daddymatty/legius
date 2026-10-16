@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **48** |
-| Коротших за 450 слів | 101 (старт 147) |
-| Із позначкою `expand` | 166 (старт 213) |
-| Високий ризик (≥7), лишилось | 24 |
+| Опрацьовано | **51** |
+| Коротших за 450 слів | 98 (старт 147) |
+| Із позначкою `expand` | 163 (старт 213) |
+| Високий ризик (≥7), лишилось | 21 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -72,15 +72,15 @@
 | `podatkovyj-zapyt-dps` | 863 | tax-law |
 | `zustrichni-zviryky-kontragentiv` | 908 | tax-law |
 | `apelyaciya-do-dps` | 897 | tax-law |
+| `vidpovidalnist-za-uhylennya-212-kku` | 1071 | tax-law |
+| `opodatkuvannya-nerezydentiv` | 937 | tax-law |
+| `perehid-na-zagalnu-systemu` | 886 | tax-law |
 
 ## Високий ризик — перевіряти першими
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 7 | 188 | 0 | tax-law | `opodatkuvannya-nerezydentiv` |
 | 7 | 194 | 0 | tax-law | `podatkovi-spory-sudova-praktyka` |
-| 7 | 217 | 0 | tax-law | `perehid-na-zagalnu-systemu` |
-| 7 | 217 | 0 | tax-law | `vidpovidalnist-za-uhylennya-212-kku` |
 | 7 | 222 | 0 | tax-law | `kik-kontrolovani-inozemni-kompanii` |
 | 7 | 226 | 1 | family-law | `alimenty-z-inozemtsya` |
 | 7 | 227 | 0 | tax-law | `pdfo-ta-esv` |
