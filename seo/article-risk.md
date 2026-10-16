@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **17** |
-| Коротших за 450 слів | 131 (старт 147) |
-| Із позначкою `expand` | 197 (старт 213) |
-| Високий ризик (≥7), лишилось | 55 |
+| Опрацьовано | **21** |
+| Коротших за 450 слів | 127 (старт 147) |
+| Із позначкою `expand` | 193 (старт 213) |
+| Високий ризик (≥7), лишилось | 51 |
 | Середній (5–6), лишилось | 105 |
 
 ## ✅ Опрацьовано
@@ -41,16 +41,18 @@
 | `bronyuvannya-pratsivnykiv` | 977 | military-law |
 | `vlk-nepridatnist` | 810 | military-law |
 | `oskarzhennya-vlk-cherez-sud` | 855 | military-law |
+| `yak-otrymaty-posvidku-na-prozhyvannya` | 903 | migration-law |
+| `dozvil-na-pratsyu-inozemtsya` | 822 | migration-law |
+| `viza-d-v-ukrayinu` | 904 | migration-law |
+| `znyaty-zaboronu-vyizdu-v-ukrayinu` | 930 | migration-law |
 
 ## Високий ризик — перевіряти першими
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
 | 9 | 266 | 1 | tax-law | `vidshkoduvannya-pdv` |
-| 9 | 341 | 1 | migration-law | `viza-d-v-ukrayinu` |
 | 9 | 400 | 1 | migration-law | `oskarzhennya-vydvorennya-inozemtsya` |
 | 9 | 422 | 1 | military-law | `rozshuk-tck-shcho-robyty` |
-| 9 | 423 | 1 | migration-law | `yak-otrymaty-posvidku-na-prozhyvannya` |
 | 8 | 231 | 1 | corporate-law | `antymonopolne-pravo` |
 | 8 | 257 | 1 | corporate-law | `zmina-dyrektora-tov` |
 | 8 | 1234 | 2 | military-law | `vlk-oskarzhennya` |
@@ -83,11 +85,9 @@
 | 7 | 264 | 0 | tax-law | `vydy-podatkovyh-perevirok` |
 | 7 | 347 | 0 | tax-law | `oskarzhennya-ppr` |
 | 7 | 386 | 1 | litigation | `vykonannya-sudovoho-rishennya` |
-| 7 | 391 | 0 | migration-law | `znyaty-zaboronu-vyizdu-v-ukrayinu` |
 | 7 | 394 | 0 | migration-law | `pratsevlashtuvannya-inozemtsiv-v-it` |
 | 7 | 398 | 0 | migration-law | `gromadyanstvo-za-shlyubom-z-gromadyaninom` |
 | 7 | 401 | 1 | criminal-business | `prava-pry-dopyti` |
-| 7 | 407 | 0 | migration-law | `dozvil-na-pratsyu-inozemtsya` |
 | 7 | 407 | 0 | migration-law | `yak-otrymaty-gromadyanstvo-ukrayiny` |
 | 7 | 408 | 1 | m-and-a | `share-deal-asset-deal` |
 | 7 | 409 | 1 | m-and-a | `garantiyi-ta-indemniti` |
