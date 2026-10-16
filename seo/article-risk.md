@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **78** |
-| Коротших за 450 слів | 76 (старт 147) |
-| Із позначкою `expand` | 136 (старт 213) |
+| Опрацьовано | **81** |
+| Коротших за 450 слів | 73 (старт 147) |
+| Із позначкою `expand` | 133 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 99 |
+| Середній (5–6), лишилось | 96 |
 
 ## ✅ Опрацьовано
 
@@ -102,6 +102,9 @@
 | `shlyub-z-inozemtsem` | 1183 | family-law |
 | `zmenshennya-rozmiru-alimentiv` | 1301 | family-law |
 | `gromadyanskyy-shlyub` | 1317 | family-law |
+| `rozluchennya-online` | 1075 | family-law |
+| `vstanovlennya-batkivstva` | 1333 | family-law |
+| `spadkuvannya-podruzhzhyam` | 1338 | family-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -153,10 +156,7 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 227 | 0 | family-law | `rozluchennya-online` |
 | 5 | 228 | 0 | family-law | `simeyna-mediatsiya` |
-| 5 | 229 | 0 | family-law | `vstanovlennya-batkivstva` |
-| 5 | 230 | 0 | family-law | `spadkuvannya-podruzhzhyam` |
 | 5 | 239 | 0 | family-law | `vyizd-dytyny-za-kordon` |
 | 5 | 241 | 0 | family-law | `usynovlennya-dytyny` |
 | 5 | 241 | 0 | family-law | `opika-ta-pikluvannya-nad-dytynoyu` |
