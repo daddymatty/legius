@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **85** |
-| Коротших за 450 слів | 69 (старт 147) |
-| Із позначкою `expand` | 129 (старт 213) |
+| Опрацьовано | **88** |
+| Коротших за 450 слів | 66 (старт 147) |
+| Із позначкою `expand` | 126 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 92 |
+| Середній (5–6), лишилось | 89 |
 
 ## ✅ Опрацьовано
 
@@ -109,6 +109,9 @@
 | `zminy-do-statutu-tov` | 1031 | corporate-law |
 | `dyvidendy-tov` | 982 | corporate-law |
 | `likvidatsiya-kompanii` | 1010 | corporate-law |
+| `kep-elektronnyy-dokumentoobih` | 1111 | corporate-law |
+| `due-diligence-biznesu` | 1067 | corporate-law |
+| `korporatyvne-upravlinnya-tov` | 956 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -120,9 +123,6 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 238 | 0 | corporate-law | `kep-elektronnyy-dokumentoobih` |
-| 6 | 244 | 0 | corporate-law | `due-diligence-biznesu` |
-| 6 | 244 | 0 | corporate-law | `korporatyvne-upravlinnya-tov` |
 | 6 | 247 | 0 | corporate-law | `kholdyngova-struktura` |
 | 6 | 247 | 0 | corporate-law | `gdpr-personalni-dani-biznes` |
 | 6 | 250 | 0 | corporate-law | `optsiony-dlya-pratsivnykiv` |

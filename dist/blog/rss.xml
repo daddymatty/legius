@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 23:11:14 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 23:20:35 GMT</lastBuildDate>
     <item>
       <title>Встановлення батьківства: добровільно та через суд</title>
       <link>https://legius.com.ua/blog/vstanovlennya-batkivstva/</link>
@@ -168,6 +168,22 @@
       <description>Покроковий порядок зміни директора ТОВ: що вирішують учасники, які документи подаються реєстратору, як оформлюються накази та з якого моменту діють повноваження.</description>
     </item>
     <item>
+      <title>Due diligence бізнесу: як перевірити компанію перед купівлею</title>
+      <link>https://legius.com.ua/blog/due-diligence-biznesu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/due-diligence-biznesu/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Конкретний перелік реєстрів і документів, чотири можливі результати перевірки та нові питання, які з'явилися після скасування Господарського кодексу.</description>
+    </item>
+    <item>
+      <title>КЕП та електронний документообіг для бізнесу: що потрібно знати</title>
+      <link>https://legius.com.ua/blog/kep-elektronnyy-dokumentoobih/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/kep-elektronnyy-dokumentoobih/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Що насправді треба зробити через перехід на новий криптографічний стандарт, чому Дія.Підпис може заблокувати звітність іншим КЕП і яка юридична сила електронного документа.</description>
+    </item>
+    <item>
       <title>Дивіденди в ТОВ: порядок нарахування та виплати учасникам</title>
       <link>https://legius.com.ua/blog/dyvidendy-tov/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/dyvidendy-tov/</guid>
@@ -206,6 +222,14 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Скільки голосів насправді потрібно, чому зміни бувають лише новою редакцією, чиї підписи посвідчує нотаріус і що змінилося в корпоративному управлінні з 28 серпня 2025 року.</description>
+    </item>
+    <item>
+      <title>Корпоративне управління в ТОВ: органи, повноваження та контроль</title>
+      <link>https://legius.com.ua/blog/korporatyvne-upravlinnya-tov/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/korporatyvne-upravlinnya-tov/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Які органи має ТОВ і що не можна делегувати, як працює виключна компетенція загальних зборів і що змінив Закон № 4196-IX у корпоративному управлінні.</description>
     </item>
     <item>
       <title>Громадська спілка: реєстрація об’єднання юридичних осіб</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Покроково про адміністративне оскарження рішень ДПС: строки за ст. 56 ПКУ, зміст скарги, правило автоматичного задоволення при простроченні та результати розгляду.</description>
-    </item>
-    <item>
-      <title>Податковий запит ДПС: як відповідати і коли можна не відповідати</title>
-      <link>https://legius.com.ua/blog/podatkovyj-zapyt-dps/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/podatkovyj-zapyt-dps/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо запит ДПС: 15 робочих днів на відповідь, 10 для зустрічної звірки, обов’язкові реквізити за п. 73.3 ПКУ та наслідки ненадання відповіді.</description>
-    </item>
-    <item>
-      <title>Зустрічні звірки контрагентів: порядок і наслідки для бізнесу</title>
-      <link>https://legius.com.ua/blog/zustrichni-zviryky-kontragentiv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zustrichni-zviryky-kontragentiv/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо зустрічну звірку: підстави за п. 73.5 ПКУ та Порядком № 1232, 10 робочих днів на документи, довідку проти акта про неможливість і наслідки для контрагентів.</description>
-    </item>
-    <item>
-      <title>Податкові спори в суді: судова практика та шанси на успіх</title>
-      <link>https://legius.com.ua/blog/podatkovi-spory-sudova-praktyka/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/podatkovi-spory-sudova-praktyka/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Головне про судові податкові спори: строк звернення після рішення Великої Палати від 16.07.2025 (1095 днів більше не працюють), стадії процесу, доказування та позиції Верховного Суду.</description>
     </item>
   </channel>
 </rss>
