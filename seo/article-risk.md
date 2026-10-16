@@ -1,6 +1,6 @@
 # Ризик-перелік статей для правової перевірки
 
-Оновлено 15.10.2026. Перелік генерується скриптом, тому цифри відтворюються.
+Оновлено 16.10.2026. Перелік генерується скриптом, тому цифри відтворюються.
 
 **Формула ризику:** обсяг тіла статті (<450 слів +3, <700 +1)
 + «страхувальні» формулювання ×2
@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **88** |
-| Коротших за 450 слів | 66 (старт 147) |
-| Із позначкою `expand` | 126 (старт 213) |
+| Опрацьовано | **91** |
+| Коротших за 450 слів | 63 (старт 147) |
+| Із позначкою `expand` | 123 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 89 |
+| Середній (5–6), лишилось | 86 |
 
 ## ✅ Опрацьовано
 
@@ -112,6 +112,9 @@
 | `kep-elektronnyy-dokumentoobih` | 1111 | corporate-law |
 | `due-diligence-biznesu` | 1067 | corporate-law |
 | `korporatyvne-upravlinnya-tov` | 956 | corporate-law |
+| `simeyna-mediatsiya` | 1828 | family-law |
+| `vyizd-dytyny-za-kordon` | 1897 | family-law |
+| `usynovlennya-dytyny` | 2769 | family-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -156,9 +159,6 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 228 | 0 | family-law | `simeyna-mediatsiya` |
-| 5 | 239 | 0 | family-law | `vyizd-dytyny-za-kordon` |
-| 5 | 241 | 0 | family-law | `usynovlennya-dytyny` |
 | 5 | 241 | 0 | family-law | `opika-ta-pikluvannya-nad-dytynoyu` |
 | 5 | 244 | 0 | family-law | `alimenty-na-druzhynu` |
 | 5 | 245 | 0 | family-law | `domashnye-nasylstvo-okhoronnyy-order` |
