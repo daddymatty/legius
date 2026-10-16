@@ -6,7 +6,23 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 17:59:51 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 19:54:33 GMT</lastBuildDate>
+    <item>
+      <title>Відстрочка для студентів та аспірантів: умови та оформлення</title>
+      <link>https://legius.com.ua/blog/vidstrochka-dlya-studentiv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vidstrochka-dlya-studentiv/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Розбираємо умови відстрочки для студентів і аспірантів: чому форма навчання вирішальна, як працює правило вищого рівня освіти та за що відстрочку анулюють.</description>
+    </item>
+    <item>
+      <title>Відстрочка для багатодітних батьків: умови та оформлення</title>
+      <link>https://legius.com.ua/blog/vidstrochka-bagatoditnym/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vidstrochka-bagatoditnym/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Розбираємо відстрочку для багатодітних: вимога трьох дітей до 18 років, чому повноліття однієї дитини припиняє право та як борг з аліментів його позбавляє.</description>
+    </item>
     <item>
       <title>Відстрочка для опікунів та осіб, які доглядають за рідними</title>
       <link>https://legius.com.ua/blog/vidstrochka-opikunam/</link>
@@ -30,6 +46,14 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Розбираємо розміри одноразової грошової допомоги пораненим і сім’ям загиблих, чому формулювання у висновку ВЛК змінює суму в три рази, та що робити у разі відмови.</description>
+    </item>
+    <item>
+      <title>Дезертирство та стаття 408 ККУ: відповідальність і захист</title>
+      <link>https://legius.com.ua/blog/dezertyrstvo-stattya-408/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/dezertyrstvo-stattya-408/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Розбираємо склад дезертирства за ст. 408 ККУ, межу між ним і СЗЧ, строки покарання, як доводиться мета ухилитися та що зі спрощеною програмою повернення.</description>
     </item>
     <item>
       <title>Блокування податкових накладних: причини та як розблокувати</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>«Асоціація» — це не окрема організаційно-правова форма, а назва. Пояснюємо, яку форму обрати під конкретну мету і які ризики виникають, коли конкуренти збираються за одним столом.</description>
-    </item>
-    <item>
-      <title>Статус неприбутковості: як отримати і як не втратити</title>
-      <link>https://legius.com.ua/blog/nepributkovyy-status/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/nepributkovyy-status/</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Реєстрація організації не робить її неприбутковою. Пояснюємо, що має бути в статуті, як подати заяву, які звіти подавати і за які дії статус втрачають заднім числом.</description>
-    </item>
-    <item>
-      <title>Дозвільні документи для бізнесу: як отримати</title>
-      <link>https://legius.com.ua/blog/dozvilni-dokumenty/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/dozvilni-dokumenty/</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Розбираємо різницю між ліцензією і дозволом, найпоширеніші дозвільні документи, декларативний принцип, мовчазну згоду та порядок дій при відмові.</description>
-    </item>
-    <item>
-      <title>Бухгалтерський супровід ФОП і ТОВ: що входить</title>
-      <link>https://legius.com.ua/blog/bukhhalterskyy-suprovid/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/bukhhalterskyy-suprovid/</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Розбираємо, який облік реально зобов’язані вести ФОП і ТОВ, які звіти подавати і в які строки, хто відповідає за помилки бухгалтера та коли вигідніший аутсорс.</description>
     </item>
   </channel>
 </rss>
