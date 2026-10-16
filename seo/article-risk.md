@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **81** |
-| Коротших за 450 слів | 73 (старт 147) |
-| Із позначкою `expand` | 133 (старт 213) |
+| Опрацьовано | **82** |
+| Коротших за 450 слів | 72 (старт 147) |
+| Із позначкою `expand` | 132 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 96 |
+| Середній (5–6), лишилось | 95 |
 
 ## ✅ Опрацьовано
 
@@ -105,6 +105,7 @@
 | `rozluchennya-online` | 1075 | family-law |
 | `vstanovlennya-batkivstva` | 1333 | family-law |
 | `spadkuvannya-podruzhzhyam` | 1338 | family-law |
+| `dohovirna-robota` | 1165 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -116,7 +117,6 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 228 | 0 | corporate-law | `dohovirna-robota` |
 | 6 | 228 | 0 | corporate-law | `zminy-do-statutu-tov` |
 | 6 | 235 | 0 | corporate-law | `dyvidendy-tov` |
 | 6 | 235 | 0 | corporate-law | `likvidatsiya-kompanii` |
@@ -126,12 +126,12 @@
 | 6 | 247 | 0 | corporate-law | `kholdyngova-struktura` |
 | 6 | 247 | 0 | corporate-law | `gdpr-personalni-dani-biznes` |
 | 6 | 250 | 0 | corporate-law | `optsiony-dlya-pratsivnykiv` |
-| 6 | 251 | 0 | corporate-law | `korporatyvni-spory` |
 | 6 | 251 | 0 | corporate-law | `trudovi-vidnosyny-top-menedzhment` |
 | 6 | 251 | 0 | corporate-law | `bankrutstvo-kompanii` |
+| 6 | 252 | 0 | corporate-law | `zakhyst-komertsiynoyi-tayemnytsi` |
 | 6 | 253 | 0 | corporate-law | `zaluchennya-investytsiy-startap` |
 | 6 | 254 | 0 | corporate-law | `vykhid-uchasnyka-tov` |
-| 6 | 255 | 0 | corporate-law | `zakhyst-komertsiynoyi-tayemnytsi` |
+| 6 | 264 | 0 | corporate-law | `korporatyvni-spory` |
 | 6 | 269 | 0 | corporate-law | `prodazh-chastky-tov` |
 | 6 | 287 | 0 | land-law | `zmina-tsilovoho-pryznachennya-zemli` |
 | 6 | 295 | 0 | corporate-law | `reyestratsiya-fop-vs-tov` |
@@ -142,9 +142,9 @@
 | 6 | 360 | 0 | real-estate | `reyestratsiya-prava-vlasnosti` |
 | 6 | 362 | 0 | real-estate | `spory-iz-zabudovnykom` |
 | 6 | 366 | 0 | land-law | `orenda-zemli-dohovir-ta-ponovlennya` |
-| 6 | 370 | 0 | real-estate | `orenda-komertsiynoyi-nerukhomosti` |
 | 6 | 379 | 0 | land-law | `zemelni-spory-z-susidamy` |
 | 6 | 384 | 0 | real-estate | `ryzyky-investuvannya-v-novobudovu` |
+| 6 | 397 | 0 | real-estate | `orenda-komertsiynoyi-nerukhomosti` |
 | 6 | 400 | 0 | real-estate | `suprovid-ugody-kupivli-prodazhu-kvartyry` |
 | 6 | 422 | 0 | it-law | `dogovir-z-rozrobnykom-b2b` |
 | 6 | 425 | 0 | it-law | `hih-kontrakt-proty-fop` |
@@ -210,5 +210,5 @@
 | 5 | 759 | 2 | m-and-a | `prodazh-biznesu-peredprodazhna-pidhotovka` |
 | 5 | 785 | 1 | corporate-law | `reyestratsiya-fop` |
 | 5 | 858 | 1 | corporate-law | `korporatyvnyy-dohovir` |
-| 5 | 1027 | 1 | corporate-law | `reyestratsiya-tov` |
+| 5 | 1044 | 1 | corporate-law | `reyestratsiya-tov` |
 | 5 | 1184 | 1 | corporate-law | `reyestratsiya-gromadskoyi-organizatsiyi` |
