@@ -6,7 +6,15 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 22:42:12 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 22:52:46 GMT</lastBuildDate>
+    <item>
+      <title>Встановлення батьківства: добровільно та через суд</title>
+      <link>https://legius.com.ua/blog/vstanovlennya-batkivstva/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vstanovlennya-batkivstva/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Чим визнання батьківства відрізняється від встановлення факту, хто може подати позов, що буде при відмові від ДНК-експертизи та коли оспорити батьківство вже неможливо.</description>
+    </item>
     <item>
       <title>Розлучення з іноземцем: підсудність і визнання рішення</title>
       <link>https://legius.com.ua/blog/rozluchennya-z-inozemtsem/</link>
@@ -22,6 +30,22 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Який насправді перелік документів вимагають Правила, чому законність перебування перевіряється на день реєстрації, як скоротити місячний строк і чи дає шлюб право на проживання.</description>
+    </item>
+    <item>
+      <title>Спадкування подружжям: права того, хто пережив</title>
+      <link>https://legius.com.ua/blog/spadkuvannya-podruzhzhyam/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/spadkuvannya-podruzhzhyam/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Дві дії, які часто плутають: виділ частки у спільному майні і спадкування. Плюс обов'язкова частка непрацездатної вдови та чому спільний заповіт подружжя має менше можливостей, ніж здається.</description>
+    </item>
+    <item>
+      <title>Розлучення онлайн: як розірвати шлюб дистанційно</title>
+      <link>https://legius.com.ua/blog/rozluchennya-online/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/rozluchennya-online/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>З вересня 2026 року шлюб без спільних неповнолітніх дітей можна розірвати повністю онлайн через «Дію». Розбираємо умови, кроки, строки та що робити, якщо є діти.</description>
     </item>
     <item>
       <title>Заборгованість з аліментів: як стягнути борг і пеню</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>M&amp;A (Злиття і поглинання)</category>
       <description>Порівнюємо share deal і asset deal: що саме переходить до покупця, де залишаються зобов’язання минулих періодів, як складність оформлення різниться і коли що обирати.</description>
-    </item>
-    <item>
-      <title>Гарантії та індемніті в угодах M&amp;A: як захистити покупця</title>
-      <link>https://legius.com.ua/blog/garantiyi-ta-indemniti/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/garantiyi-ta-indemniti/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>M&amp;A (Злиття і поглинання)</category>
-      <description>Розбираємо механізми захисту покупця в M&amp;A: різницю між гарантіями та індемніті, роль disclosure letter, обмеження відповідальності продавця та забезпечення виплати.</description>
-    </item>
-    <item>
-      <title>Права при допиті свідка та підозрюваного у бізнес-справах</title>
-      <link>https://legius.com.ua/blog/prava-pry-dopyti/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/prava-pry-dopyti/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Пояснюємо права на допиті: дві години без перерви і вісім на день, різниця між свідком і підозрюваним, межі права мовчати за ст. 63 Конституції та що робити з протоколом.</description>
-    </item>
-    <item>
-      <title>Як отримати посвідку на проживання в Україні: підстави, документи, строки</title>
-      <link>https://legius.com.ua/blog/yak-otrymaty-posvidku-na-prozhyvannya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/yak-otrymaty-posvidku-na-prozhyvannya/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Міграційне право</category>
-      <description>Пояснюємо, на яких підставах іноземець отримує посвідку на тимчасове проживання, які потрібні документи, у які строки подавати заяву та чому відмовляють.</description>
     </item>
   </channel>
 </rss>
