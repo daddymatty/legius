@@ -24,6 +24,16 @@ const slugHash = (slug = "") => {
   return h;
 };
 
+/* Посилання на другий наш ресурс — resident.in.ua, базу знань для іноземців.
+   Ставимо лише там, де тема справді збігається (міграційна практика), і по
+   одному посиланню на сторінку: наскрізний блок на весь блог Google читав би
+   як схему посилань. Текст підводки свій у кожній статті — щоб блок не
+   виглядав шаблонним. */
+function externalRefBlock(ref) {
+  if (!ref || !ref.href || !ref.anchor) return "";
+  return `<p class="muted" style="font-size:.95em">${esc(ref.lead || "Докладніше —")} <a href="${esc(ref.href)}">${esc(ref.anchor)}</a>.</p>`;
+}
+
 function rotatedServices(list, slug, take = 3) {
   if (list.length <= take) return list;
   const start = slugHash(slug) % list.length;
@@ -94,7 +104,7 @@ ${breadcrumbs(crumbs)}
   <p>${esc(p.excerpt)}</p>
 </div></section>
 <section class="section"><div class="container">
-  <div class="prose reveal" style="max-width:820px;margin-inline:auto">${p.intro}${renderProseSections(p.sections)}</div>
+  <div class="prose reveal" style="max-width:820px;margin-inline:auto">${p.intro}${renderProseSections(p.sections)}${externalRefBlock(p.externalRef)}</div>
 </div></section>
 <section class="section section--soft"><div class="container">
   <div class="section__head"><span class="eyebrow">Усі матеріали кластера</span><h2>Статті за темою</h2></div>
@@ -137,6 +147,7 @@ ${breadcrumbs(crumbs)}
       <article class="prose reveal">
         ${a.intro || `<p class="lead">${esc(a.excerpt)}</p>`}
         ${renderProseSections(a.sections)}
+        ${externalRefBlock(a.externalRef)}
         ${practice ? `<div class="callout">Потрібна персональна консультація з теми «${esc(practice.shortTitle)}»? <a href="/practices/${practice.slug}/">Перейдіть на сторінку практики</a> або <a href="/contacts/#consult">залиште заявку</a> — відповімо протягом 15 хвилин.${(() => {
           /* a.serviceLinks — збалансований розподіл із build.js; хеш лишаємо
              як запасний варіант, щоб шаблон працював і без цієї підготовки */
