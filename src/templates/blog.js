@@ -9,6 +9,27 @@ import { practiceServices } from "../lib/services.js";
    картки одного кластера не виглядали однаково */
 const coverFlip = (slug = "") => [...slug].reduce((h, ch) => h + ch.charCodeAt(0), 0) % 2 === 1;
 
+/* блок «Послуги напряму» раніше брав завжди перші три послуги практики, тому
+   всі посилання з блогу збиралися на ~47 сторінках, а решта лишалися з одним
+   вхідним посиланням із хаба практики. Прокручуємо вікно за хешем слага, щоб
+   посилання рівномірно розійшлися по всіх послугах практики. Хеш робимо
+   лавиноподібним (а не сумою кодів), бо сусідні слаги дають близькі суми
+   і зі звичайним додаванням вікна злипаються. */
+const slugHash = (slug = "") => {
+  let h = 2166136261;
+  for (const ch of slug) {
+    h ^= ch.codePointAt(0);
+    h = Math.imul(h, 16777619) >>> 0;
+  }
+  return h;
+};
+
+function rotatedServices(list, slug, take = 3) {
+  if (list.length <= take) return list;
+  const start = slugHash(slug) % list.length;
+  return Array.from({ length: take }, (_, i) => list[(start + i) % list.length]);
+}
+
 function postCard(a) {
   return `<a class="post-card reveal" href="/blog/${a.slug}/" data-cluster="${esc(a.cluster || "")}">
     <div class="post-card__img${coverFlip(a.slug) ? " post-card__img--flip" : ""}"><img src="/assets/img/covers/${esc(a.cluster || "default")}.svg" alt="" width="640" height="360" loading="lazy" decoding="async"></div>
@@ -117,7 +138,11 @@ ${breadcrumbs(crumbs)}
         ${a.intro || `<p class="lead">${esc(a.excerpt)}</p>`}
         ${renderProseSections(a.sections)}
         ${practice ? `<div class="callout">Потрібна персональна консультація з теми «${esc(practice.shortTitle)}»? <a href="/practices/${practice.slug}/">Перейдіть на сторінку практики</a> або <a href="/contacts/#consult">залиште заявку</a> — відповімо протягом 15 хвилин.${(() => {
-          const svc = practiceServices(practice).slice(0, 3);
+          /* a.serviceLinks — збалансований розподіл із build.js; хеш лишаємо
+             як запасний варіант, щоб шаблон працював і без цієї підготовки */
+          const svc = a.serviceLinks?.length
+            ? a.serviceLinks
+            : rotatedServices(practiceServices(practice), a.slug, 3);
           return svc.length ? `<br><span style="font-size:.92em">Послуги напряму: ${svc.map((s) => `<a href="/practices/${practice.slug}/${s.slug}/">${esc(s.title)}</a>`).join(", ")}.</span>` : "";
         })()}</div>` : ""}
       </article>
