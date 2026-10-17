@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sat, 17 Oct 2026 17:03:57 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 17:19:35 GMT</lastBuildDate>
     <item>
       <title>Аліменти на дитину: розмір, способи стягнення та індексація</title>
       <link>https://legius.com.ua/blog/alimenty-na-dytynu/</link>
@@ -14,6 +14,14 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Мінімальний гарантований розмір аліментів у 2026 році — 1 408,50 грн на дитину до 6 років і 1 756 грн на дитину від 6 до 18. Розбираємо частки за ст. 183 СК, судовий наказ за 332,80 грн, пеню 1% на день і заходи впливу на боржника.</description>
+    </item>
+    <item>
+      <title>Шлюбний договір: навіщо потрібен і як його скласти</title>
+      <link>https://legius.com.ua/blog/shlyubnyy-dohovir/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/shlyubnyy-dohovir/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>За шлюбним договором не може передаватися у власність нерухоме майно — але умова про непоширення статті 60 СК на набуте в шлюбі майно, за позицією ВС 2026 року, сама собою цієї заборони не порушує. Розбираємо межі договору та підстави недійсності.</description>
     </item>
     <item>
       <title>Визначення місця проживання дитини після розлучення</title>
@@ -168,12 +176,28 @@
       <description>Строк рахується не від дня засідання, а від дня складення повного рішення — і це найчастіша причина пропуску. Розбираємо строки в кожному процесі, межу одного року за ч. 2 ст. 358 ЦПК, судовий збір і те, що апеляційний суд справді переглядає.</description>
     </item>
     <item>
+      <title>Касаційна скарга до Верховного Суду: підстави та фільтри касації</title>
+      <link>https://legius.com.ua/blog/kasatsiyna-skarga-verkhovnyy-sud/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/kasatsiyna-skarga-verkhovnyy-sud/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Касаційна скарга без прямо названої підстави з частини 2 статті 389 ЦПК не приймається — провадження просто не відкривають. Розбираємо кожну підставу, фільтр малозначності у 332 800 грн і межі перегляду, у яких факти вже не досліджуються.</description>
+    </item>
+    <item>
       <title>Реєстрація права власності на нерухомість: порядок дій 2026</title>
       <link>https://legius.com.ua/blog/reyestratsiya-prava-vlasnosti/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-prava-vlasnosti/</guid>
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Нерухомість</category>
       <description>Державна реєстрація проводиться у строк, що не перевищує п’яти робочих днів, а збір рахується у частках прожиткового мінімуму. Розбираємо документи, прискорені строки, підстави для відмови за статтею 24 Закону та два шляхи її оскарження.</description>
+    </item>
+    <item>
+      <title>Спори із забудовником: як захистити інвестиції 2026</title>
+      <link>https://legius.com.ua/blog/spory-iz-zabudovnykom/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/spory-iz-zabudovnykom/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Нерухомість</category>
+      <description>З 10 жовтня 2022 року майбутній об’єкт нерухомості може бути в цивільному обороті лише за умови державної реєстрації спеціального майнового права. Це змінило і захист інвестора, і перелік того, що треба перевірити до підписання договору.</description>
     </item>
     <item>
       <title>Зміна цільового призначення землі: порядок і обмеження</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Що дає режим окремого проживання за ст. 119–120 СК, чому він діє лише на майбутнє, що саме змінюється для майна й дітей і коли суд відмовляє у його встановленні.</description>
-    </item>
-    <item>
-      <title>Відстрочка для студентів та аспірантів: умови та оформлення</title>
-      <link>https://legius.com.ua/blog/vidstrochka-dlya-studentiv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vidstrochka-dlya-studentiv/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо умови відстрочки для студентів і аспірантів: чому форма навчання вирішальна, як працює правило вищого рівня освіти та за що відстрочку анулюють.</description>
-    </item>
-    <item>
-      <title>Відстрочка для багатодітних батьків: умови та оформлення</title>
-      <link>https://legius.com.ua/blog/vidstrochka-bagatoditnym/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vidstrochka-bagatoditnym/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо відстрочку для багатодітних: вимога трьох дітей до 18 років, чому повноліття однієї дитини припиняє право та як борг з аліментів його позбавляє.</description>
-    </item>
-    <item>
-      <title>Відстрочка для опікунів та осіб, які доглядають за рідними</title>
-      <link>https://legius.com.ua/blog/vidstrochka-opikunam/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vidstrochka-opikunam/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо відстрочку з підстав опіки та догляду: чим ці підстави відрізняються, які документи підтверджують кожну з них і чому право без оформленої відстрочки не захищає.</description>
     </item>
   </channel>
 </rss>

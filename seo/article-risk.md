@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **124** |
-| Коротших за 450 слів | 31 (старт 147) |
-| Із позначкою `expand` | 90 (старт 213) |
+| Опрацьовано | **127** |
+| Коротших за 450 слів | 28 (старт 147) |
+| Із позначкою `expand` | 87 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 53 |
+| Середній (5–6), лишилось | 50 |
 
 ## ✅ Опрацьовано
 
@@ -148,6 +148,9 @@
 | `alimenty-na-dytynu` | 1914 | family-law |
 | `domenni-spory` | 1722 | ip-law |
 | `rynok-zemli-pravyla-kupivli` | 1729 | land-law |
+| `shlyubnyy-dohovir` | 1858 | family-law |
+| `spory-iz-zabudovnykom` | 1854 | real-estate |
+| `kasatsiyna-skarga-verkhovnyy-sud` | 1820 | litigation |
 
 ## Високий ризик — перевіряти першими
 
@@ -160,7 +163,6 @@
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
 | 6 | 353 | 0 | land-law | `oformlennya-prava-vlasnosti-na-zemlyu` |
-| 6 | 362 | 0 | real-estate | `spory-iz-zabudovnykom` |
 | 6 | 366 | 0 | land-law | `orenda-zemli-dohovir-ta-ponovlennya` |
 | 6 | 379 | 0 | land-law | `zemelni-spory-z-susidamy` |
 | 6 | 384 | 0 | real-estate | `ryzyky-investuvannya-v-novobudovu` |
@@ -176,7 +178,6 @@
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
 | 5 | 309 | 0 | ip-law | `zakhyst-avtorskoho-prava` |
-| 5 | 322 | 0 | family-law | `shlyubnyy-dohovir` |
 | 5 | 339 | 0 | family-law | `podil-mayna-podruzhzhya` |
 | 5 | 339 | 0 | ip-law | `patentuvannya-vynakhodu` |
 | 5 | 351 | 0 | criminal-business | `zakhyst-dyrektora-kryminalna-sprava` |
@@ -184,7 +185,6 @@
 | 5 | 376 | 0 | litigation | `hospodarskyy-spir-pokrokovo` |
 | 5 | 384 | 0 | criminal-business | `uhylennya-vid-podatkiv-st-212` |
 | 5 | 388 | 0 | ip-law | `yak-zareyestruvaty-torhovu-marku` |
-| 5 | 397 | 0 | litigation | `kasatsiyna-skarga-verkhovnyy-sud` |
 | 5 | 402 | 0 | m-and-a | `due-diligence-pered-kupivleyu-kompaniyi` |
 | 5 | 410 | 0 | family-law | `spadkovyy-dohovir` |
 | 5 | 412 | 0 | m-and-a | `spa-shcho-take` |
