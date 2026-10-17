@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **118** |
-| Коротших за 450 слів | 37 (старт 147) |
-| Із позначкою `expand` | 96 (старт 213) |
+| Опрацьовано | **121** |
+| Коротших за 450 слів | 34 (старт 147) |
+| Із позначкою `expand` | 93 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 59 |
+| Середній (5–6), лишилось | 56 |
 
 ## ✅ Опрацьовано
 
@@ -142,6 +142,9 @@
 | `zabezpechennya-pozovu-aresht-rakhunkiv` | 1853 | litigation |
 | `dozvil-amku-na-kontsentratsiyu` | 1900 | m-and-a |
 | `porushennya-prav-na-tm` | 2149 | ip-law |
+| `statut-tov` | 1722 | corporate-law |
+| `viznachennya-mistsya-prozhyvannya-dytyny` | 2074 | family-law |
+| `apelyatsiya-na-rishennya-sudu` | 1829 | litigation |
 
 ## Високий ризик — перевіряти першими
 
@@ -153,7 +156,6 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 295 | 0 | corporate-law | `statut-tov` |
 | 6 | 341 | 0 | land-law | `rynok-zemli-pravyla-kupivli` |
 | 6 | 353 | 0 | land-law | `oformlennya-prava-vlasnosti-na-zemlyu` |
 | 6 | 362 | 0 | real-estate | `spory-iz-zabudovnykom` |
@@ -172,7 +174,6 @@
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
 | 5 | 304 | 0 | ip-law | `domenni-spory` |
-| 5 | 309 | 0 | family-law | `viznachennya-mistsya-prozhyvannya-dytyny` |
 | 5 | 309 | 0 | ip-law | `zakhyst-avtorskoho-prava` |
 | 5 | 312 | 0 | family-law | `alimenty-na-dytynu` |
 | 5 | 322 | 0 | family-law | `shlyubnyy-dohovir` |
@@ -183,7 +184,6 @@
 | 5 | 376 | 0 | litigation | `hospodarskyy-spir-pokrokovo` |
 | 5 | 384 | 0 | criminal-business | `uhylennya-vid-podatkiv-st-212` |
 | 5 | 388 | 0 | ip-law | `yak-zareyestruvaty-torhovu-marku` |
-| 5 | 390 | 0 | litigation | `apelyatsiya-na-rishennya-sudu` |
 | 5 | 397 | 0 | litigation | `kasatsiyna-skarga-verkhovnyy-sud` |
 | 5 | 402 | 0 | m-and-a | `due-diligence-pered-kupivleyu-kompaniyi` |
 | 5 | 410 | 0 | family-law | `spadkovyy-dohovir` |
