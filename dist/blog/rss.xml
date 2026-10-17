@@ -6,7 +6,15 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sat, 17 Oct 2026 16:33:16 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 16:48:17 GMT</lastBuildDate>
+    <item>
+      <title>Визначення місця проживання дитини після розлучення</title>
+      <link>https://legius.com.ua/blog/viznachennya-mistsya-prozhyvannya-dytyny/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/viznachennya-mistsya-prozhyvannya-dytyny/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Велика Палата Верховного Суду у 2018 році відмовилася від автоматичного застосування принципу 6 Декларації прав дитини — «презумпції на користь матері» більше немає. Розбираємо, що насправді доводять у таких справах і які моделі рішень застосовує суд.</description>
+    </item>
     <item>
       <title>Позбавлення батьківських прав: підстави та процедура</title>
       <link>https://legius.com.ua/blog/pozbavlennya-batkivskykh-prav/</link>
@@ -46,6 +54,14 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Головна різниця не в податках, а у відповідальності: ФОП відповідає всім особистим майном, учасник ТОВ — лише вкладом. Розбираємо ліміти й ставки єдиного податку 2026, реальну вартість обслуговування, ПДВ і коли яка форма виправдана.</description>
+    </item>
+    <item>
+      <title>Статут ТОВ: модельний чи індивідуальний — що обрати</title>
+      <link>https://legius.com.ua/blog/statut-tov/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/statut-tov/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Перелік обов’язкових відомостей у статуті дуже короткий — уся цінність документа в тому, що ви додаєте понад нього. Розбираємо різницю між модельним і власним статутом, фразу «якщо інше не передбачено статутом» і новелу про додатковий капітал.</description>
     </item>
     <item>
       <title>Вихід учасника з ТОВ: процедура та виплата частки</title>
@@ -134,6 +150,14 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Судові спори</category>
       <description>Заяву про забезпечення позову господарський суд розглядає не пізніше двох днів і без повідомлення відповідача, а подана до позову вона зобов’язує подати позов упродовж десяти днів. Розбираємо види заходів, співмірність, зустрічне забезпечення та скасування.</description>
+    </item>
+    <item>
+      <title>Апеляція на рішення суду: строки, порядок та шанси на успіх</title>
+      <link>https://legius.com.ua/blog/apelyatsiya-na-rishennya-sudu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/apelyatsiya-na-rishennya-sudu/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Строк рахується не від дня засідання, а від дня складення повного рішення — і це найчастіша причина пропуску. Розбираємо строки в кожному процесі, межу одного року за ч. 2 ст. 358 ЦПК, судовий збір і те, що апеляційний суд справді переглядає.</description>
     </item>
     <item>
       <title>Реєстрація права власності на нерухомість: порядок дій 2026</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Розбираємо склад дезертирства за ст. 408 ККУ, межу між ним і СЗЧ, строки покарання, як доводиться мета ухилитися та що зі спрощеною програмою повернення.</description>
-    </item>
-    <item>
-      <title>Відстрочка по догляду за особою з інвалідністю</title>
-      <link>https://legius.com.ua/blog/vidstrochka-doglyad-za-osoboyu-z-invalidnistyu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vidstrochka-doglyad-za-osoboyu-z-invalidnistyu/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Хто саме має право на відстрочку через догляд, чому наявність інвалідності в родині ще не дає її автоматично, як працює автопродовження для 22 категорій і за що найчастіше відмовляють.</description>
-    </item>
-    <item>
-      <title>Служба за контрактом: умови, строк, припинення</title>
-      <link>https://legius.com.ua/blog/sluzhba-za-kontraktom/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/sluzhba-za-kontraktom/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Чим контракт відрізняється від мобілізації, які строки встановила постанова № 768, як рахується відстрочка після служби і що саме перевірити до підписання.</description>
-    </item>
-    <item>
-      <title>Зміна директора ТОВ: порядок, документи та типові помилки</title>
-      <link>https://legius.com.ua/blog/zmina-dyrektora-tov/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zmina-dyrektora-tov/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Покроковий порядок зміни директора ТОВ: що вирішують учасники, які документи подаються реєстратору, як оформлюються накази та з якого моменту діють повноваження.</description>
     </item>
   </channel>
 </rss>
