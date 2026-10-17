@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **136** |
-| Коротших за 450 слів | 19 (старт 147) |
-| Із позначкою `expand` | 78 (старт 213) |
+| Опрацьовано | **139** |
+| Коротших за 450 слів | 16 (старт 147) |
+| Із позначкою `expand` | 75 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 41 |
+| Середній (5–6), лишилось | 38 |
 
 ## ✅ Опрацьовано
 
@@ -160,6 +160,9 @@
 | `znyattya-areshtu-z-rakhunkiv` | 2164 | criminal-business |
 | `patentuvannya-vynakhodu` | 2732 | ip-law |
 | `zakhyst-inozemnoho-investora` | 2325 | investment |
+| `orenda-zemli-dohovir-ta-ponovlennya` | 2179 | land-law |
+| `spadkovyy-dohovir` | 2043 | family-law |
+| `dogovir-z-rozrobnykom-b2b` | 2584 | it-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -171,11 +174,9 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 366 | 0 | land-law | `orenda-zemli-dohovir-ta-ponovlennya` |
 | 6 | 379 | 0 | land-law | `zemelni-spory-z-susidamy` |
 | 6 | 397 | 0 | real-estate | `orenda-komertsiynoyi-nerukhomosti` |
 | 6 | 400 | 0 | real-estate | `suprovid-ugody-kupivli-prodazhu-kvartyry` |
-| 6 | 422 | 0 | it-law | `dogovir-z-rozrobnykom-b2b` |
 | 6 | 425 | 0 | it-law | `hih-kontrakt-proty-fop` |
 | 6 | 434 | 0 | real-estate | `perevirka-nerukhomosti-pered-kupivleyu` |
 | 6 | 444 | 0 | it-law | `relokatsiya-it-biznesu` |
@@ -187,7 +188,6 @@
 | 5 | 351 | 0 | criminal-business | `zakhyst-dyrektora-kryminalna-sprava` |
 | 5 | 384 | 0 | criminal-business | `uhylennya-vid-podatkiv-st-212` |
 | 5 | 388 | 0 | ip-law | `yak-zareyestruvaty-torhovu-marku` |
-| 5 | 410 | 0 | family-law | `spadkovyy-dohovir` |
 | 5 | 412 | 0 | m-and-a | `spa-shcho-take` |
 | 5 | 422 | 0 | investment | `yurydychnyy-due-diligence` |
 | 5 | 427 | 0 | investment | `investytsiynyy-dohovir` |
