@@ -69,6 +69,35 @@ for (const a of articles) {
 }
 for (const p of pillars) p.clusterLabel = CLUSTER_LABELS[p.cluster] || "Блог";
 
+/* Рівномірно розкидаємо посилання на сторінки послуг між статтями практики.
+   Блок «Послуги напряму» у статті раніше брав завжди ПЕРШІ три послуги, тож
+   усі 813 посилань із блогу збиралися на 47 сторінках зі 186, а решта жили з
+   єдиним вхідним посиланням із хаба практики. Тут рахуємо розподіл наскрізним
+   курсором по практиці: кожна наступна стаття продовжує перелік з того місця,
+   де зупинилася попередня, тому послуги отримують посилання майже порівну.
+   Статті сортуємо за слагом, щоб розподіл не залежав від порядку у файлах і
+   не «стрибав» між збірками. */
+const SERVICE_LINKS_PER_ARTICLE = 3;
+{
+  const byPractice = new Map();
+  for (const a of articles) {
+    if (!a.practice) continue;
+    if (!byPractice.has(a.practice)) byPractice.set(a.practice, []);
+    byPractice.get(a.practice).push(a);
+  }
+  for (const [practiceSlug, list] of byPractice) {
+    const practice = practiceBySlug[practiceSlug];
+    const services = practice ? practiceServices(practice) : [];
+    if (!services.length) continue;
+    list.sort((x, y) => x.slug.localeCompare(y.slug));
+    const take = Math.min(SERVICE_LINKS_PER_ARTICLE, services.length);
+    let cursor = 0;
+    for (const a of list) {
+      a.serviceLinks = Array.from({ length: take }, () => services[cursor++ % services.length]);
+    }
+  }
+}
+
 const sitemapUrls = [];
 
 async function writePage(routePath, html, { lastmod, priority = "0.6", changefreq = "monthly", index = true } = {}) {
@@ -532,6 +561,12 @@ ${rssItems}
     { from: "poslugi-ta-vartist", to: "/practices/" },
     /* дефолтна сторінка WordPress: досі в індексі, дає покази й переходи на 404 */
     { from: "sample-page", to: "/" },
+    /* Google досі тримає ці URL (видно у звіті Search Console від 17.10.2026):
+       стару послугу згодом розділили на дві окремі, а дві адреси лишилися від
+       WooCommerce на попередньому сайті й вели на 404. */
+    { from: "practices/corporate-law/reyestratsiya-ta-strukturuvannya-biznesu", to: "/practices/corporate-law/strukturuvannya-biznesu-ta-hrupy-kompaniy/" },
+    { from: "product-tag/performance", to: "/practices/" },
+    { from: "product/premium-quality", to: "/practices/" },
     /* Команда тимчасово прихована — індексовані URL ведемо на /about/ */
     ...(site.showTeam ? [] : ["team", ...team.map((m) => `team/${m.slug}`)].map((from) => ({ from, to: "/about/" }))),
   ];
