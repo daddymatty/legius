@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **133** |
-| Коротших за 450 слів | 22 (старт 147) |
-| Із позначкою `expand` | 81 (старт 213) |
+| Опрацьовано | **136** |
+| Коротших за 450 слів | 19 (старт 147) |
+| Із позначкою `expand` | 78 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 44 |
+| Середній (5–6), лишилось | 41 |
 
 ## ✅ Опрацьовано
 
@@ -157,6 +157,9 @@
 | `oformlennya-prava-vlasnosti-na-zemlyu` | 2187 | land-law |
 | `ryzyky-investuvannya-v-novobudovu` | 2471 | real-estate |
 | `due-diligence-pered-kupivleyu-kompaniyi` | 2669 | m-and-a |
+| `znyattya-areshtu-z-rakhunkiv` | 2164 | criminal-business |
+| `patentuvannya-vynakhodu` | 2732 | ip-law |
+| `zakhyst-inozemnoho-investora` | 2325 | investment |
 
 ## Високий ризик — перевіряти першими
 
@@ -181,14 +184,11 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 339 | 0 | ip-law | `patentuvannya-vynakhodu` |
 | 5 | 351 | 0 | criminal-business | `zakhyst-dyrektora-kryminalna-sprava` |
-| 5 | 365 | 0 | criminal-business | `znyattya-areshtu-z-rakhunkiv` |
 | 5 | 384 | 0 | criminal-business | `uhylennya-vid-podatkiv-st-212` |
 | 5 | 388 | 0 | ip-law | `yak-zareyestruvaty-torhovu-marku` |
 | 5 | 410 | 0 | family-law | `spadkovyy-dohovir` |
 | 5 | 412 | 0 | m-and-a | `spa-shcho-take` |
-| 5 | 416 | 0 | investment | `zakhyst-inozemnoho-investora` |
 | 5 | 422 | 0 | investment | `yurydychnyy-due-diligence` |
 | 5 | 427 | 0 | investment | `investytsiynyy-dohovir` |
 | 5 | 428 | 0 | family-law | `rozirvannya-shlyubu` |
