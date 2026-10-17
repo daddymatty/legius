@@ -488,7 +488,7 @@ async function build() {
     <title>${rssEsc(site.legalName)} — блог</title>
     <link>${site.domain}/blog/</link>
     <atom:link href="${site.domain}/blog/rss.xml" rel="self" type="application/rss+xml"/>
-    <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
+    <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
 ${rssItems}
