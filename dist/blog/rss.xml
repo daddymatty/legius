@@ -6,7 +6,15 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sat, 17 Oct 2026 17:19:35 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 17:34:54 GMT</lastBuildDate>
+    <item>
+      <title>Поділ майна подружжя: як справедливо розділити нажите</title>
+      <link>https://legius.com.ua/blog/podil-mayna-podruzhzhya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/podil-mayna-podruzhzhya/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Презумпцію спільності майна доводити не потрібно — її спростовує той, хто заперечує. А трирічна давність рахується не від дня розлучення, а від дня, коли ви дізналися про порушення права. Розбираємо обидва правила та практику ВС щодо реального поділу.</description>
+    </item>
     <item>
       <title>Аліменти на дитину: розмір, способи стягнення та індексація</title>
       <link>https://legius.com.ua/blog/alimenty-na-dytynu/</link>
@@ -168,6 +176,14 @@
       <description>Заяву про забезпечення позову господарський суд розглядає не пізніше двох днів і без повідомлення відповідача, а подана до позову вона зобов’язує подати позов упродовж десяти днів. Розбираємо види заходів, співмірність, зустрічне забезпечення та скасування.</description>
     </item>
     <item>
+      <title>Господарський спір покроково: від претензії до рішення суду</title>
+      <link>https://legius.com.ua/blog/hospodarskyy-spir-pokrokovo/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/hospodarskyy-spir-pokrokovo/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Від ціни позову залежить не лише збір, а й форма провадження: до 332 800 грн справа малозначна і розглядається спрощено, без засідань. Розбираємо кожну стадію за ГПК зі строками та те, як вибір форми впливає на доступність касації.</description>
+    </item>
+    <item>
       <title>Апеляція на рішення суду: строки, порядок та шанси на успіх</title>
       <link>https://legius.com.ua/blog/apelyatsiya-na-rishennya-sudu/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/apelyatsiya-na-rishennya-sudu/</guid>
@@ -222,6 +238,14 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Земельне право</category>
       <description>З 7 квітня 2022 року безоплатна передача земель державної та комунальної власності заборонена, і Верховний Суд визнав цю норму самостійною підставою для відмови. Але два винятки працюють. Розбираємо, що реально можна оформити у 2026 році.</description>
+    </item>
+    <item>
+      <title>Захист авторського права в Україні: твори, код і контент</title>
+      <link>https://legius.com.ua/blog/zakhyst-avtorskoho-prava/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zakhyst-avtorskoho-prava/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Інтелектуальна власність</category>
+      <description>Компенсацію можна стягнути замість збитків — від 2 до 200 прожиткових мінімумів або як подвоєну (за умислу потроєну) суму винагороди. І закон не вимагає доводити еквівалентність компенсації втратам. Розбираємо, як цим скористатися.</description>
     </item>
     <item>
       <title>Ліцензійний договір: як передати права на інтелектуальну власність</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Шість випадків, коли згода другого з батьків не потрібна, вікові правила за ст. 148 СК, різниця між зміною прізвища і по батькові та порядок при спорі.</description>
-    </item>
-    <item>
-      <title>Сімейна медіація: як вирішити спір без суду</title>
-      <link>https://legius.com.ua/blog/simeyna-mediatsiya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/simeyna-mediatsiya/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Медіація — позасудова добровільна процедура за Законом № 1875-IX. Розбираємо принципи, три різні угоди процедури, як надати домовленостям юридичну силу та чому в спорах про дітей медіація має власне обмеження.</description>
-    </item>
-    <item>
-      <title>Опіка та піклування над дитиною: хто і як оформлює</title>
-      <link>https://legius.com.ua/blog/opika-ta-pikluvannya-nad-dytynoyu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/opika-ta-pikluvannya-nad-dytynoyu/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Опіка встановлюється над дитиною до 14 років, піклування — від 14 до 18. Розбираємо вимоги до опікуна, переважне право родичів, порядок оформлення, розмір державної допомоги та відмінність від усиновлення, патронату й прийомної сім'ї.</description>
-    </item>
-    <item>
-      <title>Режим окремого проживання подружжя: що це і навіщо</title>
-      <link>https://legius.com.ua/blog/rozdilne-prozhyvannya-podruzhzhya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/rozdilne-prozhyvannya-podruzhzhya/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Що дає режим окремого проживання за ст. 119–120 СК, чому він діє лише на майбутнє, що саме змінюється для майна й дітей і коли суд відмовляє у його встановленні.</description>
     </item>
   </channel>
 </rss>
