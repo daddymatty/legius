@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sat, 17 Oct 2026 16:10:45 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 16:27:07 GMT</lastBuildDate>
     <item>
       <title>Позбавлення батьківських прав: підстави та процедура</title>
       <link>https://legius.com.ua/blog/pozbavlennya-batkivskykh-prav/</link>
@@ -128,6 +128,14 @@
       <description>SAFE та конвертована позика в Україні мають законну форму, але лише для резидентів Дія Сіті — це статті 29 і 30 Закону № 1667-IX. Розбираємо кожен інструмент, вибір права для корпоративного договору та валютні обмеження на репатріацію доходу інвестора.</description>
     </item>
     <item>
+      <title>Забезпечення позову та арешт рахунків: як зберегти активи опонента</title>
+      <link>https://legius.com.ua/blog/zabezpechennya-pozovu-aresht-rakhunkiv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zabezpechennya-pozovu-aresht-rakhunkiv/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Заяву про забезпечення позову господарський суд розглядає не пізніше двох днів і без повідомлення відповідача, а подана до позову вона зобов’язує подати позов упродовж десяти днів. Розбираємо види заходів, співмірність, зустрічне забезпечення та скасування.</description>
+    </item>
+    <item>
       <title>Реєстрація права власності на нерухомість: порядок дій 2026</title>
       <link>https://legius.com.ua/blog/reyestratsiya-prava-vlasnosti/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-prava-vlasnosti/</guid>
@@ -160,12 +168,28 @@
       <description>Якщо в договорі не зазначити вид ліцензії, закон вважає її невиключною, а без умови про територію вона діє на всю Україну. Розбираємо ст. 1107-1114 ЦК, три види ліцензій, істотні умови, строки за замовчуванням і коли платіж не є роялті.</description>
     </item>
     <item>
+      <title>Що робити при порушенні прав на торгову марку</title>
+      <link>https://legius.com.ua/blog/porushennya-prav-na-tm/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/porushennya-prav-na-tm/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Інтелектуальна власність</category>
+      <description>За статтею 20 Закону порушенням є навіть готування до дій, що потребують згоди власника. Розбираємо чотири шляхи захисту — претензію, АМКУ, суд і митницю — та який з них дає результат швидше.</description>
+    </item>
+    <item>
       <title>Дія.City: як вступити та переваги режиму для IT-бізнесу у 2026</title>
       <link>https://legius.com.ua/blog/diya-city-yak-vstupyty/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/diya-city-yak-vstupyty/</guid>
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>IT Law</category>
       <description>Критерії резидента прописані у статті 5 Закону № 1667-IX із точними цифрами: 1200 євро середньої винагороди щомісяця, дев’ять осіб, 90% кваліфікованого доходу. Розбираємо кожен, порядок вступу, податки та що саме відбувається при невиконанні критеріїв.</description>
+    </item>
+    <item>
+      <title>Дозвіл АМКУ на концентрацію: коли потрібен і як отримати</title>
+      <link>https://legius.com.ua/blog/dozvil-amku-na-kontsentratsiyu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/dozvil-amku-na-kontsentratsiyu/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>M&amp;A (Злиття і поглинання)</category>
+      <description>Поріг за ч. 1 ст. 24 Закону рахується з урахуванням відносин контролю по всій групі, тому його перетинають і середні угоди. Розбираємо порогові показники, плату, строки, правило «мовчазного дозволу» та відповідальність за gun jumping.</description>
     </item>
     <item>
       <title>Оскарження запобіжного заходу: тримання під вартою та застава</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Покроковий порядок зміни директора ТОВ: що вирішують учасники, які документи подаються реєстратору, як оформлюються накази та з якого моменту діють повноваження.</description>
-    </item>
-    <item>
-      <title>Due diligence бізнесу: як перевірити компанію перед купівлею</title>
-      <link>https://legius.com.ua/blog/due-diligence-biznesu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/due-diligence-biznesu/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Конкретний перелік реєстрів і документів, чотири можливі результати перевірки та нові питання, які з'явилися після скасування Господарського кодексу.</description>
-    </item>
-    <item>
-      <title>КЕП та електронний документообіг для бізнесу: що потрібно знати</title>
-      <link>https://legius.com.ua/blog/kep-elektronnyy-dokumentoobih/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/kep-elektronnyy-dokumentoobih/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Що насправді треба зробити через перехід на новий криптографічний стандарт, чому Дія.Підпис може заблокувати звітність іншим КЕП і яка юридична сила електронного документа.</description>
-    </item>
-    <item>
-      <title>Дивіденди в ТОВ: порядок нарахування та виплати учасникам</title>
-      <link>https://legius.com.ua/blog/dyvidendy-tov/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/dyvidendy-tov/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Порядок виплати дивідендів у ТОВ із цифрами: період кратний кварталу, строк шість місяців, чотири обмеження за ст. 27 і коли ПДФО 5 %, коли 9 %, а коли 18 %.</description>
     </item>
   </channel>
 </rss>
