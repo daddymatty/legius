@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **94** |
-| Коротших за 450 слів | 60 (старт 147) |
-| Із позначкою `expand` | 120 (старт 213) |
+| Опрацьовано | **97** |
+| Коротших за 450 слів | 57 (старт 147) |
+| Із позначкою `expand` | 117 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 83 |
+| Середній (5–6), лишилось | 80 |
 
 ## ✅ Опрацьовано
 
@@ -118,6 +118,9 @@
 | `opika-ta-pikluvannya-nad-dytynoyu` | 2243 | family-law |
 | `alimenty-na-druzhynu` | 2034 | family-law |
 | `domashnye-nasylstvo-okhoronnyy-order` | 2217 | family-law |
+| `kholdyngova-struktura` | 2200 | corporate-law |
+| `gdpr-personalni-dani-biznes` | 2078 | corporate-law |
+| `optsiony-dlya-pratsivnykiv` | 2292 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -129,9 +132,6 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 247 | 0 | corporate-law | `kholdyngova-struktura` |
-| 6 | 247 | 0 | corporate-law | `gdpr-personalni-dani-biznes` |
-| 6 | 250 | 0 | corporate-law | `optsiony-dlya-pratsivnykiv` |
 | 6 | 251 | 0 | corporate-law | `trudovi-vidnosyny-top-menedzhment` |
 | 6 | 251 | 0 | corporate-law | `bankrutstvo-kompanii` |
 | 6 | 252 | 0 | corporate-law | `zakhyst-komertsiynoyi-tayemnytsi` |
