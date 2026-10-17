@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **97** |
-| Коротших за 450 слів | 57 (старт 147) |
-| Із позначкою `expand` | 117 (старт 213) |
+| Опрацьовано | **100** |
+| Коротших за 450 слів | 54 (старт 147) |
+| Із позначкою `expand` | 114 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 80 |
+| Середній (5–6), лишилось | 77 |
 
 ## ✅ Опрацьовано
 
@@ -121,6 +121,9 @@
 | `kholdyngova-struktura` | 2200 | corporate-law |
 | `gdpr-personalni-dani-biznes` | 2078 | corporate-law |
 | `optsiony-dlya-pratsivnykiv` | 2292 | corporate-law |
+| `vykhid-uchasnyka-tov` | 1975 | corporate-law |
+| `bankrutstvo-kompanii` | 2202 | corporate-law |
+| `zakhyst-komertsiynoyi-tayemnytsi` | 2402 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -133,10 +136,7 @@
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
 | 6 | 251 | 0 | corporate-law | `trudovi-vidnosyny-top-menedzhment` |
-| 6 | 251 | 0 | corporate-law | `bankrutstvo-kompanii` |
-| 6 | 252 | 0 | corporate-law | `zakhyst-komertsiynoyi-tayemnytsi` |
 | 6 | 253 | 0 | corporate-law | `zaluchennya-investytsiy-startap` |
-| 6 | 254 | 0 | corporate-law | `vykhid-uchasnyka-tov` |
 | 6 | 264 | 0 | corporate-law | `korporatyvni-spory` |
 | 6 | 269 | 0 | corporate-law | `prodazh-chastky-tov` |
 | 6 | 287 | 0 | land-law | `zmina-tsilovoho-pryznachennya-zemli` |
