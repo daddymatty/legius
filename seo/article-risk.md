@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **130** |
-| Коротших за 450 слів | 25 (старт 147) |
-| Із позначкою `expand` | 84 (старт 213) |
+| Опрацьовано | **133** |
+| Коротших за 450 слів | 22 (старт 147) |
+| Із позначкою `expand` | 81 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 47 |
+| Середній (5–6), лишилось | 44 |
 
 ## ✅ Опрацьовано
 
@@ -154,6 +154,9 @@
 | `podil-mayna-podruzhzhya` | 2132 | family-law |
 | `zakhyst-avtorskoho-prava` | 1950 | ip-law |
 | `hospodarskyy-spir-pokrokovo` | 1963 | litigation |
+| `oformlennya-prava-vlasnosti-na-zemlyu` | 2187 | land-law |
+| `ryzyky-investuvannya-v-novobudovu` | 2471 | real-estate |
+| `due-diligence-pered-kupivleyu-kompaniyi` | 2669 | m-and-a |
 
 ## Високий ризик — перевіряти першими
 
@@ -165,10 +168,8 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 353 | 0 | land-law | `oformlennya-prava-vlasnosti-na-zemlyu` |
 | 6 | 366 | 0 | land-law | `orenda-zemli-dohovir-ta-ponovlennya` |
 | 6 | 379 | 0 | land-law | `zemelni-spory-z-susidamy` |
-| 6 | 384 | 0 | real-estate | `ryzyky-investuvannya-v-novobudovu` |
 | 6 | 397 | 0 | real-estate | `orenda-komertsiynoyi-nerukhomosti` |
 | 6 | 400 | 0 | real-estate | `suprovid-ugody-kupivli-prodazhu-kvartyry` |
 | 6 | 422 | 0 | it-law | `dogovir-z-rozrobnykom-b2b` |
@@ -185,7 +186,6 @@
 | 5 | 365 | 0 | criminal-business | `znyattya-areshtu-z-rakhunkiv` |
 | 5 | 384 | 0 | criminal-business | `uhylennya-vid-podatkiv-st-212` |
 | 5 | 388 | 0 | ip-law | `yak-zareyestruvaty-torhovu-marku` |
-| 5 | 402 | 0 | m-and-a | `due-diligence-pered-kupivleyu-kompaniyi` |
 | 5 | 410 | 0 | family-law | `spadkovyy-dohovir` |
 | 5 | 412 | 0 | m-and-a | `spa-shcho-take` |
 | 5 | 416 | 0 | investment | `zakhyst-inozemnoho-investora` |
