@@ -46,7 +46,7 @@ function siblingBlock(loc, locations, practiceBySlug) {
 
 export function locationPage(loc, { practiceBySlug, locationBySlug = {}, locations = [], cases = [], team = [] }) {
   const body = proseWithCta(loc.sections, renderSections);
-  /* відповідального адвоката беремо за першою пов'язаною практикою */
+  /* відповідального адвоката беремо за першою пов’язаною практикою */
   const practice = (loc.related || []).map((r) => practiceBySlug[r]).find(Boolean);
   const lawyer = practice ? findLawyer(practice, team) : null;
 
