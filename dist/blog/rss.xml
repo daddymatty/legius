@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sat, 17 Oct 2026 18:17:06 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 18:35:05 GMT</lastBuildDate>
     <item>
       <title>Поділ майна подружжя: як справедливо розділити нажите</title>
       <link>https://legius.com.ua/blog/podil-mayna-podruzhzhya/</link>
@@ -62,6 +62,14 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Сімейний кодекс знає три різні моделі недійсності шлюбу — і лише дві з них потребують суду. Розбираємо підстави ст. 39-41 СК, доказування фіктивності за практикою ВС, різницю між недійсним і неукладеним шлюбом та захист добросовісного подружжя.</description>
+    </item>
+    <item>
+      <title>Спадковий договір: альтернатива заповіту, яку складно оскаржити</title>
+      <link>https://legius.com.ua/blog/spadkovyy-dohovir/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/spadkovyy-dohovir/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Спадковий договір за главою 90 ЦК: чому до нього не застосовуються правила спадкування і обов’язкова частка, які гарантії дає стаття 1307 і хто взагалі може вимагати його розірвання.</description>
     </item>
     <item>
       <title>ВЛК для військовослужбовця: направлення, порядок, оскарження</title>
@@ -240,6 +248,14 @@
       <description>З 2024 року діє спрощений порядок: для частини ділянок за межами населених пунктів цільове призначення змінюється заявою власника до Державного земельного кадастру без документації із землеустрою. Розбираємо, коли це можливо, а коли діють старі правила.</description>
     </item>
     <item>
+      <title>Оренда землі: договір, орендна плата та поновлення</title>
+      <link>https://legius.com.ua/blog/orenda-zemli-dohovir-ta-ponovlennya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/orenda-zemli-dohovir-ta-ponovlennya/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Земельне право</category>
+      <description>Оренда землі від договору до поновлення: істотні умови за ст. 15 Закону № 161-XIV, строки та дата їх відліку, реєстрація права оренди, переважне право за ст. 33 і автоматичне поновлення за ст. 126-1 ЗКУ.</description>
+    </item>
+    <item>
       <title>Ринок землі: правила купівлі ділянки та обмеження</title>
       <link>https://legius.com.ua/blog/rynok-zemli-pravyla-kupivli/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/rynok-zemli-pravyla-kupivli/</guid>
@@ -312,6 +328,14 @@
       <description>Критерії резидента прописані у статті 5 Закону № 1667-IX із точними цифрами: 1200 євро середньої винагороди щомісяця, дев’ять осіб, 90% кваліфікованого доходу. Розбираємо кожен, порядок вступу, податки та що саме відбувається при невиконанні критеріїв.</description>
     </item>
     <item>
+      <title>Договір з розробником B2B: як захистити права на код і бізнес</title>
+      <link>https://legius.com.ua/blog/dogovir-z-rozrobnykom-b2b/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/dogovir-z-rozrobnykom-b2b/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>IT Law</category>
+      <description>Чому відсутність умови про передання прав робить права на код спільними за ст. 430 ЦК, яку конструкцію обрати за ст. 1107 ЦК, як працює право sui generis на ШІ-код і чим загрожує перекваліфікація відносин із ФОП.</description>
+    </item>
+    <item>
       <title>Юридичний due diligence перед купівлею компанії</title>
       <link>https://legius.com.ua/blog/due-diligence-pered-kupivleyu-kompaniyi/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/due-diligence-pered-kupivleyu-kompaniyi/</guid>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Дві дії, які часто плутають: виділ частки у спільному майні і спадкування. Плюс обов'язкова частка непрацездатної вдови та чому спільний заповіт подружжя має менше можливостей, ніж здається.</description>
-    </item>
-    <item>
-      <title>Домашнє насильство: охоронний ордер і захист потерпілих</title>
-      <link>https://legius.com.ua/blog/domashnye-nasylstvo-okhoronnyy-order/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/domashnye-nasylstvo-okhoronnyy-order/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>«Охоронного ордера» в українському праві немає — є два різні інструменти з різними строками й органами. Розбираємо терміновий заборонний припис, обмежувальний припис через суд, обмежувальні заходи за ст. 91-1 КК і відповідальність кривдника.</description>
-    </item>
-    <item>
-      <title>Розлучення онлайн: як розірвати шлюб дистанційно</title>
-      <link>https://legius.com.ua/blog/rozluchennya-online/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/rozluchennya-online/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>З вересня 2026 року шлюб без спільних неповнолітніх дітей можна розірвати повністю онлайн через «Дію». Розбираємо умови, кроки, строки та що робити, якщо є діти.</description>
-    </item>
-    <item>
-      <title>Заборгованість з аліментів: як стягнути борг і пеню</title>
-      <link>https://legius.com.ua/blog/alimenty-zaborhovanist/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-zaborhovanist/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Як рахується борг, якщо платник не працює, як правильно нарахувати пеню за ст. 196 СК, які санкції настають на 3, 4 місяці та на 1, 2, 3 роки боргу і що робити стягувачу.</description>
     </item>
   </channel>
 </rss>
