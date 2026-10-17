@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **100** |
-| Коротших за 450 слів | 54 (старт 147) |
-| Із позначкою `expand` | 114 (старт 213) |
+| Опрацьовано | **103** |
+| Коротших за 450 слів | 51 (старт 147) |
+| Із позначкою `expand` | 111 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 77 |
+| Середній (5–6), лишилось | 74 |
 
 ## ✅ Опрацьовано
 
@@ -124,6 +124,9 @@
 | `vykhid-uchasnyka-tov` | 1975 | corporate-law |
 | `bankrutstvo-kompanii` | 2202 | corporate-law |
 | `zakhyst-komertsiynoyi-tayemnytsi` | 2402 | corporate-law |
+| `vyznannya-shlyubu-nedijsnym` | 2054 | family-law |
+| `podil-biznesu-pry-rozluchenni` | 1950 | family-law |
+| `trudovi-vidnosyny-top-menedzhment` | 1936 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -135,7 +138,6 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 251 | 0 | corporate-law | `trudovi-vidnosyny-top-menedzhment` |
 | 6 | 253 | 0 | corporate-law | `zaluchennya-investytsiy-startap` |
 | 6 | 264 | 0 | corporate-law | `korporatyvni-spory` |
 | 6 | 269 | 0 | corporate-law | `prodazh-chastky-tov` |
@@ -162,8 +164,6 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 249 | 0 | family-law | `vyznannya-shlyubu-nedijsnym` |
-| 5 | 259 | 0 | family-law | `podil-biznesu-pry-rozluchenni` |
 | 5 | 287 | 0 | ip-law | `litsenziynyy-dohovir` |
 | 5 | 299 | 0 | family-law | `pozbavlennya-batkivskykh-prav` |
 | 5 | 303 | 0 | ip-law | `porushennya-prav-na-tm` |
