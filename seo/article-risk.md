@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **106** |
-| Коротших за 450 слів | 48 (старт 147) |
-| Із позначкою `expand` | 108 (старт 213) |
+| Опрацьовано | **109** |
+| Коротших за 450 слів | 45 (старт 147) |
+| Із позначкою `expand` | 105 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 71 |
+| Середній (5–6), лишилось | 68 |
 
 ## ✅ Опрацьовано
 
@@ -130,6 +130,9 @@
 | `prodazh-chastky-tov` | 2099 | corporate-law |
 | `reyestratsiya-fop-vs-tov` | 1969 | corporate-law |
 | `zmina-tsilovoho-pryznachennya-zemli` | 1668 | land-law |
+| `litsenziynyy-dohovir` | 1758 | ip-law |
+| `korporatyvni-spory` | 2083 | corporate-law |
+| `pozbavlennya-batkivskykh-prav` | 2095 | family-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -142,7 +145,6 @@
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
 | 6 | 253 | 0 | corporate-law | `zaluchennya-investytsiy-startap` |
-| 6 | 264 | 0 | corporate-law | `korporatyvni-spory` |
 | 6 | 295 | 0 | corporate-law | `statut-tov` |
 | 6 | 316 | 0 | land-law | `pryvatyzatsiya-zemelnoyi-dilyanky` |
 | 6 | 341 | 0 | land-law | `rynok-zemli-pravyla-kupivli` |
@@ -164,8 +166,6 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 287 | 0 | ip-law | `litsenziynyy-dohovir` |
-| 5 | 299 | 0 | family-law | `pozbavlennya-batkivskykh-prav` |
 | 5 | 303 | 0 | ip-law | `porushennya-prav-na-tm` |
 | 5 | 304 | 0 | ip-law | `domenni-spory` |
 | 5 | 309 | 0 | family-law | `viznachennya-mistsya-prozhyvannya-dytyny` |

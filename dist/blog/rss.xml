@@ -6,7 +6,15 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sat, 17 Oct 2026 15:10:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 15:25:46 GMT</lastBuildDate>
+    <item>
+      <title>Позбавлення батьківських прав: підстави та процедура</title>
+      <link>https://legius.com.ua/blog/pozbavlennya-batkivskykh-prav/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/pozbavlennya-batkivskykh-prav/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Несплата аліментів підставою для позбавлення прав не є, перелік підстав вичерпний, а Верховний Суд називає цей захід винятковим і вимагає доведеної вини. Розбираємо ст. 164-170 СК, тягар доказування, наслідки й поновлення прав.</description>
+    </item>
     <item>
       <title>Поділ бізнесу при розлученні: ТОВ, ФОП та корпоративні права</title>
       <link>https://legius.com.ua/blog/podil-biznesu-pry-rozluchenni/</link>
@@ -46,6 +54,14 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Переважне право інших учасників спрацьовує автоматично, якщо його не виключити статутом, а порушення дає позов про переведення прав покупця з однорічною давністю. Розбираємо порядок ст. 20-21 Закону про ТОВ, нотаріальний акт, реєстрацію та податки.</description>
+    </item>
+    <item>
+      <title>Корпоративні спори: види, причини та шляхи вирішення</title>
+      <link>https://legius.com.ua/blog/korporatyvni-spory/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/korporatyvni-spory/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Корпоративні права виникають не з договору, а з реєстрації в ЄДР, неповідомлення про збори саме по собі рішення не скасовує, а похідний позов доступний з 5 відсотками капіталу. Розбираємо підсудність, категорії спорів і позиції Верховного Суду.</description>
     </item>
     <item>
       <title>Захист комерційної таємниці: як убезпечити дані компанії</title>
@@ -102,6 +118,14 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Земельне право</category>
       <description>З 2024 року діє спрощений порядок: для частини ділянок за межами населених пунктів цільове призначення змінюється заявою власника до Державного земельного кадастру без документації із землеустрою. Розбираємо, коли це можливо, а коли діють старі правила.</description>
+    </item>
+    <item>
+      <title>Ліцензійний договір: як передати права на інтелектуальну власність</title>
+      <link>https://legius.com.ua/blog/litsenziynyy-dohovir/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/litsenziynyy-dohovir/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Інтелектуальна власність</category>
+      <description>Якщо в договорі не зазначити вид ліцензії, закон вважає її невиключною, а без умови про територію вона діє на всю Україну. Розбираємо ст. 1107-1114 ЦК, три види ліцензій, істотні умови, строки за замовчуванням і коли платіж не є роялті.</description>
     </item>
     <item>
       <title>Встановлення батьківства: добровільно та через суд</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Пояснюємо, чим громадська спілка відрізняється від громадської організації, хто може її засновувати, як проходить реєстрація і чому саме ця форма підходить для галузевих об’єднань.</description>
-    </item>
-    <item>
-      <title>Реєстрація асоціації: яку форму обрати для об’єднання</title>
-      <link>https://legius.com.ua/blog/reyestratsiya-asotsiatsiyi/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-asotsiatsiyi/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>«Асоціація» — це не окрема організаційно-правова форма, а назва. Пояснюємо, яку форму обрати під конкретну мету і які ризики виникають, коли конкуренти збираються за одним столом.</description>
-    </item>
-    <item>
-      <title>Дозвільні документи для бізнесу: як отримати</title>
-      <link>https://legius.com.ua/blog/dozvilni-dokumenty/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/dozvilni-dokumenty/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Розбираємо різницю між ліцензією і дозволом, найпоширеніші дозвільні документи, декларативний принцип, мовчазну згоду та порядок дій при відмові.</description>
-    </item>
-    <item>
-      <title>Податкова перевірка: види, підстави та як підготуватися бізнесу</title>
-      <link>https://legius.com.ua/blog/podatkova-perevirka/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/podatkova-perevirka/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо, як призначають податкову перевірку, які документи перевіряльники мають предʼявити, які права має платник і що робити з актом перевірки.</description>
     </item>
   </channel>
 </rss>
