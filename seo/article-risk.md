@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **115** |
-| Коротших за 450 слів | 40 (старт 147) |
-| Із позначкою `expand` | 99 (старт 213) |
+| Опрацьовано | **118** |
+| Коротших за 450 слів | 37 (старт 147) |
+| Із позначкою `expand` | 96 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 62 |
+| Середній (5–6), лишилось | 59 |
 
 ## ✅ Опрацьовано
 
@@ -139,6 +139,9 @@
 | `zaluchennya-investytsiy-startap` | 2208 | corporate-law |
 | `pryvatyzatsiya-zemelnoyi-dilyanky` | 1783 | land-law |
 | `diya-city-yak-vstupyty` | 1866 | it-law |
+| `zabezpechennya-pozovu-aresht-rakhunkiv` | 1853 | litigation |
+| `dozvil-amku-na-kontsentratsiyu` | 1900 | m-and-a |
+| `porushennya-prav-na-tm` | 2149 | ip-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -168,7 +171,6 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 303 | 0 | ip-law | `porushennya-prav-na-tm` |
 | 5 | 304 | 0 | ip-law | `domenni-spory` |
 | 5 | 309 | 0 | family-law | `viznachennya-mistsya-prozhyvannya-dytyny` |
 | 5 | 309 | 0 | ip-law | `zakhyst-avtorskoho-prava` |
@@ -179,7 +181,6 @@
 | 5 | 351 | 0 | criminal-business | `zakhyst-dyrektora-kryminalna-sprava` |
 | 5 | 365 | 0 | criminal-business | `znyattya-areshtu-z-rakhunkiv` |
 | 5 | 376 | 0 | litigation | `hospodarskyy-spir-pokrokovo` |
-| 5 | 380 | 0 | litigation | `zabezpechennya-pozovu-aresht-rakhunkiv` |
 | 5 | 384 | 0 | criminal-business | `uhylennya-vid-podatkiv-st-212` |
 | 5 | 388 | 0 | ip-law | `yak-zareyestruvaty-torhovu-marku` |
 | 5 | 390 | 0 | litigation | `apelyatsiya-na-rishennya-sudu` |
@@ -188,7 +189,6 @@
 | 5 | 410 | 0 | family-law | `spadkovyy-dohovir` |
 | 5 | 412 | 0 | m-and-a | `spa-shcho-take` |
 | 5 | 416 | 0 | investment | `zakhyst-inozemnoho-investora` |
-| 5 | 417 | 0 | m-and-a | `dozvil-amku-na-kontsentratsiyu` |
 | 5 | 422 | 0 | investment | `yurydychnyy-due-diligence` |
 | 5 | 427 | 0 | investment | `investytsiynyy-dohovir` |
 | 5 | 428 | 0 | family-law | `rozirvannya-shlyubu` |
