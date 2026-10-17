@@ -6,7 +6,31 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 23:59:26 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 00:17:50 GMT</lastBuildDate>
+    <item>
+      <title>Опціони для працівників: як мотивувати команду часткою в бізнесі</title>
+      <link>https://legius.com.ua/blog/optsiony-dlya-pratsivnykiv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/optsiony-dlya-pratsivnykiv/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Українське право не має окремого режиму для опціонних програм. Розбираємо, на чому їх будують насправді — корпоративний договір, безвідклична довіреність, фантомні акції — як влаштований vesting і де виникає податкове зобов'язання.</description>
+    </item>
+    <item>
+      <title>Холдингова структура бізнесу: навіщо і як її побудувати</title>
+      <link>https://legius.com.ua/blog/kholdyngova-struktura/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/kholdyngova-struktura/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>З 28 серпня 2025 року створювати юридичні особи у формі дочірнього та іноземного підприємства заборонено, а наявні треба реорганізувати до 28 серпня 2028-го. Розбираємо, що таке холдинг за законом, як тепер структурувати групу і які зобов'язання вона породжує.</description>
+    </item>
+    <item>
+      <title>GDPR та персональні дані для бізнесу: вимоги та відповідальність</title>
+      <link>https://legius.com.ua/blog/gdpr-personalni-dani-biznes/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/gdpr-personalni-dani-biznes/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Український закон про персональні дані залишився на рівні директиви 1995 року, а максимальний штраф — близько 34 тис. грн. Але частина українського бізнесу підпадає під GDPR напряму, де штрафи інші. Розбираємо обидва режими й реформу, що готується.</description>
+    </item>
     <item>
       <title>Встановлення батьківства: добровільно та через суд</title>
       <link>https://legius.com.ua/blog/vstanovlennya-batkivstva/</link>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Розбираємо правила трансфертного ціноутворення за статтею 39 ПКУ: три фільтри контрольованості, вартісні критерії, звітність, документацію та принцип «витягнутої руки».</description>
-    </item>
-    <item>
-      <title>КІК: контрольовані іноземні компанії — звітність та податки</title>
-      <link>https://legius.com.ua/blog/kik-kontrolovani-inozemni-kompanii/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/kik-kontrolovani-inozemni-kompanii/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо правила КІК із конкретними цифрами: пороги володіння, строки звіту та повідомлення, п’ять підстав звільнення, ставки 18 % і 9 % та мораторій на штрафи, який не є прощенням.</description>
-    </item>
-    <item>
-      <title>Податкова амністія в Україні: чи діє добровільне декларування</title>
-      <link>https://legius.com.ua/blog/podatkova-amnistiya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/podatkova-amnistiya/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Одноразове (спеціальне) добровільне декларування діяло з 1 вересня 2021 до 1 березня 2023 року й завершилося. Пояснюємо, що це означає для власників незадекларованих активів зараз.</description>
-    </item>
-    <item>
-      <title>Врегулювання спору з ДПС: розстрочення та відстрочення боргу</title>
-      <link>https://legius.com.ua/blog/podatkovyj-kompromis/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/podatkovyj-kompromis/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо механізм розстрочення та відстрочення податкового боргу: підстави, ціну у вигляді процентів, межі повноважень органів ДПС і чому застава не знімається.</description>
     </item>
   </channel>
 </rss>
