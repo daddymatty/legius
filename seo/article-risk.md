@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **112** |
-| Коротших за 450 слів | 43 (старт 147) |
-| Із позначкою `expand` | 102 (старт 213) |
+| Опрацьовано | **115** |
+| Коротших за 450 слів | 40 (старт 147) |
+| Із позначкою `expand` | 99 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 65 |
+| Середній (5–6), лишилось | 62 |
 
 ## ✅ Опрацьовано
 
@@ -136,6 +136,9 @@
 | `oskarzhennya-zapobizhnoho-zakhodu` | 2128 | criminal-business |
 | `reyestratsiya-prava-vlasnosti` | 1863 | real-estate |
 | `vlk-viyskovosluzhbovtsyu` | 1974 | military-law |
+| `zaluchennya-investytsiy-startap` | 2208 | corporate-law |
+| `pryvatyzatsiya-zemelnoyi-dilyanky` | 1783 | land-law |
+| `diya-city-yak-vstupyty` | 1866 | it-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -147,9 +150,7 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 253 | 0 | corporate-law | `zaluchennya-investytsiy-startap` |
 | 6 | 295 | 0 | corporate-law | `statut-tov` |
-| 6 | 316 | 0 | land-law | `pryvatyzatsiya-zemelnoyi-dilyanky` |
 | 6 | 341 | 0 | land-law | `rynok-zemli-pravyla-kupivli` |
 | 6 | 353 | 0 | land-law | `oformlennya-prava-vlasnosti-na-zemlyu` |
 | 6 | 362 | 0 | real-estate | `spory-iz-zabudovnykom` |
@@ -160,7 +161,6 @@
 | 6 | 400 | 0 | real-estate | `suprovid-ugody-kupivli-prodazhu-kvartyry` |
 | 6 | 422 | 0 | it-law | `dogovir-z-rozrobnykom-b2b` |
 | 6 | 425 | 0 | it-law | `hih-kontrakt-proty-fop` |
-| 6 | 426 | 0 | it-law | `diya-city-yak-vstupyty` |
 | 6 | 434 | 0 | real-estate | `perevirka-nerukhomosti-pered-kupivleyu` |
 | 6 | 444 | 0 | it-law | `relokatsiya-it-biznesu` |
 | 6 | 454 | 1 | it-law | `gdpr-dlya-ukrayinskogo-it` |

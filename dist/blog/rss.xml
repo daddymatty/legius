@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sat, 17 Oct 2026 15:46:59 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 16:04:44 GMT</lastBuildDate>
     <item>
       <title>Позбавлення батьківських прав: підстави та процедура</title>
       <link>https://legius.com.ua/blog/pozbavlennya-batkivskykh-prav/</link>
@@ -120,6 +120,14 @@
       <description>Український закон про персональні дані залишився на рівні директиви 1995 року, а максимальний штраф — близько 34 тис. грн. Але частина українського бізнесу підпадає під GDPR напряму, де штрафи інші. Розбираємо обидва режими й реформу, що готується.</description>
     </item>
     <item>
+      <title>Залучення інвестицій у стартап: SAFE, конвертований займ і частка</title>
+      <link>https://legius.com.ua/blog/zaluchennya-investytsiy-startap/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zaluchennya-investytsiy-startap/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>SAFE та конвертована позика в Україні мають законну форму, але лише для резидентів Дія Сіті — це статті 29 і 30 Закону № 1667-IX. Розбираємо кожен інструмент, вибір права для корпоративного договору та валютні обмеження на репатріацію доходу інвестора.</description>
+    </item>
+    <item>
       <title>Реєстрація права власності на нерухомість: порядок дій 2026</title>
       <link>https://legius.com.ua/blog/reyestratsiya-prava-vlasnosti/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-prava-vlasnosti/</guid>
@@ -136,12 +144,28 @@
       <description>З 2024 року діє спрощений порядок: для частини ділянок за межами населених пунктів цільове призначення змінюється заявою власника до Державного земельного кадастру без документації із землеустрою. Розбираємо, коли це можливо, а коли діють старі правила.</description>
     </item>
     <item>
+      <title>Приватизація земельної ділянки: безоплатне отримання землі</title>
+      <link>https://legius.com.ua/blog/pryvatyzatsiya-zemelnoyi-dilyanky/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/pryvatyzatsiya-zemelnoyi-dilyanky/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Земельне право</category>
+      <description>З 7 квітня 2022 року безоплатна передача земель державної та комунальної власності заборонена, і Верховний Суд визнав цю норму самостійною підставою для відмови. Але два винятки працюють. Розбираємо, що реально можна оформити у 2026 році.</description>
+    </item>
+    <item>
       <title>Ліцензійний договір: як передати права на інтелектуальну власність</title>
       <link>https://legius.com.ua/blog/litsenziynyy-dohovir/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/litsenziynyy-dohovir/</guid>
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Інтелектуальна власність</category>
       <description>Якщо в договорі не зазначити вид ліцензії, закон вважає її невиключною, а без умови про територію вона діє на всю Україну. Розбираємо ст. 1107-1114 ЦК, три види ліцензій, істотні умови, строки за замовчуванням і коли платіж не є роялті.</description>
+    </item>
+    <item>
+      <title>Дія.City: як вступити та переваги режиму для IT-бізнесу у 2026</title>
+      <link>https://legius.com.ua/blog/diya-city-yak-vstupyty/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/diya-city-yak-vstupyty/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>IT Law</category>
+      <description>Критерії резидента прописані у статті 5 Закону № 1667-IX із точними цифрами: 1200 євро середньої винагороди щомісяця, дев’ять осіб, 90% кваліфікованого доходу. Розбираємо кожен, порядок вступу, податки та що саме відбувається при невиконанні критеріїв.</description>
     </item>
     <item>
       <title>Оскарження запобіжного заходу: тримання під вартою та застава</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Порядок виплати дивідендів у ТОВ із цифрами: період кратний кварталу, строк шість місяців, чотири обмеження за ст. 27 і коли ПДФО 5 %, коли 9 %, а коли 18 %.</description>
-    </item>
-    <item>
-      <title>Ліквідація компанії: як закрити ТОВ законно та без боргів</title>
-      <link>https://legius.com.ua/blog/likvidatsiya-kompanii/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/likvidatsiya-kompanii/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Що обов'язково має містити рішення про ліквідацію, чому строк для кредиторів від двох до шести місяців, у якій черговості гасять борги і чому реальний строк 4–9 місяців.</description>
-    </item>
-    <item>
-      <title>Договірна робота в компанії: як убезпечити бізнес від ризиків</title>
-      <link>https://legius.com.ua/blog/dohovirna-robota/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/dohovirna-robota/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Скасування ГК змінило правила договірної роботи: істотні умови тепер за ст. 638 ЦК, зникло шестимісячне обмеження санкцій. Що перевірити в старих договорах і як побудувати систему.</description>
-    </item>
-    <item>
-      <title>Антимонопольне право: дозвіл АМКУ, порушення та штрафи</title>
-      <link>https://legius.com.ua/blog/antymonopolne-pravo/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/antymonopolne-pravo/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Розбираємо, коли угода потребує дозволу АМКУ, чому її заборонено закривати до його отримання, які види порушень існують і як рахуються штрафи у відсотках доходу.</description>
     </item>
   </channel>
 </rss>
