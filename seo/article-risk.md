@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **121** |
-| Коротших за 450 слів | 34 (старт 147) |
-| Із позначкою `expand` | 93 (старт 213) |
+| Опрацьовано | **124** |
+| Коротших за 450 слів | 31 (старт 147) |
+| Із позначкою `expand` | 90 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 56 |
+| Середній (5–6), лишилось | 53 |
 
 ## ✅ Опрацьовано
 
@@ -145,6 +145,9 @@
 | `statut-tov` | 1722 | corporate-law |
 | `viznachennya-mistsya-prozhyvannya-dytyny` | 2074 | family-law |
 | `apelyatsiya-na-rishennya-sudu` | 1829 | litigation |
+| `alimenty-na-dytynu` | 1914 | family-law |
+| `domenni-spory` | 1722 | ip-law |
+| `rynok-zemli-pravyla-kupivli` | 1729 | land-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -156,7 +159,6 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 341 | 0 | land-law | `rynok-zemli-pravyla-kupivli` |
 | 6 | 353 | 0 | land-law | `oformlennya-prava-vlasnosti-na-zemlyu` |
 | 6 | 362 | 0 | real-estate | `spory-iz-zabudovnykom` |
 | 6 | 366 | 0 | land-law | `orenda-zemli-dohovir-ta-ponovlennya` |
@@ -173,9 +175,7 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 304 | 0 | ip-law | `domenni-spory` |
 | 5 | 309 | 0 | ip-law | `zakhyst-avtorskoho-prava` |
-| 5 | 312 | 0 | family-law | `alimenty-na-dytynu` |
 | 5 | 322 | 0 | family-law | `shlyubnyy-dohovir` |
 | 5 | 339 | 0 | family-law | `podil-mayna-podruzhzhya` |
 | 5 | 339 | 0 | ip-law | `patentuvannya-vynakhodu` |

@@ -6,7 +6,15 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sat, 17 Oct 2026 16:48:17 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 17:03:57 GMT</lastBuildDate>
+    <item>
+      <title>Аліменти на дитину: розмір, способи стягнення та індексація</title>
+      <link>https://legius.com.ua/blog/alimenty-na-dytynu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-na-dytynu/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Мінімальний гарантований розмір аліментів у 2026 році — 1 408,50 грн на дитину до 6 років і 1 756 грн на дитину від 6 до 18. Розбираємо частки за ст. 183 СК, судовий наказ за 332,80 грн, пеню 1% на день і заходи впливу на боржника.</description>
+    </item>
     <item>
       <title>Визначення місця проживання дитини після розлучення</title>
       <link>https://legius.com.ua/blog/viznachennya-mistsya-prozhyvannya-dytyny/</link>
@@ -176,6 +184,14 @@
       <description>З 2024 року діє спрощений порядок: для частини ділянок за межами населених пунктів цільове призначення змінюється заявою власника до Державного земельного кадастру без документації із землеустрою. Розбираємо, коли це можливо, а коли діють старі правила.</description>
     </item>
     <item>
+      <title>Ринок землі: правила купівлі ділянки та обмеження</title>
+      <link>https://legius.com.ua/blog/rynok-zemli-pravyla-kupivli/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/rynok-zemli-pravyla-kupivli/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Земельне право</category>
+      <description>Ліміт у 10 000 га рахується «в одні руки» з урахуванням часток подружжя, оплата можлива лише безготівково, а джерела коштів потрібно підтвердити документально. Розбираємо, хто може купувати землю, чиє переважне право треба врахувати та що перевіряє нотаріус.</description>
+    </item>
+    <item>
       <title>Приватизація земельної ділянки: безоплатне отримання землі</title>
       <link>https://legius.com.ua/blog/pryvatyzatsiya-zemelnoyi-dilyanky/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/pryvatyzatsiya-zemelnoyi-dilyanky/</guid>
@@ -198,6 +214,14 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Інтелектуальна власність</category>
       <description>За статтею 20 Закону порушенням є навіть готування до дій, що потребують згоди власника. Розбираємо чотири шляхи захисту — претензію, АМКУ, суд і митницю — та який з них дає результат швидше.</description>
+    </item>
+    <item>
+      <title>Доменні спори та кіберсквотинг: як повернути домен</title>
+      <link>https://legius.com.ua/blog/domenni-spory/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/domenni-spory/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Інтелектуальна власність</category>
+      <description>За Політикою .UA достатньо довести, що домен зареєстрований АБО використовується недобросовісно, тоді як UDRP вимагає довести і те, і те. Розбираємо три елементи скарги, межі механізму та коли замість передання домену варто просити його скасування.</description>
     </item>
     <item>
       <title>Дія.City: як вступити та переваги режиму для IT-бізнесу у 2026</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Розбираємо відстрочку з підстав опіки та догляду: чим ці підстави відрізняються, які документи підтверджують кожну з них і чому право без оформленої відстрочки не захищає.</description>
-    </item>
-    <item>
-      <title>Оскарження повістки: коли і як це робити законно</title>
-      <link>https://legius.com.ua/blog/oskarzhennya-povistky/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-povistky/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Пояснюємо, чому саму повістку оскаржити неможливо, що є належним врученням, яку роль має «Резерв+» і які рішення та дії ТЦК оскаржуються насправді.</description>
-    </item>
-    <item>
-      <title>Виплати пораненим військовим і сім’ям загиблих: як домогтися</title>
-      <link>https://legius.com.ua/blog/vyplaty-poranenym-simyam/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vyplaty-poranenym-simyam/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо розміри одноразової грошової допомоги пораненим і сім’ям загиблих, чому формулювання у висновку ВЛК змінює суму в три рази, та що робити у разі відмови.</description>
-    </item>
-    <item>
-      <title>Дезертирство та стаття 408 ККУ: відповідальність і захист</title>
-      <link>https://legius.com.ua/blog/dezertyrstvo-stattya-408/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/dezertyrstvo-stattya-408/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Військове право</category>
-      <description>Розбираємо склад дезертирства за ст. 408 ККУ, межу між ним і СЗЧ, строки покарання, як доводиться мета ухилитися та що зі спрощеною програмою повернення.</description>
     </item>
   </channel>
 </rss>
