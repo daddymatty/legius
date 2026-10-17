@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **127** |
-| Коротших за 450 слів | 28 (старт 147) |
-| Із позначкою `expand` | 87 (старт 213) |
+| Опрацьовано | **130** |
+| Коротших за 450 слів | 25 (старт 147) |
+| Із позначкою `expand` | 84 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 50 |
+| Середній (5–6), лишилось | 47 |
 
 ## ✅ Опрацьовано
 
@@ -151,6 +151,9 @@
 | `shlyubnyy-dohovir` | 1858 | family-law |
 | `spory-iz-zabudovnykom` | 1854 | real-estate |
 | `kasatsiyna-skarga-verkhovnyy-sud` | 1820 | litigation |
+| `podil-mayna-podruzhzhya` | 2132 | family-law |
+| `zakhyst-avtorskoho-prava` | 1950 | ip-law |
+| `hospodarskyy-spir-pokrokovo` | 1963 | litigation |
 
 ## Високий ризик — перевіряти першими
 
@@ -177,12 +180,9 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 309 | 0 | ip-law | `zakhyst-avtorskoho-prava` |
-| 5 | 339 | 0 | family-law | `podil-mayna-podruzhzhya` |
 | 5 | 339 | 0 | ip-law | `patentuvannya-vynakhodu` |
 | 5 | 351 | 0 | criminal-business | `zakhyst-dyrektora-kryminalna-sprava` |
 | 5 | 365 | 0 | criminal-business | `znyattya-areshtu-z-rakhunkiv` |
-| 5 | 376 | 0 | litigation | `hospodarskyy-spir-pokrokovo` |
 | 5 | 384 | 0 | criminal-business | `uhylennya-vid-podatkiv-st-212` |
 | 5 | 388 | 0 | ip-law | `yak-zareyestruvaty-torhovu-marku` |
 | 5 | 402 | 0 | m-and-a | `due-diligence-pered-kupivleyu-kompaniyi` |
