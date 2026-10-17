@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Fri, 16 Oct 2026 23:43:24 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 23:59:26 GMT</lastBuildDate>
     <item>
       <title>Встановлення батьківства: добровільно та через суд</title>
       <link>https://legius.com.ua/blog/vstanovlennya-batkivstva/</link>
@@ -24,6 +24,14 @@
       <description>Коли достатньо ДРАЦС, а коли без суду не обійтися, хто визначає підсудність, якщо обоє живуть за кордоном, чому при судовому розлученні не видають свідоцтва і як легалізувати результат.</description>
     </item>
     <item>
+      <title>Аліменти на дружину: коли можна стягнути утримання</title>
+      <link>https://legius.com.ua/blog/alimenty-na-druzhynu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-na-druzhynu/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Аліменти на дружину чи чоловіка — це не одна норма, а шість різних підстав із різними умовами. Розбираємо кожну, строки, розмір, підстави позбавлення права на утримання та випадок співжиття без шлюбу.</description>
+    </item>
+    <item>
       <title>Шлюб з іноземцем в Україні: реєстрація та документи</title>
       <link>https://legius.com.ua/blog/shlyub-z-inozemtsem/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/shlyub-z-inozemtsem/</guid>
@@ -38,6 +46,14 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Дві дії, які часто плутають: виділ частки у спільному майні і спадкування. Плюс обов'язкова частка непрацездатної вдови та чому спільний заповіт подружжя має менше можливостей, ніж здається.</description>
+    </item>
+    <item>
+      <title>Домашнє насильство: охоронний ордер і захист потерпілих</title>
+      <link>https://legius.com.ua/blog/domashnye-nasylstvo-okhoronnyy-order/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/domashnye-nasylstvo-okhoronnyy-order/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>«Охоронного ордера» в українському праві немає — є два різні інструменти з різними строками й органами. Розбираємо терміновий заборонний припис, обмежувальний припис через суд, обмежувальні заходи за ст. 91-1 КК і відповідальність кривдника.</description>
     </item>
     <item>
       <title>Розлучення онлайн: як розірвати шлюб дистанційно</title>
@@ -110,6 +126,14 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Медіація — позасудова добровільна процедура за Законом № 1875-IX. Розбираємо принципи, три різні угоди процедури, як надати домовленостям юридичну силу та чому в спорах про дітей медіація має власне обмеження.</description>
+    </item>
+    <item>
+      <title>Опіка та піклування над дитиною: хто і як оформлює</title>
+      <link>https://legius.com.ua/blog/opika-ta-pikluvannya-nad-dytynoyu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/opika-ta-pikluvannya-nad-dytynoyu/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Опіка встановлюється над дитиною до 14 років, піклування — від 14 до 18. Розбираємо вимоги до опікуна, переважне право родичів, порядок оформлення, розмір державної допомоги та відмінність від усиновлення, патронату й прийомної сім'ї.</description>
     </item>
     <item>
       <title>Режим окремого проживання подружжя: що це і навіщо</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Розбираємо механізм розстрочення та відстрочення податкового боргу: підстави, ціну у вигляді процентів, межі повноважень органів ДПС і чому застава не знімається.</description>
-    </item>
-    <item>
-      <title>Штрафи ДПС: за що і скільки платить бізнес</title>
-      <link>https://legius.com.ua/blog/shtrafy-dps/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/shtrafy-dps/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо розміри штрафів ДПС: 340 і 1020 грн за звітність, 5 % і 10 % за прострочення сплати, 25 % і 50 % за умисність — і чому умисність є головним питанням спору.</description>
-    </item>
-    <item>
-      <title>ПДФО, військовий збір та ЄСВ: ставки й хто що платить</title>
-      <link>https://legius.com.ua/blog/pdfo-ta-esv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/pdfo-ta-esv/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо зарплатні податки: 18 % ПДФО і 5 % військового збору з працівника, 22 % ЄСВ понад зарплату, максимальна база 20 мінімальних зарплат і розрахунок від мінімалки.</description>
-    </item>
-    <item>
-      <title>Оподаткування дивідендів: ставки для резидентів і нерезидентів</title>
-      <link>https://legius.com.ua/blog/opodatkuvannya-dyvidendiv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/opodatkuvannya-dyvidendiv/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо ставки ПДФО з дивідендів 5 % і 9 % та від чого вони залежать, військовий збір, авансовий внесок з податку на прибуток і податок на репатріацію.</description>
     </item>
   </channel>
 </rss>
