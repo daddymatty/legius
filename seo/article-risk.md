@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **103** |
-| Коротших за 450 слів | 51 (старт 147) |
-| Із позначкою `expand` | 111 (старт 213) |
+| Опрацьовано | **106** |
+| Коротших за 450 слів | 48 (старт 147) |
+| Із позначкою `expand` | 108 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 74 |
+| Середній (5–6), лишилось | 71 |
 
 ## ✅ Опрацьовано
 
@@ -127,6 +127,9 @@
 | `vyznannya-shlyubu-nedijsnym` | 2054 | family-law |
 | `podil-biznesu-pry-rozluchenni` | 1950 | family-law |
 | `trudovi-vidnosyny-top-menedzhment` | 1936 | corporate-law |
+| `prodazh-chastky-tov` | 2099 | corporate-law |
+| `reyestratsiya-fop-vs-tov` | 1969 | corporate-law |
+| `zmina-tsilovoho-pryznachennya-zemli` | 1668 | land-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -140,9 +143,6 @@
 |---|---|---|---|---|
 | 6 | 253 | 0 | corporate-law | `zaluchennya-investytsiy-startap` |
 | 6 | 264 | 0 | corporate-law | `korporatyvni-spory` |
-| 6 | 269 | 0 | corporate-law | `prodazh-chastky-tov` |
-| 6 | 287 | 0 | land-law | `zmina-tsilovoho-pryznachennya-zemli` |
-| 6 | 295 | 0 | corporate-law | `reyestratsiya-fop-vs-tov` |
 | 6 | 295 | 0 | corporate-law | `statut-tov` |
 | 6 | 316 | 0 | land-law | `pryvatyzatsiya-zemelnoyi-dilyanky` |
 | 6 | 341 | 0 | land-law | `rynok-zemli-pravyla-kupivli` |

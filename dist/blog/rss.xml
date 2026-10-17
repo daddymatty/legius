@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sat, 17 Oct 2026 14:55:57 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 15:10:27 GMT</lastBuildDate>
     <item>
       <title>Поділ бізнесу при розлученні: ТОВ, ФОП та корпоративні права</title>
       <link>https://legius.com.ua/blog/podil-biznesu-pry-rozluchenni/</link>
@@ -24,12 +24,28 @@
       <description>Сімейний кодекс знає три різні моделі недійсності шлюбу — і лише дві з них потребують суду. Розбираємо підстави ст. 39-41 СК, доказування фіктивності за практикою ВС, різницю між недійсним і неукладеним шлюбом та захист добросовісного подружжя.</description>
     </item>
     <item>
+      <title>ФОП чи ТОВ: що обрати для бізнесу в Україні 2026</title>
+      <link>https://legius.com.ua/blog/reyestratsiya-fop-vs-tov/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-fop-vs-tov/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Головна різниця не в податках, а у відповідальності: ФОП відповідає всім особистим майном, учасник ТОВ — лише вкладом. Розбираємо ліміти й ставки єдиного податку 2026, реальну вартість обслуговування, ПДВ і коли яка форма виправдана.</description>
+    </item>
+    <item>
       <title>Вихід учасника з ТОВ: процедура та виплата частки</title>
       <link>https://legius.com.ua/blog/vykhid-uchasnyka-tov/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/vykhid-uchasnyka-tov/</guid>
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Вихід із ТОВ залежить від однієї цифри — розміру частки. Розбираємо порядок за ст. 24 Закону про ТОВ, строки повідомлення й виплати, як визначається вартість частки, оподаткування та чому «виключити» проблемного учасника закон майже не дозволяє.</description>
+    </item>
+    <item>
+      <title>Продаж частки в ТОВ: як оформити безпечно та без ризиків</title>
+      <link>https://legius.com.ua/blog/prodazh-chastky-tov/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/prodazh-chastky-tov/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Переважне право інших учасників спрацьовує автоматично, якщо його не виключити статутом, а порушення дає позов про переведення прав покупця з однорічною давністю. Розбираємо порядок ст. 20-21 Закону про ТОВ, нотаріальний акт, реєстрацію та податки.</description>
     </item>
     <item>
       <title>Захист комерційної таємниці: як убезпечити дані компанії</title>
@@ -78,6 +94,14 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Український закон про персональні дані залишився на рівні директиви 1995 року, а максимальний штраф — близько 34 тис. грн. Але частина українського бізнесу підпадає під GDPR напряму, де штрафи інші. Розбираємо обидва режими й реформу, що готується.</description>
+    </item>
+    <item>
+      <title>Зміна цільового призначення землі: порядок і обмеження</title>
+      <link>https://legius.com.ua/blog/zmina-tsilovoho-pryznachennya-zemli/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zmina-tsilovoho-pryznachennya-zemli/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Земельне право</category>
+      <description>З 2024 року діє спрощений порядок: для частини ділянок за межами населених пунктів цільове призначення змінюється заявою власника до Державного земельного кадастру без документації із землеустрою. Розбираємо, коли це можливо, а коли діють старі правила.</description>
     </item>
     <item>
       <title>Встановлення батьківства: добровільно та через суд</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Податкове право</category>
       <description>Розбираємо, як призначають податкову перевірку, які документи перевіряльники мають предʼявити, які права має платник і що робити з актом перевірки.</description>
-    </item>
-    <item>
-      <title>Оскарження ППР: підстави, строки та стратегія захисту</title>
-      <link>https://legius.com.ua/blog/oskarzhennya-ppr/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-ppr/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо оскарження ППР: що в ньому перевіряти одразу, як працює неузгодженість зобов’язання, які підстави скасування дають результат і що робити в перші дні.</description>
-    </item>
-    <item>
-      <title>Блокування податкових накладних: причини та як розблокувати</title>
-      <link>https://legius.com.ua/blog/blokuvannya-podatkovyh-nakladnyh/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/blokuvannya-podatkovyh-nakladnyh/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Розбираємо механіку блокування податкових накладних: дві стадії перевірки в СМКОР, критерії ризиковості платника й операції, наслідки для бізнесу та перші дії.</description>
-    </item>
-    <item>
-      <title>Відшкодування ПДВ із бюджету: порядок, строки та спори з ДПС</title>
-      <link>https://legius.com.ua/blog/vidshkoduvannya-pdv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vidshkoduvannya-pdv/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Податкове право</category>
-      <description>Пояснюємо порядок бюджетного відшкодування ПДВ: умови, строки перевірок, роботу Реєстру заяв, скорочені строки для «білого бізнесу» та дії у разі відмови чи зменшення суми.</description>
     </item>
   </channel>
 </rss>
