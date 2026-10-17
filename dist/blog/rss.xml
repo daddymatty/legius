@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні розʼяснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sat, 17 Oct 2026 15:25:46 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 15:46:59 GMT</lastBuildDate>
     <item>
       <title>Позбавлення батьківських прав: підстави та процедура</title>
       <link>https://legius.com.ua/blog/pozbavlennya-batkivskykh-prav/</link>
@@ -30,6 +30,14 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Сімейний кодекс знає три різні моделі недійсності шлюбу — і лише дві з них потребують суду. Розбираємо підстави ст. 39-41 СК, доказування фіктивності за практикою ВС, різницю між недійсним і неукладеним шлюбом та захист добросовісного подружжя.</description>
+    </item>
+    <item>
+      <title>ВЛК для військовослужбовця: направлення, порядок, оскарження</title>
+      <link>https://legius.com.ua/blog/vlk-viyskovosluzhbovtsyu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vlk-viyskovosluzhbovtsyu/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Для тих, хто вже служить, порядок проходження ВЛК відрізняється від цивільного: направлення видає командування, а від висновку залежить продовження служби. Розбираємо чинні категорії, строки та два шляхи оскарження.</description>
     </item>
     <item>
       <title>ФОП чи ТОВ: що обрати для бізнесу в Україні 2026</title>
@@ -112,6 +120,14 @@
       <description>Український закон про персональні дані залишився на рівні директиви 1995 року, а максимальний штраф — близько 34 тис. грн. Але частина українського бізнесу підпадає під GDPR напряму, де штрафи інші. Розбираємо обидва режими й реформу, що готується.</description>
     </item>
     <item>
+      <title>Реєстрація права власності на нерухомість: порядок дій 2026</title>
+      <link>https://legius.com.ua/blog/reyestratsiya-prava-vlasnosti/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-prava-vlasnosti/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Нерухомість</category>
+      <description>Державна реєстрація проводиться у строк, що не перевищує п’яти робочих днів, а збір рахується у частках прожиткового мінімуму. Розбираємо документи, прискорені строки, підстави для відмови за статтею 24 Закону та два шляхи її оскарження.</description>
+    </item>
+    <item>
       <title>Зміна цільового призначення землі: порядок і обмеження</title>
       <link>https://legius.com.ua/blog/zmina-tsilovoho-pryznachennya-zemli/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/zmina-tsilovoho-pryznachennya-zemli/</guid>
@@ -126,6 +142,14 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Інтелектуальна власність</category>
       <description>Якщо в договорі не зазначити вид ліцензії, закон вважає її невиключною, а без умови про територію вона діє на всю Україну. Розбираємо ст. 1107-1114 ЦК, три види ліцензій, істотні умови, строки за замовчуванням і коли платіж не є роялті.</description>
+    </item>
+    <item>
+      <title>Оскарження запобіжного заходу: тримання під вартою та застава</title>
+      <link>https://legius.com.ua/blog/oskarzhennya-zapobizhnoho-zakhodu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-zapobizhnoho-zakhodu/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Кримінальне право</category>
+      <description>Апеляційна скарга на ухвалу слідчого судді подається протягом п’яти днів, а перелік ухвал, які взагалі можна оскаржити, є вичерпним. Розбираємо кожен запобіжний захід, межі застави у 2026 році та тактику захисту бізнесмена.</description>
     </item>
     <item>
       <title>Встановлення батьківства: добровільно та через суд</title>
@@ -382,30 +406,6 @@
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Розбираємо, коли угода потребує дозволу АМКУ, чому її заборонено закривати до його отримання, які види порушень існують і як рахуються штрафи у відсотках доходу.</description>
-    </item>
-    <item>
-      <title>Зміни до статуту ТОВ: коли потрібні та як зареєструвати</title>
-      <link>https://legius.com.ua/blog/zminy-do-statutu-tov/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zminy-do-statutu-tov/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Скільки голосів насправді потрібно, чому зміни бувають лише новою редакцією, чиї підписи посвідчує нотаріус і що змінилося в корпоративному управлінні з 28 серпня 2025 року.</description>
-    </item>
-    <item>
-      <title>Корпоративне управління в ТОВ: органи, повноваження та контроль</title>
-      <link>https://legius.com.ua/blog/korporatyvne-upravlinnya-tov/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/korporatyvne-upravlinnya-tov/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Які органи має ТОВ і що не можна делегувати, як працює виключна компетенція загальних зборів і що змінив Закон № 4196-IX у корпоративному управлінні.</description>
-    </item>
-    <item>
-      <title>Громадська спілка: реєстрація об’єднання юридичних осіб</title>
-      <link>https://legius.com.ua/blog/gromadska-spilka/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/gromadska-spilka/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Пояснюємо, чим громадська спілка відрізняється від громадської організації, хто може її засновувати, як проходить реєстрація і чому саме ця форма підходить для галузевих об’єднань.</description>
     </item>
   </channel>
 </rss>

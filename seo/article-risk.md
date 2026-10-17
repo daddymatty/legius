@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **109** |
-| Коротших за 450 слів | 45 (старт 147) |
-| Із позначкою `expand` | 105 (старт 213) |
+| Опрацьовано | **112** |
+| Коротших за 450 слів | 43 (старт 147) |
+| Із позначкою `expand` | 102 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 68 |
+| Середній (5–6), лишилось | 65 |
 
 ## ✅ Опрацьовано
 
@@ -133,6 +133,9 @@
 | `litsenziynyy-dohovir` | 1758 | ip-law |
 | `korporatyvni-spory` | 2083 | corporate-law |
 | `pozbavlennya-batkivskykh-prav` | 2095 | family-law |
+| `oskarzhennya-zapobizhnoho-zakhodu` | 2128 | criminal-business |
+| `reyestratsiya-prava-vlasnosti` | 1863 | real-estate |
+| `vlk-viyskovosluzhbovtsyu` | 1974 | military-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -149,7 +152,6 @@
 | 6 | 316 | 0 | land-law | `pryvatyzatsiya-zemelnoyi-dilyanky` |
 | 6 | 341 | 0 | land-law | `rynok-zemli-pravyla-kupivli` |
 | 6 | 353 | 0 | land-law | `oformlennya-prava-vlasnosti-na-zemlyu` |
-| 6 | 360 | 0 | real-estate | `reyestratsiya-prava-vlasnosti` |
 | 6 | 362 | 0 | real-estate | `spory-iz-zabudovnykom` |
 | 6 | 366 | 0 | land-law | `orenda-zemli-dohovir-ta-ponovlennya` |
 | 6 | 379 | 0 | land-law | `zemelni-spory-z-susidamy` |
@@ -174,7 +176,6 @@
 | 5 | 322 | 0 | family-law | `shlyubnyy-dohovir` |
 | 5 | 339 | 0 | family-law | `podil-mayna-podruzhzhya` |
 | 5 | 339 | 0 | ip-law | `patentuvannya-vynakhodu` |
-| 5 | 344 | 0 | criminal-business | `oskarzhennya-zapobizhnoho-zakhodu` |
 | 5 | 351 | 0 | criminal-business | `zakhyst-dyrektora-kryminalna-sprava` |
 | 5 | 365 | 0 | criminal-business | `znyattya-areshtu-z-rakhunkiv` |
 | 5 | 376 | 0 | litigation | `hospodarskyy-spir-pokrokovo` |
@@ -194,7 +195,6 @@
 | 5 | 428 | 0 | litigation | `yak-styahnuty-borh-cherez-sud` |
 | 5 | 430 | 0 | criminal-business | `obshuk-na-pidpryyemstvi` |
 | 5 | 441 | 0 | investment | `yak-strukturuvaty-investytsiyu` |
-| 5 | 450 | 0 | military-law | `vlk-viyskovosluzhbovtsyu` |
 | 5 | 475 | 1 | land-law | `obyednannya-ta-podil-dilyanok` |
 | 5 | 478 | 0 | military-law | `vlk-povtornyy-kontrolnyy-ohlyad` |
 | 5 | 491 | 0 | military-law | `szch-stattya-407` |
