@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sun, 18 Oct 2026 23:29:10 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 23:53:20 GMT</lastBuildDate>
     <item>
       <title>Розірвання шлюбу в Україні: повний порядок дій у 2026 році</title>
       <link>https://legius.com.ua/blog/rozirvannya-shlyubu/</link>
@@ -32,12 +32,28 @@
       <description>Доходи підприємця не видно у зарплатній відомості — тому аліменти з ФОП мають свої правила. Розбираємо, чому для єдинника розрахунок іде від середньої зарплати в регіоні, а не від обороту, що про це сказав Верховний Суд, коли вигідніша тверда сума і як доводити реальні доходи платника.</description>
     </item>
     <item>
+      <title>Іпотечна квартира при розлученні: як ділиться житло і борг</title>
+      <link>https://legius.com.ua/blog/podil-ipotechnoyi-kvartyry/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/podil-ipotechnoyi-kvartyry/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Квартира в іпотеці ділиться разом із боргом — і рішення суду про поділ не переписує кредитний договір. Розбираємо, чому подружжя відповідає перед банком солідарно, що насправді означає «частка в іпотечному майні», чотири робочі сценарії виходу, як доводиться особистий перший внесок і коли платежі одного з подружжя дають підставу відступити від рівності часток.</description>
+    </item>
+    <item>
       <title>Як скласти заповіт в Україні: форма, вартість, типові помилки</title>
       <link>https://legius.com.ua/blog/yak-sklasty-zapovit/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/yak-sklasty-zapovit/</guid>
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Заповіт, складений з помилками, — подарунок для тих, хто захоче його оскаржити. Розбираємо вимоги до форми й посвідчення, коли потрібні свідки, три види заповітів і пастки кожного, межі свободи заповідача через обов’язкову частку та як скласти документ, що витримає перевірку судом.</description>
+    </item>
+    <item>
+      <title>СЗЧ і стаття 407 ККУ: відповідальність та лінія захисту</title>
+      <link>https://legius.com.ua/blog/szch-stattya-407/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/szch-stattya-407/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Межа між адміністративним проступком і п’ятьма роками позбавлення волі — три доби. Розбираємо всі частини статті 407 ККУ з санкціями, різницю зі статтею 408, механізм звільнення від відповідальності за частиною 5 статті 401 КК, свіжу позицію Верховного Суду про те, чому умовний строк тут не застосовується, і як виглядає повернення на службу після закінчення спрощеної програми.</description>
     </item>
     <item>
       <title>Повторний і контрольний огляд ВЛК: коли призначають і як підготуватися</title>
@@ -134,6 +150,14 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>IT Law</category>
       <description>GDPR застосовується до української компанії напряму — незалежно від стану національного законодавства. Розбираємо, коли саме це відбувається, чим обов’язки обробника відрізняються від обов’язків контролера, що має містити DPA, чому передача даних в Україну йде через SCC і які штрафи готує законопроєкт № 8153.</description>
+    </item>
+    <item>
+      <title>Оподаткування IT-компанії: ФОП, Дія.City чи загальна система</title>
+      <link>https://legius.com.ua/blog/opodatkuvannya-it-kompaniyi/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/opodatkuvannya-it-kompaniyi/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>IT Law</category>
+      <description>Різниця між трьома податковими моделями для IT — не у відсотках, а в тому, з чого ці відсотки беруться. Розбираємо цифри 2026 року для ФОП третьої групи, повний податковий пакет резидента Дія.City, механіку вибору між 9 % і 18 %, правило 20 % на виплати платникам єдиного податку та ознаки структури, яку податкова читає як дроблення.</description>
     </item>
     <item>
       <title>Релокація IT-бізнесу: структурування, юрисдикції та податкове резидентство</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Нерухомість</category>
       <description>Ризики інвестування в новобудову після Закону № 2518-IX: спеціальне майнове право, гарантійна частка, нікчемні правочини, перевірка дозволів і землі, подвійний продаж та банкрутство забудовника.</description>
-    </item>
-    <item>
-      <title>Реєстрація права власності на нерухомість: порядок дій 2026</title>
-      <link>https://legius.com.ua/blog/reyestratsiya-prava-vlasnosti/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-prava-vlasnosti/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>Державна реєстрація проводиться у строк, що не перевищує п’яти робочих днів, а збір рахується у частках прожиткового мінімуму. Розбираємо документи, прискорені строки, підстави для відмови за статтею 24 Закону та два шляхи її оскарження.</description>
-    </item>
-    <item>
-      <title>Спори із забудовником: як захистити інвестиції 2026</title>
-      <link>https://legius.com.ua/blog/spory-iz-zabudovnykom/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/spory-iz-zabudovnykom/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>З 10 жовтня 2022 року майбутній об’єкт нерухомості може бути в цивільному обороті лише за умови державної реєстрації спеціального майнового права. Це змінило і захист інвестора, і перелік того, що треба перевірити до підписання договору.</description>
-    </item>
-    <item>
-      <title>Оренда комерційної нерухомості: договір і захист бізнесу 2026</title>
-      <link>https://legius.com.ua/blog/orenda-komertsiynoyi-nerukhomosti/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/orenda-komertsiynoyi-nerukhomosti/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>Чому поріг у три роки змінює все в оренді комерційної нерухомості, як працює автоматичне поновлення за ст. 764 ЦК, переважні права наймача за ст. 777 і коли наймодавець може відмовитися від договору без суду.</description>
     </item>
   </channel>
 </rss>
