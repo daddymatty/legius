@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sun, 18 Oct 2026 22:27:10 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 22:42:06 GMT</lastBuildDate>
     <item>
       <title>Розірвання шлюбу в Україні: повний порядок дій у 2026 році</title>
       <link>https://legius.com.ua/blog/rozirvannya-shlyubu/</link>
@@ -16,12 +16,28 @@
       <description>Чотири способи розірвати шлюб і як обрати свій: коли достатньо ДРАЦС, коли потрібен суд, чому під час вагітності позов подати не можна (і що тоді робити), скільки це коштує у 2026 році, з якого дня шлюб вважається припиненим і чого розлучення не вирішує.</description>
     </item>
     <item>
+      <title>Як скласти заповіт в Україні: форма, вартість, типові помилки</title>
+      <link>https://legius.com.ua/blog/yak-sklasty-zapovit/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/yak-sklasty-zapovit/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Заповіт, складений з помилками, — подарунок для тих, хто захоче його оскаржити. Розбираємо вимоги до форми й посвідчення, коли потрібні свідки, три види заповітів і пастки кожного, межі свободи заповідача через обов’язкову частку та як скласти документ, що витримає перевірку судом.</description>
+    </item>
+    <item>
       <title>Як стягнути борг через суд в Україні: покрокова інструкція 2026</title>
       <link>https://legius.com.ua/blog/yak-styahnuty-borh-cherez-sud/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/yak-styahnuty-borh-cherez-sud/</guid>
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Судові спори</category>
       <description>Покроково про стягнення боргу: коли вистачить судового наказу, скільки коштує позов у 2026 році, як рахувати інфляційні та три проценти річних за ст. 625 ЦК і чому позовна давність зараз рахується нетривіально.</description>
+    </item>
+    <item>
+      <title>Як перевірити нерухомість перед купівлею: повний чек-лист 2026</title>
+      <link>https://legius.com.ua/blog/perevirka-nerukhomosti-pered-kupivleyu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/perevirka-nerukhomosti-pered-kupivleyu/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Нерухомість</category>
+      <description>Повний чек-лист перевірки квартири чи будинку: які документи вимагати у продавця, що саме показує кожен реєстр і чого він не показує, як читати історію набуття права, де ховаються права третіх осіб і які переробки роблять об’єкт проблемним.</description>
     </item>
     <item>
       <title>Супровід угоди купівлі-продажу квартири: етапи та безпека розрахунків</title>
@@ -70,6 +86,14 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>M&amp;A (Злиття і поглинання)</category>
       <description>SPA оформлює перехід бізнесу, SHA — відносини співвласників після угоди. Розбираємо структуру кожного документа, механізми ціни, форму за українським правом, роль акта приймання-передачі частки і коли без дозволу АМКУ угоду закривати не можна.</description>
+    </item>
+    <item>
+      <title>Що робити під час обшуку на підприємстві: інструкція для бізнесу</title>
+      <link>https://legius.com.ua/blog/obshuk-na-pidpryyemstvi/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/obshuk-na-pidpryyemstvi/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Кримінальне право</category>
+      <description>Що саме має бути в ухвалі слідчого судді, чому недопущення адвоката робить усі докази недопустимими, коли заборонено вилучати сервери й телефони, навіщо вимагати другий примірник протоколу і що робити в перші 48 годин після вилучення майна.</description>
     </item>
     <item>
       <title>Ухилення від сплати податків: захист за статтею 212 ККУ</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Інтелектуальна власність</category>
       <description>Якщо в договорі не зазначити вид ліцензії, закон вважає її невиключною, а без умови про територію вона діє на всю Україну. Розбираємо ст. 1107-1114 ЦК, три види ліцензій, істотні умови, строки за замовчуванням і коли платіж не є роялті.</description>
-    </item>
-    <item>
-      <title>Що робити при порушенні прав на торгову марку</title>
-      <link>https://legius.com.ua/blog/porushennya-prav-na-tm/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/porushennya-prav-na-tm/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>За статтею 20 Закону порушенням є навіть готування до дій, що потребують згоди власника. Розбираємо чотири шляхи захисту — претензію, АМКУ, суд і митницю — та який з них дає результат швидше.</description>
-    </item>
-    <item>
-      <title>Доменні спори та кіберсквотинг: як повернути домен</title>
-      <link>https://legius.com.ua/blog/domenni-spory/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/domenni-spory/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>За Політикою .UA достатньо довести, що домен зареєстрований АБО використовується недобросовісно, тоді як UDRP вимагає довести і те, і те. Розбираємо три елементи скарги, межі механізму та коли замість передання домену варто просити його скасування.</description>
-    </item>
-    <item>
-      <title>Захист іноземного інвестора в Україні: гарантії та арбітраж</title>
-      <link>https://legius.com.ua/blog/zakhyst-inozemnoho-investora/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zakhyst-inozemnoho-investora/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Супровід інвестицій</category>
-      <description>Два поверхи захисту іноземного інвестора в Україні: державні гарантії Закону № 93/96-ВР і міжнародний рівень — двосторонні інвестиційні угоди, Договір до Енергетичної Хартії та арбітраж ICSID.</description>
     </item>
   </channel>
 </rss>
