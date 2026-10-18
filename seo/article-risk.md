@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **151** |
-| Коротших за 450 слів | 4 (старт 147) |
-| Із позначкою `expand` | 63 (старт 213) |
+| Опрацьовано | **154** |
+| Коротших за 450 слів | 2 (старт 147) |
+| Із позначкою `expand` | 60 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 26 |
+| Середній (5–6), лишилось | 24 |
 
 ## ✅ Опрацьовано
 
@@ -175,6 +175,9 @@
 | `hih-kontrakt-proty-fop` | 2002 | it-law |
 | `investytsiynyy-dohovir` | 1919 | investment |
 | `rozirvannya-shlyubu` | 1937 | family-law |
+| `obshuk-na-pidpryyemstvi` | 2049 | criminal-business |
+| `perevirka-nerukhomosti-pered-kupivleyu` | 1800 | real-estate |
+| `yak-sklasty-zapovit` | 2021 | family-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -186,14 +189,12 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 434 | 0 | real-estate | `perevirka-nerukhomosti-pered-kupivleyu` |
 | 6 | 444 | 0 | it-law | `relokatsiya-it-biznesu` |
 | 6 | 454 | 1 | it-law | `gdpr-dlya-ukrayinskogo-it` |
 | 6 | 476 | 1 | corporate-law | `zakhyst-vid-reyderstva` |
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 430 | 0 | criminal-business | `obshuk-na-pidpryyemstvi` |
 | 5 | 441 | 0 | investment | `yak-strukturuvaty-investytsiyu` |
 | 5 | 475 | 1 | land-law | `obyednannya-ta-podil-dilyanok` |
 | 5 | 478 | 0 | military-law | `vlk-povtornyy-kontrolnyy-ohlyad` |
