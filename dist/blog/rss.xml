@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sun, 18 Oct 2026 22:42:06 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 22:57:15 GMT</lastBuildDate>
     <item>
       <title>Розірвання шлюбу в Україні: повний порядок дій у 2026 році</title>
       <link>https://legius.com.ua/blog/rozirvannya-shlyubu/</link>
@@ -14,6 +14,14 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Чотири способи розірвати шлюб і як обрати свій: коли достатньо ДРАЦС, коли потрібен суд, чому під час вагітності позов подати не можна (і що тоді робити), скільки це коштує у 2026 році, з якого дня шлюб вважається припиненим і чого розлучення не вирішує.</description>
+    </item>
+    <item>
+      <title>Аліменти з ФОП: як розрахувати та стягнути з підприємця</title>
+      <link>https://legius.com.ua/blog/alimenty-z-fop/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-z-fop/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Доходи підприємця не видно у зарплатній відомості — тому аліменти з ФОП мають свої правила. Розбираємо, чому для єдинника розрахунок іде від середньої зарплати в регіоні, а не від обороту, що про це сказав Верховний Суд, коли вигідніша тверда сума і як доводити реальні доходи платника.</description>
     </item>
     <item>
       <title>Як скласти заповіт в Україні: форма, вартість, типові помилки</title>
@@ -72,12 +80,28 @@
       <description>Розбираємо весь пакет документів угоди: що насправді зв’язує сторони в term sheet, чотири форми входу інвестора, як працюють запевнення й транші, що має містити корпоративний договір і які державні гарантії має іноземний інвестор — зокрема чому реєстрація іноземної інвестиції вже не потрібна.</description>
     </item>
     <item>
+      <title>Репатріація прибутку та валютні обмеження для інвестора у 2026 році</title>
+      <link>https://legius.com.ua/blog/repatriatsiya-prybutku/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/repatriatsiya-prybutku/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Супровід інвестицій</category>
+      <description>Як легально повернути прибуток і капітал з України у 2026 році: за які періоди НБУ дозволяє переказувати дивіденди і в яких лімітах, що дають «інвестиційний» і новий «додатковий» ліміти, коли 15 % податку на репатріацію знижується конвенцією і чому без легалізованої довідки пільгова ставка неправомірна.</description>
+    </item>
+    <item>
       <title>Гіг-контракт проти ФОП: що обрати для оформлення IT-команди</title>
       <link>https://legius.com.ua/blog/hih-kontrakt-proty-fop/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/hih-kontrakt-proty-fop/</guid>
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>IT Law</category>
       <description>Порівнюємо три моделі найму в IT — КЗпП, ФОП і гіг-контракт Дія City: які вимоги має виконувати резидент, щоб зберегти ставку 5 %, що насправді дає гіг-спеціалісту соціальний пакет, кому належать права на код і чому модель ФОП найчастіше ламається на перекваліфікації у трудові відносини.</description>
+    </item>
+    <item>
+      <title>Релокація IT-бізнесу: структурування, юрисдикції та податкове резидентство</title>
+      <link>https://legius.com.ua/blog/relokatsiya-it-biznesu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/relokatsiya-it-biznesu/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>IT Law</category>
+      <description>Релокація не скасовує українські податки — вона змінює їх склад. Розбираємо чотири різні сценарії виходу, чому «виїхав — значить нерезидент» не працює, як діють правила КІК і коли прибуток іноземної компанії звільняється від оподаткування в Україні, за якими критеріями обирати юрисдикцію і як не втратити права на продукт.</description>
     </item>
     <item>
       <title>Що таке SPA та SHA: ключові договори угоди M&amp;A</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Інтелектуальна власність</category>
       <description>Покрокова реєстрація торговельної марки за Законом № 3689-XII: що перевіряти до подання заявки, підстави для відмови за ст. 6, строки експертизи, вікно заперечень і чому десять років охорони насправді коротші.</description>
-    </item>
-    <item>
-      <title>Патентування винаходу в Україні: процедура і строки 2026</title>
-      <link>https://legius.com.ua/blog/patentuvannya-vynakhodu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/patentuvannya-vynakhodu/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>Як працює патентування винаходу і корисної моделі в Україні: умови патентоздатності за ст. 7, три етапи експертизи за ст. 16, строки чинності, службовий винахід і оспорювання патенту в Апеляційній палаті.</description>
-    </item>
-    <item>
-      <title>Захист авторського права в Україні: твори, код і контент</title>
-      <link>https://legius.com.ua/blog/zakhyst-avtorskoho-prava/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zakhyst-avtorskoho-prava/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>Компенсацію можна стягнути замість збитків — від 2 до 200 прожиткових мінімумів або як подвоєну (за умислу потроєну) суму винагороди. І закон не вимагає доводити еквівалентність компенсації втратам. Розбираємо, як цим скористатися.</description>
-    </item>
-    <item>
-      <title>Ліцензійний договір: як передати права на інтелектуальну власність</title>
-      <link>https://legius.com.ua/blog/litsenziynyy-dohovir/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/litsenziynyy-dohovir/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>Якщо в договорі не зазначити вид ліцензії, закон вважає її невиключною, а без умови про територію вона діє на всю Україну. Розбираємо ст. 1107-1114 ЦК, три види ліцензій, істотні умови, строки за замовчуванням і коли платіж не є роялті.</description>
     </item>
   </channel>
 </rss>

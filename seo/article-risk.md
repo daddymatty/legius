@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **154** |
-| Коротших за 450 слів | 2 (старт 147) |
-| Із позначкою `expand` | 60 (старт 213) |
+| Опрацьовано | **157** |
+| Коротших за 450 слів | 1 (старт 147) |
+| Із позначкою `expand` | 57 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 24 |
+| Середній (5–6), лишилось | 23 |
 
 ## ✅ Опрацьовано
 
@@ -178,6 +178,9 @@
 | `obshuk-na-pidpryyemstvi` | 2049 | criminal-business |
 | `perevirka-nerukhomosti-pered-kupivleyu` | 1800 | real-estate |
 | `yak-sklasty-zapovit` | 2021 | family-law |
+| `relokatsiya-it-biznesu` | 2091 | it-law |
+| `repatriatsiya-prybutku` | 1822 | investment |
+| `alimenty-z-fop` | 2021 | family-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -189,7 +192,6 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 444 | 0 | it-law | `relokatsiya-it-biznesu` |
 | 6 | 454 | 1 | it-law | `gdpr-dlya-ukrayinskogo-it` |
 | 6 | 476 | 1 | corporate-law | `zakhyst-vid-reyderstva` |
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
