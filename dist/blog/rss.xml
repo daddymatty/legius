@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sun, 18 Oct 2026 21:51:24 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 22:10:24 GMT</lastBuildDate>
     <item>
       <title>Як стягнути борг через суд в Україні: покрокова інструкція 2026</title>
       <link>https://legius.com.ua/blog/yak-styahnuty-borh-cherez-sud/</link>
@@ -14,6 +14,14 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Судові спори</category>
       <description>Покроково про стягнення боргу: коли вистачить судового наказу, скільки коштує позов у 2026 році, як рахувати інфляційні та три проценти річних за ст. 625 ЦК і чому позовна давність зараз рахується нетривіально.</description>
+    </item>
+    <item>
+      <title>Супровід угоди купівлі-продажу квартири: етапи та безпека розрахунків</title>
+      <link>https://legius.com.ua/blog/suprovid-ugody-kupivli-prodazhu-kvartyry/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/suprovid-ugody-kupivli-prodazhu-kvartyry/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Нерухомість</category>
+      <description>Повний розбір угоди з квартирою: які реєстри перевіряє нотаріус і чого він не перевіряє, чому понад 50 000 грн готівкою передавати не можна, скільки податків сплачує продавець при першому, другому й третьому продажу за рік і коли покупець не платить 1 % до Пенсійного фонду.</description>
     </item>
     <item>
       <title>Земельні спори з сусідами: межі, доступ та самозахоплення</title>
@@ -24,12 +32,28 @@
       <description>Як вирішуються спори із сусідами: правила добросусідства за главою 17 ЗКУ, дерева і паркани на межі, коли справу розглядає рада, а коли виключно суд, і чому належний позов — негаторний.</description>
     </item>
     <item>
+      <title>Юридичний due diligence для інвестора: як перевірити актив</title>
+      <link>https://legius.com.ua/blog/yurydychnyy-due-diligence/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/yurydychnyy-due-diligence/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Супровід інвестицій</category>
+      <description>Практичний розбір юридичного due diligence: конкретні реєстри та що саме кожен із них показує, перевірка кінцевого бенефіціара і структури власності, ризиковий статус платника ПДВ, судовий і виконавчий блок, deal-breakers і те, як ризики перетворюються на умови угоди.</description>
+    </item>
+    <item>
       <title>Що таке SPA та SHA: ключові договори угоди M&amp;A</title>
       <link>https://legius.com.ua/blog/spa-shcho-take/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/spa-shcho-take/</guid>
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>M&amp;A (Злиття і поглинання)</category>
       <description>SPA оформлює перехід бізнесу, SHA — відносини співвласників після угоди. Розбираємо структуру кожного документа, механізми ціни, форму за українським правом, роль акта приймання-передачі частки і коли без дозволу АМКУ угоду закривати не можна.</description>
+    </item>
+    <item>
+      <title>Ухилення від сплати податків: захист за статтею 212 ККУ</title>
+      <link>https://legius.com.ua/blog/uhylennya-vid-podatkiv-st-212/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/uhylennya-vid-podatkiv-st-212/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Кримінальне право</category>
+      <description>Коли несплата податків стає кримінальною: пороги 2026 року в гривнях, чому стаття 212 не передбачає позбавлення волі, що саме має довести слідство, як зв’язані кримінальна справа і спір про податкове повідомлення-рішення та коли працює звільнення від відповідальності.</description>
     </item>
     <item>
       <title>Поділ майна подружжя: як справедливо розділити нажите</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>M&amp;A (Злиття і поглинання)</category>
       <description>Юридичний due diligence перед купівлею бізнесу: що ламає угоду в корпоративному блоці, коли потрібен дозвіл АМКУ, які строки давності діють у податковому блоці та як виявлені ризики перетворюються на ціну і гарантії.</description>
-    </item>
-    <item>
-      <title>Дозвіл АМКУ на концентрацію: коли потрібен і як отримати</title>
-      <link>https://legius.com.ua/blog/dozvil-amku-na-kontsentratsiyu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/dozvil-amku-na-kontsentratsiyu/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>M&amp;A (Злиття і поглинання)</category>
-      <description>Поріг за ч. 1 ст. 24 Закону рахується з урахуванням відносин контролю по всій групі, тому його перетинають і середні угоди. Розбираємо порогові показники, плату, строки, правило «мовчазного дозволу» та відповідальність за gun jumping.</description>
-    </item>
-    <item>
-      <title>Оскарження запобіжного заходу: тримання під вартою та застава</title>
-      <link>https://legius.com.ua/blog/oskarzhennya-zapobizhnoho-zakhodu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-zapobizhnoho-zakhodu/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Апеляційна скарга на ухвалу слідчого судді подається протягом п’яти днів, а перелік ухвал, які взагалі можна оскаржити, є вичерпним. Розбираємо кожен запобіжний захід, межі застави у 2026 році та тактику захисту бізнесмена.</description>
-    </item>
-    <item>
-      <title>Зняття арешту з рахунків компанії: стаття 170 КПК України</title>
-      <link>https://legius.com.ua/blog/znyattya-areshtu-z-rakhunkiv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/znyattya-areshtu-z-rakhunkiv/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Як накладається і скасовується арешт майна за статтями 170–174 КПК, чому частина 11 статті 170 — найсильніший аргумент проти блокування рахунків і чому ухвала за статтею 174 не підлягає апеляційному оскарженню.</description>
     </item>
   </channel>
 </rss>
