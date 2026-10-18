@@ -6,7 +6,31 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sat, 17 Oct 2026 19:59:33 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 21:51:24 GMT</lastBuildDate>
+    <item>
+      <title>Як стягнути борг через суд в Україні: покрокова інструкція 2026</title>
+      <link>https://legius.com.ua/blog/yak-styahnuty-borh-cherez-sud/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/yak-styahnuty-borh-cherez-sud/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Покроково про стягнення боргу: коли вистачить судового наказу, скільки коштує позов у 2026 році, як рахувати інфляційні та три проценти річних за ст. 625 ЦК і чому позовна давність зараз рахується нетривіально.</description>
+    </item>
+    <item>
+      <title>Земельні спори з сусідами: межі, доступ та самозахоплення</title>
+      <link>https://legius.com.ua/blog/zemelni-spory-z-susidamy/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zemelni-spory-z-susidamy/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Земельне право</category>
+      <description>Як вирішуються спори із сусідами: правила добросусідства за главою 17 ЗКУ, дерева і паркани на межі, коли справу розглядає рада, а коли виключно суд, і чому належний позов — негаторний.</description>
+    </item>
+    <item>
+      <title>Що таке SPA та SHA: ключові договори угоди M&amp;A</title>
+      <link>https://legius.com.ua/blog/spa-shcho-take/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/spa-shcho-take/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>M&amp;A (Злиття і поглинання)</category>
+      <description>SPA оформлює перехід бізнесу, SHA — відносини співвласників після угоди. Розбираємо структуру кожного документа, механізми ціни, форму за українським правом, роль акта приймання-передачі частки і коли без дозволу АМКУ угоду закривати не можна.</description>
+    </item>
     <item>
       <title>Поділ майна подружжя: як справедливо розділити нажите</title>
       <link>https://legius.com.ua/blog/podil-mayna-podruzhzhya/</link>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Кримінальне право</category>
       <description>Як накладається і скасовується арешт майна за статтями 170–174 КПК, чому частина 11 статті 170 — найсильніший аргумент проти блокування рахунків і чому ухвала за статтею 174 не підлягає апеляційному оскарженню.</description>
-    </item>
-    <item>
-      <title>Захист директора у кримінальній справі: ризики та стратегія</title>
-      <link>https://legius.com.ua/blog/zakhyst-dyrektora-kryminalna-sprava/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zakhyst-dyrektora-kryminalna-sprava/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Що насправді загрожує директору: відсторонення від посади за статтями 154–158 КПК і чому воно можливе не завжди, різниця між статусом свідка і підозрюваного, типові склади і субсидіарна відповідальність при банкрутстві.</description>
-    </item>
-    <item>
-      <title>Встановлення батьківства: добровільно та через суд</title>
-      <link>https://legius.com.ua/blog/vstanovlennya-batkivstva/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vstanovlennya-batkivstva/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Чим визнання батьківства відрізняється від встановлення факту, хто може подати позов, що буде при відмові від ДНК-експертизи та коли оспорити батьківство вже неможливо.</description>
-    </item>
-    <item>
-      <title>Розлучення з іноземцем: підсудність і визнання рішення</title>
-      <link>https://legius.com.ua/blog/rozluchennya-z-inozemtsem/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/rozluchennya-z-inozemtsem/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Коли достатньо ДРАЦС, а коли без суду не обійтися, хто визначає підсудність, якщо обоє живуть за кордоном, чому при судовому розлученні не видають свідоцтва і як легалізувати результат.</description>
     </item>
   </channel>
 </rss>

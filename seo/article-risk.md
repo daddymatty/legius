@@ -1,6 +1,6 @@
 # Ризик-перелік статей для правової перевірки
 
-Оновлено 17.10.2026. Перелік генерується скриптом, тому цифри відтворюються.
+Оновлено 18.10.2026. Перелік генерується скриптом, тому цифри відтворюються.
 
 **Формула ризику:** обсяг тіла статті (<450 слів +3, <700 +1)
 + «страхувальні» формулювання ×2
@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **142** |
-| Коротших за 450 слів | 13 (старт 147) |
-| Із позначкою `expand` | 72 (старт 213) |
+| Опрацьовано | **145** |
+| Коротших за 450 слів | 10 (старт 147) |
+| Із позначкою `expand` | 69 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 35 |
+| Середній (5–6), лишилось | 32 |
 
 ## ✅ Опрацьовано
 
@@ -166,6 +166,9 @@
 | `zakhyst-dyrektora-kryminalna-sprava` | 2413 | criminal-business |
 | `yak-zareyestruvaty-torhovu-marku` | 2157 | ip-law |
 | `orenda-komertsiynoyi-nerukhomosti` | 2405 | real-estate |
+| `zemelni-spory-z-susidamy` | 2319 | land-law |
+| `yak-styahnuty-borh-cherez-sud` | 2276 | litigation |
+| `spa-shcho-take` | 2198 | m-and-a |
 
 ## Високий ризик — перевіряти першими
 
@@ -177,7 +180,6 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 379 | 0 | land-law | `zemelni-spory-z-susidamy` |
 | 6 | 400 | 0 | real-estate | `suprovid-ugody-kupivli-prodazhu-kvartyry` |
 | 6 | 425 | 0 | it-law | `hih-kontrakt-proty-fop` |
 | 6 | 434 | 0 | real-estate | `perevirka-nerukhomosti-pered-kupivleyu` |
@@ -188,11 +190,9 @@
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
 | 5 | 384 | 0 | criminal-business | `uhylennya-vid-podatkiv-st-212` |
-| 5 | 412 | 0 | m-and-a | `spa-shcho-take` |
 | 5 | 422 | 0 | investment | `yurydychnyy-due-diligence` |
 | 5 | 427 | 0 | investment | `investytsiynyy-dohovir` |
 | 5 | 428 | 0 | family-law | `rozirvannya-shlyubu` |
-| 5 | 428 | 0 | litigation | `yak-styahnuty-borh-cherez-sud` |
 | 5 | 430 | 0 | criminal-business | `obshuk-na-pidpryyemstvi` |
 | 5 | 441 | 0 | investment | `yak-strukturuvaty-investytsiyu` |
 | 5 | 475 | 1 | land-law | `obyednannya-ta-podil-dilyanok` |
