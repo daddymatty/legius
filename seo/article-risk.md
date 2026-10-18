@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **157** |
+| Опрацьовано | **160** |
 | Коротших за 450 слів | 1 (старт 147) |
-| Із позначкою `expand` | 57 (старт 213) |
+| Із позначкою `expand` | 55 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 23 |
+| Середній (5–6), лишилось | 21 |
 
 ## ✅ Опрацьовано
 
@@ -181,6 +181,9 @@
 | `relokatsiya-it-biznesu` | 2091 | it-law |
 | `repatriatsiya-prybutku` | 1822 | investment |
 | `alimenty-z-fop` | 2021 | family-law |
+| `gdpr-dlya-ukrayinskogo-it` | 2224 | it-law |
+| `obyednannya-ta-podil-dilyanok` | 1836 | land-law |
+| `propushchenyy-strok-spadshchyna` | 2239 | family-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -192,13 +195,11 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 454 | 1 | it-law | `gdpr-dlya-ukrayinskogo-it` |
 | 6 | 476 | 1 | corporate-law | `zakhyst-vid-reyderstva` |
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
 | 5 | 441 | 0 | investment | `yak-strukturuvaty-investytsiyu` |
-| 5 | 475 | 1 | land-law | `obyednannya-ta-podil-dilyanok` |
 | 5 | 478 | 0 | military-law | `vlk-povtornyy-kontrolnyy-ohlyad` |
 | 5 | 491 | 0 | military-law | `szch-stattya-407` |
 | 5 | 521 | 1 | land-law | `skasuvannya-reyestratsiyi-dilyanky` |

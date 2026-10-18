@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sun, 18 Oct 2026 22:57:15 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 23:13:49 GMT</lastBuildDate>
     <item>
       <title>Розірвання шлюбу в Україні: повний порядок дій у 2026 році</title>
       <link>https://legius.com.ua/blog/rozirvannya-shlyubu/</link>
@@ -14,6 +14,14 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Чотири способи розірвати шлюб і як обрати свій: коли достатньо ДРАЦС, коли потрібен суд, чому під час вагітності позов подати не можна (і що тоді робити), скільки це коштує у 2026 році, з якого дня шлюб вважається припиненим і чого розлучення не вирішує.</description>
+    </item>
+    <item>
+      <title>Пропущений строк прийняття спадщини: як поновити права</title>
+      <link>https://legius.com.ua/blog/propushchenyy-strok-spadshchyna/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/propushchenyy-strok-spadshchyna/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Пропущений строк не означає втрату спадщини, але шляхів лише два. Розбираємо, коли достатньо письмової згоди інших спадкоємців, які причини Верховний Суд визнає поважними, а які відкидає, чому «не знав про смерть» часто не працює і що насправді змінилося у строках під час воєнного стану.</description>
     </item>
     <item>
       <title>Аліменти з ФОП: як розрахувати та стягнути з підприємця</title>
@@ -96,6 +104,14 @@
       <description>Порівнюємо три моделі найму в IT — КЗпП, ФОП і гіг-контракт Дія City: які вимоги має виконувати резидент, щоб зберегти ставку 5 %, що насправді дає гіг-спеціалісту соціальний пакет, кому належать права на код і чому модель ФОП найчастіше ламається на перекваліфікації у трудові відносини.</description>
     </item>
     <item>
+      <title>GDPR для українського IT: відповідність та захист персональних даних</title>
+      <link>https://legius.com.ua/blog/gdpr-dlya-ukrayinskogo-it/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/gdpr-dlya-ukrayinskogo-it/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>IT Law</category>
+      <description>GDPR застосовується до української компанії напряму — незалежно від стану національного законодавства. Розбираємо, коли саме це відбувається, чим обов’язки обробника відрізняються від обов’язків контролера, що має містити DPA, чому передача даних в Україну йде через SCC і які штрафи готує законопроєкт № 8153.</description>
+    </item>
+    <item>
       <title>Релокація IT-бізнесу: структурування, юрисдикції та податкове резидентство</title>
       <link>https://legius.com.ua/blog/relokatsiya-it-biznesu/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/relokatsiya-it-biznesu/</guid>
@@ -126,6 +142,14 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Кримінальне право</category>
       <description>Коли несплата податків стає кримінальною: пороги 2026 року в гривнях, чому стаття 212 не передбачає позбавлення волі, що саме має довести слідство, як зв’язані кримінальна справа і спір про податкове повідомлення-рішення та коли працює звільнення від відповідальності.</description>
+    </item>
+    <item>
+      <title>Об’єднання та поділ земельних ділянок: порядок дій</title>
+      <link>https://legius.com.ua/blog/obyednannya-ta-podil-dilyanok/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/obyednannya-ta-podil-dilyanok/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Земельне право</category>
+      <description>Поділ і об’єднання — це формування нових ділянок, а не правка меж на папері. Розбираємо, коли достатньо технічної документації, а коли потрібен проект відведення, чиї згоди обов’язкові й засвідчуються нотаріально, що стається з обтяженнями та старими кадастровими номерами і чому ділянку під будинком ділять в останню чергу.</description>
     </item>
     <item>
       <title>Поділ майна подружжя: як справедливо розділити нажите</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Земельне право</category>
       <description>Оренда землі від договору до поновлення: істотні умови за ст. 15 Закону № 161-XIV, строки та дата їх відліку, реєстрація права оренди, переважне право за ст. 33 і автоматичне поновлення за ст. 126-1 ЗКУ.</description>
-    </item>
-    <item>
-      <title>Ринок землі: правила купівлі ділянки та обмеження</title>
-      <link>https://legius.com.ua/blog/rynok-zemli-pravyla-kupivli/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/rynok-zemli-pravyla-kupivli/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Земельне право</category>
-      <description>Ліміт у 10 000 га рахується «в одні руки» з урахуванням часток подружжя, оплата можлива лише безготівково, а джерела коштів потрібно підтвердити документально. Розбираємо, хто може купувати землю, чиє переважне право треба врахувати та що перевіряє нотаріус.</description>
-    </item>
-    <item>
-      <title>Приватизація земельної ділянки: безоплатне отримання землі</title>
-      <link>https://legius.com.ua/blog/pryvatyzatsiya-zemelnoyi-dilyanky/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/pryvatyzatsiya-zemelnoyi-dilyanky/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Земельне право</category>
-      <description>З 7 квітня 2022 року безоплатна передача земель державної та комунальної власності заборонена, і Верховний Суд визнав цю норму самостійною підставою для відмови. Але два винятки працюють. Розбираємо, що реально можна оформити у 2026 році.</description>
-    </item>
-    <item>
-      <title>Як зареєструвати торгову марку в Україні: покрокова інструкція 2026</title>
-      <link>https://legius.com.ua/blog/yak-zareyestruvaty-torhovu-marku/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/yak-zareyestruvaty-torhovu-marku/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>Покрокова реєстрація торговельної марки за Законом № 3689-XII: що перевіряти до подання заявки, підстави для відмови за ст. 6, строки експертизи, вікно заперечень і чому десять років охорони насправді коротші.</description>
     </item>
   </channel>
 </rss>
