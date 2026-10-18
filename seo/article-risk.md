@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **145** |
-| Коротших за 450 слів | 10 (старт 147) |
-| Із позначкою `expand` | 69 (старт 213) |
+| Опрацьовано | **148** |
+| Коротших за 450 слів | 7 (старт 147) |
+| Із позначкою `expand` | 66 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 32 |
+| Середній (5–6), лишилось | 29 |
 
 ## ✅ Опрацьовано
 
@@ -169,6 +169,9 @@
 | `zemelni-spory-z-susidamy` | 2319 | land-law |
 | `yak-styahnuty-borh-cherez-sud` | 2276 | litigation |
 | `spa-shcho-take` | 2198 | m-and-a |
+| `uhylennya-vid-podatkiv-st-212` | 1846 | criminal-business |
+| `suprovid-ugody-kupivli-prodazhu-kvartyry` | 1904 | real-estate |
+| `yurydychnyy-due-diligence` | 1770 | investment |
 
 ## Високий ризик — перевіряти першими
 
@@ -180,7 +183,6 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 400 | 0 | real-estate | `suprovid-ugody-kupivli-prodazhu-kvartyry` |
 | 6 | 425 | 0 | it-law | `hih-kontrakt-proty-fop` |
 | 6 | 434 | 0 | real-estate | `perevirka-nerukhomosti-pered-kupivleyu` |
 | 6 | 444 | 0 | it-law | `relokatsiya-it-biznesu` |
@@ -189,8 +191,6 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 384 | 0 | criminal-business | `uhylennya-vid-podatkiv-st-212` |
-| 5 | 422 | 0 | investment | `yurydychnyy-due-diligence` |
 | 5 | 427 | 0 | investment | `investytsiynyy-dohovir` |
 | 5 | 428 | 0 | family-law | `rozirvannya-shlyubu` |
 | 5 | 430 | 0 | criminal-business | `obshuk-na-pidpryyemstvi` |
