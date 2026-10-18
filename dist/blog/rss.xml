@@ -6,7 +6,15 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sun, 18 Oct 2026 22:10:24 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 22:27:10 GMT</lastBuildDate>
+    <item>
+      <title>Розірвання шлюбу в Україні: повний порядок дій у 2026 році</title>
+      <link>https://legius.com.ua/blog/rozirvannya-shlyubu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/rozirvannya-shlyubu/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Чотири способи розірвати шлюб і як обрати свій: коли достатньо ДРАЦС, коли потрібен суд, чому під час вагітності позов подати не можна (і що тоді робити), скільки це коштує у 2026 році, з якого дня шлюб вважається припиненим і чого розлучення не вирішує.</description>
+    </item>
     <item>
       <title>Як стягнути борг через суд в Україні: покрокова інструкція 2026</title>
       <link>https://legius.com.ua/blog/yak-styahnuty-borh-cherez-sud/</link>
@@ -38,6 +46,22 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Супровід інвестицій</category>
       <description>Практичний розбір юридичного due diligence: конкретні реєстри та що саме кожен із них показує, перевірка кінцевого бенефіціара і структури власності, ризиковий статус платника ПДВ, судовий і виконавчий блок, deal-breakers і те, як ризики перетворюються на умови угоди.</description>
+    </item>
+    <item>
+      <title>Інвестиційний договір: на що звернути увагу при підписанні</title>
+      <link>https://legius.com.ua/blog/investytsiynyy-dohovir/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/investytsiynyy-dohovir/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Супровід інвестицій</category>
+      <description>Розбираємо весь пакет документів угоди: що насправді зв’язує сторони в term sheet, чотири форми входу інвестора, як працюють запевнення й транші, що має містити корпоративний договір і які державні гарантії має іноземний інвестор — зокрема чому реєстрація іноземної інвестиції вже не потрібна.</description>
+    </item>
+    <item>
+      <title>Гіг-контракт проти ФОП: що обрати для оформлення IT-команди</title>
+      <link>https://legius.com.ua/blog/hih-kontrakt-proty-fop/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/hih-kontrakt-proty-fop/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>IT Law</category>
+      <description>Порівнюємо три моделі найму в IT — КЗпП, ФОП і гіг-контракт Дія City: які вимоги має виконувати резидент, щоб зберегти ставку 5 %, що насправді дає гіг-спеціалісту соціальний пакет, кому належать права на код і чому модель ФОП найчастіше ламається на перекваліфікації у трудові відносини.</description>
     </item>
     <item>
       <title>Що таке SPA та SHA: ключові договори угоди M&amp;A</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Супровід інвестицій</category>
       <description>Два поверхи захисту іноземного інвестора в Україні: державні гарантії Закону № 93/96-ВР і міжнародний рівень — двосторонні інвестиційні угоди, Договір до Енергетичної Хартії та арбітраж ICSID.</description>
-    </item>
-    <item>
-      <title>Дія.City: як вступити та переваги режиму для IT-бізнесу у 2026</title>
-      <link>https://legius.com.ua/blog/diya-city-yak-vstupyty/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/diya-city-yak-vstupyty/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>IT Law</category>
-      <description>Критерії резидента прописані у статті 5 Закону № 1667-IX із точними цифрами: 1200 євро середньої винагороди щомісяця, дев’ять осіб, 90% кваліфікованого доходу. Розбираємо кожен, порядок вступу, податки та що саме відбувається при невиконанні критеріїв.</description>
-    </item>
-    <item>
-      <title>Договір з розробником B2B: як захистити права на код і бізнес</title>
-      <link>https://legius.com.ua/blog/dogovir-z-rozrobnykom-b2b/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/dogovir-z-rozrobnykom-b2b/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>IT Law</category>
-      <description>Чому відсутність умови про передання прав робить права на код спільними за ст. 430 ЦК, яку конструкцію обрати за ст. 1107 ЦК, як працює право sui generis на ШІ-код і чим загрожує перекваліфікація відносин із ФОП.</description>
-    </item>
-    <item>
-      <title>Юридичний due diligence перед купівлею компанії</title>
-      <link>https://legius.com.ua/blog/due-diligence-pered-kupivleyu-kompaniyi/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/due-diligence-pered-kupivleyu-kompaniyi/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>M&amp;A (Злиття і поглинання)</category>
-      <description>Юридичний due diligence перед купівлею бізнесу: що ламає угоду в корпоративному блоці, коли потрібен дозвіл АМКУ, які строки давності діють у податковому блоці та як виявлені ризики перетворюються на ціну і гарантії.</description>
     </item>
   </channel>
 </rss>
