@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **163** |
+| Опрацьовано | **166** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 52 (старт 213) |
+| Із позначкою `expand` | 49 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 18 |
+| Середній (5–6), лишилось | 17 |
 
 ## ✅ Опрацьовано
 
@@ -187,6 +187,9 @@
 | `yak-strukturuvaty-investytsiyu` | 2275 | investment |
 | `zakhyst-vid-reyderstva` | 2079 | corporate-law |
 | `vlk-povtornyy-kontrolnyy-ohlyad` | 2083 | military-law |
+| `opodatkuvannya-it-kompaniyi` | 2752 | it-law |
+| `podil-ipotechnoyi-kvartyry` | 2126 | family-law |
+| `szch-stattya-407` | 2355 | military-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -201,7 +204,6 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 491 | 0 | military-law | `szch-stattya-407` |
 | 5 | 521 | 1 | land-law | `skasuvannya-reyestratsiyi-dilyanky` |
 | 5 | 551 | 0 | military-law | `oskarzhennya-rishen-tck` |
 | 5 | 563 | 0 | military-law | `dystsyplinarna-vidpovidalnist-viyskovosluzhbovtsya` |
