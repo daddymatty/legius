@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 04:44:28 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 05:09:57 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -86,6 +86,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Аліменти не продовжуються автоматично після повноліття. Пояснюємо чотири обов’язкові умови за ст. 199 СК, чому заочна форма навчання сама по собі не позбавляє права на утримання і що треба довести суду.</description>
+    </item>
+    <item>
+      <title>Розлучення без згоди другого з подружжя: чи можливо</title>
+      <link>https://legius.com.ua/blog/rozluchennya-bez-zgody/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/rozluchennya-bez-zgody/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Згода другого з подружжя не потрібна — суд не може змусити людину залишатися у шлюбі. Пояснюємо, як подати позов, що робити при ігноруванні засідань і скільки це триває.</description>
     </item>
     <item>
       <title>Поновлення батьківських прав: підстави та порядок</title>
@@ -232,6 +240,14 @@
       <description>Що таке самочинне будівництво за статтею 376 ЦК України, чому реєстрація права не змінює статусу самобуду, як легалізувати добудову чи перепланування, коли працює будівельна амністія і чому знесення не має строку давності.</description>
     </item>
     <item>
+      <title>Податки при продажу нерухомості 2026: ПДФО та військовий збір</title>
+      <link>https://legius.com.ua/blog/podatky-pry-prodazhu-nerukhomosti-2026/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/podatky-pry-prodazhu-nerukhomosti-2026/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Нерухомість</category>
+      <description>Які податки сплачує продавець нерухомості у 2026 році: ставки 0, 5 і 18 відсотків за статтею 172 ПКУ, військовий збір, як рахується черговість продажів, право зменшити дохід на витрати на придбання і коли нерезидент не платить нічого.</description>
+    </item>
+    <item>
       <title>Виділення земельної частки (паю) в натурі у 2026 році</title>
       <link>https://legius.com.ua/blog/vydilennya-zemelnoho-payu-v-naturi/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/vydilennya-zemelnoho-payu-v-naturi/</guid>
@@ -344,6 +360,14 @@
       <description>Пояснюємо правову природу корпоративного договору за ст. 7 Закону про ТОВ у чинній редакції, його ключові механізми, безвідкличну довіреність як засіб забезпечення, відповідальність за порушення та співвідношення зі статутом.</description>
     </item>
     <item>
+      <title>Інвестиційний арбітраж: захист інвестицій через механізм ISDS</title>
+      <link>https://legius.com.ua/blog/investytsiynyy-arbitrazh-isds/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/investytsiynyy-arbitrazh-isds/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Супровід інвестицій</category>
+      <description>Пояснюємо механізм ISDS, роль двосторонніх угод про захист інвестицій, стандарти FET та захисту від експропріації, процедуру арбітражу ICSID і виконання рішень.</description>
+    </item>
+    <item>
       <title>Електронна комерція: правові вимоги до інтернет-магазину 2026</title>
       <link>https://legius.com.ua/blog/elektronna-komertsiya-vymohy/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/elektronna-komertsiya-vymohy/</guid>
@@ -382,30 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>M&amp;A (Злиття і поглинання)</category>
       <description>Розбираємо юридичну сторону post-merger інтеграції: реєстраційні дії та строки після closing, дозвіл АМКУ на концентрацію, гармонізація договорів і політик, трудові питання за статтями 36 і 36-1 КЗпП, виконання post-closing зобов’язань.</description>
-    </item>
-    <item>
-      <title>Повідомлення про підозру: як оскаржити у кримінальному провадженні</title>
-      <link>https://legius.com.ua/blog/oskarzhennya-pidozry/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-pidozry/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Пояснюємо порядок вручення підозри за ст. 276-278 КПК, коли відкривається право на оскарження, три групи підстав для скасування, межі перевірки слідчим суддею і яку тактику обрати бізнесу.</description>
-    </item>
-    <item>
-      <title>Закриття кримінального провадження: підстави та порядок (ст. 284 КПК)</title>
-      <link>https://legius.com.ua/blog/zakryttya-kryminalnoho-provadzhennya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zakryttya-kryminalnoho-provadzhennya/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Розбираємо перелік підстав за ст. 284 КПК, різницю між реабілітуючими та нереабілітуючими підставами, недооцінений пункт 10 про сплив строків розслідування і порядок оскарження постанови.</description>
-    </item>
-    <item>
-      <title>Захист у справах про шахрайство (ст. 190 ККУ): стратегія для бізнесу</title>
-      <link>https://legius.com.ua/blog/zakhyst-shakhraystvo-st-190/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zakhyst-shakhraystvo-st-190/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Межа між шахрайством і невиконаним договором визначається моментом виникнення умислу. Розбираємо склад за ст. 190 КК, санкції й розміри шкоди на 2026 рік, практику ВС про розмежування з цивільним спором і шляхи перекваліфікації.</description>
     </item>
   </channel>
 </rss>
