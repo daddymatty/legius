@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 06:39:40 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 06:59:09 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -232,6 +232,14 @@
       <description>Запис у реєстрі змінюється за добу, а податковий облік переходить лише з наступного року — і саме на цьому розриві компанії втрачають гроші. Розбираємо процедуру, правило бюджетного періоду, що робити з ПДВ, єдиним податком і формою 20-ОПП, ризики нового КВЕДу та кого доведеться повідомити самостійно.</description>
     </item>
     <item>
+      <title>Бухгалтерський супровід ФОП і ТОВ: що входить</title>
+      <link>https://legius.com.ua/blog/bukhhalterskyy-suprovid/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/bukhhalterskyy-suprovid/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Розбираємо, який облік реально зобов’язані вести ФОП і ТОВ, які звіти подавати і в які строки, хто відповідає за помилки бухгалтера та коли вигідніший аутсорс.</description>
+    </item>
+    <item>
       <title>Відшкодування збитків та упущеної вигоди</title>
       <link>https://legius.com.ua/blog/vidshkoduvannya-zbytkiv-ta-upushchenoyi-vyhody/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/vidshkoduvannya-zbytkiv-ta-upushchenoyi-vyhody/</guid>
@@ -398,14 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Інтелектуальна власність</category>
       <description>Розбираємо ознаки комерційної таємниці за ст. 505 ЦК, що змінилося після скасування Господарського кодексу, які умови має містити NDA і чому найефективнішим захистом на практиці є АМКУ, а не кримінальна стаття.</description>
-    </item>
-    <item>
-      <title>Передача прав на торгову марку: договір відчуження 2026</title>
-      <link>https://legius.com.ua/blog/peredacha-prav-na-torhovu-marku/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/peredacha-prav-na-torhovu-marku/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>«Чи потрібна реєстрація договору?» — найзаплутаніше питання цієї теми, і відповідь на нього подвійна: сам договір реєструвати не обов’язково, а факт передання прав — обов’язково. Розбираємо різницю між відчуженням і ліцензією, істотні умови, процедуру в УКРНОІВІ, заборону передачі, що вводить в оману, і повний чек-лист перевірки марки перед купівлею.</description>
     </item>
   </channel>
 </rss>
