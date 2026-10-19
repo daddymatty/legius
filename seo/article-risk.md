@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **202** |
+| Опрацьовано | **205** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 30 (старт 213) |
+| Із позначкою `expand` | 28 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 12 |
 
@@ -226,6 +226,9 @@
 | `msek-pislya-poranennya` | 1675 | military-law |
 | `zahalni-zbory-uchasnykiv-tov` | 1861 | corporate-law |
 | `kintsevyy-benefitsiarnyy-vlasnyk` | 1834 | corporate-law |
+| `alimenty-tverda-groshova-suma` | 1917 | family-law |
+| `nerezydent-zasnovnyk-tov` | 2096 | corporate-law |
+| `oskarzhennya-pidozry` | 2322 | criminal-business |
 
 ## Високий ризик — перевіряти першими
 

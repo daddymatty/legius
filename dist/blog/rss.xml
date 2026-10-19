@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 03:09:14 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 03:24:38 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -46,6 +46,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>З додаткової винагороди на період воєнного стану аліменти утримуються на загальних підставах — це прямо передбачено п. 8 постанови КМУ № 146. Розбираємо, які виплати є винятком, куди подавати виконавчий документ і які суми діють у 2026 році.</description>
+    </item>
+    <item>
+      <title>Аліменти у твердій грошовій сумі: коли вигідніше</title>
+      <link>https://legius.com.ua/blog/alimenty-tverda-groshova-suma/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-tverda-groshova-suma/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Розбираємо, у яких випадках тверда сума вигідніша за частку від заробітку, як довести реальні витрати на дитину та рівень доходу платника, чому резолютивна частина має містити конкретну суму в гривнях і як працює індексація.</description>
     </item>
     <item>
       <title>Строк для поділу майна після розлучення: три роки від чого</title>
@@ -142,6 +150,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Розбираємо п’ять рівнів відповідальності керівника — від збитків за ст. 44 і 45 Закону про ТОВ до солідарної за ч. 6 ст. 34 і субсидіарної за ч. 2 ст. 61 Кодексу з процедур банкрутства — і що реально зменшує ризик.</description>
+    </item>
+    <item>
+      <title>ТОВ з іноземним засновником: реєстрація та документи</title>
+      <link>https://legius.com.ua/blog/nerezydent-zasnovnyk-tov/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/nerezydent-zasnovnyk-tov/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Розбираємо, які документи потрібні іноземному засновнику, навіщо нерезиденту український податковий номер, як вносити вклад із-за кордону, коли директору-нерезиденту потрібен дозвіл на застосування праці та які обмеження діють.</description>
     </item>
     <item>
       <title>Зміна місцезнаходження ТОВ і зміна КВЕД: що врахувати</title>
@@ -246,6 +262,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Супровід інвестицій</category>
       <description>«Пропозиція, звернена до невизначеного кола осіб» — це визначення публічної пропозиції цінних паперів, і воно описує будь-яку краудфандингову кампанію з обіцянкою частки. Розбираємо, коли потрібен затверджений НКЦПФР проспект, сім винятків зі статті 97, вимоги до благодійного збору та чим закінчується недобросовісна емісія.</description>
+    </item>
+    <item>
+      <title>Повідомлення про підозру: як оскаржити у кримінальному провадженні</title>
+      <link>https://legius.com.ua/blog/oskarzhennya-pidozry/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-pidozry/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Кримінальне право</category>
+      <description>Пояснюємо порядок вручення підозри за ст. 276-278 КПК, коли відкривається право на оскарження, три групи підстав для скасування, межі перевірки слідчим суддею і яку тактику обрати бізнесу.</description>
     </item>
     <item>
       <title>Закриття кримінального провадження: підстави та порядок (ст. 284 КПК)</title>
@@ -382,30 +406,6 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Нерухомість</category>
       <description>Повний розбір угоди з квартирою: які реєстри перевіряє нотаріус і чого він не перевіряє, чому понад 50 000 грн готівкою передавати не можна, скільки податків сплачує продавець при першому, другому й третьому продажу за рік і коли покупець не платить 1 % до Пенсійного фонду.</description>
-    </item>
-    <item>
-      <title>Земельні спори з сусідами: межі, доступ та самозахоплення</title>
-      <link>https://legius.com.ua/blog/zemelni-spory-z-susidamy/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zemelni-spory-z-susidamy/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Земельне право</category>
-      <description>Як вирішуються спори із сусідами: правила добросусідства за главою 17 ЗКУ, дерева і паркани на межі, коли справу розглядає рада, а коли виключно суд, і чому належний позов — негаторний.</description>
-    </item>
-    <item>
-      <title>Як структурувати інвестицію в український бізнес у 2026 році</title>
-      <link>https://legius.com.ua/blog/yak-strukturuvaty-investytsiyu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/yak-strukturuvaty-investytsiyu/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Супровід інвестицій</category>
-      <description>Структура інвестиції — це три незалежні рішення: що купуємо, через кого володіємо і чим заходимо. Розбираємо кожне з них разом із податковою ціною, правилами КІК, порогами АМКУ та механізмами виходу — і показуємо, чому найдешевша на вигляд модель часто виявляється найдорожчою.</description>
-    </item>
-    <item>
-      <title>Юридичний due diligence для інвестора: як перевірити актив</title>
-      <link>https://legius.com.ua/blog/yurydychnyy-due-diligence/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/yurydychnyy-due-diligence/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Супровід інвестицій</category>
-      <description>Практичний розбір юридичного due diligence: конкретні реєстри та що саме кожен із них показує, перевірка кінцевого бенефіціара і структури власності, ризиковий статус платника ПДВ, судовий і виконавчий блок, deal-breakers і те, як ризики перетворюються на умови угоди.</description>
     </item>
   </channel>
 </rss>
