@@ -6,7 +6,15 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 08:07:53 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 08:17:39 GMT</lastBuildDate>
+    <item>
+      <title>Графік побачень з дитиною: як встановити і як виконати</title>
+      <link>https://legius.com.ua/blog/uchast-batka-u-vykhovanni/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/uchast-batka-u-vykhovanni/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Пояснюємо, як встановити графік спілкування з дитиною через орган опіки або суд, що саме писати в графіку, як фіксувати перешкоди і які важелі працюють, коли рішення не виконують.</description>
+    </item>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -304,6 +312,14 @@
       <description>Розбираємо, який облік реально зобов’язані вести ФОП і ТОВ, які звіти подавати і в які строки, хто відповідає за помилки бухгалтера та коли вигідніший аутсорс.</description>
     </item>
     <item>
+      <title>Ризиковість платника ПДВ: як зняти статус і розблокувати роботу</title>
+      <link>https://legius.com.ua/blog/ryzykovist-platnyka-pdv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/ryzykovist-platnyka-pdv/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Податкове право</category>
+      <description>Що робити, коли компанію віднесли до ризикових платників ПДВ: за що присвоюють статус, що саме зупиняється, як подати таблицю даних і пояснення та як оскаржити рішення комісії.</description>
+    </item>
+    <item>
       <title>Податкова оптимізація: законні інструменти та червоні лінії</title>
       <link>https://legius.com.ua/blog/podatkove-planuvannya-biznesu/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/podatkove-planuvannya-biznesu/</guid>
@@ -390,22 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Нерухомість</category>
       <description>Як оформити спадщину на нерухомість: строк шість місяців, спадкування за заповітом і за законом, роль нотаріуса, поновлення пропущеного строку та реєстрація права.</description>
-    </item>
-    <item>
-      <title>Узаконення самочинного будівництва та перепланування 2026</title>
-      <link>https://legius.com.ua/blog/uzakonennya-samochynnoho-budivnytstva/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/uzakonennya-samochynnoho-budivnytstva/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>Що таке самочинне будівництво за статтею 376 ЦК України, чому реєстрація права не змінює статусу самобуду, як легалізувати добудову чи перепланування, коли працює будівельна амністія і чому знесення не має строку давності.</description>
-    </item>
-    <item>
-      <title>Виселення з квартири: підстави та судова процедура 2026</title>
-      <link>https://legius.com.ua/blog/vyselennya-z-kvartyry/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vyselennya-z-kvartyry/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>Розбираємо підстави та судову процедуру виселення з квартири: коли потрібне рішення суду, виселення колишнього власника й орендаря, права дітей та виконання рішення.</description>
     </item>
   </channel>
 </rss>
