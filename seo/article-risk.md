@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **232** |
+| Опрацьовано | **235** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 16 (старт 213) |
+| Із позначкою `expand` | 15 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 6 |
 
@@ -256,6 +256,9 @@
 | `kupivlya-zemli-pid-zabudovu` | 2375 | real-estate |
 | `kiberbezpeka-vytik-danykh` | 2163 | it-law |
 | `rehulyuvannya-shtuchnoho-intelektu-2026` | 2699 | it-law |
+| `vidshkoduvannya-zbytkiv-ta-upushchenoyi-vyhody` | 2255 | litigation |
+| `sudovyy-zbir-2026-stavky` | 2308 | litigation |
+| `viyskovyy-oblik-na-pidpryyemstvi` | 2252 | military-law |
 
 ## Високий ризик — перевіряти першими
 
