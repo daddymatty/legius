@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **235** |
+| Опрацьовано | **238** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 15 (старт 213) |
+| Із позначкою `expand` | 14 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 6 |
 
@@ -259,6 +259,9 @@
 | `vidshkoduvannya-zbytkiv-ta-upushchenoyi-vyhody` | 2255 | litigation |
 | `sudovyy-zbir-2026-stavky` | 2308 | litigation |
 | `viyskovyy-oblik-na-pidpryyemstvi` | 2252 | military-law |
+| `zakhyst-kodu-ta-ip-v-it` | 2328 | it-law |
+| `moralna-shkoda-vidshkoduvannya` | 2410 | litigation |
+| `evidnovlennya-kompensatsiya-za-zhytlo` | 2232 | real-estate |
 
 ## Високий ризик — перевіряти першими
 
