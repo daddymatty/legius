@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 04:13:24 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 04:29:06 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -46,6 +46,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Якщо заповіту немає, майно розподіляє закон — за п’ятьма чергами спадкоємців. Хто входить до кожної черги, коли онуки спадкують за правом представлення, чим трансмісія відрізняється від представлення і як цивільній дружині довести право на спадщину.</description>
+    </item>
+    <item>
+      <title>Розлучення з військовослужбовцем: як це відбувається</title>
+      <link>https://legius.com.ua/blog/rozluchennya-z-viyskovosluzhbovtsem/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/rozluchennya-z-viyskovosluzhbovtsem/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Розбираємо, чи можна розлучитися без присутності військовослужбовця, як він бере участь у засіданні, що робити, коли місце перебування невідоме, як діляться грошове забезпечення та бойові виплати і які обмеження на пред’явлення позову діють.</description>
     </item>
     <item>
       <title>Аліменти з військовослужбовця: з яких виплат утримують</title>
@@ -94,6 +102,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Повістку суд не розглядає, а штраф скасовує за трьома типовими підставами. Розбираємо, що саме підлягає оскарженню, строки адміністративного і судового шляху та робочі аргументи у справах за ст. 210 і 210-1 КУпАП.</description>
+    </item>
+    <item>
+      <title>Відпустка військовослужбовця: види, тривалість, відмова</title>
+      <link>https://legius.com.ua/blog/vidpustka-viyskovosluzhbovtsya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vidpustka-viyskovosluzhbovtsya/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Розбираємо види відпусток військовослужбовця під час воєнного стану, тривалість кожної, обов’язкову безперервну частину 15 днів, час на проїзд, порядок подання рапорту й механізм дій, якщо командування відмовляє без правових підстав.</description>
     </item>
     <item>
       <title>Інвалідність після поранення: як встановлюють і що дає</title>
@@ -182,6 +198,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Судові спори</category>
       <description>Пояснюємо, як юридична особа може захистити ділову репутацію: чотири умови задоволення позову, межа між фактом та оціночним судженням, на кому насправді тягар доказування після виключення презумпції добропорядності, і які способи захисту працюють.</description>
+    </item>
+    <item>
+      <title>Мирова угода в суді: коли вигідніше домовитись</title>
+      <link>https://legius.com.ua/blog/myrova-uhoda-v-sudi/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/myrova-uhoda-v-sudi/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Розбираємо мирову угоду в суді: коли домовитись вигідніше за рішення, як її укласти й затвердити, чому після ухвалення рішення угоду подають виконавцю, а не до суду, і скільки судового збору повертається.</description>
     </item>
     <item>
       <title>Як скасувати незаконне обмеження максимального розміру пенсії у 2026</title>
@@ -382,30 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Кримінальне право</category>
       <description>Громадянина України видати не можуть — але це не знімає red notice і не припиняє справу. Розбираємо вісім видів оповіщень Інтерполу, порядок звернення до CCF, вичерпні підстави відмови у видачі та строки тимчасового й екстрадиційного арешту.</description>
-    </item>
-    <item>
-      <title>Розірвання шлюбу в Україні: повний порядок дій у 2026 році</title>
-      <link>https://legius.com.ua/blog/rozirvannya-shlyubu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/rozirvannya-shlyubu/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Чотири способи розірвати шлюб і як обрати свій: коли достатньо ДРАЦС, коли потрібен суд, чому під час вагітності позов подати не можна (і що тоді робити), скільки це коштує у 2026 році, з якого дня шлюб вважається припиненим і чого розлучення не вирішує.</description>
-    </item>
-    <item>
-      <title>Пропущений строк прийняття спадщини: як поновити права</title>
-      <link>https://legius.com.ua/blog/propushchenyy-strok-spadshchyna/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/propushchenyy-strok-spadshchyna/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Пропущений строк не означає втрату спадщини, але шляхів лише два. Розбираємо, коли достатньо письмової згоди інших спадкоємців, які причини Верховний Суд визнає поважними, а які відкидає, чому «не знав про смерть» часто не працює і що насправді змінилося у строках під час воєнного стану.</description>
-    </item>
-    <item>
-      <title>Оскарження заповіту: підстави, строки та судова практика</title>
-      <link>https://legius.com.ua/blog/oskarzhennya-zapovitu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-zapovitu/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Більшість позовів про заповіт програється не через слабкі факти, а через неправильно сформульовану вимогу. Розбираємо, чим нікчемність відрізняється від недійсності й чому вони вимагають різних позовів, що саме має встановити посмертна експертиза, які «порушення» Верховний Суд дефектом форми не вважає, і як оскаржується заповіт подружжя.</description>
     </item>
   </channel>
 </rss>
