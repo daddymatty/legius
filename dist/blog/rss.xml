@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 01:01:06 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 01:23:33 GMT</lastBuildDate>
     <item>
       <title>Чи переходять борги у спадщину: кредити померлого та захист спадкоємців</title>
       <link>https://legius.com.ua/blog/spadkuvannya-borhiv/</link>
@@ -14,6 +14,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Найсильніший аргумент спадкоємця — не вартість майна, а строк. Строки статті 1281 ЦК є преклюзивними: їхній сплив не просто дає підставу відмовити в позові, а припиняє саме зобов’язання — разом із порукою та вимогами, забезпеченими іпотекою. Розбираємо чинну редакцію строків, позиції Великої Палати 2024–2025 років, податковий борг і алгоритм захисту.</description>
+    </item>
+    <item>
+      <title>Відмова від спадщини: як оформити та які наслідки</title>
+      <link>https://legius.com.ua/blog/vidmova-vid-spadshchyny/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vidmova-vid-spadshchyny/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Відмову можна відкликати — але лише в межах шести місяців, а оспорити її потім можна лише з п’яти підстав, закритий перелік яких прямо названий у законі. Розбираємо порядок оформлення, адресну відмову, правило, за яким відмова від спадщини за заповітом не позбавляє права спадкувати за законом, і що відбувається з відумерлою спадщиною.</description>
     </item>
     <item>
       <title>Строк для поділу майна після розлучення: три роки від чого</title>
@@ -62,6 +70,22 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Земельне право</category>
       <description>Половина вимог «принесіть звіт про експертну оцінку» незаконні: з 2019 року перелік обов’язкових випадків скорочено, а органам влади прямо заборонено вимагати такий звіт, якщо закон цього не вимагає. Розбираємо чинний перелік, вісім етапів оцінки, рецензування звіту, індексацію нормативної оцінки на 2026 рік і як оскаржувати результат.</description>
+    </item>
+    <item>
+      <title>Скасування державної реєстрації земельної ділянки</title>
+      <link>https://legius.com.ua/blog/skasuvannya-reyestratsiyi-dilyanky/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/skasuvannya-reyestratsiyi-dilyanky/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Земельне право</category>
+      <description>Скасування реєстрації допускається виключно одночасно з вирішенням долі речового права. Розбираємо два рівні реєстрації, підстави, належного відповідача, юрисдикцію і те, чому вимога «скасувати запис» більше не працює.</description>
+    </item>
+    <item>
+      <title>Земельний податок та орендна плата за землю 2026</title>
+      <link>https://legius.com.ua/blog/zemelnyy-podatok-ta-orendna-plata-2026/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zemelnyy-podatok-ta-orendna-plata-2026/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Земельне право</category>
+      <description>Орендна плата не може бути нижчою за земельний податок і вищою за 12 % оцінки — а якщо у вашому договорі ставка менша за мінімум, у декларації все одно береться мінімум із ПКУ. Розбираємо граничні ставки 2026 року, коефіцієнт індексації 1,08, пільги з площами, воєнні звільнення за Переліком територій і порядок оскарження нарахувань.</description>
     </item>
     <item>
       <title>Франчайзинг: договір комерційної концесії в Україні 2026</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Перелік обов’язкових відомостей у статуті дуже короткий — уся цінність документа в тому, що ви додаєте понад нього. Розбираємо різницю між модельним і власним статутом, фразу «якщо інше не передбачено статутом» і новелу про додатковий капітал.</description>
-    </item>
-    <item>
-      <title>Вихід учасника з ТОВ: процедура та виплата частки</title>
-      <link>https://legius.com.ua/blog/vykhid-uchasnyka-tov/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vykhid-uchasnyka-tov/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Вихід із ТОВ залежить від однієї цифри — розміру частки. Розбираємо порядок за ст. 24 Закону про ТОВ, строки повідомлення й виплати, як визначається вартість частки, оподаткування та чому «виключити» проблемного учасника закон майже не дозволяє.</description>
-    </item>
-    <item>
-      <title>Продаж частки в ТОВ: як оформити безпечно та без ризиків</title>
-      <link>https://legius.com.ua/blog/prodazh-chastky-tov/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/prodazh-chastky-tov/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Переважне право інших учасників спрацьовує автоматично, якщо його не виключити статутом, а порушення дає позов про переведення прав покупця з однорічною давністю. Розбираємо порядок ст. 20-21 Закону про ТОВ, нотаріальний акт, реєстрацію та податки.</description>
-    </item>
-    <item>
-      <title>Корпоративні спори: види, причини та шляхи вирішення</title>
-      <link>https://legius.com.ua/blog/korporatyvni-spory/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/korporatyvni-spory/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Корпоративні права виникають не з договору, а з реєстрації в ЄДР, неповідомлення про збори саме по собі рішення не скасовує, а похідний позов доступний з 5 відсотками капіталу. Розбираємо підсудність, категорії спорів і позиції Верховного Суду.</description>
     </item>
   </channel>
 </rss>

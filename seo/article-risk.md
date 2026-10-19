@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **178** |
+| Опрацьовано | **181** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 44 (старт 213) |
+| Із позначкою `expand` | 43 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 17 |
+| Середній (5–6), лишилось | 16 |
 
 ## ✅ Опрацьовано
 
@@ -202,6 +202,9 @@
 | `strok-pozovnoyi-davnosti-podil-mayna` | 2038 | family-law |
 | `servitut-ta-pravo-prohodu` | 2150 | land-law |
 | `kraudfandynh-pravove-rehulyuvannya` | 2287 | investment |
+| `vidmova-vid-spadshchyny` | 1863 | family-law |
+| `skasuvannya-reyestratsiyi-dilyanky` | 1492 | land-law |
+| `zemelnyy-podatok-ta-orendna-plata-2026` | 2484 | land-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -216,7 +219,6 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 521 | 1 | land-law | `skasuvannya-reyestratsiyi-dilyanky` |
 | 5 | 551 | 0 | military-law | `oskarzhennya-rishen-tck` |
 | 5 | 563 | 0 | military-law | `dystsyplinarna-vidpovidalnist-viyskovosluzhbovtsya` |
 | 5 | 580 | 0 | military-law | `msek-pislya-poranennya` |
