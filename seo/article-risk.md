@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **238** |
+| Опрацьовано | **241** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 14 (старт 213) |
+| Із позначкою `expand` | 12 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 6 |
 
@@ -262,6 +262,9 @@
 | `zakhyst-kodu-ta-ip-v-it` | 2328 | it-law |
 | `moralna-shkoda-vidshkoduvannya` | 2410 | litigation |
 | `evidnovlennya-kompensatsiya-za-zhytlo` | 2232 | real-estate |
+| `alimenty-z-bezrobitnoho` | 2321 | family-law |
+| `ipoteka-yurydychnyy-suprovid` | 2249 | real-estate |
+| `dohovir-saas-klyuchovi-umovy` | 2288 | it-law |
 
 ## Високий ризик — перевіряти першими
 

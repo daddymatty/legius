@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 06:28:04 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 06:39:40 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -110,6 +110,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Відмова в позові про поновлення батьківських прав закриває шлях до повторного звернення на цілий рік. Розбираємо вимоги ст. 169 СК, дві абсолютні перешкоди, роль думки дитини та висновку органу опіки.</description>
+    </item>
+    <item>
+      <title>Аліменти з безробітного: як стягнути, якщо немає доходу</title>
+      <link>https://legius.com.ua/blog/alimenty-z-bezrobitnoho/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-z-bezrobitnoho/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Відсутність офіційної роботи не звільняє від аліментів. Пояснюємо, як визначається розмір, за якою формулою рахується борг непрацюючого і які обмеження застосовує виконавець.</description>
     </item>
     <item>
       <title>Відстрочка від мобілізації у 2026: підстави, документи, порядок оформлення</title>
@@ -272,6 +280,14 @@
       <description>Протокол за статтею 130 КУпАП ще не означає позбавлення прав. Розбираємо санкції, строк притягнення, процедуру огляду за Інструкцією № 1452/735, які порушення ведуть до закриття справи і як вибудувати лінію захисту.</description>
     </item>
     <item>
+      <title>Іпотека: юридичний супровід та ризики позичальника 2026</title>
+      <link>https://legius.com.ua/blog/ipoteka-yurydychnyy-suprovid/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/ipoteka-yurydychnyy-suprovid/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Нерухомість</category>
+      <description>Розбираємо іпотеку з позиції позичальника: як працює застава нерухомості, що передбачити в договорі, які ризики звернення стягнення та виселення й як захистити житло.</description>
+    </item>
+    <item>
       <title>Спадкування нерухомості: оформлення та строки 2026</title>
       <link>https://legius.com.ua/blog/spadkuvannya-nerukhomosti/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/spadkuvannya-nerukhomosti/</guid>
@@ -390,22 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Інтелектуальна власність</category>
       <description>«Чи потрібна реєстрація договору?» — найзаплутаніше питання цієї теми, і відповідь на нього подвійна: сам договір реєструвати не обов’язково, а факт передання прав — обов’язково. Розбираємо різницю між відчуженням і ліцензією, істотні умови, процедуру в УКРНОІВІ, заборону передачі, що вводить в оману, і повний чек-лист перевірки марки перед купівлею.</description>
-    </item>
-    <item>
-      <title>Оцінка та постановка IP на баланс компанії 2026</title>
-      <link>https://legius.com.ua/blog/otsinka-ip-na-balansi/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/otsinka-ip-na-balansi/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>Пояснюємо, коли торгову марку, патент чи ПЗ можна визнати нематеріальним активом, чому витрати на створення власного бренду не капіталізуються, які методи оцінки застосовують і як рахується амортизація.</description>
-    </item>
-    <item>
-      <title>Венчурний фонд та term sheet: що важливо знати інвестору й стартапу</title>
-      <link>https://legius.com.ua/blog/venchurnyy-fond-ta-term-sheet/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/venchurnyy-fond-ta-term-sheet/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Супровід інвестицій</category>
-      <description>Пояснюємо структуру венчурного фонду, режим ІСІ за Законом № 5080-VI з його податковими та регуляторними особливостями, і ключові умови term sheet: оцінку, ліквідаційну перевагу, захист від розмиття й права інвестора.</description>
     </item>
   </channel>
 </rss>
