@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **205** |
+| Опрацьовано | **208** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 28 (старт 213) |
+| Із позначкою `expand` | 26 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 12 |
 
@@ -229,6 +229,9 @@
 | `alimenty-tverda-groshova-suma` | 1917 | family-law |
 | `nerezydent-zasnovnyk-tov` | 2096 | corporate-law |
 | `oskarzhennya-pidozry` | 2322 | criminal-business |
+| `cherhy-spadkuvannya-za-zakonom` | 2157 | family-law |
+| `otsinka-vartosti-biznesu` | 2111 | m-and-a |
+| `zakhyst-za-statteyu-130-kupap` | 2476 | litigation |
 
 ## Високий ризик — перевіряти першими
 
