@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **244** |
+| Опрацьовано | **247** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 11 (старт 213) |
+| Із позначкою `expand` | 10 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 5 |
+| Середній (5–6), лишилось | 4 |
 
 ## ✅ Опрацьовано
 
@@ -268,6 +268,9 @@
 | `safe-ta-konvertovana-pozyka` | 2262 | investment |
 | `prodazh-biznesu-peredprodazhna-pidhotovka` | 2265 | m-and-a |
 | `bukhhalterskyy-suprovid` | 2421 | corporate-law |
+| `reyestratsiya-fop` | 2293 | corporate-law |
+| `spilne-pidpryyemstvo-jv` | 2539 | m-and-a |
+| `rozirvannya-dohovoru-cherez-sud` | 2608 | litigation |
 
 ## Високий ризик — перевіряти першими
 
@@ -280,7 +283,6 @@
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 785 | 1 | corporate-law | `reyestratsiya-fop` |
 | 5 | 858 | 1 | corporate-law | `korporatyvnyy-dohovir` |
 | 5 | 1044 | 1 | corporate-law | `reyestratsiya-tov` |
 | 5 | 1184 | 1 | corporate-law | `reyestratsiya-gromadskoyi-organizatsiyi` |
