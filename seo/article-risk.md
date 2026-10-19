@@ -14,7 +14,7 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **217** |
+| Опрацьовано | **220** |
 | Коротших за 450 слів | 0 (старт 147) |
 | Із позначкою `expand` | 22 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
@@ -241,6 +241,9 @@
 | `rozluchennya-z-viyskovosluzhbovtsem` | 2273 | family-law |
 | `vidpustka-viyskovosluzhbovtsya` | 1942 | military-law |
 | `myrova-uhoda-v-sudi` | 2195 | litigation |
+| `uzakonennya-samochynnoho-budivnytstva` | 2419 | real-estate |
+| `earn-out-vidkladena-oplata` | 2288 | m-and-a |
+| `upravlinskyy-vykup-mbo` | 2369 | m-and-a |
 
 ## Високий ризик — перевіряти першими
 

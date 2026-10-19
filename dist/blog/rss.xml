@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 04:29:06 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 04:44:28 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -224,6 +224,14 @@
       <description>Протокол за статтею 130 КУпАП ще не означає позбавлення прав. Розбираємо санкції, строк притягнення, процедуру огляду за Інструкцією № 1452/735, які порушення ведуть до закриття справи і як вибудувати лінію захисту.</description>
     </item>
     <item>
+      <title>Узаконення самочинного будівництва та перепланування 2026</title>
+      <link>https://legius.com.ua/blog/uzakonennya-samochynnoho-budivnytstva/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/uzakonennya-samochynnoho-budivnytstva/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Нерухомість</category>
+      <description>Що таке самочинне будівництво за статтею 376 ЦК України, чому реєстрація права не змінює статусу самобуду, як легалізувати добудову чи перепланування, коли працює будівельна амністія і чому знесення не має строку давності.</description>
+    </item>
+    <item>
       <title>Виділення земельної частки (паю) в натурі у 2026 році</title>
       <link>https://legius.com.ua/blog/vydilennya-zemelnoho-payu-v-naturi/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/vydilennya-zemelnoho-payu-v-naturi/</guid>
@@ -352,6 +360,22 @@
       <description>Пояснюємо, як визначається вартість бізнесу в угоді M&amp;A: метод DCF, ринкові мультиплікатори, майновий підхід, поняття enterprise value та equity value, вплив боргу й оборотного капіталу, коли оцінка обов’язкова за законом і як закріпити ціну в договорі.</description>
     </item>
     <item>
+      <title>Earn-out та механізми відкладеної оплати в угоді</title>
+      <link>https://legius.com.ua/blog/earn-out-vidkladena-oplata/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/earn-out-vidkladena-oplata/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>M&amp;A (Злиття і поглинання)</category>
+      <description>Розбираємо механізми відкладеної оплати в угоді M&amp;A: earn-out, deferred payment, рахунок умовного зберігання (ескроу) за статтями 1076-1 — 1076-8 ЦК і post-closing коригування ціни, їхні переваги, ризики, податковий наслідок і типові спори.</description>
+    </item>
+    <item>
+      <title>Управлінський викуп (MBO): як менеджменту купити бізнес</title>
+      <link>https://legius.com.ua/blog/upravlinskyy-vykup-mbo/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/upravlinskyy-vykup-mbo/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>M&amp;A (Злиття і поглинання)</category>
+      <description>Пояснюємо, як влаштований управлінський викуп (MBO): структура угоди через NewCo, джерела фінансування, конфлікт інтересів менеджменту та як його врегулювати за Законом про ТОВ, і повний пакет документів.</description>
+    </item>
+    <item>
       <title>Post-merger інтеграція: юридичні аспекти об’єднання</title>
       <link>https://legius.com.ua/blog/post-merger-intehratsiya/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/post-merger-intehratsiya/</guid>
@@ -382,30 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Кримінальне право</category>
       <description>Межа між шахрайством і невиконаним договором визначається моментом виникнення умислу. Розбираємо склад за ст. 190 КК, санкції й розміри шкоди на 2026 рік, практику ВС про розмежування з цивільним спором і шляхи перекваліфікації.</description>
-    </item>
-    <item>
-      <title>Легалізація доходів (ст. 209 ККУ): захист бізнесу та стратегія</title>
-      <link>https://legius.com.ua/blog/legalizatsiya-dokhodiv-st-209/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/legalizatsiya-dokhodiv-st-209/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Розбираємо чинний склад ст. 209 КК після Закону № 361-IX, вимоги до доведення предикатного діяння, пороги великого та особливо великого розміру у 2026 році, механіку фінмоніторингу і робочі лінії захисту.</description>
-    </item>
-    <item>
-      <title>Службове підроблення та зловживання (ст. 364, 366 ККУ): захист</title>
-      <link>https://legius.com.ua/blog/sluzhbove-pidroblennya-st-364-366/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/sluzhbove-pidroblennya-st-364-366/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Директор приватної компанії не є суб’єктом ст. 364 КК — для нього діє ст. 364-1. Розбираємо розмежування складів, суми істотної шкоди і тяжких наслідків на 2026 рік і позицію об’єднаної палати ВС про те, що корисливий мотив не обов’язковий.</description>
-    </item>
-    <item>
-      <title>Міжнародний розшук Інтерпол та екстрадиція: захист бізнесу</title>
-      <link>https://legius.com.ua/blog/mizhnarodnyy-rozshuk-interpol-ekstradytsiya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/mizhnarodnyy-rozshuk-interpol-ekstradytsiya/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Громадянина України видати не можуть — але це не знімає red notice і не припиняє справу. Розбираємо вісім видів оповіщень Інтерполу, порядок звернення до CCF, вичерпні підстави відмови у видачі та строки тимчасового й екстрадиційного арешту.</description>
     </item>
   </channel>
 </rss>
