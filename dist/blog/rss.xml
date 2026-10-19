@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 06:59:09 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 07:16:50 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -176,6 +176,14 @@
       <description>З 2024 року переведення оформлюється електронним рапортом в «Армія+», і в низці випадків згода командира взагалі не потрібна. Розбираємо, коли вона обов’язкова, які строки діють і що робити, якщо розпорядження не виконують.</description>
     </item>
     <item>
+      <title>Реєстрація ФОП у 2026 році: покроковий порядок</title>
+      <link>https://legius.com.ua/blog/reyestratsiya-fop/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-fop/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Розбираємо реєстрацію ФОП по кроках: де подати заяву, як обрати КВЕДи та групу єдиного податку, коли потрібен ПРРО і які суми та строки чекають уже з першого місяця.</description>
+    </item>
+    <item>
       <title>Закриття ФОП: припинення діяльності без боргів і штрафів</title>
       <link>https://legius.com.ua/blog/zakryttya-fop/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/zakryttya-fop/</guid>
@@ -238,6 +246,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Розбираємо, який облік реально зобов’язані вести ФОП і ТОВ, які звіти подавати і в які строки, хто відповідає за помилки бухгалтера та коли вигідніший аутсорс.</description>
+    </item>
+    <item>
+      <title>Розірвання договору в судовому порядку</title>
+      <link>https://legius.com.ua/blog/rozirvannya-dohovoru-cherez-sud/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/rozirvannya-dohovoru-cherez-sud/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Пояснюємо підстави та порядок розірвання договору в судовому порядку: істотне порушення, істотна зміна обставин, що змінив скасований Господарський кодекс і які наслідки має рішення суду.</description>
     </item>
     <item>
       <title>Відшкодування збитків та упущеної вигоди</title>
@@ -390,22 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Інтелектуальна власність</category>
       <description>З 28 серпня 2025 року Господарський кодекс не застосовується — і разом із ним зникла вимога про державну реєстрацію договору комерційної концесії, яку досі переписують у шаблони. Розбираємо чинне регулювання за главою 76 ЦК: комплекс прав, умови, які закон визнає нікчемними, субсидіарну й солідарну відповідальність франчайзера та правила виходу з договору.</description>
-    </item>
-    <item>
-      <title>Митний реєстр об’єктів права інтелектуальної власності 2026</title>
-      <link>https://legius.com.ua/blog/mytnyy-reyestr-obyektiv-iv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/mytnyy-reyestr-obyektiv-iv/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>Митний реєстр зупиняє контрафакт на кордоні, але вмикає й зворотний бік: витрати на зберігання та знищення несе правовласник, а 10 робочих днів на реакцію починають спливати з моменту повідомлення. Розбираємо всі п’ять заходів сприяння захисту, строки реєстрації об’єкта, механіку призупинення та спрощене знищення без доведення порушення.</description>
-    </item>
-    <item>
-      <title>NDA та режим комерційної таємниці на підприємстві 2026</title>
-      <link>https://legius.com.ua/blog/nda-ta-komertsiyna-tayemnytsya/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/nda-ta-komertsiyna-tayemnytsya/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>Розбираємо ознаки комерційної таємниці за ст. 505 ЦК, що змінилося після скасування Господарського кодексу, які умови має містити NDA і чому найефективнішим захистом на практиці є АМКУ, а не кримінальна стаття.</description>
     </item>
   </channel>
 </rss>
