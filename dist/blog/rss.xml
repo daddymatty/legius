@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 02:50:10 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 03:09:14 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -80,6 +80,14 @@
       <description>Повістку суд не розглядає, а штраф скасовує за трьома типовими підставами. Розбираємо, що саме підлягає оскарженню, строки адміністративного і судового шляху та робочі аргументи у справах за ст. 210 і 210-1 КУпАП.</description>
     </item>
     <item>
+      <title>Інвалідність після поранення: як встановлюють і що дає</title>
+      <link>https://legius.com.ua/blog/msek-pislya-poranennya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/msek-pislya-poranennya/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Пояснюємо, чим встановлення інвалідності відрізняється від висновку ВЛК, як працює система експертних команд після ліквідації МСЕК, який документ є ключовим і що робити при заниженні групи.</description>
+    </item>
+    <item>
       <title>Дисциплінарна відповідальність військовослужбовця</title>
       <link>https://legius.com.ua/blog/dystsyplinarna-vidpovidalnist-viyskovosluzhbovtsya/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/dystsyplinarna-vidpovidalnist-viyskovosluzhbovtsya/</guid>
@@ -104,12 +112,28 @@
       <description>Запис про припинення в реєстрі не припиняє податкових зобов’язань. Розбираємо строки ліквідаційної звітності 20 і 40 днів, нарахування ЄСВ за місяць закриття та чому у 2026 році воєнна пільга з ЄСВ не діє.</description>
     </item>
     <item>
+      <title>Кінцевий бенефіціарний власник і структура власності ТОВ</title>
+      <link>https://legius.com.ua/blog/kintsevyy-benefitsiarnyy-vlasnyk/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/kintsevyy-benefitsiarnyy-vlasnyk/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Пояснюємо, за якими ознаками визначають КБВ, як виглядає схема структури власності, які строки діють під час воєнного стану й чому за неподання штрафують саме керівника.</description>
+    </item>
+    <item>
       <title>Збільшення статутного капіталу ТОВ: способи та процедура</title>
       <link>https://legius.com.ua/blog/zbilshennya-statutnoho-kapitalu-tov/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/zbilshennya-statutnoho-kapitalu-tov/</guid>
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Збільшення статутного капіталу ламається не на реєстрації, а на строках і другому рішенні зборів. Розбираємо різницю між додатковими вкладами й нерозподіленим прибутком, механіку переважного права, три строки зі статті 18 Закону про ТОВ, капіталізацію боргу через зарахування зустрічних вимог і те, що можна переписати статутом.</description>
+    </item>
+    <item>
+      <title>Загальні збори учасників ТОВ: скликання, кворум, протокол</title>
+      <link>https://legius.com.ua/blog/zahalni-zbory-uchasnykiv-tov/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zahalni-zbory-uchasnykiv-tov/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Розбираємо скликання зборів, повідомлення за 30 днів, необхідну кількість голосів, відеоконференцію, заочне голосування та опитування, вимоги до протоколу — і чому саме процедурні помилки скасовують рішення.</description>
     </item>
     <item>
       <title>Відповідальність директора ТОВ: за що відповідає керівник</title>
@@ -382,30 +406,6 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Супровід інвестицій</category>
       <description>Практичний розбір юридичного due diligence: конкретні реєстри та що саме кожен із них показує, перевірка кінцевого бенефіціара і структури власності, ризиковий статус платника ПДВ, судовий і виконавчий блок, deal-breakers і те, як ризики перетворюються на умови угоди.</description>
-    </item>
-    <item>
-      <title>Інвестиційний договір: на що звернути увагу при підписанні</title>
-      <link>https://legius.com.ua/blog/investytsiynyy-dohovir/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/investytsiynyy-dohovir/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Супровід інвестицій</category>
-      <description>Розбираємо весь пакет документів угоди: що насправді зв’язує сторони в term sheet, чотири форми входу інвестора, як працюють запевнення й транші, що має містити корпоративний договір і які державні гарантії має іноземний інвестор — зокрема чому реєстрація іноземної інвестиції вже не потрібна.</description>
-    </item>
-    <item>
-      <title>Репатріація прибутку та валютні обмеження для інвестора у 2026 році</title>
-      <link>https://legius.com.ua/blog/repatriatsiya-prybutku/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/repatriatsiya-prybutku/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Супровід інвестицій</category>
-      <description>Як легально повернути прибуток і капітал з України у 2026 році: за які періоди НБУ дозволяє переказувати дивіденди і в яких лімітах, що дають «інвестиційний» і новий «додатковий» ліміти, коли 15 % податку на репатріацію знижується конвенцією і чому без легалізованої довідки пільгова ставка неправомірна.</description>
-    </item>
-    <item>
-      <title>Гіг-контракт проти ФОП: що обрати для оформлення IT-команди</title>
-      <link>https://legius.com.ua/blog/hih-kontrakt-proty-fop/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/hih-kontrakt-proty-fop/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>IT Law</category>
-      <description>Порівнюємо три моделі найму в IT — КЗпП, ФОП і гіг-контракт Дія City: які вимоги має виконувати резидент, щоб зберегти ставку 5 %, що насправді дає гіг-спеціалісту соціальний пакет, кому належать права на код і чому модель ФОП найчастіше ламається на перекваліфікації у трудові відносини.</description>
     </item>
   </channel>
 </rss>

@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **199** |
+| Опрацьовано | **202** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 33 (старт 213) |
+| Із позначкою `expand` | 30 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 13 |
+| Середній (5–6), лишилось | 12 |
 
 ## ✅ Опрацьовано
 
@@ -223,6 +223,9 @@
 | `perevedennya-do-inshoyi-chastyny` | 1598 | military-law |
 | `alimenty-z-viyskovosluzhbovtsya` | 1580 | family-law |
 | `ponovlennya-batkivskykh-prav` | 1616 | family-law |
+| `msek-pislya-poranennya` | 1675 | military-law |
+| `zahalni-zbory-uchasnykiv-tov` | 1861 | corporate-law |
+| `kintsevyy-benefitsiarnyy-vlasnyk` | 1834 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -237,7 +240,6 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 580 | 0 | military-law | `msek-pislya-poranennya` |
 | 5 | 650 | 1 | family-law | `rozluchennya-z-viyskovosluzhbovtsem` |
 | 5 | 655 | 0 | military-law | `vidpustka-viyskovosluzhbovtsya` |
 | 5 | 668 | 0 | military-law | `vidstrochka-vid-mobilizatsiyi` |
