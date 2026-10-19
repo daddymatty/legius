@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **187** |
+| Опрацьовано | **190** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 40 (старт 213) |
+| Із позначкою `expand` | 37 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 16 |
+| Середній (5–6), лишилось | 15 |
 
 ## ✅ Опрацьовано
 
@@ -211,6 +211,9 @@
 | `obovyazkova-chastka-u-spadshchyni` | 1492 | family-law |
 | `legalizatsiya-dokhodiv-st-209` | 1971 | criminal-business |
 | `oformlennya-spadshchyny` | 1808 | family-law |
+| `oskarzhennya-rishen-tck` | 1898 | military-law |
+| `vidpovidalnist-dyrektora-tov` | 1710 | corporate-law |
+| `alimenty-pislya-18-rokiv` | 1592 | family-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -225,7 +228,6 @@
 | 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 551 | 0 | military-law | `oskarzhennya-rishen-tck` |
 | 5 | 563 | 0 | military-law | `dystsyplinarna-vidpovidalnist-viyskovosluzhbovtsya` |
 | 5 | 580 | 0 | military-law | `msek-pislya-poranennya` |
 | 5 | 582 | 0 | military-law | `perevedennya-do-inshoyi-chastyny` |
