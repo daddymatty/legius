@@ -6,7 +6,23 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Sun, 18 Oct 2026 23:53:20 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:08:35 GMT</lastBuildDate>
+    <item>
+      <title>Збільшення статутного капіталу ТОВ: способи та процедура</title>
+      <link>https://legius.com.ua/blog/zbilshennya-statutnoho-kapitalu-tov/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zbilshennya-statutnoho-kapitalu-tov/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Збільшення статутного капіталу ламається не на реєстрації, а на строках і другому рішенні зборів. Розбираємо різницю між додатковими вкладами й нерозподіленим прибутком, механіку переважного права, три строки зі статті 18 Закону про ТОВ, капіталізацію боргу через зарахування зустрічних вимог і те, що можна переписати статутом.</description>
+    </item>
+    <item>
+      <title>Зміна місцезнаходження ТОВ і зміна КВЕД: що врахувати</title>
+      <link>https://legius.com.ua/blog/zmina-mistseznakhodzhennya-tov/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zmina-mistseznakhodzhennya-tov/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Запис у реєстрі змінюється за добу, а податковий облік переходить лише з наступного року — і саме на цьому розриві компанії втрачають гроші. Розбираємо процедуру, правило бюджетного періоду, що робити з ПДВ, єдиним податком і формою 20-ОПП, ризики нового КВЕДу та кого доведеться повідомити самостійно.</description>
+    </item>
     <item>
       <title>Розірвання шлюбу в Україні: повний порядок дій у 2026 році</title>
       <link>https://legius.com.ua/blog/rozirvannya-shlyubu/</link>
@@ -22,6 +38,14 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Пропущений строк не означає втрату спадщини, але шляхів лише два. Розбираємо, коли достатньо письмової згоди інших спадкоємців, які причини Верховний Суд визнає поважними, а які відкидає, чому «не знав про смерть» часто не працює і що насправді змінилося у строках під час воєнного стану.</description>
+    </item>
+    <item>
+      <title>Оскарження заповіту: підстави, строки та судова практика</title>
+      <link>https://legius.com.ua/blog/oskarzhennya-zapovitu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-zapovitu/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Більшість позовів про заповіт програється не через слабкі факти, а через неправильно сформульовану вимогу. Розбираємо, чим нікчемність відрізняється від недійсності й чому вони вимагають різних позовів, що саме має встановити посмертна експертиза, які «порушення» Верховний Суд дефектом форми не вважає, і як оскаржується заповіт подружжя.</description>
     </item>
     <item>
       <title>Аліменти з ФОП: як розрахувати та стягнути з підприємця</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Судові спори</category>
       <description>Від ціни позову залежить не лише збір, а й форма провадження: до 332 800 грн справа малозначна і розглядається спрощено, без засідань. Розбираємо кожну стадію за ГПК зі строками та те, як вибір форми впливає на доступність касації.</description>
-    </item>
-    <item>
-      <title>Апеляція на рішення суду: строки, порядок та шанси на успіх</title>
-      <link>https://legius.com.ua/blog/apelyatsiya-na-rishennya-sudu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/apelyatsiya-na-rishennya-sudu/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Судові спори</category>
-      <description>Строк рахується не від дня засідання, а від дня складення повного рішення — і це найчастіша причина пропуску. Розбираємо строки в кожному процесі, межу одного року за ч. 2 ст. 358 ЦПК, судовий збір і те, що апеляційний суд справді переглядає.</description>
-    </item>
-    <item>
-      <title>Касаційна скарга до Верховного Суду: підстави та фільтри касації</title>
-      <link>https://legius.com.ua/blog/kasatsiyna-skarga-verkhovnyy-sud/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/kasatsiyna-skarga-verkhovnyy-sud/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Судові спори</category>
-      <description>Касаційна скарга без прямо названої підстави з частини 2 статті 389 ЦПК не приймається — провадження просто не відкривають. Розбираємо кожну підставу, фільтр малозначності у 332 800 грн і межі перегляду, у яких факти вже не досліджуються.</description>
-    </item>
-    <item>
-      <title>Ризики інвестування в новобудову: як не втратити гроші 2026</title>
-      <link>https://legius.com.ua/blog/ryzyky-investuvannya-v-novobudovu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/ryzyky-investuvannya-v-novobudovu/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>Ризики інвестування в новобудову після Закону № 2518-IX: спеціальне майнове право, гарантійна частка, нікчемні правочини, перевірка дозволів і землі, подвійний продаж та банкрутство забудовника.</description>
     </item>
   </channel>
 </rss>
