@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 03:58:38 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 04:13:24 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -184,6 +184,14 @@
       <description>Пояснюємо, як юридична особа може захистити ділову репутацію: чотири умови задоволення позову, межа між фактом та оціночним судженням, на кому насправді тягар доказування після виключення презумпції добропорядності, і які способи захисту працюють.</description>
     </item>
     <item>
+      <title>Як скасувати незаконне обмеження максимального розміру пенсії у 2026</title>
+      <link>https://legius.com.ua/blog/yak-skasuvaty-obmezhennya-pensii/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/yak-skasuvaty-obmezhennya-pensii/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Пенсійний фонд обмежує пенсію десятьма прожитковими мінімумами або застосовує понижувальні коефіцієнти? Пояснюємо, на що спиратися, як працює колізія між Законом № 2262-XII і Законом № 3668-VI, що відбувається з коефіцієнтами 2025–2026 років і як домогтися перерахунку з виплатою різниці.</description>
+    </item>
+    <item>
       <title>Захист за статтею 130 КУпАП: як уникнути позбавлення прав за керування у стані сп’яніння</title>
       <link>https://legius.com.ua/blog/zakhyst-za-statteyu-130-kupap/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/zakhyst-za-statteyu-130-kupap/</guid>
@@ -280,6 +288,14 @@
       <description>Пояснюємо, коли торгову марку, патент чи ПЗ можна визнати нематеріальним активом, чому витрати на створення власного бренду не капіталізуються, які методи оцінки застосовують і як рахується амортизація.</description>
     </item>
     <item>
+      <title>Венчурний фонд та term sheet: що важливо знати інвестору й стартапу</title>
+      <link>https://legius.com.ua/blog/venchurnyy-fond-ta-term-sheet/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/venchurnyy-fond-ta-term-sheet/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Супровід інвестицій</category>
+      <description>Пояснюємо структуру венчурного фонду, режим ІСІ за Законом № 5080-VI з його податковими та регуляторними особливостями, і ключові умови term sheet: оцінку, ліквідаційну перевагу, захист від розмиття й права інвестора.</description>
+    </item>
+    <item>
       <title>Краудфандинг в Україні: правове регулювання залучення коштів</title>
       <link>https://legius.com.ua/blog/kraudfandynh-pravove-rehulyuvannya/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/kraudfandynh-pravove-rehulyuvannya/</guid>
@@ -294,6 +310,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Супровід інвестицій</category>
       <description>Пояснюємо правову природу корпоративного договору за ст. 7 Закону про ТОВ у чинній редакції, його ключові механізми, безвідкличну довіреність як засіб забезпечення, відповідальність за порушення та співвідношення зі статутом.</description>
+    </item>
+    <item>
+      <title>Електронна комерція: правові вимоги до інтернет-магазину 2026</title>
+      <link>https://legius.com.ua/blog/elektronna-komertsiya-vymohy/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/elektronna-komertsiya-vymohy/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>IT Law</category>
+      <description>Пояснюємо правові вимоги до інтернет-магазину: Закон про електронну комерцію, публічна оферта державною мовою, обов’язкова інформація до укладення договору, 14-денне право відмови (і коли воно перетворюється на 90 днів), фіскальний чек, захист даних.</description>
     </item>
     <item>
       <title>Оцінка вартості бізнесу для угоди M&amp;A</title>
@@ -382,30 +406,6 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Більшість позовів про заповіт програється не через слабкі факти, а через неправильно сформульовану вимогу. Розбираємо, чим нікчемність відрізняється від недійсності й чому вони вимагають різних позовів, що саме має встановити посмертна експертиза, які «порушення» Верховний Суд дефектом форми не вважає, і як оскаржується заповіт подружжя.</description>
-    </item>
-    <item>
-      <title>Аліменти з ФОП: як розрахувати та стягнути з підприємця</title>
-      <link>https://legius.com.ua/blog/alimenty-z-fop/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-z-fop/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Доходи підприємця не видно у зарплатній відомості — тому аліменти з ФОП мають свої правила. Розбираємо, чому для єдинника розрахунок іде від середньої зарплати в регіоні, а не від обороту, що про це сказав Верховний Суд, коли вигідніша тверда сума і як доводити реальні доходи платника.</description>
-    </item>
-    <item>
-      <title>Іпотечна квартира при розлученні: як ділиться житло і борг</title>
-      <link>https://legius.com.ua/blog/podil-ipotechnoyi-kvartyry/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/podil-ipotechnoyi-kvartyry/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Квартира в іпотеці ділиться разом із боргом — і рішення суду про поділ не переписує кредитний договір. Розбираємо, чому подружжя відповідає перед банком солідарно, що насправді означає «частка в іпотечному майні», чотири робочі сценарії виходу, як доводиться особистий перший внесок і коли платежі одного з подружжя дають підставу відступити від рівності часток.</description>
-    </item>
-    <item>
-      <title>Як скласти заповіт в Україні: форма, вартість, типові помилки</title>
-      <link>https://legius.com.ua/blog/yak-sklasty-zapovit/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/yak-sklasty-zapovit/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Заповіт, складений з помилками, — подарунок для тих, хто захоче його оскаржити. Розбираємо вимоги до форми й посвідчення, коли потрібні свідки, три види заповітів і пастки кожного, межі свободи заповідача через обов’язкову частку та як скласти документ, що витримає перевірку судом.</description>
     </item>
   </channel>
 </rss>
