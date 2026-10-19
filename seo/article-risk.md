@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **172** |
+| Опрацьовано | **175** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 46 (старт 213) |
+| Із позначкою `expand` | 45 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 17 |
 
@@ -196,6 +196,9 @@
 | `ekspertna-groshova-otsinka-zemli` | 2149 | land-law |
 | `franchayzynh-dohovir-komertsiynoyi-kontsesiyi` | 2331 | ip-law |
 | `mytnyy-reyestr-obyektiv-iv` | 2506 | ip-law |
+| `vydilennya-zemelnoho-payu-v-naturi` | 2325 | land-law |
+| `spadkuvannya-borhiv` | 2482 | family-law |
+| `peredacha-prav-na-torhovu-marku` | 2116 | ip-law |
 
 ## Високий ризик — перевіряти першими
 
