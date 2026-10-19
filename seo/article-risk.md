@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **241** |
+| Опрацьовано | **244** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 12 (старт 213) |
+| Із позначкою `expand` | 11 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 6 |
+| Середній (5–6), лишилось | 5 |
 
 ## ✅ Опрацьовано
 
@@ -265,6 +265,9 @@
 | `alimenty-z-bezrobitnoho` | 2321 | family-law |
 | `ipoteka-yurydychnyy-suprovid` | 2249 | real-estate |
 | `dohovir-saas-klyuchovi-umovy` | 2288 | it-law |
+| `safe-ta-konvertovana-pozyka` | 2262 | investment |
+| `prodazh-biznesu-peredprodazhna-pidhotovka` | 2265 | m-and-a |
+| `bukhhalterskyy-suprovid` | 2421 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -277,7 +280,6 @@
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 759 | 2 | m-and-a | `prodazh-biznesu-peredprodazhna-pidhotovka` |
 | 5 | 785 | 1 | corporate-law | `reyestratsiya-fop` |
 | 5 | 858 | 1 | corporate-law | `korporatyvnyy-dohovir` |
 | 5 | 1044 | 1 | corporate-law | `reyestratsiya-tov` |
