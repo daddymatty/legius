@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **250** |
+| Опрацьовано | **253** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 8 (старт 213) |
+| Із позначкою `expand` | 7 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 3 |
 
@@ -274,6 +274,9 @@
 | `nepributkovyy-status` | 2140 | corporate-law |
 | `korporatyvnyy-dohovir` | 1921 | corporate-law |
 | `bankrutstvo-fizychnoyi-osoby` | 2013 | litigation |
+| `znyklyy-bezvisty-status` | 2102 | military-law |
+| `styahnennya-neustoyky-ta-shtrafnykh-sanktsiy` | 2132 | litigation |
+| `abonentske-yurydychne-obsluhovuvannya` | 2044 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
