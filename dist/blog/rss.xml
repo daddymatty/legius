@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 07:27:15 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 07:36:40 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -144,6 +144,14 @@
       <description>Розбираємо, що саме зобов’язане робити підприємство: вести облік військовозобов’язаних працівників, звірятися з ТЦК, подавати повідомлення — і за що штрафують керівника.</description>
     </item>
     <item>
+      <title>Зниклий безвісти: правовий статус і що робити родині</title>
+      <link>https://legius.com.ua/blog/znyklyy-bezvisty-status/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/znyklyy-bezvisty-status/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Пояснюємо, чим статус зниклого безвісти відрізняється від визнання безвісно відсутнім і оголошення померлим, куди звертатися родині, які виплати зберігаються і що робити з майном.</description>
+    </item>
+    <item>
       <title>Відпустка військовослужбовця: види, тривалість, відмова</title>
       <link>https://legius.com.ua/blog/vidpustka-viyskovosluzhbovtsya/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/vidpustka-viyskovosluzhbovtsya/</guid>
@@ -262,6 +270,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Розбираємо, який облік реально зобов’язані вести ФОП і ТОВ, які звіти подавати і в які строки, хто відповідає за помилки бухгалтера та коли вигідніший аутсорс.</description>
+    </item>
+    <item>
+      <title>Стягнення неустойки та штрафних санкцій за договором</title>
+      <link>https://legius.com.ua/blog/styahnennya-neustoyky-ta-shtrafnykh-sanktsiy/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/styahnennya-neustoyky-ta-shtrafnykh-sanktsiy/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Пояснюємо, як стягнути пеню і штраф за договором: підстави, розрахунок, обмеження подвійною обліковою ставкою, річна давність, зменшення судом і що змінило скасування ГК.</description>
     </item>
     <item>
       <title>Розірвання договору в судовому порядку</title>
@@ -390,22 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Земельне право</category>
       <description>Половина вимог «принесіть звіт про експертну оцінку» незаконні: з 2019 року перелік обов’язкових випадків скорочено, а органам влади прямо заборонено вимагати такий звіт, якщо закон цього не вимагає. Розбираємо чинний перелік, вісім етапів оцінки, рецензування звіту, індексацію нормативної оцінки на 2026 рік і як оскаржувати результат.</description>
-    </item>
-    <item>
-      <title>Скасування державної реєстрації земельної ділянки</title>
-      <link>https://legius.com.ua/blog/skasuvannya-reyestratsiyi-dilyanky/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/skasuvannya-reyestratsiyi-dilyanky/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Земельне право</category>
-      <description>Скасування реєстрації допускається виключно одночасно з вирішенням долі речового права. Розбираємо два рівні реєстрації, підстави, належного відповідача, юрисдикцію і те, чому вимога «скасувати запис» більше не працює.</description>
-    </item>
-    <item>
-      <title>Земельний податок та орендна плата за землю 2026</title>
-      <link>https://legius.com.ua/blog/zemelnyy-podatok-ta-orendna-plata-2026/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zemelnyy-podatok-ta-orendna-plata-2026/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Земельне право</category>
-      <description>Орендна плата не може бути нижчою за земельний податок і вищою за 12 % оцінки — а якщо у вашому договорі ставка менша за мінімум, у декларації все одно береться мінімум із ПКУ. Розбираємо граничні ставки 2026 року, коефіцієнт індексації 1,08, пільги з площами, воєнні звільнення за Переліком територій і порядок оскарження нарахувань.</description>
     </item>
   </channel>
 </rss>
