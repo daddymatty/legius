@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **253** |
+| Опрацьовано | **256** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 7 (старт 213) |
+| Із позначкою `expand` | 4 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 3 |
+| Середній (5–6), лишилось | 1 |
 
 ## ✅ Опрацьовано
 
@@ -277,6 +277,9 @@
 | `znyklyy-bezvisty-status` | 2102 | military-law |
 | `styahnennya-neustoyky-ta-shtrafnykh-sanktsiy` | 2132 | litigation |
 | `abonentske-yurydychne-obsluhovuvannya` | 2044 | corporate-law |
+| `reyestratsiya-tov` | 2024 | corporate-law |
+| `skilky-koshtuye-rozluchennya` | 2338 | family-law |
+| `podatkove-planuvannya-biznesu` | 2501 | tax-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -288,6 +291,4 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 1044 | 1 | corporate-law | `reyestratsiya-tov` |
 | 5 | 1184 | 1 | corporate-law | `reyestratsiya-gromadskoyi-organizatsiyi` |
