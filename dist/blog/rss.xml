@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 07:52:49 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 08:07:53 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -126,6 +126,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Відсутність офіційної роботи не звільняє від аліментів. Пояснюємо, як визначається розмір, за якою формулою рахується борг непрацюючого і які обмеження застосовує виконавець.</description>
+    </item>
+    <item>
+      <title>Визнання недієздатним та опіка над дорослим</title>
+      <link>https://legius.com.ua/blog/vyznannya-nediyezdatnym-opika/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/vyznannya-nediyezdatnym-opika/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Розбираємо процедуру визнання дорослої особи недієздатною: чим вона відрізняється від обмеження дієздатності, як проходить експертиза, чому рішення діє не більше двох років і що насправді може опікун.</description>
     </item>
     <item>
       <title>Відстрочка від мобілізації у 2026: підстави, документи, порядок оформлення</title>
@@ -272,6 +280,14 @@
       <description>Запис у реєстрі змінюється за добу, а податковий облік переходить лише з наступного року — і саме на цьому розриві компанії втрачають гроші. Розбираємо процедуру, правило бюджетного періоду, що робити з ПДВ, єдиним податком і формою 20-ОПП, ризики нового КВЕДу та кого доведеться повідомити самостійно.</description>
     </item>
     <item>
+      <title>Реєстрація громадської організації: покроковий порядок</title>
+      <link>https://legius.com.ua/blog/reyestratsiya-gromadskoyi-organizatsiyi/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-gromadskoyi-organizatsiyi/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Покроковий порядок реєстрації ГО: хто може бути засновником, що має бути в протоколі та статуті, як працює онлайн-реєстрація за модельним статутом і чому неприбутковий статус треба оформити за 10 днів.</description>
+    </item>
+    <item>
       <title>Статус неприбутковості: як отримати і як не втратити</title>
       <link>https://legius.com.ua/blog/nepributkovyy-status/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/nepributkovyy-status/</guid>
@@ -390,22 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Нерухомість</category>
       <description>Розбираємо підстави та судову процедуру виселення з квартири: коли потрібне рішення суду, виселення колишнього власника й орендаря, права дітей та виконання рішення.</description>
-    </item>
-    <item>
-      <title>Купівля землі під забудову: перевірка та оформлення 2026</title>
-      <link>https://legius.com.ua/blog/kupivlya-zemli-pid-zabudovu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/kupivlya-zemli-pid-zabudovu/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>Як безпечно купити земельну ділянку під забудову: перевірка цільового призначення та меж, реєстр речових прав, обтяження, нотаріальний договір та реєстрація права.</description>
-    </item>
-    <item>
-      <title>Податки при продажу нерухомості 2026: ПДФО та військовий збір</title>
-      <link>https://legius.com.ua/blog/podatky-pry-prodazhu-nerukhomosti-2026/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/podatky-pry-prodazhu-nerukhomosti-2026/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>Які податки сплачує продавець нерухомості у 2026 році: ставки 0, 5 і 18 відсотків за статтею 172 ПКУ, військовий збір, як рахується черговість продажів, право зменшити дохід на витрати на придбання і коли нерезидент не платить нічого.</description>
     </item>
   </channel>
 </rss>

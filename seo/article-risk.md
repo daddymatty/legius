@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **256** |
+| Опрацьовано | **259** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 4 (старт 213) |
+| Із позначкою `expand` | 2 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 1 |
+| Середній (5–6), лишилось | 0 |
 
 ## ✅ Опрацьовано
 
@@ -280,6 +280,9 @@
 | `reyestratsiya-tov` | 2024 | corporate-law |
 | `skilky-koshtuye-rozluchennya` | 2338 | family-law |
 | `podatkove-planuvannya-biznesu` | 2501 | tax-law |
+| `vyznannya-nediyezdatnym-opika` | 2541 | family-law |
+| `pozovna-zayava-struktura` | 2283 | litigation |
+| `reyestratsiya-gromadskoyi-organizatsiyi` | 2472 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -291,4 +294,4 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 5 | 1184 | 1 | corporate-law | `reyestratsiya-gromadskoyi-organizatsiyi` |
+
