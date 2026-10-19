@@ -14,7 +14,7 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **169** |
+| Опрацьовано | **172** |
 | Коротших за 450 слів | 0 (старт 147) |
 | Із позначкою `expand` | 46 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
@@ -193,6 +193,9 @@
 | `oskarzhennya-zapovitu` | 2474 | family-law |
 | `zbilshennya-statutnoho-kapitalu-tov` | 1957 | corporate-law |
 | `zmina-mistseznakhodzhennya-tov` | 2080 | corporate-law |
+| `ekspertna-groshova-otsinka-zemli` | 2149 | land-law |
+| `franchayzynh-dohovir-komertsiynoyi-kontsesiyi` | 2331 | ip-law |
+| `mytnyy-reyestr-obyektiv-iv` | 2506 | ip-law |
 
 ## Високий ризик — перевіряти першими
 

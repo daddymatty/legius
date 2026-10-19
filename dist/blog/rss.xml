@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 00:08:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:26:26 GMT</lastBuildDate>
     <item>
       <title>Збільшення статутного капіталу ТОВ: способи та процедура</title>
       <link>https://legius.com.ua/blog/zbilshennya-statutnoho-kapitalu-tov/</link>
@@ -22,6 +22,30 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Запис у реєстрі змінюється за добу, а податковий облік переходить лише з наступного року — і саме на цьому розриві компанії втрачають гроші. Розбираємо процедуру, правило бюджетного періоду, що робити з ПДВ, єдиним податком і формою 20-ОПП, ризики нового КВЕДу та кого доведеться повідомити самостійно.</description>
+    </item>
+    <item>
+      <title>Експертна грошова оцінка землі: навіщо і як її проводять</title>
+      <link>https://legius.com.ua/blog/ekspertna-groshova-otsinka-zemli/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/ekspertna-groshova-otsinka-zemli/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Земельне право</category>
+      <description>Половина вимог «принесіть звіт про експертну оцінку» незаконні: з 2019 року перелік обов’язкових випадків скорочено, а органам влади прямо заборонено вимагати такий звіт, якщо закон цього не вимагає. Розбираємо чинний перелік, вісім етапів оцінки, рецензування звіту, індексацію нормативної оцінки на 2026 рік і як оскаржувати результат.</description>
+    </item>
+    <item>
+      <title>Франчайзинг: договір комерційної концесії в Україні 2026</title>
+      <link>https://legius.com.ua/blog/franchayzynh-dohovir-komertsiynoyi-kontsesiyi/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/franchayzynh-dohovir-komertsiynoyi-kontsesiyi/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Інтелектуальна власність</category>
+      <description>З 28 серпня 2025 року Господарський кодекс не застосовується — і разом із ним зникла вимога про державну реєстрацію договору комерційної концесії, яку досі переписують у шаблони. Розбираємо чинне регулювання за главою 76 ЦК: комплекс прав, умови, які закон визнає нікчемними, субсидіарну й солідарну відповідальність франчайзера та правила виходу з договору.</description>
+    </item>
+    <item>
+      <title>Митний реєстр об’єктів права інтелектуальної власності 2026</title>
+      <link>https://legius.com.ua/blog/mytnyy-reyestr-obyektiv-iv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/mytnyy-reyestr-obyektiv-iv/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Інтелектуальна власність</category>
+      <description>Митний реєстр зупиняє контрафакт на кордоні, але вмикає й зворотний бік: витрати на зберігання та знищення несе правовласник, а 10 робочих днів на реакцію починають спливати з моменту повідомлення. Розбираємо всі п’ять заходів сприяння захисту, строки реєстрації об’єкта, механіку призупинення та спрощене знищення без доведення порушення.</description>
     </item>
     <item>
       <title>Розірвання шлюбу в Україні: повний порядок дій у 2026 році</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Український закон про персональні дані залишився на рівні директиви 1995 року, а максимальний штраф — близько 34 тис. грн. Але частина українського бізнесу підпадає під GDPR напряму, де штрафи інші. Розбираємо обидва режими й реформу, що готується.</description>
-    </item>
-    <item>
-      <title>Залучення інвестицій у стартап: SAFE, конвертований займ і частка</title>
-      <link>https://legius.com.ua/blog/zaluchennya-investytsiy-startap/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zaluchennya-investytsiy-startap/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>SAFE та конвертована позика в Україні мають законну форму, але лише для резидентів Дія Сіті — це статті 29 і 30 Закону № 1667-IX. Розбираємо кожен інструмент, вибір права для корпоративного договору та валютні обмеження на репатріацію доходу інвестора.</description>
-    </item>
-    <item>
-      <title>Забезпечення позову та арешт рахунків: як зберегти активи опонента</title>
-      <link>https://legius.com.ua/blog/zabezpechennya-pozovu-aresht-rakhunkiv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zabezpechennya-pozovu-aresht-rakhunkiv/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Судові спори</category>
-      <description>Заяву про забезпечення позову господарський суд розглядає не пізніше двох днів і без повідомлення відповідача, а подана до позову вона зобов’язує подати позов упродовж десяти днів. Розбираємо види заходів, співмірність, зустрічне забезпечення та скасування.</description>
-    </item>
-    <item>
-      <title>Господарський спір покроково: від претензії до рішення суду</title>
-      <link>https://legius.com.ua/blog/hospodarskyy-spir-pokrokovo/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/hospodarskyy-spir-pokrokovo/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Судові спори</category>
-      <description>Від ціни позову залежить не лише збір, а й форма провадження: до 332 800 грн справа малозначна і розглядається спрощено, без засідань. Розбираємо кожну стадію за ГПК зі строками та те, як вибір форми впливає на доступність касації.</description>
     </item>
   </channel>
 </rss>
