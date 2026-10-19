@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **214** |
+| Опрацьовано | **217** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 24 (старт 213) |
+| Із позначкою `expand` | 22 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 11 |
+| Середній (5–6), лишилось | 9 |
 
 ## ✅ Опрацьовано
 
@@ -238,6 +238,9 @@
 | `yak-skasuvaty-obmezhennya-pensii` | 2228 | litigation |
 | `venchurnyy-fond-ta-term-sheet` | 2245 | investment |
 | `elektronna-komertsiya-vymohy` | 2136 | it-law |
+| `rozluchennya-z-viyskovosluzhbovtsem` | 2273 | family-law |
+| `vidpustka-viyskovosluzhbovtsya` | 1942 | military-law |
+| `myrova-uhoda-v-sudi` | 2195 | litigation |
 
 ## Високий ризик — перевіряти першими
 
@@ -251,8 +254,6 @@
 |---|---|---|---|---|
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 650 | 1 | family-law | `rozluchennya-z-viyskovosluzhbovtsem` |
-| 5 | 655 | 0 | military-law | `vidpustka-viyskovosluzhbovtsya` |
 | 5 | 668 | 0 | military-law | `vidstrochka-vid-mobilizatsiyi` |
 | 5 | 683 | 1 | real-estate | `spadkuvannya-nerukhomosti` |
 | 5 | 759 | 2 | m-and-a | `prodazh-biznesu-peredprodazhna-pidhotovka` |
