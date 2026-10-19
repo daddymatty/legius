@@ -14,7 +14,7 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **193** |
+| Опрацьовано | **196** |
 | Коротших за 450 слів | 0 (старт 147) |
 | Із позначкою `expand` | 36 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
@@ -217,6 +217,9 @@
 | `dystsyplinarna-vidpovidalnist-viyskovosluzhbovtsya` | 1545 | military-law |
 | `nda-ta-komertsiyna-tayemnytsya` | 1829 | ip-law |
 | `zakhyst-shakhraystvo-st-190` | 1783 | criminal-business |
+| `reyestratsiya-promyslovoho-zrazka` | 1593 | ip-law |
+| `sluzhbove-pidroblennya-st-364-366` | 1994 | criminal-business |
+| `mizhnarodnyy-rozshuk-interpol-ekstradytsiya` | 1878 | criminal-business |
 
 ## Високий ризик — перевіряти першими
 

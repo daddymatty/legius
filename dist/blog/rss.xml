@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 02:22:03 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 02:36:54 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -144,6 +144,14 @@
       <description>Орендна плата не може бути нижчою за земельний податок і вищою за 12 % оцінки — а якщо у вашому договорі ставка менша за мінімум, у декларації все одно береться мінімум із ПКУ. Розбираємо граничні ставки 2026 року, коефіцієнт індексації 1,08, пільги з площами, воєнні звільнення за Переліком територій і порядок оскарження нарахувань.</description>
     </item>
     <item>
+      <title>Реєстрація промислового зразка (дизайну) в Україні 2026</title>
+      <link>https://legius.com.ua/blog/reyestratsiya-promyslovoho-zrazka/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-promyslovoho-zrazka/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Інтелектуальна власність</category>
+      <description>Після Закону № 815-IX дизайн охороняється свідоцтвом, а не патентом, діють два критерії охороноздатності, одна заявка може містити до 100 зразків, а чужу реєстрацію можна скасувати в адміністративному порядку за три місяці.</description>
+    </item>
+    <item>
       <title>Франчайзинг: договір комерційної концесії в Україні 2026</title>
       <link>https://legius.com.ua/blog/franchayzynh-dohovir-komertsiynoyi-kontsesiyi/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/franchayzynh-dohovir-komertsiynoyi-kontsesiyi/</guid>
@@ -214,6 +222,22 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Кримінальне право</category>
       <description>Розбираємо чинний склад ст. 209 КК після Закону № 361-IX, вимоги до доведення предикатного діяння, пороги великого та особливо великого розміру у 2026 році, механіку фінмоніторингу і робочі лінії захисту.</description>
+    </item>
+    <item>
+      <title>Службове підроблення та зловживання (ст. 364, 366 ККУ): захист</title>
+      <link>https://legius.com.ua/blog/sluzhbove-pidroblennya-st-364-366/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/sluzhbove-pidroblennya-st-364-366/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Кримінальне право</category>
+      <description>Директор приватної компанії не є суб’єктом ст. 364 КК — для нього діє ст. 364-1. Розбираємо розмежування складів, суми істотної шкоди і тяжких наслідків на 2026 рік і позицію об’єднаної палати ВС про те, що корисливий мотив не обов’язковий.</description>
+    </item>
+    <item>
+      <title>Міжнародний розшук Інтерпол та екстрадиція: захист бізнесу</title>
+      <link>https://legius.com.ua/blog/mizhnarodnyy-rozshuk-interpol-ekstradytsiya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/mizhnarodnyy-rozshuk-interpol-ekstradytsiya/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Кримінальне право</category>
+      <description>Громадянина України видати не можуть — але це не знімає red notice і не припиняє справу. Розбираємо вісім видів оповіщень Інтерполу, порядок звернення до CCF, вичерпні підстави відмови у видачі та строки тимчасового й екстрадиційного арешту.</description>
     </item>
     <item>
       <title>Розірвання шлюбу в Україні: повний порядок дій у 2026 році</title>
@@ -382,30 +406,6 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>IT Law</category>
       <description>Релокація не скасовує українські податки — вона змінює їх склад. Розбираємо чотири різні сценарії виходу, чому «виїхав — значить нерезидент» не працює, як діють правила КІК і коли прибуток іноземної компанії звільняється від оподаткування в Україні, за якими критеріями обирати юрисдикцію і як не втратити права на продукт.</description>
-    </item>
-    <item>
-      <title>Що таке SPA та SHA: ключові договори угоди M&amp;A</title>
-      <link>https://legius.com.ua/blog/spa-shcho-take/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/spa-shcho-take/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>M&amp;A (Злиття і поглинання)</category>
-      <description>SPA оформлює перехід бізнесу, SHA — відносини співвласників після угоди. Розбираємо структуру кожного документа, механізми ціни, форму за українським правом, роль акта приймання-передачі частки і коли без дозволу АМКУ угоду закривати не можна.</description>
-    </item>
-    <item>
-      <title>Що робити під час обшуку на підприємстві: інструкція для бізнесу</title>
-      <link>https://legius.com.ua/blog/obshuk-na-pidpryyemstvi/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/obshuk-na-pidpryyemstvi/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Що саме має бути в ухвалі слідчого судді, чому недопущення адвоката робить усі докази недопустимими, коли заборонено вилучати сервери й телефони, навіщо вимагати другий примірник протоколу і що робити в перші 48 годин після вилучення майна.</description>
-    </item>
-    <item>
-      <title>Ухилення від сплати податків: захист за статтею 212 ККУ</title>
-      <link>https://legius.com.ua/blog/uhylennya-vid-podatkiv-st-212/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/uhylennya-vid-podatkiv-st-212/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Кримінальне право</category>
-      <description>Коли несплата податків стає кримінальною: пороги 2026 року в гривнях, чому стаття 212 не передбачає позбавлення волі, що саме має довести слідство, як зв’язані кримінальна справа і спір про податкове повідомлення-рішення та коли працює звільнення від відповідальності.</description>
     </item>
   </channel>
 </rss>
