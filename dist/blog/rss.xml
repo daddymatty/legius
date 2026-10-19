@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 05:28:09 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 05:45:08 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -86,6 +86,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Аліменти не продовжуються автоматично після повноліття. Пояснюємо чотири обов’язкові умови за ст. 199 СК, чому заочна форма навчання сама по собі не позбавляє права на утримання і що треба довести суду.</description>
+    </item>
+    <item>
+      <title>Незаконне вивезення дитини за кордон: Гаазька конвенція</title>
+      <link>https://legius.com.ua/blog/haazka-konventsiya-vykradennya-dytyny/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/haazka-konventsiya-vykradennya-dytyny/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Розбираємо механізм Гаазької конвенції 1980 року: коли переміщення вважається незаконним, чому критично важливий перший рік і за яких підстав суд може відмовити у поверненні.</description>
     </item>
     <item>
       <title>Розлучення без згоди другого з подружжя: чи можливо</title>
@@ -240,6 +248,14 @@
       <description>Протокол за статтею 130 КУпАП ще не означає позбавлення прав. Розбираємо санкції, строк притягнення, процедуру огляду за Інструкцією № 1452/735, які порушення ведуть до закриття справи і як вибудувати лінію захисту.</description>
     </item>
     <item>
+      <title>Спадкування нерухомості: оформлення та строки 2026</title>
+      <link>https://legius.com.ua/blog/spadkuvannya-nerukhomosti/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/spadkuvannya-nerukhomosti/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Нерухомість</category>
+      <description>Як оформити спадщину на нерухомість: строк шість місяців, спадкування за заповітом і за законом, роль нотаріуса, поновлення пропущеного строку та реєстрація права.</description>
+    </item>
+    <item>
       <title>Узаконення самочинного будівництва та перепланування 2026</title>
       <link>https://legius.com.ua/blog/uzakonennya-samochynnoho-budivnytstva/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/uzakonennya-samochynnoho-budivnytstva/</guid>
@@ -376,36 +392,20 @@
       <description>Пояснюємо правову природу корпоративного договору за ст. 7 Закону про ТОВ у чинній редакції, його ключові механізми, безвідкличну довіреність як засіб забезпечення, відповідальність за порушення та співвідношення зі статутом.</description>
     </item>
     <item>
+      <title>Опціонна програма ESOP для працівників: як мотивувати команду часткою</title>
+      <link>https://legius.com.ua/blog/esop-optsiony-dlya-pratsivnykiv/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/esop-optsiony-dlya-pratsivnykiv/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Супровід інвестицій</category>
+      <description>Розбираємо опціонну програму ESOP: vesting і cliff, ціну виконання, розмір опціонного пулу, способи оформлення в українському праві та податкові наслідки.</description>
+    </item>
+    <item>
       <title>Інвестиційний арбітраж: захист інвестицій через механізм ISDS</title>
       <link>https://legius.com.ua/blog/investytsiynyy-arbitrazh-isds/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/investytsiynyy-arbitrazh-isds/</guid>
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Супровід інвестицій</category>
       <description>Пояснюємо механізм ISDS, роль двосторонніх угод про захист інвестицій, стандарти FET та захисту від експропріації, процедуру арбітражу ICSID і виконання рішень.</description>
-    </item>
-    <item>
-      <title>ESOP для IT: опціони для розробників та мотивація команди</title>
-      <link>https://legius.com.ua/blog/esop-dlya-it-optsiony/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/esop-dlya-it-optsiony/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>IT Law</category>
-      <description>Пояснюємо, що таке ESOP та опціони для розробників, як працюють vesting і cliff, які податкові наслідки та чим допомагає режим Дія.City при структуруванні.</description>
-    </item>
-    <item>
-      <title>Електронна комерція: правові вимоги до інтернет-магазину 2026</title>
-      <link>https://legius.com.ua/blog/elektronna-komertsiya-vymohy/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/elektronna-komertsiya-vymohy/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>IT Law</category>
-      <description>Пояснюємо правові вимоги до інтернет-магазину: Закон про електронну комерцію, публічна оферта державною мовою, обов’язкова інформація до укладення договору, 14-денне право відмови (і коли воно перетворюється на 90 днів), фіскальний чек, захист даних.</description>
-    </item>
-    <item>
-      <title>Оцінка вартості бізнесу для угоди M&amp;A</title>
-      <link>https://legius.com.ua/blog/otsinka-vartosti-biznesu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/otsinka-vartosti-biznesu/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>M&amp;A (Злиття і поглинання)</category>
-      <description>Пояснюємо, як визначається вартість бізнесу в угоді M&amp;A: метод DCF, ринкові мультиплікатори, майновий підхід, поняття enterprise value та equity value, вплив боргу й оборотного капіталу, коли оцінка обов’язкова за законом і як закріпити ціну в договорі.</description>
     </item>
   </channel>
 </rss>

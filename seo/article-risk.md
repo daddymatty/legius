@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **226** |
+| Опрацьовано | **229** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 19 (старт 213) |
+| Із позначкою `expand` | 18 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 7 |
+| Середній (5–6), лишилось | 6 |
 
 ## ✅ Опрацьовано
 
@@ -250,6 +250,9 @@
 | `vidstrochka-vid-mobilizatsiyi` | 2137 | military-law |
 | `vyselennya-z-kvartyry` | 2214 | real-estate |
 | `esop-dlya-it-optsiony` | 2367 | it-law |
+| `spadkuvannya-nerukhomosti` | 2543 | real-estate |
+| `esop-optsiony-dlya-pratsivnykiv` | 2423 | investment |
+| `haazka-konventsiya-vykradennya-dytyny` | 2577 | family-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -262,7 +265,6 @@
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 683 | 1 | real-estate | `spadkuvannya-nerukhomosti` |
 | 5 | 759 | 2 | m-and-a | `prodazh-biznesu-peredprodazhna-pidhotovka` |
 | 5 | 785 | 1 | corporate-law | `reyestratsiya-fop` |
 | 5 | 858 | 1 | corporate-law | `korporatyvnyy-dohovir` |
