@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 00:43:22 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 01:01:06 GMT</lastBuildDate>
     <item>
       <title>Чи переходять борги у спадщину: кредити померлого та захист спадкоємців</title>
       <link>https://legius.com.ua/blog/spadkuvannya-borhiv/</link>
@@ -14,6 +14,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Найсильніший аргумент спадкоємця — не вартість майна, а строк. Строки статті 1281 ЦК є преклюзивними: їхній сплив не просто дає підставу відмовити в позові, а припиняє саме зобов’язання — разом із порукою та вимогами, забезпеченими іпотекою. Розбираємо чинну редакцію строків, позиції Великої Палати 2024–2025 років, податковий борг і алгоритм захисту.</description>
+    </item>
+    <item>
+      <title>Строк для поділу майна після розлучення: три роки від чого</title>
+      <link>https://legius.com.ua/blog/strok-pozovnoyi-davnosti-podil-mayna/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/strok-pozovnoyi-davnosti-podil-mayna/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Три роки рахуються не від дати розлучення, а від дня, коли ви дізналися про порушення свого права — і це лише перший шар. Другий: із 2 квітня 2020 року строк спочатку продовжувався на карантин, потім був зупинений на воєнний стан, а з 4 вересня 2025 року знову спливає. Розбираємо обидва шари з практикою Верховного Суду та точними датами.</description>
     </item>
     <item>
       <title>Збільшення статутного капіталу ТОВ: способи та процедура</title>
@@ -38,6 +46,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Земельне право</category>
       <description>Строк для оформлення невитребуваного паю сплив 1 січня 2025 року — і власник, який не встиг, вважається таким, що відмовився від землі. Але це не остаточно: суд може визначити додатковий строк, а Велика Палата у 2026 році уточнила правову природу таких паїв. Розбираємо процедуру виділення, документи та що робити власникам і спадкоємцям, які запізнилися.</description>
+    </item>
+    <item>
+      <title>Сервітут та право проходу через земельну ділянку</title>
+      <link>https://legius.com.ua/blog/servitut-ta-pravo-prohodu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/servitut-ta-pravo-prohodu/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Земельне право</category>
+      <description>Позов про сервітут програють не через слабкі факти, а через незроблений перший крок: суд відмовляє, якщо до звернення позивач навіть не пропонував власникові укласти договір. Розбираємо умови, за яких сервітут встановлює суд, що саме треба довести, чому плата має компенсаційний характер і не може перевищувати земельний податок, і як сервітут припиняється.</description>
     </item>
     <item>
       <title>Експертна грошова оцінка землі: навіщо і як її проводять</title>
@@ -70,6 +86,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Інтелектуальна власність</category>
       <description>«Чи потрібна реєстрація договору?» — найзаплутаніше питання цієї теми, і відповідь на нього подвійна: сам договір реєструвати не обов’язково, а факт передання прав — обов’язково. Розбираємо різницю між відчуженням і ліцензією, істотні умови, процедуру в УКРНОІВІ, заборону передачі, що вводить в оману, і повний чек-лист перевірки марки перед купівлею.</description>
+    </item>
+    <item>
+      <title>Краудфандинг в Україні: правове регулювання залучення коштів</title>
+      <link>https://legius.com.ua/blog/kraudfandynh-pravove-rehulyuvannya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/kraudfandynh-pravove-rehulyuvannya/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Супровід інвестицій</category>
+      <description>«Пропозиція, звернена до невизначеного кола осіб» — це визначення публічної пропозиції цінних паперів, і воно описує будь-яку краудфандингову кампанію з обіцянкою частки. Розбираємо, коли потрібен затверджений НКЦПФР проспект, сім винятків зі статті 97, вимоги до благодійного збору та чим закінчується недобросовісна емісія.</description>
     </item>
     <item>
       <title>Розірвання шлюбу в Україні: повний порядок дій у 2026 році</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Корпоративні права виникають не з договору, а з реєстрації в ЄДР, неповідомлення про збори саме по собі рішення не скасовує, а похідний позов доступний з 5 відсотками капіталу. Розбираємо підсудність, категорії спорів і позиції Верховного Суду.</description>
-    </item>
-    <item>
-      <title>Захист комерційної таємниці: як убезпечити дані компанії</title>
-      <link>https://legius.com.ua/blog/zakhyst-komertsiynoyi-tayemnytsi/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zakhyst-komertsiynoyi-tayemnytsi/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Стаття 505 ЦК вимагає трьох ознак, і третя — вжиті заходи охорони — та, на якій усе й ламається. Розбираємо, як запровадити режим, що насправді дає NDA, чому неустойка з працівника не стягується і де працює non-compete.</description>
-    </item>
-    <item>
-      <title>Трудові відносини з топ-менеджментом: контракти та ризики</title>
-      <link>https://legius.com.ua/blog/trudovi-vidnosyny-top-menedzhment/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/trudovi-vidnosyny-top-menedzhment/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Керівник одночасно працівник і орган товариства, і саме це подвоєння створює всі ризики. Розбираємо контракт за ст. 21 КЗпП, звільнення за припиненням повноважень із шестимісячною вихідною допомогою, свіжу позицію ВС про «мовчазну згоду» щодо окладу та захисні застереження.</description>
-    </item>
-    <item>
-      <title>Опціони для працівників: як мотивувати команду часткою в бізнесі</title>
-      <link>https://legius.com.ua/blog/optsiony-dlya-pratsivnykiv/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/optsiony-dlya-pratsivnykiv/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Корпоративне право</category>
-      <description>Українське право не має окремого режиму для опціонних програм. Розбираємо, на чому їх будують насправді — корпоративний договір, безвідклична довіреність, фантомні акції — як влаштований vesting і де виникає податкове зобов’язання.</description>
     </item>
   </channel>
 </rss>

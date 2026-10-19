@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **175** |
+| Опрацьовано | **178** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 45 (старт 213) |
+| Із позначкою `expand` | 44 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 17 |
 
@@ -199,6 +199,9 @@
 | `vydilennya-zemelnoho-payu-v-naturi` | 2325 | land-law |
 | `spadkuvannya-borhiv` | 2482 | family-law |
 | `peredacha-prav-na-torhovu-marku` | 2116 | ip-law |
+| `strok-pozovnoyi-davnosti-podil-mayna` | 2038 | family-law |
+| `servitut-ta-pravo-prohodu` | 2150 | land-law |
+| `kraudfandynh-pravove-rehulyuvannya` | 2287 | investment |
 
 ## Високий ризик — перевіряти першими
 
