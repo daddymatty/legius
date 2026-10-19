@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **259** |
+| Опрацьовано | **261** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 2 (старт 213) |
+| Із позначкою `expand` | 0 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 0 |
 
@@ -283,6 +283,8 @@
 | `vyznannya-nediyezdatnym-opika` | 2541 | family-law |
 | `pozovna-zayava-struktura` | 2283 | litigation |
 | `reyestratsiya-gromadskoyi-organizatsiyi` | 2472 | corporate-law |
+| `ryzykovist-platnyka-pdv` | 2429 | tax-law |
+| `uchast-batka-u-vykhovanni` | 2522 | family-law |
 
 ## Високий ризик — перевіряти першими
 
