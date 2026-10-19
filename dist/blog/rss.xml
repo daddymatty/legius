@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 03:24:38 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 03:41:56 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -38,6 +38,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Відмову можна відкликати — але лише в межах шести місяців, а оспорити її потім можна лише з п’яти підстав, закритий перелік яких прямо названий у законі. Розбираємо порядок оформлення, адресну відмову, правило, за яким відмова від спадщини за заповітом не позбавляє права спадкувати за законом, і що відбувається з відумерлою спадщиною.</description>
+    </item>
+    <item>
+      <title>Черги спадкування за законом: хто успадковує без заповіту</title>
+      <link>https://legius.com.ua/blog/cherhy-spadkuvannya-za-zakonom/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/cherhy-spadkuvannya-za-zakonom/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Якщо заповіту немає, майно розподіляє закон — за п’ятьма чергами спадкоємців. Хто входить до кожної черги, коли онуки спадкують за правом представлення, чим трансмісія відрізняється від представлення і як цивільній дружині довести право на спадщину.</description>
     </item>
     <item>
       <title>Аліменти з військовослужбовця: з яких виплат утримують</title>
@@ -168,6 +176,14 @@
       <description>Запис у реєстрі змінюється за добу, а податковий облік переходить лише з наступного року — і саме на цьому розриві компанії втрачають гроші. Розбираємо процедуру, правило бюджетного періоду, що робити з ПДВ, єдиним податком і формою 20-ОПП, ризики нового КВЕДу та кого доведеться повідомити самостійно.</description>
     </item>
     <item>
+      <title>Захист за статтею 130 КУпАП: як уникнути позбавлення прав за керування у стані сп’яніння</title>
+      <link>https://legius.com.ua/blog/zakhyst-za-statteyu-130-kupap/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/zakhyst-za-statteyu-130-kupap/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Судові спори</category>
+      <description>Протокол за статтею 130 КУпАП ще не означає позбавлення прав. Розбираємо санкції, строк притягнення, процедуру огляду за Інструкцією № 1452/735, які порушення ведуть до закриття справи і як вибудувати лінію захисту.</description>
+    </item>
+    <item>
       <title>Виділення земельної частки (паю) в натурі у 2026 році</title>
       <link>https://legius.com.ua/blog/vydilennya-zemelnoho-payu-v-naturi/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/vydilennya-zemelnoho-payu-v-naturi/</guid>
@@ -262,6 +278,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Супровід інвестицій</category>
       <description>«Пропозиція, звернена до невизначеного кола осіб» — це визначення публічної пропозиції цінних паперів, і воно описує будь-яку краудфандингову кампанію з обіцянкою частки. Розбираємо, коли потрібен затверджений НКЦПФР проспект, сім винятків зі статті 97, вимоги до благодійного збору та чим закінчується недобросовісна емісія.</description>
+    </item>
+    <item>
+      <title>Оцінка вартості бізнесу для угоди M&amp;A</title>
+      <link>https://legius.com.ua/blog/otsinka-vartosti-biznesu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/otsinka-vartosti-biznesu/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>M&amp;A (Злиття і поглинання)</category>
+      <description>Пояснюємо, як визначається вартість бізнесу в угоді M&amp;A: метод DCF, ринкові мультиплікатори, майновий підхід, поняття enterprise value та equity value, вплив боргу й оборотного капіталу, коли оцінка обов’язкова за законом і як закріпити ціну в договорі.</description>
     </item>
     <item>
       <title>Повідомлення про підозру: як оскаржити у кримінальному провадженні</title>
@@ -382,30 +406,6 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Рейдерство сьогодні — це реєстраційна дія, а не люди з битами. Розбираємо типові схеми захоплення, які записи в Єдиному державному реєстрі блокують реєстратора, як працює Офіс протидії рейдерству Мін’юсту і чому Верховний Суд вважає скаргу до нього не універсальним рішенням.</description>
-    </item>
-    <item>
-      <title>Як стягнути борг через суд в Україні: покрокова інструкція 2026</title>
-      <link>https://legius.com.ua/blog/yak-styahnuty-borh-cherez-sud/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/yak-styahnuty-borh-cherez-sud/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Судові спори</category>
-      <description>Покроково про стягнення боргу: коли вистачить судового наказу, скільки коштує позов у 2026 році, як рахувати інфляційні та три проценти річних за ст. 625 ЦК і чому позовна давність зараз рахується нетривіально.</description>
-    </item>
-    <item>
-      <title>Як перевірити нерухомість перед купівлею: повний чек-лист 2026</title>
-      <link>https://legius.com.ua/blog/perevirka-nerukhomosti-pered-kupivleyu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/perevirka-nerukhomosti-pered-kupivleyu/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>Повний чек-лист перевірки квартири чи будинку: які документи вимагати у продавця, що саме показує кожен реєстр і чого він не показує, як читати історію набуття права, де ховаються права третіх осіб і які переробки роблять об’єкт проблемним.</description>
-    </item>
-    <item>
-      <title>Супровід угоди купівлі-продажу квартири: етапи та безпека розрахунків</title>
-      <link>https://legius.com.ua/blog/suprovid-ugody-kupivli-prodazhu-kvartyry/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/suprovid-ugody-kupivli-prodazhu-kvartyry/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>Повний розбір угоди з квартирою: які реєстри перевіряє нотаріус і чого він не перевіряє, чому понад 50 000 грн готівкою передавати не можна, скільки податків сплачує продавець при першому, другому й третьому продажу за рік і коли покупець не платить 1 % до Пенсійного фонду.</description>
     </item>
   </channel>
 </rss>
