@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **220** |
+| Опрацьовано | **223** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 22 (старт 213) |
+| Із позначкою `expand` | 21 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 9 |
 
@@ -244,6 +244,9 @@
 | `uzakonennya-samochynnoho-budivnytstva` | 2419 | real-estate |
 | `earn-out-vidkladena-oplata` | 2288 | m-and-a |
 | `upravlinskyy-vykup-mbo` | 2369 | m-and-a |
+| `rozluchennya-bez-zgody` | 2114 | family-law |
+| `investytsiynyy-arbitrazh-isds` | 2104 | investment |
+| `podatky-pry-prodazhu-nerukhomosti-2026` | 2367 | real-estate |
 
 ## Високий ризик — перевіряти першими
 
