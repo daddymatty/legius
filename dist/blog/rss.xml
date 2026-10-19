@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 07:16:50 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 07:27:15 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -176,6 +176,14 @@
       <description>З 2024 року переведення оформлюється електронним рапортом в «Армія+», і в низці випадків згода командира взагалі не потрібна. Розбираємо, коли вона обов’язкова, які строки діють і що робити, якщо розпорядження не виконують.</description>
     </item>
     <item>
+      <title>Корпоративний договір у ТОВ: навіщо потрібен і що включати</title>
+      <link>https://legius.com.ua/blog/korporatyvnyy-dohovir/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/korporatyvnyy-dohovir/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Пояснюємо, як працює корпоративний договір у ТОВ: що в нього включати, чим він відрізняється від статуту, чим підкріплений за законом і які санкції реально спрацьовують.</description>
+    </item>
+    <item>
       <title>Реєстрація ФОП у 2026 році: покроковий порядок</title>
       <link>https://legius.com.ua/blog/reyestratsiya-fop/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-fop/</guid>
@@ -238,6 +246,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Корпоративне право</category>
       <description>Запис у реєстрі змінюється за добу, а податковий облік переходить лише з наступного року — і саме на цьому розриві компанії втрачають гроші. Розбираємо процедуру, правило бюджетного періоду, що робити з ПДВ, єдиним податком і формою 20-ОПП, ризики нового КВЕДу та кого доведеться повідомити самостійно.</description>
+    </item>
+    <item>
+      <title>Статус неприбутковості: як отримати і як не втратити</title>
+      <link>https://legius.com.ua/blog/nepributkovyy-status/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/nepributkovyy-status/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Розбираємо неприбутковий статус по суті: що він насправді дає, які дві норми обов’язково мають бути в статуті, як подати заяву 1-РН, коли звітувати і за що виключають з Реєстру.</description>
     </item>
     <item>
       <title>Бухгалтерський супровід ФОП і ТОВ: що входить</title>
@@ -390,22 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Земельне право</category>
       <description>Орендна плата не може бути нижчою за земельний податок і вищою за 12 % оцінки — а якщо у вашому договорі ставка менша за мінімум, у декларації все одно береться мінімум із ПКУ. Розбираємо граничні ставки 2026 року, коефіцієнт індексації 1,08, пільги з площами, воєнні звільнення за Переліком територій і порядок оскарження нарахувань.</description>
-    </item>
-    <item>
-      <title>Реєстрація промислового зразка (дизайну) в Україні 2026</title>
-      <link>https://legius.com.ua/blog/reyestratsiya-promyslovoho-zrazka/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/reyestratsiya-promyslovoho-zrazka/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>Після Закону № 815-IX дизайн охороняється свідоцтвом, а не патентом, діють два критерії охороноздатності, одна заявка може містити до 100 зразків, а чужу реєстрацію можна скасувати в адміністративному порядку за три місяці.</description>
-    </item>
-    <item>
-      <title>Франчайзинг: договір комерційної концесії в Україні 2026</title>
-      <link>https://legius.com.ua/blog/franchayzynh-dohovir-komertsiynoyi-kontsesiyi/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/franchayzynh-dohovir-komertsiynoyi-kontsesiyi/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Інтелектуальна власність</category>
-      <description>З 28 серпня 2025 року Господарський кодекс не застосовується — і разом із ним зникла вимога про державну реєстрацію договору комерційної концесії, яку досі переписують у шаблони. Розбираємо чинне регулювання за главою 76 ЦК: комплекс прав, умови, які закон визнає нікчемними, субсидіарну й солідарну відповідальність франчайзера та правила виходу з договору.</description>
     </item>
   </channel>
 </rss>
