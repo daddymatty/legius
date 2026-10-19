@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **211** |
+| Опрацьовано | **214** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 26 (старт 213) |
+| Із позначкою `expand` | 24 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 12 |
+| Середній (5–6), лишилось | 11 |
 
 ## ✅ Опрацьовано
 
@@ -235,6 +235,9 @@
 | `post-merger-intehratsiya` | 2310 | m-and-a |
 | `korporatyvnyy-dohovir-investoriv` | 2233 | investment |
 | `zakhyst-dilovoyi-reputatsiyi-yurosoby` | 2428 | litigation |
+| `yak-skasuvaty-obmezhennya-pensii` | 2228 | litigation |
+| `venchurnyy-fond-ta-term-sheet` | 2245 | investment |
+| `elektronna-komertsiya-vymohy` | 2136 | it-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -246,7 +249,6 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 645 | 1 | it-law | `elektronna-komertsiya-vymohy` |
 | 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
 | 5 | 650 | 1 | family-law | `rozluchennya-z-viyskovosluzhbovtsem` |
