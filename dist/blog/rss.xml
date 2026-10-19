@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 02:36:54 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 02:50:10 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -40,6 +40,14 @@
       <description>Відмову можна відкликати — але лише в межах шести місяців, а оспорити її потім можна лише з п’яти підстав, закритий перелік яких прямо названий у законі. Розбираємо порядок оформлення, адресну відмову, правило, за яким відмова від спадщини за заповітом не позбавляє права спадкувати за законом, і що відбувається з відумерлою спадщиною.</description>
     </item>
     <item>
+      <title>Аліменти з військовослужбовця: з яких виплат утримують</title>
+      <link>https://legius.com.ua/blog/alimenty-z-viyskovosluzhbovtsya/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/alimenty-z-viyskovosluzhbovtsya/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>З додаткової винагороди на період воєнного стану аліменти утримуються на загальних підставах — це прямо передбачено п. 8 постанови КМУ № 146. Розбираємо, які виплати є винятком, куди подавати виконавчий документ і які суми діють у 2026 році.</description>
+    </item>
+    <item>
       <title>Строк для поділу майна після розлучення: три роки від чого</title>
       <link>https://legius.com.ua/blog/strok-pozovnoyi-davnosti-podil-mayna/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/strok-pozovnoyi-davnosti-podil-mayna/</guid>
@@ -56,6 +64,14 @@
       <description>Аліменти не продовжуються автоматично після повноліття. Пояснюємо чотири обов’язкові умови за ст. 199 СК, чому заочна форма навчання сама по собі не позбавляє права на утримання і що треба довести суду.</description>
     </item>
     <item>
+      <title>Поновлення батьківських прав: підстави та порядок</title>
+      <link>https://legius.com.ua/blog/ponovlennya-batkivskykh-prav/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/ponovlennya-batkivskykh-prav/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Відмова в позові про поновлення батьківських прав закриває шлях до повторного звернення на цілий рік. Розбираємо вимоги ст. 169 СК, дві абсолютні перешкоди, роль думки дитини та висновку органу опіки.</description>
+    </item>
+    <item>
       <title>Оскарження рішень ТЦК та СП: як захистити свої права законно</title>
       <link>https://legius.com.ua/blog/oskarzhennya-rishen-tck/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-rishen-tck/</guid>
@@ -70,6 +86,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Найсильніші аргументи при оскарженні стягнення — процедурні. Розбираємо строки за ст. 87 статуту, порядок службового розслідування, права військовослужбовця й те, чому ознайомлення зі службовою карткою не замінює наказу.</description>
+    </item>
+    <item>
+      <title>Переведення до іншої військової частини: підстави та порядок</title>
+      <link>https://legius.com.ua/blog/perevedennya-do-inshoyi-chastyny/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/perevedennya-do-inshoyi-chastyny/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>З 2024 року переведення оформлюється електронним рапортом в «Армія+», і в низці випадків згода командира взагалі не потрібна. Розбираємо, коли вона обов’язкова, які строки діють і що робити, якщо розпорядження не виконують.</description>
     </item>
     <item>
       <title>Закриття ФОП: припинення діяльності без боргів і штрафів</title>
@@ -382,30 +406,6 @@
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <category>IT Law</category>
       <description>Порівнюємо три моделі найму в IT — КЗпП, ФОП і гіг-контракт Дія City: які вимоги має виконувати резидент, щоб зберегти ставку 5 %, що насправді дає гіг-спеціалісту соціальний пакет, кому належать права на код і чому модель ФОП найчастіше ламається на перекваліфікації у трудові відносини.</description>
-    </item>
-    <item>
-      <title>GDPR для українського IT: відповідність та захист персональних даних</title>
-      <link>https://legius.com.ua/blog/gdpr-dlya-ukrayinskogo-it/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/gdpr-dlya-ukrayinskogo-it/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>IT Law</category>
-      <description>GDPR застосовується до української компанії напряму — незалежно від стану національного законодавства. Розбираємо, коли саме це відбувається, чим обов’язки обробника відрізняються від обов’язків контролера, що має містити DPA, чому передача даних в Україну йде через SCC і які штрафи готує законопроєкт № 8153.</description>
-    </item>
-    <item>
-      <title>Оподаткування IT-компанії: ФОП, Дія.City чи загальна система</title>
-      <link>https://legius.com.ua/blog/opodatkuvannya-it-kompaniyi/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/opodatkuvannya-it-kompaniyi/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>IT Law</category>
-      <description>Різниця між трьома податковими моделями для IT — не у відсотках, а в тому, з чого ці відсотки беруться. Розбираємо цифри 2026 року для ФОП третьої групи, повний податковий пакет резидента Дія.City, механіку вибору між 9 % і 18 %, правило 20 % на виплати платникам єдиного податку та ознаки структури, яку податкова читає як дроблення.</description>
-    </item>
-    <item>
-      <title>Релокація IT-бізнесу: структурування, юрисдикції та податкове резидентство</title>
-      <link>https://legius.com.ua/blog/relokatsiya-it-biznesu/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/relokatsiya-it-biznesu/</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <category>IT Law</category>
-      <description>Релокація не скасовує українські податки — вона змінює їх склад. Розбираємо чотири різні сценарії виходу, чому «виїхав — значить нерезидент» не працює, як діють правила КІК і коли прибуток іноземної компанії звільняється від оподаткування в Україні, за якими критеріями обирати юрисдикцію і як не втратити права на продукт.</description>
     </item>
   </channel>
 </rss>
