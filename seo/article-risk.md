@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **181** |
+| Опрацьовано | **184** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 43 (старт 213) |
+| Із позначкою `expand` | 42 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 16 |
 
@@ -205,6 +205,9 @@
 | `vidmova-vid-spadshchyny` | 1863 | family-law |
 | `skasuvannya-reyestratsiyi-dilyanky` | 1492 | land-law |
 | `zemelnyy-podatok-ta-orendna-plata-2026` | 2484 | land-law |
+| `zakryttya-kryminalnoho-provadzhennya` | 1643 | criminal-business |
+| `otsinka-ip-na-balansi` | 1692 | ip-law |
+| `zakryttya-fop` | 1700 | corporate-law |
 
 ## Високий ризик — перевіряти першими
 
