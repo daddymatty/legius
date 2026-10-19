@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **184** |
+| Опрацьовано | **187** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 42 (старт 213) |
+| Із позначкою `expand` | 40 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 16 |
 
@@ -208,6 +208,9 @@
 | `zakryttya-kryminalnoho-provadzhennya` | 1643 | criminal-business |
 | `otsinka-ip-na-balansi` | 1692 | ip-law |
 | `zakryttya-fop` | 1700 | corporate-law |
+| `obovyazkova-chastka-u-spadshchyni` | 1492 | family-law |
+| `legalizatsiya-dokhodiv-st-209` | 1971 | criminal-business |
+| `oformlennya-spadshchyny` | 1808 | family-law |
 
 ## Високий ризик — перевіряти першими
 

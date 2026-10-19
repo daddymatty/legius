@@ -6,7 +6,23 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 01:37:24 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 01:52:55 GMT</lastBuildDate>
+    <item>
+      <title>Оформлення спадщини в Україні: покрокова процедура</title>
+      <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/oformlennya-spadshchyny/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Покрокова процедура оформлення спадщини: чому строк становить шість, а не десять місяців, які документи готувати, як рахувати строк при пізній реєстрації смерті та скільки податку доведеться сплатити.</description>
+    </item>
+    <item>
+      <title>Обов’язкова частка у спадщині: хто має право попри заповіт</title>
+      <link>https://legius.com.ua/blog/obovyazkova-chastka-u-spadshchyni/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/obovyazkova-chastka-u-spadshchyni/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Сімейне право</category>
+      <description>Заповіт складено не на вас — але закон гарантує частину спадщини окремим категоріям спадкоємців. Хто має право, як рахується частка, з якого майна її виділяють і за яких умов суд її зменшує.</description>
+    </item>
     <item>
       <title>Чи переходять борги у спадщину: кредити померлого та захист спадкоємців</title>
       <link>https://legius.com.ua/blog/spadkuvannya-borhiv/</link>
@@ -142,6 +158,14 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Кримінальне право</category>
       <description>Розбираємо перелік підстав за ст. 284 КПК, різницю між реабілітуючими та нереабілітуючими підставами, недооцінений пункт 10 про сплив строків розслідування і порядок оскарження постанови.</description>
+    </item>
+    <item>
+      <title>Легалізація доходів (ст. 209 ККУ): захист бізнесу та стратегія</title>
+      <link>https://legius.com.ua/blog/legalizatsiya-dokhodiv-st-209/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/legalizatsiya-dokhodiv-st-209/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Кримінальне право</category>
+      <description>Розбираємо чинний склад ст. 209 КК після Закону № 361-IX, вимоги до доведення предикатного діяння, пороги великого та особливо великого розміру у 2026 році, механіку фінмоніторингу і робочі лінії захисту.</description>
     </item>
     <item>
       <title>Розірвання шлюбу в Україні: повний порядок дій у 2026 році</title>
@@ -382,30 +406,6 @@
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <category>Сімейне право</category>
       <description>Несплата аліментів підставою для позбавлення прав не є, перелік підстав вичерпний, а Верховний Суд називає цей захід винятковим і вимагає доведеної вини. Розбираємо ст. 164-170 СК, тягар доказування, наслідки й поновлення прав.</description>
-    </item>
-    <item>
-      <title>Поділ бізнесу при розлученні: ТОВ, ФОП та корпоративні права</title>
-      <link>https://legius.com.ua/blog/podil-biznesu-pry-rozluchenni/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/podil-biznesu-pry-rozluchenni/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Велика Палата ВС визначила: частка в статутному капіталі між подружжям не ділиться, а другий з подружжя набуває право вимагати виплату половини її вартості. Розбираємо різницю між ТОВ, ФОП і майновим комплексом, варіанти вимог і захист бізнесу наперед.</description>
-    </item>
-    <item>
-      <title>Визнання шлюбу недійсним: підстави та наслідки</title>
-      <link>https://legius.com.ua/blog/vyznannya-shlyubu-nedijsnym/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/vyznannya-shlyubu-nedijsnym/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Сімейний кодекс знає три різні моделі недійсності шлюбу — і лише дві з них потребують суду. Розбираємо підстави ст. 39-41 СК, доказування фіктивності за практикою ВС, різницю між недійсним і неукладеним шлюбом та захист добросовісного подружжя.</description>
-    </item>
-    <item>
-      <title>Спадковий договір: альтернатива заповіту, яку складно оскаржити</title>
-      <link>https://legius.com.ua/blog/spadkovyy-dohovir/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/spadkovyy-dohovir/</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Сімейне право</category>
-      <description>Спадковий договір за главою 90 ЦК: чому до нього не застосовуються правила спадкування і обов’язкова частка, які гарантії дає стаття 1307 і хто взагалі може вимагати його розірвання.</description>
     </item>
   </channel>
 </rss>
