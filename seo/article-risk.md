@@ -14,9 +14,9 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **229** |
+| Опрацьовано | **232** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 18 (старт 213) |
+| Із позначкою `expand` | 16 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
 | Середній (5–6), лишилось | 6 |
 
@@ -253,6 +253,9 @@
 | `spadkuvannya-nerukhomosti` | 2543 | real-estate |
 | `esop-optsiony-dlya-pratsivnykiv` | 2423 | investment |
 | `haazka-konventsiya-vykradennya-dytyny` | 2577 | family-law |
+| `kupivlya-zemli-pid-zabudovu` | 2375 | real-estate |
+| `kiberbezpeka-vytik-danykh` | 2163 | it-law |
+| `rehulyuvannya-shtuchnoho-intelektu-2026` | 2699 | it-law |
 
 ## Високий ризик — перевіряти першими
 

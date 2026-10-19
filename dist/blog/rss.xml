@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Mon, 19 Oct 2026 05:45:08 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 06:02:04 GMT</lastBuildDate>
     <item>
       <title>Оформлення спадщини в Україні: покрокова процедура</title>
       <link>https://legius.com.ua/blog/oformlennya-spadshchyny/</link>
@@ -272,6 +272,14 @@
       <description>Розбираємо підстави та судову процедуру виселення з квартири: коли потрібне рішення суду, виселення колишнього власника й орендаря, права дітей та виконання рішення.</description>
     </item>
     <item>
+      <title>Купівля землі під забудову: перевірка та оформлення 2026</title>
+      <link>https://legius.com.ua/blog/kupivlya-zemli-pid-zabudovu/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/kupivlya-zemli-pid-zabudovu/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Нерухомість</category>
+      <description>Як безпечно купити земельну ділянку під забудову: перевірка цільового призначення та меж, реєстр речових прав, обтяження, нотаріальний договір та реєстрація права.</description>
+    </item>
+    <item>
       <title>Податки при продажу нерухомості 2026: ПДФО та військовий збір</title>
       <link>https://legius.com.ua/blog/podatky-pry-prodazhu-nerukhomosti-2026/</link>
       <guid isPermaLink="true">https://legius.com.ua/blog/podatky-pry-prodazhu-nerukhomosti-2026/</guid>
@@ -398,14 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Супровід інвестицій</category>
       <description>Розбираємо опціонну програму ESOP: vesting і cliff, ціну виконання, розмір опціонного пулу, способи оформлення в українському праві та податкові наслідки.</description>
-    </item>
-    <item>
-      <title>Інвестиційний арбітраж: захист інвестицій через механізм ISDS</title>
-      <link>https://legius.com.ua/blog/investytsiynyy-arbitrazh-isds/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/investytsiynyy-arbitrazh-isds/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Супровід інвестицій</category>
-      <description>Пояснюємо механізм ISDS, роль двосторонніх угод про захист інвестицій, стандарти FET та захисту від експропріації, процедуру арбітражу ICSID і виконання рішень.</description>
     </item>
   </channel>
 </rss>
