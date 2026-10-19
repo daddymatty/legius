@@ -14,11 +14,11 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **223** |
+| Опрацьовано | **226** |
 | Коротших за 450 слів | 0 (старт 147) |
-| Із позначкою `expand` | 21 (старт 213) |
+| Із позначкою `expand` | 19 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
-| Середній (5–6), лишилось | 9 |
+| Середній (5–6), лишилось | 7 |
 
 ## ✅ Опрацьовано
 
@@ -247,6 +247,9 @@
 | `rozluchennya-bez-zgody` | 2114 | family-law |
 | `investytsiynyy-arbitrazh-isds` | 2104 | investment |
 | `podatky-pry-prodazhu-nerukhomosti-2026` | 2367 | real-estate |
+| `vidstrochka-vid-mobilizatsiyi` | 2137 | military-law |
+| `vyselennya-z-kvartyry` | 2214 | real-estate |
+| `esop-dlya-it-optsiony` | 2367 | it-law |
 
 ## Високий ризик — перевіряти першими
 
@@ -258,9 +261,7 @@
 
 | Ризик | Слів | Розмитих | Практика | Стаття |
 |---|---|---|---|---|
-| 6 | 676 | 1 | it-law | `esop-dlya-it-optsiony` |
 | 6 | 1109 | 1 | tax-law | `podatkove-planuvannya-biznesu` |
-| 5 | 668 | 0 | military-law | `vidstrochka-vid-mobilizatsiyi` |
 | 5 | 683 | 1 | real-estate | `spadkuvannya-nerukhomosti` |
 | 5 | 759 | 2 | m-and-a | `prodazh-biznesu-peredprodazhna-pidhotovka` |
 | 5 | 785 | 1 | corporate-law | `reyestratsiya-fop` |
