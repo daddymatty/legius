@@ -14,7 +14,7 @@
 | | |
 |---|---|
 | Статей усього | 261 |
-| Опрацьовано | **208** |
+| Опрацьовано | **211** |
 | Коротших за 450 слів | 0 (старт 147) |
 | Із позначкою `expand` | 26 (старт 213) |
 | Високий ризик (≥7), лишилось | 0 |
@@ -232,6 +232,9 @@
 | `cherhy-spadkuvannya-za-zakonom` | 2157 | family-law |
 | `otsinka-vartosti-biznesu` | 2111 | m-and-a |
 | `zakhyst-za-statteyu-130-kupap` | 2476 | litigation |
+| `post-merger-intehratsiya` | 2310 | m-and-a |
+| `korporatyvnyy-dohovir-investoriv` | 2233 | investment |
+| `zakhyst-dilovoyi-reputatsiyi-yurosoby` | 2428 | litigation |
 
 ## Високий ризик — перевіряти першими
 
