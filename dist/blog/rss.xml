@@ -6,7 +6,15 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Tue, 20 Oct 2026 15:15:47 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 15:34:49 GMT</lastBuildDate>
+    <item>
+      <title>Оскарження штрафу ТЦК: підстави, строк і порядок</title>
+      <link>https://legius.com.ua/blog/oskarzhennya-shtrafu-tck/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/oskarzhennya-shtrafu-tck/</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Військове право</category>
+      <description>Постанову ТЦК можна скасувати, але строк короткий — десять днів. Розбираємо суми, підстави, які реально працюють, порядок дій і окремо — сценарій, коли людина живе за кордоном.</description>
+    </item>
     <item>
       <title>Графік побачень з дитиною: як встановити і як виконати</title>
       <link>https://legius.com.ua/blog/uchast-batka-u-vykhovanni/</link>
@@ -398,14 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Нерухомість</category>
       <description>Розбираємо іпотеку з позиції позичальника: як працює застава нерухомості, що передбачити в договорі, які ризики звернення стягнення та виселення й як захистити житло.</description>
-    </item>
-    <item>
-      <title>Спадкування нерухомості: оформлення та строки 2026</title>
-      <link>https://legius.com.ua/blog/spadkuvannya-nerukhomosti/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/spadkuvannya-nerukhomosti/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>Як оформити спадщину на нерухомість: строк шість місяців, спадкування за заповітом і за законом, роль нотаріуса, поновлення пропущеного строку та реєстрація права.</description>
     </item>
   </channel>
 </rss>
