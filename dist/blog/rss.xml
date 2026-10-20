@@ -6,7 +6,7 @@
     <atom:link href="https://legius.com.ua/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Практичні роз’яснення законодавства від юристів LEGIUS: сімейне, корпоративне, військове, податкове право та судові спори.</description>
     <language>uk</language>
-    <lastBuildDate>Tue, 20 Oct 2026 15:34:49 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 19:55:29 GMT</lastBuildDate>
     <item>
       <title>Оскарження штрафу ТЦК: підстави, строк і порядок</title>
       <link>https://legius.com.ua/blog/oskarzhennya-shtrafu-tck/</link>
@@ -14,6 +14,30 @@
       <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
       <category>Військове право</category>
       <description>Постанову ТЦК можна скасувати, але строк короткий — десять днів. Розбираємо суми, підстави, які реально працюють, порядок дій і окремо — сценарій, коли людина живе за кордоном.</description>
+    </item>
+    <item>
+      <title>Ліцензія для стоматології: від кабінету до мережі клінік</title>
+      <link>https://legius.com.ua/blog/litsenziya-dlya-stomatolohiyi/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/litsenziya-dlya-stomatolohiyi/</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Розбираємо ліцензування стоматології за чинними Ліцензійними умовами: що перевіряє МОЗ у кабінеті, які спеціальності заявляти, що робити з рентгеном і як мережа додає адреси, не втрачаючи наявні.</description>
+    </item>
+    <item>
+      <title>Ліцензія для медичного центру: порядок і вимоги</title>
+      <link>https://legius.com.ua/blog/litsenziya-dlya-medychnoho-tsentru/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/litsenziya-dlya-medychnoho-tsentru/</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Розбираємо ліцензування багатопрофільного медичного центру: як формується перелік спеціальностей, що перевіряє МОЗ, чим ліцензія відрізняється від акредитації і що потрібно для договору з НСЗУ.</description>
+    </item>
+    <item>
+      <title>Ліцензія на медичну практику для лікаря-ФОП</title>
+      <link>https://legius.com.ua/blog/litsenziya-dlya-likarya-fop/</link>
+      <guid isPermaLink="true">https://legius.com.ua/blog/litsenziya-dlya-likarya-fop/</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Корпоративне право</category>
+      <description>Практичний порядок для лікаря, який відкриває власну практику: коли ліцензія потрібна саме вам, які КВЕД заявляти, що МОЗ перевіряє в кваліфікації та приміщенні і яку групу єдиного податку обрати.</description>
     </item>
     <item>
       <title>Графік побачень з дитиною: як встановити і як виконати</title>
@@ -382,30 +406,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <category>Судові спори</category>
       <description>Розбираємо мирову угоду в суді: коли домовитись вигідніше за рішення, як її укласти й затвердити, чому після ухвалення рішення угоду подають виконавцю, а не до суду, і скільки судового збору повертається.</description>
-    </item>
-    <item>
-      <title>Як скасувати незаконне обмеження максимального розміру пенсії у 2026</title>
-      <link>https://legius.com.ua/blog/yak-skasuvaty-obmezhennya-pensii/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/yak-skasuvaty-obmezhennya-pensii/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Судові спори</category>
-      <description>Пенсійний фонд обмежує пенсію десятьма прожитковими мінімумами або застосовує понижувальні коефіцієнти? Пояснюємо, на що спиратися, як працює колізія між Законом № 2262-XII і Законом № 3668-VI, що відбувається з коефіцієнтами 2025–2026 років і як домогтися перерахунку з виплатою різниці.</description>
-    </item>
-    <item>
-      <title>Захист за статтею 130 КУпАП: як уникнути позбавлення прав за керування у стані сп’яніння</title>
-      <link>https://legius.com.ua/blog/zakhyst-za-statteyu-130-kupap/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/zakhyst-za-statteyu-130-kupap/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Судові спори</category>
-      <description>Протокол за статтею 130 КУпАП ще не означає позбавлення прав. Розбираємо санкції, строк притягнення, процедуру огляду за Інструкцією № 1452/735, які порушення ведуть до закриття справи і як вибудувати лінію захисту.</description>
-    </item>
-    <item>
-      <title>Іпотека: юридичний супровід та ризики позичальника 2026</title>
-      <link>https://legius.com.ua/blog/ipoteka-yurydychnyy-suprovid/</link>
-      <guid isPermaLink="true">https://legius.com.ua/blog/ipoteka-yurydychnyy-suprovid/</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <category>Нерухомість</category>
-      <description>Розбираємо іпотеку з позиції позичальника: як працює застава нерухомості, що передбачити в договорі, які ризики звернення стягнення та виселення й як захистити житло.</description>
     </item>
   </channel>
 </rss>
